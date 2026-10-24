@@ -1,0 +1,4 @@
+# Strata: window title and taskbar icon (Custom Window Title).
+# The icon path is relative to the config folder; it must be a square power-of-two PNG saved with transparency.
+title = 'Strata'
+icon = 'customwindowtitle/strata.png'

@@ -15,6 +15,14 @@ hash = "422c564e0a5dd0caed1a9c7f566daaa4c3bfc19015750c8a3aa544d142d1f44b"
 preserve = true
 
 [[files]]
+file = "config/customwindowtitle-client.toml"
+hash = "18f4920a5b81e2bcabded9559aad0401b16335aea6e922c79f07086d072fbebf"
+
+[[files]]
+file = "config/customwindowtitle/strata.png"
+hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
 
@@ -482,6 +490,11 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/custom-window-title.pw.toml"
+hash = "09d3121e0f62df0f7543ec669a7d2465ccc257f8ece46eaa37c0d8597ec36c15"
 metafile = true
 
 [[files]]
