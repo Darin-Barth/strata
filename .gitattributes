@@ -1,0 +1,5 @@
+# packwiz hashes metafiles byte-for-byte; keep LF so checkouts match index.toml
+* text=auto eol=lf
+*.xlsx binary
+*.jar binary
+*.zip binary
