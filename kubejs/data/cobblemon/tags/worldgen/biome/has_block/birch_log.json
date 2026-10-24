@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:birch_forest",
+    "pokeworld:flower_forest",
+    "pokeworld:forest",
+    "pokeworld:old_growth_birch_forest"
+  ]
+}

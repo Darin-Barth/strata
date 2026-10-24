@@ -1,0 +1,20 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_vibrant_hydrothermal_vents",
+  "placement": [
+    {
+      "count": 1,
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 300,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "heightmap": "OCEAN_FLOOR_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:ruins/crumbling_arch",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

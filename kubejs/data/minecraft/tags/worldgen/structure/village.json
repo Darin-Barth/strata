@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:village_desert",
+    "pokeworld:village_plains",
+    "pokeworld:village_savanna",
+    "pokeworld:village_snowy",
+    "pokeworld:village_taiga"
+  ]
+}

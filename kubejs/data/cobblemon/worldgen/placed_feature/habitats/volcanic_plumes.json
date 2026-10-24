@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/volcanic_plumes",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "feature": "cobblemon:berry_groves",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "chance": 70,
+      "predicate": {
+        "includedBiomes": [
+          "#cobblemon:is_sparse"
+        ],
+        "type": "cobblemon:biome"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 25,
+      "predicate": {
+        "excludedBiomes": [
+          "#cobblemon:is_dense",
+          "#cobblemon:is_sparse"
+        ],
+        "type": "cobblemon:biome"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 10,
+      "predicate": {
+        "excludedBiomes": [
+          "#cobblemon:is_sparse"
+        ],
+        "includedBiomes": [
+          "#cobblemon:is_dense"
+        ],
+        "type": "cobblemon:biome"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "maxTries": 64,
+      "predicate": {
+        "predicates": [
+          {
+            "predicates": [
+              {
+                "tag": "cobblemon:berry_wild_soil",
+                "type": "minecraft:matching_block_tag"
+              }
+            ],
+            "type": "minecraft:any_of"
+          },
+          {
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "tag": "cobblemon:berry_replaceable",
+            "type": "minecraft:matching_block_tag"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "type": "cobblemon:locate_predicate",
+      "xzRange": 8,
+      "yRange": 1
+    }
+  ]
+}

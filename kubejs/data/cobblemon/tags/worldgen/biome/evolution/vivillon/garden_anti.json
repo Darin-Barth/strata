@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:bamboo_jungle",
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:deep_dark",
+    "pokeworld:flower_forest",
+    "pokeworld:frozen_peaks",
+    "pokeworld:grove",
+    "pokeworld:jagged_peaks",
+    "pokeworld:jungle",
+    "pokeworld:mangrove_swamp",
+    "pokeworld:meadow",
+    "pokeworld:mushroom_fields",
+    "pokeworld:plains",
+    "pokeworld:snowy_slopes",
+    "pokeworld:sparse_jungle",
+    "pokeworld:stony_peaks",
+    "pokeworld:sunflower_plains",
+    "pokeworld:swamp",
+    "pokeworld:windswept_forest",
+    "pokeworld:windswept_gravelly_hills",
+    "pokeworld:windswept_hills",
+    "pokeworld:windswept_savanna"
+  ]
+}

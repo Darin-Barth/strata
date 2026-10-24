@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_eroded_pillars",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

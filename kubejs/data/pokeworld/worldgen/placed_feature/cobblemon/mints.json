@@ -1,0 +1,87 @@
+{
+  "feature": "cobblemon:mints",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "min": 70,
+        "type": "cobblemon:altitude"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "chance": 88,
+      "predicate": {
+        "max": 79,
+        "min": 70,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 77,
+      "predicate": {
+        "max": 89,
+        "min": 80,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 55,
+      "predicate": {
+        "max": 99,
+        "min": 90,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 33,
+      "predicate": {
+        "max": 109,
+        "min": 100,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 22,
+      "predicate": {
+        "max": 119,
+        "min": 110,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "chance": 12,
+      "predicate": {
+        "min": 120,
+        "type": "cobblemon:altitude"
+      },
+      "type": "cobblemon:conditional_rarity_filter"
+    },
+    {
+      "maxTries": 64,
+      "predicate": {
+        "blocks": "#minecraft:dirt",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "cobblemon:locate_predicate",
+      "xzRange": 8,
+      "yRange": 1
+    }
+  ]
+}

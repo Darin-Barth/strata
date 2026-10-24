@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:deep_lukewarm_ocean",
+    "pokeworld:flower_forest",
+    "pokeworld:lukewarm_ocean",
+    "pokeworld:meadow",
+    "pokeworld:plains",
+    "pokeworld:sunflower_plains"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:ruined_portal",
+    "pokeworld:ruined_portal_desert",
+    "pokeworld:ruined_portal_jungle",
+    "pokeworld:ruined_portal_mountain",
+    "pokeworld:ruined_portal_ocean",
+    "pokeworld:ruined_portal_swamp"
+  ]
+}

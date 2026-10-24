@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:jungle_temple",
+  "biomes": "#pokeworld:has_structure/minecraft/jungle_pyramid",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

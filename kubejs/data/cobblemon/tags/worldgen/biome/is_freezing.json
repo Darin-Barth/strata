@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:deep_frozen_ocean",
+    "pokeworld:frozen_ocean",
+    "pokeworld:frozen_peaks",
+    "pokeworld:frozen_river",
+    "pokeworld:grove",
+    "pokeworld:ice_spikes",
+    "pokeworld:jagged_peaks",
+    "pokeworld:snowy_beach",
+    "pokeworld:snowy_plains",
+    "pokeworld:snowy_slopes",
+    "pokeworld:snowy_taiga"
+  ]
+}

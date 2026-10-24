@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:desert_pyramid",
+  "biomes": "#pokeworld:has_structure/minecraft/desert_pyramid",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

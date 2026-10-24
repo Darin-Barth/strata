@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/abandoned_fortress",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

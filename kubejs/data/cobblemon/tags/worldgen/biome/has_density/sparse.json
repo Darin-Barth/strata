@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:desert",
+    "pokeworld:eroded_badlands",
+    "pokeworld:frozen_peaks",
+    "pokeworld:ice_spikes",
+    "pokeworld:jagged_peaks",
+    "pokeworld:meadow",
+    "pokeworld:plains",
+    "pokeworld:savanna",
+    "pokeworld:savanna_plateau",
+    "pokeworld:snowy_plains",
+    "pokeworld:snowy_slopes",
+    "pokeworld:sparse_jungle",
+    "pokeworld:sunflower_plains",
+    "pokeworld:windswept_forest",
+    "pokeworld:windswept_gravelly_hills",
+    "pokeworld:windswept_hills",
+    "pokeworld:windswept_savanna",
+    "pokeworld:wooded_badlands"
+  ]
+}

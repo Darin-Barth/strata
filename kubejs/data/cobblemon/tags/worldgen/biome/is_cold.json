@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:cold_ocean",
+    "pokeworld:deep_cold_ocean",
+    "pokeworld:deep_frozen_ocean",
+    "pokeworld:frozen_ocean",
+    "pokeworld:frozen_peaks",
+    "pokeworld:frozen_river",
+    "pokeworld:grove",
+    "pokeworld:ice_spikes",
+    "pokeworld:jagged_peaks",
+    "pokeworld:old_growth_pine_taiga",
+    "pokeworld:old_growth_spruce_taiga",
+    "pokeworld:snowy_beach",
+    "pokeworld:snowy_plains",
+    "pokeworld:snowy_slopes",
+    "pokeworld:snowy_taiga",
+    "pokeworld:stony_peaks",
+    "pokeworld:stony_shore",
+    "pokeworld:taiga",
+    "pokeworld:windswept_forest",
+    "pokeworld:windswept_gravelly_hills",
+    "pokeworld:windswept_hills"
+  ]
+}

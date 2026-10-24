@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:dark_forest",
+    "pokeworld:deep_dark",
+    "pokeworld:mangrove_swamp",
+    "pokeworld:swamp"
+  ]
+}

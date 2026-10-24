@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/chorus_briars",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

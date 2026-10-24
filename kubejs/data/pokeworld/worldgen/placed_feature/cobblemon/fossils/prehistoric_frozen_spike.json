@@ -1,0 +1,53 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_frozen_spike",
+  "placement": [
+    {
+      "count": 1,
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 200,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "allowed_search_condition": {
+        "blocks": [
+          "minecraft:snow_block",
+          "minecraft:grass_block"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "direction_of_search": "up",
+      "max_steps": 3,
+      "target_condition": {
+        "blocks": [
+          "minecraft:air"
+        ],
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:environment_scan"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": -1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "integrated_api:generic_structure",
+  "start_pool": "integrated_cobblemon:flying_gym/flying_gym",
+  "rotation_fixed": true,
+  "size": 1,
+  "valid_biome_radius_check": 1,
+  "cannot_spawn_in_liquid": true,
+  "biomes": "#pokeworld:has_structure/integrated_cobblemon/flying_gym",
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "liquid_settings": "ignore_waterlogging",
+  "start_height": {
+    "type": "minecraft:constant",
+    "value": {
+      "absolute": 200
+    }
+  },
+  "use_bounding_box_hack": false,
+  "spawn_overrides": {}
+}

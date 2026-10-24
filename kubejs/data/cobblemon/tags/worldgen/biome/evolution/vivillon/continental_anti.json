@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:flower_forest",
+    "pokeworld:meadow",
+    "pokeworld:mushroom_fields",
+    "pokeworld:savanna",
+    "pokeworld:savanna_plateau",
+    "pokeworld:sunflower_plains",
+    "pokeworld:windswept_savanna"
+  ]
+}

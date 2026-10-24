@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:bamboo_jungle",
+    "pokeworld:birch_forest",
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:desert",
+    "pokeworld:eroded_badlands",
+    "pokeworld:flower_forest",
+    "pokeworld:forest",
+    "pokeworld:grove",
+    "pokeworld:jungle",
+    "pokeworld:old_growth_birch_forest",
+    "pokeworld:old_growth_pine_taiga",
+    "pokeworld:old_growth_spruce_taiga",
+    "pokeworld:snowy_taiga",
+    "pokeworld:sparse_jungle",
+    "pokeworld:taiga",
+    "pokeworld:wooded_badlands"
+  ]
+}

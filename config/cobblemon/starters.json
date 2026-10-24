@@ -1,0 +1,6 @@
+{
+  "allowStarterOnJoin": false,
+  "promptStarterOnceOnly": true,
+  "useConfigStarters": false,
+  "starters": []
+}

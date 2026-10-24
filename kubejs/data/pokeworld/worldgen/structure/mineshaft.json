@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:mineshaft",
+  "biomes": "#pokeworld:has_structure/minecraft/mineshaft",
+  "mineshaft_type": "normal",
+  "spawn_overrides": {},
+  "step": "underground_structures"
+}

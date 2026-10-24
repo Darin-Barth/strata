@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/strange_warped_fungal_dwellings",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+ {
+  "feature": "cobblemon:apricorn_trees",
+  "step": "vegetal_decoration",
+  "tag": null
+ },
+ {
+  "feature": "cobblemon:saccharine_tree",
+  "step": "vegetal_decoration",
+  "tag": null
+ },
+ {
+  "feature": "cobblemon:mints",
+  "step": "vegetal_decoration",
+  "tag": null
+ },
+ {
+  "feature": "cobblemon:medicinal_leek",
+  "step": "vegetal_decoration",
+  "tag": null
+ },
+ {
+  "feature": "cobblemon:big_root",
+  "step": "vegetal_decoration",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:revival_herb",
+  "step": "vegetal_decoration",
+  "tag": "cobblemon:has_feature/revival_herbs"
+ },
+ {
+  "feature": "cobblemon:berry_groves",
+  "step": "vegetal_decoration",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:type_gems",
+  "step": "underground_ores",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:swamp_grains",
+  "step": "vegetal_decoration",
+  "tag": "cobblemon:is_swamp"
+ },
+ {
+  "feature": "cobblemon:plains_grains",
+  "step": "vegetal_decoration",
+  "tag": "cobblemon:is_plains"
+ },
+ {
+  "feature": "cobblemon:galarica_nuts",
+  "step": "vegetal_decoration",
+  "tag": "cobblemon:is_beach"
+ },
+ {
+  "feature": "cobblemon:habitats/treasure_hoard",
+  "step": "local_modifications",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:habitats/abandoned_fortress",
+  "step": "underground_decoration",
+  "tag": "minecraft:is_nether"
+ },
+ {
+  "feature": "cobblemon:habitats/ancient_wellsprings",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_lush"
+ },
+ {
+  "feature": "cobblemon:habitats/chorus_briars",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_end"
+ },
+ {
+  "feature": "cobblemon:habitats/deep_roots",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_lush"
+ },
+ {
+  "feature": "cobblemon:habitats/earthen_hives",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_dripstone"
+ },
+ {
+  "feature": "cobblemon:habitats/exposed_geodes",
+  "step": "local_modifications",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:habitats/lost_ruins",
+  "step": "underground_decoration",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:habitats/quartz_spikes",
+  "step": "local_modifications",
+  "tag": "cobblemon:nether/is_wasteland"
+ },
+ {
+  "feature": "cobblemon:habitats/rocky_tidepools",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_stony_beach"
+ },
+ {
+  "feature": "cobblemon:habitats/root_nurseries",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_swamp"
+ },
+ {
+  "feature": "cobblemon:habitats/sandy_tidepools",
+  "step": "local_modifications",
+  "tag": "cobblemon:is_beach"
+ },
+ {
+  "feature": "cobblemon:habitats/skeletal_fall",
+  "step": "local_modifications",
+  "tag": "cobblemon:nether/is_soul_sand"
+ },
+ {
+  "feature": "cobblemon:habitats/strange_crimson_fungal_dwellings",
+  "step": "local_modifications",
+  "tag": "cobblemon:nether/is_wasteland"
+ },
+ {
+  "feature": "cobblemon:habitats/strange_warped_fungal_dwellings",
+  "step": "local_modifications",
+  "tag": "cobblemon:nether/is_wasteland"
+ },
+ {
+  "feature": "cobblemon:habitats/volcanic_plumes",
+  "step": "local_modifications",
+  "tag": "minecraft:is_nether"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_birch_tree",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/birch_log"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_dripstone_oasis",
+  "step": "lakes",
+  "tag": "cobblemon:is_dripstone"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_enhydro_agate",
+  "step": "lakes",
+  "tag": "cobblemon:is_lush"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_eroded_pillar",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/red_sand"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_frozen_pond",
+  "step": "lakes",
+  "tag": "cobblemon:is_glacial"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_frozen_spike",
+  "step": "lakes",
+  "tag": "cobblemon:is_glacial"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_hydrothermal_vents",
+  "step": "lakes",
+  "tag": "cobblemon:is_temperate_ocean"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_lush_den",
+  "step": "lakes",
+  "tag": "cobblemon:is_jungle"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_mossy_pond",
+  "step": "lakes",
+  "tag": "cobblemon:is_lush"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_mud_pit",
+  "step": "lakes",
+  "tag": "cobblemon:is_jungle"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_oak_tree",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/oak_log"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_powdered_deposit",
+  "step": "lakes",
+  "tag": "cobblemon:is_snowy"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_rooted_pits",
+  "step": "lakes",
+  "tag": "cobblemon:is_swamp"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_sandy_den",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/sand"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_spruce_tree",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/spruce_log"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_submerged_impact",
+  "step": "lakes",
+  "tag": "cobblemon:is_temperate_ocean"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_submerged_spike",
+  "step": "underground_structures",
+  "tag": "cobblemon:is_frozen_ocean"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_preserved_skeleton",
+  "step": "underground_structures",
+  "tag": "cobblemon:is_frozen_ocean"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_sunscorched_den",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/red_sand"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_sunscorched_remains",
+  "step": "lakes",
+  "tag": "cobblemon:has_block/red_sand"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_suspicious_mounds",
+  "step": "lakes",
+  "tag": "cobblemon:is_plains"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_underwater_fissure",
+  "step": "lakes",
+  "tag": "cobblemon:is_temperate_ocean"
+ },
+ {
+  "feature": "cobblemon:fossils/prehistoric_vibrant_hydrothermal_vents",
+  "step": "lakes",
+  "tag": "cobblemon:is_warm_ocean"
+ },
+ {
+  "feature": "cobblemon:ruins/crumbling_arch",
+  "step": "underground_decoration",
+  "tag": "minecraft:is_overworld"
+ },
+ {
+  "feature": "cobblemon:ruins/deep_crypt",
+  "step": "underground_decoration",
+  "tag": "cobblemon:is_deep_dark"
+ },
+ {
+  "feature": "cobblemon:ruins/rooted_arch",
+  "step": "underground_decoration",
+  "tag": "cobblemon:is_lush"
+ },
+ {
+  "feature": "cobblemon:habitats/rocky_outcrops",
+  "step": "underground_decoration",
+  "tag": "cobblemon:is_mountain"
+ },
+ {
+  "feature": "cobblemon:ore/dawn_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dawn_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/dawn_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dawn_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/dawn_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dawn_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/dawn_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dawn_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/dusk_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dusk_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/dusk_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dusk_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/dusk_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dusk_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/dusk_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_dusk_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/fire_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_fire_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/fire_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_fire_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/fire_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_fire_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/fire_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_fire_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/fire_stone_nether",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_fire_stone_nether"
+ },
+ {
+  "feature": "cobblemon:ore/ice_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_ice_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/ice_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_ice_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/ice_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_ice_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/ice_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_ice_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/leaf_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_leaf_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/leaf_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_leaf_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/leaf_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_leaf_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/leaf_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_leaf_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/moon_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_moon_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/moon_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_moon_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/moon_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_moon_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/moon_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_moon_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/moon_stone_dripstone",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_moon_stone_dripstone"
+ },
+ {
+  "feature": "cobblemon:ore/shiny_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_shiny_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/shiny_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_shiny_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/shiny_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_shiny_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/shiny_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_shiny_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/sun_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_sun_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/sun_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_sun_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/sun_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_sun_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/sun_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_sun_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/thunder_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_thunder_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/thunder_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_thunder_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/thunder_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_thunder_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/thunder_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_thunder_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/water_stone_upper",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_water_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/water_stone_lower",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_water_stone_normal"
+ },
+ {
+  "feature": "cobblemon:ore/water_stone_upper_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_water_stone_rare"
+ },
+ {
+  "feature": "cobblemon:ore/water_stone_lower_rare",
+  "step": "underground_ores",
+  "tag": "cobblemon:has_ore/ore_water_stone_rare"
+ }
+]

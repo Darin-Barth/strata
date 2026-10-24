@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:cold_ocean",
+    "pokeworld:deep_cold_ocean",
+    "pokeworld:deep_frozen_ocean",
+    "pokeworld:deep_lukewarm_ocean",
+    "pokeworld:deep_ocean",
+    "pokeworld:frozen_ocean",
+    "pokeworld:lukewarm_ocean",
+    "pokeworld:ocean"
+  ]
+}

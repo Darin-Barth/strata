@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:beach",
+    "pokeworld:cold_ocean",
+    "pokeworld:deep_cold_ocean",
+    "pokeworld:snowy_beach",
+    "pokeworld:stony_shore"
+  ]
+}

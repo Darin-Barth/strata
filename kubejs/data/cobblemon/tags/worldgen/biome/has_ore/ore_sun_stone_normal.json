@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:dripstone_caves",
+    "pokeworld:eroded_badlands",
+    "pokeworld:meadow",
+    "pokeworld:plains",
+    "pokeworld:savanna",
+    "pokeworld:savanna_plateau",
+    "pokeworld:sunflower_plains",
+    "pokeworld:windswept_savanna",
+    "pokeworld:wooded_badlands"
+  ]
+}

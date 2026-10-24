@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/rocky_outcrops",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "displayName": "Strata: wild Pokémon spawn only in the Pokémon world",
+  "enabled": "true",
+  "components": [
+    {
+      "type": "location",
+      "allow": "v.world.is_of('pokeworld:pokeworld')"
+    }
+  ]
+}

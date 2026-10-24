@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:dark_forest",
+    "pokeworld:deep_dark",
+    "pokeworld:frozen_peaks",
+    "pokeworld:grove",
+    "pokeworld:ice_spikes",
+    "pokeworld:jagged_peaks",
+    "pokeworld:mushroom_fields",
+    "pokeworld:old_growth_pine_taiga",
+    "pokeworld:old_growth_spruce_taiga",
+    "pokeworld:snowy_beach",
+    "pokeworld:snowy_plains",
+    "pokeworld:snowy_slopes",
+    "pokeworld:snowy_taiga",
+    "pokeworld:taiga"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:flower_forest",
+    "pokeworld:forest",
+    "pokeworld:swamp",
+    "pokeworld:windswept_forest",
+    "pokeworld:wooded_badlands"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:bamboo_jungle",
+    "pokeworld:birch_forest",
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:flower_forest",
+    "pokeworld:forest",
+    "pokeworld:grove",
+    "pokeworld:jungle",
+    "pokeworld:lush_caves",
+    "pokeworld:mangrove_swamp",
+    "pokeworld:meadow",
+    "pokeworld:old_growth_birch_forest",
+    "pokeworld:plains",
+    "pokeworld:sparse_jungle",
+    "pokeworld:sunflower_plains",
+    "pokeworld:swamp"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/root_nurseries",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

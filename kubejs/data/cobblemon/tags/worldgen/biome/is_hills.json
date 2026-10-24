@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:cherry_grove",
+    "pokeworld:grove",
+    "pokeworld:meadow",
+    "pokeworld:snowy_slopes",
+    "pokeworld:windswept_forest",
+    "pokeworld:windswept_gravelly_hills",
+    "pokeworld:windswept_hills",
+    "pokeworld:windswept_savanna"
+  ]
+}

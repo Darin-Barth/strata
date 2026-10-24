@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_rooted_pits",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

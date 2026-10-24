@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 165745295,
+    "separation": 4,
+    "spacing": 24
+  },
+  "structures": [
+    {
+      "structure": "pokeworld:shipwreck",
+      "weight": 1
+    },
+    {
+      "structure": "pokeworld:shipwreck_beached",
+      "weight": 1
+    }
+  ]
+}

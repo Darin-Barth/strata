@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:igloo",
+  "biomes": "#pokeworld:has_structure/minecraft/igloo",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

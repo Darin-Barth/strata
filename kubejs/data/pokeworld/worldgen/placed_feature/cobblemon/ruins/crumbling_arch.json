@@ -1,0 +1,55 @@
+{
+  "feature": "cobblemon:ruins/crumbling_arch",
+  "placement": [
+    {
+      "count": 1,
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 60,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "height": {
+        "max_inclusive": {
+          "absolute": -10
+        },
+        "min_inclusive": {
+          "absolute": -32
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "allowed_search_condition": {
+        "blocks": [
+          "minecraft:deepslate"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "direction_of_search": "up",
+      "max_steps": 7,
+      "target_condition": {
+        "blocks": [
+          "minecraft:air"
+        ],
+        "offset": [
+          0,
+          7,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:environment_scan"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

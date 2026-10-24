@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/lost_ruins",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

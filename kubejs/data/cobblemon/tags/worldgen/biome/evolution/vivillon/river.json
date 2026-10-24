@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:frozen_river",
+    "pokeworld:mangrove_swamp",
+    "pokeworld:river",
+    "pokeworld:swamp"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:deep_lukewarm_ocean",
+    "pokeworld:deep_ocean",
+    "pokeworld:lukewarm_ocean",
+    "pokeworld:ocean"
+  ]
+}

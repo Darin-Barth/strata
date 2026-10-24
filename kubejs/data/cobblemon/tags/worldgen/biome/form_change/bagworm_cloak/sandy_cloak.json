@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:beach",
+    "pokeworld:deep_dark",
+    "pokeworld:desert",
+    "pokeworld:dripstone_caves",
+    "pokeworld:eroded_badlands",
+    "pokeworld:lush_caves",
+    "pokeworld:snowy_beach",
+    "pokeworld:wooded_badlands"
+  ]
+}

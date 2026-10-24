@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/earthen_hives",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

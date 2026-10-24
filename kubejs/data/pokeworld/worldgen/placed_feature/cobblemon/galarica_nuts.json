@@ -1,0 +1,31 @@
+{
+  "feature": "cobblemon:galarica_nuts/galarica_patch",
+  "placement": [
+    {
+      "chance": 6,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "predicate": {
+        "state": {
+          "Name": "cobblemon:galarica_nut_bush",
+          "Properties": {
+            "age": "3"
+          }
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

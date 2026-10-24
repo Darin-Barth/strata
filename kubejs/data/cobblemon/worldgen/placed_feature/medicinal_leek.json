@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:medicinal_leek",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

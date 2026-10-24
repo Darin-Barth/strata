@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:meadow",
+    "pokeworld:plains",
+    "pokeworld:savanna",
+    "pokeworld:savanna_plateau",
+    "pokeworld:sunflower_plains",
+    "pokeworld:windswept_savanna"
+  ]
+}

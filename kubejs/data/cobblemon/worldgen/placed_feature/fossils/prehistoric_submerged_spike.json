@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_submerged_spike",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/exposed_geodes",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

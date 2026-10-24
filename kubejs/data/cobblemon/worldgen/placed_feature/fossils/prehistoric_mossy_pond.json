@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_mossy_ponds",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

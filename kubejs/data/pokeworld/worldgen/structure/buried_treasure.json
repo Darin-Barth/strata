@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:buried_treasure",
+  "biomes": "#pokeworld:has_structure/minecraft/buried_treasure",
+  "spawn_overrides": {},
+  "step": "underground_structures"
+}

@@ -1,0 +1,19 @@
+{
+  "feature": "cobblemon:apricorn_trees",
+  "placement": [
+    {
+      "chance": 8,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "heightmap": "WORLD_SURFACE",
+      "type": "minecraft:heightmap"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:type_gems",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

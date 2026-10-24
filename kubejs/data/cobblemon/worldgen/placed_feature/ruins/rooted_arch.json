@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:ruins/rooted_arch",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

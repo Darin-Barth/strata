@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:beach",
+    "pokeworld:desert",
+    "pokeworld:eroded_badlands",
+    "pokeworld:wooded_badlands"
+  ]
+}

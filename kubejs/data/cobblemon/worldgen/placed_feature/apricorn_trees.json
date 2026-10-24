@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:apricorn_trees",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

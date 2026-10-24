@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/deep_roots",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

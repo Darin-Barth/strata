@@ -1,0 +1,58 @@
+{
+  "feature": "cobblemon:habitats/sandy_tidepools",
+  "placement": [
+    {
+      "count": 1,
+      "type": "minecraft:count"
+    },
+    {
+      "chance": 10,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "max_inclusive": {
+          "absolute": 58
+        },
+        "min_inclusive": {
+          "absolute": 58
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "allowed_search_condition": {
+        "blocks": [
+          "minecraft:sandstone"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "direction_of_search": "up",
+      "max_steps": 7,
+      "target_condition": {
+        "blocks": [
+          "minecraft:sand"
+        ],
+        "offset": [
+          0,
+          6,
+          0
+        ],
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:environment_scan"
+    }
+  ]
+}

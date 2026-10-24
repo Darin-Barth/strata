@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_sunscorched_den",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

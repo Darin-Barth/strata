@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:habitats/treasure_hoard",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

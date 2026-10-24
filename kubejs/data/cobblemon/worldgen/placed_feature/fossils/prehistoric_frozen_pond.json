@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_frozen_pond",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_dripstone_oasis",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

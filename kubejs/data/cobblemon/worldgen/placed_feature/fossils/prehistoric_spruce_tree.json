@@ -1,0 +1,9 @@
+{
+  "feature": "cobblemon:fossils/prehistoric_spruce_trees",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

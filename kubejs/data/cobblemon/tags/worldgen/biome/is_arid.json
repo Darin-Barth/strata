@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:badlands",
+    "pokeworld:desert",
+    "pokeworld:eroded_badlands",
+    "pokeworld:savanna",
+    "pokeworld:savanna_plateau",
+    "pokeworld:windswept_savanna",
+    "pokeworld:wooded_badlands"
+  ]
+}

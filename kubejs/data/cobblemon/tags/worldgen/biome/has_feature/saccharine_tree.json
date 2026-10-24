@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "pokeworld:birch_forest",
+    "pokeworld:cherry_grove",
+    "pokeworld:dark_forest",
+    "pokeworld:flower_forest",
+    "pokeworld:forest",
+    "pokeworld:grove",
+    "pokeworld:meadow",
+    "pokeworld:old_growth_birch_forest",
+    "pokeworld:old_growth_pine_taiga",
+    "pokeworld:old_growth_spruce_taiga",
+    "pokeworld:snowy_taiga",
+    "pokeworld:sunflower_plains",
+    "pokeworld:taiga"
+  ]
+}
