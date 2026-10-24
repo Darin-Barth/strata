@@ -114,7 +114,7 @@ The world is built for long-distance travel: big terrain, lots of structures, re
 - **Reasons to keep exploring:** Apotheosis gear and gems; boss drops gating progression; Relics/Artifacts accessories.
 - **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips.
 - **Pregenerate** the world with Chunky before anyone joins; heavy worldgen is the main server performance risk. Decided Oct 24 (see docs/worldgen-profile.md):
-  1. **Pick the seed first**: a good spawn area, scouted before generating.
+  1. **Seed chosen (Oct 24):** `1121906793898615393`, spawn at the meadow village X 24031, Y 111, Z −26565 (see docs/seed-scouting.md). Pregeneration is centered there.
   2. **Finish every worldgen-affecting change before pregenerating.** Pregenerated chunks never pick up later worldgen changes. That includes Cobblemon worldgen moving to the Pokémon world (apricorns, evolution-stone ores, Integrated Cobblemon gyms and Pokécenters), the Artifacts/IDAS chest fixes, and any ore or structure configs.
   3. **Pregenerate on Darin's desktop** (i5-13600K, much faster than treehouse), **5,000-block radius** in the Overworld, plus the Nether, End and Aether at sizes to decide. Use the same settings as the server, then copy the world to treehouse.
   4. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false` (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`). Chunky keeps expanding the border in the background after launch if needed.
