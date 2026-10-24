@@ -112,7 +112,13 @@ Log findings (no action needed to boot):
 - The "sky dungeon" is Inventory Pets' `sky_dungeon`. Its chests have items baked into the structure (no loot table), so Lootr can't make them per-player. **Fixed:** all Inventory Pets structures are now rare (datapack overrides in `kubejs/data/inventorypets/`), and sky dungeons only generate in the Aether. Verified with `/locate` on the test server (see the design doc's KubeJS/config list).
 - Pokémon UI and starters in the Pokémon world only: added to the Pokémon world plan.
 
+## Client test 3 (Oct 24, 2026): 8 GB, new world, Chunky pregen in singleplayer
+- No out-of-memory errors, but AllTheLeaks warned **"You reached 90% memory usage"** while terrain generated. Five server stalls (2–12 s) while flying through new terrain; smoother after pregenerating with Chunky. Generation itself is slow (about 260 mods' worldgen).
+- Next levers: 10 GB for singleplayer testing, generational ZGC (`-XX:+UseZGC -XX:+ZGenerational`) to cut collector pauses, and profiling worldgen on the test server to find the heaviest mods. Multiplayer clients won't generate terrain (treehouse is pregenerated), so they need less.
+- **Overlap found:** Iron & Nouveau's in-game notice says Ars 'n Spells 3.4.0+ includes its own Iron's Spells glyphs, so the two overlap. Options: keep Ars 'n Spells only, or set Iron & Nouveau's `enable_iron_glyphs = false` and `enable_glyph_press = false` (per-world server config). **Decision needed.**
+
 ## Still open
+- Iron & Nouveau vs Ars 'n Spells glyph overlap (see client test 3).
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.
 3. Pokémon world portal, and the Kanto map license: when we build the Pokémon world.
