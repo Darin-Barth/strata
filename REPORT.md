@@ -118,7 +118,7 @@ Log findings (no action needed to boot):
 - **Overlap found:** Iron & Nouveau's in-game notice says Ars 'n Spells 3.4.0+ includes its own Iron's Spells glyphs, so the two overlap. Options: keep Ars 'n Spells only, or set Iron & Nouveau's `enable_iron_glyphs = false` and `enable_glyph_press = false` (per-world server config). **Decision needed.**
 
 ## Worldgen profile (Oct 24, 2026)
-Chunky + Spark on the Docker server, decoded locally: see `docs/worldgen-profile.md`. Pregeneration ran at about 6.8 chunks/s. The **main server thread** (chunk unload/save) and **G1 GC (~30% of CPU)** are the bottleneck, not mod worldgen; worker threads were mostly idle. The heaviest worldgen is Tectonic's terrain (via Lithostitched, 24%), then Quark's features (7%).
+Chunky + Spark on the Docker server, decoded locally: see `docs/worldgen-profile.md`. Pregeneration ran at about 6.8 chunks/s. The **main server thread** (chunk unload/save) and **G1 GC (~30% of CPU)** are the bottleneck, not mod worldgen; worker threads were mostly idle. The heaviest worldgen is Tectonic's terrain (via Lithostitched, 24%), then Quark's features (7%). **Run 2 with 12 GB + generational ZGC:** 17% faster (8.2 chunks/s), GC CPU down from ~30% to ~8%, worst stall 5.9 s → 3.5 s. Recommended: server 12 GB, singleplayer 10 GB, multiplayer clients 8 GB, all with `-XX:+UseZGC -XX:+ZGenerational`.
 
 ## Still open
 - Iron & Nouveau vs Ars 'n Spells glyph overlap (see client test 3).

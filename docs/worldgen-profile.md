@@ -33,3 +33,23 @@ By step: noise fill (terrain shape) 37%, feature decoration 19%, the rest is aqu
   2. Possibly a chunk-system replacement (for example Moonrise, the Paper chunk system port). This is untested here and would need a compatibility check with Sable/Create and the worldgen mods.
 - The same main-thread behavior is what singleplayer players feel as freezes when flying into new terrain. On treehouse, pregeneration moves it to before launch.
 - **Treehouse estimate:** at roughly 5–7 chunks/s, a 5,000-block radius (about 390k chunks) is 15–20+ hours in the Overworld alone, before any fixes. Plan for a multi-night pregen, or a smaller first radius.
+
+## Run 2: 12 GB + generational ZGC (same seed, same region, same profiler)
+| | Run 1: 8 GB, G1 | Run 2: 12 GB, ZGC generational |
+| --- | --- | --- |
+| Time for 5,929 chunks | 14 min 27 s | **12 min 02 s** (17% faster) |
+| Average rate | 6.8 chunks/s | **8.2 chunks/s** |
+| GC CPU | ~14.6 min (~30% of all CPU) | **~2.3 min** (~8%) |
+| Main server thread CPU | ~11 min | ~9.5 min (still the bottleneck) |
+| Worst server stall | 5.9 s | 3.5 s |
+| Container memory | ~10.6 GiB | ~14.3 GiB (of the 15.5 GiB Docker VM, tight) |
+
+**Takeaways**
+- ZGC removes most of the memory-cleanup cost and shortens stalls. That matters more for how play *feels* (fewer freezes) than for pregen speed.
+- Pregeneration is still limited by the main thread's chunk unload/save, so expect only modest speed-ups from memory settings.
+- ZGC needs headroom: with a 12 GB heap the process used ~14.3 GiB. Treehouse (32 GB) is fine; size the Docker/host memory accordingly.
+
+**Recommended settings** (ship in the pack docs / server compose):
+- Treehouse server: `MEMORY=12G`, `JVM_XX_OPTS=-XX:+UseZGC -XX:+ZGenerational`.
+- Singleplayer clients: 10 GB + the same two flags.
+- Multiplayer clients (no local worldgen): 8 GB + the same flags. Confirm in the group test.
