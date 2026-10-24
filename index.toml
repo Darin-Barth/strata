@@ -23,6 +23,10 @@ file = "config/quark-common.toml"
 hash = "14ca75640a0b7fd6e5b96d008372343f21e2f7f3672255b361533326be2cc544"
 
 [[files]]
+file = "icon.png"
+hash = "bea76709fcf7ebfea1716328f5554f269258e5cfbf5204db95b4d21886651835"
+
+[[files]]
 file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
 hash = "c8ea0ee29eccaeec1274db06ba1a812ff2ddf0de921607922c21c170e193631e"
 
