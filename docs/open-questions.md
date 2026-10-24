@@ -1,5 +1,7 @@
 # Strata — open questions after phase 1
 
+> **Answered Oct 23, 2026.** What was applied is in REPORT.md ("Round 1 decisions applied"). Still open: the Discord bridge pick (#5), MI vs Oritech (#10, decide in the creative test), and the portal and Kanto license (#22–23, when we build the Pokémon world).
+
 Context for whoever answers: Strata is a 1.21.1 NeoForge kitchen-sink pack (Create Aeronautics, Mekanism, Ars Nouveau hub, Cobblemon in its own dimension) for 5–6 friends. Phase 1 added every "Keep" mod with a 1.21.1 NeoForge build, checked against the Modrinth and CurseForge APIs on Oct 23, 2026. These are the choices still open. A short answer per question is enough; "don't know" is fine too.
 
 ## A. Mods with no exact match (Keep rows)

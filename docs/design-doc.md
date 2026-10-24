@@ -56,7 +56,7 @@ Challenge is there for anyone who wants it, but the world stays friendly for bui
 - **Apotheosis:** randomized gear, gems, elite mobs. Configure elites to be rare near spawn and more common in the Nether, End and far out.
 - **Boss gating:** quests and KubeJS recipes require boss drops for late tiers (for example Cataclysm drops for top Mekanism/AE2 parts and cross-dimension wireless).
 - **Other scalers to watch:** Vampirism scales its own mobs to nearby player level — include it in the Nether-jump play test.
-- **Safety nets:** gravestone/corpse mod so death doesn't scatter items; Domestication Innovation so pets aren't lost for good.
+- **Safety nets:** GraveStone Mod so death doesn't scatter items; Redomesticate (Domestication Innovation fork) so pets aren't lost for good.
 - **Combat feel:** Better Combat + Apothic Combat + Combat Roll (not Epic Fight).
 
 ## Tech pillar
@@ -93,13 +93,13 @@ Ars Nouveau is the hub; the other magic mods connect to it through bridge mods s
 | --- | --- | --- |
 | Ars ↔ Iron's Spells | Ars 'n Spells (+ Iron & Nouveau) | Shared mana pool and progression. Newer mod with recent ritual fixes — test early. Do not also add Ars ↔ Iron Mana Bridge. |
 | Ars ↔ Occultism | Ars Ocultas | Spirits work from Ars Containment Jars |
-| Ars ↔ Botania | Ars Botania | Mana moves both ways; AE2 source jars / mana pools see both |
+| ~~Ars ↔ Botania~~ | ~~Ars Botania~~ | Cut: Botania has no 1.21.1 build. Ars, Iron's, Occultism, Vampirism and Neo Vitae cover magic |
 | Ars ↔ AE2 | Ars Énergistique | Verify 1.21.1 |
 | Ars ↔ Create | Ars Creo | Verify 1.21.1 |
 | Iron's ↔ Apotheosis | Apotheosis x Iron's Spellbooks Compat |  |
 | Vampirism ↔ Iron's | Vampirism Iron's Spells Compatibility | Blood spells drain Vampirism blood; holy damage vs vampires |
 
-Optional fifth magic mod: Neo Vitae (Blood Magic continuation).
+Fifth magic mod: Neo Vitae (Blood Magic continuation), in now that Botania is out.
 
 **Vampirism** is opt-in per player: vampire, hunter, or ignore it. Include Vampirism Integrations, Werewolves, Vampire's Delight, and if 1.21.1 builds exist, Vampires Need Umbrellas, Vampiric Ageing and Bloodlines. Godly Vampirism and the Mekanism x Vampirism MekaSuit mod (1.20.1 only) are out. Factions-only PvP via config. Test vampires against the food variety mod.
 
@@ -109,8 +109,8 @@ The world is built for long-distance travel: big terrain, lots of structures, re
 
 - **Terrain and biomes:** Tectonic (terrain shape) + Regions Unexplored 6.0 (main biome mod, ATM10 Aeronautics' pick) + Streams Reflowing. Terralith decided out — stacking two big biome mods mostly adds worldgen cost.
 - **Structures:** YUNG's suite, Towns and Towers, When Dungeons Arise, Dungeons and Taverns, Integrated Dungeons and Structures, Explorify. Lootr so every player gets their own loot.
-- **Bosses:** L\_Ender's Cataclysm + Integrated Cataclysm (Create doors, puzzles, traps), Mowzie's Mobs, Bosses of Mass Destruction (verify NeoForge).
-- **Dimensions:** Twilight Forest, Deeper and Darker, plus the Aether / Undergarden / Blue Skies to verify. Nether: Incendium (not compatible with Amplified Nether). End: Nullscape.
+- **Bosses:** L\_Ender's Cataclysm + Integrated Cataclysm (Create doors, puzzles, traps), Mowzie's Mobs, Bosses of Mass Destruction (NeoForge port "Bosses of Mass Destruction Forge").
+- **Dimensions:** Twilight Forest, Deeper and Darker, The Aether (a sky dimension fits the flying theme). Undergarden out for now (beta; revisit later); Blue Skies out (no 1.21.1 build). Nether: Incendium (not compatible with Amplified Nether). End: Nullscape.
 - **Reasons to keep exploring:** Apotheosis gear and gems; boss drops gating progression; Relics/Artifacts accessories.
 - **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips.
 - **Pregenerate** the world with Chunky before anyone joins; heavy worldgen is the main server performance risk.
@@ -136,13 +136,13 @@ Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as 
 
 The pack has to work for players who never touch a machine, so there's a full layer of farming, pets, decorating and gentle goals.
 
-- **Food and farming:** Farmer's Delight + add-ons, Create Slice & Dice and Central Kitchen, Serene Seasons, a food variety mod (Spice of Life or Diet).
-- **Pets and critters:** Inventory Pets (Cloud and other teleport/free-flight pets disabled or re-gated), Domestication Innovation, Naturalist, Friends & Foes, Creatures and Beasts: Continued, Critters and Companions, Creeper/Enderman Overhaul, Illager Invasion, Aquaculture 2, Alex's Mobs if a 1.21.1 build exists, Royal Variations.
+- **Food and farming:** Farmer's Delight + add-ons tied to other mods (Ender's Delight, Twilight's Flavor & Delight, Ars Nouveau's Flavors & Delight, L_Ender's Cataclysm Delight, Aether's Delight, Vampire's Delight), Create Slice & Dice and Central Kitchen, Serene Seasons, Spice of Life: Onion (Diet has no 1.21.1 build).
+- **Pets and critters:** Inventory Pets (Cloud and other teleport/free-flight pets disabled or re-gated), Redomesticate, Naturalist, Friends & Foes, Creatures and Beasts: Continued, Critters and Companions, Creeper/Enderman Overhaul, Illager Invasion, Aquaculture 2, Alex's Mobs Continued, Royal Variations.
 - **Cozy activities:** Tide (fishing journal), Bountiful (village bounty boards), a short "cozy" FTB Quests chapter (tame a pet, cook five dishes, decorate a house, find a pet dungeon).
 - **Building:** Handcrafted, Chipped, Macaw's suite, Supplementaries, Every Compat, Another Furniture, a plushie mod if one exists, Cosmetic Armor Reworked.
 - **Storage:** Sophisticated Backpacks + Storage, Functional Storage, Tom's Simple Storage, AE2.
 - **Accessories:** Curios is the standard slot system (Accessories Compatibility Layer only if a mod needs it). Artifacts, Relics, Reliquified Artifacts, Forsaken Relics. Reliquified Cataclysm left out (needs a fan fix to work).
-- **QoL:** EMI, Jade, AppleSkin, Inventory Profiles Next (sort button), FTB Ultimine, FallingTree, Polymorph, Controlling, Just Enough Resources, Carry On, Mouse Tweaks, Xaero's maps, FTB Chunks + FTB Teams (claims, chunk loading), Simple Voice Chat, Comforts.
+- **QoL:** EMI (+ JEI alongside, so JEI plugins like JER work), Jade, AppleSkin, Inventory Profiles Next (sort button), FTB Ultimine, FallingTree, Polymorph, Controlling, Just Enough Resources, Carry On, Mouse Tweaks, Xaero's maps, FTB Chunks + FTB Teams (claims, chunk loading), Simple Voice Chat, Comforts.
 - **Skipped on purpose:** Dynamic Trees, MineColonies.
 
 ## Visuals and performance
@@ -153,7 +153,7 @@ Every heavy visual is client-side and optional, so weaker PCs turn it off and no
 
 - Shaders via Iris: Complementary Reimagined as the default (low-to-high presets); Bliss or Photon for strong PCs.
 - Distant Horizons (optional per player) — big payoff for airship flight.
-- Fresh Animations + Entity Model Features + Entity Texture Features; Continuity + Fusion for connected textures.
+- Fresh Animations + Entity Model Features + Entity Texture Features; Fusion for connected textures (Continuity cut: on NeoForge it needs Sinytra Connector).
 - Atmospherics (per-biome fog, sky, clouds, stars); mostly replaced when shaders are on, so it mainly helps non-shader players. Check its biome-teleport menu is op-only.
 - Sound Physics Remastered, AmbientSounds, Falling Leaves, Camera Overhaul, dynamic lighting.
 - Not included: Smooth Loading Screen (Fabric-only); Diorama (no 1.21.1 NeoForge build) — Xaero's instead.
@@ -199,19 +199,21 @@ Test with the whole group early, before writing quests, so heavy mods are found 
 4. Ars 'n Spells rituals and shared mana.
 5. Wire comparison in creative: Crafts & Additions vs IE (range, throughput, looks).
 6. The Nether difficulty jump with progressive difficulty + Apotheosis + Vampirism together.
-7. Vampires vs the food variety mod.
+7. Vampires vs Spice of Life: Onion.
 8. Cloud pet upkeep cost.
 9. Group play test on treehouse: several airships in the air, players spread out, Spark running.
 10. Steam 'n' Rails (unofficial 1.21.1 port, beta) on treehouse: lay snow-paved tracks, let it snow (and a Serene Seasons winter), run trains; watch for the crash/kick from port issue #361 (fix proposed in PR #372, not merged). Also check assembled trains with shaders on, plus couplers and Conductor Whistle.
+11. Bosses of Mass Destruction (NeoForge port): summon each boss, check drops, and confirm the bosses keep their designed stats (progressive difficulty and Apotheosis must not scale them).
+12. Quark: after first launch, confirm config/quark-common.toml kept our disabled modules (sorting, easy transferring, tool restock, Pathfinder Maps, Ancient Tomes, Glimmering Weald) and look for other overlaps.
 
 **Open questions**
 
-- Decided: EMI (not JEI), Terralith out; Claude Code picks the gravestone and dynamic lighting mods.
-- Modern Industrialization or Oritech?
-- Spice of Life or Diet?
+- Decided: EMI as the recipe viewer (JEI installed alongside for its plugins), Terralith out; gravestone = GraveStone Mod, dynamic lighting = LambDynamicLights.
+- Modern Industrialization or Oritech? Decide during the creative test.
+- ~~Spice of Life or Diet?~~ Spice of Life: Onion.
 - Remaining choices are settled during testing (below).
 - Which portal method for the Pokémon world?
-- Neo Vitae in?
+- ~~Neo Vitae in?~~ In.
 
 ## Next steps in Claude Code
 

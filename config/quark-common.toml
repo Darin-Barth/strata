@@ -1,0 +1,29 @@
+#Strata: only the Quark modules that overlap other mods in the pack are switched off here.
+#Quark fills in every other setting with its defaults on first launch.
+#Module names checked against the Quark 4.1-487 jar (1.21.1).
+
+[general]
+	#Regions Unexplored is the pack's only biome mod; don't add Quark's TerraBlender region.
+	"Terrablender Add Region" = false
+
+[management]
+	#Inventory Profiles Next does sorting.
+	"Inventory Sorting" = false
+	#Mouse Tweaks + Inventory Profiles Next do item transfer shortcuts.
+	"Easy Transferring" = false
+	#Inventory Profiles Next does tool/stack auto-refill.
+	"Automatic Tool Restock" = false
+
+[tools]
+	#Explorer's Compass and Nature's Compass find biomes and structures.
+	"Pathfinder Maps" = false
+	#Apotheosis (Apothic Enchanting) owns enchanting progression.
+	"Ancient Tomes" = false
+
+[world]
+	#Extra biome; Regions Unexplored is the sole biome mod (keeps worldgen lighter).
+	"Glimmering Weald" = false
+
+[automation]
+	#Default is already off; kept off so pistons can't move Create/Mekanism/AE2 block entities (dupe/crash risk).
+	"Pistons Move Tile Entities" = false

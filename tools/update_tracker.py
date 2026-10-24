@@ -3,6 +3,7 @@
 Sets column G (1.21.1 NeoForge) and fills a new column J ("Phase 1 lookup") with where the build was found.
 Usage: python -I tools/update_tracker.py
 """
+from copy import copy
 from pathlib import Path
 
 import openpyxl
@@ -203,12 +204,91 @@ R = {
     "Spark": (C, "MR spark 1.10.124"),
 }
 
+# --- Decisions after phase 1 (docs/open-questions.md answers, Oct 23, 2026) ---
+
+# Rows renamed to the mod actually chosen. Old name -> new name (applied once, then R uses the new name).
+RENAMES = {
+    "Create Thrusters": "Create Aeronautics: Gadgets & Gizmos",
+    "Drive By Wire": "Drive-By-Wire with Sable",
+    "Domestication Innovation": "Redomesticate",
+    "Alex's Mobs": "Alex's Mobs Continued",
+    "Bosses of Mass Destruction": "Bosses of Mass Destruction (Forge port)",
+    "Spice of Life or Diet (pick one)": "Spice of Life: Onion",
+    "Plushie mod": "Plushie Mod",
+    "Gravestone / corpse mod": "GraveStone Mod",
+    "Dynamic lighting mod": "LambDynamicLights",
+}
+for old, new in RENAMES.items():
+    if old in R:
+        R[new] = R.pop(old)
+
+R.update({
+    "Create Aeronautics: Gadgets & Gizmos": (C, "Was 'Create Thrusters'. MR create-aeronautics-gadgets-and-gizmos 1.2.10, PINNED (2.0 is in rapid pre-release)"),
+    "Drive-By-Wire with Sable": (C, "Was 'Drive By Wire' (original Forge-only). MR drive-by-wire-sable 0.3.0"),
+    "Redomesticate": (C, "Was 'Domestication Innovation' (abandoned 2023). MR redomesticate 1.11.2"),
+    "Alex's Mobs Continued": (C, "Original has no 1.21.1 build. MR alexs-mobs-continued 2.2.4"),
+    "Bosses of Mass Destruction (Forge port)": (C, "Original is Fabric-first. MR bosses-of-mass-destruction-forge 1.3.3 (+ CERBON's API). Test 11"),
+    "Spice of Life: Onion": (C, "Diet has no 1.21.1 build. MR spice-of-life-onion 1.5.7. Test with vampires (test 7)"),
+    "Plushie Mod": (C, "MR plushie 1.5.1"),
+    "Neo Vitae": (C, "MR neovitae 1.1.48"),
+    "The Aether": (C, "MR aether 1.5.10 (+ owo-lib)"),
+    "Undergarden": (C, "MR the-undergarden 0.9.6 beta. Out for now (beta); revisit later"),
+    "Botania": (N, "No 1.21.1 build. Cut: Ars, Iron's, Occultism, Vampirism and Neo Vitae cover magic"),
+    "Ars Botania": (C, "Requires Botania (no build). Cut with Botania"),
+    "Blue Skies": (N, "No 1.21.1 build. Cut"),
+    "Dimension Gated Difficulty": (N, "No 1.21.1 build. Cut: not needed, Majrusz's Continued has one"),
+    "Continuity": (C, "Cut: on NeoForge it needs Sinytra Connector + Forgified Fabric API. Fusion covers connected textures"),
+    "Discord bridge mod": (V, "Not added yet. Recommended: Simple Discord Link (MR sdlink, server-only, MIT, ~10 MB + CraterLib). See REPORT.md"),
+    "Farmer's Delight + add-ons": (C, "MR farmers-delight 1.3.4. Add-ons: see the Delight rows"),
+})
+
+# Status column (F) changes. Rows not listed keep their status.
+STATUS = {
+    "Botania": "Cut", "Ars Botania": "Cut", "Blue Skies": "Cut", "Dimension Gated Difficulty": "Cut",
+    "Continuity": "Cut", "Spice of Life: Onion": "Keep", "Neo Vitae": "Keep", "The Aether": "Keep",
+    "Alex's Mobs Continued": "Keep", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
+}
+
+# New rows: (Mod, Category, Pillar, Needs, Side, Status, 1.21.1 NeoForge, Flags, Notes, Lookup)
+NEW_ROWS = [
+    ("Just Enough Items (JEI)", "QoL", "Core", None, "Both", "Keep", C, None,
+     "Runs alongside EMI so JEI plugins (JER) work", "MR jei 19.69.0 (+ MezzConfig)"),
+    ("Quark + Zeta", "Building", "Life", "Zeta", "Both", "Keep", C, "Config",
+     "Required by Integrated Cataclysm. Overlapping modules disabled in config/quark-common.toml",
+     "MR quark 4.1-487 + zeta 1.1-40"),
+    ("Ender's Delight", "Food and farming", "Life", "Farmer's Delight", "Both", "Keep", C, None,
+     "End foods", "MR enders-delight 1.3.1"),
+    ("Twilight's Flavor & Delight", "Food and farming", "Life", "Farmer's Delight, Twilight Forest", "Both", "Keep", C, None,
+     "Twilight Forest foods", "MR twilight-delight 3.2.8"),
+    ("Ars Nouveau's Flavors & Delight", "Food and farming", "Life", "Farmer's Delight, Ars Nouveau", "Both", "Keep", C, None,
+     "Ars Nouveau foods", "MR arsdelight 2.2.5"),
+    ("L_Ender's Cataclysm Delight", "Food and farming", "Life", "Farmer's Delight, Cataclysm", "Both", "Keep", C, None,
+     "Cataclysm boss-drop foods", "MR l_enders-cataclysm-delight 1.0.10b"),
+    ("Aether's Delight", "Food and farming", "Life", "Farmer's Delight, The Aether", "Both", "Keep", C, None,
+     "Aether foods. Beta, last updated Oct 2025", "MR the-aethers-delight 0.1.4.2 (beta)"),
+]
+
 
 def main():
     wb = openpyxl.load_workbook(XLSX)
     ws = wb["Mods"]
     ws.cell(1, 10, "Phase 1 lookup").font = Font(bold=True)
     ws.column_dimensions["J"].width = 70
+    for row in range(2, ws.max_row + 1):
+        name = ws.cell(row, 1).value
+        if name in RENAMES:
+            ws.cell(row, 1, RENAMES[name])
+            name = RENAMES[name]
+        if name in STATUS:
+            ws.cell(row, 6, STATUS[name])
+    existing = {ws.cell(r, 1).value for r in range(2, ws.max_row + 1)}
+    for values in NEW_ROWS:
+        if values[0] in existing:
+            continue
+        r = ws.max_row + 1
+        for col, v in enumerate(values, start=1):
+            c = ws.cell(r, col, v)
+            c._style = copy(ws.cell(r - 1, col)._style)
     seen = set()
     for row in range(2, ws.max_row + 1):
         name = ws.cell(row, 1).value
@@ -220,7 +300,8 @@ def main():
             seen.add(name)
     missing = [n for n in R if n not in seen]
     unlisted = [ws.cell(r, 1).value for r in range(2, ws.max_row + 1)
-                if ws.cell(r, 6).value in ("Keep", "Maybe") and ws.cell(r, 1).value not in R]
+                if ws.cell(r, 6).value in ("Keep", "Maybe") and ws.cell(r, 1).value not in R
+                and ws.cell(r, 1).value not in {n[0] for n in NEW_ROWS}]
     wb.save(XLSX)
     print("names not found in sheet:", missing)
     print("Keep/Maybe rows without a result:", unlisted)

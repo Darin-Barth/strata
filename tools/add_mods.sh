@@ -40,6 +40,10 @@ MR=(
   entitytexturefeatures continuity fusion-connected-textures atmospherics sound-physics-remastered
   ambientsounds cameraoverhaul
   modernfix ferrite-core immediatelyfast entityculling badoptimizations lithium noisium chunky clumps lmd spark
+  # Round 1 decisions (docs/open-questions.md)
+  drive-by-wire-sable redomesticate jei spice-of-life-onion neovitae aether alexs-mobs-continued
+  bosses-of-mass-destruction-forge plushie enders-delight twilight-delight arsdelight
+  l_enders-cataclysm-delight the-aethers-delight
 )
 
 CF=(
@@ -62,5 +66,9 @@ done
 # Fabric API is not needed on NeoForge, so decline dependencies for it.
 out=$(echo n | packwiz mr add lambdynamiclights 2>&1 | grep -vE "Refreshing|^\s*$")
 echo "MR lambdynamiclights :: $(echo "$out" | tr '\n' ' ')" >> "$LOG"
+# Gadgets & Gizmos: pinned to the last stable 1.x build (2.0 is in rapid pre-release).
+out=$(packwiz mr add "https://modrinth.com/mod/create-aeronautics-gadgets-and-gizmos/version/MgD655V5" -y 2>&1 | grep -vE "Refreshing|^\s*$")
+echo "MR create-aeronautics-gadgets-and-gizmos 1.2.10 :: $(echo "$out" | tr '\n' ' ')" >> "$LOG"
+packwiz pin create-aeronautics-gadgets-and-gizmos >> "$LOG" 2>&1
 packwiz refresh >> "$LOG" 2>&1
 echo DONE >> "$LOG"
