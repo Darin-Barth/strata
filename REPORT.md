@@ -117,6 +117,9 @@ Log findings (no action needed to boot):
 - Next levers: 10 GB for singleplayer testing, generational ZGC (`-XX:+UseZGC -XX:+ZGenerational`) to cut collector pauses, and profiling worldgen on the test server to find the heaviest mods. Multiplayer clients won't generate terrain (treehouse is pregenerated), so they need less.
 - **Overlap found:** Iron & Nouveau's in-game notice says Ars 'n Spells 3.4.0+ includes its own Iron's Spells glyphs, so the two overlap. Options: keep Ars 'n Spells only, or set Iron & Nouveau's `enable_iron_glyphs = false` and `enable_glyph_press = false` (per-world server config). **Decision needed.**
 
+## Worldgen profile (Oct 24, 2026)
+Chunky + Spark on the Docker server, decoded locally: see `docs/worldgen-profile.md`. Pregeneration ran at about 6.8 chunks/s. The **main server thread** (chunk unload/save) and **G1 GC (~30% of CPU)** are the bottleneck, not mod worldgen; worker threads were mostly idle. The heaviest worldgen is Tectonic's terrain (via Lithostitched, 24%), then Quark's features (7%).
+
 ## Still open
 - Iron & Nouveau vs Ars 'n Spells glyph overlap (see client test 3).
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
