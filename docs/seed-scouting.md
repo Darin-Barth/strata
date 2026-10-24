@@ -19,3 +19,8 @@
 - Same seed + same terrain/biome mods = same landscape. **After choosing, don't add or remove terrain or biome mods** (Tectonic, Regions Unexplored, Streams Reflowing, Biolith/TerraBlender-based biome mods, or later Undergarden-style additions that change Overworld biomes). Doing so can reshape the map around spawn.
 - Changes to structures, ores or features (moving Cobblemon worldgen to the Pokémon world, chest fixes, Inventory Pets rarity) don't move mountains, rivers or biomes. They're safe to finish after picking the seed, but they must be done **before pregenerating**.
 - On the server, use the seed in `server.properties` (itzg: `SEED=`) and set the exact spawn with `/setworldspawn X Y Z` before pregenerating around it.
+
+## Candidates
+| Seed | Spot | Notes |
+| --- | --- | --- |
+| `1121906793898615393` | Village/meadow at X 24031, Y 111, Z −26565 (world spawn in the save: X 24936, Y 64, Z −26280) | Found Oct 24 by Darin. Meadow with a village, mountains behind. Spawn point still to choose: the village spot or the save's spawn ~950 blocks east. |
