@@ -835,11 +835,6 @@ hash = "450ed5663bf1d12ffddc78eda5aa56cb7808cbdac6db8102d18461361aaa555f"
 metafile = true
 
 [[files]]
-file = "mods/majruszs-progressive-difficulty-continued.pw.toml"
-hash = "08a219a0c37b17c2eb0d98bbc24923354e6b3cbc5203e145689496b93699f3e5"
-metafile = true
-
-[[files]]
 file = "mods/mekanism-generators.pw.toml"
 hash = "0ec2ceb5602df266d2e07bdc0bc409cdd3d325a6b5136554787779cdf8057a27"
 metafile = true

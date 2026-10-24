@@ -51,7 +51,7 @@ MR=(
 CF=(
   ftb-quests-forge ftb-chunks-forge ftb-teams-forge ftb-ultimine-forge laserio flux-networks
   irons-nouveau apotheosis-x-irons-spellbooks-compat vampiric-ageing-a-vampirism-addon bloodlines
-  integrated-cataclysm forsaken-relics the-twilight-forest majruszs-progressive-difficulty-continued
+  integrated-cataclysm forsaken-relics the-twilight-forest
   mob-grinding-utils creatures-and-beasts-continued ex-pattern-provider alltheleaks macaws-stairs
   falling-leaves-forge cosmetic-armor-reworked
 )

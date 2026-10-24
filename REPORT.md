@@ -1,7 +1,7 @@
 # Strata — Phase 1 report
 
 Pack: packwiz project `Strata` 0.1.0, Minecraft 1.21.1, NeoForge 21.1.264.
-Contents: 262 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
+Contents: 261 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
 Every Keep/Maybe row was checked against the Modrinth API, and through packwiz against CurseForge for anything missing on Modrinth. Results are in `docs/strata-mod-tracker.xlsx`: column G was updated and a new column J, "Phase 1 lookup", says where each build was found.
 Mods come from Modrinth where possible. 23 projects that only exist on CurseForge (or only have a build there) come from CurseForge.
 
@@ -36,7 +36,7 @@ Maybe rows with no build: Blue Skies and Dimension Gated Difficulty (both cut) a
 - **JEI** is now installed alongside EMI so JEI plugins like Just Enough Resources work. EMI stays the main recipe viewer.
 - **Quark + Zeta** stay (required by Integrated Cataclysm), with overlapping modules turned off (see below).
 - Modrinth-declared incompatibilities among the 237 Modrinth-sourced projects: **none found** (`tools/check_conflicts.py`).
-- The design's existing risks stand: Iron & Nouveau's listing says it works alongside Ars 'n Spells (test 4), and Vampirism plus Majrusz plus Apotheosis scaling (test 6).
+- The design's existing risks stand: Iron & Nouveau's listing says it works alongside Ars 'n Spells (test 4), and Vampirism plus the difficulty script plus Apotheosis scaling (test 6).
 - Several mods are beta builds: Crafts & Additions, Industrial Foregoing, Relics, Functional Storage, Serene Seasons, Bountiful, Iris, Simple Voice Chat, and others.
 
 ## Sides
@@ -88,7 +88,7 @@ Run in Docker with the itzg image (`java21`), NeoForge 21.1.264, 8 GB, with the 
 
 Fixes found and applied:
 - **Kambrik** (needed by Bountiful) and **TerraBlender** (needed by YUNG's Cave Biomes) were missing. Their Modrinth listings don't declare these dependencies. Both are added.
-- **Majrusz's Progressive Difficulty Continued is excluded from the CurseForge API.** The author opted out of third-party downloads, so packwiz can't install it, and the test ran without it. This will block treehouse and packwiz-based player installs too. **Decision needed** (below).
+- **Majrusz's Progressive Difficulty Continued is excluded from the CurseForge API.** The author opted out of third-party downloads, so packwiz can't install it, and the test ran without it. This will block treehouse and packwiz-based player installs too. **Decided Oct 24: dropped.** Staged difficulty becomes a KubeJS script in phase 2 (see docs/difficulty-options.md).
 
 Log findings (no action needed to boot):
 - Most of the ~300 ERROR lines are optional compatibility for mods we don't have (Botany Pots, ComputerCraft, BYG/BOP biomes, Hexcasting, FramedBlocks) and client classes the server skips. That's normal.
@@ -97,7 +97,6 @@ Log findings (no action needed to boot):
 - Simple Discord Link disables itself until it has a bot token (expected).
 
 ## Still open
-0. **Majrusz's Progressive Difficulty Continued can't be auto-downloaded** (CurseForge opt-out, not on Modrinth). Options: download it by hand for the server and players, ship CurseForge-format exports for players, or switch difficulty mods.
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.
 3. Pokémon world portal, and the Kanto map license: when we build the Pokémon world.

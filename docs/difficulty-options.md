@@ -1,5 +1,7 @@
 # Progressive difficulty: options (researched Oct 24, 2026)
 
+> **Decision (Oct 24): option E, a KubeJS script in phase 2.** Majrusz's was removed from the pack. The script spec is in the design doc's KubeJS to-do list.
+
 **Problem:** Majrusz's Progressive Difficulty Continued (CurseForge only, by DraupnirDev) is excluded from the CurseForge API, so packwiz, the itzg server image and launcher installs can't download it automatically. It is not on Modrinth.
 
 **What the design asks for:** staged difficulty (Normal → Expert after the first Nether visit → Master after the Ender Dragon); it is the only thing scaling regular mobs; bosses keep their designed stats; a modest Nether step with bigger jumps in dangerous dimensions.

@@ -111,7 +111,7 @@ R = {
     "Explorer's Compass": (C, "MR explorers-compass 3.4.0"),
     "Nature's Compass": (C, "MR natures-compass 3.4.0"),
     "Waystones": (C, "MR waystones 21.1.46"),
-    "Majrusz's Progressive Difficulty Continued": (C, "CF majruszs-progressive-difficulty-continued 1.1.6 (the original has no 1.21.1 build). EXCLUDED from the CF API: packwiz can't auto-download it (needs a manual download or another distribution route)"),
+    "Majrusz's Progressive Difficulty Continued": (C, "Cut Oct 24: CF-only and excluded from the CF API (no auto-download); Expert triggers on any modded dimension. Replaced by a KubeJS staged-difficulty script (phase 2). See docs/difficulty-options.md"),
     "Dimension Gated Difficulty": (N, "No 1.21.1 NeoForge build on CurseForge; not on Modrinth"),
     "Better Combat": (C, "MR better-combat 2.4.0"),
     "Apothic Combat": (C, "MR apothic-combat 1.2.1"),
@@ -247,7 +247,8 @@ R.update({
 # Status column (F) changes. Rows not listed keep their status.
 STATUS = {
     "Botania": "Cut", "Ars Botania": "Cut", "Blue Skies": "Cut", "Dimension Gated Difficulty": "Cut",
-    "Continuity": "Cut", "Spice of Life: Onion": "Keep", "Neo Vitae": "Keep", "The Aether": "Keep",
+    "Continuity": "Cut", "Majrusz's Progressive Difficulty Continued": "Cut",
+    "Spice of Life: Onion": "Keep", "Neo Vitae": "Keep", "The Aether": "Keep",
     "Alex's Mobs Continued": "Keep", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
 }
 
@@ -258,6 +259,9 @@ NEW_ROWS = [
     ("Quark + Zeta", "Building", "Life", "Zeta", "Both", "Keep", C, "Config",
      "Required by Integrated Cataclysm. Overlapping modules disabled in config/quark-common.toml",
      "MR quark 4.1-487 + zeta 1.1-40"),
+    ("Staged difficulty (KubeJS script)", "Difficulty", "Exploration", "KubeJS", "Server", "Keep", C, "KubeJS",
+     "Normal > Expert (first Nether entry) > Master (first Dragon kill); per-dimension multipliers; bosses excluded. Phase 2",
+     "Our own script, replaces Majrusz's (see docs/difficulty-options.md)"),
     ("Ender's Delight", "Food and farming", "Life", "Farmer's Delight", "Both", "Keep", C, None,
      "End foods", "MR enders-delight 1.3.1"),
     ("Twilight's Flavor & Delight", "Food and farming", "Life", "Farmer's Delight, Twilight Forest", "Both", "Keep", C, None,

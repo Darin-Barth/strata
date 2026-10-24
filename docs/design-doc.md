@@ -51,7 +51,7 @@ Travel and logistics must cost something, so trains, airships and power grids st
 
 Challenge is there for anyone who wants it, but the world stays friendly for builders and newer players.
 
-- **Staged difficulty, like MC Eternal:** Majrusz's Progressive Difficulty (Continued fork) — Normal at start, Expert after the first Nether visit, Master after the Ender Dragon. Fallback: Dimension Gated Difficulty.
+- **Staged difficulty, like MC Eternal:** our own KubeJS script (phase 2) — Normal at start, Expert after the first Nether visit, Master after the Ender Dragon, as a server-wide stage. Replaces Majrusz's Progressive Difficulty Continued, which was dropped on Oct 24, 2026: it can't be auto-downloaded (CurseForge API opt-out), it starts Expert on entering *any* modded dimension, and it brings extra systems (bleeding, Undead Army, Enderium tier). See docs/difficulty-options.md.
 - **Avoid MC Eternal 2's stacking problem:** bosses keep their designed stats; the progressive mod is the only thing scaling regular mobs. Keep the Nether step modest so newer players aren't overwhelmed; put the bigger jumps in dangerous dimensions.
 - **Apotheosis:** randomized gear, gems, elite mobs. Configure elites to be rare near spawn and more common in the Nether, End and far out.
 - **Boss gating:** quests and KubeJS recipes require boss drops for late tiers (for example Cataclysm drops for top Mekanism/AE2 parts and cross-dimension wireless).
@@ -180,7 +180,7 @@ These are the tweaks that make the pack feel designed rather than piled together
 - [ ] Disable or re-gate Inventory Pets that teleport or give free flight (Cloud, Nether Portal, Ender Chest — review the rest)
 - [ ] Excessive Utilities: remove or cost-gate any free-flight item
 - [ ] Player commands: no `/home`, `/back`, `/rtp`, `/tpa` for non-ops
-- [ ] Progressive difficulty: modest Nether step, bigger End/dangerous-dimension steps
+- [ ] Progressive difficulty KubeJS script: server-wide stage (Normal → Expert on the first Nether entry → Master on the first Dragon kill), stored in server persistent data. On spawn, scale health/damage/armor of regular hostile mobs by stage × per-dimension multiplier (modest Nether step; bigger in the End, Twilight Forest, Deeper and Darker, Cataclysm areas; none in the Pokémon world). Skip bosses (`c:bosses` tag + an explicit list: Cataclysm, Mowzie's, BoMD, Twilight bosses, Wither, Dragon, Warden). Op commands to view/set the stage. Tested in test 6
 - [ ] Apotheosis: elite mobs rare near spawn, more common far out and in other dimensions
 - [ ] Create Big Cannons: limit block damage; FTB Chunks claims block explosions
 - [ ] Vampirism: PvP between factions only

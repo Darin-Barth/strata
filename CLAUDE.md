@@ -19,12 +19,12 @@ Test for any mod: keep if it adds a different way to play; question it if it dup
 - **Flight must cost something** (fuel, power, mana, stamina, durability). No free "wear it and fly" items: Inventory Pets Cloud pet and Excessive Utilities angel-ring style items get removed or cost-gated. MekaSuit flight = late-game.
 - **Wireless tiers**: early none (cables/belts/trains/IE wires) → mid (after Nether or first boss) same-dimension wireless (Flux Networks, AE2 wireless, Mek entangloporters) → late cross-dimension (AE2 Quantum Network Bridge, boss-drop gated).
 - **Power**: Crafts & Additions alternator (FE output lowered) < New Age generators < New Age nuclear / Mek fission+fusion. Remove New Age wire recipes; grid = C&A wires (local) + IE LV/MV/HV (long distance).
-- **Difficulty**: Majrusz's Progressive Difficulty (Continued) is the ONLY regular-mob scaler (fallback Dimension Gated Difficulty). Normal → Expert (Nether, modest step) → Master (Dragon). Bosses keep designed stats. Apotheosis elites rare near spawn. Vampirism scales its own mobs — include in tests.
+- **Difficulty**: our KubeJS staged-difficulty script (phase 2; Majrusz's was dropped) is the ONLY regular-mob scaler. Normal → Expert (Nether, modest step) → Master (Dragon). Bosses keep designed stats. Apotheosis elites rare near spawn. Vampirism scales its own mobs — include in tests.
 - **Boss gating**: late Mek/AE2 tiers and cross-dim wireless need boss drops (e.g. Cataclysm).
 - **Combat**: Better Combat + Apothic Combat + Combat Roll. Not Epic Fight.
-- **Magic bridges**: Ars 'n Spells + Iron & Nouveau (never also Ars↔Iron Mana Bridge), Ars Ocultas, Ars Botania, Ars Énergistique, Ars Creo, Apotheosis×Iron's, Vampirism×Iron's.
+- **Magic bridges**: Ars 'n Spells + Iron & Nouveau (never also Ars↔Iron Mana Bridge), Ars Ocultas, Ars Énergistique, Ars Creo, Apotheosis×Iron's, Vampirism×Iron's.
 - **Worldgen**: Tectonic + Regions Unexplored + Streams Reflowing. No Terralith, no Dynamic Trees, no C2ME. Incendium (not with Amplified Nether), Nullscape. Pregenerate with Chunky.
-- **Client/visual**: every heavy visual is client-only and optional. Sodium (not Embeddium) + Iris. EMI, not JEI. Curios is the accessory standard (Accessories only if a mod needs it).
+- **Client/visual**: every heavy visual is client-only and optional. Sodium (not Embeddium) + Iris. EMI is the recipe viewer; JEI is installed alongside only so JEI plugins (JER) work. Botania and Ars Botania are out (no 1.21.1 build). Curios is the accessory standard (Accessories only if a mod needs it).
 - **Pokémon**: Cobblemon in its own dimension (datapack, own namespace); wild spawns disabled elsewhere; riding allowed everywhere. Built after the base pack is stable.
 
 ## Phase plan
