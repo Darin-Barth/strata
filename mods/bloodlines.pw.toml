@@ -1,0 +1,13 @@
+name = "Bloodlines - A Vampirism Addon"
+filename = "bloodlines-1.21-3.0.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b14ff359c7530c0e40ca289cc023bd1c19a070af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8639194
+project-id = 1073052

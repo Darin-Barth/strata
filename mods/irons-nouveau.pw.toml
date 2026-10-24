@@ -1,0 +1,13 @@
+name = "Iron & Nouveau"
+filename = "irons-nouveau-0.17.24-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c02be7673c5644e2f8dc68e48470798504be4e6e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9297929
+project-id = 1726248

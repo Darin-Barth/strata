@@ -1,0 +1,13 @@
+name = "Forsaken Relics"
+filename = "forsaken_relics-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9dc195524f6023ac5166c984ba129765bd4d6531"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9068717
+project-id = 1717567

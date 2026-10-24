@@ -1,0 +1,226 @@
+# Strata — Design Doc
+
+Oct 23, 2026 · @Darin
+
+## Overview
+
+The pack is named Strata, tagline "Build. Fly. Explore." It targets **Minecraft 1.21.1 on NeoForge**, because Create Aeronautics only exists there. It is a kitchen-sink pack in the 500–600 mod range, built around three pillars and a lot of world-filling content.
+
+| Item | Decision |
+| --- | --- |
+| Minecraft / loader | 1.21.1 / NeoForge (newest version Create Aeronautics supports) |
+| Size | No hard ceiling; MC Eternal 2 (\~600 mods) runs on everyone's PCs today |
+| Players | 5–6 friends, mixed PC specs; two newer players who prefer exploring and cute content |
+| Hosting | treehouse (Ryzen 5 3600, 32 GB RAM, Debian 13 + Docker, itzg image) |
+| Pillars | 1. Technology and automation (Create, Mekanism) · 2. Magic · 3. Exploration, bosses, dungeons |
+| Structure | Sandbox with FTB Quests chapters per mod and boss (middle ground between ATM and MC Eternal) |
+| Feel | A "full" world: wildlife, ambience, structures and visuals so it never feels empty |
+
+Guiding test for every mod: keep it when it adds a different way to play; question it when it does the same job as something already in.
+
+## Core rules
+
+Travel and logistics must cost something, so trains, airships and power grids stay worth building.
+
+**Teleporting**
+
+- No free commands for players: no `/home`, `/back`, `/rtp`, `/tpa` (leave out FTB Essentials or disable these for non-ops).
+- Waystones allowed, with an XP cost that scales with distance and an extra cost across dimensions; warp scrolls and warp stones removed from loot.
+- Earned teleporting is fine: Mekanism Teleporters (power + fixed points), Ars Nouveau warp, short-range blink spells, Vampirism's vampire teleport skill, the Royal Telelocator (breaks, repaired with Royal Ender Pearls).
+
+**Flight: it has to cost something** (fuel, power, mana, stamina, durability). Free creative-style flight is out.
+
+| Source | Verdict |
+| --- | --- |
+| Mekanism jetpack (hydrogen), PneumaticCraft Jet Boots (air) | Allowed |
+| Ars Nouveau / Iron's flight (mana) | Allowed |
+| Cobblemon riding, including flying Pokémon (stamina), in every dimension | Allowed |
+| Elytra (rockets, durability), airships | Allowed |
+| MekaSuit flight module | Allowed as a late-game reward |
+| Inventory Pets Cloud pet | Test: out unless feeding is a real cost (or raise its cost with KubeJS) |
+| Excessive Utilities angel-ring style items | Remove or tie to a cost (XP or power) |
+| Any "wear it and fly free" item | Same treatment as the Cloud pet |
+
+**Wireless items and power come in tiers**
+
+1. Early: cables, pipes, belts, trains, IE power lines. No wireless.
+2. Mid (after entering the Nether or the first major boss): wireless within one dimension — Flux Networks, AE2 wireless terminals, Mekanism quantum entangloporters.
+3. Late: cross-dimension wireless — AE2 Quantum Network Bridge. Until then, moving goods between dimensions takes a train or airship.
+
+## Progression and difficulty
+
+Challenge is there for anyone who wants it, but the world stays friendly for builders and newer players.
+
+- **Staged difficulty, like MC Eternal:** Majrusz's Progressive Difficulty (Continued fork) — Normal at start, Expert after the first Nether visit, Master after the Ender Dragon. Fallback: Dimension Gated Difficulty.
+- **Avoid MC Eternal 2's stacking problem:** bosses keep their designed stats; the progressive mod is the only thing scaling regular mobs. Keep the Nether step modest so newer players aren't overwhelmed; put the bigger jumps in dangerous dimensions.
+- **Apotheosis:** randomized gear, gems, elite mobs. Configure elites to be rare near spawn and more common in the Nether, End and far out.
+- **Boss gating:** quests and KubeJS recipes require boss drops for late tiers (for example Cataclysm drops for top Mekanism/AE2 parts and cross-dimension wireless).
+- **Other scalers to watch:** Vampirism scales its own mobs to nearby player level — include it in the Nether-jump play test.
+- **Safety nets:** gravestone/corpse mod so death doesn't scatter items; Domestication Innovation so pets aren't lost for good.
+- **Combat feel:** Better Combat + Apothic Combat + Combat Roll (not Epic Fight).
+
+## Tech pillar
+
+Tech is the heaviest pillar: Create plus its add-on ecosystem, Mekanism, AE2, and several big tech mods that each bring a different way to play.
+
+**Power progression**
+
+1. Early: Create rotation → Crafts & Additions alternator. Compact but lossy; alternator FE output lowered in config so free water-wheel power doesn't make Mekanism generators pointless.
+2. Mid: Create: New Age multiblock coil/magnet generators, clearly more efficient than the alternator.
+3. Late: New Age nuclear heat into Create steam engines, alongside Mekanism fission and fusion.
+
+**The grid**
+
+- Crafts & Additions hanging wires for local runs around factories.
+- Immersive Engineering LV/MV/HV lines for long distance between buildings, with transformers at substations. Both carry FE and meet at an FE block (for example an accumulator).
+- New Age's wire recipes removed with KubeJS; its generators, motors and nuclear stay.
+- Inside bases, Mekanism universal cables; Flux Networks later per the wireless tiers.
+
+**Mod groups** (full list in the tracker)
+
+- Create + flight, power, processing, trains/logistics/trading, building and vehicle add-ons, plus Create Big Cannons.
+- Mekanism + Generators, Tools, Applied Mekanistics.
+- AE2 + ExtendedAE, Applied Flux.
+- Immersive Engineering, Industrial Foregoing, PneumaticCraft: Repressurized, Powah, Extreme Reactors, Integrated Dynamics, Laser IO, Excessive Utilities, one of Modern Industrialization / Oritech.
+- Resource automation: Mystical Agriculture, Productive Bees, Mob Grinding Utils.
+- **Almost Unified** is required so the many copper/tin/steel variants collapse to one.
+
+## Magic pillar
+
+Ars Nouveau is the hub; the other magic mods connect to it through bridge mods so the systems work together.
+
+| Connection | Bridge mod | Notes |
+| --- | --- | --- |
+| Ars ↔ Iron's Spells | Ars 'n Spells (+ Iron & Nouveau) | Shared mana pool and progression. Newer mod with recent ritual fixes — test early. Do not also add Ars ↔ Iron Mana Bridge. |
+| Ars ↔ Occultism | Ars Ocultas | Spirits work from Ars Containment Jars |
+| Ars ↔ Botania | Ars Botania | Mana moves both ways; AE2 source jars / mana pools see both |
+| Ars ↔ AE2 | Ars Énergistique | Verify 1.21.1 |
+| Ars ↔ Create | Ars Creo | Verify 1.21.1 |
+| Iron's ↔ Apotheosis | Apotheosis x Iron's Spellbooks Compat |  |
+| Vampirism ↔ Iron's | Vampirism Iron's Spells Compatibility | Blood spells drain Vampirism blood; holy damage vs vampires |
+
+Optional fifth magic mod: Neo Vitae (Blood Magic continuation).
+
+**Vampirism** is opt-in per player: vampire, hunter, or ignore it. Include Vampirism Integrations, Werewolves, Vampire's Delight, and if 1.21.1 builds exist, Vampires Need Umbrellas, Vampiric Ageing and Bloodlines. Godly Vampirism and the Mekanism x Vampirism MekaSuit mod (1.20.1 only) are out. Factions-only PvP via config. Test vampires against the food variety mod.
+
+## Exploration pillar
+
+The world is built for long-distance travel: big terrain, lots of structures, real bosses, and reasons to keep looting all game.
+
+- **Terrain and biomes:** Tectonic (terrain shape) + Regions Unexplored 6.0 (main biome mod, ATM10 Aeronautics' pick) + Streams Reflowing. Terralith decided out — stacking two big biome mods mostly adds worldgen cost.
+- **Structures:** YUNG's suite, Towns and Towers, When Dungeons Arise, Dungeons and Taverns, Integrated Dungeons and Structures, Explorify. Lootr so every player gets their own loot.
+- **Bosses:** L\_Ender's Cataclysm + Integrated Cataclysm (Create doors, puzzles, traps), Mowzie's Mobs, Bosses of Mass Destruction (verify NeoForge).
+- **Dimensions:** Twilight Forest, Deeper and Darker, plus the Aether / Undergarden / Blue Skies to verify. Nether: Incendium (not compatible with Amplified Nether). End: Nullscape.
+- **Reasons to keep exploring:** Apotheosis gear and gems; boss drops gating progression; Relics/Artifacts accessories.
+- **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips.
+- **Pregenerate** the world with Chunky before anyone joins; heavy worldgen is the main server performance risk.
+
+## Pokémon world
+
+Cobblemon lives in its own "vanilla + Cobblemon" dimension reached by a portal; players can bring their Pokémon anywhere. Built after the base pack is stable.
+
+1. **Dimension:** datapack with copies of the vanilla noise settings and biomes under our own namespace (for example `pokeworld:plains`), so Tectonic, Terralith, Streams Reflowing and the Overworld structure mods don't apply there.
+2. **Spawns:** add the copied biomes to Cobblemon's biome tags. Wild spawns must be off in every other dimension while owned Pokémon still work everywhere. No Mons In My World is Fabric-only (checked Oct 23, 2026; MIT license, no NeoForge port or equivalent), so we build our own when we get here. Options, in the order to try:
+   1. **KubeJS:** cancel Cobblemon's natural-spawn event unless the dimension is the Pokémon world. That event only covers natural spawns, so sent-out, trainer (Radical Cobblemon Trainers) and battle Pokémon are unaffected. Unverified: whether KubeJS can subscribe to Cobblemon's Kotlin events.
+   2. **Small NeoForge mod:** the same hook, with a config list of dimensions where spawning is allowed. About 50 lines. The most robust option, but it needs a Java build setup and ongoing maintenance.
+   3. **Datapack only:** replace Cobblemon's biome tags so they contain only our Pokémon world biomes. No code, but it leaks: some spawn files use other tags or name biomes directly, and biome mods add themselves to Cobblemon's tags. It has to be re-checked on every Cobblemon update.
+   - Avoid blocking every ownerless Pokémon entity as it joins a world: NPC trainers' Pokémon have no owner, so trainer battles would likely break.
+3. **Cobblemon worldgen moves there:** apricorns, evolution-stone ores and other Cobblemon features generate only in the Pokémon world, so trips there are how you get Poké Ball materials.
+4. **Structures (targeted at our biomes only):** Integrated Cobblemon (18 gyms + Pokécenters; needs Radical Cobblemon Trainers), CobbleStructures, Cobblemon: Simple Pokecenters, Cobblemon Extra Structures, plus vanilla villages. Cobblemon Additions is Fabric-only, so it's out.
+5. **Portal:** a NeoForge portal mod or a KubeJS-scripted portal (to be chosen).
+6. **Riding:** allowed in every dimension (flying Pokémon use stamina).
+
+Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as a second portal — needs testing on NeoForge, claim protection, and a license check.
+
+## Life, building and the cozy side
+
+The pack has to work for players who never touch a machine, so there's a full layer of farming, pets, decorating and gentle goals.
+
+- **Food and farming:** Farmer's Delight + add-ons, Create Slice & Dice and Central Kitchen, Serene Seasons, a food variety mod (Spice of Life or Diet).
+- **Pets and critters:** Inventory Pets (Cloud and other teleport/free-flight pets disabled or re-gated), Domestication Innovation, Naturalist, Friends & Foes, Creatures and Beasts: Continued, Critters and Companions, Creeper/Enderman Overhaul, Illager Invasion, Aquaculture 2, Alex's Mobs if a 1.21.1 build exists, Royal Variations.
+- **Cozy activities:** Tide (fishing journal), Bountiful (village bounty boards), a short "cozy" FTB Quests chapter (tame a pet, cook five dishes, decorate a house, find a pet dungeon).
+- **Building:** Handcrafted, Chipped, Macaw's suite, Supplementaries, Every Compat, Another Furniture, a plushie mod if one exists, Cosmetic Armor Reworked.
+- **Storage:** Sophisticated Backpacks + Storage, Functional Storage, Tom's Simple Storage, AE2.
+- **Accessories:** Curios is the standard slot system (Accessories Compatibility Layer only if a mod needs it). Artifacts, Relics, Reliquified Artifacts, Forsaken Relics. Reliquified Cataclysm left out (needs a fan fix to work).
+- **QoL:** EMI, Jade, AppleSkin, Inventory Profiles Next (sort button), FTB Ultimine, FallingTree, Polymorph, Controlling, Just Enough Resources, Carry On, Mouse Tweaks, Xaero's maps, FTB Chunks + FTB Teams (claims, chunk loading), Simple Voice Chat, Comforts.
+- **Skipped on purpose:** Dynamic Trees, MineColonies.
+
+## Visuals and performance
+
+Every heavy visual is client-side and optional, so weaker PCs turn it off and nothing changes for anyone else.
+
+**Visuals (client)**
+
+- Shaders via Iris: Complementary Reimagined as the default (low-to-high presets); Bliss or Photon for strong PCs.
+- Distant Horizons (optional per player) — big payoff for airship flight.
+- Fresh Animations + Entity Model Features + Entity Texture Features; Continuity + Fusion for connected textures.
+- Atmospherics (per-biome fog, sky, clouds, stars); mostly replaced when shaders are on, so it mainly helps non-shader players. Check its biome-teleport menu is op-only.
+- Sound Physics Remastered, AmbientSounds, Falling Leaves, Camera Overhaul, dynamic lighting.
+- Not included: Smooth Loading Screen (Fabric-only); Diorama (no 1.21.1 NeoForge build) — Xaero's instead.
+
+**Performance**
+
+| Where | Mods |
+| --- | --- |
+| Client | Sodium (not Embeddium), ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, BadOptimizations, AllTheLeaks |
+| Server | Lithium, Noisium, Chunky (pregen), Clumps, Let Me Despawn, Spark |
+| Skip | C2ME (prone to break with heavy worldgen) |
+
+Ship recommended RAM and Java flags with the pack; tune treehouse's garbage collector settings once the pack is up. Set up automatic world backups before day one.
+
+## KubeJS and config to-do
+
+These are the tweaks that make the pack feel designed rather than piled together.
+
+- [ ] Remove Create: New Age wire recipes (keep Crafts & Additions + IE wires)
+- [ ] Lower Crafts & Additions alternator FE output; keep it below New Age generators
+- [ ] Gate wireless: same-dimension wireless behind the Nether or first major boss; AE2 Quantum Network Bridge behind a late boss drop
+- [ ] Gate top-tier Mekanism / AE2 parts behind boss drops
+- [ ] Waystones: distance-scaled XP cost, extra cost across dimensions; remove warp scrolls/stones from loot
+- [ ] Disable or re-gate Inventory Pets that teleport or give free flight (Cloud, Nether Portal, Ender Chest — review the rest)
+- [ ] Excessive Utilities: remove or cost-gate any free-flight item
+- [ ] Player commands: no `/home`, `/back`, `/rtp`, `/tpa` for non-ops
+- [ ] Progressive difficulty: modest Nether step, bigger End/dangerous-dimension steps
+- [ ] Apotheosis: elite mobs rare near spawn, more common far out and in other dimensions
+- [ ] Create Big Cannons: limit block damage; FTB Chunks claims block explosions
+- [ ] Vampirism: PvP between factions only
+- [ ] Almost Unified: pick preferred ores/ingots
+- [ ] Pokémon world datapack (see Pokémon world section)
+
+## Test plan and open questions
+
+Test with the whole group early, before writing quests, so heavy mods are found by name instead of guessed at.
+
+**Tests**
+
+1. Launch everything together in a creative world; fix load crashes.
+2. Shaders + Distant Horizons with Aeronautics ships in flight (Flywheel rendering is the likeliest break).
+3. Create Tweaked Controllers vs Aeronautics' own controls.
+4. Ars 'n Spells rituals and shared mana.
+5. Wire comparison in creative: Crafts & Additions vs IE (range, throughput, looks).
+6. The Nether difficulty jump with progressive difficulty + Apotheosis + Vampirism together.
+7. Vampires vs the food variety mod.
+8. Cloud pet upkeep cost.
+9. Group play test on treehouse: several airships in the air, players spread out, Spark running.
+10. Steam 'n' Rails (unofficial 1.21.1 port, beta) on treehouse: lay snow-paved tracks, let it snow (and a Serene Seasons winter), run trains; watch for the crash/kick from port issue #361 (fix proposed in PR #372, not merged). Also check assembled trains with shaders on, plus couplers and Conductor Whistle.
+
+**Open questions**
+
+- Decided: EMI (not JEI), Terralith out; Claude Code picks the gravestone and dynamic lighting mods.
+- Modern Industrialization or Oritech?
+- Spice of Life or Diet?
+- Remaining choices are settled during testing (below).
+- Which portal method for the Pokémon world?
+- Neo Vitae in?
+
+## Next steps in Claude Code
+
+The build moves to Claude Code, using the mod tracker as the input list.
+
+1. Set up the pack as a git repo with packwiz, pulling mods from CurseForge and Modrinth.
+2. Verify every "verify" mod in the tracker against the CurseForge/Modrinth APIs for a 1.21.1 NeoForge build; packwiz fails loudly on any mod without one.
+3. Resolve the open questions above as mods are added.
+4. Write the KubeJS scripts and configs from the to-do list.
+5. Stand up a test server on treehouse (itzg/minecraft-server) with backups and the Discord bridge; pregenerate with Chunky.
+6. Run the test plan, then write FTB Quests chapters.
+7. Build the Pokémon world datapack and portal once the base pack is stable.

@@ -1,0 +1,13 @@
+name = "Vampiric Ageing - A Vampirism Addon"
+filename = "vampiricageing-1.21-1.4.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "45b93471af93f3a1e7050688935640306c4c3b01"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8474250
+project-id = 906331

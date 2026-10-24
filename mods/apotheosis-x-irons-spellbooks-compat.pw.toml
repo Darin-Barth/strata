@@ -1,0 +1,13 @@
+name = "Apotheosis x Iron's Spellbooks Compat"
+filename = "irons_apothic-2.2.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "93362596730b940911e2d69f9c4d31d0b9d2712e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9234276
+project-id = 1244863
