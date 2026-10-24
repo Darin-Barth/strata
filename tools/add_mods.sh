@@ -46,7 +46,7 @@ MR=(
   l_enders-cataclysm-delight the-aethers-delight sdlink
   # Undeclared deps found in the first server boot
   kambrik terrablender
-  custom-window-title
+  custom-window-title caelus
 )
 
 CF=(
@@ -55,6 +55,10 @@ CF=(
   integrated-cataclysm forsaken-relics the-twilight-forest
   mob-grinding-utils creatures-and-beasts-continued ex-pattern-provider alltheleaks macaws-stairs
   falling-leaves-forge cosmetic-armor-reworked
+  # Friend's list (Oct 24)
+  bossesrise qliphoth-awakening cinematic-cataclysm gtbcs-cataclysmic-boss-ui cataclysm-spellbooks
+  apprentices-codex starbunclemania ars-trinkets playerrevive locked-in-slots mighty-mail
+  what-are-they-up-to meccha-crafteleon hyperbox
 )
 
 for s in "${MR[@]}"; do

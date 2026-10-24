@@ -1,6 +1,6 @@
 # Friend's mod suggestions: review (Oct 24, 2026)
 
-Source: the shared list (37 mods; focus on post-Dragon bosses, magic power to beat them, QoL and group fun). Each was checked for a **Minecraft 1.21.1 NeoForge** build on CurseForge (the list's own links) and opened to see what worldgen it adds. Nothing has been added to the pack yet.
+Source: the shared list (37 mods; focus on post-Dragon bosses, magic power to beat them, QoL and group fun). Each was checked for a **Minecraft 1.21.1 NeoForge** build on CurseForge (the list's own links) and opened to see what worldgen it adds. **Update (Oct 24):** the Recommended list was added, except T.O Magic 'n Extras (its only 1.21.1 file is a deprecated alpha that crashes the game) and Frieren Flight (blocked from automatic downloads on CurseForge, not on Modrinth). Ars Trinkets also needed Caelus (added; it has no flight items).
 
 **Important context:** the Overworld seed and spawn are already chosen. Mods that add Overworld **biomes** would reshape the land around spawn. None on this list do. Mods that add **structures** are fine, but must be decided **before the world is pregenerated**.
 
