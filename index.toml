@@ -24,7 +24,7 @@ hash = "14ca75640a0b7fd6e5b96d008372343f21e2f7f3672255b361533326be2cc544"
 
 [[files]]
 file = "icon.png"
-hash = "bea76709fcf7ebfea1716328f5554f269258e5cfbf5204db95b4d21886651835"
+hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
 [[files]]
 file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
