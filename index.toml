@@ -6,6 +6,10 @@ hash = "3908aed7259b4c416ce6a82954143dcf325d1b004b56e0213996fcfe26812e4a"
 preserve = true
 
 [[files]]
+file = "config/artifacts/general.toml"
+hash = "9dd65f10d532b41eee2599845cdfe7584f69024a9f5cd7bb65d9182f3483ce4d"
+
+[[files]]
 file = "config/cameraoverhaul.toml"
 hash = "422c564e0a5dd0caed1a9c7f566daaa4c3bfc19015750c8a3aa544d142d1f44b"
 preserve = true

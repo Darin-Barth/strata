@@ -53,3 +53,20 @@ By step: noise fill (terrain shape) 37%, feature decoration 19%, the rest is aqu
 - Treehouse server: `MEMORY=12G`, `JVM_XX_OPTS=-XX:+UseZGC -XX:+ZGenerational`.
 - Singleplayer clients: 10 GB + the same two flags.
 - Multiplayer clients (no local worldgen): 8 GB + the same flags. Confirm in the group test.
+
+## Runs 3–5: other fixes (same seed, region and profiler; all with 12 GB + generational ZGC)
+| Run | Change | Time for 5,929 chunks | Stalls | Notes |
+| --- | --- | --- | --- | --- |
+| 2 | (baseline: 12 GB + ZGC) | 12 min 02 s | 1 (3.5 s) | |
+| 3 | `sync-chunk-writes=false` | **11 min 34 s** | 0 | Safe server setting (itzg `SYNC_CHUNK_WRITES=false`). Small win |
+| 4 | + Moonrise + Moonrise Compats | **didn't start** | n/a | Mixin conflict with Cobblemon on `Entity.collide` (Moonrise's collision rewrite). Not usable while Cobblemon is in |
+| 5 | + C2ME (pregen-only idea) | **2 min 11 s** (~5× faster) | 0 | Clipped structures: 67 "setBlock in a far chunk" warnings from Integrated Cobblemon's flying and dark gyms (none in normal runs). Ars Nouveau light blocks 138 vs ~5. Otherwise within normal variation |
+
+**Same-seed world comparison:** two normal runs already differ in about 70% of chunk surface heightmaps (trees and mod features aren't deterministic), so C2ME's 76% is within normal variation. Structure counts match. The only C2ME-specific damage found is the clipped Integrated Cobblemon gyms and the extra Ars light blocks.
+
+**Conclusions**
+- Treehouse: 12 GB + generational ZGC + `sync-chunk-writes=false`. About 20% faster than run 1, with far fewer stalls.
+- C2ME is ~5× faster for pregeneration but alters structures. Only consider it pregen-only, and only after the Integrated Cobblemon gyms move to the Pokémon world (they'd then generate there, not in the Overworld pregen). Never leave it installed for play.
+- Pregenerating on the faster desktop and copying the world to treehouse is the other practical lever.
+
+**Side finding (fixed):** both normal worlds still had ~170 Quark variant chests even with Quark's `Replace Worldgen Chests = false`. They come from Artifacts' campsites (`useModdedChests`, now set false in `config/artifacts/general.toml`) and from IDAS structures (no setting found). Lootr can't convert these, so their loot isn't per-player. Verify the Artifacts change in the next server test.

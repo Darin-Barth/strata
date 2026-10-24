@@ -1,0 +1,5 @@
+# Strata: only this setting is set here; Artifacts fills in its other defaults when it loads.
+[campsite]
+	# Use vanilla chests in campsites so Lootr can make their loot per-player
+	# (modded wooden chests such as Quark's variant chests can't be converted).
+	useModdedChests = false
