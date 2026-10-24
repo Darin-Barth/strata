@@ -21,7 +21,9 @@
 - On the server, use the seed in `server.properties` (itzg: `SEED=`) and set the exact spawn with `/setworldspawn X Y Z` before pregenerating around it.
 
 ## Chosen
-- **Seed:** `1121906793898615393`
+> **Retired Oct 24:** Pale Gardens moved into the Overworld (Vanilla Backport biomes on), which reshapes the map. A new seed is being scouted with the new criteria: flat plains/meadow next to a big mountain, a river in the valley, a village nearby, and a Pale Garden 1–3 km away.
+
+- **Seed (retired):** `1121906793898615393`
 - **Spawn:** X 24031, Y 111, Z −26565 (meadow village, mountains behind). Server: `SEED=1121906793898615393`, then `/setworldspawn 24031 111 -26565`.
 - **Pregeneration:** Chunky centered on the spawn (`/chunky center 24031 -26565`), radius 5000, after the worldgen-affecting changes are done.
 

@@ -46,7 +46,7 @@ MR=(
   l_enders-cataclysm-delight the-aethers-delight sdlink
   # Undeclared deps found in the first server boot
   kambrik terrablender
-  custom-window-title caelus
+  custom-window-title caelus vanillabackport
 )
 
 CF=(
