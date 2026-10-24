@@ -43,6 +43,10 @@ file = "config/rctmod-server.toml"
 hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
 
 [[files]]
+file = "config/streamsreflowing.properties"
+hash = "a75b392dc720397c13522e1654d876b502e4261b8ea30a1a7c18c37e8f0b184d"
+
+[[files]]
 file = "icon.png"
 hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
