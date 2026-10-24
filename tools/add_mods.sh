@@ -44,6 +44,8 @@ MR=(
   drive-by-wire-sable redomesticate jei spice-of-life-onion neovitae aether alexs-mobs-continued
   bosses-of-mass-destruction-forge plushie enders-delight twilight-delight arsdelight
   l_enders-cataclysm-delight the-aethers-delight sdlink
+  # Undeclared deps found in the first server boot
+  kambrik terrablender
 )
 
 CF=(

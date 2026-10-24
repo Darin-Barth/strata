@@ -1,7 +1,7 @@
 # Strata — Phase 1 report
 
 Pack: packwiz project `Strata` 0.1.0, Minecraft 1.21.1, NeoForge 21.1.264.
-Contents: 260 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
+Contents: 262 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
 Every Keep/Maybe row was checked against the Modrinth API, and through packwiz against CurseForge for anything missing on Modrinth. Results are in `docs/strata-mod-tracker.xlsx`: column G was updated and a new column J, "Phase 1 lookup", says where each build was found.
 Mods come from Modrinth where possible. 23 projects that only exist on CurseForge (or only have a build there) come from CurseForge.
 
@@ -81,7 +81,23 @@ Quark 4.1 no longer has Matrix Enchanting, Backpacks or Totem of Holding, so tho
 
 Simple Discord Link is the lightest option that's open source, server-only and widely used. MC-Sync is smaller on disk, but I wouldn't trust it on a server yet. **Added** (server-only, + CraterLib). It needs a Discord bot token and channel ID in its config when we set up the server.
 
+## First launch test: dedicated server (Oct 24, 2026)
+Run in Docker with the itzg image (`java21`), NeoForge 21.1.264, 8 GB, with the pack installed from `packwiz serve`. This is the same install path treehouse will use.
+
+**Result: the server boots.** 237 server-side jars loaded (the client-only mods are skipped on a server), "Done" in 22 s, the spawn area generated, and it shut down cleanly. Client-only mods (Sodium, Iris, LambDynamicLights, maps, shaders) still need a real client launch.
+
+Fixes found and applied:
+- **Kambrik** (needed by Bountiful) and **TerraBlender** (needed by YUNG's Cave Biomes) were missing. Their Modrinth listings don't declare these dependencies. Both are added.
+- **Majrusz's Progressive Difficulty Continued is excluded from the CurseForge API.** The author opted out of third-party downloads, so packwiz can't install it, and the test ran without it. This will block treehouse and packwiz-based player installs too. **Decision needed** (below).
+
+Log findings (no action needed to boot):
+- Most of the ~300 ERROR lines are optional compatibility for mods we don't have (Botany Pots, ComputerCraft, BYG/BOP biomes, Hexcasting, FramedBlocks) and client classes the server skips. That's normal.
+- Small bugs in other mods: an Ender's Delight recipe (`chorus_pie_slice`) and a Create Deco recipe (`placard`) fail to parse, and Sable logs 14 physics-tag warnings for a Copycats+ block (`copycat_catwalk`). Worth reporting upstream.
+- **Every Compat** warns that its generated blocks are over a third of all blocks, mostly from Macaw's Furniture (2,741). Trim that in the phase 2 configs to save memory and load time.
+- Simple Discord Link disables itself until it has a bot token (expected).
+
 ## Still open
+0. **Majrusz's Progressive Difficulty Continued can't be auto-downloaded** (CurseForge opt-out, not on Modrinth). Options: download it by hand for the server and players, ship CurseForge-format exports for players, or switch difficulty mods.
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.
 3. Pokémon world portal, and the Kanto map license: when we build the Pokémon world.

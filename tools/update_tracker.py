@@ -111,7 +111,7 @@ R = {
     "Explorer's Compass": (C, "MR explorers-compass 3.4.0"),
     "Nature's Compass": (C, "MR natures-compass 3.4.0"),
     "Waystones": (C, "MR waystones 21.1.46"),
-    "Majrusz's Progressive Difficulty Continued": (C, "CF majruszs-progressive-difficulty-continued 1.1.6 (the original has no 1.21.1 build)"),
+    "Majrusz's Progressive Difficulty Continued": (C, "CF majruszs-progressive-difficulty-continued 1.1.6 (the original has no 1.21.1 build). EXCLUDED from the CF API: packwiz can't auto-download it (needs a manual download or another distribution route)"),
     "Dimension Gated Difficulty": (N, "No 1.21.1 NeoForge build on CurseForge; not on Modrinth"),
     "Better Combat": (C, "MR better-combat 2.4.0"),
     "Apothic Combat": (C, "MR apothic-combat 1.2.1"),
