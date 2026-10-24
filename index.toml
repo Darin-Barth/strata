@@ -16,7 +16,7 @@ preserve = true
 
 [[files]]
 file = "config/customwindowtitle-client.toml"
-hash = "18f4920a5b81e2bcabded9559aad0401b16335aea6e922c79f07086d072fbebf"
+hash = "eb5e831564a711065e75b617ebaeaeae8945d70a95a3bf5a0b8ee54046afa783"
 
 [[files]]
 file = "config/customwindowtitle/strata.png"
