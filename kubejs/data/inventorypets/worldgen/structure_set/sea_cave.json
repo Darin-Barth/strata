@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "inventorypets:sea_cave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1224466882,
+    "spacing": 48,
+    "separation": 24
+  }
+}

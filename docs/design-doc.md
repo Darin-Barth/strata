@@ -189,7 +189,7 @@ These are the tweaks that make the pack feel designed rather than piled together
 - [ ] Vampirism: PvP between factions only
 - [ ] Almost Unified: pick preferred ores/ingots
 - [ ] Pokémon world datapack (see Pokémon world section)
-- [ ] Inventory Pets structures (from the first client test): its sky dungeons have chest items baked into the structure (no loot table), so Lootr can't make them per-player. They're also very common (12 sky dungeons, 24 tree tops and 15 sea caves near spawn in one test world). Options: lower their frequency or disable them with a datapack, or override their structure files to use loot tables.
+- [x] Inventory Pets structures made rare (Oct 24): their chests have items baked in (no loot table), so Lootr can't make them per-player, and they were everywhere (24 tree tops near spawn). Overrides in `kubejs/data/inventorypets/`: tree top 24-chunk spacing, underground dungeon/Nether/End dungeons 40, sea cave 48. **Sky dungeons only generate in the Aether** (24 spacing; they sit on island tops at about Y 132). Measured nearest-structure distances from five points: tree top 0.5–3.8 km, underground 0.6–3.2 km, sea cave 1.3–2.8 km, Nether 0.4–1.9 km (Nether blocks), End 0.3–0.9 km, Aether sky dungeon 0.06–0.9 km.
 
 ## Test plan and open questions
 

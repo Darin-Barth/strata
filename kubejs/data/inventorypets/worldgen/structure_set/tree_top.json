@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "inventorypets:tree_top",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1224466883,
+    "spacing": 24,
+    "separation": 12
+  }
+}

@@ -109,7 +109,7 @@ Log findings (no action needed to boot):
   - Distant Horizons: `PRE_EXISTING_ONLY`, 128 chunks, 4 threads (`preserve = true`).
   - Camera Overhaul off by default (`preserve = true`). Its turning roll and idle sway caused motion sickness while flying. Fresh Animations only animates mobs, so it wasn't the cause.
   - Quark `Replace Worldgen Chests = false`. Quark was swapping structure chests for wood-variant chests that Lootr can't convert (25 found).
-- The "sky dungeon" is Inventory Pets' `sky_dungeon`. Its chests have items baked into the structure (no loot table), so Lootr can't make them per-player. Added to the KubeJS/config to-do.
+- The "sky dungeon" is Inventory Pets' `sky_dungeon`. Its chests have items baked into the structure (no loot table), so Lootr can't make them per-player. **Fixed:** all Inventory Pets structures are now rare (datapack overrides in `kubejs/data/inventorypets/`), and sky dungeons only generate in the Aether. Verified with `/locate` on the test server (see the design doc's KubeJS/config list).
 - Pokémon UI and starters in the Pokémon world only: added to the Pokémon world plan.
 
 ## Still open

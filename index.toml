@@ -19,6 +19,34 @@ file = "config/quark-common.toml"
 hash = "14ca75640a0b7fd6e5b96d008372343f21e2f7f3672255b361533326be2cc544"
 
 [[files]]
+file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
+hash = "c8ea0ee29eccaeec1274db06ba1a812ff2ddf0de921607922c21c170e193631e"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/nether_dungeon.json"
+hash = "fa7e8d040fb8a470448dc8dd2ac9943058eb8d9db1cb6f6d7c50ac20a2223798"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/sea_cave.json"
+hash = "1d076784c6365237b7cd5e5174adca50ee6599148e4c5e0e6e71dbd15fabc312"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/sky_dungeon.json"
+hash = "69eb3b140eb33f8f266160c38f937dd9b4125977616299c6598306c30496fe4f"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/space_dungeon.json"
+hash = "137588d02e17c1c6c161102d94238b5c60b96b30beeedb114eac78ada490a8f5"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/tree_top.json"
+hash = "0eccc006ead7a6ba948c5304d8689ebd2c2d99140cba1e850c69ed49517c5bc6"
+
+[[files]]
+file = "kubejs/data/inventorypets/worldgen/structure_set/underground_dungeon.json"
+hash = "de24f6614dce05825eb7af75761a42ef9d8a16b498dbc53c620c8951c576e560"
+
+[[files]]
 file = "mods/aaron.pw.toml"
 hash = "3df48f767dd20597e00a03bcddab4e24de244739535ca3129f0e01cd52812354"
 metafile = true

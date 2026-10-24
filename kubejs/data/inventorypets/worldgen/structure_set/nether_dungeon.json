@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "inventorypets:nether_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1224466885,
+    "spacing": 40,
+    "separation": 20
+  }
+}
