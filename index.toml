@@ -48,7 +48,7 @@ hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/block/poke_portal_frame.png"
-hash = "40ead2b531c0fa7f06c45320f7b251d923533acc54c36b6633c47664fe1dfbf7"
+hash = "695493d144261589f68a08dd7c412c371fa14d5ea47efe8b0a9e5ee799bbbdb1"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/bell_fragment.png"
@@ -60,7 +60,7 @@ hash = "3003e45ce6805d02081db496059e039c9cc0f2345c7c461d0d60d2e7aab1f9c0"
 
 [[files]]
 file = "kubejs/client_scripts/pokeworld_party_hud.js"
-hash = "e4ce83ba04081808655178e3edab3e4430a00ab4605d930de557cff92fa3c43b"
+hash = "81dc7c46ea6512841fe76f5ae810db14656e4f68753c66f5c200d3ce0cde1b89"
 
 [[files]]
 file = "kubejs/data/cobblemon/spawn_detail_presets/ancient_city.json"
@@ -1763,10 +1763,6 @@ file = "kubejs/data/pokeworld/loot_table/inject/bell_fragment.json"
 hash = "b5e60a22a78d2ec93a3670c6a8b340a40aeab2345f338673f133ca3374309dd4"
 
 [[files]]
-file = "kubejs/data/pokeworld/spawn_rules/pokeworld_only.json"
-hash = "a95e96b943159528d124a32133a3a9ec7713736dc151d9362f8c69e64768fe03"
-
-[[files]]
 file = "kubejs/data/pokeworld/tags/worldgen/biome/has_structure/cobblemon/fishing_boat/beach.json"
 hash = "925fc068ee82caabd164ccb9ffc710b4965ecdb6982466e2a013d8bfcbc53605"
 
@@ -3311,8 +3307,12 @@ file = "kubejs/server_scripts/pokeworld_recipes.js"
 hash = "5d539445fc5d025faae6bae2ea7ac785d8e30f86648c19fc1ded2b2b8aaff5e0"
 
 [[files]]
+file = "kubejs/server_scripts/pokeworld_spawns.js"
+hash = "a3633d65a9d78bc1753e1ef4be3f177187c0c4da498ca16ac09d0013828fe2f0"
+
+[[files]]
 file = "kubejs/server_scripts/pokeworld_starter.js"
-hash = "7561e381a8f24ea3e9a3ad6227250d3437e2b8478d6a34640cd75d2ba128b887"
+hash = "561bac95eeb8f4d838891970f6c2413dc49746f7c50fee7087030013ef0a4260"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"

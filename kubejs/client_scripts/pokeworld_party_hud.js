@@ -10,7 +10,9 @@ ClientEvents.tick(event => {
     lastDimension = null
     return
   }
-  const dimension = String(level.dimension().location())
+  // KubeJS exposes level.dimension as a property (a ResourceLocation); fall back to a ResourceKey.
+  const d = level.dimension
+  const dimension = String(d && d.location ? d.location() : d)
   if (dimension === lastDimension) return
   lastDimension = dimension
   HidePartyBinding.INSTANCE.setShouldHide(dimension !== 'pokeworld:pokeworld')
