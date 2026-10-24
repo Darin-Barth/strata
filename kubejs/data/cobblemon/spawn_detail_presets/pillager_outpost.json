@@ -1,0 +1,12 @@
+{
+  "condition": {
+    "minY": 62,
+    "neededNearbyBlocks": [
+      "#cobblemon:pillager_outpost_blocks"
+    ],
+    "structures": [
+      "minecraft:pillager_outpost",
+      "pokeworld:pillager_outpost"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "condition": {
+    "minY": 62,
+    "structures": [
+      "minecraft:pillager_outpost",
+      "minecraft:swamp_hut",
+      "minecraft:mansion",
+      "pokeworld:pillager_outpost",
+      "pokeworld:swamp_hut",
+      "pokeworld:mansion"
+    ]
+  }
+}

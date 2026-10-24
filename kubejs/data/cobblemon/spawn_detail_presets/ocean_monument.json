@@ -1,0 +1,9 @@
+{
+  "condition": {
+    "maxY": 62,
+    "structures": [
+      "minecraft:monument",
+      "pokeworld:monument"
+    ]
+  }
+}

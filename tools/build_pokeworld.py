@@ -155,11 +155,12 @@ class Writer:
         self.out = out
         self.count = 0
 
-    def write(self, ns, path, obj):
+    def write(self, ns, path, obj, compact=False):
         f = os.path.join(self.out, ns, path)
         os.makedirs(os.path.dirname(f), exist_ok=True)
         with open(f, 'w', encoding='utf-8', newline='\n') as fh:
-            json.dump(obj, fh, indent=2, ensure_ascii=False)
+            json.dump(obj, fh, indent=None if compact else 2, ensure_ascii=False,
+                      separators=(',', ':') if compact else None)
             fh.write('\n')
         self.count += 1
 
@@ -213,7 +214,7 @@ def main():
     # Clean previous output of this script (only folders it owns; pokeworld/spawn_rules and
     # pokeworld/worldportal are hand-written).
     for sub in [f'{NS}/worldgen', f'{NS}/dimension', f'{NS}/dimension_type', f'{NS}/tags',
-                'cobblemon/worldgen/placed_feature', 'cobblemon/tags/worldgen/biome',
+                'cobblemon/worldgen/placed_feature', 'cobblemon/spawn_pool_world', 'cobblemon/spawn_detail_presets', 'cobblemon/tags/worldgen/biome',
                 'cobblemon/worldgen/structure', 'integrated_cobblemon/worldgen/structure',
                 'cobblestructures/worldgen/structure', 'cobblemon_simple_center/worldgen/structure',
                 'cobblemonextrastructures/worldgen/structure', 'minecraft/tags/worldgen/structure']:
@@ -344,8 +345,8 @@ def main():
         if name.startswith('village_'):
             vt = name[len('village_'):]
             nj['pool_aliases'] = [{'type': 'minecraft:direct',
-                                   'alias': f'minecraft:village/{vt}/houses',
-                                   'target': f'{NS}:village/{vt}/houses'}]
+                                   'alias': f'minecraft:village/{vt}/{pool}',
+                                   'target': f'{NS}:village/{vt}/{pool}'} for pool in ('houses',)]
         w.write(NS, f'worldgen/structure/{name}.json', nj)
         vcopied[sid] = pid
     # Village houses pools for the Pokémon world = Cobblemon's version (with Pokécenters).
@@ -384,6 +385,40 @@ def main():
         vals = sorted(vcopied[m] for m in members if m in vcopied)
         if vals:
             w.write('minecraft', f'tags/worldgen/structure/{path_of(tid)}.json', {'replace': False, 'values': vals})
+
+    # Cobblemon spawn conditions that name a vanilla structure also accept its pokeworld copy.
+    nspawn = 0
+    for jar in jars:
+        if not jar.lower().startswith('cobblemon-'):
+            continue
+        with zipfile.ZipFile(os.path.join(a.mods, jar)) as z:
+            for n in z.namelist():
+                m = re.match(r'data/cobblemon/(spawn_pool_world|spawn_detail_presets)/(.+\.json)$', n)
+                if not m:
+                    continue
+                j = json.loads(z.read(n).decode('utf-8-sig'))
+                changed = False
+
+                def walk(o):
+                    nonlocal changed
+                    if isinstance(o, dict):
+                        for k, v in o.items():
+                            if k == 'structures' and isinstance(v, list):
+                                extra = [vcopied[rl(x)] for x in v if isinstance(x, str) and rl(x) in vcopied
+                                         and vcopied[rl(x)] not in v]
+                                if extra:
+                                    v.extend(extra)
+                                    changed = True
+                            else:
+                                walk(v)
+                    elif isinstance(o, list):
+                        for v in o:
+                            walk(v)
+                walk(j)
+                if changed:
+                    w.write('cobblemon', f'{m.group(1)}/{m.group(2)}', j)
+                    nspawn += 1
+    print(f'{nspawn} Cobblemon spawn files patched for pokeworld structure copies')
 
     # --- report + leak check -----------------------------------------------------
     print(f'{w.count} files; {len(vbiomes)} biomes, {ndf} density functions, {nnoise} noises, '

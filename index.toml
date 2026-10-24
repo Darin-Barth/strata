@@ -63,6 +63,110 @@ file = "kubejs/client_scripts/pokeworld_party_hud.js"
 hash = "e4ce83ba04081808655178e3edab3e4430a00ab4605d930de557cff92fa3c43b"
 
 [[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/ancient_city.json"
+hash = "6aade18e95a082bd0a24d6e467a2c03d1d18023dfbbcd70c936d4a49b91e664a"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/illager_structures.json"
+hash = "36d8bdecb8f785471d13074e02690176bd5e49ab96aa3ddfc5f96ec6b22faeeb"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/mansion.json"
+hash = "757f839f97f581cff73df977b35a5b6b104837431064b5b2a39fb8e7b20d8d87"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/mansion_bedrooms.json"
+hash = "8ecf6f2e3fdc2d4f8d0940dbafe73c0a5afa8724e28f018c18a9ffe9631959b7"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/mansion_dining.json"
+hash = "347d648303c143114c980de82f49fd907fde1a1294d2d492b98b12367cb33377"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/ocean_monument.json"
+hash = "54cd646b3d30570488cd8144f7a2f6105a656734d555a8af4d655f7d404e042e"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/pillager_outpost.json"
+hash = "0e03e3e539b41874c994515a03798d5435583ef5060fc09b87b465fba7a0e797"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/trail_ruins.json"
+hash = "ec28d5f9b1851521c30935c16b0cf8766cc3721a78a0653d00e5b610099f4937"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_detail_presets/urban.json"
+hash = "e67d5230276f06e2acce0b68e1b0fdb6ec11f385d924afa639851ce816a935b0"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0211_qwilfish.json"
+hash = "41ed84454826b877493e90a2945ba4e39f4284da18edafaaa5786b606538a249"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0361_snorunt.json"
+hash = "eaad527e1de54f3f9a46791ceb5b25e164480effaeaf1371df923c8e1f04f932"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0478_froslass.json"
+hash = "512f3bd19dd5628437e8e83398b986995d20cd4fddf8cdad219934bae5b4ace8"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0509_purrloin.json"
+hash = "a5dbb8b6bc81f4f1f18b5637b87d3a1050535df1fc91d18929360eae5c031506"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0510_liepard.json"
+hash = "361791e67e31a2d85757d2f9909327796a0524ce10cee0d4b480989ab5af63e2"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0856_hatenna.json"
+hash = "eb4d5cfb2921fa01e1cc445ac22a1d22b6f163d9c1c27710b25bf9ff9f179bb4"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0857_hattrem.json"
+hash = "68df1b08228840578cf609473850b7d0b02988fdad2eca5139aaa416b9317ee5"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0858_hatterene.json"
+hash = "b54bfdf46789d355a168ad322d3f821a0320dfdccbecaedcd9e550c3fb7ee1a6"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/0904_overqwil.json"
+hash = "06386337f6eb315cc2628cb03e3d1ccee52ef11a828064eed01ad0a1ac3acc05"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0211_qwilfish_alpha.json"
+hash = "85bee11053ce3af46f7b84f57394dd69301c02139e9056de6c080f84baf5282c"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0211_qwilfish_herd.json"
+hash = "ebe2c2f44e90a1394baf70d1c04d4c81f4626ef98921dc24e57b9e68849c982f"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0361_snorunt_herd.json"
+hash = "44071cab28ff42ba3c41de68af9b012b83b652d37b7dad59dae02a9501a72833"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0362_glalie_0478_froslass_alpha.json"
+hash = "4b9f61a921f0c05172f4a9a90e99cf0b9ad448a5a32feb917f91dfe8c39d5689"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0510_liepard_alpha.json"
+hash = "373ed3346c24aa1c973197b939798b85ef3c8e6c3e5b7208ee2161b261c0f599"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0856_hatenna_herd.json"
+hash = "ea44a34403171cd053396cc41c35e8f2dba0cb6dbc2094bfb35af3c051c76253"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0858_hatterene_alpha.json"
+hash = "59c5feb3d4fe6e3871816a4282710ad5ebad096b28817e9c1481f139aecee08d"
+
+[[files]]
+file = "kubejs/data/cobblemon/spawn_pool_world/herds/0904_overqwil_alpha.json"
+hash = "8b4ead4a7645b209d8f3060d0451c47384d6a66f79f06e7ea4718b08e2b0b37d"
+
+[[files]]
 file = "kubejs/data/cobblemon/tags/worldgen/biome/evolution/regional/bergmite_hisuibiome.json"
 hash = "f18d0cb30f99a164899ff127c9bfc88322ede5cb112489e9558cae754f133e07"
 
@@ -1592,7 +1696,7 @@ hash = "9ded0a41c8d83ba1c5117de2399aba1e06e8c6fa2d1ee8adf26eb8cd9af1b663"
 
 [[files]]
 file = "kubejs/data/pokeworld/dimension/pokeworld.json"
-hash = "5af613a8adeafc7eee448c2f73fc63724df1e8fae501da1e189211855802adf7"
+hash = "9555c9b1d8c45ad2a64a3f03c609b30acd29f1af400758f9583f52da7018a2e8"
 
 [[files]]
 file = "kubejs/data/pokeworld/dimension_type/pokeworld.json"
@@ -3216,7 +3320,7 @@ hash = "23934f3e46ff4b80db2daa15ccbe025736cbaefb8fecbb5a628e4c975ad5a9f4"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"
-hash = "205775704ab77e8824d2d23fafc96bbbb47a3e91d73a52dbee045800db44d4b3"
+hash = "fb8dad580e010f53299528e7ebde09a2a892175ab38cfe31102f7e3ad58bba81"
 
 [[files]]
 file = "mods/aaron.pw.toml"
