@@ -129,6 +129,9 @@ Cobblemon lives in its own "vanilla + Cobblemon" dimension reached by a portal; 
 4. **Structures (targeted at our biomes only):** Integrated Cobblemon (18 gyms + Pokécenters; needs Radical Cobblemon Trainers), CobbleStructures, Cobblemon: Simple Pokecenters, Cobblemon Extra Structures, plus vanilla villages. Cobblemon Additions is Fabric-only, so it's out.
 5. **Portal:** a NeoForge portal mod or a KubeJS-scripted portal (to be chosen).
 6. **Riding:** allowed in every dimension (flying Pokémon use stamina).
+7. **Pokémon only shows up in the Pokémon world** (from the first client test, Oct 24): no starter prompt on first join and no Cobblemon party HUD in the other dimensions.
+   - Starter: turn off Cobblemon's on-join starter prompt (`exportStarterConfig` in `config/cobblemon/main.json` writes the starter config; then disable the on-join prompt there; key names to verify). Use KubeJS to run Cobblemon's `/openstarterscreen <player>` the first time a player enters the Pokémon world.
+   - Party HUD: Cobblemon has a "Hide Party" keybind. Hiding it automatically outside the Pokémon world needs a client-side KubeJS script or a tiny mod (to research). The fallback is shipping it hidden by default.
 
 Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as a second portal — needs testing on NeoForge, claim protection, and a license check.
 
@@ -186,6 +189,7 @@ These are the tweaks that make the pack feel designed rather than piled together
 - [ ] Vampirism: PvP between factions only
 - [ ] Almost Unified: pick preferred ores/ingots
 - [ ] Pokémon world datapack (see Pokémon world section)
+- [ ] Inventory Pets structures (from the first client test): its sky dungeons have chest items baked into the structure (no loot table), so Lootr can't make them per-player. They're also very common (12 sky dungeons, 24 tree tops and 15 sea caves near spawn in one test world). Options: lower their frequency or disable them with a datapack, or override their structure files to use loot tables.
 
 ## Test plan and open questions
 
@@ -206,6 +210,7 @@ Test with the whole group early, before writing quests, so heavy mods are found 
 11. Bosses of Mass Destruction (NeoForge port): summon each boss, check drops, and confirm the bosses keep their designed stats (progressive difficulty and Apotheosis must not scale them).
 12. Quark: after first launch, confirm config/quark-common.toml kept our disabled modules (sorting, easy transferring, tool restock, Pathfinder Maps, Ancient Tomes, Glimmering Weald) and look for other overlaps.
 13. Maps: Xaero's Minimap + World Map are the map mods. FTB Chunks has its own minimap and large map; turn the FTB minimap off in its client settings (and ship that as a default), then check that claims are still easy to see and manage from FTB Chunks' map. TeamPins (CurseForge, 1.21.1 NeoForge) is an option if we want claims shown on Xaero's maps.
+14. Client comfort and performance defaults (from the first client test): Camera Overhaul ships **off** (its camera roll and sway caused motion sickness while flying; players can turn it on), and Distant Horizons ships at 128 chunks, 4 threads and `PRE_EXISTING_ONLY` (no LOD worldgen; its `FEATURES` default caused 48 s freezes and an out-of-memory crash in singleplayer). Both files are `preserve = true`, so player changes survive updates. Check that both feel right.
 
 **Open questions**
 

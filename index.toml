@@ -1,12 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "3908aed7259b4c416ce6a82954143dcf325d1b004b56e0213996fcfe26812e4a"
+preserve = true
+
+[[files]]
+file = "config/cameraoverhaul.toml"
+hash = "422c564e0a5dd0caed1a9c7f566daaa4c3bfc19015750c8a3aa544d142d1f44b"
+preserve = true
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "23053f7491a6af3418d4a523f4ceaa6e2b06fa3590cc38f071822d7c433cc9ef"
+hash = "14ca75640a0b7fd6e5b96d008372343f21e2f7f3672255b361533326be2cc544"
 
 [[files]]
 file = "mods/aaron.pw.toml"

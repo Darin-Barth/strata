@@ -102,6 +102,16 @@ Log findings (no action needed to boot):
 - Fix: ModernFix `mixin.perf.dynamic_resources=true` (shipped in `config/modernfix-mixins.properties`) to load models on demand, and 8 GB for the retest. Every Compat (2,741 Macaw's Furniture variants, a third of all blocks) is the next lever if memory is still tight. Trimming it is a content decision for phase 2.
 - Quark kept every disabled module (test 12, partly confirmed). "Terrablender Add Region" doesn't exist in Quark 4.1, so it was removed from our config.
 
+## Client test 2 (Oct 24, 2026): 8 GB + ModernFix dynamic resources
+- The world loads and is playable, but laggy: seven server-tick stalls (one of 48 s) and a second `OutOfMemoryError` (in an IO thread, while saving).
+- **Cause: Distant Horizons defaults.** `chunkGeneratorMode = FEATURES` makes DH run full worldgen (all 260 mods) to build distant terrain, out to 256 chunks, on 10 threads. DH logged its own warning that its presets were too high.
+- Fixes shipped (also applied to the test instance; its originals are saved as `*.before-strata`):
+  - Distant Horizons: `PRE_EXISTING_ONLY`, 128 chunks, 4 threads (`preserve = true`).
+  - Camera Overhaul off by default (`preserve = true`). Its turning roll and idle sway caused motion sickness while flying. Fresh Animations only animates mobs, so it wasn't the cause.
+  - Quark `Replace Worldgen Chests = false`. Quark was swapping structure chests for wood-variant chests that Lootr can't convert (25 found).
+- The "sky dungeon" is Inventory Pets' `sky_dungeon`. Its chests have items baked into the structure (no loot table), so Lootr can't make them per-player. Added to the KubeJS/config to-do.
+- Pokémon UI and starters in the Pokémon world only: added to the Pokémon world plan.
+
 ## Still open
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.

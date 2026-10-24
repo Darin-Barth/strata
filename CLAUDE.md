@@ -34,3 +34,4 @@ Test for any mod: keep if it adds a different way to play; question it if it dup
 ## Working notes
 - packwiz: `packwiz refresh` after manual edits; `packwiz mr add <slug>` / `packwiz cf add <slug>`.
 - Lookup script and results: `tools/` (results in `tools/lookup-results.json`).
+- Configs in `config/` ship with the pack. Pack-balance configs (Quark, ModernFix) are enforced. Per-player comfort/performance configs (Distant Horizons, Camera Overhaul) get `preserve = true` in `index.toml` so updates don't overwrite players' own settings (`packwiz refresh` keeps the flag).

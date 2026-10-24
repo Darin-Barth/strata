@@ -23,3 +23,9 @@
 [automation]
 	#Default is already off; kept off so pistons can't move Create/Mekanism/AE2 block entities (dupe/crash risk).
 	"Pistons Move Tile Entities" = false
+
+[building]
+
+	[building.variant_chests]
+		#Lootr can only make vanilla chests per-player; keep structure chests vanilla.
+		"Replace Worldgen Chests" = false
