@@ -246,7 +246,7 @@ R.update({
 
 # Notes column (I) changes. Rows not listed keep their notes.
 NOTES = {
-    "BBL Portals": "Pokémon world portal: red concrete frame + flint and steel (kubejs/startup_scripts/pokeworld_portal.js)",
+    "BBL Portals": "Pokémon world portal: Poké Portal Frame blocks lit with the Johto Bell (Bell + gold + rare Bell Fragment loot); kubejs/startup_scripts/pokeworld_portal.js",
     "Integrated Cobblemon": "18 gyms + Pokecenters; Overworld ones moved to the Pokémon world (fire gym stays in the Nether, psychic/dragon in the End)",
     "Cobblemon": "Lives in its own dimension (pokeworld:pokeworld); wild spawns, worldgen and starter only there; riding allowed everywhere",
     "Radical Cobblemon Trainers": "Wandering trainers only in the Pokémon world (dimensionWhitelist); gym trainers unaffected",

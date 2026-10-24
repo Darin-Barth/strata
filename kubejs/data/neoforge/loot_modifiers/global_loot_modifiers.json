@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "entries": [
+    "pokeworld:bell_fragment/minecraft/simple_dungeon",
+    "pokeworld:bell_fragment/minecraft/abandoned_mineshaft",
+    "pokeworld:bell_fragment/minecraft/desert_pyramid",
+    "pokeworld:bell_fragment/minecraft/jungle_temple",
+    "pokeworld:bell_fragment/minecraft/ancient_city",
+    "pokeworld:bell_fragment/minecraft/woodland_mansion",
+    "pokeworld:bell_fragment/minecraft/trial_chambers/reward",
+    "pokeworld:bell_fragment/minecraft/trial_chambers/reward_ominous",
+    "pokeworld:bell_fragment/betterdungeons/small_dungeon/loot_piles",
+    "pokeworld:bell_fragment/betterdungeons/skeleton_dungeon/common",
+    "pokeworld:bell_fragment/betterdungeons/zombie_dungeon/common",
+    "pokeworld:bell_fragment/betterdungeons/spider_dungeon/egg_room",
+    "pokeworld:bell_fragment/betterdeserttemples/tomb",
+    "pokeworld:bell_fragment/betterjungletemples/treasure"
+  ]
+}
