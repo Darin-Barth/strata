@@ -205,6 +205,7 @@ Test with the whole group early, before writing quests, so heavy mods are found 
 10. Steam 'n' Rails (unofficial 1.21.1 port, beta) on treehouse: lay snow-paved tracks, let it snow (and a Serene Seasons winter), run trains; watch for the crash/kick from port issue #361 (fix proposed in PR #372, not merged). Also check assembled trains with shaders on, plus couplers and Conductor Whistle.
 11. Bosses of Mass Destruction (NeoForge port): summon each boss, check drops, and confirm the bosses keep their designed stats (progressive difficulty and Apotheosis must not scale them).
 12. Quark: after first launch, confirm config/quark-common.toml kept our disabled modules (sorting, easy transferring, tool restock, Pathfinder Maps, Ancient Tomes, Glimmering Weald) and look for other overlaps.
+13. Maps: Xaero's Minimap + World Map are the map mods. FTB Chunks has its own minimap and large map; turn the FTB minimap off in its client settings (and ship that as a default), then check that claims are still easy to see and manage from FTB Chunks' map. TeamPins (CurseForge, 1.21.1 NeoForge) is an option if we want claims shown on Xaero's maps.
 
 **Open questions**
 
@@ -223,6 +224,6 @@ The build moves to Claude Code, using the mod tracker as the input list.
 2. Verify every "verify" mod in the tracker against the CurseForge/Modrinth APIs for a 1.21.1 NeoForge build; packwiz fails loudly on any mod without one.
 3. Resolve the open questions above as mods are added.
 4. Write the KubeJS scripts and configs from the to-do list.
-5. Stand up a test server on treehouse (itzg/minecraft-server) with backups and the Discord bridge; pregenerate with Chunky.
+5. Stand up a test server on treehouse (itzg/minecraft-server) with backups and the Discord bridge (Simple Discord Link); pregenerate with Chunky.
 6. Run the test plan, then write FTB Quests chapters.
 7. Build the Pokémon world datapack and portal once the base pack is stable.

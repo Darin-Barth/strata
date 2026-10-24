@@ -217,6 +217,7 @@ RENAMES = {
     "Plushie mod": "Plushie Mod",
     "Gravestone / corpse mod": "GraveStone Mod",
     "Dynamic lighting mod": "LambDynamicLights",
+    "Discord bridge mod": "Simple Discord Link",
 }
 for old, new in RENAMES.items():
     if old in R:
@@ -238,7 +239,8 @@ R.update({
     "Blue Skies": (N, "No 1.21.1 build. Cut"),
     "Dimension Gated Difficulty": (N, "No 1.21.1 build. Cut: not needed, Majrusz's Continued has one"),
     "Continuity": (C, "Cut: on NeoForge it needs Sinytra Connector + Forgified Fabric API. Fusion covers connected textures"),
-    "Discord bridge mod": (V, "Not added yet. Recommended: Simple Discord Link (MR sdlink, server-only, MIT, ~10 MB + CraterLib). See REPORT.md"),
+    "Simple Discord Link": (C, "Was 'Discord bridge mod'. MR sdlink 3.4.5 (server-only) + CraterLib 3.1.3"),
+    "Xaero's Minimap + World Map": (C, "MR xaeros-minimap 26.6.0 + xaeros-world-map 1.47.0. FTB Chunks also has its own map/minimap: turn its minimap off client-side and check claim display (test 13)"),
     "Farmer's Delight + add-ons": (C, "MR farmers-delight 1.3.4. Add-ons: see the Delight rows"),
 })
 

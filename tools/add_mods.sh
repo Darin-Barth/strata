@@ -43,7 +43,7 @@ MR=(
   # Round 1 decisions (docs/open-questions.md)
   drive-by-wire-sable redomesticate jei spice-of-life-onion neovitae aether alexs-mobs-continued
   bosses-of-mass-destruction-forge plushie enders-delight twilight-delight arsdelight
-  l_enders-cataclysm-delight the-aethers-delight
+  l_enders-cataclysm-delight the-aethers-delight sdlink
 )
 
 CF=(

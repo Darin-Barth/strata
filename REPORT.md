@@ -1,7 +1,7 @@
 # Strata — Phase 1 report
 
 Pack: packwiz project `Strata` 0.1.0, Minecraft 1.21.1, NeoForge 21.1.264.
-Contents: 258 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
+Contents: 260 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
 Every Keep/Maybe row was checked against the Modrinth API, and through packwiz against CurseForge for anything missing on Modrinth. Results are in `docs/strata-mod-tracker.xlsx`: column G was updated and a new column J, "Phase 1 lookup", says where each build was found.
 Mods come from Modrinth where possible. 23 projects that only exist on CurseForge (or only have a build there) come from CurseForge.
 
@@ -79,9 +79,9 @@ Quark 4.1 no longer has Matrix Enchanting, Backpacks or Totem of Holding, so tho
 | MC-Sync | ~0.4 MB | 6k | Smallest jar, but closed source, low adoption, sides not declared |
 | Discord & Chat Images | ~19 MB | 58k | Optional client part for chat images; heavier than needed |
 
-Simple Discord Link is the lightest option that's open source, server-only and widely used. MC-Sync is smaller on disk, but I wouldn't trust it on a server yet. Not added until you confirm.
+Simple Discord Link is the lightest option that's open source, server-only and widely used. MC-Sync is smaller on disk, but I wouldn't trust it on a server yet. **Added** (server-only, + CraterLib). It needs a Discord bot token and channel ID in its config when we set up the server.
 
 ## Still open
-1. Discord bridge: add Simple Discord Link?
+1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.
 3. Pokémon world portal, and the Kanto map license: when we build the Pokémon world.
