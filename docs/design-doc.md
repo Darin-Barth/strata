@@ -139,6 +139,13 @@ Cobblemon lives in its own "vanilla + Cobblemon" dimension reached by a portal; 
 
 Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as a second portal — needs testing on NeoForge, claim protection, and a license check.
 
+## Horror dimension (proposal, Oct 24)
+A separate opt-in dimension for the group's horror fan: horror mods active **only there**, like the Pokémon world.
+- **Biomes:** our own dimension, using biomes by reference or copied under our namespace: Vampirism's vampire forest (stays in the Overworld too; removing it there would reshuffle Overworld biomes and break the chosen seed), dark forest, swamp and similar, plus a Pale Garden if a 1.21.1 backport can be **kept out of the Overworld**. The ones checked (Perfect Parity Neo: Pale Garden Awakens, Another Pale Garden Backport) add a TerraBlender Overworld region, which would reshape the Overworld; needs a config switch or a test before using.
+- **Mobs:** prefer horror mods that spawn through biome modifiers (retargeted to our biomes). Stalker-type mods (The Knocker, The Obsessed, Cave Dweller ReEvolved, Kenny...) use their own spawn logic and need a dimension whitelist in their config or a KubeJS block outside the dimension. Candidates with 1.21.1 NeoForge builds include ArPhEx, The Obsessed, The Knocker, The Boy and the Bath, Face of Horror, Kenny, Hollow Steve, Cave Dweller ReEvolved, Zombie Nightmare Expansions and Server-Side Horror (ambient).
+- **Entry:** same portal approach as the Pokémon world. Difficulty-script multiplier can be high there.
+- Status: idea; research per-mod spawn control and the Pale Garden test before committing.
+
 ## Life, building and the cozy side
 
 The pack has to work for players who never touch a machine, so there's a full layer of farming, pets, decorating and gentle goals.
