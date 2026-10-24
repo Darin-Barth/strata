@@ -96,6 +96,12 @@ Log findings (no action needed to boot):
 - **Every Compat** warns that its generated blocks are over a third of all blocks, mostly from Macaw's Furniture (2,741). Trim that in the phase 2 configs to save memory and load time.
 - Simple Discord Link disables itself until it has a bot token (expected).
 
+## Client test 1 (Oct 24, 2026): Modrinth App, RTX 4080, 6 GB
+- Reached the title screen; Sodium, Iris and the other client mods loaded, and the game used the NVIDIA GPU.
+- **Crashed with `OutOfMemoryError: Java heap space` on creating a singleplayer world.** The instance had 6 GB.
+- Fix: ModernFix `mixin.perf.dynamic_resources=true` (shipped in `config/modernfix-mixins.properties`) to load models on demand, and 8 GB for the retest. Every Compat (2,741 Macaw's Furniture variants, a third of all blocks) is the next lever if memory is still tight. Trimming it is a content decision for phase 2.
+- Quark kept every disabled module (test 12, partly confirmed). "Terrablender Add Region" doesn't exist in Quark 4.1, so it was removed from our config.
+
 ## Still open
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
 2. Modern Industrialization vs Oritech: during the creative test.

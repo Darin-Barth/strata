@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/modernfix-mixins.properties"
+hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
+
+[[files]]
 file = "config/quark-common.toml"
-hash = "860616091b3141c387f0f55d4ec95dad57246fc731c33d852977abebeeba1661"
+hash = "23053f7491a6af3418d4a523f4ceaa6e2b06fa3590cc38f071822d7c433cc9ef"
 
 [[files]]
 file = "mods/aaron.pw.toml"

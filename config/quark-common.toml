@@ -2,10 +2,6 @@
 #Quark fills in every other setting with its defaults on first launch.
 #Module names checked against the Quark 4.1-487 jar (1.21.1).
 
-[general]
-	#Regions Unexplored is the pack's only biome mod; don't add Quark's TerraBlender region.
-	"Terrablender Add Region" = false
-
 [management]
 	#Inventory Profiles Next does sorting.
 	"Inventory Sorting" = false
