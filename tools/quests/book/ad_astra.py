@@ -4,7 +4,7 @@ C = chapter("ad_astra", "Ad Astra", group="explore", icon="ad_astra:tier_1_rocke
             subtitle="Rockets, space suits and other planets")
 q = C.quest
 
-q("intro", "What is Ad Astra?", deps="welcome/iron_age", icon="ad_astra:astrodux", size=1.5,
+q("intro", "What is Ad Astra?", deps="welcome/iron_age", icon="ad_astra:tier_1_rocket", size=1.5,
   shape="gear", desc="""
     &eAd Astra&r lets you build rockets and fly to the &7Moon&r, &cMars&r, &6Venus&r,
     &eMercury&r and finally &bGlacio&r in another solar system.
@@ -12,8 +12,8 @@ q("intro", "What is Ad Astra?", deps="welcome/iron_age", icon="ad_astra:astrodux
     Space has no air: you need a &espace suit&r full of oxygen, and every launch burns &efuel&r.
     Each planet has a new metal that builds the next rocket.
 
-    Open the &eAstrodux&r guide book for the full details.""",
-  rewards=[give("ad_astra:astrodux")])
+    Press &eR&r and &eU&r on Ad Astra items to follow the recipe chain.""",
+  rewards=[give("minecraft:iron_ingot", 16)])
 
 # --- getting ready ----------------------------------------------------------------------
 q("furnace", "Etrionic Blast Furnace", deps="intro", icon="ad_astra:etrionic_blast_furnace",

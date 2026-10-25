@@ -145,8 +145,8 @@ q("lava_fishing", "Fishing in Lava", deps="debris", icon="netherdepthsupgrade:la
     Bonefish, searing cod, blazefish and more. Some are great food, some are ingredients.""",
   rewards=[give("minecraft:cooked_cod", 8)])
 
-q("cooking", "Nether Cooking", deps="intro", icon="mynethersdelight:nether_stove", optional=True,
-  tasks=item("mynethersdelight:nether_stove"), desc="""
+q("cooking", "Nether Cooking", deps="intro", icon="mynethersdelight:nether_bricks_stove", optional=True,
+  tasks=item("mynethersdelight:nether_bricks_stove"), desc="""
     &eMy Nether's Delight&r brings Farmer's Delight cooking to the Nether:
     hoglin and strider dishes, spicy peppers and a stove made of nether bricks.""",
   rewards=[give("minecraft:cooked_porkchop", 8)])

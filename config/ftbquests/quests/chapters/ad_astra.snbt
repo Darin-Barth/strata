@@ -14,7 +14,7 @@
 			x: 0.0d
 			y: 7.3125d
 			dependencies: ["3EDE2ED0C4B6720C"]
-			icon: { id: "ad_astra:astrodux" }
+			icon: { id: "ad_astra:tier_1_rocket" }
 			shape: "gear"
 			size: 1.5d
 			tasks: [
@@ -25,7 +25,8 @@
 				{
 					id: "58C235299076B073"
 					type: "item"
-					item: { count: 1, id: "ad_astra:astrodux" }
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
 				}
 			]
 		}

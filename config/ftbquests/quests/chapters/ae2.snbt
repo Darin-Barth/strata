@@ -538,13 +538,13 @@
 			x: 26.25d
 			y: 1.5d
 			dependencies: ["25FFD273A2AA7866"]
-			icon: { id: "extendedae:infinity_cell" }
+			icon: { id: "extendedae:infinity_water_cell" }
 			optional: true
 			tasks: [
 				{
 					id: "1D4E559812252F3F"
 					type: "item"
-					item: { count: 1, id: "extendedae:infinity_cell" }
+					item: { count: 1, id: "extendedae:infinity_water_cell" }
 				}
 			]
 			rewards: [

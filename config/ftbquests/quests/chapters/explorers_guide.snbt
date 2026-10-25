@@ -348,12 +348,12 @@
 			x: 5.25d
 			y: 10.5d
 			dependencies: ["521349A430C72882"]
-			icon: { id: "betterarcheology:identified_artifact" }
+			icon: { id: "betterarcheology:unidentified_artifact" }
 			tasks: [
 				{
 					id: "1B1DBF706F412D54"
 					type: "item"
-					item: { count: 1, id: "betterarcheology:identified_artifact" }
+					item: { count: 1, id: "betterarcheology:unidentified_artifact" }
 				}
 			]
 			rewards: [

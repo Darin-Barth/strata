@@ -250,7 +250,7 @@
 				{
 					id: "6BB1324808D8E5D8"
 					type: "item"
-					item: { count: 1, id: "inventorypets:nugget_iron" }
+					item: { count: 1, id: "inventorypets:nugget_lapis" }
 					count: 8
 				}
 			]

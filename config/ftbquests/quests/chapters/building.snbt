@@ -423,7 +423,7 @@
 			x: 3.5d
 			y: 10.5d
 			dependencies: ["19A231EB3DF2353A"]
-			icon: { id: "amendments:hanging_flower_pot" }
+			icon: { id: "minecraft:flower_pot" }
 			tasks: [
 				{ id: "0805F2E0B7CA0FA4", type: "checkmark" }
 			]

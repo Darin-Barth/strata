@@ -407,13 +407,13 @@
 			x: 1.75d
 			y: 16.5d
 			dependencies: ["69686D19E9C55435"]
-			icon: { id: "mynethersdelight:nether_stove" }
+			icon: { id: "mynethersdelight:nether_bricks_stove" }
 			optional: true
 			tasks: [
 				{
 					id: "4F54985DD7A4900E"
 					type: "item"
-					item: { count: 1, id: "mynethersdelight:nether_stove" }
+					item: { count: 1, id: "mynethersdelight:nether_bricks_stove" }
 				}
 			]
 			rewards: [

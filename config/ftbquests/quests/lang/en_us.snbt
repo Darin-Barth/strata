@@ -2637,9 +2637,10 @@
 		""
 		"Nine Artifact Shards craft an &eUnidentified Artifact&r. Study it at the table to find out what it is. Identified artifacts give you special powers."
 	]
+	task.1B1DBF706F412D54.title: "Craft an Unidentified Artifact"
 	quest.3D9E8FA0368B86D6.title: "A Mystery Solved"
 	quest.3D9E8FA0368B86D6.quest_desc: [
-		"Identify your first artifact. Read its tooltip to see what it does."
+		"Craft an Unidentified Artifact from nine shards, then study it at the table. Read the result's tooltip to see what it does."
 		""
 		"Keep digging: there are lots of different ones to collect."
 	]
@@ -3086,7 +3087,7 @@
 		""
 		"Space has no air: you need a &espace suit&r full of oxygen, and every launch burns &efuel&r. Each planet has a new metal that builds the next rocket."
 		""
-		"Open the &eAstrodux&r guide book for the full details."
+		"Press &eR&r and &eU&r on Ad Astra items to follow the recipe chain."
 	]
 	quest.3793C5BA92EA556D.title: "Etrionic Blast Furnace"
 	quest.3793C5BA92EA556D.quest_desc: [

@@ -121,7 +121,7 @@ q("supplementaries", "Little Things", deps="intro", icon="supplementaries:jar",
     Put a cookie or a fish in a jar and place it on a shelf. Adorable.""",
   rewards=[give("supplementaries:flower_box", 2), give("supplementaries:doormat")])
 
-q("amendments", "Little Tweaks", deps="supplementaries", icon="amendments:hanging_flower_pot", desc="""
+q("amendments", "Little Tweaks", deps="supplementaries", icon="minecraft:flower_pot", desc="""
     &eAmendments&r makes vanilla blocks nicer: lanterns can hang on &ewalls&r,
     flower pots can &ehang&r from the ceiling, carpets come as stairs and slabs,
     banners can hang from ceilings, and you can dye things in a cauldron.""",

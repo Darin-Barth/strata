@@ -83,7 +83,7 @@ q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chic
     &eHeart Pet&r: heals your friends and pets.
 
     Each pet has a &afavorite food&r (look at its tooltip). Keep some in your inventory.""",
-  rewards=[give("inventorypets:nugget_coal", 16), give("inventorypets:nugget_iron", 8)])
+  rewards=[give("inventorypets:nugget_coal", 16), give("inventorypets:nugget_lapis", 8)])
 
 q("feed_bag", "Snack Pack", deps="pocket_pet", icon="inventorypets:feed_bag", optional=True,
   tasks=item("inventorypets:feed_bag"), desc="""

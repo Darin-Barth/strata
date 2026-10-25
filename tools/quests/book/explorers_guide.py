@@ -139,9 +139,9 @@ q("arch_table", "The Archeology Table", deps="archeology", icon="betterarcheolog
     what it is. Identified artifacts give you special powers.""",
   rewards=[give("minecraft:feather", 8), give("minecraft:iron_ingot", 4)])
 
-q("artifact", "A Mystery Solved", deps="arch_table", icon="betterarcheology:identified_artifact",
-  tier=2, tasks=item("betterarcheology:identified_artifact"), desc="""
-    Identify your first artifact. Read its tooltip to see what it does.
+q("artifact", "A Mystery Solved", deps="arch_table", icon="betterarcheology:unidentified_artifact",
+  tier=2, tasks=item("betterarcheology:unidentified_artifact", title="Craft an Unidentified Artifact"), desc="""
+    Craft an Unidentified Artifact from nine shards, then study it at the table. Read the result's tooltip to see what it does.
 
     Keep digging: there are lots of different ones to collect.""")
 

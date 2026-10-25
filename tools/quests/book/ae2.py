@@ -174,8 +174,8 @@ q("extendedae", "ExtendedAE", deps="autocraft", icon="extendedae:ex_pattern_prov
     The &eAssembler Matrix&r multiblock is a giant crafting factory.""",
   tier=3)
 
-q("infinity_cell", "Infinite Water and Cobble", deps="extendedae", icon="extendedae:infinity_cell",
-  optional=True, tasks=item("extendedae:infinity_cell"), desc="""
+q("infinity_cell", "Infinite Water and Cobble", deps="extendedae", icon="extendedae:infinity_water_cell",
+  optional=True, tasks=item("extendedae:infinity_water_cell"), desc="""
     ExtendedAE's &eME Infinity Cell&r holds an endless supply of one basic thing,
     like water or cobblestone. Perfect for machines that eat them.""")
 

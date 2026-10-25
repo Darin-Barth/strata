@@ -86,11 +86,11 @@ hash = "bc624389ea3f194fba7d6bdf22b43a3ba62dfa331bafb141c0966c25ceb1ccf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra.snbt"
-hash = "bba662d61640ae01a7b5b95b051997df25e71a0c945efd8b26a306cdcd0b5991"
+hash = "5c7bc85256f5e590ddb0ed62611b467c989d54a1116e1aceb32db35e05dbc91d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "02a680c5bd0027c78d7e4c752ba677cbeba8439015b785d07f62ec6923a760c2"
+hash = "85beaa04729432458890ea00591d9dd371dd6b03b4e51df8663793e3484f1b96"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aether.snbt"
@@ -106,7 +106,7 @@ hash = "2b93290ae33862359d6b5003a36013e3a9b435931bcf6666d976b9ad95189131"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/building.snbt"
-hash = "a5c0b2f731704eae1936b149c7764496a06285704741845e9dc6ca93ebe5bf40"
+hash = "28b73a8261a3d10d56052048ddf76b16a342fc8edae51d7a40a34df0aa35b36a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cataclysm.snbt"
@@ -146,7 +146,7 @@ hash = "6a5bcbffb81d4002aab8ab6ecc600666c04d357feb8c20973ced5af4142a5283"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/explorers_guide.snbt"
-hash = "f8306ce1e337773e3ca187dd970e247075e8257a5dfbb2526d6b786dc955df79"
+hash = "8fbd9d66a54e751ceaca57da99a6167e262d79d6d212ae31af56a9f9b1615b39"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/farming_food.snbt"
@@ -186,7 +186,7 @@ hash = "758ca245b153d9953e364d17a6a689273567778bee7f63b8fac4a37e266a3171"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nether.snbt"
-hash = "4fbd14412a93e7a73535dc7f2062092b6594863e760000ebee47af805c51fad6"
+hash = "5ecceb6b36f318feb1fef13e2ff2b8afc694218662c634b41ae3c93c9a6387ea"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/occultism.snbt"
@@ -198,7 +198,7 @@ hash = "2ecf380be60d1fa8d13fffde993eb3b741ffa69690ea49cf0e1ceb853a597376"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pets_critters.snbt"
-hash = "580f1680e56c42bfdd0de37ea2b270e4f19c124798a9f995be111060f5e2e0e5"
+hash = "394d0ee09506f1615668b6a267a567a90b44d04c84e7ed051e22a2e874f073a8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pokemon_world.snbt"
@@ -238,7 +238,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "8610f658fea422cf636feccff2f359399159262a95202a86ef25b29bd66880d0"
+hash = "f2050e815526e91e71fe3efab9469d8439c3d452871b586371e728b23e98c97c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"

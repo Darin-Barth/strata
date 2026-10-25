@@ -3,8 +3,7 @@
 The quest book is generated: edit the Python files in `book/`, then run
 
 ```
-python -I tools/quests/build.py          # writes config/ftbquests/quests/ and checks every ID
-packwiz refresh
+python -I tools/quests/build.py   # writes config/ftbquests/quests/, checks every ID, runs packwiz refresh
 ```
 
 - `book/_order.py` — chapter groups and chapter order. `book/_tables.py` — loot bags.
@@ -67,3 +66,12 @@ q("infuser", "Metallurgic Infuser", deps="intro", tasks=item("mekanism:metallurg
 - Keybinds: only name keys verified in Darin's client options. Known: R/U = recipe/uses in EMI,
   M = Xaero world map, U = Xaero waypoints, ` = FTB Ultimine, V = voice chat, mouse 5 = ping,
   B = backpack. Several keys clash (B, R, M, V), so for others say "its key in Options > Controls".
+
+## Registry dump (authoritative ID check)
+
+Some mods ship a model and lang entry for items they don't register (disabled or conditional), so
+the jar scan alone can pass a missing item. `registry.json` is a dump of the real item, entity,
+structure, biome and dimension registries, and `check_ids.py` uses it whenever it exists. Refresh it
+after adding, removing or updating mods: copy `registry_dump.js` into a scratch server copy's
+`kubejs/server_scripts/` (never into the shipped `kubejs/`), start it once, then run
+`python -I tools/quests/import_registry.py <that server>/logs/kubejs/server.log`.
