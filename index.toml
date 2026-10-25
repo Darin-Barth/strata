@@ -3595,7 +3595,7 @@ hash = "a3633d65a9d78bc1753e1ef4be3f177187c0c4da498ca16ac09d0013828fe2f0"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_starter.js"
-hash = "7ae8b0dc76a4119a9767c3424171152864e920307ba513908724a5428ef079cc"
+hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"
