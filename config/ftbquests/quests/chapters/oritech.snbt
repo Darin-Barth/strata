@@ -1,0 +1,408 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "oritech"
+	group: "2EAA9718BAF5A32A"
+	icon: { id: "oritech:pulverizer_block" }
+	id: "45ADC3D897E2E7E3"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4F944E25AC804CF8"
+			x: 0.0d
+			y: 2.625d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "oritech:machine_core_1" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "5D0F944C1F463AC8", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "44887DD31F01B1CE", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "5710FA9E9786267C"
+			x: 1.75d
+			y: 2.625d
+			dependencies: ["4F944E25AC804CF8"]
+			icon: { id: "oritech:nickel_ingot" }
+			tasks: [
+				{
+					id: "174DFAA38EBEA02C"
+					type: "item"
+					item: { count: 1, id: "oritech:nickel_ingot" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "2ADD3B75E05B71E7", type: "xp", xp: 100 }
+				{
+					id: "6C801002B31F7282"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6DA01AE8EAF32CEF"
+			x: 3.5d
+			y: 2.625d
+			dependencies: ["5710FA9E9786267C"]
+			icon: { id: "oritech:basic_generator_block" }
+			tasks: [
+				{
+					id: "14AB69236AA4F51D"
+					type: "item"
+					item: { count: 1, id: "oritech:basic_generator_block" }
+				}
+			]
+			rewards: [
+				{ id: "48F484A891F70095", type: "xp", xp: 100 }
+				{
+					id: "78C834FFC3A8CE1B"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4C0D5D3E6AD5DF36"
+			x: 5.25d
+			y: 0.0d
+			dependencies: ["6DA01AE8EAF32CEF"]
+			icon: { id: "oritech:energy_pipe" }
+			tasks: [
+				{
+					id: "7152D9608181A508"
+					type: "item"
+					item: { count: 1, id: "oritech:energy_pipe" }
+					count: 8L
+				}
+				{
+					id: "34EC9F987EA47E69"
+					type: "item"
+					item: { count: 1, id: "oritech:item_pipe" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "53846EFB8921C296", type: "xp", xp: 100 }
+				{
+					id: "63F4C647B1BA6987"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "630B1D39D839186C"
+			x: 5.25d
+			y: 5.25d
+			dependencies: ["6DA01AE8EAF32CEF"]
+			icon: { id: "oritech:pulverizer_block" }
+			tasks: [
+				{
+					id: "7FCA8265D432DCF6"
+					type: "item"
+					item: { count: 1, id: "oritech:pulverizer_block" }
+				}
+				{
+					id: "1076EFFA9BFA14D2"
+					type: "item"
+					item: { count: 1, id: "oritech:powered_furnace_block" }
+				}
+			]
+			rewards: [
+				{ id: "6A21E0B226BED9DC", type: "xp", xp: 250 }
+				{ id: "07B5845191B1EB0A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "762967F4D4BDB15A"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1CD962677669B77C"
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["630B1D39D839186C"]
+			icon: { id: "oritech:machine_speed_addon" }
+			tasks: [
+				{
+					id: "2F4AA13891502CCC"
+					type: "item"
+					item: { count: 1, id: "oritech:machine_speed_addon" }
+				}
+			]
+			rewards: [
+				{ id: "49D69A59E381E973", type: "xp", xp: 250 }
+				{ id: "1A28D00EF85AA030", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "7E2F1301E6595942"
+			x: 7.0d
+			y: 5.625d
+			dependencies: ["630B1D39D839186C"]
+			icon: { id: "oritech:foundry_block" }
+			tasks: [
+				{
+					id: "7887FA00897C53B5"
+					type: "item"
+					item: { count: 1, id: "oritech:foundry_block" }
+				}
+			]
+			rewards: [
+				{ id: "6972921DF6ED8146", type: "xp", xp: 250 }
+				{ id: "3550EA4555681768", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "26C48E0A787EFBF9"
+			x: 8.75d
+			y: 5.625d
+			dependencies: ["7E2F1301E6595942"]
+			icon: { id: "oritech:assembler_block" }
+			tasks: [
+				{
+					id: "0A1DEC57C1EA13B5"
+					type: "item"
+					item: { count: 1, id: "oritech:assembler_block" }
+				}
+			]
+			rewards: [
+				{ id: "1F736C5B7215E3FF", type: "xp", xp: 500 }
+				{ id: "70DE6B38FF94C945", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "28E2F3F8903F4B74"
+					type: "item"
+					item: { count: 1, id: "oritech:nickel_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "688AA5A95243C6C1"
+			x: 10.5d
+			y: 3.75d
+			dependencies: ["26C48E0A787EFBF9"]
+			icon: { id: "oritech:centrifuge_block" }
+			tasks: [
+				{
+					id: "22080B7651A78BC5"
+					type: "item"
+					item: { count: 1, id: "oritech:centrifuge_block" }
+				}
+				{
+					id: "56CB7F98BDD191E1"
+					type: "item"
+					item: { count: 1, id: "oritech:plastic_sheet" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "7C8FD99F069F0F77", type: "xp", xp: 500 }
+				{ id: "5CB00969BDAEDA5F", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "2663E7DF1013ED24"
+			x: 10.5d
+			y: 6.0d
+			dependencies: ["26C48E0A787EFBF9"]
+			icon: { id: "oritech:laser_arm_block" }
+			tasks: [
+				{
+					id: "56B27DF175B3B946"
+					type: "item"
+					item: { count: 1, id: "oritech:machine_frame_block" }
+					count: 8L
+				}
+				{
+					id: "029ABBE319F263A0"
+					type: "item"
+					item: { count: 1, id: "oritech:laser_arm_block" }
+				}
+			]
+			rewards: [
+				{ id: "7A37DED4B28DC3C2", type: "xp", xp: 500 }
+				{ id: "79F47316788425A6", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "3D754C790E570892"
+			x: 7.0d
+			y: 9.0d
+			dependencies: ["630B1D39D839186C"]
+			icon: { id: "oritech:hand_drill" }
+			optional: true
+			tasks: [
+				{
+					id: "391F72D05FFA38D2"
+					type: "item"
+					item: { count: 1, id: "oritech:hand_drill" }
+				}
+			]
+			rewards: [
+				{ id: "5693569CD95E8C37", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "46F703212425A6B1"
+			x: 12.25d
+			y: 6.0d
+			dependencies: ["2663E7DF1013ED24"]
+			icon: { id: "oritech:resource_node_iron" }
+			tasks: [
+				{
+					id: "3B432B39BA4729A9"
+					type: "item"
+					item: { count: 1, id: "oritech:deep_drill_block" }
+				}
+			]
+			rewards: [
+				{ id: "4DB9FAEFF0F795AE", type: "xp_levels", xp_levels: 10 }
+				{ id: "012FE4AD779354C0", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "7CF0EA6387A0C28E"
+			x: 12.25d
+			y: 3.0d
+			dependencies: ["688AA5A95243C6C1"]
+			icon: { id: "oritech:augment_application_block" }
+			tasks: [
+				{
+					id: "58F9C4363EE23703"
+					type: "item"
+					item: { count: 1, id: "oritech:simple_augment_station" }
+				}
+				{
+					id: "39333F6E21CFF485"
+					type: "item"
+					item: { count: 1, id: "oritech:augment_application_block" }
+				}
+			]
+			rewards: [
+				{ id: "4E0CBEF370386B48", type: "xp_levels", xp_levels: 10 }
+				{ id: "5DF22C71C10FA6FC", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "3935137E275A59B3"
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["7CF0EA6387A0C28E"]
+			icon: { id: "oritech:exo_chestplate" }
+			tasks: [
+				{
+					id: "50F60538573F06F7"
+					type: "item"
+					item: { count: 1, id: "oritech:exo_helmet" }
+				}
+				{
+					id: "6A46D364F5C7620D"
+					type: "item"
+					item: { count: 1, id: "oritech:exo_chestplate" }
+				}
+				{
+					id: "7A9EEE2CC093A20A"
+					type: "item"
+					item: { count: 1, id: "oritech:exo_leggings" }
+				}
+				{
+					id: "61E2E28676E58873"
+					type: "item"
+					item: { count: 1, id: "oritech:exo_boots" }
+				}
+			]
+			rewards: [
+				{ id: "3A68102C99C58C75", type: "xp_levels", xp_levels: 10 }
+				{ id: "1B03CAA6CBF0D7E5", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "1A017D53BD3830B5"
+			x: 15.75d
+			y: 3.0d
+			dependencies: ["3935137E275A59B3", "65459A133D3C4EFE"]
+			icon: { id: "oritech:exo_jetpack" }
+			tasks: [
+				{
+					id: "52705B6D6AC99331"
+					type: "item"
+					item: { count: 1, id: "oritech:exo_jetpack" }
+				}
+			]
+			rewards: [
+				{ id: "2A34ACAF90CE67E1", type: "xp_levels", xp_levels: 10 }
+				{ id: "765A20EB3F95EBE1", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "6B9F103C58B9251A"
+			x: 12.25d
+			y: 4.5d
+			dependencies: ["688AA5A95243C6C1"]
+			icon: { id: "oritech:reactor_controller" }
+			tasks: [
+				{
+					id: "01EE17B04BAE8B79"
+					type: "item"
+					item: { count: 1, id: "oritech:reactor_controller" }
+				}
+				{
+					id: "7196E5A2B936136E"
+					type: "item"
+					item: { count: 1, id: "oritech:reactor_rod" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "609A65698987011D", type: "xp_levels", xp_levels: 20 }
+				{ id: "1D580E5598D7C3DC", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "6F72CA80F2CE50C5"
+			x: 14.0d
+			y: 4.5d
+			dependencies: ["6B9F103C58B9251A"]
+			icon: { id: "oritech:atomic_forge_block" }
+			tasks: [
+				{
+					id: "4FDEAB48F6252DD6"
+					type: "item"
+					item: { count: 1, id: "oritech:atomic_forge_block" }
+				}
+			]
+			rewards: [
+				{ id: "4B320DB7B7F3CF33", type: "xp_levels", xp_levels: 20 }
+				{ id: "13A785D9F08A33A0", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "2AB80584A691D3FB"
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["26C48E0A787EFBF9", "1CD962677669B77C"]
+			dependency_requirement: "one_completed"
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "3235FA8F9ACA80FB", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7D027D6328EEBA7C", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

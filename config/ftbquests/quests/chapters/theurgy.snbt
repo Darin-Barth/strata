@@ -1,0 +1,408 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theurgy"
+	group: "03203A1312E25E36"
+	icon: { id: "theurgy:liquefaction_cauldron" }
+	id: "06C17FAC00190D88"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2ED5310F6A6ECEC3"
+			x: 0.0d
+			y: 4.875d
+			icon: { id: "theurgy:mercury_shard" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "446CEEB49ACEB50D", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "745C15D03DCF37DD", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "27BBE6023DD4B25F"
+			x: 1.75d
+			y: 2.25d
+			dependencies: ["2ED5310F6A6ECEC3"]
+			icon: { id: "theurgy:the_hermetica_icon" }
+			tasks: [
+				{ id: "61393EA36EFA047D", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "399A62B7219FD164", type: "xp", xp: 100 }
+				{
+					id: "3B000857BAD7A446"
+					type: "item"
+					item: { count: 1, id: "minecraft:book" }
+					count: 2
+				}
+				{
+					id: "47E3D1EEE86D7AE8"
+					type: "item"
+					item: { count: 1, id: "minecraft:sand" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7AEA33CCCD31BF05"
+			x: 1.75d
+			y: 7.5d
+			dependencies: ["2ED5310F6A6ECEC3"]
+			icon: { id: "theurgy:divination_rod_t1" }
+			tasks: [
+				{
+					id: "087FD7260EA69EDE"
+					type: "item"
+					item: { count: 1, id: "theurgy:divination_rod_t1" }
+				}
+			]
+			rewards: [
+				{ id: "45A8818A0B4C8FBD", type: "xp", xp: 100 }
+				{
+					id: "39B7B6883C76D084"
+					type: "item"
+					item: { count: 1, id: "minecraft:glass" }
+					count: 16
+				}
+				{
+					id: "64D4DA8D6D938994"
+					type: "item"
+					item: { count: 1, id: "minecraft:stick" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1B1C13315CF1DF38"
+			x: 3.5d
+			y: 2.25d
+			dependencies: ["27BBE6023DD4B25F"]
+			icon: { id: "theurgy:pyromantic_brazier" }
+			tasks: [
+				{
+					id: "19A773C119B95264"
+					type: "item"
+					item: { count: 1, id: "theurgy:pyromantic_brazier" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "58DF364962107021", type: "xp", xp: 100 }
+				{
+					id: "6078484CBDCE10C8"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 32
+				}
+				{
+					id: "62ED3CE6A54AF639"
+					type: "item"
+					item: { count: 1, id: "minecraft:charcoal" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "58142D978E669E3E"
+			x: 5.25d
+			y: 0.0d
+			dependencies: ["1B1C13315CF1DF38"]
+			icon: { id: "theurgy:calcination_oven" }
+			tasks: [
+				{
+					id: "017292C3510B74A2"
+					type: "item"
+					item: { count: 1, id: "theurgy:calcination_oven" }
+				}
+				{
+					id: "7CBF84C1360F27C9"
+					type: "item"
+					item: { count: 1, id: "theurgy:alchemical_salt_mineral" }
+				}
+			]
+			rewards: [
+				{ id: "386D647DF9115B3F", type: "xp", xp: 250 }
+				{ id: "6535A064D976D49F", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "73978F4A67EF8850"
+					type: "item"
+					item: { count: 1, id: "minecraft:charcoal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "57938B800464750E"
+			x: 5.25d
+			y: 1.5d
+			dependencies: ["1B1C13315CF1DF38"]
+			icon: { id: "theurgy:distiller" }
+			tasks: [
+				{
+					id: "21BC440A4AF8141B"
+					type: "item"
+					item: { count: 1, id: "theurgy:distiller" }
+				}
+				{
+					id: "310D284148F4A603"
+					type: "item"
+					item: { count: 1, id: "theurgy:mercury_shard" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "6A16F311EC32EBCA", type: "xp", xp: 250 }
+				{ id: "62C7908F0A827B4E", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "3C1C35CAC2028F09"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "2FB1BDFCF32534A8"
+			x: 5.25d
+			y: 4.5d
+			dependencies: ["1B1C13315CF1DF38"]
+			icon: { id: "theurgy:sal_ammoniac_accumulator" }
+			tasks: [
+				{
+					id: "48E88883BDA2B734"
+					type: "item"
+					item: { count: 1, id: "theurgy:sal_ammoniac_accumulator" }
+				}
+				{
+					id: "6FE6E92B5F8CFF0A"
+					type: "item"
+					item: { count: 1, id: "theurgy:sal_ammoniac_tank" }
+				}
+				{
+					id: "02FFB1F8BCBB51A8"
+					type: "item"
+					item: { count: 1, id: "theurgy:sal_ammoniac_bucket" }
+				}
+			]
+			rewards: [
+				{ id: "618ED56E1E90DAAC", type: "xp", xp: 250 }
+				{ id: "201A9B7C4676D726", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "5D636615FD02B166"
+					type: "item"
+					item: { count: 1, id: "minecraft:water_bucket" }
+				}
+				{
+					id: "3BFA05D7068A4B09"
+					type: "item"
+					item: { count: 1, id: "minecraft:bucket" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "1C0D3E4C359CF7E3"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["2FB1BDFCF32534A8"]
+			icon: { id: "theurgy:liquefaction_cauldron" }
+			tasks: [
+				{
+					id: "604CE49F7E9E55FF"
+					type: "item"
+					item: { count: 1, id: "theurgy:liquefaction_cauldron" }
+				}
+				{
+					id: "4F3314276DD17F86"
+					type: "item"
+					item: { count: 1, id: "theurgy:alchemical_sulfur_iron" }
+					count: 3L
+				}
+			]
+			rewards: [
+				{ id: "2985138216D2F4CF", type: "xp", xp: 250 }
+				{ id: "7A5787954A1FF10A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "1B14702A133D6D54"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "6DA5BFE87D61AA1D"
+			x: 8.75d
+			y: 4.5d
+			dependencies: ["1C0D3E4C359CF7E3", "58142D978E669E3E", "57938B800464750E"]
+			icon: { id: "theurgy:incubator" }
+			tasks: [
+				{
+					id: "31E62ED2A2FA649A"
+					type: "item"
+					item: { count: 1, id: "theurgy:incubator" }
+				}
+				{
+					id: "5665E1D748C366ED"
+					type: "item"
+					item: { count: 1, id: "theurgy:incubator_salt_vessel" }
+				}
+				{
+					id: "0D494989FC0823E9"
+					type: "item"
+					item: { count: 1, id: "theurgy:incubator_mercury_vessel" }
+				}
+				{
+					id: "46747C2C5D8E56BB"
+					type: "item"
+					item: { count: 1, id: "theurgy:incubator_sulfur_vessel" }
+				}
+			]
+			rewards: [
+				{ id: "448D7189F074CBFE", type: "xp", xp: 500 }
+				{ id: "5FD801B68C5BE11E", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "644B21FA20892C9C"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_block" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "5BC12466FB1F72BB"
+			x: 10.5d
+			y: 3.0d
+			dependencies: ["6DA5BFE87D61AA1D"]
+			icon: { id: "theurgy:reformation_target_pedestal" }
+			tasks: [
+				{
+					id: "7446729CDDAB309E"
+					type: "item"
+					item: { count: 1, id: "theurgy:reformation_source_pedestal" }
+				}
+				{
+					id: "7604B092F902FFAC"
+					type: "item"
+					item: { count: 1, id: "theurgy:reformation_target_pedestal" }
+				}
+				{
+					id: "0A7D41F6FB21543F"
+					type: "item"
+					item: { count: 1, id: "theurgy:reformation_result_pedestal" }
+				}
+			]
+			rewards: [
+				{ id: "55C2922E88488A54", type: "xp", xp: 500 }
+				{ id: "1A6F7511712C429E", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "5C80DF50F876CA20"
+					type: "item"
+					item: { count: 1, id: "minecraft:lapis_lazuli" }
+					count: 16
+				}
+				{
+					id: "7EDFCE66A6E453A8"
+					type: "item"
+					item: { count: 1, id: "minecraft:quartz" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "03E76EE2CD268833"
+			x: 12.25d
+			y: 3.0d
+			dependencies: ["5BC12466FB1F72BB"]
+			icon: { id: "theurgy:fermentation_vat" }
+			tasks: [
+				{
+					id: "550E42D5AF02A6E6"
+					type: "item"
+					item: { count: 1, id: "theurgy:fermentation_vat" }
+				}
+			]
+			rewards: [
+				{ id: "48AE0A3960231A2D", type: "xp_levels", xp_levels: 10 }
+				{ id: "3CE3921B2D44E4F1", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "3E06DAF2A3CD5EF9"
+					type: "item"
+					item: { count: 1, id: "minecraft:sugar" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4AE2399DBA7A973D"
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["03E76EE2CD268833"]
+			icon: { id: "theurgy:digestion_vat" }
+			tasks: [
+				{
+					id: "091B19BE37F11927"
+					type: "item"
+					item: { count: 1, id: "theurgy:digestion_vat" }
+				}
+				{
+					id: "1C9DC94122AB3AD8"
+					type: "item"
+					item: { count: 1, id: "theurgy:purified_gold" }
+				}
+			]
+			rewards: [
+				{ id: "0490F018BE1CA6B0", type: "xp_levels", xp_levels: 20 }
+				{ id: "2F41A2A3B7C12869", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "217FCE43389F3699"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_block" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7D3F97A77B367D9B"
+			x: 10.5d
+			y: 4.5d
+			dependencies: ["6DA5BFE87D61AA1D"]
+			icon: { id: "theurgy:copper_wire" }
+			optional: true
+			tasks: [
+				{
+					id: "166C4A2F80497DA9"
+					type: "item"
+					item: { count: 1, id: "theurgy:logistics_item_extractor" }
+				}
+			]
+			rewards: [
+				{ id: "0C571E31AA38A6DF", type: "xp", xp: 100 }
+				{
+					id: "10EB8506C58DE1D4"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "12410EE3AA60CE90"
+			x: 10.5d
+			y: 6.0d
+			dependencies: ["6DA5BFE87D61AA1D"]
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "2CC27A1BDF46FFFC", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7DF984B11B978720", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

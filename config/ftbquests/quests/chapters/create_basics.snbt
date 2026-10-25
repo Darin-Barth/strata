@@ -1,0 +1,972 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_basics"
+	group: "2EAA9718BAF5A32A"
+	icon: { id: "create:cogwheel" }
+	id: "1CF3B4AD59E77993"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "04608463819B44C3"
+			x: 0.0d
+			y: 6.46875d
+			dependencies: ["5715BCB30A38CA73"]
+			icon: { id: "create:cogwheel" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "030E5CC231AB0E9C", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "087BE783FD562779", type: "xp", xp: 100 }
+				{
+					id: "2E348139C5C9650C"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16
+				}
+				{
+					id: "2319C82883163DED"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3A6DACA01A464DD5"
+			x: 1.75d
+			y: 0.0d
+			dependencies: ["04608463819B44C3"]
+			icon: { id: "minecraft:spyglass" }
+			tasks: [
+				{ id: "172D26C373ED148F", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "43F45CB8957B6F93", type: "xp", xp: 100 }
+				{
+					id: "591AD7BFA66FE563"
+					type: "item"
+					item: { count: 1, id: "minecraft:bread" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "046A8745E864491C"
+			x: 1.75d
+			y: 1.5d
+			dependencies: ["04608463819B44C3"]
+			icon: { id: "create:wrench" }
+			tasks: [
+				{
+					id: "0813A3670F04BCA2"
+					type: "item"
+					item: { count: 1, id: "create:wrench" }
+				}
+			]
+			rewards: [
+				{ id: "3F2BC0F93899420C", type: "xp", xp: 100 }
+				{
+					id: "1EDAAA61F54E8DEA"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "338517D331B64692"
+			x: 1.75d
+			y: 12.9375d
+			dependencies: ["04608463819B44C3"]
+			icon: { id: "create:andesite_alloy" }
+			tasks: [
+				{
+					id: "14F8B1CC7191E3C3"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 32L
+				}
+			]
+			rewards: [
+				{ id: "1CFD6656505A3BBF", type: "xp", xp: 100 }
+				{
+					id: "66262D39F9406241"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_nugget" }
+					count: 32
+				}
+				{
+					id: "18F455101C30F335"
+					type: "item"
+					item: { count: 1, id: "minecraft:andesite" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "397E12F47A1696F9"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["338517D331B64692"]
+			icon: { id: "create:shaft" }
+			tasks: [
+				{
+					id: "6EF4F83812B975A5"
+					type: "item"
+					item: { count: 1, id: "create:shaft" }
+					count: 8L
+				}
+				{
+					id: "003B47FD7FCFB989"
+					type: "item"
+					item: { count: 1, id: "create:cogwheel" }
+					count: 4L
+				}
+				{
+					id: "7AD33B391DDF3EA3"
+					type: "item"
+					item: { count: 1, id: "create:large_cogwheel" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "32E73D5D8080EA17", type: "xp", xp: 100 }
+				{
+					id: "2777E3E842D2AA22"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16
+				}
+				{
+					id: "46D0E2311A009725"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_planks" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "30C4A0BA51427A64"
+			x: 5.25d
+			y: 3.0d
+			dependencies: ["397E12F47A1696F9"]
+			icon: { id: "create:water_wheel" }
+			tasks: [
+				{
+					id: "527F38B457C8700E"
+					type: "item"
+					item: { count: 1, id: "create:water_wheel" }
+				}
+			]
+			rewards: [
+				{ id: "64E0802CC6BD7D92", type: "xp", xp: 250 }
+				{ id: "2FC9153D1FCAE5A8", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "11F9821B1E79AA49"
+					type: "item"
+					item: { count: 1, id: "minecraft:water_bucket" }
+				}
+				{
+					id: "6EF6D4F4DF0424EB"
+					type: "item"
+					item: { count: 1, id: "create:shaft" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "0C19E96A818B3CBB"
+			x: 5.25d
+			y: 4.5d
+			dependencies: ["397E12F47A1696F9"]
+			icon: { id: "create:windmill_bearing" }
+			tasks: [
+				{
+					id: "00AA1FBFD878772D"
+					type: "item"
+					item: { count: 1, id: "create:windmill_bearing" }
+				}
+				{
+					id: "3EFAAB69901BD40B"
+					type: "item"
+					item: { count: 1, id: "create:white_sail" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "3806B8D0524AAB6F", type: "xp", xp: 250 }
+				{ id: "66C441ACE8B18DD9", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "16EF0B5B770F1A90"
+					type: "item"
+					item: { count: 1, id: "minecraft:white_wool" }
+					count: 16
+				}
+				{
+					id: "5CE8DD1909190D3E"
+					type: "item"
+					item: { count: 1, id: "minecraft:stick" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4783FCDC3A3D4865"
+			x: 7.0d
+			y: 3.0d
+			dependencies: ["30C4A0BA51427A64", "0C19E96A818B3CBB"]
+			dependency_requirement: "one_completed"
+			icon: { id: "create:goggles" }
+			tasks: [
+				{
+					id: "57C2BA24C7B87710"
+					type: "item"
+					item: { count: 1, id: "create:goggles" }
+				}
+			]
+			rewards: [
+				{ id: "44829D00E9385205", type: "xp", xp: 250 }
+				{ id: "15F28C109706E339", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "3DBD5E92AE08FDFA"
+					type: "item"
+					item: { count: 1, id: "create:speedometer" }
+				}
+				{
+					id: "1592B9712784C87B"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "50E893A0FAFD1656"
+			x: 3.5d
+			y: 11.25d
+			dependencies: ["338517D331B64692"]
+			icon: { id: "create:andesite_casing" }
+			tasks: [
+				{
+					id: "11E8A40D818F7E15"
+					type: "item"
+					item: { count: 1, id: "create:andesite_casing" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "4960A30A1558D6C9", type: "xp", xp: 100 }
+				{
+					id: "74026EFBB5459237"
+					type: "item"
+					item: { count: 1, id: "minecraft:stripped_oak_log" }
+					count: 16
+				}
+				{
+					id: "2F077A1D33DB48EA"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "73D37279BAB42206"
+			x: 5.25d
+			y: 7.5d
+			dependencies: ["50E893A0FAFD1656"]
+			icon: { id: "create:mechanical_press" }
+			tasks: [
+				{
+					id: "1DC0B9658195F56C"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_press" }
+				}
+				{
+					id: "5991420B5BA5BCBA"
+					type: "item"
+					item: { count: 1, id: "create:iron_sheet" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "6ED7666A399776AC", type: "xp", xp: 250 }
+				{ id: "4671E61AB32C69D7", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "72B79DB404A9703E"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+				{
+					id: "26B7E77537DEA284"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "20175D3B7A5EC04A"
+			x: 7.0d
+			y: 7.5d
+			dependencies: ["73D37279BAB42206"]
+			icon: { id: "create:mechanical_mixer" }
+			tasks: [
+				{
+					id: "50CCC093CEEC9C4E"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_mixer" }
+				}
+				{
+					id: "7850E07AEBBE0722"
+					type: "item"
+					item: { count: 1, id: "create:basin" }
+				}
+			]
+			rewards: [
+				{ id: "4D7895D39E076CC3", type: "xp", xp: 250 }
+				{ id: "7A0719EE2D9491EB", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "33E260338BD32D07"
+					type: "item"
+					item: { count: 1, id: "minecraft:andesite" }
+					count: 32
+				}
+				{
+					id: "2183D18BA43525ED"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_nugget" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "52ED050E4CCE07DD"
+			x: 5.25d
+			y: 9.0d
+			dependencies: ["50E893A0FAFD1656"]
+			icon: { id: "create:encased_fan" }
+			tasks: [
+				{
+					id: "3E63FD2298C47477"
+					type: "item"
+					item: { count: 1, id: "create:encased_fan" }
+				}
+			]
+			rewards: [
+				{ id: "26BDD23A01126C1E", type: "xp", xp: 250 }
+				{ id: "0EBE6073393A6B3C", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "497E307A14558810"
+					type: "item"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+				}
+				{
+					id: "63C4C28679A6DEDE"
+					type: "item"
+					item: { count: 1, id: "minecraft:soul_sand" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "43AE6FA2F77C658E"
+			x: 5.25d
+			y: 10.5d
+			dependencies: ["50E893A0FAFD1656", "4783FCDC3A3D4865"]
+			icon: { id: "create:crushing_wheel" }
+			tasks: [
+				{
+					id: "3AD629B3D7E66AF8"
+					type: "item"
+					item: { count: 1, id: "create:millstone" }
+				}
+				{
+					id: "2FDF50D743990401"
+					type: "item"
+					item: { count: 1, id: "create:crushing_wheel" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "23F669C34B912A46", type: "xp", xp: 500 }
+				{ id: "17959E20814D6FFB", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "65A2EE709C0C611D"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					count: 16
+				}
+				{
+					id: "60F22CD7F9BEEF83"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_copper" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5EB98A332DF8D3FD"
+			x: 5.25d
+			y: 6.0d
+			dependencies: ["397E12F47A1696F9"]
+			icon: { id: "create:belt_connector" }
+			tasks: [
+				{
+					id: "0CA54FAE47B593D7"
+					type: "item"
+					item: { count: 1, id: "create:belt_connector" }
+					count: 8L
+				}
+				{
+					id: "5A31F8DBAA39000F"
+					type: "item"
+					item: { count: 1, id: "create:depot" }
+					count: 2L
+				}
+				{
+					id: "1F6DA01C3958F4A1"
+					type: "item"
+					item: { count: 1, id: "create:andesite_funnel" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "20EB84A75C483E39", type: "xp", xp: 250 }
+				{ id: "1B20FAA537657BE2", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "2D6FB9236410233A"
+					type: "item"
+					item: { count: 1, id: "minecraft:dried_kelp" }
+					count: 32
+				}
+				{
+					id: "09F48C71B391F5F4"
+					type: "item"
+					item: { count: 1, id: "create:shaft" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "202B8168C3A6D7AD"
+			x: 5.25d
+			y: 12.75d
+			dependencies: ["50E893A0FAFD1656"]
+			icon: { id: "create:mechanical_piston" }
+			tasks: [
+				{
+					id: "34F70E2CDCD710DC"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_piston" }
+				}
+				{
+					id: "1C0B06BBF594FE9C"
+					type: "item"
+					item: { count: 1, id: "create:super_glue" }
+				}
+			]
+			rewards: [
+				{ id: "746A2A63947ACA3C", type: "xp", xp: 250 }
+				{ id: "2D4148E91E2A093A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "520BBA61317DA1F9"
+					type: "item"
+					item: { count: 1, id: "minecraft:slime_ball" }
+					count: 8
+				}
+				{
+					id: "77786C606DFFC0F4"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "21522309B5319DDD"
+			x: 7.0d
+			y: 12.0d
+			dependencies: ["202B8168C3A6D7AD"]
+			icon: { id: "create:mechanical_drill" }
+			tasks: [
+				{
+					id: "6934E7AED5FC9CD6"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_drill" }
+				}
+				{
+					id: "4C94A685BE277ABD"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_saw" }
+				}
+			]
+			rewards: [
+				{ id: "0692632D5B5D11EF", type: "xp", xp: 100 }
+				{
+					id: "54A8D71A95502FE4"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 8
+				}
+				{
+					id: "64B1553044D6B533"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_sapling" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "13593286B566085E"
+			x: 7.0d
+			y: 13.5d
+			dependencies: ["202B8168C3A6D7AD"]
+			icon: { id: "create:mechanical_harvester" }
+			tasks: [
+				{
+					id: "7D1B9BA34535B297"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_harvester" }
+					count: 2L
+				}
+				{
+					id: "0C5A3D18DF897D36"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_plough" }
+				}
+			]
+			rewards: [
+				{ id: "15D29CDE814B08F6", type: "xp", xp: 100 }
+				{
+					id: "6EB119949EC087A1"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat_seeds" }
+					count: 32
+				}
+				{
+					id: "760D70BF4562D6F4"
+					type: "item"
+					item: { count: 1, id: "minecraft:carrot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2B21940EBDCD3028"
+			x: 3.5d
+			y: 21.375d
+			dependencies: ["338517D331B64692"]
+			icon: { id: "create:raw_zinc" }
+			tasks: [
+				{
+					id: "7FEFAE229E8E388C"
+					type: "item"
+					item: { count: 1, id: "create:raw_zinc" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "1A5FA233A21A2C53", type: "xp", xp: 100 }
+				{
+					id: "7125FADA356413C8"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_copper" }
+					count: 16
+				}
+				{
+					id: "5172042AE385D902"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5D211A040922E5D2"
+			x: 5.25d
+			y: 21.375d
+			dependencies: ["2B21940EBDCD3028", "65459A133D3C4EFE"]
+			icon: { id: "create:blaze_burner" }
+			tasks: [
+				{
+					id: "180CAA712239D2A3"
+					type: "item"
+					item: { count: 1, id: "create:blaze_burner" }
+				}
+			]
+			rewards: [
+				{ id: "0B061428931B7985", type: "xp", xp: 500 }
+				{ id: "6633B5C1EDDAE2FD", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "4172248C69414C36"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal_block" }
+					count: 4
+				}
+				{
+					id: "74ECE7EBAFA10910"
+					type: "item"
+					item: { count: 1, id: "minecraft:blaze_rod" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "76248815D192799C"
+			x: 7.0d
+			y: 21.375d
+			dependencies: ["5D211A040922E5D2", "20175D3B7A5EC04A"]
+			icon: { id: "create:brass_ingot" }
+			tasks: [
+				{
+					id: "3382F3622391FEEA"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "310A2F0CA645B6D7", type: "xp", xp: 500 }
+				{ id: "40C56C0B2F9F2890", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "2B41F2F0DD5E32A9"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+				{
+					id: "1E2715E8EC4B911B"
+					type: "item"
+					item: { count: 1, id: "create:zinc_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1FA04D186DC68711"
+			x: 8.75d
+			y: 21.375d
+			dependencies: ["76248815D192799C"]
+			icon: { id: "create:brass_casing" }
+			tasks: [
+				{
+					id: "4EDF0ED93658F0BD"
+					type: "item"
+					item: { count: 1, id: "create:brass_casing" }
+					count: 8L
+				}
+				{
+					id: "15FFA9EBF1DAADD8"
+					type: "item"
+					item: { count: 1, id: "create:electron_tube" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "712D0AF05A340A04", type: "xp", xp: 100 }
+				{
+					id: "15D4527BD663F65F"
+					type: "item"
+					item: { count: 1, id: "minecraft:stripped_oak_log" }
+					count: 16
+				}
+				{
+					id: "5C440239F8B045B5"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "0FC36C389D5FBDF9"
+			x: 10.5d
+			y: 18.75d
+			dependencies: ["1FA04D186DC68711"]
+			icon: { id: "create:precision_mechanism" }
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0EC2DF3774412A8E"
+					type: "item"
+					item: { count: 1, id: "create:precision_mechanism" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "123971122E1AD2C3", type: "xp_levels", xp_levels: 10 }
+				{ id: "04B275B9E7473665", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "2C2C06837F76B964"
+					type: "item"
+					item: { count: 1, id: "create:golden_sheet" }
+					count: 8
+				}
+				{
+					id: "2BA9E778E8EECD18"
+					type: "item"
+					item: { count: 1, id: "create:cogwheel" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5914BF8AF325EA7D"
+			x: 10.5d
+			y: 22.5d
+			dependencies: ["1FA04D186DC68711"]
+			icon: { id: "create:deployer" }
+			tasks: [
+				{
+					id: "141B19C5054005EA"
+					type: "item"
+					item: { count: 1, id: "create:deployer" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "203FCE312EEC0398", type: "xp", xp: 100 }
+				{
+					id: "6A95BC0FBAC820B0"
+					type: "item"
+					item: { count: 1, id: "create:brass_hand" }
+				}
+				{
+					id: "633CB272B3EF50E1"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "275DC84AC05CBE23"
+			x: 10.5d
+			y: 24.0d
+			dependencies: ["1FA04D186DC68711"]
+			icon: { id: "create:brass_funnel" }
+			tasks: [
+				{
+					id: "27755CCA89723385"
+					type: "item"
+					item: { count: 1, id: "create:brass_funnel" }
+					count: 2L
+				}
+				{
+					id: "012B764C03A47B6F"
+					type: "item"
+					item: { count: 1, id: "create:brass_tunnel" }
+					count: 2L
+				}
+				{
+					id: "62F4BCF355C3D42E"
+					type: "item"
+					item: { count: 1, id: "create:filter" }
+				}
+			]
+			rewards: [
+				{ id: "2EB33E80CFBF315F", type: "xp", xp: 250 }
+				{ id: "120EFEDA6EDBD9AC", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4B78214B23864AD2"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 8
+				}
+				{
+					id: "07B235395490D874"
+					type: "item"
+					item: { count: 1, id: "minecraft:paper" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "601D16FD4780110C"
+			x: 12.25d
+			y: 16.5d
+			dependencies: ["0FC36C389D5FBDF9"]
+			icon: { id: "create:mechanical_arm" }
+			tasks: [
+				{
+					id: "0872253DE10BA679"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_arm" }
+				}
+			]
+			rewards: [
+				{ id: "452A8073BC7D5FC3", type: "xp", xp: 250 }
+				{ id: "485488F5CDECA263", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "2B65D6A6A51B7829"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "46E0C7ACAAD0D347"
+			x: 12.25d
+			y: 18.0d
+			dependencies: ["0FC36C389D5FBDF9"]
+			icon: { id: "create:mechanical_crafter" }
+			optional: true
+			tasks: [
+				{
+					id: "202332149756CA27"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_crafter" }
+					count: 9L
+				}
+			]
+			rewards: [
+				{ id: "2D6C58D799AF3172", type: "xp", xp: 500 }
+				{ id: "5EA06DA159F94956", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "1CA2B308D39E91BC"
+					type: "item"
+					item: { count: 1, id: "create:electron_tube" }
+					count: 4
+				}
+				{
+					id: "1ACC59CE72628525"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "52A33FE103E57AA3"
+			x: 5.25d
+			y: 15.0d
+			dependencies: ["50E893A0FAFD1656"]
+			icon: { id: "create:mechanical_pump" }
+			tasks: [
+				{
+					id: "2ADD7AF034194A31"
+					type: "item"
+					item: { count: 1, id: "create:fluid_pipe" }
+					count: 16L
+				}
+				{
+					id: "4A40460EC413AD85"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_pump" }
+				}
+				{
+					id: "13EE42832CB2567F"
+					type: "item"
+					item: { count: 1, id: "create:fluid_tank" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "29805D42B8EA5FFE", type: "xp", xp: 250 }
+				{ id: "6E629F4FE7440190", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "6B0AD80D9FA9CE86"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+				{
+					id: "0B250476F1C025D8"
+					type: "item"
+					item: { count: 1, id: "minecraft:bucket" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "570D23C41DB5CB6D"
+			x: 12.25d
+			y: 19.5d
+			dependencies: ["0FC36C389D5FBDF9"]
+			icon: { id: "createoreexcavation:vein_finder" }
+			tasks: [
+				{
+					id: "1CB2543686AC02CF"
+					type: "item"
+					item: { count: 1, id: "createoreexcavation:vein_finder" }
+				}
+			]
+			rewards: [
+				{ id: "137010910B0459BE", type: "xp", xp: 250 }
+				{ id: "273E552B1729EC08", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "36B962BF818C2EE7"
+					type: "item"
+					item: { count: 1, id: "minecraft:ender_pearl" }
+					count: 2
+				}
+				{
+					id: "50E142F5EEE69B6E"
+					type: "item"
+					item: { count: 1, id: "minecraft:amethyst_shard" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "193828CB66117C38"
+			x: 14.0d
+			y: 19.5d
+			dependencies: ["570D23C41DB5CB6D"]
+			icon: { id: "createoreexcavation:drilling_machine" }
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4641E0EEF042BCC9"
+					type: "item"
+					item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				}
+				{
+					id: "2EDFF1BA0BC4DB59"
+					type: "item"
+					item: { count: 1, id: "createoreexcavation:drill" }
+				}
+			]
+			rewards: [
+				{ id: "7FCFFECA99F7239C", type: "xp_levels", xp_levels: 10 }
+				{ id: "6CC7078FAA5009E3", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "0B93F1B6A7185D5D"
+					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 16
+				}
+				{
+					id: "47E8157B68D1CBF8"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_block" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "48C35B32C447AC13"
+			x: 12.25d
+			y: 21.0d
+			dependencies: ["0FC36C389D5FBDF9", "4783FCDC3A3D4865"]
+			icon: { id: "minecraft:oak_sign" }
+			shape: "square"
+			tasks: [
+				{ id: "2F9722C8DD29119E", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "6A48F6F790B04340", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

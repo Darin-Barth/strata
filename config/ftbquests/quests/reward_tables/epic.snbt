@@ -28,28 +28,23 @@
 		}
 		{
 			id: "5C8526768762C5D3"
-			item: { count: 1, id: "minecraft:nether_star" }
-			weight: 3.0f
-		}
-		{
-			id: "052006DA83EE51B0"
 			item: { count: 1, id: "minecraft:experience_bottle" }
 			count: 64
 			weight: 8.0f
 		}
 		{
-			id: "43ED1A57738F6538"
+			id: "052006DA83EE51B0"
 			item: { count: 1, id: "apotheosis:sigil_of_enhancement" }
 			weight: 5.0f
 		}
 		{
-			id: "0E5B8F59BEFA7685"
+			id: "43ED1A57738F6538"
 			item: { count: 1, id: "apotheosis:sigil_of_socketing" }
 			count: 4
 			weight: 6.0f
 		}
 		{
-			id: "7F4F4D75786A6009"
+			id: "0E5B8F59BEFA7685"
 			item: { count: 1, id: "minecraft:emerald_block" }
 			count: 6
 			weight: 6.0f

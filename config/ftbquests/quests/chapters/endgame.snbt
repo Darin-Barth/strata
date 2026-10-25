@@ -1,0 +1,460 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: "2EAA9718BAF5A32A"
+	icon: { id: "draconicevolution:chaotic_core" }
+	id: "207C97AAA9F54EB7"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			id: "41AC80BC0555D444"
+			x: 0.0d
+			y: 6.09375d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "draconicevolution:draconium_ingot" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "3DD34D091D0E1244", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "4A5E29494C125B71", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "2DED5A01D6C48666"
+			x: 1.75d
+			y: 1.6875d
+			dependencies: ["41AC80BC0555D444"]
+			icon: { id: "draconicevolution:draconium_ingot" }
+			tasks: [
+				{
+					id: "535D825E93C4670F"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:draconium_ingot" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "51CE2356CEB4053A", type: "xp", xp: 100 }
+				{
+					id: "75FA5FC4774D9CAD"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "1CA8DF428A6A1ED4"
+			x: 3.5d
+			y: 1.6875d
+			dependencies: ["2DED5A01D6C48666"]
+			icon: { id: "draconicevolution:draconium_core" }
+			tasks: [
+				{
+					id: "14E0BD70A21C4C39"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:draconium_core" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "6A5A9A4B651C3B92", type: "xp", xp: 250 }
+				{ id: "5ED4CC0BCDF9A75A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "6E858A2B88FD7320"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1AFDA78996313961"
+			x: 5.25d
+			y: 0.0d
+			dependencies: ["1CA8DF428A6A1ED4"]
+			icon: { id: "draconicevolution:generator" }
+			tasks: [
+				{
+					id: "3F25020E50638420"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:generator" }
+				}
+			]
+			rewards: [
+				{ id: "66752118C4669956", type: "xp", xp: 100 }
+				{
+					id: "068210BF6964AB40"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal_block" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "0C5E4775DCA4F0BE"
+			x: 5.25d
+			y: 3.375d
+			dependencies: ["1CA8DF428A6A1ED4"]
+			icon: { id: "draconicevolution:crafting_core" }
+			tasks: [
+				{
+					id: "635719A9176382EE"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:crafting_core" }
+				}
+				{
+					id: "374C8D6478CC0D51"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:basic_crafting_injector" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "214EB0107AE172A7", type: "xp", xp: 500 }
+				{ id: "69BC4CA9E3F943B0", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "18EF5E748083E553"
+			x: 7.0d
+			y: 3.375d
+			dependencies: ["0C5E4775DCA4F0BE"]
+			icon: { id: "draconicevolution:wyvern_core" }
+			tasks: [
+				{
+					id: "25014EFA92D4EC96"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:wyvern_core" }
+				}
+			]
+			rewards: [
+				{ id: "29F13D36EA532C7F", type: "xp", xp: 500 }
+				{ id: "59CB4F71C2F4B4AA", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "0CBC3F37C280DE14"
+			x: 8.75d
+			y: 1.5d
+			dependencies: ["18EF5E748083E553"]
+			icon: { id: "draconicevolution:energy_core" }
+			tasks: [
+				{
+					id: "2485CC6B5BA9D2A6"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:energy_core" }
+				}
+				{
+					id: "28BBF10FE03016E9"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:energy_core_stabilizer" }
+					count: 4L
+				}
+				{
+					id: "2770C03151D18568"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:energy_pylon" }
+				}
+			]
+			rewards: [
+				{ id: "5BD48181C57891B9", type: "xp_levels", xp_levels: 10 }
+				{ id: "465B4C021987146D", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "260A6675A47ACC19"
+			x: 8.75d
+			y: 3.0d
+			dependencies: ["18EF5E748083E553"]
+			icon: { id: "draconicevolution:wyvern_pickaxe" }
+			tasks: [
+				{
+					id: "5B31427B4C5106D8"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:wyvern_pickaxe" }
+				}
+			]
+			rewards: [
+				{ id: "26C36A3E351D766C", type: "xp_levels", xp_levels: 10 }
+				{ id: "62DE5B2B55D7D0CC", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "76AEAB4FF06FF427"
+			x: 8.75d
+			y: 5.25d
+			dependencies: ["18EF5E748083E553", "5E75F524FF7A94CC"]
+			icon: { id: "draconicevolution:awakened_draconium_ingot" }
+			tasks: [
+				{
+					id: "6361FF7BA5E07958"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:awakened_draconium_ingot" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "796AFCC83408E8A1", type: "xp_levels", xp_levels: 10 }
+				{ id: "36314638BD0847B9", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "21C5EF06F98348C1"
+			x: 10.5d
+			y: 5.25d
+			dependencies: ["76AEAB4FF06FF427"]
+			icon: { id: "draconicevolution:awakened_core" }
+			tasks: [
+				{
+					id: "72E00B1E70960ABC"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:awakened_core" }
+				}
+			]
+			rewards: [
+				{ id: "16CE4F8F26085398", type: "xp_levels", xp_levels: 20 }
+				{ id: "331B42DE695F6CCD", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "0BDC25351418F2EA"
+			x: 12.25d
+			y: 4.5d
+			dependencies: ["21C5EF06F98348C1", "087C51290A82D487"]
+			icon: { id: "draconicevolution:draconic_chestpiece" }
+			tasks: [
+				{
+					id: "75E8AA04B8A48637"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:draconic_chestpiece" }
+				}
+			]
+			rewards: [
+				{ id: "0AC351A62859EF77", type: "xp_levels", xp_levels: 20 }
+				{ id: "1CCD53C9C193E60C", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "0CE2E6EAFA115589"
+			x: 12.25d
+			y: 6.0d
+			dependencies: ["21C5EF06F98348C1", "56FA35177D30E54E"]
+			icon: { id: "draconicevolution:chaos_shard" }
+			tasks: [
+				{
+					id: "5C8DBE67B50615C5"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:chaos_shard" }
+				}
+			]
+			rewards: [
+				{ id: "675D27F7102026D4", type: "xp_levels", xp_levels: 20 }
+				{ id: "05987E1674DA4F98", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "18E59E2F9C3CF400"
+			x: 14.0d
+			y: 6.0d
+			dependencies: ["0CE2E6EAFA115589"]
+			icon: { id: "draconicevolution:reactor_core" }
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "28421B2A7242A7B9"
+					type: "item"
+					item: { count: 1, id: "draconicevolution:reactor_core" }
+				}
+			]
+			rewards: [
+				{ id: "152F7010010F238B", type: "xp_levels", xp_levels: 20 }
+				{ id: "47B32909FCECF8F5", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "0BEEC92DBC89412B"
+			x: 1.75d
+			y: 8.25d
+			dependencies: ["41AC80BC0555D444"]
+			icon: { id: "extendedcrafting:black_iron_ingot" }
+			tasks: [
+				{
+					id: "1E1E3E310B92F00C"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:black_iron_ingot" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "7AE97273F8A58042", type: "xp", xp: 100 }
+				{
+					id: "4482FCC6AC3379D1"
+					type: "item"
+					item: { count: 1, id: "minecraft:black_dye" }
+					count: 16
+				}
+				{
+					id: "3F0F3BFA960B3316"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6915099B8F05EF62"
+			x: 3.5d
+			y: 8.25d
+			dependencies: ["0BEEC92DBC89412B"]
+			icon: { id: "extendedcrafting:basic_table" }
+			tasks: [
+				{
+					id: "53D141A51BCD2CB2"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:basic_table" }
+				}
+			]
+			rewards: [
+				{ id: "1C3D3ABDB9465304", type: "xp", xp: 250 }
+				{ id: "0481240FF71AB0B8", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "50F6A79EC8E46E59"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "497714199B5F3EFF"
+			x: 5.25d
+			y: 8.25d
+			dependencies: ["6915099B8F05EF62"]
+			icon: { id: "extendedcrafting:advanced_table" }
+			tasks: [
+				{
+					id: "03481893F4F405CE"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:advanced_table" }
+				}
+			]
+			rewards: [
+				{ id: "1978FDD420C3BC09", type: "xp", xp: 500 }
+				{ id: "00EE6EDC8DA6821A", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "194787D8350D408F"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_block" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "097A57A5132643E6"
+			x: 7.0d
+			y: 8.25d
+			dependencies: ["497714199B5F3EFF"]
+			icon: { id: "extendedcrafting:elite_table" }
+			tasks: [
+				{
+					id: "1E65A70C53F0C042"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:elite_table" }
+				}
+			]
+			rewards: [
+				{ id: "54FDABBC987555B3", type: "xp_levels", xp_levels: 10 }
+				{ id: "016C85764C2062F1", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "1363D63C2063FEAF"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond_block" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "44AD720CFAD1DBA1"
+			x: 8.75d
+			y: 7.5d
+			dependencies: ["097A57A5132643E6"]
+			icon: { id: "extendedcrafting:crystaltine_ingot" }
+			tasks: [
+				{
+					id: "21DFEC4CA610C3ED"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:crystaltine_ingot" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "2673AB7C3F2183B1", type: "xp_levels", xp_levels: 10 }
+				{ id: "4CDFA0D9F7437FC0", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "36B48031921B7D11"
+			x: 8.75d
+			y: 9.0d
+			dependencies: ["097A57A5132643E6"]
+			icon: { id: "extendedcrafting:crafting_core" }
+			tasks: [
+				{
+					id: "50B421A0588C4778"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:crafting_core" }
+				}
+				{
+					id: "0CF98EBD4F1A0D10"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:pedestal" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "5BA0A5E3A212ED64", type: "xp_levels", xp_levels: 10 }
+				{ id: "534D8A311AF8025A", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "3F56F59DC83E9493"
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["44AD720CFAD1DBA1", "5E75F524FF7A94CC", "2748A0FA657B7536"]
+			icon: { id: "extendedcrafting:ultimate_table" }
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "618AC03D8A35F769"
+					type: "item"
+					item: { count: 1, id: "extendedcrafting:ultimate_table" }
+				}
+			]
+			rewards: [
+				{ id: "1D3826D82541E9C2", type: "xp_levels", xp_levels: 20 }
+				{ id: "08595CFB7606491D", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "4074520BE0443187"
+			x: 1.75d
+			y: 10.5d
+			dependencies: ["41AC80BC0555D444"]
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "6FD4B42CC5B2B0F8", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "45C861CA70593607", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

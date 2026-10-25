@@ -1,0 +1,417 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "vampirism"
+	group: "03203A1312E25E36"
+	icon: { id: "vampirism:vampire_fang" }
+	id: "7163DCDAB05CA28A"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "30387378FED167F6"
+			x: 0.0d
+			y: 10.5d
+			icon: { id: "vampirism:vampire_fang" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "5CE1C0EEBA8B38FB", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7A7866BB823C8A12", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "38315D3D68CAC3D1"
+			x: 1.75d
+			y: 10.5d
+			dependencies: ["30387378FED167F6"]
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "0A6866510CDBB0D6", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "22560D88DF2BB8FE", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "76C05DFFAB9CD9D7"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "vampirism:vampire_fang" }
+			optional: true
+			tasks: [
+				{
+					id: "200BE1E8030EC0C4"
+					type: "advancement"
+					advancement: "vampirism:vampire/become_vampire"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "453DE7C5588D227D", type: "xp", xp: 250 }
+				{ id: "306F2825FA20B045", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "59A959316D1E6838"
+					type: "item"
+					item: { count: 1, id: "minecraft:glass_bottle" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "16BF098E3C787D0F"
+			x: 5.25d
+			y: 3.0d
+			dependencies: ["76C05DFFAB9CD9D7"]
+			icon: { id: "vampirism:blood_bottle" }
+			optional: true
+			tasks: [
+				{
+					id: "7079D1F7319DE1CB"
+					type: "advancement"
+					advancement: "vampirism:vampire/first_blood"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "4E3D2FB844E0B6D2", type: "xp", xp: 100 }
+				{
+					id: "54A3F11AFAC02D99"
+					type: "item"
+					item: { count: 1, id: "minecraft:glass_bottle" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6E07EFA8E5EEDFD5"
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["16BF098E3C787D0F"]
+			icon: { id: "vampirism:altar_inspiration" }
+			optional: true
+			tasks: [
+				{
+					id: "7F45A95CF81CCA6B"
+					type: "item"
+					item: { count: 1, id: "vampirism:altar_inspiration" }
+				}
+			]
+			rewards: [
+				{ id: "1ADF9A16038F5B8A", type: "xp", xp: 250 }
+				{ id: "7417AC5ECDEF7283", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "38A3C2E21AC2DD11"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_planks" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4F09420C77322B54"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["16BF098E3C787D0F"]
+			icon: { id: "vampiresdelight:blood_pie" }
+			optional: true
+			tasks: [
+				{
+					id: "40795269C2805988"
+					type: "item"
+					item: { count: 1, id: "vampiresdelight:blood_pie" }
+				}
+			]
+			rewards: [
+				{ id: "4F66F786A92115ED", type: "xp", xp: 100 }
+				{
+					id: "3B928126CBB3F6C9"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "119FA42C4759C2EE"
+			x: 8.75d
+			y: 0.0d
+			dependencies: ["6E07EFA8E5EEDFD5"]
+			icon: { id: "vampiresneedumbrellas:iron_umbrella" }
+			optional: true
+			tasks: [
+				{
+					id: "7347D15D26403243"
+					type: "item"
+					item: { count: 1, id: "vampiresneedumbrellas:iron_umbrella" }
+				}
+			]
+			rewards: [
+				{ id: "43A967878DA7DB63", type: "xp", xp: 100 }
+				{
+					id: "5790EDD128B21374"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 6
+				}
+			]
+		}
+		{
+			id: "296397FCA6178159"
+			x: 8.75d
+			y: 1.5d
+			dependencies: ["6E07EFA8E5EEDFD5"]
+			icon: { id: "vampiricageing:blood_tester" }
+			optional: true
+			tasks: [
+				{ id: "3CC4C8FC83B78ACA", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0472529693506BAF", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "4C6E1DEB32BFCD00"
+			x: 8.75d
+			y: 3.0d
+			dependencies: ["6E07EFA8E5EEDFD5"]
+			icon: { id: "bloodlines:bloodline_fang_noble" }
+			optional: true
+			tasks: [
+				{ id: "25C35B3829B7ADBA", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0A90E9EB5DD2BD34", type: "xp", xp: 500 }
+				{ id: "413E00024B1CB26B", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "24ED116715D9B52D"
+			x: 5.25d
+			y: 6.0d
+			dependencies: ["76C05DFFAB9CD9D7"]
+			icon: { id: "vampirism:altar_cleansing" }
+			optional: true
+			tasks: [
+				{ id: "4E0ECC04E0B46BFE", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "15FBF3575DE9D308", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "6F8AD5162C8C40D8"
+			x: 3.5d
+			y: 8.25d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "vampirism:injection_garlic" }
+			optional: true
+			tasks: [
+				{
+					id: "0C0312F72E30DFA2"
+					type: "advancement"
+					advancement: "vampirism:hunter/become_hunter"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "3DFEB5923B00A155", type: "xp", xp: 250 }
+				{ id: "1FAA875D42945571", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "144FCCEE135166E1"
+					type: "item"
+					item: { count: 1, id: "minecraft:glass" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "0964CDD613C8F2D6"
+			x: 5.25d
+			y: 7.5d
+			dependencies: ["6F8AD5162C8C40D8"]
+			icon: { id: "vampirism:stake" }
+			optional: true
+			tasks: [
+				{
+					id: "5B75001C423B65EE"
+					type: "item"
+					item: { count: 1, id: "vampirism:stake" }
+				}
+				{
+					id: "3097075BCFCCE9B8"
+					type: "item"
+					item: { count: 1, id: "vampirism:vampire_blood_bottle" }
+					count: 3L
+				}
+			]
+			rewards: [
+				{ id: "19110B4EEE826145", type: "xp", xp: 100 }
+				{
+					id: "06BEB0C498DBD674"
+					type: "item"
+					item: { count: 1, id: "minecraft:stick" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7D41AC8D592081E1"
+			x: 7.0d
+			y: 7.5d
+			dependencies: ["0964CDD613C8F2D6"]
+			icon: { id: "vampirism:hunter_table" }
+			optional: true
+			tasks: [
+				{
+					id: "2373811F97D8470C"
+					type: "item"
+					item: { count: 1, id: "vampirism:hunter_table" }
+				}
+			]
+			rewards: [
+				{ id: "23C518E8F8A211C9", type: "xp", xp: 250 }
+				{ id: "1E7387E585C82AE8", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "76ED41B8897FA192"
+					type: "item"
+					item: { count: 1, id: "minecraft:book" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7B558CB9F783607F"
+			x: 5.25d
+			y: 9.0d
+			dependencies: ["6F8AD5162C8C40D8"]
+			icon: { id: "vampirism:injection_sanguinare" }
+			optional: true
+			tasks: [
+				{ id: "32270365C6F55BD9", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "640CC6355A5D30BF", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "7720F1829BF65C57"
+			x: 3.5d
+			y: 11.25d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "werewolves:werewolf_tooth" }
+			optional: true
+			tasks: [
+				{
+					id: "1619482FDA456349"
+					type: "advancement"
+					advancement: "werewolves:teen_wolf"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "04BC6253E44467C2", type: "xp", xp: 250 }
+				{ id: "03FF132F0BA6C294", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "6EE8C609CFF269A3"
+			x: 5.25d
+			y: 10.5d
+			dependencies: ["7720F1829BF65C57"]
+			icon: { id: "werewolves:stone_altar" }
+			optional: true
+			tasks: [
+				{
+					id: "5CA4734E328A26AF"
+					type: "item"
+					item: { count: 1, id: "werewolves:stone_altar" }
+				}
+			]
+			rewards: [
+				{ id: "5DEFDE588E7AF6BB", type: "xp", xp: 250 }
+				{ id: "29975C07B2A2A76D", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "0014FB2E5C91EC0F"
+			x: 5.25d
+			y: 12.0d
+			dependencies: ["7720F1829BF65C57"]
+			icon: { id: "werewolves:injection_un_werewolf" }
+			optional: true
+			tasks: [
+				{ id: "6972211DE5D9AFEA", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "4B0BFBBC40B1C0C4", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "0DC17425B75CEF1E"
+			x: 3.5d
+			y: 13.5d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "werewolves:silver_ingot" }
+			tasks: [
+				{
+					id: "52E97B7293CF36F6"
+					type: "item"
+					item: { count: 1, id: "werewolves:silver_ingot" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "7F287F0267F9693C", type: "xp", xp: 100 }
+				{
+					id: "4ADB237293F49DA8"
+					type: "item"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "4FF5460C3E7F9DAA"
+			x: 3.5d
+			y: 15.0d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "vampirism:vampire_orchid" }
+			tasks: [
+				{
+					id: "500173ABFC61CDA2"
+					type: "advancement"
+					advancement: "vampirism:main/vampire_forest"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "3989B2D99D1EE37D", type: "xp", xp: 250 }
+				{ id: "04A7AFFA07432E1A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "57AAFE3149EBCF6D"
+					type: "item"
+					item: { count: 1, id: "minecraft:torch" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5BEC39DF97D78B42"
+			x: 3.5d
+			y: 16.5d
+			dependencies: ["38315D3D68CAC3D1"]
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "0057D665475304C8", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "786D19B7022F8BEB", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

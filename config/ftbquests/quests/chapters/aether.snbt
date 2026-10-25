@@ -1,0 +1,394 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aether"
+	group: "76581968F62E459A"
+	icon: { id: "aether:aether_portal_frame" }
+	id: "2F776931D0304949"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6DCE6EA8D0644AE4"
+			x: 0.0d
+			y: 8.0625d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "minecraft:glowstone" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "164E8C45A14C03CB", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0CF670324DB77EEF", type: "xp", xp: 100 }
+				{
+					id: "7B14700930921816"
+					type: "item"
+					item: { count: 1, id: "minecraft:glowstone" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "0464F36CC958AD76"
+			x: 1.75d
+			y: 8.0625d
+			dependencies: ["6DCE6EA8D0644AE4"]
+			icon: { id: "aether:aether_portal_frame" }
+			tasks: [
+				{ id: "6131A03B6A81D2C3", type: "dimension", dimension: "aether:the_aether" }
+			]
+			rewards: [
+				{ id: "34A77ECA5DD8C819", type: "xp", xp: 250 }
+				{ id: "7D9E96BAB1D0C159", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "187D8E557BF668EB"
+					type: "item"
+					item: { count: 1, id: "minecraft:feather" }
+					count: 8
+				}
+				{
+					id: "5FDA1407CAAE0711"
+					type: "item"
+					item: { count: 1, id: "minecraft:cooked_beef" }
+					count: 12
+				}
+			]
+		}
+		{
+			id: "2426EC39340EBB3C"
+			x: 3.5d
+			y: 4.125d
+			dependencies: ["0464F36CC958AD76"]
+			icon: { id: "aether:skyroot_log" }
+			tasks: [
+				{
+					id: "4256B26507CD2D46"
+					type: "item"
+					item: { count: 1, id: "aether:skyroot_planks" }
+					count: 16L
+				}
+				{
+					id: "1AB097EC5A8830A5"
+					type: "item"
+					item: { count: 1, id: "aether:holystone" }
+					count: 32L
+				}
+			]
+			rewards: [
+				{ id: "0664D0FD843D8CBB", type: "xp", xp: 100 }
+				{
+					id: "3FCEAB5A4505F449"
+					type: "item"
+					item: { count: 1, id: "minecraft:bread" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "50FD96A52903969E"
+			x: 5.25d
+			y: 2.25d
+			dependencies: ["2426EC39340EBB3C"]
+			icon: { id: "aether:zanite_gemstone" }
+			tasks: [
+				{
+					id: "36975F31F4EA2BD2"
+					type: "item"
+					item: { count: 1, id: "aether:zanite_gemstone" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "43B304DDA164CA98", type: "xp", xp: 250 }
+				{ id: "2CF166CBC36A5CA4", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4919FEA8DDBE4617"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "5F827D32D65345F6"
+			x: 7.0d
+			y: 0.75d
+			dependencies: ["50FD96A52903969E"]
+			icon: { id: "aether:altar" }
+			tasks: [
+				{
+					id: "746B527418B9FD17"
+					type: "item"
+					item: { count: 1, id: "aether:altar" }
+				}
+			]
+			rewards: [
+				{ id: "05896D051ED18597", type: "xp", xp: 250 }
+				{ id: "779D5685DF4E576D", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4F1B65F917E25F8C"
+					type: "item"
+					item: { count: 1, id: "aether:ambrosium_shard" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "62AA5506A726F646"
+			x: 8.75d
+			y: 0.0d
+			dependencies: ["5F827D32D65345F6"]
+			icon: { id: "aether:enchanted_gravitite" }
+			tasks: [
+				{
+					id: "4D92EC0D8A160312"
+					type: "item"
+					item: { count: 1, id: "aether:enchanted_gravitite" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "0213207286689BF0", type: "xp", xp: 500 }
+				{ id: "695FFBC1CBCA6B21", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "4C95BE81445317B6"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "160AA71586F06BBE"
+			x: 8.75d
+			y: 1.5d
+			dependencies: ["5F827D32D65345F6"]
+			icon: { id: "aether:blue_moa_egg" }
+			tasks: [
+				{
+					id: "38E9E9B34D89E9AC"
+					type: "item"
+					item: { count: 1, id: "aether:incubator" }
+				}
+			]
+			rewards: [
+				{ id: "54F5EC7BAA3FECB6", type: "xp", xp: 250 }
+				{ id: "158C5826B881FC2E", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "5BC10FDE3F61EE2B"
+					type: "item"
+					item: { count: 1, id: "aether:ambrosium_torch" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "57B5911C854BDCDE"
+			x: 5.25d
+			y: 6.0d
+			dependencies: ["2426EC39340EBB3C"]
+			icon: { id: "aethersdelight:blue_berry_muffin" }
+			optional: true
+			tasks: [
+				{ id: "42212B00861B5F52", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7B83FA345B5BB66B", type: "xp", xp: 100 }
+				{
+					id: "3D7D06C868967D23"
+					type: "item"
+					item: { count: 1, id: "aethersdelight:gingerbread" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "78ECE67309234E5A"
+			x: 3.5d
+			y: 8.25d
+			dependencies: ["0464F36CC958AD76"]
+			icon: { id: "deep_aether:roseroot_planks" }
+			tasks: [
+				{ id: "1D60F5A961A1B69C", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "5835F1A786CFCEDC", type: "xp", xp: 100 }
+				{
+					id: "678D0C79BBC40388"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat_seeds" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "544C88834C4F90AE"
+			x: 5.25d
+			y: 7.5d
+			dependencies: ["78ECE67309234E5A"]
+			icon: { id: "deep_aether:skyjade" }
+			tasks: [
+				{
+					id: "183AC14947F0F9BA"
+					type: "item"
+					item: { count: 1, id: "deep_aether:skyjade" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "171F57447B01D61D", type: "xp", xp: 250 }
+				{ id: "7D6FA85356FAE42D", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "103A9A7F4DC15EEF"
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["0464F36CC958AD76"]
+			icon: { id: "minecraft:quartz_pillar" }
+			tasks: [
+				{ id: "263ECA158D192C14", type: "structure", structure: "aether_villages:olympic_citadel" }
+			]
+			rewards: [
+				{ id: "7751EEB71C0A27EA", type: "xp", xp: 250 }
+				{ id: "211C0C43670BF177", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4A3611D16FE85620"
+					type: "item"
+					item: { count: 1, id: "minecraft:emerald" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "1CDB44EEF1345DD7"
+			x: 3.5d
+			y: 12.0d
+			dependencies: ["0464F36CC958AD76"]
+			icon: { id: "minecraft:mossy_stone_bricks" }
+			optional: true
+			tasks: [
+				{ id: "66DA08873F6F9EB7", type: "structure", structure: "inventorypets:sky_dungeon" }
+			]
+			rewards: [
+				{ id: "47FDE4B5BDBCA4BD", type: "xp", xp: 250 }
+				{ id: "4116BFCD83D0709C", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "021FF8AB6E8D1AC8"
+			x: 7.0d
+			y: 3.75d
+			dependencies: ["50FD96A52903969E"]
+			icon: { id: "aether:bronze_dungeon_key" }
+			tasks: [
+				{
+					id: "142CAA4F0BDC1742"
+					type: "kill"
+					entity: "aether:slider"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "5D77FEBE02EAB6F8", type: "xp", xp: 500 }
+				{ id: "2F7F755632E23CD5", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "64F0F07154B8EDE3"
+					type: "item"
+					item: { count: 1, id: "minecraft:golden_apple" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "4D7966E2F30B257B"
+			x: 8.75d
+			y: 3.75d
+			dependencies: ["021FF8AB6E8D1AC8"]
+			icon: { id: "aether:silver_dungeon_key" }
+			tasks: [
+				{
+					id: "104E62B22C9FB9B7"
+					type: "item"
+					item: { count: 1, id: "aether:victory_medal" }
+					count: 10L
+				}
+				{
+					id: "64E633B674E86810"
+					type: "kill"
+					entity: "aether:valkyrie_queen"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "1D8820B6ABC56A28", type: "xp_levels", xp_levels: 10 }
+				{ id: "06157083CC56907B", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "6574D89E8BDD67FE"
+			x: 10.5d
+			y: 3.0d
+			dependencies: ["4D7966E2F30B257B"]
+			icon: { id: "aether:gold_dungeon_key" }
+			tasks: [
+				{
+					id: "2679906543038D22"
+					type: "kill"
+					entity: "aether:sun_spirit"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "4048411691A3C11E", type: "xp_levels", xp_levels: 20 }
+				{ id: "0AF2F75D2A9A8698", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "5D36D6EFBB2EBAE6"
+			x: 5.25d
+			y: 9.0d
+			dependencies: ["78ECE67309234E5A", "021FF8AB6E8D1AC8"]
+			icon: { id: "deep_aether:skyjade_block" }
+			tasks: [
+				{ id: "6BAC46E808405ACD", type: "structure", structure: "deep_aether:brass_dungeon" }
+			]
+			rewards: [
+				{ id: "10C1E815C75B1CB0", type: "xp_levels", xp_levels: 10 }
+				{ id: "6A1796E4EF58310C", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "588EF2883FBE4327"
+			x: 10.5d
+			y: 4.5d
+			dependencies: ["4D7966E2F30B257B"]
+			icon: { id: "aether_treasure_reforging:valkyrum_ingot" }
+			optional: true
+			tasks: [
+				{ id: "6EAA34D18033AB0B", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "533DDE8B8C172CBE", type: "xp", xp: 500 }
+				{ id: "2823D4CF22754321", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "2F114C29562460FA"
+			x: 12.25d
+			y: 3.0d
+			dependencies: ["6574D89E8BDD67FE", "160AA71586F06BBE"]
+			icon: { id: "minecraft:compass" }
+			shape: "hexagon"
+			tasks: [
+				{ id: "7205E2E04659B178", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "1519171F9531B4C3", type: "xp", xp: 250 }
+				{ id: "79AFB1AD65D0F4ED", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+	]
+}

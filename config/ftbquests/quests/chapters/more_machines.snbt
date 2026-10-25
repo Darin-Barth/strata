@@ -1,0 +1,511 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "more_machines"
+	group: "2EAA9718BAF5A32A"
+	icon: { id: "pneumaticcraft:air_compressor" }
+	id: "2839C967066C8419"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4859D51F0A452686"
+			x: 0.0d
+			y: 5.25d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "industrialforegoing:machine_frame_simple" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "54C42DD80E2CA7A4", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "11912F911EECF1EA", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "2D4EB2A2A0CB1EBC"
+			x: 1.75d
+			y: 1.5d
+			dependencies: ["4859D51F0A452686"]
+			icon: { id: "industrialforegoing:fluid_extractor" }
+			tasks: [
+				{
+					id: "383850D32CFA1EA2"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:fluid_extractor" }
+				}
+			]
+			rewards: [
+				{ id: "40F076C095ABD6F8", type: "xp", xp: 100 }
+				{
+					id: "3490F5B71B1E9AFA"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_log" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4B66DD75E3CB6232"
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["2D4EB2A2A0CB1EBC"]
+			icon: { id: "industrialforegoing:plastic" }
+			tasks: [
+				{
+					id: "3C7C410BB417D039"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:latex_processing_unit" }
+				}
+				{
+					id: "4068CA70B7D0D73F"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:plastic" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "63429567D0C1C246", type: "xp", xp: 250 }
+				{ id: "2E7F1566CFAA85A1", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "6F9F4B1D06C268D9"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:dryrubber" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "150DEB0F49A498BB"
+			x: 5.25d
+			y: 1.5d
+			dependencies: ["4B66DD75E3CB6232"]
+			icon: { id: "industrialforegoing:machine_frame_simple" }
+			tasks: [
+				{
+					id: "6A4B5D764438E656"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+				}
+				{
+					id: "21123BCC528298C3"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:machine_frame_simple" }
+				}
+			]
+			rewards: [
+				{ id: "4643B11FD1AC4928", type: "xp", xp: 250 }
+				{ id: "55166AC826ABA2E1", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "485C8C8BCF87504D"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2B12C5E916A19A92"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["150DEB0F49A498BB"]
+			icon: { id: "industrialforegoing:plant_gatherer" }
+			tasks: [
+				{
+					id: "3E776710DC53AEB3"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:plant_sower" }
+				}
+				{
+					id: "2FA9BC257962F854"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:plant_gatherer" }
+				}
+			]
+			rewards: [
+				{ id: "11D65260DA174B93", type: "xp", xp: 100 }
+				{
+					id: "1273172C068280A5"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat_seeds" }
+					count: 32
+				}
+				{
+					id: "00EAF1DBF670504B"
+					type: "item"
+					item: { count: 1, id: "minecraft:bone_meal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "7721B3A24D1F50FE"
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["150DEB0F49A498BB"]
+			icon: { id: "industrialforegoing:ore_laser_base" }
+			tasks: [
+				{
+					id: "4B80D93AF0013A4B"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:ore_laser_base" }
+				}
+				{
+					id: "635C5C2589657FF4"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:laser_drill" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "32C2C5DD9CC4F170", type: "xp_levels", xp_levels: 10 }
+				{ id: "52DEF0D143FC97C1", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "61F7F192FB1105E5"
+			x: 1.75d
+			y: 5.25d
+			dependencies: ["4859D51F0A452686"]
+			icon: { id: "pneumaticcraft:ingot_iron_compressed" }
+			tasks: [
+				{
+					id: "485332A5068AA4EE"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "0C243508E9C1C097", type: "xp", xp: 100 }
+				{
+					id: "134768CFFC7BBBD3"
+					type: "item"
+					item: { count: 1, id: "minecraft:tnt" }
+					count: 4
+				}
+				{
+					id: "720FE00A754C94F2"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "16A0FD663EEEC2E9"
+			x: 3.5d
+			y: 5.25d
+			dependencies: ["61F7F192FB1105E5"]
+			icon: { id: "pneumaticcraft:air_compressor" }
+			tasks: [
+				{
+					id: "120D14D84757E1B2"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:air_compressor" }
+				}
+				{
+					id: "28107BF4F3439B80"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pressure_tube" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "3464336A638EA4DD", type: "xp", xp: 250 }
+				{ id: "316713844A6696DF", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4805A218B938D0A2"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5F9CEBF3637E4FDE"
+			x: 5.25d
+			y: 5.25d
+			dependencies: ["16A0FD663EEEC2E9"]
+			icon: { id: "pneumaticcraft:pressure_chamber_wall" }
+			tasks: [
+				{
+					id: "31EEB27EB25A0255"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_wall" }
+					count: 20L
+				}
+				{
+					id: "7FB7767F05125B1F"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_valve" }
+				}
+				{
+					id: "4CF70EAE3C332750"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_interface" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "6E9918AE6E00F86A", type: "xp", xp: 500 }
+				{ id: "2C8589824A25503A", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "6F1756770A23E259"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["5F9CEBF3637E4FDE"]
+			icon: { id: "pneumaticcraft:drone" }
+			tasks: [
+				{
+					id: "34B28DEEA9FCABB6"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:programmer" }
+				}
+				{
+					id: "3E6ECAA5A88E4159"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:drone" }
+				}
+			]
+			rewards: [
+				{ id: "7F89A3DC7D9E58E0", type: "xp", xp: 500 }
+				{ id: "793C0400F78A8C59", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "0C9856156803AEB2"
+			x: 7.0d
+			y: 6.0d
+			dependencies: ["5F9CEBF3637E4FDE"]
+			icon: { id: "pneumaticcraft:pneumatic_helmet" }
+			tasks: [
+				{
+					id: "2EDEFB43AA803940"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:charging_station" }
+				}
+				{
+					id: "181CB5BF79DA0F24"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pneumatic_helmet" }
+				}
+			]
+			rewards: [
+				{ id: "09586F1A77DD9D10", type: "xp", xp: 500 }
+				{ id: "39422B9929D3157C", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "719CEFAC83CE00DB"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "40257CDE027C2C16"
+			x: 8.75d
+			y: 6.0d
+			dependencies: ["0C9856156803AEB2"]
+			icon: { id: "pneumaticcraft:jet_boots_upgrade_1" }
+			tasks: [
+				{
+					id: "02F011E7D1B9F7C5"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:pneumatic_boots" }
+				}
+				{
+					id: "3B508A0A7D43E89D"
+					type: "item"
+					item: { count: 1, id: "pneumaticcraft:jet_boots_upgrade_1" }
+				}
+			]
+			rewards: [
+				{ id: "5FC2C5C336CC3508", type: "xp_levels", xp_levels: 10 }
+				{ id: "6A23A946C1EB33ED", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "7F014A4F3BAD29CB"
+			x: 1.75d
+			y: 7.5d
+			dependencies: ["4859D51F0A452686"]
+			icon: { id: "powah:energizing_orb" }
+			tasks: [
+				{
+					id: "163DE2F2949C7ED6"
+					type: "item"
+					item: { count: 1, id: "powah:energizing_orb" }
+				}
+				{
+					id: "2C2C383DF9DA34CD"
+					type: "item"
+					item: { count: 1, id: "powah:energizing_rod_starter" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "228B1D278457B473", type: "xp", xp: 100 }
+				{
+					id: "6A8F5A9701B70161"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "525F5042AC78C691"
+			x: 3.5d
+			y: 7.5d
+			dependencies: ["7F014A4F3BAD29CB"]
+			icon: { id: "powah:furnator_starter" }
+			tasks: [
+				{
+					id: "6FC479A699D5EF45"
+					type: "item"
+					item: { count: 1, id: "powah:furnator_starter" }
+				}
+				{
+					id: "363A376BDD01020D"
+					type: "item"
+					item: { count: 1, id: "powah:energy_cell_starter" }
+				}
+			]
+			rewards: [
+				{ id: "4EC1F4ECD5AE2C41", type: "xp", xp: 100 }
+				{
+					id: "219F06FE517B5635"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "0C280A2767BBC7E2"
+			x: 5.25d
+			y: 7.5d
+			dependencies: ["525F5042AC78C691"]
+			icon: { id: "powah:reactor_starter" }
+			tasks: [
+				{
+					id: "38F10BD01D507382"
+					type: "item"
+					item: { count: 1, id: "powah:reactor_starter" }
+					count: 36L
+				}
+			]
+			rewards: [
+				{ id: "7CA4D86B6BC13D70", type: "xp", xp: 500 }
+				{ id: "25E5ABD6DEFBB6EC", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "61071B8B2734F992"
+			x: 1.75d
+			y: 9.0d
+			dependencies: ["4859D51F0A452686"]
+			icon: { id: "bigreactors:yellorium_ingot" }
+			tasks: [
+				{
+					id: "16342BB6BF136936"
+					type: "item"
+					item: { count: 1, id: "bigreactors:yellorium_ingot" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "219A33274EB5EF1B", type: "xp", xp: 100 }
+				{
+					id: "1E6EE9D16FBB1652"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1B063B47D5C66FD9"
+			x: 3.5d
+			y: 9.0d
+			dependencies: ["61071B8B2734F992"]
+			icon: { id: "bigreactors:basic_reactorcontroller" }
+			tasks: [
+				{
+					id: "4DD9D05BEFE46135"
+					type: "item"
+					item: { count: 1, id: "bigreactors:basic_reactorcontroller" }
+				}
+				{
+					id: "37AF844CEC8DB835"
+					type: "item"
+					item: { count: 1, id: "bigreactors:basic_reactorfuelrod" }
+					count: 4L
+				}
+				{
+					id: "0F75E97F32D65E52"
+					type: "item"
+					item: { count: 1, id: "bigreactors:basic_reactorcontrolrod" }
+				}
+			]
+			rewards: [
+				{ id: "25B7FC9466F04EFA", type: "xp", xp: 500 }
+				{ id: "4622B4BDC4756C93", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "21FE87227B0C5650"
+					type: "item"
+					item: { count: 1, id: "bigreactors:yellorium_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "047A01F3C7E54912"
+			x: 5.25d
+			y: 9.0d
+			dependencies: ["1B063B47D5C66FD9"]
+			icon: { id: "bigreactors:basic_turbinecontroller" }
+			tasks: [
+				{
+					id: "0EE44C33F0D05E3A"
+					type: "item"
+					item: { count: 1, id: "bigreactors:basic_turbinecontroller" }
+				}
+				{
+					id: "522D5A6C6B554D12"
+					type: "item"
+					item: { count: 1, id: "bigreactors:basic_turbinerotorblade" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "410F76EBE5AD9CAB", type: "xp_levels", xp_levels: 10 }
+				{ id: "7305CB4C5930DDBC", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "4526E1FDE9A28E0B"
+			x: 7.0d
+			y: 3.0d
+			dependencies: [
+				"150DEB0F49A498BB"
+				"16A0FD663EEEC2E9"
+				"525F5042AC78C691"
+				"1B063B47D5C66FD9"
+			]
+			dependency_requirement: "one_completed"
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "4847D269AA0F2DE3", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "4ABA1AB7BF92CBFE", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

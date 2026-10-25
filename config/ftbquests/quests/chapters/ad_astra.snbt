@@ -1,0 +1,432 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ad_astra"
+	group: "76581968F62E459A"
+	icon: { id: "ad_astra:tier_1_rocket" }
+	id: "0C1846FAB1F67B50"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "76D3D703D11C85A6"
+			x: 0.0d
+			y: 7.3125d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "ad_astra:astrodux" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "78CB560EBC34081F", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0E4502DA8F97C0BF", type: "xp", xp: 100 }
+				{
+					id: "58C235299076B073"
+					type: "item"
+					item: { count: 1, id: "ad_astra:astrodux" }
+				}
+			]
+		}
+		{
+			id: "3793C5BA92EA556D"
+			x: 1.75d
+			y: 7.3125d
+			dependencies: ["76D3D703D11C85A6"]
+			icon: { id: "ad_astra:etrionic_blast_furnace" }
+			tasks: [
+				{
+					id: "6B315495956A9CA7"
+					type: "item"
+					item: { count: 1, id: "ad_astra:etrionic_blast_furnace" }
+				}
+			]
+			rewards: [
+				{ id: "5E1B660B178927D2", type: "xp", xp: 100 }
+				{
+					id: "40D18ED26B6F777E"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5A1B12F441AC3BE0"
+			x: 3.5d
+			y: 5.625d
+			dependencies: ["3793C5BA92EA556D"]
+			icon: { id: "ad_astra:compressor" }
+			tasks: [
+				{
+					id: "28724BE3376661C0"
+					type: "item"
+					item: { count: 1, id: "ad_astra:compressor" }
+				}
+			]
+			rewards: [
+				{ id: "3D523BC7BE7B5B2C", type: "xp", xp: 250 }
+				{ id: "07B852DB16F4D192", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "0F0CD1E091F8DC16"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2E4229AD54F3AAC4"
+			x: 5.25d
+			y: 3.75d
+			dependencies: ["5A1B12F441AC3BE0"]
+			icon: { id: "ad_astra:nasa_workbench" }
+			tasks: [
+				{
+					id: "5E11B76FC864FD3B"
+					type: "item"
+					item: { count: 1, id: "ad_astra:nasa_workbench" }
+				}
+			]
+			rewards: [
+				{ id: "08105ADAA30BECA5", type: "xp", xp: 250 }
+				{ id: "167B7971171A4C09", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "4541A84A1D6B688B"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "157126301037ED5D"
+			x: 5.25d
+			y: 7.5d
+			dependencies: ["5A1B12F441AC3BE0"]
+			icon: { id: "ad_astra:oxygen_loader" }
+			tasks: [
+				{
+					id: "5571D6505DFACAAD"
+					type: "item"
+					item: { count: 1, id: "ad_astra:oxygen_loader" }
+				}
+			]
+			rewards: [
+				{ id: "58687F3718BDF77F", type: "xp", xp: 250 }
+				{ id: "3EAE64142462BCB2", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "73EB898832C7CB0B"
+					type: "item"
+					item: { count: 1, id: "minecraft:water_bucket" }
+				}
+			]
+		}
+		{
+			id: "1CD48F538F919321"
+			x: 7.0d
+			y: 7.5d
+			dependencies: ["157126301037ED5D"]
+			icon: { id: "ad_astra:space_suit" }
+			tasks: [
+				{
+					id: "349846536673213E"
+					type: "item"
+					item: { count: 1, id: "ad_astra:space_helmet" }
+				}
+				{
+					id: "51C513A3143A521D"
+					type: "item"
+					item: { count: 1, id: "ad_astra:space_suit" }
+				}
+				{
+					id: "723AE7BC47984733"
+					type: "item"
+					item: { count: 1, id: "ad_astra:space_pants" }
+				}
+				{
+					id: "1AD7F85369D99CAE"
+					type: "item"
+					item: { count: 1, id: "ad_astra:space_boots" }
+				}
+			]
+			rewards: [
+				{ id: "091C885931A46CD0", type: "xp", xp: 250 }
+				{ id: "097A65309D21CB52", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "0C3CEA629397AF1A"
+					type: "item"
+					item: { count: 1, id: "ad_astra:ti_69" }
+				}
+			]
+		}
+		{
+			id: "70E7FEBA5A04F756"
+			x: 3.5d
+			y: 9.0d
+			dependencies: ["3793C5BA92EA556D"]
+			icon: { id: "ad_astra:fuel_bucket" }
+			tasks: [
+				{
+					id: "62D5198A98B2C896"
+					type: "item"
+					item: { count: 1, id: "ad_astra:fuel_refinery" }
+				}
+			]
+			rewards: [
+				{ id: "1FE6FC62A5684E3B", type: "xp", xp: 250 }
+				{ id: "630AB52A984F6C15", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "6C6B8280BB56FA69"
+					type: "item"
+					item: { count: 1, id: "minecraft:bucket" }
+					count: 3
+				}
+			]
+		}
+		{
+			id: "0553F9DF55E24AF6"
+			x: 7.0d
+			y: 3.75d
+			dependencies: ["2E4229AD54F3AAC4", "70E7FEBA5A04F756"]
+			icon: { id: "ad_astra:tier_1_rocket" }
+			tasks: [
+				{
+					id: "4BBB39EABE614DAE"
+					type: "item"
+					item: { count: 1, id: "ad_astra:tier_1_rocket" }
+				}
+				{
+					id: "6C71FA70BFF626B7"
+					type: "item"
+					item: { count: 1, id: "ad_astra:launch_pad" }
+				}
+			]
+			rewards: [
+				{ id: "73E3FBBF2C00D6B8", type: "xp", xp: 500 }
+				{ id: "7830CE697BC94786", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "6BEA6C13D3E01829"
+			x: 8.75d
+			y: 3.75d
+			dependencies: ["0553F9DF55E24AF6", "1CD48F538F919321"]
+			icon: { id: "ad_astra:moon_globe" }
+			tasks: [
+				{ id: "0B660BE96B2C2602", type: "dimension", dimension: "ad_astra:moon" }
+			]
+			rewards: [
+				{ id: "1C4C8C0BE6AA8FDB", type: "xp", xp: 500 }
+				{ id: "121EDA47F6C2615F", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "3D53E36C784665A4"
+					type: "item"
+					item: { count: 1, id: "minecraft:cooked_beef" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "542BE739851703C4"
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["6BEA6C13D3E01829"]
+			icon: { id: "ad_astra:raw_desh" }
+			tasks: [
+				{
+					id: "792BC3C416D683B7"
+					type: "item"
+					item: { count: 1, id: "ad_astra:desh_ingot" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "13DD0B891BE2484D", type: "xp", xp: 500 }
+				{ id: "61BE1213D887CD9A", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "2F1C9DB9A70C6322"
+			x: 10.5d
+			y: 4.5d
+			dependencies: ["6BEA6C13D3E01829"]
+			icon: { id: "ad_astra:cheese" }
+			optional: true
+			tasks: [
+				{
+					id: "5CA441154EE573BB"
+					type: "item"
+					item: { count: 1, id: "ad_astra:cheese" }
+				}
+			]
+			rewards: [
+				{ id: "5D220CAE091E3D99", type: "xp", xp: 100 }
+				{
+					id: "5A0D051651E523B9"
+					type: "item"
+					item: { count: 1, id: "ad_astra:cheese" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "221BC9E07FBAE811"
+			x: 12.25d
+			y: 0.0d
+			dependencies: ["542BE739851703C4"]
+			icon: { id: "ad_astra:tier_1_rover" }
+			optional: true
+			tasks: [
+				{
+					id: "587D3E38CAA98FFD"
+					type: "item"
+					item: { count: 1, id: "ad_astra:tier_1_rover" }
+				}
+			]
+			rewards: [
+				{ id: "1D41B6E95BB93CDE", type: "xp", xp: 500 }
+				{ id: "174B1A2472537A20", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "252F73DA968F6C69"
+			x: 12.25d
+			y: 1.5d
+			dependencies: ["542BE739851703C4"]
+			icon: { id: "ad_astra:steel_plateblock" }
+			optional: true
+			tasks: [
+				{ id: "0AFC9120CC8EA206", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "2B61721EB91DAA17", type: "xp", xp: 500 }
+				{ id: "5D1AA6C20618DDDA", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "249652D8D12B707E"
+			x: 12.25d
+			y: 3.0d
+			dependencies: ["542BE739851703C4", "087C51290A82D487"]
+			icon: { id: "ad_astra:tier_2_rocket" }
+			tasks: [
+				{
+					id: "09C17BBC436943C8"
+					type: "item"
+					item: { count: 1, id: "ad_astra:tier_2_rocket" }
+				}
+				{ id: "7B970239FCA2B6FA", type: "dimension", dimension: "ad_astra:mars" }
+			]
+			rewards: [
+				{ id: "3E04A9388343A782", type: "xp_levels", xp_levels: 10 }
+				{ id: "5AE3A781C470D5FE", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "3F161A0825F51B58"
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["249652D8D12B707E"]
+			icon: { id: "ad_astra:netherite_space_suit" }
+			tasks: [
+				{
+					id: "51E64552EF22B852"
+					type: "item"
+					item: { count: 1, id: "ad_astra:netherite_space_helmet" }
+				}
+				{
+					id: "7F2AD326889E8D81"
+					type: "item"
+					item: { count: 1, id: "ad_astra:netherite_space_suit" }
+				}
+				{
+					id: "64ED494D5ECB60F4"
+					type: "item"
+					item: { count: 1, id: "ad_astra:netherite_space_pants" }
+				}
+				{
+					id: "63C42865ED8757DA"
+					type: "item"
+					item: { count: 1, id: "ad_astra:netherite_space_boots" }
+				}
+			]
+			rewards: [
+				{ id: "2524E375016582C0", type: "xp_levels", xp_levels: 10 }
+				{ id: "2385FC944229E249", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "47E822A37E43BAAB"
+			x: 15.75d
+			y: 3.0d
+			dependencies: ["3F161A0825F51B58", "2748A0FA657B7536"]
+			icon: { id: "ad_astra:tier_3_rocket" }
+			tasks: [
+				{
+					id: "6AD7413310CDEC33"
+					type: "item"
+					item: { count: 1, id: "ad_astra:tier_3_rocket" }
+				}
+				{ id: "07E9F5CDCD0493CE", type: "dimension", dimension: "ad_astra:venus" }
+				{ id: "0C842F68E6C0404B", type: "dimension", dimension: "ad_astra:mercury" }
+			]
+			rewards: [
+				{ id: "20945362CE85C811", type: "xp_levels", xp_levels: 20 }
+				{ id: "3F14B6E5CC819DE5", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "0E02A4FB5EAD2C6C"
+			x: 17.5d
+			y: 3.0d
+			dependencies: ["47E822A37E43BAAB", "56FA35177D30E54E"]
+			icon: { id: "ad_astra:tier_4_rocket" }
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0ECF31B6BC55A705"
+					type: "item"
+					item: { count: 1, id: "ad_astra:tier_4_rocket" }
+				}
+				{ id: "7B6499AF1162D97F", type: "dimension", dimension: "ad_astra:glacio" }
+			]
+			rewards: [
+				{ id: "43C9104A07222346", type: "xp_levels", xp_levels: 20 }
+				{ id: "57F89579B20DB08A", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "2388657740BB05D7"
+			x: 19.25d
+			y: 3.0d
+			dependencies: ["0E02A4FB5EAD2C6C"]
+			icon: { id: "ad_astra:jet_suit" }
+			optional: true
+			tasks: [
+				{ id: "66CBB51309A0A6E2", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7CC76EDA4CEDF27F", type: "xp_levels", xp_levels: 20 }
+				{ id: "3E14A9573DA55E9D", type: "random", table_id: 2792261334234192333L }
+			]
+		}
+		{
+			id: "34BEB6E711D5EA04"
+			x: 10.5d
+			y: 6.0d
+			dependencies: ["6BEA6C13D3E01829"]
+			icon: { id: "minecraft:compass" }
+			shape: "hexagon"
+			tasks: [
+				{ id: "5137235ABA42187A", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "58C711DEB774A0EA", type: "xp", xp: 250 }
+				{ id: "42E8C1BF56F988C1", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+	]
+}

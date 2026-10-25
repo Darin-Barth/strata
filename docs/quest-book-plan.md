@@ -87,3 +87,44 @@ against the mod jars by `tools/quests/check_ids.py`.
 36. Fishing — Aquaculture 2, Tide (journal).
 
 About 35 chapters, ~10–20 quests each (~450 quests).
+
+## Status (Oct 25, 2026)
+Built: 37 chapters, 795 quests, 4 loot bags. All 1,294 distinct IDs validate against the jars
+(`python -I tools/quests/build.py`), and a scratch NeoForge server with FTB Quests loaded the book
+("Loaded 6 chapter groups, 37 chapters, 795 quests"). Not yet seen in a real client.
+
+Gate anchors used across chapters: `welcome/nether` (same-dimension wireless, brass/blaze tech),
+`cataclysm/netherite_monstrosity` (Mek ultimate/SPS/antimatter, AE2 256k, Extended Crafting Ultimate
+Table), `cataclysm/ignis` (MekaSuit, Draconic armor, Ad Astra tier 2), `cataclysm/ender_guardian`
+(AE2 Quantum Network Bridge, Draconic chaos tier, Ad Astra tier 4), `the_end/dragon` (Draconic awakened,
+Ice and Fire dragon riding).
+
+## Rule problems found while writing (need config/KubeJS; quests don't feature or reward these)
+Free or cheap flight:
+- Oritech Flight augment ("creative-style free flight"), Mystical Agriculture flight_augment.
+- Create Stuff 'N Additions jetpacks: andesite tier on coal, copper on water; "Above the Clouds" enchant.
+- Cataclysm: Spellbooks Excelsius chestplate ("infinite flight"); BoMD Table of Elevation (creative flight 7x7).
+- Ice and Fire: hippogryphs (early) and dragons ridable from stage 3; `dragon.flightStamina` and
+  `hippogryphs.flightStamina` are false in config (turning them on is an easy fix).
+- Aether: Valkyrie armor (free temporary flight, reforgeable), Phygs; Deeper and Darker Soul Elytra (cooldown boost).
+- Draconic Wyvern flight module is a cheap pre-Dragon craft (power-costed).
+- Apotheosis loot can hold Potions of Flying; Inventory Pets Flying Saddle pet.
+Free teleport:
+- Oritech Portal augment (return portal = /home), Draconic Dislocators, Occultism Entity Wormhole,
+  Bloodlines Gravebound phylactery teleport, Inventory Pets House/Enderman pets, BoMD Charged Ender Pearl,
+  Legendary Monsters annihilator helmet/chorus blade, Artifacts/Relics/Forsaken Relics teleport accessories.
+- Explorer's Compass `allowTeleport = true` (probably op-only; set false).
+Wireless outside the tiers:
+- Flux Networks and Mekanism entangloporters/teleporters work across dimensions by default.
+- Mighty Mail mailboxes work in any dimension from day one (`allowedDimensions`).
+- Powah Ender Cells/Gates and Player Transmitter; ExtendedAE wireless connector/hub/terminal;
+  Occultism Storage Accessor/Stable Wormhole (cross-dim); Deeper and Darker Sculk Transmitter;
+  Draconic wireless crystals; Oritech energy poles (competes with IE as long-distance grid);
+  Gadgets & Gizmos Industrial Alternator + andesite cable (bypasses the C&A alternator nerf).
+Other:
+- Apotheosis world tiers (Ctrl+T, per player) are a second mob scaler next to the staged-difficulty script.
+- Apocalyptic Bosses: boss chests hold elytra/nether stars/netherite; several bosses spawn in plains/forests.
+- Extended Crafting Ultimate Ingot has no recipe (endgame KubeJS still to do); Numismatics coins have no
+  recipe (decide how money enters the server).
+- Keybind clashes in the client: B (backpack/Xaero waypoint/Occultism), R (Combat Roll/Iron's wheel),
+  M (Xaero/FTB Chunks map), V (voice/Deep Aether), Z (Bosses'Rise roll/Xaero).

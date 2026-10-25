@@ -1,0 +1,347 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "logistics"
+	group: "2EAA9718BAF5A32A"
+	icon: { id: "laserio:laser_node" }
+	id: "6E2C61BED7B0237E"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3EF08C213EF1C9E0"
+			x: 0.0d
+			y: 3.375d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "laserio:laser_wrench" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "59D1D20FC3C0494E", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "3BDAC0DFFB473E73", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "01ADE2B171793530"
+			x: 1.75d
+			y: 0.75d
+			dependencies: ["3EF08C213EF1C9E0"]
+			icon: { id: "integrateddynamics:menril_sapling" }
+			tasks: [
+				{
+					id: "48135D72CB412A80"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:crystalized_menril_chunk" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "5EF4B6FCE6042113", type: "xp", xp: 100 }
+				{
+					id: "61E4091B7B4D3893"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:menril_sapling" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "3BB43D04EF28DFA6"
+			x: 3.5d
+			y: 0.75d
+			dependencies: ["01ADE2B171793530"]
+			icon: { id: "integrateddynamics:cable" }
+			tasks: [
+				{
+					id: "338719680BB66308"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:cable" }
+					count: 16L
+				}
+				{
+					id: "34E0548FCB5B5D72"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:variable" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{ id: "21FE5493297F453A", type: "xp", xp: 100 }
+				{
+					id: "0AE0068E1C9453B0"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:crystalized_menril_chunk" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "164B19786A33DCAB"
+			x: 5.25d
+			y: 0.75d
+			dependencies: ["3BB43D04EF28DFA6"]
+			icon: { id: "integrateddynamics:part_display_panel" }
+			tasks: [
+				{
+					id: "78580C77B96F93EA"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:part_inventory_reader" }
+				}
+				{
+					id: "6EDEDB991B2DFCB5"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:part_display_panel" }
+				}
+			]
+			rewards: [
+				{ id: "327E8C861C53C713", type: "xp", xp: 250 }
+				{ id: "363FBC6EDDD91509", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "448C1D42120AE793"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["164B19786A33DCAB"]
+			icon: { id: "integrateddynamics:logic_programmer" }
+			tasks: [
+				{
+					id: "0B014461B1D9C713"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:logic_programmer" }
+				}
+			]
+			rewards: [
+				{ id: "32B2F81A20459C2B", type: "xp", xp: 250 }
+				{ id: "23DC3C3529FBD7C1", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "0C86CD74B7A92F14"
+			x: 8.75d
+			y: 0.0d
+			dependencies: ["448C1D42120AE793"]
+			icon: { id: "integrateddynamics:part_redstone_writer" }
+			tasks: [
+				{
+					id: "4C1F5562CF458F6F"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:part_redstone_writer" }
+				}
+			]
+			rewards: [
+				{ id: "15DBDD631C618A95", type: "xp", xp: 500 }
+				{ id: "52E6220635CB6232", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "4F37D2898DB35D15"
+			x: 1.75d
+			y: 3.0d
+			dependencies: ["3EF08C213EF1C9E0"]
+			icon: { id: "laserio:laser_node" }
+			tasks: [
+				{
+					id: "53E6F18EB638A6EE"
+					type: "item"
+					item: { count: 1, id: "laserio:laser_node" }
+					count: 2L
+				}
+				{
+					id: "69C91B443BE78639"
+					type: "item"
+					item: { count: 1, id: "laserio:laser_wrench" }
+				}
+			]
+			rewards: [
+				{ id: "7BD79119273D4E0E", type: "xp", xp: 100 }
+				{
+					id: "7662909E2B69ADEA"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1366D8A70214C630"
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["4F37D2898DB35D15"]
+			icon: { id: "laserio:card_item" }
+			tasks: [
+				{
+					id: "5579BF7F718F67F4"
+					type: "item"
+					item: { count: 1, id: "laserio:card_item" }
+					count: 2L
+				}
+				{
+					id: "3A5E134E2A9C615A"
+					type: "item"
+					item: { count: 1, id: "laserio:logic_chip" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "6282A23E55C6096F", type: "xp", xp: 250 }
+				{ id: "14728C5708072A1F", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "7328ED87E525249B"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "15FC560B70EAA117"
+			x: 5.25d
+			y: 3.0d
+			dependencies: ["1366D8A70214C630"]
+			icon: { id: "laserio:filter_basic" }
+			tasks: [
+				{
+					id: "27ABE68103B14291"
+					type: "item"
+					item: { count: 1, id: "laserio:filter_basic" }
+				}
+				{
+					id: "505032DEF27C91C4"
+					type: "item"
+					item: { count: 1, id: "laserio:overclocker_card" }
+				}
+			]
+			rewards: [
+				{ id: "2A6B51D12A881234", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "620AD7E0D2315D88"
+			x: 1.75d
+			y: 4.5d
+			dependencies: ["3EF08C213EF1C9E0"]
+			icon: { id: "morered:red_alloy_ingot" }
+			tasks: [
+				{
+					id: "2A3ADF0B325263E4"
+					type: "item"
+					item: { count: 1, id: "morered:red_alloy_ingot" }
+					count: 4L
+				}
+				{
+					id: "653F2FAF385C8A77"
+					type: "item"
+					item: { count: 1, id: "morered:red_alloy_wire" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "697983640D041825", type: "xp", xp: 100 }
+				{
+					id: "1B6ACA613A63BCD9"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5E46AFCB32A972D1"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["620AD7E0D2315D88"]
+			icon: { id: "morered:and_gate" }
+			tasks: [
+				{
+					id: "05BBD5419F70D458"
+					type: "item"
+					item: { count: 1, id: "morered:soldering_table" }
+				}
+				{
+					id: "48B10A3DE2BB216E"
+					type: "item"
+					item: { count: 1, id: "morered:and_gate" }
+				}
+			]
+			rewards: [
+				{ id: "0317586E9AE44050", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "2208B866CA7D5293"
+			x: 1.75d
+			y: 6.0d
+			dependencies: ["3EF08C213EF1C9E0", "65459A133D3C4EFE"]
+			icon: { id: "fluxnetworks:flux_dust" }
+			tasks: [
+				{
+					id: "34498ECBF0241432"
+					type: "item"
+					item: { count: 1, id: "fluxnetworks:flux_dust" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "413C32F3E8E47E4B", type: "xp", xp: 100 }
+				{
+					id: "4C8EA62B870BC54E"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 32
+				}
+				{
+					id: "7143E61E140219C2"
+					type: "item"
+					item: { count: 1, id: "minecraft:obsidian" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "55EF191CC41C41EB"
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["2208B866CA7D5293"]
+			icon: { id: "fluxnetworks:flux_point" }
+			tasks: [
+				{
+					id: "28A50D1E1F7714E0"
+					type: "item"
+					item: { count: 1, id: "fluxnetworks:flux_plug" }
+				}
+				{
+					id: "2F42EB527CA785FA"
+					type: "item"
+					item: { count: 1, id: "fluxnetworks:flux_point" }
+				}
+				{
+					id: "43B6FDA0DB9725E0"
+					type: "item"
+					item: { count: 1, id: "fluxnetworks:basic_flux_storage" }
+				}
+			]
+			rewards: [
+				{ id: "1D0249A9545CFE48", type: "xp", xp: 500 }
+				{ id: "41E365617F09AC98", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "7D3AC4FA07AB5420"
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["164B19786A33DCAB", "1366D8A70214C630"]
+			dependency_requirement: "one_completed"
+			icon: { id: "minecraft:oak_sign" }
+			tasks: [
+				{ id: "2E9E6602E74D4FE3", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "7544A6DF27776C79", type: "xp", xp: 100 }
+			]
+		}
+	]
+}

@@ -1,0 +1,657 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: "46FD3EC1FE1391C7"
+	icon: { id: "mcwfurnitures:oak_chair" }
+	id: "3F317967CDFC610F"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "791208BAC6B60C6B"
+			x: 0.0d
+			y: 8.625d
+			icon: { id: "handcrafted:oak_couch" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "1262AE02606BFA3A", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "5218CBE8CD584E9E", type: "xp", xp: 100 }
+				{
+					id: "1D11D8C69AC1A725"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_log" }
+					count: 32
+				}
+				{
+					id: "501630CA5EB49A5B"
+					type: "item"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "4B4702FEB8F9F4CB"
+			x: 1.75d
+			y: 0.75d
+			dependencies: ["791208BAC6B60C6B"]
+			icon: { id: "chipped:carpenters_table" }
+			tasks: [
+				{
+					id: "32AA9357106F7F38"
+					type: "item"
+					item: { count: 1, id: "chipped:carpenters_table" }
+				}
+			]
+			rewards: [
+				{ id: "540FB345D61463A6", type: "xp", xp: 100 }
+				{
+					id: "764D56E4FD0E614E"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_planks" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "4731AB5132C87C29"
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["4B4702FEB8F9F4CB"]
+			icon: { id: "chipped:mason_table" }
+			optional: true
+			tasks: [
+				{
+					id: "4EC8530CA71BE75D"
+					type: "item"
+					item: { count: 1, id: "chipped:mason_table" }
+				}
+			]
+			rewards: [
+				{ id: "158F10622B31DCD6", type: "xp", xp: 100 }
+				{
+					id: "1843DF5738BAA23E"
+					type: "item"
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "4995B74033826A86"
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["4B4702FEB8F9F4CB"]
+			icon: { id: "rechiseled:chisel" }
+			tasks: [
+				{
+					id: "15BC5BD2C221E43E"
+					type: "item"
+					item: { count: 1, id: "rechiseled:chisel" }
+				}
+			]
+			rewards: [
+				{ id: "1803563D7253B3EF", type: "xp", xp: 100 }
+				{
+					id: "4FF72881A4101E04"
+					type: "item"
+					item: { count: 1, id: "minecraft:stone" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "44168294F53DDB9A"
+			x: 5.25d
+			y: 1.5d
+			dependencies: ["4995B74033826A86"]
+			icon: { id: "framedblocks:framed_cube" }
+			optional: true
+			tasks: [
+				{
+					id: "2B6DA88C63422E62"
+					type: "item"
+					item: { count: 1, id: "framedblocks:framed_cube" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{ id: "60FFB825D3241E03", type: "xp", xp: 100 }
+				{
+					id: "7D3BE1B3C91DBB28"
+					type: "item"
+					item: { count: 1, id: "framedblocks:framed_stairs" }
+					count: 8
+				}
+				{
+					id: "0472379F1CE842F9"
+					type: "item"
+					item: { count: 1, id: "framedblocks:framed_slab" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3A2124EFF7DD6E2E"
+			x: 1.75d
+			y: 6.0d
+			dependencies: ["791208BAC6B60C6B"]
+			icon: { id: "handcrafted:hammer" }
+			tasks: [
+				{
+					id: "7ADE0786B05DAF4A"
+					type: "item"
+					item: { count: 1, id: "handcrafted:hammer" }
+				}
+			]
+			rewards: [
+				{ id: "2ED810F970E84F8A", type: "xp", xp: 100 }
+				{
+					id: "1C045647719FC6B8"
+					type: "item"
+					item: { count: 1, id: "handcrafted:oak_chair" }
+					count: 2
+				}
+				{
+					id: "7050CF20CDB39922"
+					type: "item"
+					item: { count: 1, id: "handcrafted:oak_table" }
+				}
+			]
+		}
+		{
+			id: "3A8DD09B28D07FA8"
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["3A2124EFF7DD6E2E"]
+			icon: { id: "handcrafted:pink_cushion" }
+			optional: true
+			tasks: [
+				{
+					id: "1DF853630B30C9E8"
+					type: "item"
+					item: { count: 1, id: "handcrafted:oak_couch" }
+				}
+			]
+			rewards: [
+				{ id: "0EB935DCE9A6D7F0", type: "xp", xp: 100 }
+				{
+					id: "03BD028860316C62"
+					type: "item"
+					item: { count: 1, id: "handcrafted:pink_cushion" }
+					count: 2
+				}
+				{
+					id: "115B58E4E690E007"
+					type: "item"
+					item: { count: 1, id: "handcrafted:light_blue_cushion" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "6E1695F0A17C035C"
+			x: 3.5d
+			y: 6.375d
+			dependencies: ["3A2124EFF7DD6E2E"]
+			icon: { id: "mcwfurnitures:oak_desk" }
+			tasks: [
+				{
+					id: "3D1A33F908341BC2"
+					type: "item"
+					item: { count: 1, id: "mcwfurnitures:oak_wardrobe" }
+				}
+			]
+			rewards: [
+				{ id: "40FCCBA22A97F405", type: "xp", xp: 100 }
+				{
+					id: "4694C2C0C69332FD"
+					type: "item"
+					item: { count: 1, id: "mcwfurnitures:oak_chair" }
+					count: 2
+				}
+				{
+					id: "0479872E8FFC08D3"
+					type: "item"
+					item: { count: 1, id: "mcwfurnitures:oak_table" }
+				}
+			]
+		}
+		{
+			id: "437A8BB95378634A"
+			x: 5.25d
+			y: 6.375d
+			dependencies: ["6E1695F0A17C035C"]
+			icon: { id: "mcwroofs:oak_roof" }
+			tasks: [
+				{
+					id: "6DCDA032C4D200C9"
+					type: "item"
+					item: { count: 1, id: "mcwroofs:oak_roof" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "12651419027D043B", type: "xp", xp: 100 }
+				{
+					id: "4564FF903C49BF7C"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_planks" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "23AC8B9F5125787B"
+			x: 7.0d
+			y: 5.25d
+			dependencies: ["437A8BB95378634A"]
+			icon: { id: "mcwwindows:oak_window" }
+			tasks: [
+				{
+					id: "57211E5BD566FFB5"
+					type: "item"
+					item: { count: 1, id: "mcwwindows:oak_window" }
+					count: 4L
+				}
+				{
+					id: "5BFF2D95EA419FCD"
+					type: "item"
+					item: { count: 1, id: "mcwdoors:oak_cottage_door" }
+				}
+			]
+			rewards: [
+				{ id: "745A196E0F7A6237", type: "xp", xp: 100 }
+				{
+					id: "3BA97EBE0F1A9C7F"
+					type: "item"
+					item: { count: 1, id: "mcwfences:oak_picket_fence" }
+					count: 8
+				}
+				{
+					id: "73D5E3D62E2B9307"
+					type: "item"
+					item: { count: 1, id: "mcwtrpdoors:oak_cottage_trapdoor" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "2647941D62D41D5E"
+			x: 8.75d
+			y: 4.5d
+			dependencies: ["23AC8B9F5125787B"]
+			icon: { id: "mcwlights:chain_lantern" }
+			optional: true
+			tasks: [
+				{
+					id: "162BF105A1F1EB00"
+					type: "item"
+					item: { count: 1, id: "mcwlights:chain_lantern" }
+					count: 2L
+				}
+			]
+			rewards: [
+				{ id: "0AD97F2E2DCBDCA6", type: "xp", xp: 100 }
+				{
+					id: "4889B5DA9C5FA3F8"
+					type: "item"
+					item: { count: 1, id: "mcwlights:pink_paper_lamp" }
+					count: 2
+				}
+				{
+					id: "64E936D8C3396441"
+					type: "item"
+					item: { count: 1, id: "mcwlights:oak_tiki_torch" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "70E3224746EC9E2E"
+			x: 8.75d
+			y: 6.0d
+			dependencies: ["23AC8B9F5125787B"]
+			icon: { id: "mcwpaths:cobblestone_square_paving" }
+			optional: true
+			tasks: [
+				{
+					id: "5662CFC20350CD39"
+					type: "item"
+					item: { count: 1, id: "mcwpaths:cobblestone_square_paving" }
+					count: 16L
+				}
+			]
+			rewards: [
+				{ id: "3B29609227DDB452", type: "xp", xp: 100 }
+				{
+					id: "08E8EB57369F1C1C"
+					type: "item"
+					item: { count: 1, id: "mcwbridges:rope_oak_bridge" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "6CA9C679562543A0"
+			x: 3.5d
+			y: 9.0d
+			dependencies: ["3A2124EFF7DD6E2E"]
+			icon: { id: "another_furniture:red_sofa" }
+			tasks: [
+				{
+					id: "3E329037A936EAA8"
+					type: "item"
+					item: { count: 1, id: "another_furniture:oak_shelf" }
+				}
+			]
+			rewards: [
+				{ id: "6A60F3BA3C53A143", type: "xp", xp: 100 }
+				{
+					id: "3920CCBA4A981411"
+					type: "item"
+					item: { count: 1, id: "another_furniture:service_bell" }
+				}
+				{
+					id: "1249DDB7D484EBC5"
+					type: "item"
+					item: { count: 1, id: "another_furniture:pink_curtain" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "69D8C9521B15D6C5"
+			x: 5.25d
+			y: 9.0d
+			dependencies: ["6CA9C679562543A0"]
+			icon: { id: "minecraft:cherry_planks" }
+			tasks: [
+				{ id: "63E889ABE0087B28", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "22C84DBBFFD82B8C", type: "xp", xp: 100 }
+				{
+					id: "51E79EF510386291"
+					type: "item"
+					item: { count: 1, id: "minecraft:cherry_log" }
+					count: 16
+				}
+				{
+					id: "78BC235B21E0D1E3"
+					type: "item"
+					item: { count: 1, id: "minecraft:birch_log" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "19A231EB3DF2353A"
+			x: 1.75d
+			y: 12.75d
+			dependencies: ["791208BAC6B60C6B"]
+			icon: { id: "supplementaries:jar" }
+			tasks: [
+				{
+					id: "34160B020391DE37"
+					type: "item"
+					item: { count: 1, id: "supplementaries:jar" }
+				}
+			]
+			rewards: [
+				{ id: "463A243E16769A12", type: "xp", xp: 100 }
+				{
+					id: "2F836EBE0A8AD21A"
+					type: "item"
+					item: { count: 1, id: "supplementaries:flower_box" }
+					count: 2
+				}
+				{
+					id: "793222762731D563"
+					type: "item"
+					item: { count: 1, id: "supplementaries:doormat" }
+				}
+			]
+		}
+		{
+			id: "5FB1C0F28CF27D85"
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["19A231EB3DF2353A"]
+			icon: { id: "amendments:hanging_flower_pot" }
+			tasks: [
+				{ id: "0805F2E0B7CA0FA4", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0EA7CBCFAA642FDE", type: "xp", xp: 100 }
+				{
+					id: "3CB1EFE0DB091A12"
+					type: "item"
+					item: { count: 1, id: "minecraft:lantern" }
+					count: 4
+				}
+				{
+					id: "51B6C66DD04401B9"
+					type: "item"
+					item: { count: 1, id: "minecraft:flower_pot" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "3292964F7F94CA7A"
+			x: 3.5d
+			y: 12.0d
+			dependencies: ["19A231EB3DF2353A"]
+			icon: { id: "waterframes:frame" }
+			optional: true
+			tasks: [
+				{
+					id: "2196895807B7865B"
+					type: "item"
+					item: { count: 1, id: "waterframes:frame" }
+				}
+			]
+			rewards: [
+				{ id: "54D70722142CBF44", type: "xp", xp: 100 }
+				{
+					id: "2A4C3938B6150ABA"
+					type: "item"
+					item: { count: 1, id: "minecraft:item_frame" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "281E74A5FE4C8423"
+			x: 3.5d
+			y: 13.5d
+			dependencies: ["19A231EB3DF2353A"]
+			icon: { id: "comforts:sleeping_bag_red" }
+			tasks: [
+				{
+					id: "725B5916CD01680B"
+					type: "item"
+					item: { count: 1, id: "comforts:sleeping_bag_red" }
+				}
+			]
+			rewards: [
+				{ id: "0D2577B33A4A90F7", type: "xp", xp: 100 }
+				{
+					id: "1F14053CEACCF88D"
+					type: "item"
+					item: { count: 1, id: "comforts:rope_and_nail" }
+					count: 2
+				}
+				{
+					id: "65B13C1FB1D27E3E"
+					type: "item"
+					item: { count: 1, id: "comforts:hammock_blue" }
+				}
+			]
+		}
+		{
+			id: "2F1D18C4F205A098"
+			x: 1.75d
+			y: 16.5d
+			dependencies: ["791208BAC6B60C6B"]
+			icon: { id: "wands:stone_wand" }
+			tasks: [
+				{
+					id: "70973345C308056D"
+					type: "item"
+					item: { count: 1, id: "wands:stone_wand" }
+				}
+			]
+			rewards: [
+				{ id: "513D12FC788DBFC0", type: "xp", xp: 100 }
+				{
+					id: "6467B2512B1DC873"
+					type: "item"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 64
+				}
+				{
+					id: "15298B9C0AA7EB67"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_planks" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "753BC9ECAB18DF84"
+			x: 3.5d
+			y: 16.5d
+			dependencies: ["2F1D18C4F205A098"]
+			icon: { id: "effortlessbuilding:randomizer_tool" }
+			tasks: [
+				{ id: "28CC114C574830FA", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0A90355895CACBF7", type: "xp", xp: 100 }
+				{
+					id: "0D9183C753E2A125"
+					type: "item"
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "28138884B05ABB37"
+			x: 5.25d
+			y: 16.5d
+			dependencies: ["753BC9ECAB18DF84"]
+			icon: { id: "buildinggadgets2:gadget_building" }
+			tasks: [
+				{
+					id: "6433970288811A7F"
+					type: "item"
+					item: { count: 1, id: "buildinggadgets2:gadget_building" }
+				}
+			]
+			rewards: [
+				{ id: "2FAC8D0A277A819B", type: "xp", xp: 500 }
+				{ id: "22BA83CDF4B086B3", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "73377FF9A3FC5D0D"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "0DE1CA761A658287"
+			x: 3.5d
+			y: 15.0d
+			dependencies: ["19A231EB3DF2353A"]
+			icon: { id: "torchmaster:megatorch" }
+			tasks: [
+				{
+					id: "305DED60D43F25A9"
+					type: "item"
+					item: { count: 1, id: "torchmaster:megatorch" }
+				}
+			]
+			rewards: [
+				{ id: "232EB506C03246C0", type: "xp", xp: 500 }
+				{ id: "4DE749D24527C1B4", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "5D867A008864AD4F"
+					type: "item"
+					item: { count: 1, id: "minecraft:torch" }
+					count: 64
+				}
+			]
+		}
+		{
+			id: "2D697EE6293222DE"
+			x: 7.0d
+			y: 7.5d
+			dependencies: [
+				"437A8BB95378634A"
+				"6CA9C679562543A0"
+				"5FB1C0F28CF27D85"
+				"281E74A5FE4C8423"
+			]
+			icon: { id: "minecraft:oak_door" }
+			shape: "heart"
+			size: 1.5d
+			tasks: [
+				{ id: "3215F01BE60A220D", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "555AD3F6C8E28C54", type: "xp", xp: 500 }
+				{ id: "15DC9803C94247D4", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "07C83AAA8B1F4D27"
+					type: "item"
+					item: { count: 1, id: "plushies:cat_plushie" }
+				}
+				{
+					id: "5138DD6534CFC777"
+					type: "item"
+					item: { count: 1, id: "plushies:wolf_plushie" }
+				}
+				{
+					id: "62BE41D1AC73906D"
+					type: "item"
+					item: { count: 1, id: "minecraft:flower_pot" }
+					count: 8
+				}
+				{
+					id: "2DEEECF9E6596E42"
+					type: "item"
+					item: { count: 1, id: "minecraft:painting" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "3A4C73989588ECBE"
+			x: 8.75d
+			y: 7.5d
+			dependencies: ["2D697EE6293222DE"]
+			icon: { id: "minecraft:oak_sign" }
+			shape: "hexagon"
+			tasks: [
+				{ id: "397FB0E55326CAAE", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "356155AE2BF9971E", type: "xp", xp: 100 }
+				{
+					id: "22A9DC8EA2C5F726"
+					type: "item"
+					item: { count: 1, id: "minecraft:cake" }
+				}
+			]
+		}
+	]
+}

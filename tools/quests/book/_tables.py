@@ -46,7 +46,6 @@ TABLES = {
         ("minecraft:diamond_block", 4, 10),
         ("minecraft:enchanted_golden_apple", 1, 5),
         ("minecraft:totem_of_undying", 1, 5),
-        ("minecraft:nether_star", 1, 3),
         ("minecraft:experience_bottle", 64, 8),
         ("apotheosis:sigil_of_enhancement", 1, 5),
         ("apotheosis:sigil_of_socketing", 4, 6),
