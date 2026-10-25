@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **New: Seamless Sleep**: the night fast-forwards smoothly while someone sleeps. (Already live on the server: `gamerule playersSleepingPercentage 1`, so one sleeping player skips the night. It's a world setting, so it doesn't need the update.)
 - **Village guards no longer turn on players over low reputation** (Guard Villagers' instant-aggro threshold -100 → -9999). They still defend villagers and guards you attack.
 - **Minimap defaults to the top right** (`config/xaerohud.txt`, `preserve = true`, so players who moved it keep their spot).
 - **Hotfix: JEI, Just Enough Resources and MezzConfig removed.** JEI built its recipe index on the game's main thread when
