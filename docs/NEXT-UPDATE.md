@@ -12,6 +12,9 @@ critical hotfix goes out on its own. Clear this list when the release goes out.
   - Iron & Nouveau's "Ars 'n Spells overlap" notice is blanked. It only applies to Ars 'n Spells 3.4.0+, and the pack
     has 3.3.5. **If Ars 'n Spells is ever updated to 3.4+**, set `enable_iron_glyphs = false` and
     `enable_glyph_press = false` in Ars 'n Spells' server config instead.
+- **No guide books dumped on first join:** Ars Nouveau's Worn Notebook, Alex's Mobs' Animal Dictionary, Tide's Fishing
+  Journal and Integrated Dynamics' guide are no longer given on spawn (`spawnBook`, `giveBookOnStartup`, `giveJournal`,
+  `obtainOnSpawn` = false). Each one becomes a reward on the first quest of its chapter instead.
 - **Quest book: 6 quest items that don't exist in game swapped for real ones** (Ad Astra Astrodux, ExtendedAE Infinity Cell, Inventory Pets iron nugget, My Nether's Delight stove, Better Archeology identified artifact, Amendments hanging pot); the quest ID checker now validates against a registry dump from a running server.
 
 ## Release checklist

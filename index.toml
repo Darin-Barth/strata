@@ -6,6 +6,14 @@ hash = "fb793f96e8295ee813b67989024f80d614ce93df912e8879ceb44a5c0302255c"
 preserve = true
 
 [[files]]
+file = "config/amc.json"
+hash = "fc3ae3e673e01a119aad42909b0878c3a9b618adfbd1c369eeb275c624e2c704"
+
+[[files]]
+file = "config/ars_nouveau-common.toml"
+hash = "b1a7e267eac38e5dab7a225798f854333eb45a405e1caee6e895af1cc51b006f"
+
+[[files]]
 file = "config/artifacts/general.toml"
 hash = "9dd65f10d532b41eee2599845cdfe7584f69024a9f5cd7bb65d9182f3483ce4d"
 
@@ -261,6 +269,10 @@ file = "config/iceandfire/iaf-client.json"
 hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
+file = "config/integrateddynamics-common.toml"
+hash = "afd73d64ac978202fcfadf461cb60294cd54cf1a194bb9a3fdd5da466b9e8846"
+
+[[files]]
 file = "config/inventorypets-common.toml"
 hash = "04821b12229970efa59fb29612a4d492d3778fa79a0194258c03d99f447fe888"
 
@@ -296,6 +308,10 @@ hash = "a75b392dc720397c13522e1654d876b502e4261b8ea30a1a7c18c37e8f0b184d"
 file = "config/supplementaries-client.toml"
 hash = "fcbff2c28c3ae0282ce1805e43e495bc76a9cb7d6bcd930bbc5dc31839cfd2e6"
 preserve = true
+
+[[files]]
+file = "config/tide/tide_server.json"
+hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
 
 [[files]]
 file = "config/vanillabackport-common.toml"
