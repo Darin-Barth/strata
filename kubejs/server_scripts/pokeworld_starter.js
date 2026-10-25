@@ -8,7 +8,7 @@
 const CobblemonMain = Java.loadClass('com.cobblemon.mod.common.Cobblemon')
 const starterOfferedThisLogin = new Set()
 
-// Same helper as pokeworld_spawns.js (each script file has its own scope).
+// Same as pokeworld_spawns.js's dimensionId, under its own name (shared scope, see above).
 const starterDimensionId = level => { const d = level.dimension; return String(d && d.location ? d.location() : d) }
 
 PlayerEvents.loggedOut(event => {
