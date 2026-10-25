@@ -20,7 +20,7 @@ MR=(
   vampirism vampirism-integrations vampirism-irons-spells-compatibility werewolves vampires-delight
   vampires-need-umbrellas
   tectonic regions-unexplored streams-reflowing incendium nullscape
-  yungs-api yungs-better-strongholds yungs-better-mineshafts yungs-better-nether-fortresses
+  yungs-api yungs-better-mineshafts yungs-better-nether-fortresses
   yungs-better-dungeons yungs-better-desert-temples yungs-better-jungle-temples yungs-better-ocean-monuments
   yungs-better-witch-huts yungs-better-end-island yungs-bridges yungs-extras yungs-cave-biomes
   towns-and-towers when-dungeons-arise dungeons-and-taverns idas explorify lootr
@@ -61,6 +61,8 @@ MR=(
   amendments enchantment-descriptions torchmaster crafting-tweaks jade-addons-forge crash-assistant
   ping-wheel ping-to-map-xaeros neruina packet-fixer structure-layout-optimizer async-locator-refined
   fastsuite dynamic-fps moreculling sodium-extra
+  # Oct 24: replaces yungs-better-strongholds (dropped)
+  integrated-stronghold
   # Wave 5 (Oct 24): gap-analysis round 2
   immersive-optimization ftb-quests-optimizer ai-improvements achievements-optimizer ad-astra create-jetpack
   interiors mss-moogs-soaring-structures better-archeology ribbits lootjs structurify default-options in-control

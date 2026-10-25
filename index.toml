@@ -1611,6 +1611,10 @@ file = "kubejs/data/integrated_cobblemon/worldgen/structure/water_gym.json"
 hash = "1e7c66b858d263e9f8873cfcf16064c0984749b2f39c445f3b2fb9cdc1c72c65"
 
 [[files]]
+file = "kubejs/data/integrated_stronghold/worldgen/processor_list/portal_room_processor.json"
+hash = "1eb552fa44b9cdcb5b9c564aab2cbef559ac5b4687e27975ce98eafdaff72bf9"
+
+[[files]]
 file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
 hash = "c8ea0ee29eccaeec1274db06ba1a812ff2ddf0de921607922c21c170e193631e"
 
@@ -4399,6 +4403,11 @@ hash = "e7969e000a1d7db18e69a3f7784b7d3436ba7b15743a5b10270fb5e2d1ab08ec"
 metafile = true
 
 [[files]]
+file = "mods/integrated-stronghold.pw.toml"
+hash = "9db2595b8dcf9759ec549481561132e1affc19634d368a78ae79aa45557c3be2"
+metafile = true
+
+[[files]]
 file = "mods/integrated-villages.pw.toml"
 hash = "6119f4a28b047a9a1b47d5dd505ad43f407ab400dc94eb5d6d3d5189fea24ed3"
 metafile = true
@@ -5301,11 +5310,6 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-ocean-monuments.pw.toml"
 hash = "a2d7176026abf4a68a663b375811a603c508f36062cc7fb5b45416e1462682a8"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-strongholds.pw.toml"
-hash = "03084966c05070b5c4b17cd89234f3c0d813940a2d76b405a6699deac10a0ab8"
 metafile = true
 
 [[files]]
