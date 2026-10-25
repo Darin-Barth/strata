@@ -4,7 +4,8 @@
 // unlocks it and opens the screen. It opens at most once per login, so closing it without
 // choosing brings it back on the next visit after logging in again; Cobblemon's own
 // "starter selected" flag stops it for good once a starter is picked.
-const Cobblemon = Java.loadClass('com.cobblemon.mod.common.Cobblemon')
+// KubeJS server scripts share one scope and pokeworld_spawns.js already declares 'Cobblemon'.
+const CobblemonMain = Java.loadClass('com.cobblemon.mod.common.Cobblemon')
 const starterOfferedThisLogin = new Set()
 
 // Same helper as pokeworld_spawns.js (each script file has its own scope).
@@ -21,6 +22,6 @@ PlayerEvents.tick(event => {
   const uuid = String(player.uuid)
   if (starterOfferedThisLogin.has(uuid)) return
   starterOfferedThisLogin.add(uuid)
-  if (Cobblemon.INSTANCE.getPlayerDataManager().getGenericData(player).getStarterSelected()) return
+  if (CobblemonMain.INSTANCE.getPlayerDataManager().getGenericData(player).getStarterSelected()) return
   event.server.runCommandSilent(`openstarterscreen ${player.username}`)
 })
