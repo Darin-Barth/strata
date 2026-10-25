@@ -47,6 +47,10 @@ MR=(
   # Undeclared deps found in the first server boot
   kambrik terrablender
   custom-window-title caelus vanillabackport integrated-villages
+  # Wave 3 (Oct 24)
+  effortless-building building-wands rechiseled rechiseled-create framedblocks mech-trowel
+  guard-villagers easy-villagers trade-cycling smarter-farmers-farmers-replant deep-aether
+  create-stuff-additions create-stuff-n-additions-x-sable-aeronautics-compat aquamirae
 )
 
 CF=(
@@ -59,6 +63,8 @@ CF=(
   bossesrise qliphoth-awakening cinematic-cataclysm gtbcs-cataclysmic-boss-ui cataclysm-spellbooks
   apprentices-codex starbunclemania ars-trinkets playerrevive locked-in-slots mighty-mail
   what-are-they-up-to meccha-crafteleon hyperbox
+  # Wave 3 (Oct 24). Chisels & Bits was tried and cut: it fails to load on 1.21.1
+  building-gadgets more-red choicetheorems-overhauled-village iceandfire-ce
 )
 
 for s in "${MR[@]}"; do

@@ -297,6 +297,26 @@ NEW_ROWS = [
      "Cataclysm boss-drop foods", "MR l_enders-cataclysm-delight 1.0.10b"),
     ("Aether's Delight", "Food and farming", "Life", "Farmer's Delight, The Aether", "Both", "Keep", C, None,
      "Aether foods. Beta, last updated Oct 2025", "MR the-aethers-delight 0.1.4.2 (beta)"),
+    # Wave 3 (Oct 24): building helpers, villages, dragons, Aether, oceans
+    ("Effortless Building", "Building", "Life", None, "Both", "Keep", C, None, "Mirror/array/line build modes", "MR effortless-building 4.2"),
+    ("Building Gadgets 2", "Building", "Life", None, "Both", "Keep", C, "Config", "Building/exchanging/copy-paste gadgets (FE powered). Copy-paste needs a sane block limit", "CF building-gadgets 21.1.1"),
+    ("Building Wands", "Building", "Life", "SuperMartijn642's Core + Config Lib", "Both", "Keep", C, None, "Construction wands", "MR building-wands 3.0.5"),
+    ("Chisels & Bits", "Building", "Life", None, "Both", "Cut", N, None, "Cut: 21.1.33 fails to load (Saecularia Caudices NoClassDefFoundError, also broke Immersive Engineering). Upstream issue ChiselsAndBits #1367 unanswered", "CF chisels-bits 21.1.33 (broken)"),
+    ("Rechiseled + Rechiseled: Create", "Building", "Life", "SuperMartijn642's Core + Config Lib", "Both", "Keep", C, None, "Chisel variants for detailing; Create compat", "MR rechiseled 1.2.6 + rechiseled-create 1.1.1"),
+    ("FramedBlocks", "Building", "Life", None, "Both", "Keep", C, None, "Camo-able framed shapes", "MR framedblocks 10.6.3"),
+    ("Mech Trowel", "Building", "Life", None, "Both", "Keep", C, None, "Places a random block from the hotbar (detailing)", "MR mech-trowel 1.3.2.1"),
+    ("More Red", "Tech", "Tech", None, "Both", "Keep", C, None, "Wires that run on walls and ceilings, bundled cables", "CF more-red 6.0.0.3"),
+    ("Guard Villagers", "Cozy", "Life", None, "Both", "Keep", C, None, "Village guards", "MR guard-villagers 2.4.12"),
+    ("Easy Villagers", "Cozy", "Life", None, "Both", "Keep", C, None, "Pick up villagers, compact breeders/farms", "MR easy-villagers 1.1.49"),
+    ("Trade Cycling", "QoL", "Life", None, "Both", "Keep", C, None, "Reroll unused villager trades", "MR trade-cycling 1.0.23"),
+    ("Smarter Farmers", "Cozy", "Life", None, "Both", "Keep", C, None, "Farmer villagers replant the right crop", "MR smarter-farmers 2.2.4"),
+    ("ChoiceTheorem's Overhauled Village", "Structures", "Exploration", None, "Both", "Keep", C, "Worldgen", "Biome-specific village variants. Structures: decide before pregen", "CF ctov 3.6.3"),
+    ("Ice and Fire: Community Edition", "Wildlife", "Exploration", "Jupiter, Uranus (beta), Fragmentum", "Both", "Keep", C, "Gate", "Dragons, mythical mobs. Dragon riding is flight: rule still to decide", "CF iceandfire-ce 2.1.4"),
+    ("Deep Aether", "Dimensions", "Exploration", "The Aether", "Both", "Keep", C, None, "More Aether biomes, mobs and a boss", "MR deep-aether 1.1.5.1"),
+    ("Create Stuff & Additions (+ Sable compat)", "Create", "Tech", "Create", "Both", "Keep", C, "Gate", "Jetpacks etc.; check flight items against the flight rule", "MR create-stuff-additions 2.1.4b + sable_sa_compat 1.0.4"),
+    ("Aquamirae", "Structures", "Exploration", None, "Both", "Keep", C, "Worldgen", "Ice Maze ocean content and bosses (ocean gap)", "MR aquamirae 7.2.13"),
+    ("Born in Chaos", "Mobs", "Exploration", None, "Both", "Maybe", C, "Config", "Horror dimension only: confine spawns there", "Reserved for the horror dimension"),
+    ("Mutant Monsters", "Mobs", "Exploration", None, "Both", "Maybe", C, "Config", "Horror dimension only: confine spawns there", "Reserved for the horror dimension"),
 ]
 
 
