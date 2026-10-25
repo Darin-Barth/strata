@@ -70,3 +70,21 @@ By step: noise fill (terrain shape) 37%, feature decoration 19%, the rest is aqu
 - Pregenerating on the faster desktop and copying the world to treehouse is the other practical lever.
 
 **Side finding (fixed):** both normal worlds still had ~170 Quark variant chests even with Quark's `Replace Worldgen Chests = false`. They come from Artifacts' campsites (`useModdedChests`, now set false in `config/artifacts/general.toml`) and from IDAS structures (no setting found). Lootr can't convert these, so their loot isn't per-player. Verify the Artifacts change in the next server test.
+
+## C2ME for the final Overworld pregen (Oct 25, 2026)
+
+The Integrated Cobblemon gyms now generate in the Pokémon world (and Nether/End), so C2ME (`c2me-neoforge` 0.4.0-alpha.0.123) was re-tested as a **pregen-only** tool on the final seed `-1678324137078475659`, same 900×900-block area around spawn (3,481 chunks):
+
+| | Normal | C2ME |
+|---|---|---|
+| Time | 5 min 7 s | **57 s** (5.4×) |
+| "setBlock in a far chunk" warnings | n/a | **0** |
+| Mean height step inside chunks / across chunk borders | 1.430 / 1.424 | 1.435 / 1.443 |
+| Steps ≥ 8 blocks inside / across borders | 5.32% / 5.46% | 5.31% / 5.57% |
+| Tavern village building blocks identical (same block, same spot) | | **99.83%** (the rest are Create's natural limestone/scoria/zinc patches) |
+| Ars Nouveau light blocks | 330 | 331 |
+| Structure starts | 269 | 272 (one extra Better Archeology fossil) |
+
+Tree, leaf and ore positions differ, as they do between two normal runs. Maps side by side: `docs/images/c2me-pregen-compare.png`. Why it's faster: the vanilla chunk scheduler (`ChunkMap.tick`) runs on the main thread and was 66% of a maxed-out server thread, while the 19 worldgen workers used about 2 cores; C2ME spreads the work (13 cores in use, ~50 chunks/s vs ~11).
+
+**Used for:** the Overworld pregen only (resumed with C2ME at 2.7%; the first 10,500 chunks were generated normally). The Nether (1,250-block radius) was generated without it. **The End, Aether and Pokémon world are generated without C2ME** (Cobblemon gyms live in the Pokémon world, Nether and End), and C2ME is removed before anyone plays. Never ship it in the pack.
