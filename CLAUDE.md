@@ -15,7 +15,7 @@ Source of truth: `docs/design-doc.md` (rules) and `docs/strata-mod-tracker.xlsx`
 Test for any mod: keep if it adds a different way to play; question it if it duplicates something already in.
 
 ## Rules to enforce while building
-- **No free teleport**: no `/home`, `/back`, `/rtp`, `/tpa` for non-ops (no FTB Essentials). Waystones only with distance-scaled XP cost + extra cross-dimension cost; remove warp scrolls/stones from loot. Earned teleporting (Mek teleporters, Ars, blink spells, Vampirism skill) is fine.
+- **Limited teleport**: one `/home` per player with a 10-second cooldown (`kubejs/server_scripts/strata_home.js`, Darin's call Oct 25); no `/back`, `/rtp`, `/tpa` for non-ops (no FTB Essentials). Waystones only with distance-scaled XP cost + extra cross-dimension cost; remove warp scrolls/stones from loot. Earned teleporting (Mek teleporters, Ars, blink spells, Vampirism skill) is fine.
 - **Flight must cost something** (fuel, power, mana, stamina, durability). No free "wear it and fly" items: Inventory Pets Cloud pet and Excessive Utilities angel-ring style items get removed or cost-gated. MekaSuit flight = late-game.
 - **Wireless tiers**: early none (cables/belts/trains/IE wires) → mid (after Nether or first boss) same-dimension wireless (Flux Networks, AE2 wireless, Mek entangloporters) → late cross-dimension (AE2 Quantum Network Bridge, boss-drop gated).
 - **Power**: Crafts & Additions alternator (FE output lowered) < New Age generators < New Age nuclear / Mek fission+fusion. Remove New Age wire recipes; grid = C&A wires (local) + IE LV/MV/HV (long distance).

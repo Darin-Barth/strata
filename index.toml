@@ -285,6 +285,10 @@ file = "config/inventorypets-common.toml"
 hash = "04821b12229970efa59fb29612a4d492d3778fa79a0194258c03d99f447fe888"
 
 [[files]]
+file = "config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "c44080e85634ec3352193aa1d65647e1f59d741771b10863157e14dc0acf08f1"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
 
@@ -3633,6 +3637,14 @@ hash = "a3633d65a9d78bc1753e1ef4be3f177187c0c4da498ca16ac09d0013828fe2f0"
 [[files]]
 file = "kubejs/server_scripts/pokeworld_starter.js"
 hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
+
+[[files]]
+file = "kubejs/server_scripts/strata_home.js"
+hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
+
+[[files]]
+file = "kubejs/server_scripts/strata_team_protection.js"
+hash = "e7e2d44ab47fb3d114c8ddd00ba4716c05cb8c32cbdc40f576ff77fd4c294f11"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"
