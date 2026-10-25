@@ -418,6 +418,9 @@ NEW_ROWS = [
     ('Oritech', 'Tech', 'Tech', None, 'Both', 'Keep', C, 'Gate', 'Picked over Modern Industrialization (Oct 25). Exosuit/jetpack flight must cost power', 'MR oritech oritech-neoforge-1.21.1-1.2.13.jar'),
     ('Unusual End', 'Dimensions', 'Exploration', None, 'Both', 'Maybe', C, 'Worldgen', 'Tested Oct 24: with Nullscape only 0.1% of End chunks get its biomes. Not worth it unless Nullscape goes', 'MR unusual-end 2.3.1b'),
     ('Draconic Evolution', 'Tech', 'Tech', None, 'Both', 'Maybe', C, 'Gate', 'Added Oct 25 (Darin: if it does not break anything). Beta. Armor flight is power-costed; adds Draconium ore in all three dimensions', 'MR draconic-evolution 3.1.4.633 (beta)'),
+    # Strata branding (Oct 25): title screen, loading screens
+    ('FancyMenu', 'Visuals', 'Visuals', 'Konkrete, Melody', 'Client', 'Keep', C, 'Config', 'Strata title screen and world-loading screens; layouts + art in config/fancymenu (art built by tools/make_menu_art.py). Modpack mode on', 'MR fancymenu fancymenu_neoforge_3.9.14_MC_1.21.1.jar + konkrete 1.9.9 + melody 1.0.10'),
+    ('Drippy Loading Screen', 'Visuals', 'Visuals', 'FancyMenu', 'Client', 'Keep', C, 'Config', 'Strata loading screen (resource loading) via a FancyMenu layout; early NeoForge window via its Early Loading Module (config/drippyloadingscreen/options.txt)', 'MR drippy-loading-screen 3.1.5 + drippy-early-loading-module 3.1.5'),
 ]
 
 

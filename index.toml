@@ -23,6 +23,20 @@ file = "config/cobblemon/starters.json"
 hash = "31d020eac9b133a02c977965e66b7ca27feac781940967b8f1a6d303243b51a9"
 
 [[files]]
+file = "config/create-client.toml"
+hash = "eec64681017779e529ab998ca131d3c0532bd00509520cdaa19e1e0f9caa3b3c"
+preserve = true
+
+[[files]]
+file = "config/createtweakedcontrollers-client.toml"
+hash = "29616344a5f03e3043659bb076b01a2becdadfe4c4f24625519fe6b99b47ff55"
+preserve = true
+
+[[files]]
+file = "config/cumulus_menus-client.toml"
+hash = "a06ff5cb0b1dda3969f82471555ffa9dd8788a87bb9b352599172cafbb52c645"
+
+[[files]]
 file = "config/customwindowtitle-client.toml"
 hash = "eb5e831564a711065e75b617ebaeaeae8945d70a95a3bf5a0b8ee54046afa783"
 
@@ -31,8 +45,52 @@ file = "config/customwindowtitle/strata.png"
 hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
+file = "config/drippyloadingscreen/options.txt"
+hash = "851aca4b626bdfece6ab083f6b40d949b84c0a4318aeba5212a657ed7122ddb7"
+
+[[files]]
+file = "config/dungeonconfig/dungeonconfig.json5"
+hash = "ef7bed1f286e6040a4d2c5fc5b5e21ae938986375a9e89fe47b90ba5cd230796"
+
+[[files]]
+file = "config/fancymenu/assets/strata/background.png"
+hash = "88a47bd763a9d53c3d9e3b9e04fa1903b2646bcc0c4380398452761741395624"
+
+[[files]]
+file = "config/fancymenu/assets/strata/logo.png"
+hash = "3e9f3e105df41bd21e16d6c474dfe7908d8243f78e2d7c9eb7efac44d9cc503f"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "942017f8f24afb4f6ee8d13e365b4a771e3e52215092872f6b5ca04ab23b2f5f"
+
+[[files]]
+file = "config/fancymenu/customization/strata_loading_overlay.txt"
+hash = "c7078ac5d4368866c795c0bfc82b19de0dfc47381e5bd3bd6bce7d96ac8c2ab0"
+
+[[files]]
+file = "config/fancymenu/customization/strata_title_screen.txt"
+hash = "68511f113087880ec20ba31856ae48a328486a648a4abbe6dcb88a2cdd6cc48e"
+
+[[files]]
+file = "config/fancymenu/customization/strata_world_loading.txt"
+hash = "1d96ecd6c0ab0017b355018e2e5b745adb140f93e81942bfed570e1fefa826eb"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "c64b53c1a5ce8a0816bce5abf7832f8be1db1ed7d7aebab71ba278e70b353faf"
+
+[[files]]
+file = "config/iceandfire/iaf-client.json"
+hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
+
+[[files]]
+file = "config/obscuria/aquamirae-early.json"
+hash = "95a6ce1a5c2bfdfc3c2842a171b34ddbbd69536c54521edce3086db3b4b4134c"
 
 [[files]]
 file = "config/playerrevive.json"
@@ -40,7 +98,7 @@ hash = "773b0f469fa4cdf997fbe8a5c76c106a8bea1193eb13093c4102a7748effb1f3"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "14ca75640a0b7fd6e5b96d008372343f21e2f7f3672255b361533326be2cc544"
+hash = "e19a6141a26292cdf486e81f53cf176c443578ad004a27b207cf1b101885fe66"
 
 [[files]]
 file = "config/rctmod-server.toml"
@@ -4052,6 +4110,16 @@ hash = "61dbbdcc41c7bf50540b8d1e83fdf61d9367f392690b45d3cdece8aad55370ac"
 metafile = true
 
 [[files]]
+file = "mods/drippy-early-loading-module.pw.toml"
+hash = "5fea3c19a3984ad752fd965510c4f8847c5100d001c31cbe46373628de729e06"
+metafile = true
+
+[[files]]
+file = "mods/drippy-loading-screen.pw.toml"
+hash = "d89b50af502aab4416e07fa8f92433a18fac11285fe1c39ebccea610dbfdd1e7"
+metafile = true
+
+[[files]]
 file = "mods/drive-by-wire-sable.pw.toml"
 hash = "dfcf0ef42d5dc33213781ebd3bc2c5e0debd9bb6540006d9941a02906fb33601"
 metafile = true
@@ -4194,6 +4262,11 @@ metafile = true
 [[files]]
 file = "mods/fallingtree.pw.toml"
 hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
+metafile = true
+
+[[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "88afe523b3bc1fed6bd53b6608f0450e9891c8fe25e786a9893243064f8c7e7f"
 metafile = true
 
 [[files]]
@@ -4517,6 +4590,11 @@ hash = "87b79f13a496fa264918614845054c17a6df100d5cf9c49c1329f51e87d6d02f"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "5707b722541648df013644f3b4d50083c77965d536f219df9fac5026f6103777"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
 metafile = true
@@ -4674,6 +4752,11 @@ metafile = true
 [[files]]
 file = "mods/mekanism.pw.toml"
 hash = "42061fd570a0b7a8063c0860056c6391593190caa0f12d3b49105e52a56817fe"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
 metafile = true
 
 [[files]]

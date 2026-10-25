@@ -1,0 +1,23 @@
+##[general]
+
+B:early_fade_out_elements = 'true';
+B:wait_for_textures_in_loading = 'true';
+B:fade_out_loading_screen = 'true';
+
+##[early_loading]
+
+S:early_loading_window_title = 'Strata';
+S:early_loading_background_texture_path = '/config/fancymenu/assets/strata/background.png';
+B:early_loading_background_preserve_aspect_ratio = 'true';
+S:early_loading_logo_texture_path = '/config/fancymenu/assets/strata/logo.png';
+I:early_loading_logo_width = '560';
+I:early_loading_logo_height = '224';
+I:early_loading_logo_position_offset_x = '0';
+I:early_loading_logo_position_offset_y = '-70';
+I:early_loading_bar_width = '400';
+I:early_loading_bar_height = '24';
+I:early_loading_bar_position_offset_x = '0';
+I:early_loading_bar_position_offset_y = '90';
+B:early_loading_hide_logo = 'false';
+B:early_loading_hide_bar = 'false';
+B:early_loading_hide_logger = 'false';

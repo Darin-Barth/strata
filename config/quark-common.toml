@@ -2,6 +2,10 @@
 #Quark fills in every other setting with its defaults on first launch.
 #Module names checked against the Quark 4.1-487 jar (1.21.1).
 
+[general]
+	#Keeps the Strata title screen clean; Quark's settings are still under Mods > Quark.
+	"Enable 'q' Button" = false
+
 [management]
 	#Inventory Profiles Next does sorting.
 	"Inventory Sorting" = false
