@@ -3352,7 +3352,7 @@ hash = "a3633d65a9d78bc1753e1ef4be3f177187c0c4da498ca16ac09d0013828fe2f0"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_starter.js"
-hash = "561bac95eeb8f4d838891970f6c2413dc49746f7c50fee7087030013ef0a4260"
+hash = "315dbf93d57c465ef93862c19c72cf85459eb8237b51af8e5f7e66998d8f754b"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
