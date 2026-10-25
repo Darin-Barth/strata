@@ -1,0 +1,13 @@
+name = "Crystal Chronicles"
+filename = "crystal_chronicles-0.0.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/96yhlGDU/versions/TOrVQXLo/crystal_chronicles-0.0.9.jar"
+hash-format = "sha512"
+hash = "91cce2bddf3a26348f3c84a8841e0d915850efc1200533f50e7bf15ea90e7053f91d1383ff810d9bee4b23968abece92e256d77221b4133450a7564d9fbaebb2"
+
+[update]
+[update.modrinth]
+mod-id = "96yhlGDU"
+version = "TOrVQXLo"

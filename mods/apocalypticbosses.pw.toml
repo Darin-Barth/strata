@@ -1,0 +1,13 @@
+name = "Apocalyptic Bosses"
+filename = "panascraftrpgmod-3.6-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "22d360ede0de0a089de4c65e58a05b217688feab"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8443397
+project-id = 1141135

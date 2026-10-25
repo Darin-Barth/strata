@@ -62,7 +62,7 @@ R = {
     "Laser IO": (C, "CF laserio 1.9.11"),
     "Flux Networks": (C, "CF flux-networks 8.0.0"),
     "Excessive Utilities": (C, "MR excessive-utilities 1.11.0"),
-    "Modern Industrialization or Oritech (pick one)": (C, "Both have builds: MR modern-industrialization 2.5.11, MR oritech 1.2.13 (not added: Maybe)"),
+    "Modern Industrialization": (C, "Both have builds: MR modern-industrialization 2.5.11, MR oritech 1.2.13 (not added: Maybe)"),
     "Mystical Agriculture": (C, "MR mystical-agriculture 8.0.29"),
     "Productive Bees": (C, "MR productivebees 13.13.0"),
     "Mob Grinding Utils": (C, "CF mob-grinding-utils 1.1.10"),
@@ -208,6 +208,7 @@ R = {
 
 # Rows renamed to the mod actually chosen. Old name -> new name (applied once, then R uses the new name).
 RENAMES = {
+    "Modern Industrialization or Oritech (pick one)": "Modern Industrialization",
     "Pokemon world portal (mod or KubeJS)": "BBL Portals",
     "YUNG's suite (Better Strongholds, Mineshafts, Fortresses, etc.)": "YUNG's suite (Mineshafts, Fortresses, etc.)",
     "Create Thrusters": "Create Aeronautics: Gadgets & Gizmos",
@@ -259,7 +260,7 @@ STATUS = {
     "Botania": "Cut", "Ars Botania": "Cut", "Blue Skies": "Cut", "Dimension Gated Difficulty": "Cut",
     "Continuity": "Cut", "Majrusz's Progressive Difficulty Continued": "Cut",
     "Spice of Life: Onion": "Keep", "Neo Vitae": "Keep", "The Aether": "Keep",
-    "Alex's Mobs Continued": "Keep", "Undergarden": "Cut", "Accessories + Accessories Compatibility Layer": "Cut", "Create: Better Motors": "Cut", "Unusual End": "Cut", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
+    "Alex's Mobs Continued": "Keep", "Undergarden": "Cut", "Accessories + Accessories Compatibility Layer": "Cut", "Create: Better Motors": "Cut", "Unusual End": "Cut", "Cobblemon Kanto (map)": "Cut", "Modern Industrialization": "Cut", "Draconic Evolution": "Keep", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
 }
 
 # New rows: (Mod, Category, Pillar, Needs, Side, Status, 1.21.1 NeoForge, Flags, Notes, Lookup)
@@ -409,8 +410,14 @@ NEW_ROWS = [
     ('Durability Tooltip', 'QoL', 'Core', None, 'Client', 'Keep', C, None, 'Durability numbers in tooltip', 'MR durability-tooltip durabilitytooltip-1.2.0-neoforge-mc1.21.jar'),
     ('Elytra Slot', 'Accessories', 'Exploration', None, 'Both', 'Keep', C, None, 'Elytra in a Curios slot', 'MR elytra-slot elytraslot-neoforge-9.0.2+1.21.1.jar'),
     ('Integrated Stronghold', 'Structures', 'Exploration', 'Integrated API, Create, Supplementaries, Quark', 'Both', 'Keep', C, 'Worldgen', "Replaces the stronghold with a huge Create/Supplementaries dungeon; matches Integrated Villages. Replaces YUNG's Better Strongholds (author recommends running it alone). Optional End Remastered integration datapack not added", 'MR integrated-stronghold 1.1.4+1.21.1-neoforge'),
+    # Wave 6 (Oct 25): friend's-list maybes, Oritech, Draconic Evolution
+    ('Apocalyptic Bosses', 'Bosses', 'Exploration', None, 'Both', 'Keep', C, 'Gate', '25+ bosses, 11 structures, Overworld spawns. Author describes OP items: balance pass, add bosses to the difficulty skip list', 'CF apocalypticbosses panascraftrpgmod-3.6-neoforge-1.21.1.jar'),
+    ("Hyper 'N Hiei's Shenanigans", 'Magic: bridge', 'Magic', None, 'Both', 'Cut', C, None, 'Approved Oct 25 but its author blocks third-party downloads on CurseForge (not on Modrinth), so it cannot be packed. Same as Frieren Flight', 'CF hyper-n-hieis-shenanigans (download opt-out)'),
+    ('Crystal Chronicles', 'Magic: bridge', 'Magic', None, 'Both', 'Keep', C, 'Worldgen', "Iron's Spells add-on (alpha): own dimension plus an End sub-biome", 'MR crystal-chronicles crystal_chronicles-0.0.9.jar'),
+    ('WaterFrames', 'Building', 'Life', None, 'Both', 'Keep', C, None, 'Picture/video frames from URLs (WATERMeDIA + WATERViSION alpha player)', 'MR waterframes waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar'),
+    ('Oritech', 'Tech', 'Tech', None, 'Both', 'Keep', C, 'Gate', 'Picked over Modern Industrialization (Oct 25). Exosuit/jetpack flight must cost power', 'MR oritech oritech-neoforge-1.21.1-1.2.13.jar'),
     ('Unusual End', 'Dimensions', 'Exploration', None, 'Both', 'Maybe', C, 'Worldgen', 'Tested Oct 24: with Nullscape only 0.1% of End chunks get its biomes. Not worth it unless Nullscape goes', 'MR unusual-end 2.3.1b'),
-    ('Draconic Evolution', 'Tech', 'Tech', None, 'Both', 'Maybe', C, 'Gate', 'Beta. Only if the Mek/AE2 endgame feels short. Armor flight is power-costed', 'MR draconic-evolution 3.1.4.633 (beta)'),
+    ('Draconic Evolution', 'Tech', 'Tech', None, 'Both', 'Maybe', C, 'Gate', 'Added Oct 25 (Darin: if it does not break anything). Beta. Armor flight is power-costed; adds Draconium ore in all three dimensions', 'MR draconic-evolution 3.1.4.633 (beta)'),
 ]
 
 

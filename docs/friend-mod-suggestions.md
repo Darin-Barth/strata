@@ -31,6 +31,8 @@ Ars Instrumentum, Ars Nouveau – Extended Glyphs, Fantasy Ending, Ice and Fire:
 | **Hyperbox** | Utility/fun | Pocket-dimension boxes (walk into a box to enter a bigger room); not a teleport |
 
 ## Maybe (concerns to settle first)
+**Decided Oct 25:** added Apocalyptic Bosses, Crystal Chronicles and WaterFrames (Hyper 'N Hiei's Shenanigans was approved but blocks automatic CurseForge downloads, so it can't be packed); Wings of Fire left out (Ice and Fire dragons cover flying mounts). Legendary Monsters went in with wave 4.
+
 | Mod | Concern |
 | --- | --- |
 | **Legendary Monsters** | Good endgame bosses; 13 structures and **mob spawns added to Overworld biomes**. Tune spawns so new players near spawn aren't flattened |

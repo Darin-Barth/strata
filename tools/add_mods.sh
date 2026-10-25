@@ -68,6 +68,8 @@ MR=(
   interiors mss-moogs-soaring-structures better-archeology ribbits lootjs structurify default-options in-control
   emi-ores extra-mod-integrations justenoughbreeding advanced-loot-info not-enough-animations 3dskinlayers
   subtle-effects particle-rain travelers-titles shoulder-surfing-reloaded shulkerboxtooltip durability-tooltip elytra-slot
+  # Wave 6 (Oct 25)
+  crystal-chronicles waterframes draconic-evolution oritech
 )
 
 CF=(
@@ -86,6 +88,8 @@ CF=(
   ars-elemental croptopia
   # Wave 5. Pulls Balm's CurseForge copy: restore mods/balm.pw.toml afterwards
   cooking-for-blockheads
+  # Wave 6 (Oct 25). These pull CurseForge copies of curios, irons-lib, playeranimator: restore them afterwards
+  apocalypticbosses  # hyper-n-hieis-shenanigans tried and removed: CurseForge download opt-out
 )
 
 for s in "${MR[@]}"; do

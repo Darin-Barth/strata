@@ -1732,7 +1732,7 @@ hash = "cf0312120d9e6a7522f20961e665205233704eafd657e6b801a1d73d03167108"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "9ded0a41c8d83ba1c5117de2399aba1e06e8c6fa2d1ee8adf26eb8cd9af1b663"
+hash = "b0426e8c35c99b3ca0c2e703c21ade593dc5d2c432713e1cc458d9312f4f603f"
 
 [[files]]
 file = "kubejs/data/pokeworld/dimension/pokeworld.json"
@@ -1744,63 +1744,63 @@ hash = "389447cd8c9afc38e3b3dc509409443e0e7c97f9ee90daa298fecfc7c8806b49"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterdeserttemples/tomb.json"
-hash = "8d800b3ecebe6fc4b0e9b642178eabda745199afb462718b79f6131c740c07d3"
+hash = "93709b4d5f521cd0b6252ae931329b0cf9c97de0d29bbdc80f9354031fb71018"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterdungeons/skeleton_dungeon/common.json"
-hash = "db3e2caeb58f123b4e5da40a25606e3df02d61e36613c89abda6446d87bbff5e"
+hash = "ba47ef9729ee7a254ee6516dd2b1c3c277b0fe6b0f5edad18ecaaa1198995ef3"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterdungeons/small_dungeon/loot_piles.json"
-hash = "3b8a855de080b7fd49518d6764bbda23797f8d1f1945e5128743097458ae8983"
+hash = "f1cc5d843663021df90516dcdf1819db6d1de93392f72b538a5ee54cd32772ed"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterdungeons/spider_dungeon/egg_room.json"
-hash = "9021f4eadc83d912a79a673c91dd28591ab7d253465271e3fdadb67280fce7a1"
+hash = "8a8eacb3b3b4b546f65a1414c7e9871e2ebfa85ccb73c5954f9a257480521746"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterdungeons/zombie_dungeon/common.json"
-hash = "03236881f156d0b06a73171ee510334ed8a130b1fe5f8a75fe4d543634a72d53"
+hash = "742cf931227de44157f8bcbb2a31daf6640365bd854aa6497274194513cac153"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/betterjungletemples/treasure.json"
-hash = "d54628f5e73f3925cc80f55ebcb428c945ed1a9fe689366b45c92502be4ce413"
+hash = "375192d72bc5e139e6eed5d887d0357e8b825aba6f6163ac2d827e0720793b42"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/abandoned_mineshaft.json"
-hash = "a56d536bcfe6781b9becd17ed087599161c7622253c118d66f8e8be3cf33ba74"
+hash = "30e87e453b4a3ffe381cc55386db1e9a8cc3741af22389dd7ad4bc0e0fdfe9ac"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/ancient_city.json"
-hash = "8dc2c249270e05ba8aead9e0284e61710ef5f4186dead05765a3ecbcd9e9b9b5"
+hash = "4d4de263e3eb72397ff3e7aa46ecb910940d631ef1f54ed168d474e2f3594c4c"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/desert_pyramid.json"
-hash = "04963d397b85a8f108d632e4c58ae157c3ad031200bb8f256c25ac546775df7e"
+hash = "1e97bf1132d6d4da69a0d608d3da3e13e9f8bff44583e7ff9080a6b902140ce0"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/jungle_temple.json"
-hash = "d6e98437efb54445256ea62d88ec911130951de62e07b7e05927f9a9c380071a"
+hash = "1ca69b6e65ed8c8670b948954809f1b4d2d5928ad3d5ee9e16e83865a3c7ce53"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/simple_dungeon.json"
-hash = "d57be491e8480978166045bb91addc70300eaf73c4eb113aa3fd560a398e72bd"
+hash = "b99c8f2431807f07d4dd56b088988aa2e71d1752a158e72fa7dd82a9f6ee0888"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/trial_chambers/reward.json"
-hash = "6b318d440a2d8786b1254f5f445e4e23107745dd2d0e645c37690c4e09b0ea20"
+hash = "08d609e01d9d538981ce031728cf94e2e34bdb5b375a00826a75be0b94db4ced"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/trial_chambers/reward_ominous.json"
-hash = "02ca8c1e47e2057e96cc7e9f95139e0660c3b45a7fdb04539e08547b1dccb056"
+hash = "31482595873cb90e10371a456585254aaddfa851cdeb265e126bbfe7384f1169"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_modifiers/bell_fragment/minecraft/woodland_mansion.json"
-hash = "747b040e57d01d8c7efc1b121ffbc7d1afc9b1c45361e797bbbc185e5c085a8b"
+hash = "79a00fed0ceaa82b4a60fbbbba0f7dfd2fa8cf7fda2e8809ff35a46b6e16b48f"
 
 [[files]]
 file = "kubejs/data/pokeworld/loot_table/inject/bell_fragment.json"
-hash = "b5e60a22a78d2ec93a3670c6a8b340a40aeab2345f338673f133ca3374309dd4"
+hash = "6fcee7c081145b0e62a484281840e373c8524c3fe3a03d170676fef877c5991f"
 
 [[files]]
 file = "kubejs/data/pokeworld/tags/worldgen/biome/has_structure/cobblemon/fishing_boat/beach.json"
@@ -3355,12 +3355,16 @@ file = "kubejs/server_scripts/pokeworld_starter.js"
 hash = "7ae8b0dc76a4119a9767c3424171152864e920307ba513908724a5428ef079cc"
 
 [[files]]
+file = "kubejs/server_scripts/tag_fixes.js"
+hash = "204c6d23817365d531b33a9d7636debc3bbfe4a371f15956ef1221ac4082ba19"
+
+[[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
 hash = "23934f3e46ff4b80db2daa15ccbe025736cbaefb8fecbb5a628e4c975ad5a9f4"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"
-hash = "fb8dad580e010f53299528e7ebde09a2a892175ab38cfe31102f7e3ad58bba81"
+hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -3455,6 +3459,11 @@ metafile = true
 [[files]]
 file = "mods/another-furniture.pw.toml"
 hash = "846290a7a2b0af86414001d097ddc694b58266f8e9f57e3d381fda3e64e81212"
+metafile = true
+
+[[files]]
+file = "mods/apocalypticbosses.pw.toml"
+hash = "1e4657306a2357cefadae04710f4b703f0aab70d998df2756ddc05ab378885a7"
 metafile = true
 
 [[files]]
@@ -3599,7 +3608,7 @@ metafile = true
 
 [[files]]
 file = "mods/azurelib.pw.toml"
-hash = "7c5004f13a79bcb74ef3ae136592fed140a678b4c44809ea70c0dff44014fcce"
+hash = "6f94119ac0840fce01a66dbbdce49aeee2833b867ecc88100bd6ce403bf4642c"
 metafile = true
 
 [[files]]
@@ -3660,6 +3669,11 @@ metafile = true
 [[files]]
 file = "mods/bountiful.pw.toml"
 hash = "ba3b9990bc44bedb8eacbe11b2beffb7457cc6ddd854e78fcaf8d73d8f2578db"
+metafile = true
+
+[[files]]
+file = "mods/brandons-core.pw.toml"
+hash = "e86ba611faf7caeed1ea1191e17d6f396e9467a055facf94ab106ef87c24b305"
 metafile = true
 
 [[files]]
@@ -3760,6 +3774,11 @@ metafile = true
 [[files]]
 file = "mods/cobblestructures.pw.toml"
 hash = "687513461b8b6b7d71f1691656a1c73f3283367bd35205494d994c257326a00b"
+metafile = true
+
+[[files]]
+file = "mods/codechicken-lib.pw.toml"
+hash = "1e1678b169096708fcb92496f251260471221554f70ca0dab1b99f2a6b72ea7b"
 metafile = true
 
 [[files]]
@@ -3983,6 +4002,11 @@ hash = "f4a74eca4d76cbe003e7fd3832ae57a390177813dfb01f30944a2feed97d6bcf"
 metafile = true
 
 [[files]]
+file = "mods/crystal-chronicles.pw.toml"
+hash = "25e072597f446e9eca5d897ab7c91f3c11011eb2184855b48bf5a11d57b6c516"
+metafile = true
+
+[[files]]
 file = "mods/cucumber.pw.toml"
 hash = "b2059d79bf6e41281a26b5b75a8f0cb20804079fe49a22042a26aa5ce28ba7f5"
 metafile = true
@@ -4020,6 +4044,11 @@ metafile = true
 [[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "6d37de7b436e094a7834d51b5d9d803653ab445e1041853f32a61599b054c7bf"
+metafile = true
+
+[[files]]
+file = "mods/draconic-evolution.pw.toml"
+hash = "61dbbdcc41c7bf50540b8d1e83fdf61d9367f392690b45d3cdece8aad55370ac"
 metafile = true
 
 [[files]]
@@ -4788,6 +4817,11 @@ hash = "7bf7c8369bd28212a1e294c60310ccb72f1eb773630970e6ab106ae666766cd3"
 metafile = true
 
 [[files]]
+file = "mods/oritech.pw.toml"
+hash = "dbb2a2fc538df2577ac83d9eb0d7d4a67b15b3e2f1570ac380dacd79f8ddc0a4"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "6514f98b34602b789fc2dbcafe7a67468d1c94d74965a0142a79b7ab23628a9a"
 metafile = true
@@ -5225,6 +5259,21 @@ metafile = true
 [[files]]
 file = "mods/vanillabackport.pw.toml"
 hash = "9b18f1c0e25ac587b3b3433d379d6f78b745cc9215f746b4a2162013d1764257"
+metafile = true
+
+[[files]]
+file = "mods/waterframes.pw.toml"
+hash = "59e15d108b41b10145596a3ef899ad20ef8c8885504eef10cd89225aef87daef"
+metafile = true
+
+[[files]]
+file = "mods/watermedia.pw.toml"
+hash = "b77a560d6c4a3f4558ee0b977463de1283b6b1c39fd565883f9b35df2453cd3d"
+metafile = true
+
+[[files]]
+file = "mods/watervision.pw.toml"
+hash = "393310e8c75c51eb3143c8ddcdac51917a5d759d428e5b962e4c2b4c8e87bc0e"
 metafile = true
 
 [[files]]
