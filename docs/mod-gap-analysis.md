@@ -12,6 +12,31 @@ What the current list (~310 mods in `mods/`) covers well, where it is thin, and 
 
 Not re-suggested (in the pack or already decided against): MCA Reborn, Small Ships, Immersive Aircraft, The Bumblezone, Alex's Caves, Epic Fight, C2ME, Moonrise, Terralith, Dynamic Trees, MineColonies, Majrusz's, T.O Magic 'n Extras (= Traveloptics), Frieren Flight, FTB Essentials (Cut), Born in Chaos and Mutant Monsters (horror dimension).
 
+## Decision (Oct 24, 2026): approved list
+
+Darin approved the recommendations, with these choices: MVS (not Repurposed Structures), Simply Swords only (no Spartan Weaponry, Silent Gear or Immersive Armors), no sixth magic mod, Let's Do Vinery only (not Farm & Charm). Defaults where the doc said "one or the other": Moog's Nether Structures over Formations Nether, Croptopia over Expanded Delight.
+
+**Add (Keep):** (added to the pack Oct 24, wave 4)
+- Overworld: Ember's Floating Islands, Sky Whale Ship, MVS – Moog's Voyager Structures, Kobolds, Hopo Better Ruined Portals
+- Oceans: When Dungeons Arise: Seven Seas, Integrated Seven Seas, Upgrade Aquatic (+ Blueprint), Tidal Towns, Ocean's Delight, Illager Warship, Illager War Trireme
+- Nether: MNS – Moog's Nether Structures, Nether Depths Upgrade, My Nether's Delight, Eternal Nether (check Incendium overlap on first boot)
+- End: MES – Moog's End Structures, End Remastered
+- Aether: Aether Villages, Aether Addon: Treasure Reforging
+- Travel: Horseman (turn off any long-range horse summon), Horse Expert, Xaero's Minimap & World Map – Waystones Compatibility
+- Combat / late game: Simply Swords, Extended Crafting, Legendary Monsters (Maybe → Keep; tune Overworld spawns)
+- Tech: Create Ore Excavation
+- Magic: Ars Elemental (CurseForge), Ars Additions, Theurgy
+- Food: Croptopia (CurseForge, + EpheroLib), Brewin' and Chewin', [Let's Do] Vinery
+- Building: Amendments
+- QoL: Enchantment Descriptions, TorchMaster, Crafting Tweaks, Jade Addons, Crash Assistant (client)
+- Social: Ping Wheel, Ping to Map: Xaero's Minimap (client)
+- Server: Neruina, Packet Fixer
+- Performance: Structure Layout Optimizer, Async Locator Refined, FastSuite, Dynamic FPS (client), More Culling (client), Sodium Extra (client)
+
+**Hold for a test first:** Unusual End (End biomes; boot with Nullscape and look at the End before keeping it). Draconic Evolution (beta; only if the Mekanism/AE2 endgame feels short).
+
+**Not added:** Repurposed Structures, Formations Nether, Enderscape, Expanded Delight, Farm & Charm, Spartan Weaponry, Silent Gear, Immersive Armors, Malum, Eidolon, Forbidden & Arcanus, Ars Technica, Emotecraft (Quark has emotes), LuckPerms and FTB Ranks (no command mod needs them). Sparse Structures stays on standby in case structure density is too high.
+
 ## Gaps at a glance
 
 | Area | Covered by | Verdict |
@@ -27,7 +52,7 @@ Not re-suggested (in the pack or already decided against): MCA Reborn, Small Shi
 | Tech | Create + many add-ons, Mekanism, AE2, IE, IF, PneumaticCraft, Powah, Extreme Reactors, ID, LaserIO | **Very well covered.** Only open item: MI vs Oritech (still Maybe) |
 | Magic | Ars + 7 add-ons/bridges, Iron's, Occultism, Neo Vitae, Vampirism | **Well covered.** Ars has no elemental/school add-on; one more distinct magic style is optional |
 | Farming and food | Farmer's Delight + 7 add-ons, Slice & Dice, Central Kitchen, Serene Seasons, Spice of Life | Covered, but **crop variety is low** for Spice of Life (only vanilla + FD crops); no drinks/brewing |
-| Building and decoration | Macaw's suite, Handcrafted, Chipped, Rechiseled, Chisels & Bits, FramedBlocks, Supplementaries, Another Furniture, Create Deco, building gadgets | **Fully covered.** Don't add more |
+| Building and decoration | Macaw's suite, Handcrafted, Chipped, Rechiseled, FramedBlocks, Supplementaries, Another Furniture, Create Deco, building gadgets | **Fully covered.** Don't add more |
 | QoL | EMI/JEI, Jade, AppleSkin, IPN, Ultimine, FallingTree, Polymorph, Carry On, Xaero's, Sophisticated, Locked In Slots | Mostly covered. Small gaps: enchantment descriptions (Apotheosis has many), crafting-grid buttons, base mob-proofing, crash help |
 | Multiplayer / social | Voice Chat, WATUT, Mighty Mail, FTB Teams/Chunks, Numismatics, Trading Floor, PlayerRevive, Discord link | Covered. Small gap: **pinging** a spot for friends |
 | Server admin | Simple Backups, spark, Chunky, Simple Discord Link, Let Me Despawn | **Gaps**: crash protection for the world, permissions, big-packet fixes |

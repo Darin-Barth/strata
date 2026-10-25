@@ -1,0 +1,13 @@
+name = "Kobolds"
+filename = "Kobolds-4.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ufaxN0Ay/versions/TiHomHFQ/Kobolds-4.0.2.jar"
+hash-format = "sha512"
+hash = "d6ebccbacb5319e2751f32c59ce152d2eedfd42089c8bb6e20d7010da96f0290b938fb4114fc36316eca7d0c8e3a7ce7d92097385e73b72963a1bb1836540359"
+
+[update]
+[update.modrinth]
+mod-id = "ufaxN0Ay"
+version = "TiHomHFQ"
