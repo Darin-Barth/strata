@@ -15,6 +15,7 @@ critical hotfix goes out on its own. Clear this list when the release goes out.
 - **No guide books dumped on first join:** Ars Nouveau's Worn Notebook, Alex's Mobs' Animal Dictionary, Tide's Fishing
   Journal and Integrated Dynamics' guide are no longer given on spawn (`spawnBook`, `giveBookOnStartup`, `giveJournal`,
   `obtainOnSpawn` = false). Each one becomes a reward on the first quest of its chapter instead.
+- **Hotbar HUD overlap fixed:** Combat Roll no longer draws its "R" keybind label next to the hotbar, and its roll-charge arrow only shows while a roll is recharging (`config/combat_roll/client.json5`).
 - **Quest book: 6 quest items that don't exist in game swapped for real ones** (Ad Astra Astrodux, ExtendedAE Infinity Cell, Inventory Pets iron nugget, My Nether's Delight stove, Better Archeology identified artifact, Amendments hanging pot); the quest ID checker now validates against a registry dump from a running server.
 
 ## Release checklist

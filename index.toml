@@ -31,6 +31,10 @@ file = "config/cobblemon/starters.json"
 hash = "31d020eac9b133a02c977965e66b7ca27feac781940967b8f1a6d303243b51a9"
 
 [[files]]
+file = "config/combat_roll/client.json5"
+hash = "a9061b6a73fc9434181b183b9f7fa846a6a17ec9279201e039c72da7091b77a6"
+
+[[files]]
 file = "config/create-client.toml"
 hash = "eec64681017779e529ab998ca131d3c0532bd00509520cdaa19e1e0f9caa3b3c"
 preserve = true
@@ -106,7 +110,7 @@ hash = "ea312764beef5e9f27a40a932dd5e8f8981318a46d4529ba59b260809dec03cd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ars_nouveau.snbt"
-hash = "ad6ef7a3e8154240ce2d8d4d88eac051d66d84e2653962863387b5d50554a55c"
+hash = "1e6f0d5a4ddbf623da308ddeefaccefa5104b44fe354b08a610634a2af12339b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/boss_hunter.snbt"
@@ -162,7 +166,7 @@ hash = "c48e26974d0093906f473bc1d9025da3aa0ef3e3b960e7a789d46531811de47e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/fishing.snbt"
-hash = "7240852547fef871516241e92d094723bade15398e3adda3bedd77d509dace5d"
+hash = "5e90449765c80f7e80a43c96e0a4ae211b50f987fb99416a825e5d1e76cd2a6a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ice_and_fire.snbt"
@@ -178,7 +182,7 @@ hash = "5fc106ba43d4cdcef7585ca6b300567e4d0adad6d54b778315a55f50a7568391"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/logistics.snbt"
-hash = "4036a9833fe9e05bd98fbd5b35d545e2163e5b15d4ea9362bfd3a6208ddc3844"
+hash = "fe5b4e9fa1cf4049ea1658a4eed586270dbe6b30b36ca3160e0f466738d44b19"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -206,7 +210,7 @@ hash = "2ecf380be60d1fa8d13fffde993eb3b741ffa69690ea49cf0e1ceb853a597376"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pets_critters.snbt"
-hash = "394d0ee09506f1615668b6a267a567a90b44d04c84e7ed051e22a2e874f073a8"
+hash = "4bbac02062cf618b4597e9d30d9b5bf2e5c46febefe38a8cb3ab04d4c403a2b0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pokemon_world.snbt"
@@ -246,7 +250,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f2050e815526e91e71fe3efab9469d8439c3d452871b586371e728b23e98c97c"
+hash = "81c302aaf8e9c00d9223b3d5680dcc38d89554f158c3032737fc4e066220f60b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
