@@ -6,3 +6,4 @@ build/
 kubejs/data/inventorypets/README.md
 branding/
 .claude/
+server/

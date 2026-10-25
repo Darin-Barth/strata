@@ -2,3 +2,4 @@ tools/add-log.txt
 tools/review.txt
 __pycache__/
 build/
+server/
