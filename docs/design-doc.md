@@ -139,6 +139,7 @@ Cobblemon lives in its own "vanilla + Cobblemon" dimension, `pokeworld:pokeworld
 - A command-spawned Pikachu and a summoned RCT trainer (Youngster Joey) work in the Overworld.
 - Portal (second boot, Oct 24): BBL Portals registered the Poké Portal Frame as its frame block. Both recipes loaded with 0 failures. 100 woodland-mansion loot rolls gave 18 Bell Fragments (20% expected).
 - Mobs in the other direction: no Pokémon reach other dimensions. The spawn rule blocks the Cobblemon spawner outside `pokeworld:pokeworld`, and nothing else spawns wild Pokémon. A few vanilla/Quark mobs spawn in the Pokémon world, which is accepted (Darin, Oct 24).
+- After merging waves 4 and 5 (396 mods, Oct 25): the leak check found nothing new. `/locate` for all 890 non-Cobblemon structures in every mod, Ice and Fire included, found none in the Pokémon world (4 are disabled or replaced by IDAS). Wild spawns are blocked in 24 dimensions. Async Locator (wave 4) makes `/locate` asynchronous: over RCON the reply is empty and the result is in the server log.
 - Not verifiable without a player client (test 15 below): natural spawns, the starter screen, the party HUD, the portal, and a trainer battle.
 
 Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as a second portal. It needs testing on NeoForge, claim protection, and a license check.
