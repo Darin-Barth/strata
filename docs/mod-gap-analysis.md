@@ -229,3 +229,111 @@ Worth a deliberate yes/no: **End Remastered** (changes how the End opens), **Leg
 - New structures: Lootr check and a rarity pass.
 - Flight check: Draconic Evolution armor, Oritech exosuit/jetpack, Ars Elemental Air focus, Immersive Armors sets.
 - Teleport check: Horseman horse summon, Ars Additions.
+
+---
+
+# Round 2 (Oct 24, 2026): server performance and notable mods not yet considered
+
+Same build checks as above. Darin asked for (a) every optimization that helps the treehouse server, and (b) popular, well-regarded mods that are simply missing, even where nothing is "thin". Candidates came from the ~700 most-downloaded 1.21.1 NeoForge mods on Modrinth, minus what's in the pack, plus a few CurseForge-only staples.
+
+## A. Server performance
+
+The pack already has the core set (Lithium, ModernFix, FerriteCore, AllTheLeaks, Noisium, Clumps, Let Me Despawn, spark), and wave 4 adds Structure Layout Optimizer, Async Locator Refined, FastSuite, Neruina and Packet Fixer. What is left:
+
+**Recommended**
+
+| Mod | Build | What it does | Notes |
+| --- | --- | --- | --- |
+| **Immersive Optimization** | Modrinth `immersive-optimization` 0.2.0 (release, Jul 2026); server-only | Ticks distant entities and block entities less often, spreads updates across ticks, adapts to load. Unlike activation-range mods it never stops ticks entirely, so farms keep working | Biggest remaining TPS win with this many mobs. Test with Mob Grinding Utils farms, Create, Cobblemon and Aeronautics in test 9 |
+| **FTB Quests Optimizer** | Modrinth 3.2.0 (release, Feb 2026); server-only | Speeds up quest checking | FTB Quests with many chapters is a known server cost |
+| **Create: Threaded Trains** | Modrinth 1.0.0 (release, Nov 2025); server-only | Runs Create's rail network on its own thread | Large win once the train network grows. The author warns that add-ons touching trains can freeze the server, and we run the unofficial Steam 'n' Rails port. Trial it on the test server with backups (test 10); drop it if it misbehaves |
+| **AI Improvements** | Modrinth 0.5.3 (release, Jun 2024; tagged for 1.21.1) | Cheaper vanilla mob AI (goal selection, look controls) | Old but simple; no gameplay change at defaults |
+| **Achievements Optimizer** | Modrinth 2.1.0 (release, Aug 2025) | Faster advancement checks | Big packs have thousands of advancements (recipe unlocks) |
+| CobblemonOptimizer | Modrinth 5.0.0 (release, Sep 2026; NeoForge jar despite "Fabric" in its text) | Throttles and freezes distant Pokémon, lowers spawns under load | For the Pokémon world; pass to that session |
+
+**Optional**
+
+| Mod | Build | Notes |
+| --- | --- | --- |
+| ServerCore | Modrinth 1.5.19 (release, Jun 2026) | Lag-spike patches; its gameplay-changing features (activation range, dynamic view distance, mob caps) are off by default. Overlaps Immersive Optimization: pick one, or run ServerCore with only its default patches. Try it if a spark profile shows a need |
+| Krypton Reno | Modrinth 0.2.28.1 (release, Jan 2026) | Network stack optimizations. Small gain at 5–6 players |
+| Alternate Current | Modrinth 1.9.0 (release, Aug 2024) | Faster redstone dust. Only matters for big redstone builds |
+| Get It Together, Drops! | Modrinth v1.4 (release, Jul 2025) | Configurable item merging; Clumps already handles XP orbs |
+
+**Not recommended**: Async, Sepals, FastEvent, Not Enough Bandwidth (all alpha; threading or radical changes in a 300+ mod pack); Dimensional Threading (old, risky); TT20 (fakes TPS by skipping work); ScalableLux (alpha lighting engine; revisit later); Fast Noise (does Noisium's job); Universal Optimization and Adaptive Performance Tweaks (change gameplay with mob limits and no collisions; overlap ServerCore); Ksyxis (use the vanilla `spawnChunkRadius` gamerule instead); Saturn, Jasione, Lomka, MemGuard, EfficientHashing (marginal next to ModernFix/FerriteCore/AllTheLeaks); Shinoyuki BetterAutoSave (async saving, data-loss risk); Observable (beta; spark covers it).
+
+**Bigger wins than any mod (config, no download):**
+- **Pregenerate every dimension players will use**, not just the Overworld: Nether, End, Aether, Twilight Forest, Deeper and Darker. Generating new chunks is the main lag source.
+- **`server.properties`**: `simulation-distance` 6–8 (machines and mobs only tick inside it), `view-distance` 10–12 (Distant Horizons shows far terrain client-side), `entity-broadcast-range-percentage` 75–100.
+- **Gamerule `spawnChunkRadius 0`**: spawn chunks stop running when nobody is there. Tell players not to rely on spawn-area machines running while they're away.
+- **FTB Chunks force-load limits**: cap force-loaded chunks per team (for example 16–25) and turn off force-loading while the team is offline. Chunk-loaded factories are what slow modded servers over time.
+- **Mob farms**: keep Let Me Despawn on; consider capping Mob Grinding Utils spawner upgrades.
+- **Profile before tuning**: run `spark profiler` during test 9 (several airships in flight, players spread out) to see the actual cost.
+
+## B. Notable mods not yet considered
+
+### Big gameplay decisions
+
+| Mod | Build | What it adds | Rules / worldgen |
+| --- | --- | --- | --- |
+| **Ad Astra** | Modrinth 1.16.26 (release, Sep 2026); 3 deps (Resourceful Lib/Config, Common Storage Lib) | Rockets to the Moon, Mars, Venus, Mercury and Glacio; space stations; oxygen; new metals | Fits "Build. Fly. Explore." Rockets burn fuel (earned cross-dimension travel) and the jet suit uses fuel. Other-dim worldgen (planets). A late-game goal of its own; gate rocket tiers behind bosses. Check whether its ores generate in the Overworld |
+| **CC: Tweaked** | Modrinth 1.120.2 (tagged **alpha** on 1.21.1, Aug 2026; still the build everyone uses) | Programmable computers and turtles | A different way to play (code your base). Talks to other mods through peripherals. Turtles mine and build; no flight or teleport |
+| **Create Jetpack** | Modrinth 5.2.1 (release, Jul 2026) | Jetpack powered by a Create backtank's compressed air | Allowed by the flight rule (air runs out). Earlier and cheaper than Mekanism's jetpack: check it doesn't undercut airships; could gate it behind the Nether |
+| **Exposure** | Modrinth 1.9.19 (release, Sep 2026) | Cameras, film, darkroom developing, photo albums | Social and exploring fun for the newer players. Photos are stored on the server (small files) |
+| **Cooking for Blockheads** | CurseForge 21.1.24 | Kitchen multiblock that cooks from connected storage | Cozy side; works with Farmer's Delight recipes |
+| **Create: Interiors** | Modrinth 0.6.1 (release, Jan 2026) | Seats, sofas and furniture that work on trains and contraptions | Makes trains and airships livable |
+| **MSS – Moog's Soaring Structures** | Modrinth 2.2.0 (release, Sep 2026); server-only | Floating islands with loot, mobs and dungeons | Structures. Another "things to fly to" pick, same author as MVS/MNS/MES |
+| Mining Gadgets | CurseForge 1.18.8 | Power-hungry laser mining tool | Fits power progression. Overlaps FTB Ultimine for convenience; better for bulk mining |
+| Ender IO | CurseForge 8.2.12 (**beta**) | Conduits, machines, soul tools | Tech is already full; conduits overlap Mekanism and LaserIO. Skip unless someone wants it |
+| Reliquary Reincarnations | CurseForge 2.0.81 | Many magic items | **Rule problems**: Ender Staff (teleport), Rending Gale (flight), Twilight Cloak. Skip, or remove those items |
+
+### Exploration and the cute side
+
+| Mod | Build | What it adds | Rules / worldgen |
+| --- | --- | --- | --- |
+| **Better Archeology** | Modrinth 1.3.9 (release, Oct 2026) | Fossils, artifacts and new dig sites to brush | Structures. Gives archaeology a reason to exist |
+| **Ribbits** | Modrinth 4.1.6 (release, Dec 2025) | Swamp villages of musical frog people | Structures + mobs. Cute content |
+| Hybrid Aquatic | Modrinth 1.7.4 (release, Oct 2026); 4 deps | Lots of sea creatures for rivers, swamps, oceans and caves | Fills the ocean gap further, **but its description mentions new biomes**: check its config before adding (Overworld biomes reshape the world) |
+| Snow! Real Magic! | Modrinth 12.2.3 (release, Sep 2026) | Snow piles up naturally, snow-covered blocks | Nice with Serene Seasons winters, but test with the Steam 'n' Rails snow-track crash (test 10) first |
+
+### Pack-dev tools (useful for the KubeJS/config to-do)
+
+| Mod | Build | Why |
+| --- | --- | --- |
+| **LootJS** | Modrinth 3.7.0 (release, Apr 2026); server-only | KubeJS loot-table editing: removing warp scrolls/stones from loot, adding boss drops for gating |
+| **Structurify** | Modrinth 2.0.43 (release, Oct 2026) | Per-structure spacing, biome blacklists and overlap prevention, from a config screen. Better than the Sparse Structures standby for tuning ~40 structure mods before pregen |
+| **Default Options** | Modrinth 21.1.8 (release, Jul 2026); client | Ships default keybinds and options without overwriting players' own. 300 mods means keybind conflicts |
+| In Control! | Modrinth 10.3.0 (**beta**, Sep 2026); server-only | Per-dimension spawn rules. Useful for the horror dimension (horror mobs only there) |
+| Item Obliterator | Modrinth 2.3.0 (release, Jun 2025) | Fully removes items (angel-ring style, warp scrolls) from recipes, creative tabs and use. KubeJS covers most of this; this also blocks copies that already exist |
+| EMI add-ons | EMI Ores 1.3, Extra Mod Integrations 1.0.3, Just Enough Breeding 3.3.1, Advanced Loot Info 2.5.0 (beta) | Ore heights, breeding items, loot tables and villager trades inside EMI |
+
+### Client polish (all client-only, optional)
+
+Not Enough Animations, 3D Skin Layers, Subtle Effects (particles and small sounds for the "full world" feel), Particle Rain, Traveler's Titles (biome/dimension name on entry), Shoulder Surfing Reloaded (better third person while flying), Shulker Box Tooltip, Durability Tooltip, Elytra Slot (needs Curios + Caelus, both in), Do a Barrel Roll (elytra flight feel; can cause motion sickness like Camera Overhaul, so ship it off). All have release 1.21.1 NeoForge builds except Better Advancements (2024 beta). No Chat Reports (2.9.1, optional on both sides) is common on private servers.
+
+### Cobblemon add-ons (for the Pokémon world session)
+
+Popular with 1.21.1 builds: Mega Showdown, Cobbreeding, Fight or Flight Reborn, Raid Dens, PokeNav, CobblemonOptimizer. Not reviewed here.
+
+### Skipped on purpose
+
+Biomes O' Plenty, Oh The Biomes We've Gone, Nature's Spirit, Galosphere (add Overworld biomes); Easy Anvils / Easy Magic (clash with Apothic Enchanting); Storage Drawers (Functional Storage does it), Traveler's Backpack (Sophisticated), Corpse (GraveStone), JourneyMap (Xaero's); Freecam (lets players look through walls on a server); Goety, Wizards and the RPG Series (magic is full); Pufferfish's Skills (beta; skill trees add a power curve on top of Apotheosis); ParCool (movement overhaul; clashes with Combat Roll and walking on airships); Botany Pots (overlaps Mystical Agriculture).
+
+## Round 2 top picks
+
+- **Performance:** Immersive Optimization, FTB Quests Optimizer, AI Improvements, Achievements Optimizer; Create: Threaded Trains on trial. Plus the config list: pregenerate all dimensions, simulation distance 6–8, `spawnChunkRadius 0`, FTB Chunks force-load caps.
+- **Pack tools:** LootJS, Structurify, Default Options.
+- **Gameplay decisions:** Ad Astra, CC: Tweaked, Create Jetpack, Exposure, Cooking for Blockheads, Create: Interiors, MSS – Moog's Soaring Structures, Better Archeology, Ribbits.
+- **Client polish:** pick freely; all optional.
+
+## Round 2 decision (Oct 24, 2026)
+
+**Add (Keep):**
+- Performance: Immersive Optimization, FTB Quests Optimizer, AI Improvements, Achievements Optimizer
+- Gameplay: Ad Astra (+ Resourceful Lib/Config, Common Storage Lib; gate rocket tiers behind bosses; check for Overworld ores), Create Jetpack (check it doesn't undercut airships; Nether gate possible)
+- Cozy / exploration: Cooking for Blockheads (CurseForge), Create: Interiors, MSS – Moog's Soaring Structures, Better Archeology, Ribbits
+- Pack tools: LootJS, Structurify, Default Options, In Control! (beta; for the horror dimension)
+- EMI add-ons: EMI Ores, EMI Addon: Extra Mod Integrations, Just Enough Breeding, Advanced Loot Info (beta)
+- Client polish (side = client, optional): Not Enough Animations, 3D Skin Layers, Subtle Effects, Particle Rain, Traveler's Titles, Shoulder Surfing Reloaded, Shulker Box Tooltip, Durability Tooltip; Elytra Slot (both sides)
+
+**Not now:** Create: Threaded Trains, ServerCore, CC: Tweaked, Exposure, the rest of the Optional/Not recommended lists. The config tuning list (pregenerate all dimensions, simulation distance, `spawnChunkRadius`, FTB Chunks force-load caps) wasn't picked yet; it costs no downloads and can be decided in phase 3.
