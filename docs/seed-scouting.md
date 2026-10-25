@@ -1,5 +1,7 @@
 # Seed scouting
 
+> **Oct 24: spawn finding moved to the very end** (Darin), after all mods are final, since any later biome-affecting mod would undo it. Tools kept in the session scratchpad: `scout.py` (boots a seed, scores villages by flat ground / mountain 60–400 / river / Pale Garden 0.8–3 km / no ocean / modded-village bonus) and `render_map.py` (top-down maps). First-round finalists (pack as of Oct 24, before Integrated Villages): A `-8410900080260329900` Iberian @ 304,880; B `6914056179472109047` plains @ 1296,-896; **C `5987820650580666899` Iberian @ 2032,-1312 (favourite: snowy range behind, rivers down the valleys)**; D `-3032592841047253506` plains @ -2144,1168. Re-check them after the mod list is final.
+
 **Goal:** a fairly flat plains next to a big mountain, a river running down the mountain valley, and a village close by. Reference: terraced Tectonic peaks with snow, a river cutting the valley, and grassy flat banks at the bottom.
 
 **Tool:** Genesis (world previewer), installed **only in the Modrinth test instance** for scouting. It is not part of the pack.

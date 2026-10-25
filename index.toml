@@ -806,6 +806,11 @@ hash = "72c31e206069e4ebe8ef3223b2af78d38b8d4f17d88d648ee8f94f388ad1177d"
 metafile = true
 
 [[files]]
+file = "mods/integrated-villages.pw.toml"
+hash = "6119f4a28b047a9a1b47d5dd505ad43f407ab400dc94eb5d6d3d5189fea24ed3"
+metafile = true
+
+[[files]]
 file = "mods/inventory-pets.pw.toml"
 hash = "17165c65683990704d03c588c0c155a55d7cdba250f2aeecff9daa8639e59794"
 metafile = true
