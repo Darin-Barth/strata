@@ -14,6 +14,7 @@ Quests are laid out automatically as left-to-right trees (first in-chapter depen
 pass at=(x, y) to place one by hand. Dependencies on other chapters use "chapter_key/quest_key".
 """
 import hashlib
+import re
 import textwrap
 
 from snbt import Double, Float, Long
@@ -26,11 +27,23 @@ def make_id(*parts):
     return "%X" % (int(h[0], 16) & 0x7) + h[1:]  # keep it a positive signed long
 
 
+# A source line that starts a list item keeps its own line: "- x", "1. x", "&eLabel&r: x", "&eLabel:&r x".
+LIST_ITEM_RE = re.compile(r"^([-*•] |\d+[.)] |&[0-9a-fk-or][^&]{1,40}(:&r|&r:))")
+
+
 def text_lines(s):
+    """Dedent and reflow: FTB Quests wraps text itself, so wrapped source lines are joined into one
+    line per paragraph. Blank lines separate paragraphs; list items stay on their own lines."""
     if s is None:
         return []
-    lines = textwrap.dedent(s).strip("\n").split("\n")
-    return [ln.rstrip() for ln in lines]
+    out = []
+    for ln in textwrap.dedent(s).strip("\n").split("\n"):
+        ln = ln.strip()
+        if ln and out and out[-1] and not LIST_ITEM_RE.match(ln):
+            out[-1] += " " + ln
+        else:
+            out.append(ln)
+    return out
 
 
 # ---- tasks -------------------------------------------------------------------------------
