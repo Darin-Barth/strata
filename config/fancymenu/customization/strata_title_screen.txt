@@ -31,7 +31,7 @@ element {
   instance_identifier = strata_logo
   anchor_point = top-centered
   x = -110
-  y = 3
+  y = 8
   width = 220
   height = 88
   stay_on_screen = false
@@ -41,23 +41,22 @@ element {
 }
 
 element {
-  element_type = text_v2
+  element_type = splash_text
   instance_identifier = strata_tagline
   anchor_point = top-centered
-  x = -100
-  y = 92
-  width = 200
-  height = 12
+  x = 78
+  y = 69
+  width = 100
+  height = 20
   stay_on_screen = false
-  source = ^^^Build. Fly. Explore.^^^
+  source = Build. Fly. Explore.
   source_mode = direct
   shadow = true
+  bouncing = true
+  refresh = false
   scale = 1.0
-  base_color = #F3E7CF
-  text_border = 0
-  enable_scrolling = false
-  auto_line_wrapping = false
-  interactable = false
+  rotation = -20.0
+  base_color = #FFFF00
 }
 
 element {
