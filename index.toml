@@ -70,7 +70,7 @@ hash = "1a9c89005759238032eb29c3fadd4fa307a68a471e450f12d16b39766806d788"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "5632132ec3bd505899b53dc0075b0fe679edc633c8e9c49d8070ae7464a9a7fb"
+hash = "e52ae3f6790a5ce20380890a536fec192e07d30b7eb45b208d0a054dff302629"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
