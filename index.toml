@@ -20,7 +20,7 @@ hash = "c0ec28f54a2eb6b6729e9d7cd92bc42f9bfab5f10cff4ae14eaaeb56cff13b7b"
 
 [[files]]
 file = "config/cobblemon/starters.json"
-hash = "c6ef486306c50c31b674a3898b697e7bc04bed21c16bac88fc62ea33900f5ec3"
+hash = "31d020eac9b133a02c977965e66b7ca27feac781940967b8f1a6d303243b51a9"
 
 [[files]]
 file = "config/customwindowtitle-client.toml"
