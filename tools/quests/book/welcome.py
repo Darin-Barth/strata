@@ -44,7 +44,7 @@ q("iron_age", "Iron Age", deps="timber", icon="minecraft:iron_pickaxe", tier=2,
     and which tool you need to break it.
 
     Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach.
-    &eCombat Roll&r lets you dodge-roll out of trouble (set its key in Options > Controls).""",
+    &eCombat Roll&r lets you dodge-roll out of trouble: press &eR&r by default, or rebind it in Options > Controls.""",
   rewards=[give("minecraft:iron_ingot", 16), give("minecraft:shield")])
 
 q("backpack", "A Bag for Everything", deps="recipes", icon="sophisticatedbackpacks:backpack",

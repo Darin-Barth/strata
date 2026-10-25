@@ -39,7 +39,7 @@
 		""
 		"&eTip:&r Jade (the little box at the top of your screen) tells you what you're looking at and which tool you need to break it."
 		""
-		"Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach. &eCombat Roll&r lets you dodge-roll out of trouble (set its key in Options > Controls)."
+		"Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach. &eCombat Roll&r lets you dodge-roll out of trouble: press &eR&r by default, or rebind it in Options > Controls."
 	]
 	quest.3CBEAA09E0AA8A33.title: "A Bag for Everything"
 	quest.3CBEAA09E0AA8A33.quest_desc: [
@@ -3457,7 +3457,7 @@
 	]
 	quest.50431CA20BCA5387.title: "Dodge Roll"
 	quest.50431CA20BCA5387.quest_desc: [
-		"&eCombat Roll&r: press the roll key (set it in Options > Controls) to dash a few blocks in the direction you're moving. An arrow on your HUD shows when it's ready again."
+		"&eCombat Roll&r: press &eR&r by default (or rebind it in Options > Controls) to dash a few blocks in the direction you're moving. An arrow on your HUD shows when it's ready again."
 		""
 		"&eThe rules here:&r a roll takes &e4 seconds&r to recharge, needs more than &e3 drumsticks&r of food, and costs a little hunger. It moves you out of the way, but you're &cnot invulnerable&r while rolling, so roll early."
 		""

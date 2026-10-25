@@ -39,7 +39,7 @@ q("two_handed", "Big Swings", deps="better_combat", icon="simplyswords:iron_clay
   rewards=[give("minecraft:iron_ingot", 12)])
 
 q("combat_roll", "Dodge Roll", deps="better_combat", icon="minecraft:leather_boots", desc="""
-    &eCombat Roll&r: press the roll key (set it in Options > Controls) to dash a few blocks
+    &eCombat Roll&r: press &eR&r by default (or rebind it in Options > Controls) to dash a few blocks
     in the direction you're moving. An arrow on your HUD shows when it's ready again.
 
     &eThe rules here:&r a roll takes &e4 seconds&r to recharge, needs more than
