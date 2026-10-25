@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **Minimap defaults to the top right** (`config/xaerohud.txt`, `preserve = true`, so players who moved it keep their spot).
 - **Hotfix: JEI, Just Enough Resources and MezzConfig removed.** JEI built its recipe index on the game's main thread when
   joining a server (about 60 seconds with this pack), so slower clients froze on "Loading terrain" and were timed out
   (Lopez, Oct 25). EMI is the recipe viewer; EMI Ores, Advanced Loot Info and Just Enough Breeding cover what JER

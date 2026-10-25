@@ -322,6 +322,11 @@ file = "config/vanillabackport-common.toml"
 hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
 
 [[files]]
+file = "config/xaerohud.txt"
+hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
+preserve = true
+
+[[files]]
 file = "icon.png"
 hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
