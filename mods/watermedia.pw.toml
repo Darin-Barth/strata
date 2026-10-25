@@ -1,13 +1,14 @@
 name = "WATERMeDIA: Multimedia API"
-filename = "watermedia-3.0.0.23.jar"
+filename = "watermedia-2.1.37.jar"
 side = "client"
+pin = true
 
 [download]
-url = "https://cdn.modrinth.com/data/G922NeHS/versions/FdCZ5Rxq/watermedia-3.0.0.23.jar"
+url = "https://cdn.modrinth.com/data/G922NeHS/versions/fB0LmHnR/watermedia-2.1.37.jar"
 hash-format = "sha512"
-hash = "b2f9c31828285bf7cb039b91e8756b35c2a9e425d614d9c767bdcd752475a7abf4f025d6f6005d74f5c610c298fdadf01e53b29124d1d9fd03554fff71b1993b"
+hash = "d2bdadbb352c415e04aecf130759949f1081f8f410a4019b3b885a4e05a6ce9f6144dfb7c707685dad0f9b26c04e4a26dff5c3897d057b96cf4cec1384a148bb"
 
 [update]
 [update.modrinth]
 mod-id = "G922NeHS"
-version = "FdCZ5Rxq"
+version = "fB0LmHnR"

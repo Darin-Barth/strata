@@ -70,7 +70,7 @@ hash = "c7078ac5d4368866c795c0bfc82b19de0dfc47381e5bd3bd6bce7d96ac8c2ab0"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "fe23889bc9fe739c235e9bb9425b4f45f577a2ff70f9be14a1552e6ec88b2202"
+hash = "6943b85c3d81079835ba1ae6b704f5ee27bc0768150cd42bb5d113f7a1493f50"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
@@ -283,6 +283,11 @@ hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
 [[files]]
 file = "config/streamsreflowing.properties"
 hash = "a75b392dc720397c13522e1654d876b502e4261b8ea30a1a7c18c37e8f0b184d"
+
+[[files]]
+file = "config/supplementaries-client.toml"
+hash = "fcbff2c28c3ae0282ce1805e43e495bc76a9cb7d6bcd930bbc5dc31839cfd2e6"
+preserve = true
 
 [[files]]
 file = "config/vanillabackport-common.toml"
@@ -4007,7 +4012,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobblestructures.pw.toml"
-hash = "687513461b8b6b7d71f1691656a1c73f3283367bd35205494d994c257326a00b"
+hash = "b039333c0042fc6e90fef9ce9590fe2a77a9b69ddc8f22f1e517c99f885995f9"
 metafile = true
 
 [[files]]
@@ -4287,12 +4292,12 @@ metafile = true
 
 [[files]]
 file = "mods/drippy-early-loading-module.pw.toml"
-hash = "5fea3c19a3984ad752fd965510c4f8847c5100d001c31cbe46373628de729e06"
+hash = "e2bb9bf40109db7491451b713095d60770eb58173326395962acdcbafc6f953e"
 metafile = true
 
 [[files]]
 file = "mods/drippy-loading-screen.pw.toml"
-hash = "d89b50af502aab4416e07fa8f92433a18fac11285fe1c39ebccea610dbfdd1e7"
+hash = "2516652afdfd1b033621bca4b19c9e02c9b88d2a32b63f892b96d9da73ff83fb"
 metafile = true
 
 [[files]]
@@ -4442,7 +4447,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "88afe523b3bc1fed6bd53b6608f0450e9891c8fe25e786a9893243064f8c7e7f"
+hash = "6f3176be3c66efca1b658a1aa8bb604658c2f24634184dc5b4842d45752998f3"
 metafile = true
 
 [[files]]
@@ -5527,7 +5532,7 @@ metafile = true
 
 [[files]]
 file = "mods/watermedia.pw.toml"
-hash = "b77a560d6c4a3f4558ee0b977463de1283b6b1c39fd565883f9b35df2453cd3d"
+hash = "976854e8cb0473236ae4ce6b5b29bb901dc46b20d072bfed79e1f07c64b37095"
 metafile = true
 
 [[files]]
