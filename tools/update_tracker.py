@@ -91,7 +91,7 @@ R = {
     "Streams Reflowing": (C, "MR streams-reflowing 2.15.2"),
     "Incendium": (C, "MR incendium 5.4.4 (project now titled 'Incendium Legacy')"),
     "Nullscape": (C, "MR nullscape 1.2.14"),
-    "YUNG's suite (Better Strongholds, Mineshafts, Fortresses, etc.)": (C, "MR: API, Better Strongholds/Mineshafts/Nether Fortresses/Dungeons/Desert Temples/Jungle Temples/Ocean Monuments/Witch Huts/End Island, Bridges, Extras, Cave Biomes"),
+    "YUNG's suite (Mineshafts, Fortresses, etc.)": (C, "MR: API, Mineshafts/Nether Fortresses/Dungeons/Desert Temples/Jungle Temples/Ocean Monuments/Witch Huts/End Island, Bridges, Extras, Cave Biomes. Better Strongholds dropped Oct 24 for Integrated Stronghold"),
     "Towns and Towers": (C, "MR towns-and-towers 1.13.11"),
     "When Dungeons Arise": (C, "MR when-dungeons-arise 2.1.68"),
     "Dungeons and Taverns": (C, "MR dungeons-and-taverns 4.4.4"),
@@ -208,6 +208,7 @@ R = {
 
 # Rows renamed to the mod actually chosen. Old name -> new name (applied once, then R uses the new name).
 RENAMES = {
+    "YUNG's suite (Better Strongholds, Mineshafts, Fortresses, etc.)": "YUNG's suite (Mineshafts, Fortresses, etc.)",
     "Create Thrusters": "Create Aeronautics: Gadgets & Gizmos",
     "Drive By Wire": "Drive-By-Wire with Sable",
     "Domestication Innovation": "Redomesticate",
@@ -395,6 +396,7 @@ NEW_ROWS = [
     ('Shulker Box Tooltip', 'QoL', 'Core', None, 'Both', 'Keep', C, None, 'Shulker contents in tooltip', 'MR shulkerboxtooltip shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar'),
     ('Durability Tooltip', 'QoL', 'Core', None, 'Client', 'Keep', C, None, 'Durability numbers in tooltip', 'MR durability-tooltip durabilitytooltip-1.2.0-neoforge-mc1.21.jar'),
     ('Elytra Slot', 'Accessories', 'Exploration', None, 'Both', 'Keep', C, None, 'Elytra in a Curios slot', 'MR elytra-slot elytraslot-neoforge-9.0.2+1.21.1.jar'),
+    ('Integrated Stronghold', 'Structures', 'Exploration', 'Integrated API, Create, Supplementaries, Quark', 'Both', 'Keep', C, 'Worldgen', "Replaces the stronghold with a huge Create/Supplementaries dungeon; matches Integrated Villages. Replaces YUNG's Better Strongholds (author recommends running it alone). Optional End Remastered integration datapack not added", 'MR integrated-stronghold 1.1.4+1.21.1-neoforge'),
     ('Unusual End', 'Dimensions', 'Exploration', None, 'Both', 'Maybe', C, 'Worldgen', 'Tested Oct 24: with Nullscape only 0.1% of End chunks get its biomes. Not worth it unless Nullscape goes', 'MR unusual-end 2.3.1b'),
     ('Draconic Evolution', 'Tech', 'Tech', None, 'Both', 'Maybe', C, 'Gate', 'Beta. Only if the Mek/AE2 endgame feels short. Armor flight is power-costed', 'MR draconic-evolution 3.1.4.633 (beta)'),
 ]
