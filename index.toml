@@ -4911,11 +4911,6 @@ hash = "450ed5663bf1d12ffddc78eda5aa56cb7808cbdac6db8102d18461361aaa555f"
 metafile = true
 
 [[files]]
-file = "mods/meccha-crafteleon.pw.toml"
-hash = "2716389fca5740e4c28973e17aebb81508f49816f51abe4a76aa0b32bde0d296"
-metafile = true
-
-[[files]]
 file = "mods/mech-trowel.pw.toml"
 hash = "2c31453e756e64c0f9edcad1f716900ddd07b1ea4c8c955a2d001725c65366c1"
 metafile = true
