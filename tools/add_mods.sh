@@ -61,6 +61,11 @@ MR=(
   amendments enchantment-descriptions torchmaster crafting-tweaks jade-addons-forge crash-assistant
   ping-wheel ping-to-map-xaeros neruina packet-fixer structure-layout-optimizer async-locator-refined
   fastsuite dynamic-fps moreculling sodium-extra
+  # Wave 5 (Oct 24): gap-analysis round 2
+  immersive-optimization ftb-quests-optimizer ai-improvements achievements-optimizer ad-astra create-jetpack
+  interiors mss-moogs-soaring-structures better-archeology ribbits lootjs structurify default-options in-control
+  emi-ores extra-mod-integrations justenoughbreeding advanced-loot-info not-enough-animations 3dskinlayers
+  subtle-effects particle-rain travelers-titles shoulder-surfing-reloaded shulkerboxtooltip durability-tooltip elytra-slot
 )
 
 CF=(
@@ -77,6 +82,8 @@ CF=(
   building-gadgets more-red choicetheorems-overhauled-village iceandfire-ce
   # Wave 4. Both pull in Ars Nouveau's CurseForge copy: restore mods/ars-nouveau.pw.toml afterwards
   ars-elemental croptopia
+  # Wave 5. Pulls Balm's CurseForge copy: restore mods/balm.pw.toml afterwards
+  cooking-for-blockheads
 )
 
 for s in "${MR[@]}"; do
