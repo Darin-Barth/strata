@@ -32,6 +32,11 @@
 					item: { count: 1, id: "minecraft:cooked_cod" }
 					count: 8
 				}
+				{
+					id: "4754C92FD708B44F"
+					type: "item"
+					item: { count: 1, id: "tide:fishing_journal" }
+				}
 			]
 		}
 		{
@@ -65,11 +70,7 @@
 			dependencies: ["5593EDB730F985FC"]
 			icon: { id: "tide:fishing_journal" }
 			tasks: [
-				{
-					id: "50B707F8887CF6AB"
-					type: "item"
-					item: { count: 1, id: "tide:fishing_journal" }
-				}
+				{ id: "50B707F8887CF6AB", type: "checkmark" }
 			]
 			rewards: [
 				{ id: "5CA16D42CCD44E74", type: "xp", xp: 100 }

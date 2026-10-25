@@ -21,6 +21,11 @@
 			]
 			rewards: [
 				{ id: "1B89DCD771F53770", type: "xp", xp: 100 }
+				{
+					id: "451874C869070A69"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:worn_notebook" }
+				}
 			]
 		}
 		{
@@ -30,11 +35,7 @@
 			dependencies: ["544A2059F4271A24"]
 			icon: { id: "ars_nouveau:worn_notebook" }
 			tasks: [
-				{
-					id: "5FA2E283AABFA0FA"
-					type: "item"
-					item: { count: 1, id: "ars_nouveau:worn_notebook" }
-				}
+				{ id: "5FA2E283AABFA0FA", type: "checkmark" }
 			]
 			rewards: [
 				{ id: "2470697B7B55266A", type: "xp", xp: 100 }

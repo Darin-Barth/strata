@@ -17,6 +17,7 @@ critical hotfix goes out on its own. Clear this list when the release goes out.
   `obtainOnSpawn` = false). Each one becomes a reward on the first quest of its chapter instead.
 - **Hotbar HUD overlap fixed:** Combat Roll no longer draws its "R" keybind label next to the hotbar, and its roll-charge arrow only shows while a roll is recharging (`config/combat_roll/client.json5`).
 - **Quest book: 6 quest items that don't exist in game swapped for real ones** (Ad Astra Astrodux, ExtendedAE Infinity Cell, Inventory Pets iron nugget, My Nether's Delight stove, Better Archeology identified artifact, Amendments hanging pot); the quest ID checker now validates against a registry dump from a running server.
+- **Quest book: guide books come from quests** instead of the hotbar: the first quest of Ars Nouveau (Tattered Tome), Pets & Critters (Animal Dictionary), Fishing (Fishing Journal) and Logistics & Wireless (On the Dynamics of Integration) gives that book; the quests that used to ask players to craft them are now "read it" checkmarks.
 
 ## Release checklist
 1. Bump `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt`.

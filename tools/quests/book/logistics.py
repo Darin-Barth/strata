@@ -12,7 +12,8 @@ q("intro", "Moving Things Around", icon="laserio:laser_wrench", deps="welcome/ir
     your base react to it.
     &bLaserIO&r: move items, fluids and power between nearby blocks with lasers.
     &bMore Red&r: compact redstone logic gates and wires.
-    &bFlux Networks&r: wireless power, &cafter the Nether&r.""")
+    &bFlux Networks&r: wireless power, &cafter the Nether&r.""",
+  rewards=[give("integrateddynamics:on_the_dynamics_of_integration")])
 
 # --- Integrated Dynamics ----------------------------------------------------------------
 q("id_menril", "ID: Menril", deps="intro", icon="integrateddynamics:menril_sapling",
@@ -21,7 +22,7 @@ q("id_menril", "ID: Menril", deps="intro", icon="integrateddynamics:menril_sapli
     Squeeze Menril logs in a &eSqueezer&r for resin, then dry the resin in a
     &eDrying Basin&r to get &eCrystallized Menril&r.
 
-    The book &eOn the Dynamics of Integration&r explains the whole mod.""",
+    The book &eOn the Dynamics of Integration&r (from the first quest) explains the whole mod.""",
   rewards=[give("integrateddynamics:menril_sapling", 4)])
 
 q("id_cable", "ID: Logic Cables", deps="id_menril", icon="integrateddynamics:cable",

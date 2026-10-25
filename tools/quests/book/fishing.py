@@ -12,7 +12,7 @@ q("intro", "Gone Fishing", icon="minecraft:fishing_rod", size=1.5, shape="gear",
     Time of day, weather and the moon matter too.
 
     Grab a rod and find a quiet pond. It's a great way to relax!""",
-  rewards=[give("minecraft:fishing_rod"), give("minecraft:cooked_cod", 8)])
+  rewards=[give("minecraft:fishing_rod"), give("minecraft:cooked_cod", 8), give("tide:fishing_journal")])
 
 # --- tide basics --------------------------------------------------------------------------
 q("first_catch", "First Catch", deps="intro", icon="minecraft:cod",
@@ -24,9 +24,9 @@ q("first_catch", "First Catch", deps="intro", icon="minecraft:cod",
   rewards=[give("tide:bait", 8)])
 
 q("journal", "The Fishing Journal", deps="first_catch", icon="tide:fishing_journal",
-  tasks=item("tide:fishing_journal"), desc="""
-    Craft a &eFishing Journal&r (a book and any fish). Every new fish you catch gets its own
-    page with a picture and a fun fact.
+  tasks=check("Open the Fishing Journal"), desc="""
+    Open the &eFishing Journal&r you got for starting this chapter. Every new fish you catch
+    gets its own page with a picture and a fun fact. (Lost it? Craft one from a book and any fish.)
 
     Can you fill it? Some fish only bite at night, in the rain, or in special places.""",
   rewards=[give("tide:duck_bobber"), give("minecraft:book", 2)])

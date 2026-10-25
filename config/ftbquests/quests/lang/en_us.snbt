@@ -1446,7 +1446,7 @@
 	quest.01ADE2B171793530.quest_desc: [
 		"Integrated Dynamics runs on &eMenril&r, from pale blue Menril trees. Squeeze Menril logs in a &eSqueezer&r for resin, then dry the resin in a &eDrying Basin&r to get &eCrystallized Menril&r."
 		""
-		"The book &eOn the Dynamics of Integration&r explains the whole mod."
+		"The book &eOn the Dynamics of Integration&r (from the first quest) explains the whole mod."
 	]
 	quest.3BB43D04EF28DFA6.title: "ID: Logic Cables"
 	quest.3BB43D04EF28DFA6.quest_desc: [
@@ -1837,9 +1837,10 @@
 		""
 		"The other magic mods (Iron's Spells, Occultism) plug into Ars, so this is a great place to start."
 	]
+	task.5FA2E283AABFA0FA.title: "Read the Tattered Tome"
 	quest.7D759B61A5A29A19.title: "The Tattered Tome"
 	quest.7D759B61A5A29A19.quest_desc: [
-		"Craft the &eTattered Tome&r (a book and a lapis). It's Ars Nouveau's own guide: every block, glyph, ritual and creature has a page with recipes."
+		"The &eTattered Tome&r you got for starting this chapter is Ars Nouveau's own guide: every block, glyph, ritual and creature has a page with recipes. Lost it? Craft another from a book and a lapis."
 		""
 		"It also has a key of its own (\"Open Documentation\", in Options > Controls)."
 	]
@@ -4370,11 +4371,12 @@
 		""
 		"&eGuard Villagers&r patrol villages and protect them from raids. Be nice to them."
 	]
+	task.60A7C40ABD4AC5D3.title: "Read the Animal Dictionary"
 	quest.697FA0C02A6A1D52.title: "The Animal Dictionary"
 	quest.697FA0C02A6A1D52.quest_desc: [
 		"&eAlex's Mobs&r adds dozens of real and strange animals: elephants, raccoons, hummingbirds, kangaroos, crows and many more. Some can be tamed!"
 		""
-		"The &eAnimal Dictionary&r tells you about every one: where it lives, what it eats, and whether it's friendly. Hover it and press &eR&r to see how to make one."
+		"The &eAnimal Dictionary&r (you got one for starting this chapter) tells you about every one: where it lives, what it eats, and whether it's friendly."
 	]
 	quest.67FE371B97B0CA08.title: "Bug Catcher"
 	quest.67FE371B97B0CA08.quest_desc: [
@@ -4701,9 +4703,10 @@
 		""
 		"When a fish bites, a little &eminigame&r appears: keep up with the fish to reel it in. Bigger, rarer fish fight harder. Don't worry if one gets away, there are plenty more!"
 	]
+	task.50B707F8887CF6AB.title: "Open the Fishing Journal"
 	quest.257E8EB054A914BC.title: "The Fishing Journal"
 	quest.257E8EB054A914BC.quest_desc: [
-		"Craft a &eFishing Journal&r (a book and any fish). Every new fish you catch gets its own page with a picture and a fun fact."
+		"Open the &eFishing Journal&r you got for starting this chapter. Every new fish you catch gets its own page with a picture and a fun fact. (Lost it? Craft one from a book and any fish.)"
 		""
 		"Can you fill it? Some fish only bite at night, in the rain, or in special places."
 	]

@@ -10,7 +10,7 @@ q("intro", "What's Out There?", icon="plushies:wolf_plushie", size=1.5, shape="g
 
     Many can be &etamed&r, some can be &ebred&r, and a few will even live in your pocket.
     This chapter is a gentle tour. Go at your own pace and say hi to everyone!""",
-  rewards=[give("minecraft:bone", 8), give("minecraft:cod", 8)])
+  rewards=[give("minecraft:bone", 8), give("minecraft:cod", 8), give("alexsmobs:animal_dictionary")])
 
 # --- your first pet ---------------------------------------------------------------------
 q("tame", "A Best Friend", deps="intro", icon="minecraft:bone",
@@ -129,12 +129,12 @@ q("villager_block", "Villager in a Box", deps="intro", icon="easy_villagers:trad
 
 # --- wildlife -----------------------------------------------------------------------------
 q("animal_book", "The Animal Dictionary", deps="intro", icon="alexsmobs:animal_dictionary",
-  tasks=item("alexsmobs:animal_dictionary"), desc="""
+  tasks=check("Read the Animal Dictionary"), desc="""
     &eAlex's Mobs&r adds dozens of real and strange animals: elephants, raccoons,
     hummingbirds, kangaroos, crows and many more. Some can be tamed!
 
-    The &eAnimal Dictionary&r tells you about every one: where it lives, what it eats,
-    and whether it's friendly. Hover it and press &eR&r to see how to make one.""",
+    The &eAnimal Dictionary&r (you got one for starting this chapter) tells you about
+    every one: where it lives, what it eats, and whether it's friendly.""",
   rewards=[give("alexsmobs:banana", 4), give("minecraft:book", 2)])
 
 q("capture_net", "Bug Catcher", deps="animal_book", icon="naturalist:capture_net",

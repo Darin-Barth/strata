@@ -33,6 +33,11 @@
 					item: { count: 1, id: "minecraft:cod" }
 					count: 8
 				}
+				{
+					id: "67D071167B52FD41"
+					type: "item"
+					item: { count: 1, id: "alexsmobs:animal_dictionary" }
+				}
 			]
 		}
 		{
@@ -394,11 +399,7 @@
 			dependencies: ["54257CD45A6BC403"]
 			icon: { id: "alexsmobs:animal_dictionary" }
 			tasks: [
-				{
-					id: "60A7C40ABD4AC5D3"
-					type: "item"
-					item: { count: 1, id: "alexsmobs:animal_dictionary" }
-				}
+				{ id: "60A7C40ABD4AC5D3", type: "checkmark" }
 			]
 			rewards: [
 				{ id: "42B1C26163DE7042", type: "xp", xp: 100 }

@@ -22,6 +22,11 @@
 			]
 			rewards: [
 				{ id: "3BDAC0DFFB473E73", type: "xp", xp: 100 }
+				{
+					id: "54AF956FEA32A3D0"
+					type: "item"
+					item: { count: 1, id: "integrateddynamics:on_the_dynamics_of_integration" }
+				}
 			]
 		}
 		{

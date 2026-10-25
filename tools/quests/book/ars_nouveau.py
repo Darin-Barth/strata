@@ -13,13 +13,15 @@ q("intro", "What is Ars Nouveau?", icon="ars_nouveau:novice_spell_book", size=1.
     Your power is &bSource&r, a magic liquid you collect in jars and spend in machines,
     and &bmana&r, the blue bar you spend on spells.
 
-    The other magic mods (Iron's Spells, Occultism) plug into Ars, so this is a great place to start.""")
+    The other magic mods (Iron's Spells, Occultism) plug into Ars, so this is a great place to start.""",
+  rewards=[give("ars_nouveau:worn_notebook")])
 
 # --- getting started -----------------------------------------------------------------------
 q("notebook", "The Tattered Tome", deps="intro", icon="ars_nouveau:worn_notebook",
-  tasks=item("ars_nouveau:worn_notebook"), desc="""
-    Craft the &eTattered Tome&r (a book and a lapis). It's Ars Nouveau's own guide:
+  tasks=check("Read the Tattered Tome"), desc="""
+    The &eTattered Tome&r you got for starting this chapter is Ars Nouveau's own guide:
     every block, glyph, ritual and creature has a page with recipes.
+    Lost it? Craft another from a book and a lapis.
 
     It also has a key of its own ("Open Documentation", in Options > Controls).""",
   rewards=[give("minecraft:lapis_lazuli", 16)])
