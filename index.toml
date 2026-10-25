@@ -70,7 +70,7 @@ hash = "1a9c89005759238032eb29c3fadd4fa307a68a471e450f12d16b39766806d788"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "5632132ec3bd505899b53dc0075b0fe679edc633c8e9c49d8070ae7464a9a7fb"
+hash = "e52ae3f6790a5ce20380890a536fec192e07d30b7eb45b208d0a054dff302629"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
@@ -279,6 +279,10 @@ hash = "e19a6141a26292cdf486e81f53cf176c443578ad004a27b207cf1b101885fe66"
 [[files]]
 file = "config/rctmod-server.toml"
 hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
+
+[[files]]
+file = "config/simplebackups-common.toml"
+hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -4908,11 +4912,6 @@ metafile = true
 [[files]]
 file = "mods/macaws-windows.pw.toml"
 hash = "450ed5663bf1d12ffddc78eda5aa56cb7808cbdac6db8102d18461361aaa555f"
-metafile = true
-
-[[files]]
-file = "mods/meccha-crafteleon.pw.toml"
-hash = "2716389fca5740e4c28973e17aebb81508f49816f51abe4a76aa0b32bde0d296"
 metafile = true
 
 [[files]]

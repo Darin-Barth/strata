@@ -27,7 +27,7 @@ Ars Instrumentum, Ars Nouveau – Extended Glyphs, Fantasy Ending, Ice and Fire:
 | **Locked In Slots** | Utility | Lock inventory slots (QoL) |
 | **Mighty Mail** | Friendly fun | Mailboxes between players |
 | **What Are They Up To** | Friendly fun | Shows what other players are doing (crafting, chatting, AFK) |
-| **Meccha Crafteleon** | Friendly fun | Hide-and-seek minigame with its own arena dimension |
+| **Meccha Crafteleon** | Friendly fun | Hide-and-seek minigame with its own arena dimension. **Removed Oct 25:** in-game it took over the T (chat) key, popped a controls guide and posted an advert for an outside server and Discord in chat |
 | **Hyperbox** | Utility/fun | Pocket-dimension boxes (walk into a box to enter a bigger room); not a teleport |
 
 ## Maybe (concerns to settle first)

@@ -81,7 +81,7 @@ CF=(
   # Friend's list (Oct 24)
   bossesrise qliphoth-awakening cinematic-cataclysm gtbcs-cataclysmic-boss-ui cataclysm-spellbooks
   apprentices-codex starbunclemania ars-trinkets playerrevive locked-in-slots mighty-mail
-  what-are-they-up-to meccha-crafteleon hyperbox
+  what-are-they-up-to hyperbox  # meccha-crafteleon removed Oct 25: takes the T (chat) key and advertises an outside server in chat
   # Wave 3 (Oct 24). Chisels & Bits was tried and cut: it fails to load on 1.21.1
   building-gadgets more-red choicetheorems-overhauled-village iceandfire-ce
   # Wave 4. Both pull in Ars Nouveau's CurseForge copy: restore mods/ars-nouveau.pw.toml afterwards
