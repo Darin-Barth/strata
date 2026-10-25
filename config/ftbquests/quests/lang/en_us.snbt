@@ -7,8 +7,8 @@
 	chapter_group.2EAA9718BAF5A32A.title: "Tech"
 	chapter_group.03203A1312E25E36.title: "Magic"
 	chapter_group.76581968F62E459A.title: "Exploration"
-	chapter_group.2EC6052336A88AD1.title: "Bosses & Combat"
-	chapter_group.46FD3EC1FE1391C7.title: "Life & Cozy"
+	chapter_group.2EC6052336A88AD1.title: "Bosses \\& Combat"
+	chapter_group.46FD3EC1FE1391C7.title: "Life \\& Cozy"
 	quest.7B00515BF7869680.title: "Welcome to Strata!"
 	quest.7B00515BF7869680.quest_desc: [
 		"&6Build. Fly. Explore.&r"
@@ -187,8 +187,8 @@
 	quest.003414113D5BA7F2.quest_desc: [
 		"Prefer farming, cooking, pets and decorating? Strata has lots of it."
 		""
-		"Craft a &eCooking Pot&r and open &aFarming & Food&r."
-		"Pets & Critters and Building & Decorating are right next to it."
+		"Craft a &eCooking Pot&r and open &aFarming \\& Food&r."
+		"Pets \\& Critters and Building \\& Decorating are right next to it."
 	]
 	quest.65BD001383487C33.title: "Path: The Pokémon World"
 	quest.65BD001383487C33.quest_desc: [
@@ -439,8 +439,8 @@
 	quest.48C35B32C447AC13.quest_desc: [
 		"You know the basics of Create. Pick what's next:"
 		""
-		"&bCreate: Power & Wires&r: steam engines, electricity and the power ladder."
-		"&bCreate: Trains & Trade&r: railways, stations and shops."
+		"&bCreate: Power \\& Wires&r: steam engines, electricity and the power ladder."
+		"&bCreate: Trains \\& Trade&r: railways, stations and shops."
 		"&bCreate: Airships&r: build a ship and fly it!"
 		"&bCreate: Extras&r: enchanting, cannons, kitchens and decoration."
 	]
@@ -453,7 +453,7 @@
 		"the other."
 		""
 		"Strata has a &6power ladder&r. Each step is better than the last:"
-		"1. Rotation into a &eCrafts & Additions Alternator&r (easy, but weak)."
+		"1. Rotation into a &eCrafts \\& Additions Alternator&r (easy, but weak)."
 		"2. &eCreate: New Age&r generators with coils and magnets (much better)."
 		"3. &eNew Age nuclear&r heat into steam engines (huge), next to Mekanism fission and fusion."
 	]
@@ -469,7 +469,7 @@
 	]
 	quest.659475EAD835359E.title: "The Alternator"
 	quest.659475EAD835359E.quest_desc: [
-		"&eCrafts & Additions&r turns rotation into electricity. The &eAlternator&r needs at"
+		"&eCrafts \\& Additions&r turns rotation into electricity. The &eAlternator&r needs at"
 		"least &e32 RPM&r; faster spinning gives more FE."
 		""
 		"In Strata the alternator is kept &cweak on purpose&r: it's your starter generator,"
@@ -511,7 +511,7 @@
 		"Engineering&r wires: &eLV&r (copper), &eMV&r (electrum) and &eHV&r (steel) on poles"
 		"with connectors and transformers."
 		""
-		"Rule of thumb: Crafts & Additions wires inside the base, IE lines between places."
+		"Rule of thumb: Crafts \\& Additions wires inside the base, IE lines between places."
 		"See the &bImmersive Engineering&r chapter to build them."
 	]
 	quest.224A064BF2E49955.title: "Magnets"
@@ -526,7 +526,7 @@
 		""
 		"Stronger magnets turn more of your stress into power, but the coils also use more SU."
 		"Ponder it with &eW&r. This beats the alternator by a lot."
-		"(New Age's own wires aren't used in Strata: hook the brushes to Crafts & Additions"
+		"(New Age's own wires aren't used in Strata: hook the brushes to Crafts \\& Additions"
 		"or IE connectors.)"
 	]
 	quest.6733AFE7D7E837E3.title: "Stronger Magnets"
@@ -600,7 +600,7 @@
 		"&bApplied Energistics 2&r: digital storage that runs on FE."
 		"&bCreate: Airships&r: engines and thrusters to fly what you build."
 	]
-	chapter.4524E39579EE697A.title: "Create: Power & Wires"
+	chapter.4524E39579EE697A.title: "Create: Power \\& Wires"
 	chapter.4524E39579EE697A.chapter_subtitle: ["Steam, electricity and the Strata power ladder"]
 	quest.28007822CBD71855.title: "Why Trains?"
 	quest.28007822CBD71855.quest_desc: [
@@ -751,10 +751,10 @@
 		"Rails are down and the shops are open. Next:"
 		""
 		"&bCreate: Airships&r: take your goods into the sky."
-		"&bCreate: Power & Wires&r: diesel engines and steam for bigger trains."
+		"&bCreate: Power \\& Wires&r: diesel engines and steam for bigger trains."
 		"&bLogistics&r and &bStorage&r: more ways to move and keep items."
 	]
-	chapter.5F4AAB36EBD18AA6.title: "Create: Trains & Trade"
+	chapter.5F4AAB36EBD18AA6.title: "Create: Trains \\& Trade"
 	chapter.5F4AAB36EBD18AA6.chapter_subtitle: ["Railways, stations, packages and shops"]
 	quest.63388EAC96C1BCEC.title: "Build. Fly. Explore."
 	quest.63388EAC96C1BCEC.quest_desc: [
@@ -876,7 +876,7 @@
 	]
 	quest.049D8DD9D517E11B.title: "Contraption Controller"
 	quest.049D8DD9D517E11B.quest_desc: [
-		"&eAeronautics: Gadgets & Gizmos&r adds the &eSable Contraption Controller&r: map flight"
+		"&eAeronautics: Gadgets \\& Gizmos&r adds the &eSable Contraption Controller&r: map flight"
 		"controls to keys, redstone, wireless frequencies or blocks on your ship, all in one"
 		"place."
 		""
@@ -885,7 +885,7 @@
 	]
 	quest.04A7BB677B55524E.title: "Thrusters"
 	quest.04A7BB677B55524E.quest_desc: [
-		"No propeller needed: a Gadgets & Gizmos &eThruster&r burns fuel (solid or liquid) and"
+		"No propeller needed: a Gadgets \\& Gizmos &eThruster&r burns fuel (solid or liquid) and"
 		"pushes your ship away from its nozzle. Redstone sets the throttle: 0 off, 15 full."
 		""
 		"Mount it on a &eServo Bearing&r to swing the thrust around. &eRCS Thrusters&r have four"
@@ -953,7 +953,7 @@
 		"You can fly! Now go places:"
 		""
 		"&aExplorer's Guide&r: sky islands, far-off structures and new biomes to land at."
-		"&bCreate: Trains & Trade&r: run a cargo line between ship docks."
+		"&bCreate: Trains \\& Trade&r: run a cargo line between ship docks."
 		"&bCreate: Extras&r: mount Big Cannons on your ship (pirates!)."
 		""
 		"Tip: Distant Horizons (optional, client-side) shows far terrain while you fly."
@@ -1031,9 +1031,9 @@
 		"Later: bronze, steel and nethersteel, autocannons and quick-firing breeches. Mount one"
 		"on an airship for sky battles!"
 	]
-	quest.1098C2FC6DECF34C.title: "Slice & Dice"
+	quest.1098C2FC6DECF34C.title: "Slice \\& Dice"
 	quest.1098C2FC6DECF34C.quest_desc: [
-		"&eCreate: Slice & Dice&r adds the &eSlicer&r: a powered cutting board. Right-click it"
+		"&eCreate: Slice \\& Dice&r adds the &eSlicer&r: a powered cutting board. Right-click it"
 		"with a knife (or another tool) and it cuts items below it automatically, using"
 		"Farmer's Delight cutting recipes."
 		""
@@ -1098,8 +1098,8 @@
 	quest.73539F21D8E87BD9.title: "Where Next?"
 	quest.73539F21D8E87BD9.quest_desc: [
 		"&bCreate: Airships&r: put a cannon on a ship."
-		"&bFarming & Food&r: more recipes for your automatic kitchen."
-		"&bBuilding & Decorating&r: more blocks for your bases."
+		"&bFarming \\& Food&r: more recipes for your automatic kitchen."
+		"&bBuilding \\& Decorating&r: more blocks for your bases."
 	]
 	chapter.6964F1BD9320BD29.title: "Create: Extras"
 	chapter.6964F1BD9320BD29.chapter_subtitle: ["Enchanting, cannons, kitchens and building blocks"]
@@ -1175,7 +1175,7 @@
 		"&eKinetic Dynamo&r, which outputs power (FE)."
 		""
 		"Want more? Later the &eDiesel Generator&r burns biodiesel for lots of it."
-		"Create rotation, Crafts & Additions and Mekanism power all plug into the same grid."
+		"Create rotation, Crafts \\& Additions and Mekanism power all plug into the same grid."
 	]
 	quest.5227D3236DE20E36.title: "LV Power Lines"
 	quest.5227D3236DE20E36.quest_desc: [
@@ -1192,7 +1192,7 @@
 		"and machines."
 		""
 		"It's also a good meeting point: wire IE lines into it on one side and run"
-		"Crafts & Additions or Mekanism cables out of it on the other."
+		"Crafts \\& Additions or Mekanism cables out of it on the other."
 	]
 	quest.75079355B8A89F1E.title: "MV Power Lines"
 	quest.75079355B8A89F1E.quest_desc: [
@@ -1698,7 +1698,7 @@
 	quest.6C43ED6F42727AF3.title: "Where next?"
 	quest.6C43ED6F42727AF3.quest_desc: [
 		"&bMekanism&r: feed your ore line straight from the network."
-		"&bLogistics & Wireless&r: Integrated Dynamics can read your storage and react to it."
+		"&bLogistics \\& Wireless&r: Integrated Dynamics can read your storage and react to it."
 		"&bResource Farming&r: Mystical Agriculture crops are great for autocrafting."
 	]
 	chapter.32F4545024F13413.title: "Applied Energistics 2"
@@ -1843,7 +1843,7 @@
 	quest.4526E1FDE9A28E0B.quest_desc: [
 		"&bMekanism&r and &bOritech&r: more machines, more processing."
 		"&bImmersive Engineering&r: wire all these generators into one grid."
-		"&bLogistics & Wireless&r: move things between them automatically."
+		"&bLogistics \\& Wireless&r: move things between them automatically."
 	]
 	chapter.2839C967066C8419.title: "More Machines"
 	chapter.2839C967066C8419.chapter_subtitle: [
@@ -1957,7 +1957,7 @@
 		"&bImmersive Engineering&r: real power lines for long distances."
 		"&bMekanism&r: ore lines that LaserIO can feed."
 	]
-	chapter.6E2C61BED7B0237E.title: "Logistics & Wireless"
+	chapter.6E2C61BED7B0237E.title: "Logistics \\& Wireless"
 	chapter.6E2C61BED7B0237E.chapter_subtitle: [
 		"Logic networks, laser item transport and (later) wireless power"
 	]
@@ -2327,7 +2327,7 @@
 	]
 	quest.4074520BE0443187.title: "Where next?"
 	quest.4074520BE0443187.quest_desc: [
-		"&cBosses & Combat&r: the Cataclysm bosses guard what this chapter needs."
+		"&cBosses \\& Combat&r: the Cataclysm bosses guard what this chapter needs."
 		"&5The End&r: the Dragon, and the Chaos Islands beyond."
 		"&bMekanism&r and &bOritech&r: the power you'll need."
 	]
@@ -2579,7 +2579,7 @@
 		""
 		"Needs an AE2 network first: see the AE2 chapter."
 	]
-	quest.43D61E0C34938183.title: "Ars Nouveau's Flavors & Delight"
+	quest.43D61E0C34938183.title: "Ars Nouveau's Flavors \\& Delight"
 	quest.43D61E0C34938183.quest_desc: [
 		"Magic food! &eArs Delight&r adds dishes made from Sourceberries, Archwood bark,"
 		"the magic fruits of Archwood trees, and even Wilden and Chimera meat."
@@ -2714,7 +2714,7 @@
 		"The &eDragonskin Spell Book&r needs Dragonskin, dropped by the Ender Dragon."
 		"Named spell books with special bonuses also hide around the world."
 	]
-	quest.3825657FDE6D1E99.title: "Ars 'n Spells and Iron & Nouveau"
+	quest.3825657FDE6D1E99.title: "Ars 'n Spells and Iron \\& Nouveau"
 	quest.3825657FDE6D1E99.quest_desc: [
 		"Two bridge mods tie Iron's to &dArs Nouveau&r:"
 		""
@@ -2722,7 +2722,7 @@
 		"writes an Ars spell onto a &eBlank Scroll&r (Blank Parchment + Source Gem). Bind that scroll"
 		"into an Iron's spell book and your Ars spell shows up on the spell wheel."
 		""
-		"&eIron & Nouveau&r: adds Ars glyphs that cast Iron's spells (Firebolt, Icicle, Heal,"
+		"&eIron \\& Nouveau&r: adds Ars glyphs that cast Iron's spells (Firebolt, Icicle, Heal,"
 		"Chain Lightning, Summon Vex...), so you can mix them into your own Ars spells."
 	]
 	quest.6D7DC7FDE0DAD663.title: "Apotheosis x Iron's Spells"
@@ -3623,9 +3623,9 @@
 		"an &eUncrafting Table&r, which takes items apart again (for XP)."
 		"Great for recycling armor you've outgrown."
 	]
-	quest.7BA30D564B505571.title: "Twilight's Flavor & Delight"
+	quest.7BA30D564B505571.title: "Twilight's Flavor \\& Delight"
 	quest.7BA30D564B505571.quest_desc: [
-		"&eTwilight's Flavor & Delight&r turns Twilight ingredients into Farmer's Delight dishes:"
+		"&eTwilight's Flavor \\& Delight&r turns Twilight ingredients into Farmer's Delight dishes:"
 		"torchberry cakes, fried hydra chop, ghast burgers and more."
 		""
 		"Pick up boss drops and odd meats: most of them cook into something."
@@ -3716,7 +3716,7 @@
 		""
 		"&bThe Aether&r: another magic dimension, but up in the sky."
 		"&5Deeper and Darker&r: the Warden's world under the deep dark."
-		"&cBosses & Combat&r: Cataclysm's bosses, for when you're well geared."
+		"&cBosses \\& Combat&r: Cataclysm's bosses, for when you're well geared."
 	]
 	chapter.3493492EEC039526.title: "The Twilight Forest"
 	chapter.3493492EEC039526.chapter_subtitle: ["A magic forest and a chain of bosses"]
@@ -3953,7 +3953,7 @@
 		""
 		"&5The End&r: Warden gear is a great way to face the Ender Dragon."
 		"&cThe Pokémon World&r: ancient city chests are a good place to find a Bell Fragment."
-		"&cBosses & Combat&r: Cataclysm's bosses."
+		"&cBosses \\& Combat&r: Cataclysm's bosses."
 	]
 	chapter.67DA74D25631D972.title: "Deeper and Darker"
 	chapter.67DA74D25631D972.chapter_subtitle: ["The Warden, its city and the Otherside"]
@@ -4083,7 +4083,7 @@
 	quest.34BEB6E711D5EA04.quest_desc: [
 		"Space is a long road with boss gates on the way:"
 		""
-		"&cBosses & Combat&r: Ignis, the Netherite Monstrosity and the Ender Guardian (Cataclysm)"
+		"&cBosses \\& Combat&r: Ignis, the Netherite Monstrosity and the Ender Guardian (Cataclysm)"
 		"unlock the bigger rockets."
 		"&bTech&r: better generators make space machines easier to run."
 	]
@@ -4231,7 +4231,7 @@
 	quest.39AFFA04EBA96910.quest_desc: [
 		"The End is beaten, but the pack isn't:"
 		""
-		"&cBosses & Combat&r: the &5Ender Guardian&r (Cataclysm) unlocks cross-dimension wireless."
+		"&cBosses \\& Combat&r: the &5Ender Guardian&r (Cataclysm) unlocks cross-dimension wireless."
 		"&bAd Astra&r: rockets to other planets."
 		"&bTech&r: the late tiers of Mekanism, AE2 and Draconic Evolution."
 	]
@@ -4390,7 +4390,7 @@
 	]
 	chapter.50AE8F5C17F0FC59.title: "The Pokémon World"
 	chapter.50AE8F5C17F0FC59.chapter_subtitle: ["Build a portal, pick a partner, catch them all"]
-	quest.2278F8B050E916A0.title: "What is Combat & Gear?"
+	quest.2278F8B050E916A0.title: "What is Combat \\& Gear?"
 	quest.2278F8B050E916A0.quest_desc: [
 		"Fighting in Strata feels different from vanilla:"
 		""
@@ -4623,7 +4623,7 @@
 		""
 		"&dIron's Spells&r has its own Apotheosis gems and affixes for spellcasters."
 	]
-	chapter.6B35C68669169B11.title: "Combat & Gear"
+	chapter.6B35C68669169B11.title: "Combat \\& Gear"
 	chapter.6B35C68669169B11.chapter_subtitle: ["Weapons, dodging, Apotheosis loot, gems and enchanting"]
 	quest.2842BDBFC2178FC0.title: "What is Cataclysm?"
 	quest.2842BDBFC2178FC0.quest_desc: [
@@ -4961,7 +4961,7 @@
 	]
 	quest.44F426E82F4FC258.title: "Where Next?"
 	quest.44F426E82F4FC258.quest_desc: [
-		"&cCombat & Gear&r: socket gems into your dragonsteel."
+		"&cCombat \\& Gear&r: socket gems into your dragonsteel."
 		"&cL_Ender's Cataclysm&r and &cBoss Hunter&r: more giant fights."
 		"&5The End&r: the Ender Dragon, which you need before riding your own."
 	]
@@ -5221,7 +5221,7 @@
 	quest.61DF64BC56C2440E.quest_desc: [
 		"&cL_Ender's Cataclysm&r: the bosses that unlock late tech."
 		"&cIce and Fire&r: dragons."
-		"&cCombat & Gear&r: salvage and reforge the loot you've collected."
+		"&cCombat \\& Gear&r: salvage and reforge the loot you've collected."
 	]
 	chapter.17453874FC2A4812.title: "Boss Hunter"
 	chapter.17453874FC2A4812.chapter_subtitle: ["Bosses from every corner of the world"]
@@ -5332,7 +5332,7 @@
 	quest.25D0290239883655.title: "Treats for Pets"
 	quest.25D0290239883655.quest_desc: [
 		"&eDog Food&r feeds and heals tamed wolves, and &eHorse Feed&r heals horses."
-		"Spoil your friends! See the &aPets & Critters&r chapter."
+		"Spoil your friends! See the &aPets \\& Critters&r chapter."
 	]
 	quest.5F0241BC1E057665.title: "A Varied Diet"
 	quest.5F0241BC1E057665.quest_desc: [
@@ -5426,12 +5426,12 @@
 	quest.6E9B5732FA7A4EAE.quest_desc: [
 		"Your kitchen is open for business! Where to now?"
 		""
-		"&aPets & Critters&r: tame a friend and feed it treats."
-		"&aBuilding & Decorating&r: give your kitchen a cosy home."
+		"&aPets \\& Critters&r: tame a friend and feed it treats."
+		"&aBuilding \\& Decorating&r: give your kitchen a cosy home."
 		"&aFishing&r: fish are great food (Ocean's Delight has seafood recipes)."
 		"&bCreate&r chapters: automate your farm and kitchen with machines later on."
 	]
-	chapter.4D2C5E2A05400DB9.title: "Farming & Food"
+	chapter.4D2C5E2A05400DB9.title: "Farming \\& Food"
 	chapter.4D2C5E2A05400DB9.chapter_subtitle: ["Grow it, cook it, share it. Eating well makes you stronger!"]
 	quest.54257CD45A6BC403.title: "What's Out There?"
 	quest.54257CD45A6BC403.quest_desc: [
@@ -5565,7 +5565,7 @@
 	task.5DBD7FD935EF1425.title: "Build a Copper Golem"
 	quest.05C9B21F3A505DE2.title: "Friends and Foes"
 	quest.05C9B21F3A505DE2.quest_desc: [
-		"&eFriends & Foes&r brings back mobs from the Minecraft mob votes: flower cows"
+		"&eFriends \\& Foes&r brings back mobs from the Minecraft mob votes: flower cows"
 		"(&eMooblooms&r), little &eGlares&r that find dark spots, crabs, penguins and more."
 		""
 		"Build a &eCopper Golem&r the way you'd build a snow golem, from a copper block,"
@@ -5619,12 +5619,12 @@
 	quest.57CF65389CD82A98.quest_desc: [
 		"You've made lots of new friends! What now?"
 		""
-		"&aFarming & Food&r: cook Dog Food and Horse Feed for your pets."
-		"&aBuilding & Decorating&r: build your pets a cozy home."
+		"&aFarming \\& Food&r: cook Dog Food and Horse Feed for your pets."
+		"&aBuilding \\& Decorating&r: build your pets a cozy home."
 		"&aFishing&r: cats love fish, and there are hundreds to catch."
 		"&aExplorer's Guide&r: the farther you go, the stranger the animals."
 	]
-	chapter.70A7A127DD644E5C.title: "Pets & Critters"
+	chapter.70A7A127DD644E5C.title: "Pets \\& Critters"
 	chapter.70A7A127DD644E5C.chapter_subtitle: ["Tame a friend, meet the wildlife, collect plushies"]
 	quest.791208BAC6B60C6B.title: "What Can I Build?"
 	quest.791208BAC6B60C6B.quest_desc: [
@@ -5698,12 +5698,12 @@
 	]
 	quest.2647941D62D41D5E.title: "Let There Be Lamps"
 	quest.2647941D62D41D5E.quest_desc: [
-		"&eMacaw's Lights & Lamps&r: hanging lanterns, paper lamps, street lamps,"
+		"&eMacaw's Lights \\& Lamps&r: hanging lanterns, paper lamps, street lamps,"
 		"tiki torches and lava lamps. A cozy house needs warm lights!"
 	]
 	quest.70E3224746EC9E2E.title: "Garden Paths"
 	quest.70E3224746EC9E2E.quest_desc: [
-		"&eMacaw's Paths & Pavings&r turns stone into pretty garden paths."
+		"&eMacaw's Paths \\& Pavings&r turns stone into pretty garden paths."
 		"&eMacaw's Bridges&r has rope bridges and stone bridges for crossing rivers."
 	]
 	quest.6CA9C679562543A0.title: "Another Furniture"
@@ -5791,11 +5791,11 @@
 		"Your house looks great! Next:"
 		""
 		"&aStorage&r: chests, drawers and a storage system to keep it tidy."
-		"&aFarming & Food&r: a kitchen and a garden to go with it."
-		"&aPets & Critters&r: someone to share it with."
+		"&aFarming \\& Food&r: a kitchen and a garden to go with it."
+		"&aPets \\& Critters&r: someone to share it with."
 		"&bCreate&r chapters: Create Deco adds industrial blocks (and a Create house is fun too)."
 	]
-	chapter.3F317967CDFC610F.title: "Building & Decorating"
+	chapter.3F317967CDFC610F.title: "Building \\& Decorating"
 	chapter.3F317967CDFC610F.chapter_subtitle: [
 		"Thousands of blocks, comfy furniture and tools that build for you"
 	]
@@ -5928,7 +5928,7 @@
 		"&bApplied Energistics 2&r (in the Tech chapters) stores items as data on drives."
 		"Thousands of items in one computer, with autocrafting!"
 		""
-		"&aBuilding & Decorating&r: make your storage room look nice too."
+		"&aBuilding \\& Decorating&r: make your storage room look nice too."
 	]
 	chapter.0E77E388D0A9F0D1.title: "Storage"
 	chapter.0E77E388D0A9F0D1.chapter_subtitle: [
@@ -6062,8 +6062,8 @@
 	quest.4BFFED305499B246.quest_desc: [
 		"You're a real angler now! Where next?"
 		""
-		"&aFarming & Food&r: fish count toward your varied diet."
-		"&aPets & Critters&r: cats love fish, and otters live by rivers."
+		"&aFarming \\& Food&r: fish count toward your varied diet."
+		"&aPets \\& Critters&r: cats love fish, and otters live by rivers."
 		"&aExplorer's Guide&r: new dimensions mean new fish for the journal."
 	]
 	chapter.47D27CD163EA5FE4.title: "Fishing"

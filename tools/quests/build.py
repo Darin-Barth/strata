@@ -9,6 +9,7 @@ whole quests folder: it is wiped and rewritten on every build, so make lasting e
 """
 import importlib
 import os
+import re
 import shutil
 import sys
 
@@ -22,6 +23,14 @@ from snbt import Double, Float, Long  # noqa: E402
 REPO = os.path.normpath(os.path.join(HERE, "..", ".."))
 OUT = os.path.join(REPO, "config", "ftbquests", "quests")
 FILE_ID = "0000000000000001"
+
+
+# FTB Quests reads "&" as a colour/format code; a literal ampersand must be written "\&".
+AMP_RE = re.compile(r"(?<!\\)&(?![0-9a-fk-orA-FK-OR])")
+
+
+def escape_amp(text):
+    return AMP_RE.sub(lambda m: "\\&", text)
 
 
 def build(out=OUT, only=None):
@@ -169,6 +178,7 @@ def build(out=OUT, only=None):
         snbt.write(os.path.join(OUT, "chapters", key + ".snbt"), cd)
     for key, td in tables_out:
         snbt.write(os.path.join(OUT, "reward_tables", key + ".snbt"), td)
+    lang = {k: ([escape_amp(x) for x in v] if isinstance(v, list) else escape_amp(v)) for k, v in lang.items()}
     snbt.write(os.path.join(OUT, "lang", "en_us.snbt"), lang)
     nq = sum(len(c.quests) for c in chapters)
     print(f"wrote {len(chapters)} chapters, {nq} quests, {len(tables_out)} reward tables to {OUT}")
