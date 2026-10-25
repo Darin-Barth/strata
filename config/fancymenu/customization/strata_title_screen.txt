@@ -44,8 +44,8 @@ element {
   element_type = splash_text
   instance_identifier = strata_tagline
   anchor_point = top-centered
-  x = 64
-  y = 80
+  x = 56
+  y = 84
   width = 100
   height = 20
   stay_on_screen = false
