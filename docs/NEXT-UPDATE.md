@@ -5,6 +5,10 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **Hotfix: JEI, Just Enough Resources and MezzConfig removed.** JEI built its recipe index on the game's main thread when
+  joining a server (about 60 seconds with this pack), so slower clients froze on "Loading terrain" and were timed out
+  (Lopez, Oct 25). EMI is the recipe viewer; EMI Ores, Advanced Loot Info and Just Enough Breeding cover what JER
+  showed. Two quests now point to EMI instead of JER.
 - **Quieter first join** (e5ac5ea):
   - Inventory Pets' update notice is off.
   - Distant Horizons' G1 garbage-collector warning is off. The joining guide now tells players to add

@@ -25,7 +25,7 @@
 		""
 		"Hover over any item (in your inventory or the item list on the right) and press &eR&r to see how to make it, or &eU&r to see what it's used for."
 		""
-		"Type in the search bar to find items. Start with &e@&r to search by mod (&e@create&r). Just Enough Resources shows what mobs drop and the best heights to mine each ore."
+		"Type in the search bar to find items. Start with &e@&r to search by mod (&e@create&r). EMI also shows the best heights to mine each ore, what mobs and chests drop, and how to breed animals."
 	]
 	quest.05FD01447273E1AF.title: "Timber!"
 	quest.05FD01447273E1AF.quest_desc: [
@@ -275,7 +275,7 @@
 	]
 	quest.2B21940EBDCD3028.title: "Zinc"
 	quest.2B21940EBDCD3028.quest_desc: [
-		"&eZinc&r is Create's own ore. Look for it underground (Just Enough Resources shows the best heights: press &eR&r on zinc ore)."
+		"&eZinc&r is Create's own ore. Look for it underground (EMI Ores shows the best heights: press &eR&r on zinc ore)."
 		""
 		"Smelt it into ingots. Crushing it first gives more."
 	]

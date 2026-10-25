@@ -250,7 +250,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b239cef09177044a10db23fa37c7d54af5c6b0d55587fdd5350d35d831525308"
+hash = "f5b40deb7d25ac364abcdbe1229b0f9c1afe9d47b6e06713b34900c4e111dfaf"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -4778,18 +4778,8 @@ hash = "4de3e4a1a49e332c1ad313283e0403c4273b628d634c17a9ff0c9da3d6b67f9a"
 metafile = true
 
 [[files]]
-file = "mods/jei.pw.toml"
-hash = "2ffd0c6ed2e981835168a60cb3418482223ee02d22dd35d0bb541774fa89f81c"
-metafile = true
-
-[[files]]
 file = "mods/jupiter.pw.toml"
 hash = "a3d803079f7cba47f9d6bf728198f2c335a13938ef50bbdaa3f7ae2457bef58d"
-metafile = true
-
-[[files]]
-file = "mods/just-enough-resources-jer.pw.toml"
-hash = "2c8f12bbade7f10e80f2a5a9ad4bf89f0c3929f588d2bd02a6bbedd9372fefe4"
 metafile = true
 
 [[files]]
@@ -4975,11 +4965,6 @@ metafile = true
 [[files]]
 file = "mods/mes-moogs-end-structures.pw.toml"
 hash = "66e27964c598c333a9082695989d293e554c42a8a295c6cfdc56685bb01d0f4e"
-metafile = true
-
-[[files]]
-file = "mods/mezzconfig.pw.toml"
-hash = "cf5d87f046590b99d92096a79f6ea2f456290ba5d423c256f06674d2d10a1592"
 metafile = true
 
 [[files]]

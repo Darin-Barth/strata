@@ -24,7 +24,7 @@ Test for any mod: keep if it adds a different way to play; question it if it dup
 - **Combat**: Better Combat + Apothic Combat + Combat Roll. Not Epic Fight.
 - **Magic bridges**: Ars 'n Spells + Iron & Nouveau (never also Ars↔Iron Mana Bridge), Ars Ocultas, Ars Énergistique, Ars Creo, Apotheosis×Iron's, Vampirism×Iron's.
 - **Worldgen**: Tectonic + Regions Unexplored + Streams Reflowing. No Terralith, no Dynamic Trees, no C2ME. Incendium (not with Amplified Nether), Nullscape. Pregenerate with Chunky.
-- **Client/visual**: every heavy visual is client-only and optional. Sodium (not Embeddium) + Iris. EMI is the recipe viewer; JEI is installed alongside only so JEI plugins (JER) work. Botania and Ars Botania are out (no 1.21.1 build). Curios is the accessory standard (Accessories only if a mod needs it).
+- **Client/visual**: every heavy visual is client-only and optional. Sodium (not Embeddium) + Iris. EMI is the only recipe viewer (EMI Ores, Advanced Loot Info and Just Enough Breeding cover what JER did). JEI and JER were removed Oct 25: JEI builds its recipe index on the client's main thread when joining (about 60 s with this pack), which timed players out. Botania and Ars Botania are out (no 1.21.1 build). Curios is the accessory standard (Accessories only if a mod needs it).
 - **Pokémon**: Cobblemon in its own dimension (datapack, own namespace); wild spawns disabled elsewhere; riding allowed everywhere. Built after the base pack is stable.
 
 ## Phase plan

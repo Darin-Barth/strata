@@ -26,7 +26,7 @@ q("recipes", "What's That Recipe?", deps="welcome", icon="minecraft:crafting_tab
     &eR&r to see how to make it, or &eU&r to see what it's used for.
 
     Type in the search bar to find items. Start with &e@&r to search by mod (&e@create&r).
-    Just Enough Resources shows what mobs drop and the best heights to mine each ore.""")
+    EMI also shows the best heights to mine each ore, what mobs and chests drop, and how to breed animals.""")
 
 q("timber", "Timber!", deps="recipes", icon="minecraft:iron_axe",
   tasks=[item("minecraft:crafting_table"), item("minecraft:stick", 16)], desc="""

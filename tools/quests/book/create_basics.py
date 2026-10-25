@@ -169,7 +169,7 @@ q("harvester", "Farming Machines", deps="contraptions", icon="create:mechanical_
 # --- brass ----------------------------------------------------------------------------------
 q("zinc", "Zinc", deps="alloy", icon="create:raw_zinc",
   tasks=item("create:raw_zinc", 16), desc="""
-    &eZinc&r is Create's own ore. Look for it underground (Just Enough Resources shows the
+    &eZinc&r is Create's own ore. Look for it underground (EMI Ores shows the
     best heights: press &eR&r on zinc ore).
 
     Smelt it into ingots. Crushing it first gives more.""",
