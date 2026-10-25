@@ -51,6 +51,10 @@ file = "kubejs/data/iceandfire/tags/worldgen/biome/structure_gen/ice.json"
 hash = "a02f79185a598611f50cc35d94fad5f459bd38c55f9062612a9648d292eb54f9"
 
 [[files]]
+file = "kubejs/data/integrated_stronghold/worldgen/processor_list/portal_room_processor.json"
+hash = "1eb552fa44b9cdcb5b9c564aab2cbef559ac5b4687e27975ce98eafdaff72bf9"
+
+[[files]]
 file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
 hash = "c8ea0ee29eccaeec1274db06ba1a812ff2ddf0de921607922c21c170e193631e"
 
