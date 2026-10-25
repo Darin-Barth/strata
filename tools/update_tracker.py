@@ -416,6 +416,7 @@ NEW_ROWS = [
     ('Crystal Chronicles', 'Magic: bridge', 'Magic', None, 'Both', 'Keep', C, 'Worldgen', "Iron's Spells add-on (alpha): own dimension plus an End sub-biome", 'MR crystal-chronicles crystal_chronicles-0.0.9.jar'),
     ('WaterFrames', 'Building', 'Life', None, 'Both', 'Keep', C, None, 'Picture/video frames from URLs (WATERMeDIA + WATERViSION alpha player)', 'MR waterframes waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar'),
     ('Oritech', 'Tech', 'Tech', None, 'Both', 'Keep', C, 'Gate', 'Picked over Modern Industrialization (Oct 25). Exosuit/jetpack flight must cost power', 'MR oritech oritech-neoforge-1.21.1-1.2.13.jar'),
+    ('Cubes Without Borders', 'QoL', 'Core', None, 'Client', 'Keep', C, None, 'Borderless fullscreen window option (Darin, Oct 25)', 'MR cubes-without-borders 5.0.0+1.21.0.neoforge'),
     ('Unusual End', 'Dimensions', 'Exploration', None, 'Both', 'Maybe', C, 'Worldgen', 'Tested Oct 24: with Nullscape only 0.1% of End chunks get its biomes. Not worth it unless Nullscape goes', 'MR unusual-end 2.3.1b'),
     ('Draconic Evolution', 'Tech', 'Tech', None, 'Both', 'Maybe', C, 'Gate', 'Added Oct 25 (Darin: if it does not break anything). Beta. Armor flight is power-costed; adds Draconium ore in all three dimensions', 'MR draconic-evolution 3.1.4.633 (beta)'),
     # Strata branding (Oct 25): title screen, loading screens
