@@ -259,7 +259,7 @@ STATUS = {
     "Botania": "Cut", "Ars Botania": "Cut", "Blue Skies": "Cut", "Dimension Gated Difficulty": "Cut",
     "Continuity": "Cut", "Majrusz's Progressive Difficulty Continued": "Cut",
     "Spice of Life: Onion": "Keep", "Neo Vitae": "Keep", "The Aether": "Keep",
-    "Alex's Mobs Continued": "Keep", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
+    "Alex's Mobs Continued": "Keep", "Undergarden": "Cut", "Accessories + Accessories Compatibility Layer": "Cut", "Create: Better Motors": "Cut", "Unusual End": "Cut", "Bosses of Mass Destruction (Forge port)": "Keep", "Plushie Mod": "Keep",
 }
 
 # New rows: (Mod, Category, Pillar, Needs, Side, Status, 1.21.1 NeoForge, Flags, Notes, Lookup)
