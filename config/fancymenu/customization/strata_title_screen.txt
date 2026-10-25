@@ -22,6 +22,17 @@ menu_background {
 }
 
 customization {
+  action = setscale
+  scale = 1
+}
+
+customization {
+  action = autoscale
+  basewidth = 480
+  baseheight = 270
+}
+
+customization {
   action = backgroundoptions
   keepaspectratio = true
 }

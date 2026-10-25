@@ -41,23 +41,22 @@ element {
 }
 
 element {
-  element_type = text_v2
+  element_type = splash_text
   instance_identifier = strata_loading_tagline
   anchor_point = mid-centered
-  x = -100
-  y = 40
-  width = 200
-  height = 12
+  x = 71
+  y = 21
+  width = 100
+  height = 20
   stay_on_screen = false
-  source = ^^^Build. Fly. Explore.^^^
+  source = Build. Fly. Explore.
   source_mode = direct
   shadow = true
-  scale = 1.0
-  base_color = #F3E7CF
-  text_border = 0
-  enable_scrolling = false
-  auto_line_wrapping = false
-  interactable = false
+  bouncing = true
+  refresh = false
+  scale = 1.25
+  rotation = -20.0
+  base_color = #FFFF00
 }
 
 vanilla_button {
