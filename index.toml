@@ -269,6 +269,10 @@ file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
 hash = "0ea63a12f7606224e5700bd4944500ccb3f94e102df02f667fc2cdeb8b96a4e2"
 
 [[files]]
+file = "config/guardvillagers-common.toml"
+hash = "1ab9b8f4909302c57f1177fcef3489752ad7e0767fedeef1211bc451a103771a"
+
+[[files]]
 file = "config/iceandfire/iaf-client.json"
 hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
