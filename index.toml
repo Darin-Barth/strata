@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "3908aed7259b4c416ce6a82954143dcf325d1b004b56e0213996fcfe26812e4a"
+hash = "fb793f96e8295ee813b67989024f80d614ce93df912e8879ceb44a5c0302255c"
 preserve = true
 
 [[files]]
@@ -261,6 +261,10 @@ file = "config/iceandfire/iaf-client.json"
 hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
+file = "config/inventorypets-common.toml"
+hash = "04821b12229970efa59fb29612a4d492d3778fa79a0194258c03d99f447fe888"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
 
@@ -300,6 +304,10 @@ hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
 [[files]]
 file = "icon.png"
 hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
+
+[[files]]
+file = "kubejs/assets/irons_nouveau/lang/en_us.json"
+hash = "d25f2253a4497657601104ef956556dfb69acbb506aa6eb6fecaba447e2d8e2f"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/block/poke_portal_frame.png"

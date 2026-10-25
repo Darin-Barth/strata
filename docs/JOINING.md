@@ -13,6 +13,15 @@ Strata is a big modpack (about 400 mods). It runs on Minecraft 1.21.1 with NeoFo
 Open the Strata instance → **Settings → Java and memory** → set memory to **10–12 GB** (8 GB minimum).
 Less than that and the game stutters or crashes.
 
+In the same screen, under **Java arguments**, add:
+
+```
+-XX:+UseZGC -XX:+ZGenerational
+```
+
+This switches Java to a garbage collector that doesn't freeze the game for big cleanups, so there's much less stutter
+(Distant Horizons recommends it too).
+
 ## 3. Join
 **Multiplayer → Add Server**, address: **strata.dev-duo.com**. The server has a whitelist; ask Darin if you can't
 get in.

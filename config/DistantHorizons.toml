@@ -213,12 +213,12 @@ _version = 5
 			# If enabled, a message will be logged if the garbage 
 			# collector Java is currently using is known 
 			# to cause frame stuttering and/or other issues.
-			logGarbageCollectorWarning = true
+			logGarbageCollectorWarning = false
 			#
 			# If enabled, a chat message will be displayed in chat if the garbage 
 			# collector Java is currently using is known 
 			# to cause frame stuttering and/or other issues.
-			showGarbageCollectorWarning = true
+			showGarbageCollectorWarning = false
 
 	[common.worldGenerator]
 		#
