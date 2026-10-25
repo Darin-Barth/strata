@@ -1675,8 +1675,24 @@ file = "kubejs/data/minecraft/tags/worldgen/structure/ocean_ruin.json"
 hash = "c727748331fca70b57131471c2108a2b4102aa18bbe7b01978953e35c04ef94d"
 
 [[files]]
+file = "kubejs/data/minecraft/tags/worldgen/structure/on_ancient_city_maps.json"
+hash = "fc8b80d83d0ae38c272ef8948f150ec59238f867936ba7c3c6ae2a0fc0b8db98"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/worldgen/structure/on_desert_pyramid_maps.json"
+hash = "9493ab464c443edc984bc14ae13aa0293744b636fe3a52db4d46dfdfd4a4eb60"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/worldgen/structure/on_mineshaft_maps.json"
+hash = "89b7e5065b5adaa4e842892f9a934850014255001d9d2a446f56fabd3815f45e"
+
+[[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/on_ocean_explorer_maps.json"
 hash = "dc02fb43e05c5b8671fe36717e87e66ea8b047df95dc239abbed47d7a69f6509"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/worldgen/structure/on_ocean_ruin_warm_maps.json"
+hash = "479e8dcb6ebdb147cc665799082ba22b67e53ea551cfd11f2f22bc65cc54155e"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/on_treasure_maps.json"
