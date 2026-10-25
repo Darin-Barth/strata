@@ -281,6 +281,10 @@ file = "config/rctmod-server.toml"
 hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
 
 [[files]]
+file = "config/simplebackups-common.toml"
+hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
+
+[[files]]
 file = "config/streamsreflowing.properties"
 hash = "a75b392dc720397c13522e1654d876b502e4261b8ea30a1a7c18c37e8f0b184d"
 
