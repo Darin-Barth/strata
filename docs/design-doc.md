@@ -209,6 +209,7 @@ These are the tweaks that make the pack feel designed rather than piled together
 - [ ] Vampirism: PvP between factions only
 - [ ] Almost Unified: pick preferred ores/ingots
 - [x] Pokémon world datapack, spawns, starter/HUD and portal (Oct 24; see Pokémon world section)
+- [ ] After the Pokémon world retest passes: add CobblemonOptimizer (MR `cobblemonoptimizer` 5.0.0, NeoForge, MIT) as Keep, server-side, and test it (Darin, Oct 24). It throttles and freezes distant Pokémon and cuts spawns when TPS drops.
 - [ ] Ice and Fire CE dragon riding is free flight: decide how it fits the flight rule (earned only, e.g. a fully grown tamed dragon, and/or a stamina or food cost). Dragon Meal Taming was not added.
 - [ ] Create Stuff & Additions jetpacks and Building Gadgets 2 copy-paste: check against the flight rule and set a sane block limit.
 - [ ] ChoiceTheorem's Overhauled Village and Aquamirae add structures: settle their configs before pregeneration.
