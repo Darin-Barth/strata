@@ -1,0 +1,13 @@
+name = "Ars Trinkets"
+filename = "ars_trinkets-1.21.1-3.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "07266afd853dbf1e10040efc70f3e312fb281f2f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8886812
+project-id = 950506

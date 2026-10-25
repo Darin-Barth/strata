@@ -1,0 +1,13 @@
+name = "Locked In Slots"
+filename = "LockedInSlots-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9086d0acb6808551b784242489ca956e63f13eb5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8787845
+project-id = 1563534

@@ -46,7 +46,21 @@ MR=(
   l_enders-cataclysm-delight the-aethers-delight sdlink
   # Undeclared deps found in the first server boot
   kambrik terrablender
-  custom-window-title
+  custom-window-title caelus vanillabackport integrated-villages
+  # Wave 3 (Oct 24)
+  effortless-building building-wands rechiseled rechiseled-create framedblocks mech-trowel
+  guard-villagers easy-villagers trade-cycling smarter-farmers-farmers-replant deep-aether
+  create-stuff-additions create-stuff-n-additions-x-sable-aeronautics-compat aquamirae
+  # Wave 4 (Oct 24): gap-analysis picks (docs/mod-gap-analysis.md)
+  embers-floating-islands sky-whale-ship moogs-voyager-structures kobolds hopo-better-ruined-portals
+  when-dungeons-arise-seven-seas integrated-seven-seas upgrade-aquatic tidal-towns oceans-delight
+  illager-warship illager-war-trireme mns-moogs-nether-structures nether-depths-upgrade my-nethers-delight
+  eternal-nether mes-moogs-end-structures endrem aether-villages aether-treasure-reforging horseman
+  horse-expert xaeros-minimap-world-map-waystones-compatibility-forge simply-swords extended-crafting
+  legendary-monsters create-ore-excavation ars-additions theurgy brewin-and-chewin lets-do-vinery
+  amendments enchantment-descriptions torchmaster crafting-tweaks jade-addons-forge crash-assistant
+  ping-wheel ping-to-map-xaeros neruina packet-fixer structure-layout-optimizer async-locator-refined
+  fastsuite dynamic-fps moreculling sodium-extra
 )
 
 CF=(
@@ -55,6 +69,14 @@ CF=(
   integrated-cataclysm forsaken-relics the-twilight-forest
   mob-grinding-utils creatures-and-beasts-continued ex-pattern-provider alltheleaks macaws-stairs
   falling-leaves-forge cosmetic-armor-reworked
+  # Friend's list (Oct 24)
+  bossesrise qliphoth-awakening cinematic-cataclysm gtbcs-cataclysmic-boss-ui cataclysm-spellbooks
+  apprentices-codex starbunclemania ars-trinkets playerrevive locked-in-slots mighty-mail
+  what-are-they-up-to meccha-crafteleon hyperbox
+  # Wave 3 (Oct 24). Chisels & Bits was tried and cut: it fails to load on 1.21.1
+  building-gadgets more-red choicetheorems-overhauled-village iceandfire-ce
+  # Wave 4. Both pull in Ars Nouveau's CurseForge copy: restore mods/ars-nouveau.pw.toml afterwards
+  ars-elemental croptopia
 )
 
 for s in "${MR[@]}"; do
