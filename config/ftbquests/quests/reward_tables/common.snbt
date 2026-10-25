@@ -1,0 +1,80 @@
+{
+	id: "27B22058501FC0DC"
+	order_index: 0
+	icon: { id: "minecraft:bundle" }
+	loot_size: 1
+	rewards: [
+		{
+			id: "145F5E60F004CC64"
+			item: { count: 1, id: "minecraft:bread" }
+			count: 16
+			weight: 10.0f
+		}
+		{
+			id: "02E75209B02651F9"
+			item: { count: 1, id: "minecraft:cooked_beef" }
+			count: 12
+			weight: 8.0f
+		}
+		{
+			id: "48441FFEB05F5095"
+			item: { count: 1, id: "minecraft:torch" }
+			count: 64
+			weight: 10.0f
+		}
+		{
+			id: "404F0C2E12BBF61C"
+			item: { count: 1, id: "minecraft:iron_ingot" }
+			count: 12
+			weight: 10.0f
+		}
+		{
+			id: "3606ADE62DC08259"
+			item: { count: 1, id: "minecraft:copper_ingot" }
+			count: 24
+			weight: 8.0f
+		}
+		{
+			id: "3002415958555522"
+			item: { count: 1, id: "minecraft:coal" }
+			count: 32
+			weight: 10.0f
+		}
+		{
+			id: "34CFEDC714CF87CC"
+			item: { count: 1, id: "minecraft:oak_log" }
+			count: 32
+			weight: 8.0f
+		}
+		{
+			id: "2B8B49F1042A28F2"
+			item: { count: 1, id: "minecraft:experience_bottle" }
+			count: 6
+			weight: 6.0f
+		}
+		{
+			id: "64AD520CA31F0A1A"
+			item: { count: 1, id: "minecraft:arrow" }
+			count: 32
+			weight: 5.0f
+		}
+		{
+			id: "22C49BD7D4748AE6"
+			item: { count: 1, id: "minecraft:leather" }
+			count: 12
+			weight: 5.0f
+		}
+		{
+			id: "0C28438B95829467"
+			item: { count: 1, id: "minecraft:string" }
+			count: 16
+			weight: 5.0f
+		}
+		{
+			id: "528EFC34340D6A14"
+			item: { count: 1, id: "minecraft:bone_meal" }
+			count: 24
+			weight: 5.0f
+		}
+	]
+}

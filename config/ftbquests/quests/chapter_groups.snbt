@@ -1,0 +1,24 @@
+{
+	chapter_groups: [
+		{
+			id: "2EAA9718BAF5A32A"
+			icon: { id: "create:cogwheel" }
+		}
+		{
+			id: "03203A1312E25E36"
+			icon: { id: "ars_nouveau:novice_spell_book" }
+		}
+		{
+			id: "76581968F62E459A"
+			icon: { id: "minecraft:filled_map" }
+		}
+		{
+			id: "2EC6052336A88AD1"
+			icon: { id: "minecraft:netherite_sword" }
+		}
+		{
+			id: "46FD3EC1FE1391C7"
+			icon: { id: "farmersdelight:cooking_pot" }
+		}
+	]
+}

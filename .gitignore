@@ -3,3 +3,4 @@ tools/review.txt
 __pycache__/
 build/
 server/
+tools/quests/.cache/
