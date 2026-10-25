@@ -22,6 +22,11 @@ PlayerEvents.tick(event => {
   const uuid = String(player.uuid)
   if (starterOfferedThisLogin.has(uuid)) return
   starterOfferedThisLogin.add(uuid)
-  if (CobblemonMain.INSTANCE.getPlayerDataManager().getGenericData(player).getStarterSelected()) return
+  // getGenericData has ServerPlayer and UUID overloads, which Rhino can't choose between for a
+  // player; name the UUID one explicitly.
+  // let + a unique name: a test of this call with `const data` failed with Rhino's
+  // "redeclaration of var data".
+  let starterPlayerData = CobblemonMain.INSTANCE.getPlayerDataManager()['getGenericData(java.util.UUID)'](player.getUUID())
+  if (starterPlayerData.getStarterSelected()) return
   event.server.runCommandSilent(`openstarterscreen ${player.username}`)
 })
