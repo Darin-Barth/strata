@@ -1,0 +1,13 @@
+name = "VillagersTradingPlus"
+filename = "villagertradingplus-neoforge-mc1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DhOXUfnP/versions/Ytd38SYV/villagertradingplus-neoforge-mc1.21.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "6b3c19820a2deacd9ceb9da4c8f011856002ea1570f6d2c4057f6e9ff2cc4a7f8d92cb19b188287e931360347ca9ff3f12d0210d45b217ec5bdc30594660d6ee"
+
+[update]
+[update.modrinth]
+mod-id = "DhOXUfnP"
+version = "Ytd38SYV"

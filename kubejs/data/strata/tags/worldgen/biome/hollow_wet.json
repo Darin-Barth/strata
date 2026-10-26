@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "strata:hollow_swamp",
+    "strata:hollow_mangrove",
+    "strata:hollow_fungal_fen"
+  ]
+}

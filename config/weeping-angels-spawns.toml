@@ -1,0 +1,30 @@
+[spawn]
+	#The minimum amount of 'Weeping Angels' that spawn at each spawn attempt
+	# Default: 1
+	# Range: 1 ~ 100
+	minCount = 1
+	#The maximum amount of 'Weeping Angels' that spawn at each spawn attempt
+	# Default: 4
+	# Range: 1 ~ 100
+	maxCount = 2
+	#The weight of spawn in relation to other mods 'Weeping Angels' will spawn in. Less than 100 = Rarer
+	# Default: 8
+	# Range: > 1
+	spawn_weight = 5
+	#'Weeping Angel' spawn classification
+	#Allowed Values: MONSTER, CREATURE, AMBIENT, AXOLOTLS, UNDERGROUND_WATER_CREATURE, WATER_CREATURE, WATER_AMBIENT, MISC, AETHER_AETHER_AERWHALE, AETHER_AETHER_DARKNESS_MONSTER, AETHER_AETHER_SKY_MONSTER, AETHER_AETHER_SURFACE_MONSTER, FRIENDSANDFOES_GLARES, FRIENDSANDFOES_RASCALS, VAMPIRISM_HUNTER, VAMPIRISM_VAMPIRE, WEREWOLVES_WEREWOLF
+	spawnType = "MONSTER"
+	#Natural spawning stops once this many 'Weeping Angels' are already within 'nearby_radius' blocks of the spawn position. 0 = no limit
+	# Default: 6
+	# Range: 0 ~ 1000
+	max_nearby = 3
+	#The radius (in blocks) used by 'max_nearby'
+	# Default: 48
+	# Range: 1 ~ 256
+	nearby_radius = 48
+	#Dimensions 'Weeping Angels' will never spawn in naturally, e.g. ["ad_astra:moon"]
+	spawn_dimension_blacklist = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "pokeworld:pokeworld"]
+
+[snow_angels]
+	#Generate 'Snow Angels' (angels buried in snow) in snowy biomes. Only affects newly generated chunks
+	snow_angels = false

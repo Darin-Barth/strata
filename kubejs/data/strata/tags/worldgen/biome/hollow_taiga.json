@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "strata:hollow_taiga",
+    "strata:hollow_blackwood_taiga",
+    "grim_and_bleak:grim_taiga"
+  ]
+}

@@ -145,7 +145,9 @@ Cobblemon lives in its own "vanilla + Cobblemon" dimension, `pokeworld:pokeworld
 
 Later option: the Cobblemon Kanto map (FireRed/LeafGreen recreation, 1.21.1) as a second portal. It needs testing on NeoForge, claim protection, and a license check.
 
-## Horror dimension (proposal, Oct 24)
+## Horror dimension: The Hollow (built Oct 26)
+Built as **The Hollow** (`strata:hollow`); the current design and what was built are in `docs/hollow-design.md` (mod research: `docs/hollow-mod-research.md`). The notes below are the original Oct 24 proposal.
+
 A separate opt-in dimension for the group's horror fan: horror mods active **only there**, like the Pokémon world.
 - **Biomes:** our own dimension, using biomes by reference or copied under our namespace: Vampirism's vampire forest (stays in the Overworld too; removing it there would reshuffle Overworld biomes and break the chosen seed), dark forest, swamp and similar, plus a Pale Garden if a 1.21.1 backport can be **kept out of the Overworld**. The ones checked (Perfect Parity Neo: Pale Garden Awakens, Another Pale Garden Backport) add a TerraBlender Overworld region, which would reshape the Overworld; needs a config switch or a test before using.
 - **Mobs:** prefer horror mods that spawn through biome modifiers (retargeted to our biomes). Stalker-type mods (The Knocker, The Obsessed, Cave Dweller ReEvolved, Kenny...) use their own spawn logic and need a dimension whitelist in their config or a KubeJS block outside the dimension. Candidates with 1.21.1 NeoForge builds include ArPhEx, The Obsessed, The Knocker, The Boy and the Bath, Face of Horror, Kenny, Hollow Steve, Cave Dweller ReEvolved, Zombie Nightmare Expansions and Server-Side Horror (ambient).

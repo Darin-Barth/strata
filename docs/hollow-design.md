@@ -1,4 +1,4 @@
-# The Hollow: design proposal (Oct 25, 2026)
+# The Hollow (approved Oct 25, 2026; built Oct 26)
 
 A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread and atmosphere, with some combat, and has unique loot that makes the trip worth it (Darin, Oct 25). Horror mobs exist only here. Mod research and build checks are in `docs/hollow-mod-research.md`.
 
@@ -50,10 +50,28 @@ Also in the Hollow: Creakings (Pale Garden copy). Not used: Born in Chaos (spawn
 - **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and GraveStone keeps items safe on death.
 - Spawn rates start low; we raise them after playtests rather than the other way round.
 
+## 3b. Dread events (Darin, Oct 25)
+`kubejs/server_scripts/hollow_dread.js`. Only for players in the Hollow, never harmful, sounds played to the one player they target. After a 30 s quiet start, about one event every 1.5–3 minutes:
+- **Footsteps:** steps come up behind you and stop the moment you turn around.
+- **Whisper:** your own name (always the player hearing it), plus a whisper sound.
+- **Phantom sounds:** a creeper hiss, door, chest, heartbeat, Enderman stare... with nothing there.
+- **Torch flicker:** a nearby torch goes out and relights 2–4 s later.
+- **Watcher:** a dark figure (a frozen, silent, invulnerable Enderman) at the edge of your view; it vanishes in smoke when you look at it, or after 15 s.
+- **Fog:** 5 s of Darkness with a heartbeat.
+- **Compasses and clocks spin:** the dimension type isn't "natural" (vanilla behaviour, like the Nether).
+
 ## 4. Loot and reward
 - Hollow structures: Grim & Bleak chapels/ruins, Graveyard crypts and lich prison (Corrupted Champion boss), all Lootr per-player.
 - Unique materials from the mods: darksteel and red amber (Grim & Bleak), Graveyard boss drops, mutant drops (Mutant skulls/armor, Endersoul Hand = earned short teleport).
 - **Our own:** "Hollow Ember", dropped by Hollow mobs and found in Hollow chests, used as a gate ingredient for a few strong late-game items (to pick: e.g. a late Mekanism/AE2 tier, a top Apotheosis item, or Draconic Evolution tiers).
+
+## 4a. What was built (Oct 26)
+- `tools/build_hollow.py` writes the dimension, biome copies, layout, tags and every mod override (re-run after a mod update). Terrain: the Pokémon world's vanilla router + Grim & Bleak's grimstone materials. Vanilla ores don't generate in grimstone: the Hollow is for loot, its ore is darksteel.
+- Pale Lantern: animated texture (a dark iron cage around a pulsing Creaking Heart "eye", resin roots dripping), no enchantment shimmer. Hollow Ember: dark ember with a violet glow.
+- Configs: Cave Dweller (`dimensionWhitelist = strata:hollow`, surface too, 1 at a time, 200 health, no shield disabling), Weeping Angels (spawn tag + dimension blacklist, groups ≤2, 48-block same-dimension teleports at 25%, no light breaking or theft, no snow angels), Mutant Monsters (config spawns 0; Hollow spawn file; Endersoul Hand range 64), The Graveyard (hordes off, smaller ghoul packs), Sanity: Renewed (drains ~0 outside the Hollow with slow recovery; `dimension/hollow.toml` turns them on, light/campfires/lanterns comfort, friends count more), In Control! `spawn.json` (horror mods: default in `strata:hollow`, denied everywhere else, for natural spawns and anything joining the world).
+- Damage cap and grace: `startup_scripts/hollow_damage_cap.js`. Rules (recipe, no sleeping, Grim & Bleak's Compass of pain can't open Limbo, Hollow Ember drops): `server_scripts/hollow_rules.js`.
+- Hollow Ember in chests: NeoForge loot modifiers on Grim & Bleak, Graveyard and catacomb chests (10–75%). Drops: horror mobs 15%, mutants 50% (1–2), bosses 3–5.
+- Test server (Oct 26): boots clean (4/4 startup, 9/9 server scripts). `/locate`: Hollow biomes and Graveyard, Grim & Bleak and catacomb structures found in the Hollow, none in the Overworld; Grim & Bleak's Overworld portal ruins generate nowhere. Not yet tested with a client: portal, spawns, Sanity HUD, dread events.
 
 ## 5. Build steps
 1. Add the 8 mods (Modrinth), plus villagertradingplus for The Graveyard.
@@ -66,5 +84,5 @@ Also in the Hollow: Creakings (Pale Garden copy). Not used: Born in Chaos (spawn
 ## 6. Open choices
 - Sanity meter: in or out? It's the strongest dread piece but adds a HUD and needs a client test.
 - The Graveyard 4.0 is three days old and adds a dependency; fallback is the unofficial 2.6.2 port.
-- What Hollow Ember gates.
+- What Hollow Ember gates (not wired into any recipe yet).
 - Staged difficulty: the Hollow's mobs keep their designed stats (like bosses) when that script is built.

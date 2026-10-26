@@ -1,0 +1,60 @@
+[
+  {
+    "mod": [
+      "cave_dweller",
+      "weeping_angels",
+      "whispering_spirits",
+      "the_ravenous",
+      "grim_and_bleak",
+      "graveyard",
+      "mutantmonsters",
+      "sanity_renewed"
+    ],
+    "dimension": "strata:hollow",
+    "when": "position",
+    "result": "default"
+  },
+  {
+    "mod": [
+      "cave_dweller",
+      "weeping_angels",
+      "whispering_spirits",
+      "the_ravenous",
+      "grim_and_bleak",
+      "graveyard",
+      "mutantmonsters",
+      "sanity_renewed"
+    ],
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "mod": [
+      "cave_dweller",
+      "weeping_angels",
+      "whispering_spirits",
+      "the_ravenous",
+      "grim_and_bleak",
+      "graveyard",
+      "mutantmonsters",
+      "sanity_renewed"
+    ],
+    "dimension": "strata:hollow",
+    "when": "onjoin",
+    "result": "default"
+  },
+  {
+    "mod": [
+      "cave_dweller",
+      "weeping_angels",
+      "whispering_spirits",
+      "the_ravenous",
+      "grim_and_bleak",
+      "graveyard",
+      "mutantmonsters",
+      "sanity_renewed"
+    ],
+    "when": "onjoin",
+    "result": "deny"
+  }
+]

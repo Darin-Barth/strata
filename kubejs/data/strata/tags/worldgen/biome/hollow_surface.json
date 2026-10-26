@@ -1,0 +1,22 @@
+{
+  "replace": true,
+  "values": [
+    "strata:hollow_dark_forest",
+    "strata:hollow_pale_garden",
+    "strata:hollow_taiga",
+    "strata:hollow_blackwood_taiga",
+    "strata:hollow_ashen_woodland",
+    "grim_and_bleak:eerie_forest",
+    "grim_and_bleak:sparse_eerie_forest",
+    "grim_and_bleak:grim_taiga",
+    "grim_and_bleak:grimplains",
+    "grim_and_bleak:bleakplains",
+    "grim_and_bleak:grimstone_plains",
+    "grim_and_bleak:snowy_plains",
+    "strata:hollow_swamp",
+    "strata:hollow_mangrove",
+    "strata:hollow_fungal_fen",
+    "grim_and_bleak:grimstone_mountains",
+    "strata:hollow_black_sea"
+  ]
+}

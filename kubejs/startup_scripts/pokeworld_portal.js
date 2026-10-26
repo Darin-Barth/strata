@@ -1,13 +1,16 @@
-// Dimension portals (BBL Portals). Each entry: a custom frame block, a custom igniter item and
-// a destination. Portals link like nether portals but 1:1 (same X/Z), and the portal on the
-// other side leads back to the Overworld. There is no pre-built portal: players craft the frame
-// and the igniter. To add a dimension (e.g. the horror world), add an entry here plus its
-// recipes (server_scripts/pokeworld_recipes.js), textures (assets/pokeworld/textures) and loot.
+// Dimension portals (BBL Portals). Each entry: a frame block, an igniter item and a destination.
+// Portals link like nether portals but 1:1 (same X/Z), and the portal on the other side leads
+// back to the Overworld. There is no pre-built portal: players build the frame and craft the
+// igniter. To add a dimension, add an entry here plus its recipes (server_scripts/*_recipes.js),
+// textures (assets/<ns>/textures) and loot.
 //
 // Pokémon world:
 //   Poké Portal Frame: 8 from red dye, redstone, iron, a diamond, white dye (Overworld-only).
 //   Johto Bell: Bell + gold + Bell Fragment; reusable (BBL Portals never uses up the igniter).
 //   Bell Fragment: rare chest loot in Overworld structures (data/neoforge/loot_modifiers).
+// The Hollow (horror dimension, docs/hollow-design.md):
+//   Frame: resin bricks (Vanilla Backport); resin only comes from Overworld Pale Gardens.
+//   Pale Lantern: Creaking Heart (Silk Touch) + soul lantern + resin clumps; reusable.
 const PORTALS = [
   {
     frame: 'pokeworld:poke_portal_frame',
@@ -17,10 +20,20 @@ const PORTALS = [
     destination: 'pokeworld:pokeworld',
     tint: 0xE3350D,
   },
+  {
+    frame: 'minecraft:resin_bricks',
+    existingFrame: true,
+    igniter: 'strata:pale_lantern',
+    igniterName: 'Pale Lantern',
+    destination: 'strata:hollow',
+    tint: 0x3B2A33,
+    // Its texture pulses (animated); no enchantment shimmer on top of that.
+    noGlint: true,
+  },
 ]
 
 StartupEvents.registry('block', event => {
-  PORTALS.forEach(p => {
+  PORTALS.filter(p => !p.existingFrame).forEach(p => {
     event.create(p.frame)
       .displayName(p.frameName)
       .soundType('metal')
@@ -35,9 +48,11 @@ StartupEvents.registry('block', event => {
 
 StartupEvents.registry('item', event => {
   PORTALS.forEach(p => {
-    event.create(p.igniter).displayName(p.igniterName).maxStackSize(1).rarity('rare').glow(true)
+    event.create(p.igniter).displayName(p.igniterName).maxStackSize(1).rarity('rare').glow(!p.noGlint)
   })
   event.create('pokeworld:bell_fragment').displayName('Bell Fragment').rarity('uncommon')
+  // Dropped by the Hollow's horror mobs and found in its chests (server_scripts/hollow_rules.js).
+  event.create('strata:hollow_ember').displayName('Hollow Ember').rarity('rare').glow(true)
 })
 
 PortalEvents.register(event => {

@@ -1,0 +1,6 @@
+{
+  "type": "weeping_angels:snow_angels",
+  "biomes": "#strata:none",
+  "features": "weeping_angels:snow_angel",
+  "step": "raw_generation"
+}

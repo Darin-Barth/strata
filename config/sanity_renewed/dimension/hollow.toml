@@ -1,0 +1,16 @@
+# Strata: the Hollow (docs/hollow-design.md). Anything not set here comes from default.toml.
+applied_dimensions = [ "strata:hollow" ]
+
+[sanity]
+	positive_multiplier = 1.0
+	negative_multiplier = 1.0
+	[sanity.passive]
+		# A slow constant drain on top of darkness and monsters
+		passive = -0.03
+		# Light is the main comfort: torches, lanterns and campfires push back
+		lightness = 0.05
+		lightness_threshold = 10
+		blocks = ["minecraft:campfire[lit=true];0.15;6;false", "minecraft:soul_campfire[lit=true];0.1;6;false", "minecraft:lantern;0.04;3;false", "minecraft:soul_lantern;0.04;3;false"]
+	[sanity.multiplayer]
+		# Sticking together matters more in the Hollow
+		sane_player_company = 0.12

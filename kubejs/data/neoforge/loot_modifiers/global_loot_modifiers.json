@@ -14,6 +14,19 @@
     "pokeworld:bell_fragment/betterdungeons/zombie_dungeon/common",
     "pokeworld:bell_fragment/betterdungeons/spider_dungeon/egg_room",
     "pokeworld:bell_fragment/betterdeserttemples/tomb",
-    "pokeworld:bell_fragment/betterjungletemples/treasure"
+    "pokeworld:bell_fragment/betterjungletemples/treasure",
+    "strata:hollow_ember/grim_and_bleak/abandonned_tower_loot",
+    "strata:hollow_ember/grim_and_bleak/cabinloot",
+    "strata:hollow_ember/grim_and_bleak/small_tent_loot",
+    "strata:hollow_ember/graveyard/great_crypt_loot",
+    "strata:hollow_ember/graveyard/crypt_loot",
+    "strata:hollow_ember/graveyard/large_graveyard_loot",
+    "strata:hollow_ember/graveyard/medium_graveyard_loot",
+    "strata:hollow_ember/graveyard/swamp_graveyard_loot",
+    "strata:hollow_ember/graveyard/small_graveyard_loot",
+    "strata:hollow_ember/graveyard/large_loot",
+    "strata:hollow_ember/graveyard/medium_loot",
+    "strata:hollow_ember/graveyard/small_loot",
+    "strata:hollow_ember/weeping_angels/catacombs"
   ]
 }

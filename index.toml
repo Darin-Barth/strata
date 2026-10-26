@@ -23,6 +23,10 @@ hash = "422c564e0a5dd0caed1a9c7f566daaa4c3bfc19015750c8a3aa544d142d1f44b"
 preserve = true
 
 [[files]]
+file = "config/cave_dweller/server_config.toml"
+hash = "fd4aa3dac4c5988ce0c8d858814fe6520aa886f501624f91b7bab845b43abc84"
+
+[[files]]
 file = "config/cobblemon/main.json"
 hash = "c0ec28f54a2eb6b6729e9d7cd92bc42f9bfab5f10cff4ae14eaaeb56cff13b7b"
 
@@ -281,12 +285,20 @@ file = "config/gravestone-server.toml"
 hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
 [[files]]
+file = "config/graveyard/graveyard.json5"
+hash = "5f06e1e771659f58ed537fea1fca0434c7c726b6c94e4d2dffdb24d2cc9642da"
+
+[[files]]
 file = "config/guardvillagers-common.toml"
 hash = "1ab9b8f4909302c57f1177fcef3489752ad7e0767fedeef1211bc451a103771a"
 
 [[files]]
 file = "config/iceandfire/iaf-client.json"
 hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
+
+[[files]]
+file = "config/incontrol/spawn.json"
+hash = "c9519c2f1c9df92d0283637a8918611c317ecce5bd1283e60b5faffec60d2025"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -305,6 +317,14 @@ file = "config/modernfix-mixins.properties"
 hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
 
 [[files]]
+file = "config/mutantmonsters-common.toml"
+hash = "bac8303f732b749f666ad1790671d5939e6930985cb5989866a1f9fead7e2ab1"
+
+[[files]]
+file = "config/mutantmonsters-server.toml"
+hash = "342ad2a84824910afc410a2fb2c520facf2a4b67763f08f6a9172a4ec88370e8"
+
+[[files]]
 file = "config/obscuria/aquamirae-early.json"
 hash = "95a6ce1a5c2bfdfc3c2842a171b34ddbbd69536c54521edce3086db3b4b4134c"
 
@@ -321,12 +341,20 @@ file = "config/rctmod-server.toml"
 hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
 
 [[files]]
+file = "config/sanity_renewed/default.toml"
+hash = "237a2b57d571054eac030bb71416f57318d9bc9538ba4d59fb540764a93b9106"
+
+[[files]]
+file = "config/sanity_renewed/dimension/hollow.toml"
+hash = "11b5942622bc408407d15f51ad3b542cc0875f0a86113c55f477c514925c5d6d"
+
+[[files]]
 file = "config/simplebackups-common.toml"
 hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
 
 [[files]]
 file = "config/streamsreflowing.properties"
-hash = "a75b392dc720397c13522e1654d876b502e4261b8ea30a1a7c18c37e8f0b184d"
+hash = "36753d897ac456a47aa8998b61561358d84c8417443db70d2d9ab989c07bb8d6"
 
 [[files]]
 file = "config/supplementaries-client.toml"
@@ -345,6 +373,14 @@ preserve = true
 [[files]]
 file = "config/vanillabackport-common.toml"
 hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
+
+[[files]]
+file = "config/weeping-angels-spawns.toml"
+hash = "044842c6dab6725643cae9ba949786c3133508fcaef8885aba146a116fc1af18"
+
+[[files]]
+file = "config/weeping_angels-common.toml"
+hash = "4105ae0d8bfec37a2b99e2311042b00633d0c4cd8d31e3179e754ca1c31242d9"
 
 [[files]]
 file = "config/xaero/minimap/profiles/default.cfg"
@@ -375,6 +411,18 @@ hash = "55dd13925d230c64c1f952e3046a4a39c0d058d886f594a48ffced7874c3d7ea"
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/johto_bell.png"
 hash = "3003e45ce6805d02081db496059e039c9cc0f2345c7c461d0d60d2e7aab1f9c0"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/hollow_ember.png"
+hash = "48b45b4381d7c809ecaa44c1333b73b3a7645fe378496547bfafafde2500397f"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_lantern.png"
+hash = "16df1afb71aa7c4a925b78c5de1dab684b45f754ade3c22c2377027c9e724a7d"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_lantern.png.mcmeta"
+hash = "0476a5c396e06e18f6268c70cad7b2dd46d1cafa946d33590da7b5562d0ffda7"
 
 [[files]]
 file = "kubejs/client_scripts/pokeworld_party_hud.js"
@@ -1845,6 +1893,162 @@ file = "kubejs/data/cobblestructures/worldgen/structure/pokepitstop.json"
 hash = "395c6d3e4195f6068599c5534e1a5edb1ec37fcfe57ad9a446bd491bc2c7c2d4"
 
 [[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/acolyte_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/corrupted_evoker_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/corrupted_pillager_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/corrupted_vindicator_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/crow_spawns.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/ghoul_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/altar.json"
+hash = "1f18d5e5b6763d6538bdbe142a7c913db111ed6a9dbc66687c41dc93dbda7cdb"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/crypt.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/dead_tree.json"
+hash = "1c7c2bc3b380659e8392db9e472eb123dd94a5ef2bfd266dc5b9dac9bd8bbfea"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/giant_mushroom.json"
+hash = "173140d8d135373c33ea3ef0671efa95e6e7851b85a80f0e9245789c0d7a16c0"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/haunted_house.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/large_graveyard.json"
+hash = "d865e8146ebcdef550246d71db3d6f68b7cd83a354a90798b118410279a8b640"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/lich_prison.json"
+hash = "75f7e9689f0823132397c51cf05ba4137a5c550c06392ad37b191614dc5a5876"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/medium_graveyard.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/memorial_tree.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/mushroom_grave.json"
+hash = "f20169600a5e6e71e93606647cf961ebeea01f71af3860fd2d9de8d3b4ce6a1d"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/overrun_desert_village.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/overrun_plains_village.json"
+hash = "a647a1787db317ce983da6da53836f06cd1b966bc30c4e74e1a4a90f5d012cdb"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/overrun_savanna_village.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/overrun_snowy_village.json"
+hash = "8305d5d2852aec4ed0e3362d2923fd19036ca8305e4c2d5088aac9181ff0bbbe"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/overrun_taiga_village.json"
+hash = "d865e8146ebcdef550246d71db3d6f68b7cd83a354a90798b118410279a8b640"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/ruins.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_desert_grave.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_desert_graveyard.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_grave.json"
+hash = "55e861d26c7678e45cbccbbddc2b5f0c7d84b351807f6afe632b48d13e0adac8"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_graveyard.json"
+hash = "ed437b2bc1b74a893cea40fc8ce661b1a4b0e275d380fc6904340afde1f21fe8"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_mountain_grave.json"
+hash = "611d3d3d5a179bae205b12eff54a16803b05e94f8d3d276145ae4260e596f815"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/has_structure/small_savanna_grave.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/magpie_spawns.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/nightmare_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/raven_spawns.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/reaper_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/revenant_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/skeleton_creeper_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/tormented_villager_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/graveyard/tags/worldgen/biome/wraith_spawns.json"
+hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
+
+[[files]]
+file = "kubejs/data/grim_and_bleak/neoforge/biome_modifier/raw_darksteel_block_biome_modifier.json"
+hash = "d5da6b83e9d34f0a10d228281334f66783c38d4763a4392c2d18e609daa5a72a"
+
+[[files]]
+file = "kubejs/data/grim_and_bleak/worldgen/structure/grim_portal_2.json"
+hash = "0a0db34c670acf1d315903c9ed8f10d14716fbd90e1730b2904ad59a34b38b11"
+
+[[files]]
+file = "kubejs/data/grim_and_bleak/worldgen/structure/grim_portal_4.json"
+hash = "ac23ffa52943c12a83438036e1557a93e3aa56446835a35f45417b328916e975"
+
+[[files]]
 file = "kubejs/data/iceandfire/tags/worldgen/biome/structure_gen/fire.json"
 hash = "616eb65fbe93d41716901b31cb52ee6a757d1fa6350c9841f7b5ee9cda2ddedd"
 
@@ -2062,7 +2266,7 @@ hash = "cf0312120d9e6a7522f20961e665205233704eafd657e6b801a1d73d03167108"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "b0426e8c35c99b3ca0c2e703c21ade593dc5d2c432713e1cc458d9312f4f603f"
+hash = "a3a2d0c7d79f42007e3fd158f28c7a12809d03f94ca8831c372ffc75e9a5e18f"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeon_v2.nbt"
@@ -3761,6 +3965,70 @@ file = "kubejs/data/pokeworld/worldgen/template_pool/village/taiga/houses.json"
 hash = "7af8a9359ae933a2bf512ec0159d65fe5b83a19a7f668b6ad3f4e532c22949f7"
 
 [[files]]
+file = "kubejs/data/strata/dimension/hollow.json"
+hash = "fc37306fff422702a3d616b5592204b9612eaee91685c46588c9f35dc1e8be24"
+
+[[files]]
+file = "kubejs/data/strata/dimension_type/hollow.json"
+hash = "594563dcf9fb916c480a554bc4f9acdbaf6cb3ce6920ddcb4ad58fb8934371cf"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/crypt_loot.json"
+hash = "04a7829c2c69a52980025c2ad43ce2c49449b3043e628112d61f3562c7ef43a9"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/great_crypt_loot.json"
+hash = "313282999b23f1296bdb3900f279c47de7219992c2fdab55aee6d9a4fa98d7bc"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/large_graveyard_loot.json"
+hash = "e068c973ee94f7fa94f47987d8ba41f6a38f26925ef2fe8b022793aaa34be0fe"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/large_loot.json"
+hash = "156754c3e85feed83ea5c7bf5303d0f5b1ecb5f570a9fdec7b6d7a87c05dd77e"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/medium_graveyard_loot.json"
+hash = "b7f999ee17b67c96f6c0c452d41cfeba79aae2491a8fdbd27c72b4f661fde172"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/medium_loot.json"
+hash = "edcfcc4c067aa3ebe97d822ec125bc5affae660574d127496a5408de1d40ec0a"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/small_graveyard_loot.json"
+hash = "5771e4100794e07f4b2b2bf52ed93e07205eec0b8ecccae6adee04b97e928e20"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/small_loot.json"
+hash = "8d89d2f175818394e01ea11bc01fe6a36ea87874f9488ebe88fb57bed90a0b96"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/swamp_graveyard_loot.json"
+hash = "c33fb31d1ea8ea52265db708ca75084881cb38db658fefcb72167fc8c028c3e8"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/abandonned_tower_loot.json"
+hash = "fe2d1570b3d3c4ae70a74c92221390b969d5909536d25253a05d20944f14ab5a"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/cabinloot.json"
+hash = "60965fd32081a70761726aecf445e692a0ed21b26020233ee9e0e3bdf8af2625"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/small_tent_loot.json"
+hash = "7ed0ce09fc2ced902e55c462aa4d5946211e25e3a4ba1842434ee0859e2f43b1"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/weeping_angels/catacombs.json"
+hash = "d925b94d8054d50a0c741dd932e9280bbde27a5ebba5de4cdb0a3ebc34fb75d3"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/inject/hollow_ember.json"
+hash = "da84abb1291efd114a964c4b758701a2d76f468dbb0a49010b1b3e3b0b62289f"
+
+[[files]]
 file = "kubejs/data/strata/loot_table/lootified/inventorypets/nether_dungeon/0.json"
 hash = "138570ff367bbdb8ca9638db8ebeaeb30f3fcc79465900f8bbb3e9d69dc85ad0"
 
@@ -4005,6 +4273,134 @@ file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dun
 hash = "4a4d37e028b66f8ccfe57905b9e987bd13579f14693c2e2ed49dd553a8055732"
 
 [[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mutants.json"
+hash = "7a707b63cf4a6559ed92d8bf64cd518eaeca70dfb875347fcdd70004505ef241"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_biomes.json"
+hash = "54623e734530f0486ad11db090dc3bbef176b6c163116663672d95cf8470df3b"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_caves.json"
+hash = "4043422f488d9ded0740336f52cb2161364fb9955e8bd3f29d39efd273acfae0"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_forests.json"
+hash = "d3e659f47c241cdc1c31df44b13524030a5c809fd6a551c4845d2b976e9a4374"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_mountains.json"
+hash = "d06649bf63a067a379a55d30cdd40e872873217b9e86cbfb4ddec653bb9faa32"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_plains.json"
+hash = "2581c7739877ef2dcc107f6704abbe47c6c4c5f477ac839ecef69399ee0b3c72"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_sea.json"
+hash = "a0a28c072f9e6d4936ba3eb365e80c4b8b5d79f428ce76ca2a9b82356f2df9c3"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_snowy.json"
+hash = "430f2716abccdf6f4f25f1451907da20ba130aae2e54069af30eae23f60e535f"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_surface.json"
+hash = "fe3a539107f3973df846ce46dd86c630978e8a0da313330067bf53d149ff746d"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_taiga.json"
+hash = "513a7afecdefabf3bd3774d45bea0137b46108dbabc1df90dd2034634b3a53ab"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/hollow_wet.json"
+hash = "33445edd0ef84c2404504b4d4474f63a959519884371ca8cd8766b589acfd96f"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/none.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_ashen_woodland.json"
+hash = "422e0c4f06a1685fea1ff7840f5559a9e6529247345a0735d792aa91f181092f"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_black_sea.json"
+hash = "33681bd7a2bfa0f25f17c2fe4eff937f1cdecd9ad1487b15fd1e68ab2639a0ac"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_blackwood_taiga.json"
+hash = "0756e2f4c10ecccc6053291565b24db41603d0ecbaba6e19a83ed8f59e57b046"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_dark_forest.json"
+hash = "9c0768e1a580f7eef9fef106d1dbad1a010702765657f62fbef58812abaf0df9"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_deep_dark.json"
+hash = "66fb75df7d603bc82801881f5b8990614e2cdffdc00644b529aa33e745396c35"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_dripstone.json"
+hash = "7b8fed1114ae20c4df0773bece45bf3474afe4eba892b2cbe7a6889c35e74b74"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_fungal_fen.json"
+hash = "4de2c8a0fb03f91cb2c1779ab0fd8f85733963aa3006317b0f0af49410cc2612"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_mangrove.json"
+hash = "17dd81c9b372b5ba1712cebf11497b9242d2a82d039f42cd585fb1b175aa39d6"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_pale_garden.json"
+hash = "122ca5add305b0d0e37a3498dfa665eb3a062fd391b43bbe671aee775feb47a0"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_swamp.json"
+hash = "bb7796c41e1b37c61a397262b15ae1e7e6dd0e33fc82bfab2aebecce9bc14727"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/biome/hollow_taiga.json"
+hash = "4c2450ece985255aa7b036266c365089b3cb82a4a9af5b7d3f2701b5c1350a80"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/noise_settings/hollow.json"
+hash = "faf1ca93b434b1672f6fb5de070eaa0b6c5d992c9cd58c40b628e6fa77057e0c"
+
+[[files]]
+file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_ravenous_biome_modifier.json"
+hash = "50d9f58d6829a101f5f04829bc00bfda3e7ef8fa256afc645f76348550e5ea94"
+
+[[files]]
+file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_screecher_biome_modifier.json"
+hash = "2b5e996d2f10f109f8c4d2a95cc6b9038f8b26e28e7c3faae2587a7b23edcd9f"
+
+[[files]]
+file = "kubejs/data/weeping_angels/neoforge/biome_modifier/snow_angel.json"
+hash = "7be714a8188f04b342d064be5ebc27f31cbbe00d1682c6eb1cfb7d7e18690271"
+
+[[files]]
+file = "kubejs/data/weeping_angels/tags/worldgen/biome/has_structure/catacombs.json"
+hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
+
+[[files]]
+file = "kubejs/data/weeping_angels/tags/worldgen/biome/spawns/weeping_angels.json"
+hash = "67800d37802c8ade85a9389b89851dd72ac772b24dcbc64ef16d5c7234f442f6"
+
+[[files]]
+file = "kubejs/data/whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json"
+hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
+
+[[files]]
+file = "kubejs/server_scripts/hollow_dread.js"
+hash = "fa7d7e837240908ec3f9ed95e035494bf4bdd04f90bc7a7f732b9eba4ed5e363"
+
+[[files]]
+file = "kubejs/server_scripts/hollow_rules.js"
+hash = "6ed2c885d27b85bc41f27b8318f7cb37b9211f06b3eef8773ea297acd342acfb"
+
+[[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
 hash = "5d539445fc5d025faae6bae2ea7ac785d8e30f86648c19fc1ded2b2b8aaff5e0"
 
@@ -4029,8 +4425,12 @@ file = "kubejs/server_scripts/tag_fixes.js"
 hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
+file = "kubejs/startup_scripts/hollow_damage_cap.js"
+hash = "f6fb8d5452a7f20817a1dc6b6438867830c8ae9cba7a930ff975958221c3ad82"
+
+[[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "23934f3e46ff4b80db2daa15ccbe025736cbaefb8fecbb5a628e4c975ad5a9f4"
+hash = "fd8a53f7268e493e97f0e54699ef49a0869eb56f18bf794e1c839eae01b99f61"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"
@@ -4379,6 +4779,11 @@ metafile = true
 [[files]]
 file = "mods/cataclysm-spellbooks.pw.toml"
 hash = "3f717e3a10929f7a96d08611abc22a3d9a5a8a45a16a31ef7556dd690a26dbe1"
+metafile = true
+
+[[files]]
+file = "mods/cave-dweller-reevolved.pw.toml"
+hash = "11974c0d81204d919175190916a2badb4aecb77a62be3f3201b5f7f6d1233db8"
 metafile = true
 
 [[files]]
@@ -5002,6 +5407,11 @@ hash = "d18f1ea4c6c1c2f99f18a8725d11e14c93abd29988df24c967794fc52e9c969c"
 metafile = true
 
 [[files]]
+file = "mods/grim-and-bleak.pw.toml"
+hash = "d42dec80bfb5a534ac0b6971ca80b3310aab9d9a49f6a9f78419ebfddf1b43ab"
+metafile = true
+
+[[files]]
 file = "mods/gtbcs-cataclysmic-boss-ui.pw.toml"
 hash = "5937d1946e46487beec341600e673d1223a5b489ec74094b55dae24160e833b6"
 metafile = true
@@ -5432,6 +5842,11 @@ hash = "ec031be91f9ae72994f066978921c8e5185b73497113087b6624eaa712b72737"
 metafile = true
 
 [[files]]
+file = "mods/mutant-monsters.pw.toml"
+hash = "e672245ac368cb42b521a0be668fed61a5b5129d25eec7b8db7722e8f49e2292"
+metafile = true
+
+[[files]]
 file = "mods/my-nethers-delight.pw.toml"
 hash = "cf98a93ea429786de97d9d7b70c72468909e0b9d1799def65b7c29c419c8d362"
 metafile = true
@@ -5597,6 +6012,11 @@ hash = "6390e31a740d60ba3a66edaf86f5e2788b7d03ff18fd43580f12f665e25f73f9"
 metafile = true
 
 [[files]]
+file = "mods/ravenous.pw.toml"
+hash = "52effd2157d4413e07148135265c2887b2dfd14e0a746315883967e4053c8f54"
+metafile = true
+
+[[files]]
 file = "mods/rctapi.pw.toml"
 hash = "4ac89f2474b142c47025cce9795bd459e47a2c403c1290cea4e5ac7287652815"
 metafile = true
@@ -5669,6 +6089,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "fadb5c9cfe145e51992894fe57209fc8f1696ef892ee9702a24c6205f042e9b2"
+metafile = true
+
+[[files]]
+file = "mods/sanity-renewed.pw.toml"
+hash = "f3cb71973241c73786873f848e2098a11ff83b7bbb4fddd1479dfa381e5eaaea"
 metafile = true
 
 [[files]]
@@ -5847,6 +6272,11 @@ hash = "055283aa7790b335df36917fd72eb9f35f4d5cbe3a1e66d53efba4fe79ec1266"
 metafile = true
 
 [[files]]
+file = "mods/the-graveyard-fabric.pw.toml"
+hash = "9a6fe1d445b6b46c178c58fc15483c1648061b6959b5b4d3722d5098ca5c60dc"
+metafile = true
+
+[[files]]
 file = "mods/the-twilight-forest.pw.toml"
 hash = "9088f93a00bc3242f0239a7115bdcbc4480e19c6120f5396fb3af27d77abda3e"
 metafile = true
@@ -5947,6 +6377,11 @@ hash = "9b18f1c0e25ac587b3b3433d379d6f78b745cc9215f746b4a2162013d1764257"
 metafile = true
 
 [[files]]
+file = "mods/villagerstradingplus.pw.toml"
+hash = "1b8fa1223ec4306464a2c032bacc4e036a571b226cabbd880f98a88c6f8b3ffc"
+metafile = true
+
+[[files]]
 file = "mods/waterframes.pw.toml"
 hash = "59e15d108b41b10145596a3ef899ad20ef8c8885504eef10cd89225aef87daef"
 metafile = true
@@ -5967,6 +6402,11 @@ hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
 metafile = true
 
 [[files]]
+file = "mods/weeping-angels.pw.toml"
+hash = "4116a5becf909907414cbd1a5028af67ee4fa5e35d92c8a8353ffedf726f2e68"
+metafile = true
+
+[[files]]
 file = "mods/werewolves.pw.toml"
 hash = "e60cb37ec5b9d07ec09e2963d57cc7b50627968456fdbf0fc4cd5ec3cf72712b"
 metafile = true
@@ -5984,6 +6424,11 @@ metafile = true
 [[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "485906ff55a5d6ad06070abb80663d6adadc3e4b32f8b52240d8596e7aaef9fa"
+metafile = true
+
+[[files]]
+file = "mods/whispering-spirits.pw.toml"
+hash = "f8705eee4c8394658b9246e28fec6810a53d5d28c32512e6bc27741afb01ae7a"
 metafile = true
 
 [[files]]

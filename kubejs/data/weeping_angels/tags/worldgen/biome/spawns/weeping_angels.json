@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "#strata:hollow_forests",
+    "#strata:hollow_snowy",
+    "#strata:hollow_caves"
+  ]
+}
