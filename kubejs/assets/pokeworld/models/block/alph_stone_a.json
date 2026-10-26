@@ -3,13 +3,13 @@
   "type": "fusion:connecting",
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "pokeworld:block/alph_stone",
-    "up": "pokeworld:block/alph_stone",
-    "north": "pokeworld:block/alph_stone",
-    "south": "pokeworld:block/alph_stone",
-    "east": "pokeworld:block/alph_stone",
-    "west": "pokeworld:block/alph_stone",
-    "particle": "pokeworld:block/alph_stone"
+    "down": "pokeworld:block/alph_stone_a",
+    "up": "pokeworld:block/alph_stone_a",
+    "north": "pokeworld:block/alph_stone_a",
+    "south": "pokeworld:block/alph_stone_a",
+    "east": "pokeworld:block/alph_stone_a",
+    "west": "pokeworld:block/alph_stone_a",
+    "particle": "pokeworld:block/alph_stone_a"
   },
   "connections": {
     "down": {

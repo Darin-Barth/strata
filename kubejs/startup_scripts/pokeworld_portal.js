@@ -8,7 +8,7 @@
 //   Alph Stone (block id pokeworld:poke_portal_frame, kept so built frames survive): ancient carved
 //   sandstone after Johto's Ruins of Alph; 8 from chiseled sandstone around a diamond. Its frame
 //   blocks connect into one carved border (Fusion, already in the pack for Rechiseled) and pick a
-//   random variant (plain, glyphs, mossy): assets/pokeworld/blockstates|models|textures.
+//   random variant (carved Unown, one big or two small, cracked and/or mossy): assets/pokeworld/blockstates|models|textures.
 //   Johto Bell: Bell + gold + Bell Fragment; reusable (BBL Portals never uses up the igniter).
 //   Bell Fragment: rare chest loot in Overworld structures (data/neoforge/loot_modifiers).
 // The Hollow (horror dimension, docs/hollow-design.md):
@@ -23,7 +23,8 @@ const PORTALS = [
     igniter: 'pokeworld:johto_bell',
     igniterName: 'Johto Bell',
     destination: 'pokeworld:pokeworld',
-    tint: 0xE3350D,
+    // Ultra Wormhole cyan: an ancient gateway waking up.
+    tint: 0x6FF2FF,
     // Its texture twinkles (animated); no enchantment shimmer on top of that.
     noGlint: true,
   },
