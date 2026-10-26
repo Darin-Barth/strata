@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "pokeworld:block/alph_stone",
+        "weight": 4
+      },
+      {
+        "model": "pokeworld:block/alph_stone_eye",
+        "weight": 2
+      },
+      {
+        "model": "pokeworld:block/alph_stone_rune",
+        "weight": 2
+      },
+      {
+        "model": "pokeworld:block/alph_stone_mossy",
+        "weight": 2
+      }
+    ]
+  }
+}

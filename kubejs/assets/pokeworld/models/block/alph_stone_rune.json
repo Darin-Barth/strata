@@ -1,0 +1,40 @@
+{
+  "loader": "fusion:model",
+  "type": "fusion:connecting",
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "pokeworld:block/alph_stone_rune",
+    "up": "pokeworld:block/alph_stone_rune",
+    "north": "pokeworld:block/alph_stone_rune",
+    "south": "pokeworld:block/alph_stone_rune",
+    "east": "pokeworld:block/alph_stone_rune",
+    "west": "pokeworld:block/alph_stone_rune",
+    "particle": "pokeworld:block/alph_stone_rune"
+  },
+  "connections": {
+    "down": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "up": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "north": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "south": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "east": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "west": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    }
+  }
+}

@@ -3324,16 +3324,16 @@
 		""
 		"Village bells can be picked up with a pickaxe (the villagers won't mind... much). The Johto Bell is &areusable&r: ringing the portal never uses it up."
 	]
-	quest.69741161528D082E.title: "Poké Portal Frames"
+	quest.69741161528D082E.title: "Alph Stone"
 	quest.69741161528D082E.quest_desc: [
-		"Craft red-and-white &ePoké Portal Frame&r blocks: red dye, redstone, iron, a diamond and white dye make &e8&r at a time."
+		"Carve &eAlph Stone&r, the ancient stone of Johto's ruins: eight &eChiseled Sandstone&r around a &bdiamond&r make &e8&r at a time."
 		""
-		"You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall. Leave the corners out if you're short."
+		"You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall. The stones join into one carved gateway, and the corners make it look whole."
 	]
 	task.6DFA391C7EBF3E69.title: "Enter the Pokémon World"
 	quest.3B4607E3934952D7.title: "Ring the Bell"
 	quest.3B4607E3934952D7.quest_desc: [
-		"Build the frame (like a Nether portal, but with Poké Portal Frames) and use the &eJohto Bell&r on it. The portal fills with red light. Step in!"
+		"Build the frame (like a Nether portal, but with Alph Stone) and ring the &eJohto Bell&r on it. The old gateway wakes up. Step in!"
 		""
 		"A matching portal is built on the other side, and it leads straight back to the Overworld at the same spot. Your Pokémon party HUD only shows inside the Pokémon World."
 	]

@@ -5,7 +5,10 @@
 // textures (assets/<ns>/textures) and loot.
 //
 // Pokémon world:
-//   Poké Portal Frame: 8 from red dye, redstone, iron, a diamond, white dye (Overworld-only).
+//   Alph Stone (block id pokeworld:poke_portal_frame, kept so built frames survive): ancient carved
+//   sandstone after Johto's Ruins of Alph; 8 from chiseled sandstone around a diamond. Its frame
+//   blocks connect into one carved border (Fusion, already in the pack for Rechiseled) and pick a
+//   random variant (plain, glyphs, mossy): assets/pokeworld/blockstates|models|textures.
 //   Johto Bell: Bell + gold + Bell Fragment; reusable (BBL Portals never uses up the igniter).
 //   Bell Fragment: rare chest loot in Overworld structures (data/neoforge/loot_modifiers).
 // The Hollow (horror dimension, docs/hollow-design.md):
@@ -14,7 +17,9 @@
 const PORTALS = [
   {
     frame: 'pokeworld:poke_portal_frame',
-    frameName: 'Poké Portal Frame',
+    frameName: 'Alph Stone',
+    frameSound: 'stone',
+    frameColor: 'sand',
     igniter: 'pokeworld:johto_bell',
     igniterName: 'Johto Bell',
     destination: 'pokeworld:pokeworld',
@@ -38,8 +43,8 @@ StartupEvents.registry('block', event => {
   PORTALS.filter(p => !p.existingFrame).forEach(p => {
     event.create(p.frame)
       .displayName(p.frameName)
-      .soundType('metal')
-      .mapColor('color_red')
+      .soundType(p.frameSound)
+      .mapColor(p.frameColor)
       .hardness(5)
       .resistance(6)
       .requiresTool(true)

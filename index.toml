@@ -262,7 +262,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f5b40deb7d25ac364abcdbe1229b0f9c1afe9d47b6e06713b34900c4e111dfaf"
+hash = "a9abbc6bad815fb4d6c0fc1b5b6b9a07bf3faef66cc0b1fd279b8c61435f4c54"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -401,8 +401,64 @@ file = "kubejs/assets/irons_nouveau/lang/en_us.json"
 hash = "d25f2253a4497657601104ef956556dfb69acbb506aa6eb6fecaba447e2d8e2f"
 
 [[files]]
-file = "kubejs/assets/pokeworld/textures/block/poke_portal_frame.png"
-hash = "655351c3a4f2377f28451a39405d7ffdf17e373471d9751fa3969d639c001433"
+file = "kubejs/assets/pokeworld/blockstates/poke_portal_frame.json"
+hash = "5fec22a7b63f96200c97234c45357f91b8ec279dcd4461b89b540019d045b4aa"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone.json"
+hash = "1ce9ac2b1dce8e85b5d2b696dd7666c92c1a5f88ec53f8390865d98c43a601f2"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone_eye.json"
+hash = "2b1a1d3a84433a4593c958034b1bf3d3e098d3b2139a6c86956ac0e57f054c4a"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone_mossy.json"
+hash = "d9aa92329842ebc7841b0ef93d109f885338bfa73dd3d87afab6b59cb7cdd0cd"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone_rune.json"
+hash = "5beeec78b6d985febfc70e1686f1756550316812c38e0c47b0fabd6a534b5eb6"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/poke_portal_frame.json"
+hash = "4496a59cadaf93f05483da70230211c65f48d34efd09cdefc0cafb306712de82"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/item/poke_portal_frame.json"
+hash = "4496a59cadaf93f05483da70230211c65f48d34efd09cdefc0cafb306712de82"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone.png"
+hash = "86947cc70fd4b41da17216eb06a388d269d4599198a53d0f8e70e5c1cfe172cd"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_eye.png"
+hash = "11c1f93343e161d5b6449a00f9423f8caf793349a38e3b1c6998d33ca041e7e6"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_eye.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_mossy.png"
+hash = "0e122bf186bf6ea5620fc08586d78f96ba8c8d272c563cf69d06072df875ed59"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_mossy.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_rune.png"
+hash = "60f2c87d240ed8601b6eb04f046ff6c9472118a4e4bc1754e01517d59ab6eeb0"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_rune.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/bell_fragment.png"
@@ -4414,7 +4470,7 @@ hash = "6ed2c885d27b85bc41f27b8318f7cb37b9211f06b3eef8773ea297acd342acfb"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
-hash = "5d539445fc5d025faae6bae2ea7ac785d8e30f86648c19fc1ded2b2b8aaff5e0"
+hash = "bfdb76d38db37cf74d60333eb2bf8d988b671f30037846735de791bb7ae599d1"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_spawns.js"
@@ -4442,7 +4498,7 @@ hash = "f6fb8d5452a7f20817a1dc6b6438867830c8ae9cba7a930ff975958221c3ad82"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "7a9524f04250df24659c506c885e4a8cfd64aa74f98b47a9d67c5d2cf2f84373"
+hash = "383d3676b4320db613f0796b57c6d0a32ca972c096ea9fea17577f5dc24e2a4d"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"

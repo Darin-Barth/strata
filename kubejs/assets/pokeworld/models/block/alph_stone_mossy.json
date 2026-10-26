@@ -1,0 +1,40 @@
+{
+  "loader": "fusion:model",
+  "type": "fusion:connecting",
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "pokeworld:block/alph_stone_mossy",
+    "up": "pokeworld:block/alph_stone_mossy",
+    "north": "pokeworld:block/alph_stone_mossy",
+    "south": "pokeworld:block/alph_stone_mossy",
+    "east": "pokeworld:block/alph_stone_mossy",
+    "west": "pokeworld:block/alph_stone_mossy",
+    "particle": "pokeworld:block/alph_stone_mossy"
+  },
+  "connections": {
+    "down": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "up": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "north": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "south": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "east": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    },
+    "west": {
+      "type": "fusion:match_block",
+      "block": "pokeworld:poke_portal_frame"
+    }
+  }
+}
