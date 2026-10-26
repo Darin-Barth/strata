@@ -3644,7 +3644,7 @@ hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
-hash = "e7e2d44ab47fb3d114c8ddd00ba4716c05cb8c32cbdc40f576ff77fd4c294f11"
+hash = "16900faf31fb733af93b96311387ce93ed4126960cbe65dc61b3992bb9447dc3"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"

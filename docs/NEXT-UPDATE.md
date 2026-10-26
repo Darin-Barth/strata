@@ -6,7 +6,7 @@ critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
 - **New: `/sethome` and `/home`**: one home per player, any dimension, 10-second cooldown after each `/home` (KubeJS, server-only).
-- **New: teammates can't hurt each other**: damage between players in the same FTB Teams party is cancelled, including arrows and spells. Different teams can still fight (KubeJS, server-only).
+- **New: friends can't hurt each other**: damage between players in the same FTB Teams party, or whose teams list each other as allies, is cancelled, including arrows and spells. Allies keep separate quest progress. Everyone else can still fight (KubeJS, server-only).
 - **IPN cleanup**: the purple arrows on hotbar and armor slots were Inventory Profiles Next's auto-refill indicator icons, now off (auto-refill still works). Artifacts' Everlasting Beef and Eternal Steak are blacklisted from auto-refill, which stops the repeating "replace failed" warning. Ships `config/inventoryprofilesnext/inventoryprofiles.json` (not preserved, so it resets players' IPN settings on each update; switch to `preserve = true` once people customize IPN).
 - **New: Seamless Sleep**: the night fast-forwards smoothly while someone sleeps. (Already live on the server: `gamerule playersSleepingPercentage 1`, so one sleeping player skips the night. It's a world setting, so it doesn't need the update.)
 - **Village guards no longer turn on players over low reputation** (Guard Villagers' instant-aggro threshold -100 → -9999). They still defend villagers and guards you attack.
