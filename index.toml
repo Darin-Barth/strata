@@ -149,6 +149,10 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "bc624389ea3f194fba7d6bdf22b43a3ba62dfa331bafb141c0966c25ceb1ccf8"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/abyssal_plain.snbt"
+hash = "49bf492d3c3a82507b220381d58d8651049322536d24f365246d3e447bce007b"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/ad_astra.snbt"
 hash = "5c7bc85256f5e590ddb0ed62611b467c989d54a1116e1aceb32db35e05dbc91d"
 
@@ -302,7 +306,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a9abbc6bad815fb4d6c0fc1b5b6b9a07bf3faef66cc0b1fd279b8c61435f4c54"
+hash = "bd533087cf621bacdb0ece5c8ef3c33b3df682b90a3764b798a02867e1993e98"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"

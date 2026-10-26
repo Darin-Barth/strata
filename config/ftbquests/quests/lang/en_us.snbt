@@ -3431,6 +3431,183 @@
 	]
 	chapter.50AE8F5C17F0FC59.title: "The Pokémon World"
 	chapter.50AE8F5C17F0FC59.chapter_subtitle: ["Build a portal, pick a partner, catch them all"]
+	quest.6AC757974947AF79.title: "What is the Abyssal Plain?"
+	quest.6AC757974947AF79.quest_desc: [
+		"Far below every ocean lies the &bAbyssal Plain&r: a world of water with &cno surface&r. A rock ceiling caps the sea, so there's nowhere to swim up for air."
+		""
+		"Down there you need real engineering: diving suits, airlocks, air machines and, deep enough, &esubmarines&r (&eCreate: Deep Seas&r)."
+		""
+		"The big goal: build a &bDeep Station&r on the floor of the Trench, and wake what sleeps down there."
+	]
+	quest.26F5746C4F526574.title: "The Tidecaller"
+	quest.26F5746C4F526574.quest_desc: [
+		"Craft the &eTidecaller&r: a &eConduit&r in the middle, a &eSubmarine Ballast Tank&r above and below it, and &eprismarine crystals&r down both sides."
+		""
+		"The Conduit needs a &eHeart of the Sea&r (buried treasure maps hide in shipwrecks and ocean ruins) and 8 &enautilus shells&r (fishing, drowned, wandering traders). Ballast Tanks come from &eCreate: Deep Seas&r: press &eR&r on one for its recipe."
+	]
+	task.30E835F536A3D788.title: "Enter the Abyssal Plain"
+	quest.072C3010CB2ED8A6.title: "Into the Deep"
+	quest.072C3010CB2ED8A6.quest_desc: [
+		"Build a frame of &eDark Prismarine&r the shape of a Nether portal (at least 4 wide and 5 tall) and use the &eTidecaller&r on it. Step in!"
+		""
+		"The way home waits right where you arrive, and it leads back to the Overworld at the same spot."
+	]
+	quest.28FE3B36C14CC6D4.title: "The Lifepod"
+	quest.28FE3B36C14CC6D4.quest_desc: [
+		"You arrive inside a &bLifepod&r: a small sealed room with air, lights, windows and a chest of supplies. Its walls can't be broken, so the sea can't get in."
+		""
+		"The way out is the &bmoon pool&r, the hole of water in the floor. Swim down through it and you're in the open sea. Come back the same way to catch your breath or to go home."
+		""
+		"Check the chest, then click the checkmark."
+	]
+	quest.224F84C562E7F963.title: "The Sea Always Wins"
+	quest.224F84C562E7F963.quest_desc: [
+		"The Abyssal Plain has its own rules:"
+		""
+		"&bThe sea always wins.&r Break a block next to water and the gap fills with water. No digging dry tunnels or air pockets!"
+		"&bNo Conduit power.&r Conduits work everywhere else, but not down here."
+		"&bNo sponges.&r The sea is far too big for them."
+		"&bWater pressure.&r Deeper than &e120 m&r (counted from the ceiling) the water starts to hurt you, and at &c180 m&r it crushes you."
+		""
+		"So you bring your own air: sealed rooms, pumps and air machines. Click the checkmark when you're ready."
+	]
+	task.07EE25EA17C2EBFA.title: "Visit the Abyssal Shelf"
+	quest.1B61C7031F6C745D.title: "The Shelves"
+	quest.1B61C7031F6C745D.quest_desc: [
+		"The &bAbyssal Shelf&r is the shallow edge of the sea: kelp forests, coral and fish. It's in the top &e120 m&r, so plain gear is fine here."
+		""
+		"Bring a way to breathe (water breathing potions, a Create backtank, spells) and plenty of light: glowing life is the only light down here."
+	]
+	quest.612E075194D2FC03.title: "Copper Diving Suit"
+	quest.612E075194D2FC03.quest_desc: [
+		"Going deeper than &e120 m&r needs the full &eCopper Diving Suit&r: Create's &eCopper Diving Helmet&r and &eBoots&r, plus Deep Seas' &eDiving Chestplate&r and &eLeggings&r."
+		""
+		"Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eCopper Backtank&r in your inventory: the helmet breathes from it. Carry a spare!"
+	]
+	task.070BF70FE05C38AF.title: "Visit the Abyssal Plain biome"
+	quest.310B1B9339D25FD1.title: "The Plain"
+	quest.310B1B9339D25FD1.quest_desc: [
+		"Below the shelves lies the &bAbyssal Plain&r itself, about &e245 m&r below the ceiling: flats of clay and mud, glass sponges, whale bones and ruins."
+		""
+		"Keep an eye out for the hot &cHydrothermal Fields&r (vents and magma) and the glowing &bBioluminescent Gardens&r."
+		""
+		"Bring back a &eGlass Sponge&r. It's only for decorating: it won't soak up any water."
+	]
+	quest.10318FD9DF2A15C1.title: "First Air"
+	quest.10318FD9DF2A15C1.quest_desc: [
+		"A base down here is a &bpressure hull&r: a sealed room you pump dry."
+		""
+		"Build a closed room (no gaps!) and pump the water out with Create &eMechanical Pumps&r. A &eDecompression Chamber&r makes an airlock, so you can come and go without flooding the place."
+		""
+		"Remember, the sea always wins: careful when you mine near your walls. Click the checkmark once you have a dry room."
+	]
+	quest.5D4BC40F023B56F7.title: "Breathing Room"
+	quest.5D4BC40F023B56F7.quest_desc: [
+		"A dry room still runs out of air. The &eElectrolyzer&r makes oxygen and the &eOxygen Diffuser&r spreads it through your sealed space."
+		""
+		"Set them up and your base (or your submarine) stays breathable. Press &eR&r on them for recipes."
+	]
+	quest.0A85AFC92AC64D95.title: "Your First Submarine"
+	quest.0A85AFC92AC64D95.quest_desc: [
+		"Past &e280 m&r even the diving suit gives up. From here on you go by &bsubmarine&r."
+		""
+		"A Deep Seas submarine is a Create contraption: a sealed hull with &eBallast Tanks&r to dive and surface, &eWater Thrusters&r or a &ePropeller&r to move, and an &eOnboard Computer&r to steer. Put your air machines inside."
+		""
+		"Hull blocks have &cdepth ratings&r: the deeper you go, the stronger the hull must be. Ponder the Onboard Computer to learn the controls."
+	]
+	task.017C3AF57622D38C.title: "Reach the Trench"
+	quest.52D2B8055E435796.title: "The Trench"
+	quest.52D2B8055E435796.quest_desc: [
+		"&cThe Trench&r cuts deep into the Plain, about &e545 m&r down. Only a submarine gets you there."
+		""
+		"It's home to the &bDeep Ones&r, a drowned people with knights and mages, and to the &cHullbreaker&r, a monster that hunts submarines. The best ruins and the best loot are down here too."
+	]
+	task.472576B42AB86936.title: "Make your first discovery"
+	quest.2DA5289933287326.title: "Field Guide"
+	quest.2DA5289933287326.quest_desc: [
+		"Everything down here is new to science. Craft a &eField Guide&r (a book and a spyglass), then look at creatures and plants through your &espyglass&r to scan them into it."
+		""
+		"Each discovery fills in a page of notes."
+	]
+	task.1BE5094D8C4678AB.title: "Observe a Lanternfish"
+	task.599AA88A32BE7C60.title: "Observe a Tripodfish"
+	task.781217A559B19B64.title: "Observe an Anglerfish"
+	quest.38A64FDE8C14E9B9.title: "Creatures of the Deep"
+	quest.38A64FDE8C14E9B9.quest_desc: [
+		"Find and study three deep-sea creatures: look straight at each one for a moment."
+		""
+		"&eLanternfish&r swim in glowing schools, &eTripodfish&r stand on the seafloor on their long fins, and the &eAnglerfish&r waits in the dark behind its little light. Scan them into your Field Guide while you're at it!"
+	]
+	quest.76F2F16976A5FE8F.title: "Scanner"
+	quest.76F2F16976A5FE8F.quest_desc: [
+		"A &eScanner&r (Scannable) pings everything around you and shows it through rock and murky water."
+		""
+		"Modules choose what it finds: &eMonsters&r, &eChests&r and &eRange&r are great for ruin hunting. It runs on FE, so charge it like any powered tool."
+	]
+	task.0AFC9DF63FAA7770.title: "Find the ruins of Atlantis"
+	task.4BD68F946E33AD09.title: "Find the Prismarine Trial Chamber"
+	quest.3B6171B022E13FAA.title: "Ruins of the Plain"
+	quest.3B6171B022E13FAA.quest_desc: [
+		"A whole civilisation drowned here long ago. Its ruins lie across the Plain:"
+		""
+		"&eAtlantis&r: the broken streets and temples of an ancient city."
+		"&ePrismarine Trial Chamber&r: a trial chamber built by the drowned people. Expect a fight, and look for &dAbyssal Pearls&r in its chests."
+	]
+	task.6F85B5632766BC43.title: "Find the Colosseum"
+	task.729B69215662579D.title: "Find the Sunken City"
+	quest.297EB6FAC16B5CBB.title: "Ruins of the Trench"
+	quest.297EB6FAC16B5CBB.quest_desc: [
+		"The deepest ruins are in the Trench:"
+		""
+		"&eThe Colosseum&r: an arena with a guardian waiting at its heart. Its chests can hold &dAbyssal Pearls&r."
+		"&eThe Sunken City&r: the drowned capital, still guarded."
+		""
+		"The &bDeep Ones&r build ruins of their own down here too, and their chests can also hold pearls."
+	]
+	quest.43929FA09B4321AA.title: "Karkinos"
+	quest.43929FA09B4321AA.quest_desc: [
+		"&cKarkinos&r is a giant crab and the first big hunt of the deep."
+		""
+		"It doesn't wander about: you call it. Craft an &eOminous Hook&r from the claws of nine different crabs (press &eR&r on it), hold it in your &eoffhand&r and go fishing. Something much bigger than a fish bites."
+		""
+		"&6Drops:&r the &eKarkinos Claw&r, and &dAbyssal Pearls&r when it dies in the Abyssal Plain."
+	]
+	quest.1042CBF2EFA2EE60.title: "The Hullbreaker"
+	quest.1042CBF2EFA2EE60.quest_desc: [
+		"The &cHullbreaker&r roams the Trench and hunts anything that moves, submarines most of all. It's huge, fast and hits like a train."
+		""
+		"Draw it away from your sub, and bring friends."
+		""
+		"&6Drops:&r the &eImmortal Embryo&r, scrap metal and &dAbyssal Pearls&r."
+	]
+	quest.4CA1EE324244B901.title: "Abyssal Pearls"
+	quest.4CA1EE324244B901.quest_desc: [
+		"&dAbyssal Pearls&r are the rarest treasure of the deep. The Leviathan Lure needs &e6&r."
+		""
+		"Deep creatures sometimes drop one, &cKarkinos&r and the &cHullbreaker&r always do, and ruin chests (the trial chamber, the Colosseum, Deep One ruins) can hold them. They only drop in the Abyssal Plain."
+	]
+	quest.106C4A7C8480FED5.title: "The Leviathan Lure"
+	quest.106C4A7C8480FED5.quest_desc: [
+		"Craft the &eLeviathan Lure&r: six &dAbyssal Pearls&r, the &eKarkinos Claw&r, a &eHeart of the Sea&r and the &eImmortal Embryo&r."
+		""
+		"Take it into &cthe Trench&r, below &eY 120&r, and use it. The lure is used up, and only one Leviathan comes at a time."
+	]
+	quest.2166DBD1F4576835.title: "The Leviathan"
+	quest.2166DBD1F4576835.quest_desc: [
+		"Something vast answers the lure. &cThe Leviathan&r is the Abyssal Plain's final boss: fast, armored, and it can't be hurt outside the water. Down here, that's never a problem."
+		""
+		"&6Drops:&r &eTidal Claws&r (a grappling hook), the &eAbyssal Egg&r and &e4 to 6&r &dAbyssal Pearls&r. It counts for the Cataclysm chapter too."
+	]
+	quest.2B196758A8542C39.title: "Deep Station"
+	quest.2B196758A8542C39.quest_desc: [
+		"The big goal: a &bDeep Station&r on the floor of the Trench."
+		""
+		"Build a sealed, pumped-dry base down there with an airlock, working air, light, storage and a dock for your submarine. Only the strongest hull blocks hold at that depth."
+		""
+		"Show it off to your friends, then click the checkmark. Welcome home, deep-sea explorer!"
+	]
+	chapter.3817B6365ECCAD9C.title: "The Abyssal Plain"
+	chapter.3817B6365ECCAD9C.chapter_subtitle: ["Dive, build a base you can breathe in, wake the Leviathan"]
 	quest.2278F8B050E916A0.title: "What is Combat \\& Gear?"
 	quest.2278F8B050E916A0.quest_desc: [
 		"Fighting in Strata feels different from vanilla:"

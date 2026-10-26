@@ -1,0 +1,530 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abyssal_plain"
+	group: "76581968F62E459A"
+	icon: { id: "strata:tidecaller" }
+	id: "3817B6365ECCAD9C"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6AC757974947AF79"
+			x: 0.0d
+			y: 4.5d
+			icon: { id: "minecraft:heart_of_the_sea" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "4B96D8BA7A195526", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "5BFC3951BCEB958F", type: "xp", xp: 100 }
+				{
+					id: "4957F419AA8B6C33"
+					type: "item"
+					item: { count: 1, id: "minecraft:prismarine_crystals" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "26F5746C4F526574"
+			x: 1.75d
+			y: 4.5d
+			dependencies: ["6AC757974947AF79"]
+			icon: { id: "strata:tidecaller" }
+			tasks: [
+				{
+					id: "1A7692F93705D795"
+					type: "item"
+					item: { count: 1, id: "strata:tidecaller" }
+				}
+			]
+			rewards: [
+				{ id: "7C007D7173C767C8", type: "xp", xp: 250 }
+				{ id: "77B4103BF4B30B42", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "7F453F615D920F28"
+					type: "item"
+					item: { count: 1, id: "minecraft:dark_prismarine" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "072C3010CB2ED8A6"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["26F5746C4F526574"]
+			icon: { id: "minecraft:dark_prismarine" }
+			tasks: [
+				{ id: "30E835F536A3D788", type: "dimension", dimension: "strata:abyssal_plain" }
+			]
+			rewards: [
+				{ id: "234D4C2DAD192F7E", type: "xp", xp: 500 }
+				{ id: "3D3AE63B52473309", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "703BED1118C4AF2B"
+					type: "item"
+					item: { count: 1, id: "minecraft:cooked_cod" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "28FE3B36C14CC6D4"
+			x: 5.25d
+			y: 4.5d
+			dependencies: ["072C3010CB2ED8A6"]
+			icon: { id: "minecraft:sea_lantern" }
+			tasks: [
+				{ id: "1184945A2C4F1086", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "5AE9204D8B436968", type: "xp", xp: 100 }
+				{
+					id: "5C70A073E0C39399"
+					type: "item"
+					item: { count: 1, id: "minecraft:sea_lantern" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "224F84C562E7F963"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["28FE3B36C14CC6D4"]
+			icon: { id: "minecraft:water_bucket" }
+			shape: "hexagon"
+			tasks: [
+				{ id: "560521B56372EE2D", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "788DFBA9B7482380", type: "xp", xp: 100 }
+				{
+					id: "34ED24B0C8EF0165"
+					type: "item"
+					item: { count: 1, id: "minecraft:glass" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1B61C7031F6C745D"
+			x: 8.75d
+			y: 1.5d
+			dependencies: ["224F84C562E7F963"]
+			icon: { id: "minecraft:kelp" }
+			tasks: [
+				{ id: "07EE25EA17C2EBFA", type: "biome", biome: "strata:abyssal_shelf" }
+			]
+			rewards: [
+				{ id: "6BE23A48D2FA0975", type: "xp", xp: 250 }
+				{ id: "453DBC2950FD659C", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "3BF18098239129ED"
+					type: "item"
+					item: { count: 1, id: "minecraft:dried_kelp_block" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "612E075194D2FC03"
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["1B61C7031F6C745D"]
+			icon: { id: "create:copper_diving_helmet" }
+			tasks: [
+				{
+					id: "278C5FC943DD04E0"
+					type: "item"
+					item: { count: 1, id: "create:copper_diving_helmet" }
+				}
+				{
+					id: "427DB2ABFA929772"
+					type: "item"
+					item: { count: 1, id: "create_submarine:diving_chestplate" }
+				}
+				{
+					id: "516E2CC8A505594B"
+					type: "item"
+					item: { count: 1, id: "create_submarine:diving_leggings" }
+				}
+				{
+					id: "7B15714EED40C2C6"
+					type: "item"
+					item: { count: 1, id: "create:copper_diving_boots" }
+				}
+				{
+					id: "5C26C98688B700AB"
+					type: "item"
+					item: { count: 1, id: "create:copper_backtank" }
+				}
+			]
+			rewards: [
+				{ id: "6134219F95F3DEDD", type: "xp", xp: 500 }
+				{ id: "16EE9F696DD5A5AE", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "1F193EE7308777E2"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "310B1B9339D25FD1"
+			x: 12.25d
+			y: 1.5d
+			dependencies: ["612E075194D2FC03"]
+			icon: { id: "hybrid_aquatic:glass_sponge" }
+			tasks: [
+				{ id: "070BF70FE05C38AF", type: "biome", biome: "strata:abyssal_plain" }
+				{
+					id: "6D33797E0D6F7EE5"
+					type: "item"
+					item: { count: 1, id: "hybrid_aquatic:glass_sponge" }
+				}
+			]
+			rewards: [
+				{ id: "0327B926755EA167", type: "xp", xp: 500 }
+				{ id: "191462D9AC30DE47", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "10318FD9DF2A15C1"
+			x: 8.75d
+			y: 4.5d
+			dependencies: ["224F84C562E7F963"]
+			icon: { id: "create_submarine:decompression_chamber" }
+			tasks: [
+				{
+					id: "595DE310D3698375"
+					type: "item"
+					item: { count: 1, id: "create_submarine:decompression_chamber" }
+				}
+				{
+					id: "5AF52B8E1FF66D42"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_pump" }
+				}
+				{ id: "25DD0F2778B579E5", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "3C46ACFE5E8FADF0", type: "xp", xp: 500 }
+				{ id: "2F4791F97C748043", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "5D4BC40F023B56F7"
+			x: 10.5d
+			y: 4.5d
+			dependencies: ["10318FD9DF2A15C1"]
+			icon: { id: "create_submarine:oxygene_diffuser" }
+			tasks: [
+				{
+					id: "3B553A769F91509D"
+					type: "item"
+					item: { count: 1, id: "create_submarine:electrolyzer" }
+				}
+				{
+					id: "3A36DC48C33FAF87"
+					type: "item"
+					item: { count: 1, id: "create_submarine:oxygene_diffuser" }
+				}
+			]
+			rewards: [
+				{ id: "41149F8396EFA120", type: "xp", xp: 500 }
+				{ id: "58196C48EFFE7C8D", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "0A85AFC92AC64D95"
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["310B1B9339D25FD1", "5D4BC40F023B56F7"]
+			icon: { id: "create_submarine:command_sub" }
+			tasks: [
+				{
+					id: "281AC90B82F1E73D"
+					type: "item"
+					item: { count: 1, id: "create_submarine:water_thruster" }
+				}
+				{
+					id: "481382E70C0D9B4F"
+					type: "item"
+					item: { count: 1, id: "create_submarine:command_sub" }
+				}
+			]
+			rewards: [
+				{ id: "443065C8BB855E7B", type: "xp_levels", xp_levels: 10 }
+				{ id: "763DFEB7F6B00029", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "52D2B8055E435796"
+			x: 15.75d
+			y: 3.0d
+			dependencies: ["0A85AFC92AC64D95"]
+			icon: { id: "alexscaves:abyssmarine" }
+			tasks: [
+				{ id: "017C3AF57622D38C", type: "biome", biome: "strata:the_trench" }
+			]
+			rewards: [
+				{ id: "233844EAFA14245D", type: "xp_levels", xp_levels: 10 }
+				{ id: "2CDE55876DB52F6F", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "280C902A9FE357A2"
+					type: "item"
+					item: { count: 1, id: "create_submarine:sonar" }
+				}
+			]
+		}
+		{
+			id: "2DA5289933287326"
+			x: 8.75d
+			y: 7.5d
+			dependencies: ["224F84C562E7F963"]
+			icon: { id: "fieldguide:field_guide" }
+			tasks: [
+				{
+					id: "2E53A319CA3FF784"
+					type: "item"
+					item: { count: 1, id: "fieldguide:field_guide" }
+				}
+				{
+					id: "472576B42AB86936"
+					type: "advancement"
+					advancement: "fieldguide:first_discovery"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{ id: "1B82E032C1FB782F", type: "xp", xp: 250 }
+				{ id: "28654C47A55248A0", type: "random", table_id: 2860384277007155420L }
+			]
+		}
+		{
+			id: "38A64FDE8C14E9B9"
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["2DA5289933287326"]
+			icon: { id: "alexscaves:lanternfish" }
+			tasks: [
+				{
+					id: "1BE5094D8C4678AB"
+					type: "observation"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 20L
+					to_observe: "alexscaves:lanternfish"
+				}
+				{
+					id: "599AA88A32BE7C60"
+					type: "observation"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 20L
+					to_observe: "alexscaves:tripodfish"
+				}
+				{
+					id: "781217A559B19B64"
+					type: "observation"
+					observation_type: "entity_type"
+					observe_type: 5
+					timer: 20L
+					to_observe: "hybrid_aquatic:anglerfish"
+				}
+			]
+			rewards: [
+				{ id: "15B8BC76C2371B30", type: "xp", xp: 500 }
+				{ id: "7B3D0F8CC85FD3D3", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "76F2F16976A5FE8F"
+			x: 12.25d
+			y: 7.5d
+			dependencies: ["2DA5289933287326"]
+			icon: { id: "scannable:scanner" }
+			tasks: [
+				{
+					id: "6E4038B982F71EB1"
+					type: "item"
+					item: { count: 1, id: "scannable:scanner" }
+				}
+			]
+			rewards: [
+				{ id: "755F7A3B74863958", type: "xp", xp: 250 }
+				{ id: "7EF11EDDEB36BC19", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "513B422B6E851151"
+					type: "item"
+					item: { count: 1, id: "scannable:chest_module" }
+				}
+			]
+		}
+		{
+			id: "3B6171B022E13FAA"
+			x: 14.0d
+			y: 7.5d
+			dependencies: ["310B1B9339D25FD1", "76F2F16976A5FE8F"]
+			icon: { id: "minecraft:prismarine_bricks" }
+			tasks: [
+				{ id: "0AFC9DF63FAA7770", type: "structure", structure: "strata:abyssal/mos_ruins_atlantis" }
+				{ id: "4BD68F946E33AD09", type: "structure", structure: "strata:abyssal/joshie_prismarine_trial_chamber" }
+			]
+			rewards: [
+				{ id: "2ED7A3B3135A7E4C", type: "xp", xp: 500 }
+				{ id: "236693D1C6D21B42", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "297EB6FAC16B5CBB"
+			x: 17.5d
+			y: 6.0d
+			dependencies: ["3B6171B022E13FAA", "52D2B8055E435796"]
+			icon: { id: "minecraft:dark_prismarine" }
+			tasks: [
+				{ id: "6F85B5632766BC43", type: "structure", structure: "strata:abyssal/joshie_colossuem" }
+				{ id: "729B69215662579D", type: "structure", structure: "strata:abyssal/joshie_sunken_city" }
+			]
+			rewards: [
+				{ id: "029995D20D804D89", type: "xp_levels", xp_levels: 10 }
+				{ id: "60925FBFFBDDF0D0", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "43929FA09B4321AA"
+			x: 14.0d
+			y: -1.5d
+			dependencies: ["310B1B9339D25FD1"]
+			icon: { id: "hybrid_aquatic:karkinos_claw" }
+			tasks: [
+				{
+					id: "559ED7BFD1E7256D"
+					type: "item"
+					item: { count: 1, id: "hybrid_aquatic:ominous_hook" }
+				}
+				{
+					id: "16A129BCCE9C0DEB"
+					type: "kill"
+					entity: "hybrid_aquatic:karkinos"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "68381ADE0773E6F8", type: "xp_levels", xp_levels: 10 }
+				{ id: "0AA6E4ABEC5B0AD5", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "1042CBF2EFA2EE60"
+			x: 17.5d
+			y: -1.5d
+			dependencies: ["43929FA09B4321AA", "52D2B8055E435796"]
+			icon: { id: "alexscaves:immortal_embryo" }
+			tasks: [
+				{
+					id: "5A36EBE9DCE25136"
+					type: "kill"
+					entity: "alexscaves:hullbreaker"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "41DC60D7951BC3BC", type: "xp_levels", xp_levels: 10 }
+				{ id: "1E425C8E89313A77", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "4CA1EE324244B901"
+			x: 19.25d
+			y: -1.5d
+			dependencies: ["1042CBF2EFA2EE60"]
+			icon: { id: "strata:abyssal_pearl" }
+			tasks: [
+				{
+					id: "2C702EE9D9EF759F"
+					type: "item"
+					item: { count: 1, id: "strata:abyssal_pearl" }
+					count: 6L
+				}
+			]
+			rewards: [
+				{ id: "2F0C9574533C0A0B", type: "xp", xp: 500 }
+				{ id: "570F8B8BA8A41B7C", type: "random", table_id: 3181575472400868046L }
+			]
+		}
+		{
+			id: "106C4A7C8480FED5"
+			x: 21.0d
+			y: -1.5d
+			dependencies: ["4CA1EE324244B901"]
+			icon: { id: "strata:leviathan_lure" }
+			tasks: [
+				{
+					id: "47E80A99691C6736"
+					type: "item"
+					item: { count: 1, id: "strata:leviathan_lure" }
+				}
+			]
+			rewards: [
+				{ id: "03BAEAF3C1F596A5", type: "xp", xp: 500 }
+				{ id: "1C99D8506DDAD8C3", type: "random", table_id: 2382341390593558078L }
+			]
+		}
+		{
+			id: "2166DBD1F4576835"
+			x: 22.75d
+			y: -1.5d
+			dependencies: ["106C4A7C8480FED5"]
+			icon: { id: "cataclysm:tidal_claws" }
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "62BF99A1AF9411D9"
+					type: "kill"
+					entity: "cataclysm:the_leviathan"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "60DB0DC8FBFEC9E1", type: "xp_levels", xp_levels: 20 }
+				{ id: "47388B96428326D1", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "687A8CCBC48E7D88"
+					type: "item"
+					item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				}
+			]
+		}
+		{
+			id: "2B196758A8542C39"
+			x: 22.75d
+			y: 3.0d
+			dependencies: ["2166DBD1F4576835", "52D2B8055E435796", "5D4BC40F023B56F7"]
+			icon: { id: "create_submarine:oxygene_diffuser" }
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "743A9CE536A02032", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "42307030EB96DE73", type: "xp_levels", xp_levels: 20 }
+				{ id: "0345206DE5F4D826", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "0567E1C9F1834E57"
+					type: "item"
+					item: { count: 1, id: "strata:abyssal_pearl" }
+					count: 3
+				}
+			]
+		}
+	]
+}
