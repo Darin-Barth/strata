@@ -13,12 +13,24 @@ const hollowCapNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spiri
 const hollowCapBosses = ['graveyard:lich', 'grim_and_bleak:gate_guardian']
 const hollowCapFraction = 0.4
 const hollowCapGraceMs = 10 * 1000
+// Horror damage that comes without an attacker: a Weeping Angel's neck snap, Grim & Bleak's
+// smite around a dying Gate Guardian (500 damage, 15 blocks), its decay and possession.
+// Capped (not graced) in the Hollow.
+const hollowCapSourcelessTypes = ['weeping_angels:snapped_neck', 'weeping_angels:punch_stone',
+  'grim_and_bleak:godly_power', 'grim_and_bleak:decayy', 'grim_and_bleak:posession']
 
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Pre', event => {
   const victim = event.getEntity()
   if (!victim || victim.level.isClientSide() || !victim.isPlayer()) return
   const attacker = event.getSource().getEntity()
-  if (!attacker) return
+  if (!attacker) {
+    const key = event.getSource().typeHolder().unwrapKey()
+    if (!key.isPresent() || hollowCapSourcelessTypes.indexOf(String(key.get().location())) < 0) return
+    if (String(victim.level.dimension().location()) !== 'strata:hollow') return
+    const cap = victim.getMaxHealth() * hollowCapFraction
+    if (event.getNewDamage() > cap) event.setNewDamage(cap)
+    return
+  }
   const id = String(hollowCapEntityType.getKey(attacker.getType()))
   if (hollowCapBosses.indexOf(id) >= 0) return
   if (hollowCapNamespaces.indexOf(id.split(':')[0]) < 0) return

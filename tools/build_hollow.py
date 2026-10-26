@@ -248,7 +248,9 @@ def main():
     hb = f"#{NS}:hollow_biomes"
 
     # --- Horror mods: spawns and structures in the Hollow only ---
-    # Whispering Spirits, The Ravenous: their spawn files target every biome.
+    # Whispering Spirits, The Ravenous: their spawn files target every biome. The Ravenous' own spawn
+    # check also wants #minecraft:is_overworld, which Hollow biomes never get, so these two
+    # never fire; server_scripts/hollow_ravenous.js spawns it instead.
     write(out, "whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json", {
         "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface",
         "spawners": {"type": "whispering_spirits:whispering_spirit", "weight": 8, "minCount": 1, "maxCount": 1}})
@@ -306,7 +308,9 @@ def main():
         "rolls": 1, "entries": [{"type": "minecraft:item", "name": c("hollow_ember"), "functions": [
             {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]}]}]})
     ember_chests = {
-        "grim_and_bleak:chests/abandonned_tower_loot": 0.5, "grim_and_bleak:chests/cabinloot": 0.25,
+        # Grim & Bleak's ruined portals use this minecraft-namespaced table of its own (not vanilla's
+        # ruined_portal); its abandonned_tower_loot table is used by no structure.
+        "minecraft:chests/ruinedportalloot": 0.4, "grim_and_bleak:chests/cabinloot": 0.25,
         "grim_and_bleak:chests/small_tent_loot": 0.15, "graveyard:chests/great_crypt_loot": 0.75,
         "graveyard:chests/crypt_loot": 0.4, "graveyard:chests/large_graveyard_loot": 0.4,
         "graveyard:chests/medium_graveyard_loot": 0.25, "graveyard:chests/swamp_graveyard_loot": 0.25,

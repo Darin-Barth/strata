@@ -372,7 +372,9 @@
       // Items that summon the boss, as translation keys.
       summonItems: ["item.minecraft.debug_stick"],
       // Mobs whose death fills the dagger with blood, as translation keys.
-      bloodEntities: ["entity.minecraft.villager"],
+      // Strata: the Hollow has no villagers, so its own corrupted villagers and illagers count too
+      // (otherwise the Corrupted Champion can't be summoned there).
+      bloodEntities: ["entity.minecraft.villager", "entity.graveyard.tormented_villager", "entity.graveyard.corrupted_pillager", "entity.graveyard.corrupted_vindicator", "entity.graveyard.corrupted_evoker", "entity.graveyard.acolyte"],
       // Ticks of invulnerability after the boss spawns. Minimum 200.
       spawnInvulnerableTicks: 410
     },

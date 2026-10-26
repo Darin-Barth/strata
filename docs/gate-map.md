@@ -1,6 +1,6 @@
 # Gate map: what late tiers cost (proposal, Oct 26, 2026)
 
-**Status: proposal for Darin's review; section 5 partly decided (Oct 26). Nothing built yet.**
+**Status: proposal for Darin's review; section 5 decided (Oct 26). Nothing built yet.**
 
 The design doc's rule says late tiers need boss drops ("Boss gating"), but nothing enforces it yet. This map is the plan for that, across all three pillars plus gear.
 
@@ -88,27 +88,28 @@ Checked in the jars on Oct 26.
    - **Recall** (free warp to spawn): **removed**, including the Iron & Nouveau glyph copy.
    - **Portal:** **kept**. Every cast costs 200 mana and has a 3-minute cooldown, and the portals expire.
    - **Pocket Dimension:** **kept**.
-2. **Draconic Evolution dislocators** (open, recommendation below).
+2. **Draconic Evolution dislocators:** **all four removed** (Darin, Oct 26).
    - **Dislocator:** blaze powder, draconium dust and an Ender Eye. Remembers one spot in any dimension, limited uses.
    - **Player dislocator:** the basic one plus a draconium core and a ghast tear. Teleports you to a player who sneaks to agree, so it's a /tpa.
    - **Point-to-point pair:** the same, but between two linked dislocators.
    - **Advanced dislocator:** fusion crafting with a wyvern core (needs a nether star). Unlimited saved spots in any dimension; each jump burns 1 ender pearl.
-   - *Recommended:* remove the dislocator, the player and point-to-point versions (cheap), and the advanced one too (unlimited free homes, and pearls are farmable). Waystones and Mekanism teleporters already cover this.
-3. **Forsaken Relics linking book:** **home only** (no last-death or marked-spot modes, no cross-dimension rank).
-4. **Oritech portal augment** (open, recommendation below).
+3. **Forsaken Relics linking book:** Darin wanted **home only**, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config. Open: remove it from loot, or try a KubeJS lock to home mode (needs a client test).
+4. **Oritech portal augment:** **kept** (Darin, Oct 26).
    - A body augment that opens a portal back to your research station.
    - Researching it is a big one-time cost: the top (Arcane) station, 250 million RF, 16 ender pearls, 64 obsidian, an Unholy Intelligence and 32 adamant ingots.
    - After that every use is free and unlimited, with no cooldown.
-   - *Recommended:* keep it. It's late-game and earned, like the Mekanism portable teleporter. A cooldown would need custom code. If "free to use" bothers you, remove it.
+   - Late-game and earned, like the Mekanism portable teleporter.
 5. **Borderline flight:** **removed**:
    - the Artifacts Helium Flamingo (short flight that recharges)
    - the Forsaken Relics Wind Staff (wind jet that recharges)
 
    The Aether's Cloud Staff isn't flight (it summons Cloud Minions that fight), so it stays.
    The Oritech flight augment is free to run but very costly to research (500 million RF, 64 ion thrusters, 32 plutonium pellets), so it passes the flight rule; row G5 adds a dragon heart.
-6. **Wireless:** to talk through with Darin. The old design-doc to-do ("same-dimension wireless behind the Nether or first boss; Quantum Bridge behind a late boss") predates his Oct 25 call in CLAUDE.md (no wireless tiers). *Recommended:* keep the Oct 25 call and mark the old to-do dropped.
+6. **Wireless:** **no tiers** (Darin, Oct 25, confirmed Oct 26). The old design-doc to-do is dropped.
 
 Powah, Oritech and the Draconic reactor still need a place on the power ladder.
+
+**Built Oct 26** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo and Wind Staff filtered out of all loot (LootJS). Copies players already have keep working.
 
 ## 6. Building it
 1. Section 1 fixes and section 5 removals (KubeJS `event.remove` + Iron's spell config datapack).

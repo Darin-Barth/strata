@@ -330,7 +330,7 @@ hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
-hash = "5f06e1e771659f58ed537fea1fca0434c7c726b6c94e4d2dffdb24d2cc9642da"
+hash = "18282a62160d9b257e0d943485944f78f31a5ceb0d88d5ab4b1bde20964827f9"
 
 [[files]]
 file = "config/guardvillagers-common.toml"
@@ -359,6 +359,10 @@ hash = "04821b12229970efa59fb29612a4d492d3778fa79a0194258c03d99f447fe888"
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "c44080e85634ec3352193aa1d65647e1f59d741771b10863157e14dc0acf08f1"
+
+[[files]]
+file = "config/irons_spellbooks_spell_config/irons_spellbooks/recall.json"
+hash = "27e8ddcfc3bb01c8b1b6c646e7be2e166141d6c304fcde0f1275c279a0204d8a"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -2514,7 +2518,7 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "2c4ea97b3590dd008d81a36977ee1c29e96a4cdc91c6bc41b41df41e8494cb43"
+hash = "0b6f5c78c09a4472424cabac44391306928dc0dc73dd6a50e3b1285580776016"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeon_v2.nbt"
@@ -4285,16 +4289,16 @@ file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/swamp_graveyard
 hash = "c33fb31d1ea8ea52265db708ca75084881cb38db658fefcb72167fc8c028c3e8"
 
 [[files]]
-file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/abandonned_tower_loot.json"
-hash = "fe2d1570b3d3c4ae70a74c92221390b969d5909536d25253a05d20944f14ab5a"
-
-[[files]]
 file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/cabinloot.json"
 hash = "60965fd32081a70761726aecf445e692a0ed21b26020233ee9e0e3bdf8af2625"
 
 [[files]]
 file = "kubejs/data/strata/loot_modifiers/hollow_ember/grim_and_bleak/small_tent_loot.json"
 hash = "7ed0ce09fc2ced902e55c462aa4d5946211e25e3a4ba1842434ee0859e2f43b1"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/hollow_ember/minecraft/ruinedportalloot.json"
+hash = "9816a202cb8cd165e8fa4df3987506d0c14a3b0d78a36daf90c04ca1e6150be0"
 
 [[files]]
 file = "kubejs/data/strata/loot_modifiers/hollow_ember/weeping_angels/catacombs.json"
@@ -5145,6 +5149,10 @@ file = "kubejs/server_scripts/hollow_dread.js"
 hash = "fa7d7e837240908ec3f9ed95e035494bf4bdd04f90bc7a7f732b9eba4ed5e363"
 
 [[files]]
+file = "kubejs/server_scripts/hollow_ravenous.js"
+hash = "df04b734c8a12142addc3f1c864d498692fb6a2beaa760c91d6d9776d1a7a507"
+
+[[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
 hash = "6ed2c885d27b85bc41f27b8318f7cb37b9211f06b3eef8773ea297acd342acfb"
 
@@ -5165,6 +5173,10 @@ file = "kubejs/server_scripts/strata_home.js"
 hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
 
 [[files]]
+file = "kubejs/server_scripts/strata_removed_items.js"
+hash = "bd9eb7885df0be7c55dde860a6308c911243e1e160bae7e280db4825acfc9772"
+
+[[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
 hash = "16900faf31fb733af93b96311387ce93ed4126960cbe65dc61b3992bb9447dc3"
 
@@ -5174,7 +5186,7 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "db24136ea42635fd3ed1e4f746d7b47b45888288d0a3818723b91977c42c120d"
+hash = "0c0c7d5d2044a51dd9fecf71de0d1389d3af2243d212bf9533aff0eaa2a4069c"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"

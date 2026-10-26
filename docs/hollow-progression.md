@@ -14,7 +14,7 @@ Scary but fair still holds: no one-shots, and every threat has a warning and a c
 - **The rewards are worth it.** Hollow Embers and the boss trophies gate strong items across the whole pack, magic included.
 - **There's a story to piece together.** A lost expedition left pages behind, and they point toward the Sanctuary.
 
-## 2. Fix first (bugs found in the current build)
+## 2. Fix first (bugs found in the current build): items 1–6 done Oct 26
 1. **The Ravenous and its Screechers never spawn.** Their spawn code requires open sky and a biome tagged `#minecraft:is_overworld`, and Hollow biomes deliberately aren't. Fix: a KubeJS spawner in the Hollow (rare, at night-level light, open sky, away from the portal and the Sanctuary). Don't tag the biomes: that would let Overworld mobs in.
 2. **The Corrupted Champion (Graveyard lich) can't be summoned.** Its blood vial only fills from villagers, and the Hollow has none. Fix: in `config/graveyard`, set `bloodEntities` to the Hollow's own mobs (for example tormented villagers, ghouls and other Graveyard undead; to be confirmed against the entity list).
 3. **The damage cap misses hits without an attacker.** That covers the Weeping Angel neck snap and Grim & Bleak's 500-damage smite around a dying Gate Guardian. Fix: also cap by damage type in the Hollow, for Weeping Angels and Grim & Bleak (`godly_power`).

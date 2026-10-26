@@ -15,7 +15,11 @@
     "pokeworld:bell_fragment/betterdungeons/spider_dungeon/egg_room",
     "pokeworld:bell_fragment/betterdeserttemples/tomb",
     "pokeworld:bell_fragment/betterjungletemples/treasure",
-    "strata:hollow_ember/grim_and_bleak/abandonned_tower_loot",
+    "strata:abyssal_pearl/alexscaves/abyssal_ruins",
+    "strata:abyssal_pearl/joshie/colosseum_middle",
+    "strata:abyssal_pearl/joshie/colosseum_top",
+    "strata:abyssal_pearl/joshie/trial_chamber_chest",
+    "strata:hollow_ember/minecraft/ruinedportalloot",
     "strata:hollow_ember/grim_and_bleak/cabinloot",
     "strata:hollow_ember/grim_and_bleak/small_tent_loot",
     "strata:hollow_ember/graveyard/great_crypt_loot",
@@ -27,10 +31,6 @@
     "strata:hollow_ember/graveyard/large_loot",
     "strata:hollow_ember/graveyard/medium_loot",
     "strata:hollow_ember/graveyard/small_loot",
-    "strata:hollow_ember/weeping_angels/catacombs",
-    "strata:abyssal_pearl/alexscaves/abyssal_ruins",
-    "strata:abyssal_pearl/joshie/colosseum_middle",
-    "strata:abyssal_pearl/joshie/colosseum_top",
-    "strata:abyssal_pearl/joshie/trial_chamber_chest"
+    "strata:hollow_ember/weeping_angels/catacombs"
   ]
 }

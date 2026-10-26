@@ -3,11 +3,11 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "grim_and_bleak:chests/abandonned_tower_loot"
+      "loot_table_id": "minecraft:chests/ruinedportalloot"
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 0.5
+      "chance": 0.4
     }
   ],
   "table": "strata:inject/hollow_ember"

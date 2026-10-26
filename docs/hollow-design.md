@@ -47,7 +47,7 @@ Also in the Hollow: Creakings (Pale Garden copy). Not used: Born in Chaos (spawn
   - Weeping Angels: they only move when unseen, so watching them and keeping lights up works.
   - The Ravenous: a screech before the chase.
   - Mutants: big, visible mini-bosses with readable attacks.
-  - Sanity: hallucinations scare you but don't hurt you; resting outside the Hollow recovers sanity.
+  - Sanity: hallucinations mostly just scare you, but below 25% sanity some become real mobs that attack (Rotting Stalker, Sneaking Terror; capped like every horror mob). Light, campfires, friends and resting outside the Hollow recover sanity. Kept on purpose (Darin, Oct 26).
 - **No one-shots:** a KubeJS damage cap so a single hit from any Hollow horror mob can take at most ~40% of a player's max health (bosses excluded, since they keep designed stats). This also covers mod updates that buff damage.
 - **Tuned in testing:** Cave Dweller and Ravenous damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only) and theft/light-breaking off if they feel cheap; Sanity's drain rate.
 - **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and GraveStone keeps items safe on death.

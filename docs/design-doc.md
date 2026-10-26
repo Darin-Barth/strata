@@ -204,7 +204,7 @@ These are the tweaks that make the pack feel designed rather than piled together
 
 - [ ] Remove Create: New Age wire recipes (keep Crafts & Additions + IE wires)
 - [ ] Lower Crafts & Additions alternator FE output; keep it below New Age generators
-- [ ] Gate wireless: same-dimension wireless behind the Nether or first major boss; AE2 Quantum Network Bridge behind a late boss drop
+- [x] ~~Gate wireless~~: dropped (Darin, Oct 25 and again Oct 26): no wireless tiers; see CLAUDE.md
 - [ ] Gate top-tier Mekanism / AE2 parts behind boss drops
 - [ ] Waystones: distance-scaled XP cost, extra cost across dimensions; remove warp scrolls/stones from loot
 - [ ] Disable or re-gate Inventory Pets that teleport or give free flight (Cloud, Nether Portal, Ender Chest — review the rest)
