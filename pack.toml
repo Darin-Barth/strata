@@ -1,12 +1,12 @@
 name = "Strata"
 author = "Darin"
-version = "0.2.1"
+version = "0.3.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "986fd155e3b2be691a24fa9c113b0d81ab2817ed434b75ffde03e1bcdb746e16"
+hash = "3fc384f19d0dff6e51595800bd014930fa787f33885c90c3c9003e7384efc104"
 
 [versions]
 minecraft = "1.21.1"
