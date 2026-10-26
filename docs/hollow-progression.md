@@ -1,6 +1,6 @@
 # The Hollow: progression with bite (proposal, Oct 26, 2026)
 
-**Status: proposal for Darin's review. Nothing here is built yet.**
+**Status: approved by Darin (Oct 26), D1–D5 as recommended. Not built yet.**
 
 Darin, Oct 26: "I want this dimension to have real 'bite', not a shallow jumpscare world." This builds on `docs/hollow-design.md` (the world, mobs, dread events, the 40% damage cap). That doc stays the reference for what's built. This one adds what to work toward.
 
@@ -97,12 +97,12 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 
 Supply today: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for a group that visits regularly, and none for players who never go. Darin wants that pull, but everything gated is optional (decision D4).
 
-## 6. Decisions for Darin
-- **D1. The Ravenous eats blocks** (the mod's default). Keep it on: camps need obsidian walls or the Sanctuary. That's the biggest piece of bite. Or turn it off, so it only hunts and builds are safe. *Recommended: on*, since it only exists in the Hollow.
-- **D2. Low sanity spawns real hallucination mobs** below 25%: keep them (capped, with warning)? *Recommended: keep.*
-- **D3. The Pale Beacon needs 1 Hollow Ember per in-game day**, or it's free once built? *Recommended: feed it.*
-- **D4. How hard Hollow Ember gates:** only the items in section 5, or also the Apotheosis Pinnacle tier (killing the Corrupted Champion or Gate Guardian)? *Recommended: section 5 only; Pinnacle stays the Dragon.*
-- **D5. The Lost Signal story pages:** worth it (6 written pages, quest text)? *Recommended: yes.* It's the cheapest way to make the Hollow feel like a place.
+## 6. Decisions (Darin, Oct 26: all five as recommended)
+- **D1. The Ravenous eats blocks** (the mod's default). Keep it on: camps need obsidian walls or the Sanctuary. That's the biggest piece of bite. Or turn it off, so it only hunts and builds are safe. **Decided: on.**
+- **D2. Low sanity spawns real hallucination mobs** below 25%. **Decided: keep them** (capped, with warning).
+- **D3. The Pale Beacon needs 1 Hollow Ember per in-game day**, rather than being free once built. **Decided: feed it.**
+- **D4. How hard Hollow Ember gates:** only the items in section 5, or also the Apotheosis Pinnacle tier (killing the Corrupted Champion or Gate Guardian)? **Decided: section 5 only;** Pinnacle stays the Dragon.
+- **D5. The Lost Signal story pages:** worth it (6 written pages, quest text)? **Decided: yes.**
 
 ## 7. Research notes (from the mod jars, Oct 26)
 - **Corrupted Champion** (`graveyard:lich`):
