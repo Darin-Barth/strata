@@ -330,8 +330,18 @@ file = "config/tide/tide_server.json"
 hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
 
 [[files]]
+file = "config/vanillabackport-client.toml"
+hash = "ad05cfc51b07b659d291e62278f8a8dc0a30b4f64aff0b56120ca011ddd26878"
+preserve = true
+
+[[files]]
 file = "config/vanillabackport-common.toml"
 hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
+
+[[files]]
+file = "config/xaero/minimap/profiles/default.cfg"
+hash = "98efe3c6f4b954974a5df3b21a66024f2c33645905362d6634bb1cf2a1bc51ac"
+preserve = true
 
 [[files]]
 file = "config/xaerohud.txt"
