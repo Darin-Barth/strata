@@ -44,6 +44,10 @@ hash = "eec64681017779e529ab998ca131d3c0532bd00509520cdaa19e1e0f9caa3b3c"
 preserve = true
 
 [[files]]
+file = "config/create_submarine-common.toml"
+hash = "5d1561ecf97f5fed423484843ed3d576cea9e2c9765ec0f6edb1a4a3afadb548"
+
+[[files]]
 file = "config/createtweakedcontrollers-client.toml"
 hash = "29616344a5f03e3043659bb076b01a2becdadfe4c4f24625519fe6b99b47ff55"
 preserve = true
@@ -5082,6 +5086,11 @@ metafile = true
 [[files]]
 file = "mods/create-deco.pw.toml"
 hash = "67a405e6307f900d168deaa954a4309c3b44a6025e4efd7b8e774b6f9d3a69cd"
+metafile = true
+
+[[files]]
+file = "mods/create-deep-seas.pw.toml"
+hash = "c9fbb2088235383670502072f33ba1ae2bce0f9604399ba2171a45286f52507f"
 metafile = true
 
 [[files]]
