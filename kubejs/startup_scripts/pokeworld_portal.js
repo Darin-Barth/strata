@@ -54,7 +54,8 @@ StartupEvents.registry('item', event => {
   })
   event.create('pokeworld:bell_fragment').displayName('Bell Fragment').rarity('uncommon')
   // Dropped by the Hollow's horror mobs and found in its chests (server_scripts/hollow_rules.js).
-  event.create('strata:hollow_ember').displayName('Hollow Ember').rarity('rare').glow(true)
+  // Its texture pulses (animated), so no enchantment shimmer.
+  event.create('strata:hollow_ember').displayName('Hollow Ember').rarity('rare')
 })
 
 PortalEvents.register(event => {

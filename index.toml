@@ -402,7 +402,7 @@ hash = "d25f2253a4497657601104ef956556dfb69acbb506aa6eb6fecaba447e2d8e2f"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/block/poke_portal_frame.png"
-hash = "695493d144261589f68a08dd7c412c371fa14d5ea47efe8b0a9e5ee799bbbdb1"
+hash = "655351c3a4f2377f28451a39405d7ffdf17e373471d9751fa3969d639c001433"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/bell_fragment.png"
@@ -422,7 +422,11 @@ hash = "cf675e173ac81548228e8069ad9a4ca2bdfa1838452f2a97999efb87ece1e699"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/hollow_ember.png"
-hash = "48b45b4381d7c809ecaa44c1333b73b3a7645fe378496547bfafafde2500397f"
+hash = "3f16080a4e47d8aebdb381b9d9686e8105da4df530ec25968ff4ddea1d6dd4ac"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/hollow_ember.png.mcmeta"
+hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/pale_lantern.png"
@@ -4438,7 +4442,7 @@ hash = "f6fb8d5452a7f20817a1dc6b6438867830c8ae9cba7a930ff975958221c3ad82"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "5df9e57395a678d8c0a85f6a5cd8874b0dfdec161fa1ec0ffe1a8ffad321b447"
+hash = "7a9524f04250df24659c506c885e4a8cfd64aa74f98b47a9d67c5d2cf2f84373"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"
