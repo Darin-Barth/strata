@@ -22,6 +22,17 @@ In the same screen, under **Java arguments**, add:
 This switches Java to a garbage collector that doesn't freeze the game for big cleanups, so there's much less stutter
 (Distant Horizons recommends it too).
 
+## On a Mac
+The game crashes about a second after you press Play ("java quit unexpectedly") because Drippy's early loading window
+doesn't work on macOS. Turn the early window off once:
+
+1. Press Play once and let it crash, so the config file gets created.
+2. Strata instance → **⋮ → Open folder** → `config` → open `fml.toml` in TextEdit.
+3. Change `earlyWindowControl = true` to `earlyWindowControl = false`, save, and press Play again.
+
+You'll see a plain window for a few seconds instead of the Strata splash, then the normal loading screen. Pack updates
+don't touch this file. On memory: give Java about half your Mac's RAM (8 GB on a 16 GB Mac); 8 GB-RAM Macs can't run the pack.
+
 ## 3. Join
 **Multiplayer → Add Server**, address: **strata.dev-duo.com**. The server has a whitelist; ask Darin if you can't
 get in.
