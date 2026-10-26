@@ -122,7 +122,7 @@ q("mes", "Moog's End Structures", deps="outer", icon="minecraft:purpur_block", t
     The outer islands are dotted with &eMoog's End Structures&r: spires, towers, gardens,
     shrines and even crashed sky ships.
 
-    The &bPokémon World&r's psychic and dragon gyms are out here in the End too!""")
+    The &bKakuto Region&r's psychic and dragon gyms are out here in the End too!""")
 
 q("end_city", "End City", deps="outer", icon="minecraft:purpur_pillar", tier=4,
   tasks=structure("minecraft:end_city", title="Explore an End City"), desc="""

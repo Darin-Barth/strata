@@ -158,4 +158,4 @@ q("where_next", "Where Next?", deps=["fortress", "netherite_gear"], icon="minecr
     &bSame-dimension wireless&r tech is unlocked now (see the Tech chapters).
     &5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need.
     &cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs.
-    &cThe Pokémon World&r: the &cFire Gym&r is down here in the Nether.""")
+    &cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether.""")

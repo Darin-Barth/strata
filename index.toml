@@ -306,7 +306,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "bd533087cf621bacdb0ece5c8ef3c33b3df682b90a3764b798a02867e1993e98"
+hash = "d07e5978a60e9f8a0b3d6a15d67fac568d17c2ac8f111da1d3375287eacb3a69"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -614,7 +614,7 @@ hash = "81dc7c46ea6512841fe76f5ae810db14656e4f68753c66f5c200d3ce0cde1b89"
 
 [[files]]
 file = "kubejs/client_scripts/strata_lang.js"
-hash = "40e057a5c71576df290f02a06513250e5e23eba2cdb98a83eae81dcd16ff45fc"
+hash = "6f6950f7892ae649e70c20fc719bbf6377880cc3776bc78243c79f96aafbfd62"
 
 [[files]]
 file = "kubejs/data/cobblemon/spawn_detail_presets/ancient_city.json"

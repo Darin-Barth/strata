@@ -164,4 +164,4 @@ q("where_next", "Where Next?", deps=["desert_temple", "arise", "idas", "sky"],
     &aThe Twilight Forest&r: a magic forest with a chain of bosses.
     &bThe Aether&r: islands in the sky.
     &5The End&r: find 12 eyes and open the stronghold portal.
-    &cThe Pokémon World&r: if you've found a Bell Fragment.""")
+    &cThe Kakuto Region&r: if you've found a Bell Fragment.""")

@@ -13,7 +13,7 @@
 	quest.7B00515BF7869680.quest_desc: [
 		"&6Build. Fly. Explore.&r"
 		""
-		"Strata is a big modpack with three paths: &bTech&r (machines, trains and airships), &dMagic&r (spells, rituals and spirits) and &aExploration&r (new dimensions, dungeons and bosses). There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon world."
+		"Strata is a big modpack with three paths: &bTech&r (machines, trains and airships), &dMagic&r (spells, rituals and spirits) and &aExploration&r (new dimensions, dungeons and bosses). There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon region, Kakuto."
 		""
 		"This quest book is your guide. Each chapter on the left covers one big mod. Nothing is locked: jump to whatever looks fun. Quests inside a chapter open up in order."
 		""
@@ -154,11 +154,11 @@
 		""
 		"Craft a &eCooking Pot&r and open &aFarming \\& Food&r. Pets \\& Critters and Building \\& Decorating are right next to it."
 	]
-	quest.65BD001383487C33.title: "Path: The Pokémon World"
+	quest.65BD001383487C33.title: "Path: Pokémon (the Kakuto Region)"
 	quest.65BD001383487C33.quest_desc: [
 		"Pokémon live in their own world, reached through a portal you build yourself."
 		""
-		"First you need a &eBell Fragment&r: they're rare finds in chests of dungeons, temples, mineshafts, ancient cities and woodland mansions. Open the &cPokémon World&r chapter for the rest."
+		"First you need a &eBell Fragment&r: they're rare finds in chests of dungeons, temples, mineshafts, ancient cities and woodland mansions. Open the &cKakuto Region&r chapter for the rest."
 	]
 	chapter.793E32936A23A83E.title: "Welcome to Strata"
 	chapter.793E32936A23A83E.chapter_subtitle: ["Build. Fly. Explore. Start here!"]
@@ -2662,7 +2662,7 @@
 		"&aThe Twilight Forest&r: a magic forest with a chain of bosses."
 		"&bThe Aether&r: islands in the sky."
 		"&5The End&r: find 12 eyes and open the stronghold portal."
-		"&cThe Pokémon World&r: if you've found a Bell Fragment."
+		"&cThe Kakuto Region&r: if you've found a Bell Fragment."
 	]
 	chapter.01EF06C46B0F1EC6.title: "Explorer's Guide"
 	chapter.01EF06C46B0F1EC6.chapter_subtitle: ["Compasses, dungeons, ruins and treasure"]
@@ -2786,7 +2786,7 @@
 		"&bSame-dimension wireless&r tech is unlocked now (see the Tech chapters)."
 		"&5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need."
 		"&cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs."
-		"&cThe Pokémon World&r: the &cFire Gym&r is down here in the Nether."
+		"&cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether."
 	]
 	chapter.20C8627B6ED3DAEC.title: "The Nether"
 	chapter.20C8627B6ED3DAEC.chapter_subtitle: ["Fire, fortresses and netherite"]
@@ -3019,7 +3019,7 @@
 	quest.147A5BB5467358D6.quest_desc: [
 		"Ancient Cities sit deep under the mountains, near Y -50. They're huge, dark and silent."
 		""
-		"Their chests are some of the best in the game: &eSwift Sneak&r books, echo shards, smithing templates, and even a &dBell Fragment&r for the Pokémon World portal. In the middle stands a giant frame of &8reinforced deepslate&r. Remember it."
+		"Their chests are some of the best in the game: &eSwift Sneak&r books, echo shards, smithing templates, and even a &dBell Fragment&r for the Kakuto Region portal. In the middle stands a giant frame of &8reinforced deepslate&r. Remember it."
 	]
 	quest.34BA13852FDF2036.title: "Echo Shards"
 	quest.34BA13852FDF2036.quest_desc: [
@@ -3078,7 +3078,7 @@
 		"You've seen the darkest place in the pack. Other big trips:"
 		""
 		"&5The End&r: Warden gear is a great way to face the Ender Dragon."
-		"&cThe Pokémon World&r: ancient city chests are a good place to find a Bell Fragment. &cBosses \\& Combat&r: Cataclysm's bosses."
+		"&cThe Kakuto Region&r: ancient city chests are a good place to find a Bell Fragment. &cBosses \\& Combat&r: Cataclysm's bosses."
 	]
 	chapter.67DA74D25631D972.title: "Deeper and Darker"
 	chapter.67DA74D25631D972.chapter_subtitle: ["The Warden, its city and the Otherside"]
@@ -3281,7 +3281,7 @@
 	quest.494C6E6B0082D282.quest_desc: [
 		"The outer islands are dotted with &eMoog's End Structures&r: spires, towers, gardens, shrines and even crashed sky ships."
 		""
-		"The &bPokémon World&r's psychic and dragon gyms are out here in the End too!"
+		"The &bKakuto Region&r's psychic and dragon gyms are out here in the End too!"
 	]
 	task.1BC1E9F50DBD777C.title: "Explore an End City"
 	quest.6AB5B049A1AA7DAD.title: "End City"
@@ -3310,9 +3310,9 @@
 	]
 	chapter.75980EB7BF20EBD4.title: "The End"
 	chapter.75980EB7BF20EBD4.chapter_subtitle: ["Twelve eyes, a huge stronghold and the Ender Dragon"]
-	quest.1FF724B7E9C746A5.title: "What is the Pokémon World?"
+	quest.1FF724B7E9C746A5.title: "What is the Kakuto Region?"
 	quest.1FF724B7E9C746A5.quest_desc: [
-		"Somewhere beyond a bell's chime is a whole world just for &dPokémon&r (Cobblemon). It looks like a calm, classic Minecraft world, but wild Pokémon live everywhere: in the grass, the trees, the caves and the sea."
+		"Somewhere beyond a bell's chime is the &eKakuto Region&r, a whole world just for &dPokémon&r (Cobblemon). It looks like a calm, classic Minecraft world, but wild Pokémon live everywhere: in the grass, the trees, the caves and the sea."
 		""
 		"Wild Pokémon only appear there. Once you've caught some, they can come with you anywhere, even home to your base."
 		""
@@ -3330,12 +3330,12 @@
 		""
 		"You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall. The stones join into one carved gateway, and the corners make it look whole."
 	]
-	task.6DFA391C7EBF3E69.title: "Enter the Pokémon World"
+	task.6DFA391C7EBF3E69.title: "Enter the Kakuto Region"
 	quest.3B4607E3934952D7.title: "Ring the Bell"
 	quest.3B4607E3934952D7.quest_desc: [
 		"Build the frame (like a Nether portal, but with Alph Stone) and ring the &eJohto Bell&r on it. The old gateway wakes up. Step in!"
 		""
-		"A matching portal is built on the other side, and it leads straight back to the Overworld at the same spot. Your Pokémon party HUD only shows inside the Pokémon World."
+		"A matching portal is built on the other side, and it leads straight back to the Overworld at the same spot. Your Pokémon party HUD only shows inside the Kakuto Region."
 	]
 	quest.2F0CDA013A2FEA45.title: "Choose Your Partner"
 	quest.2F0CDA013A2FEA45.quest_desc: [
@@ -3345,7 +3345,7 @@
 	]
 	quest.6B03781B3AA78F5E.title: "Poké Balls"
 	quest.6B03781B3AA78F5E.quest_desc: [
-		"&eApricorn trees&r grow all over the Pokémon World. Red apricorns make &ePoké Balls&r (4 at a time); other colors make other balls. Press &eR&r on a ball to see its recipe."
+		"&eApricorn trees&r grow all over the Kakuto Region. Red apricorns make &ePoké Balls&r (4 at a time); other colors make other balls. Press &eR&r on a ball to see its recipe."
 		""
 		"Grab some &eapricorn sprouts&r too, so you can grow your own trees at home."
 	]
@@ -3364,7 +3364,7 @@
 	task.38368557F662FD73.title: "Heal at a Healing Machine"
 	quest.40A37540F915F3D3.title: "The Pokécenter"
 	quest.40A37540F915F3D3.quest_desc: [
-		"Pokécenters stand in Pokémon World villages and on their own. Inside is a"
+		"Pokécenters stand in Kakuto villages and on their own. Inside is a"
 		"&eHealing Machine&r: put your team in and they're good as new."
 		""
 		"There's a &ePC&r too, to store the Pokémon that don't fit in your party. You can craft your own PC (and later a Healing Machine) for your base."
@@ -3372,14 +3372,14 @@
 	task.58D00DEBFC5A2222.title: "Harvest an apricorn"
 	quest.6BE35B7486F5DA5E.title: "Berry Patch"
 	quest.6BE35B7486F5DA5E.quest_desc: [
-		"Plant your apricorn sprouts and watch them grow into trees. Berry bushes grow in the Pokémon World too: many heal or help in battle, and they look lovely in a garden."
+		"Plant your apricorn sprouts and watch them grow into trees. Berry bushes grow in the Kakuto Region too: many heal or help in battle, and they look lovely in a garden."
 	]
 	task.54368B36DCD83447.title: "Evolve a Pokémon"
 	quest.04BCDE00F47981CA.title: "Evolution!"
 	quest.04BCDE00F47981CA.quest_desc: [
 		"Most Pokémon evolve by levelling up in battle. Some need an &eevolution stone&r instead: Fire, Water, Thunder, Leaf, Moon, Sun and more."
 		""
-		"Evolution stone ores are found underground in the Pokémon World. Mine them, then use the stone on the Pokémon."
+		"Evolution stone ores are found underground in the Kakuto Region. Mine them, then use the stone on the Pokémon."
 	]
 	task.4D2E8FB9C6E23A42.title: "Ride a Pokémon"
 	quest.4D2AAF75529F5102.title: "Ride Along"
@@ -3395,7 +3395,7 @@
 	]
 	quest.4B529064010D7F2C.title: "Trainer Card"
 	quest.4B529064010D7F2C.quest_desc: [
-		"&eRadical Cobblemon Trainers&r: trainers wander the Pokémon World. If one spots you, they'll want to battle!"
+		"&eRadical Cobblemon Trainers&r: trainers wander the Kakuto Region. If one spots you, they'll want to battle!"
 		""
 		"Your Pokémon's &elevel cap&r starts at &e15&r and rises as you beat trainers. Pokémon above the cap won't fight for you yet. The &eTrainer Card&r shows your progress."
 	]
@@ -3408,14 +3408,14 @@
 	task.6FEC86EC4F3AEBCD.title: "Visit the Normal Gym"
 	quest.2E8D916B5BF9FE11.title: "Your First Gym"
 	quest.2E8D916B5BF9FE11.quest_desc: [
-		"&eIntegrated Cobblemon&r gyms are scattered across the Pokémon World, one for each type. Each gym has three trainers: &abeginner&r, &eintermediate&r and &chard&r. Beat all three to complete that gym's badge series. Gym chests have goodies too."
+		"&eIntegrated Cobblemon&r gyms are scattered across the Kakuto Region, one for each type. Each gym has three trainers: &abeginner&r, &eintermediate&r and &chard&r. Beat all three to complete that gym's badge series. Gym chests have goodies too."
 		""
 		"Use the Explorer's Compass to find them. Try the &eNormal Gym&r first."
 	]
 	task.382EAA141FFEDFAF.title: "Find the Fire Gym"
 	quest.113954CADB2869F9.title: "The Fire Gym"
 	quest.113954CADB2869F9.quest_desc: [
-		"Not every gym is in the Pokémon World! The &cFire Gym&r is down in &cthe Nether&r. Bring water-type Pokémon and fire resistance potions."
+		"Not every gym is in the Kakuto Region! The &cFire Gym&r is down in &cthe Nether&r. Bring water-type Pokémon and fire resistance potions."
 	]
 	task.6B8FD491B0BA3E6F.title: "Find the Psychic Gym"
 	task.0DF5888361BE1835.title: "Find the Dragon Gym"
@@ -3425,11 +3425,11 @@
 	]
 	quest.746C5DDD022E55BF.title: "Where Next?"
 	quest.746C5DDD022E55BF.quest_desc: [
-		"The Pokémon World is yours to explore at your own pace:"
+		"The Kakuto Region is yours to explore at your own pace:"
 		""
 		"Look for &eruins, towers and habitats&r: some hold rare Pokémon. Catch a flying partner and explore the &aOverworld&r from above. &cThe Nether&r and &5The End&r chapters lead to the far-away gyms."
 	]
-	chapter.50AE8F5C17F0FC59.title: "The Pokémon World"
+	chapter.50AE8F5C17F0FC59.title: "The Kakuto Region"
 	chapter.50AE8F5C17F0FC59.chapter_subtitle: ["Build a portal, pick a partner, catch them all"]
 	quest.6AC757974947AF79.title: "What is the Abyssal Plain?"
 	quest.6AC757974947AF79.quest_desc: [

@@ -2,7 +2,7 @@
 // Titles show raw keys like biome.strata.the_trench (Oct 26).
 ClientEvents.lang('en_us', event => {
   // Dimension banners (Traveler's Titles: travelerstitles.<namespace>.<path>, plus a colour)
-  event.add('travelerstitles.pokeworld.pokeworld', 'The Pokémon World')
+  event.add('travelerstitles.pokeworld.pokeworld', 'The Kakuto Region')
   event.add('travelerstitles.pokeworld.pokeworld.color', 'e3350d')
   event.add('travelerstitles.strata.hollow', 'The Hollow')
   event.add('travelerstitles.strata.hollow.color', '6b5a63')

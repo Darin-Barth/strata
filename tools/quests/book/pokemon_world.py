@@ -1,12 +1,12 @@
 from dsl import *
 
-C = chapter("pokemon_world", "The Pokémon World", group="explore", icon="pokeworld:johto_bell",
+C = chapter("pokemon_world", "The Kakuto Region", group="explore", icon="pokeworld:johto_bell",
             subtitle="Build a portal, pick a partner, catch them all")
 q = C.quest
 
-q("intro", "What is the Pokémon World?", deps="welcome/path_pokemon", icon="cobblemon:poke_ball",
+q("intro", "What is the Kakuto Region?", deps="welcome/path_pokemon", icon="cobblemon:poke_ball",
   size=1.5, shape="gear", desc="""
-    Somewhere beyond a bell's chime is a whole world just for &dPokémon&r (Cobblemon).
+    Somewhere beyond a bell's chime is the &eKakuto Region&r, a whole world just for &dPokémon&r (Cobblemon).
     It looks like a calm, classic Minecraft world, but wild Pokémon live everywhere:
     in the grass, the trees, the caves and the sea.
 
@@ -36,12 +36,12 @@ q("frames", "Poké Portal Frames", deps="bell", icon="pokeworld:poke_portal_fram
   rewards=[give("minecraft:red_dye", 6), give("minecraft:white_dye", 6)])
 
 q("portal", "Ring the Bell", deps="frames", icon="pokeworld:johto_bell", tier=3,
-  tasks=dim("pokeworld:pokeworld", title="Enter the Pokémon World"), desc="""
+  tasks=dim("pokeworld:pokeworld", title="Enter the Kakuto Region"), desc="""
     Build the frame (like a Nether portal, but with Poké Portal Frames) and use the
     &eJohto Bell&r on it. The portal fills with red light. Step in!
 
     A matching portal is built on the other side, and it leads straight back to the
-    Overworld at the same spot. Your Pokémon party HUD only shows inside the Pokémon World.""",
+    Overworld at the same spot. Your Pokémon party HUD only shows inside the Kakuto Region.""",
   rewards=[give("cobblemon:oran_berry", 8)])
 
 q("starter", "Choose Your Partner", deps="portal", icon="cobblemon:poke_ball", size=1.5,
@@ -56,7 +56,7 @@ q("starter", "Choose Your Partner", deps="portal", icon="cobblemon:poke_ball", s
 # --- catching ---------------------------------------------------------------------------
 q("balls", "Poké Balls", deps="starter", icon="cobblemon:poke_ball",
   tasks=item("cobblemon:poke_ball", 8), desc="""
-    &eApricorn trees&r grow all over the Pokémon World. Red apricorns make &ePoké Balls&r
+    &eApricorn trees&r grow all over the Kakuto Region. Red apricorns make &ePoké Balls&r
     (4 at a time); other colors make other balls. Press &eR&r on a ball to see its recipe.
 
     Grab some &eapricorn sprouts&r too, so you can grow your own trees at home.""",
@@ -80,7 +80,7 @@ q("full_party", "A Full Team", deps="first_catch", icon="cobblemon:poke_ball", t
 q("pokecenter", "The Pokécenter", deps="first_catch", icon="cobblemon:healing_machine", tier=2,
   tasks=adv("cobblemon:agriculture/use_healing_machine", title="Heal at a Healing Machine"),
   desc="""
-    Pokécenters stand in Pokémon World villages and on their own. Inside is a
+    Pokécenters stand in Kakuto villages and on their own. Inside is a
     &eHealing Machine&r: put your team in and they're good as new.
 
     There's a &ePC&r too, to store the Pokémon that don't fit in your party.
@@ -90,7 +90,7 @@ q("pokecenter", "The Pokécenter", deps="first_catch", icon="cobblemon:healing_m
 q("berries", "Berry Patch", deps="balls", icon="cobblemon:oran_berry", optional=True,
   tasks=adv("cobblemon:agriculture/harvest_apricorn", title="Harvest an apricorn"), desc="""
     Plant your apricorn sprouts and watch them grow into trees.
-    Berry bushes grow in the Pokémon World too: many heal or help in battle,
+    Berry bushes grow in the Kakuto Region too: many heal or help in battle,
     and they look lovely in a garden.""",
   rewards=[give("minecraft:bone_meal", 16)])
 
@@ -99,7 +99,7 @@ q("evolution", "Evolution!", deps="full_party", icon="cobblemon:fire_stone", tie
     Most Pokémon evolve by levelling up in battle. Some need an &eevolution stone&r instead:
     Fire, Water, Thunder, Leaf, Moon, Sun and more.
 
-    Evolution stone ores are found underground in the Pokémon World. Mine them,
+    Evolution stone ores are found underground in the Kakuto Region. Mine them,
     then use the stone on the Pokémon.""",
   rewards=[give("cobblemon:exp_candy_s", 4)])
 
@@ -120,7 +120,7 @@ q("pasture", "Home Sweet Pasture", deps="pokecenter", icon="cobblemon:pasture", 
 # --- trainers and gyms ------------------------------------------------------------------
 q("trainers", "Trainer Card", deps="first_catch", icon="rctmod:trainer_card", tier=2,
   tasks=item("rctmod:trainer_card"), desc="""
-    &eRadical Cobblemon Trainers&r: trainers wander the Pokémon World. If one spots you,
+    &eRadical Cobblemon Trainers&r: trainers wander the Kakuto Region. If one spots you,
     they'll want to battle!
 
     Your Pokémon's &elevel cap&r starts at &e15&r and rises as you beat trainers.
@@ -137,7 +137,7 @@ q("dollars", "CobbleDollars", deps="trainers", icon="minecraft:emerald", desc=""
 
 q("gym", "Your First Gym", deps=["trainers", "full_party"], icon="cobblemon:normal_gem", tier=3,
   tasks=structure("integrated_cobblemon:normal_gym", title="Visit the Normal Gym"), desc="""
-    &eIntegrated Cobblemon&r gyms are scattered across the Pokémon World, one for each type.
+    &eIntegrated Cobblemon&r gyms are scattered across the Kakuto Region, one for each type.
     Each gym has three trainers: &abeginner&r, &eintermediate&r and &chard&r.
     Beat all three to complete that gym's badge series. Gym chests have goodies too.
 
@@ -146,7 +146,7 @@ q("gym", "Your First Gym", deps=["trainers", "full_party"], icon="cobblemon:norm
 
 q("fire_gym", "The Fire Gym", deps=["gym", "nether/intro"], icon="cobblemon:fire_gem", tier=4,
   tasks=structure("integrated_cobblemon:fire_gym", title="Find the Fire Gym"), desc="""
-    Not every gym is in the Pokémon World! The &cFire Gym&r is down in &cthe Nether&r.
+    Not every gym is in the Kakuto Region! The &cFire Gym&r is down in &cthe Nether&r.
     Bring water-type Pokémon and fire resistance potions.""")
 
 q("end_gyms", "Gyms Beyond the Stars", deps=["fire_gym", "the_end/portal"],
@@ -158,7 +158,7 @@ q("end_gyms", "Gyms Beyond the Stars", deps=["fire_gym", "the_end/portal"],
 
 q("where_next", "Where Next?", deps="first_catch", icon="minecraft:compass", shape="hexagon",
   tier=2, desc="""
-    The Pokémon World is yours to explore at your own pace:
+    The Kakuto Region is yours to explore at your own pace:
 
     Look for &eruins, towers and habitats&r: some hold rare Pokémon.
     Catch a flying partner and explore the &aOverworld&r from above.

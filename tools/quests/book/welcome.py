@@ -9,7 +9,7 @@ q("welcome", "Welcome to Strata!", icon="ftbquests:book", size=1.5, shape="gear"
 
     Strata is a big modpack with three paths: &bTech&r (machines, trains and airships),
     &dMagic&r (spells, rituals and spirits) and &aExploration&r (new dimensions, dungeons and bosses).
-    There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon world.
+    There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon region, Kakuto.
 
     This quest book is your guide. Each chapter on the left covers one big mod.
     Nothing is locked: jump to whatever looks fun. Quests inside a chapter open up in order.
@@ -191,11 +191,11 @@ q("path_cozy", "Path: Cozy Life", deps="pick_path", icon="farmersdelight:cooking
     Pets & Critters and Building & Decorating are right next to it.""",
   rewards=[give("minecraft:wheat_seeds", 16), give("minecraft:carrot", 8)])
 
-q("path_pokemon", "Path: The Pokémon World", deps="pick_path", icon="pokeworld:johto_bell",
+q("path_pokemon", "Path: Pokémon (the Kakuto Region)", deps="pick_path", icon="pokeworld:johto_bell",
   tasks=item("pokeworld:bell_fragment"), desc="""
     Pokémon live in their own world, reached through a portal you build yourself.
 
     First you need a &eBell Fragment&r: they're rare finds in chests of dungeons, temples,
     mineshafts, ancient cities and woodland mansions.
-    Open the &cPokémon World&r chapter for the rest.""",
+    Open the &cKakuto Region&r chapter for the rest.""",
   rewards=[give("minecraft:gold_ingot", 3)])
