@@ -9,7 +9,7 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 
 ## 2. Getting there
 - **Arrival: the Lifepod.** With no surface, a player stepping through the portal would drown at once. The return portal sits inside a small fixed **Lifepod**: a sealed, protected chamber with air, a porthole, a chest with a few starter supplies (nothing that skips progression) and an airlock door to the sea. The flood rule never touches it, and its blocks can't be broken. One Lifepod per portal link (BBL Portals links 1:1 by X/Z, so the pod is generated where the portal lands).
-- **Portal (proposal, to pick):** a frame of **dark prismarine** lit with a **Tidecaller** (Heart of the Sea + nautilus shells + a Deep Seas pressure part), so the trip needs an ocean monument raid and some Deep Seas progress first. Same BBL Portals setup as the Pokémon world and the Hollow.
+- **Portal (Darin, Oct 26):** a frame of **dark prismarine** lit with the **Tidecaller**: a Conduit in the middle, a Deep Seas Ballast Tank above and below it, prismarine crystals down both sides (`P B P / P C P / P B P`). The Conduit needs a Heart of the Sea (buried treasure) and nautilus shells; the ballast tanks mean Deep Seas progress first. The Conduit is an ingredient, not the lighter, because a Conduit is a placeable block. Same BBL Portals setup as the Pokémon world and the Hollow.
 
 ## 3. The world
 - **Height and depth bands.** Ceiling underside around Y 100, seafloor between about Y −150 (shelves) and Y −480 (trench bottoms). Deep Seas measures pressure from the top of the water column, here the ceiling (to confirm in game), so depth tiers map onto its limits:
@@ -26,6 +26,7 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 - **The sea always wins:** in this dimension, any block broken that would leave air becomes water (KubeJS). There is no "dig a dry tunnel" trick. The Lifepod is exempt.
 - **Bases are pressure hulls:** you build a sealed structure, pump it dry through a Decompression Chamber airlock, and keep the air with an Electrolyzer + Oxygen Diffuser. Hull blocks have depth ratings, so deeper bases need better hulls. **To test in game:** whether a hull parked on the seafloor works as a permanent base (the oxygen system is written for submarines; it may need the base to be an assembled "ship" that rests on the floor).
 - **Breathing gear:** several existing items give long or free breathing (Create backtank, Aquamirae oxygen tank, Aquaculture Neptunium, water-breathing spells and potions). Pressure still limits depth for all of them, so the proposal is to allow them: they make the shelves comfortable, they don't unlock the trenches. Option: cap them inside the dimension if they trivialise it.
+- **No Conduit power in the Abyssal Plain** (Darin, Oct 26): a placed Conduit would give water breathing, night vision and fast mining around a base and make the pumps, airlocks and oxygen pointless. Conduits keep working everywhere else (KubeJS: remove the effect inside the dimension).
 - **Scary but fair:** the Hollow's damage cap and grace period apply here too, bosses excepted.
 
 ## 5. Life and content
@@ -43,6 +44,14 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 
 **Alex's Caves Continued: abyss content only (Darin, Oct 26, option B).** Its Abyssal Chasm creatures (Deep Ones, Deep One knights and mages, the Hullbreaker, lanternfish, tripodfish) spawn only through ordinary biome spawn lists, with nothing in their code tied to its own chasm biome (checked in the 1.1.3 jar), so they and its abyssal blocks go into the Trench and Hydrothermal Field. **All six of its Overworld cave biomes are switched off** in its config (the Overworld is pregenerated, so they would only appear past 5 km with seams; Forlorn Hollows overlaps the Hollow; its submarine and diving suit overlap Deep Seas and stay unused). Cost: about 85 MB more content (RAM, startup, join time).
 
+## 6a. Something to work toward (proposal, Oct 26)
+**The big goal: a Deep Station on the Trench floor.** Establishing a working pressure-hull base about 400+ m down, where only the best hulls hold, is the dimension's endgame. Three tracks lead there:
+1. **Depth (gear):** shelves in plain gear → the Plain with the copper diving suit (120 m) → the trenches in a first submarine (280 m+) → the Trench floor with reinforced hulls. Each milestone is a quest with rewards.
+2. **Boss ladder:** Karkinos (Hybrid Aquatic miniboss, the Plain) → the Hullbreaker (Alex's Caves, the trenches; it hunts submarines) → the **Leviathan** (Cataclysm, final boss, Sunken City at the Trench bottom). Each drops what the next step needs.
+3. **The Abyssal Survey (discovery):** scan creatures and plants with the Field Guide and Scannable; completed survey sections give rewards and the story of the drowned civilisation (Sunken Spires, the Deep Ones).
+
+**Payoff outside the dimension:** the pack rule that late Mekanism and AE2 tiers need boss drops gets one of its gates here: the Leviathan's drop plus rare **Abyssal Pearls** from the trenches. Deep-only crafting also unlocks the best hull tier and deep-dive upgrades. All of it becomes an "Abyssal Plain" FTB Quests chapter.
+
 ## 6. Rewards
 - Unique materials from vents, trenches and the Leviathan (e.g. an "Abyssal Pearl" gate item, like the Hollow's Ember).
 - Per-player Lootr chests in all ruins and wrecks.
@@ -57,6 +66,5 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 6. Pregenerate on the server (taller dimension, so roughly 1.7× the Hollow's generation time).
 
 ## 8. Open questions
-- Portal frame and igniter: the dark prismarine + Tidecaller idea, or something else.
-- Breathing gear: allow (pressure is the gate) or cap inside the dimension.
+- Breathing gear: allowed (pressure is the gate), revisit after the playtest.
 - Whether hull bases work as fixed bases (playtest), and what to do if they don't (e.g. a Lifepod-style "habitat module" block that seals a room).
