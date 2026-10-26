@@ -17,6 +17,7 @@ Principles:
 Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(check)* need a recipe-slot check before building.
 
 ## 1. Bypasses to close first
+**Approved by Darin (Oct 26):** all four as recommended: Theurgy nether star and calorite routes removed and its netherite route +1 E; `possess_warden` +1 E; renewable nether stars accepted (no nether-star boss gates); Cataclysm's Overworld Sunken City removed (empty `#cataclysm:has_structure/sunken_city_biomes`).
 | Bypass | What it breaks | Fix |
 |---|---|---|
 | Theurgy: diamonds → precious niter → netherite / nether stars / calorite | Every nether-star gate (Ars archmage book, Occultism marid miner, Neo Vitae crystal cluster, Apotheosis augmenting table), plus Ad Astra's calorite tier | Remove the nether-star and calorite reformation recipes; netherite route +E (section 3) |
