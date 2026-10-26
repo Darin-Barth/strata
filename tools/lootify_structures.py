@@ -71,7 +71,7 @@ def main():
                 table = f"strata:lootified/{ns}/{struct}/{changed}"
                 path = OUT_DATA / "strata" / "loot_table" / "lootified" / ns / struct / f"{changed}.json"
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(json.dumps({"type": "minecraft:chest", "pools": [entry_for(*s) for s in kept]}, indent=2) + "\n")
+                path.write_text(json.dumps({"type": "minecraft:chest", "pools": [entry_for(*s) for s in kept]}, indent=2) + "\n", newline="\n")
                 index[signature([{"id": i, "count": c} for i, c, _ in stacks])] = table
                 del nb["Items"]
                 nb["LootTable"] = nbtlib.String(table)
@@ -81,7 +81,7 @@ def main():
                 out.parent.mkdir(parents=True, exist_ok=True)
                 f.save(out, gzipped=True)
                 print(f"{ns}:{struct}: {changed} chest(s) -> loot tables")
-    INDEX.write_text(json.dumps(index, indent=1, sort_keys=True) + "\n")
+    INDEX.write_text(json.dumps(index, indent=1, sort_keys=True) + "\n", newline="\n")
     print(f"index: {len(index)} chest signatures in {INDEX.relative_to(ROOT)}")
 
 
