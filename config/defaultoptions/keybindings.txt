@@ -70,6 +70,9 @@ key_key.atmospherics.open:key.keyboard.f6
 key_key.dungeonconfig.open:key.keyboard.f8
 key_key.kubejs.kubedex:key.keyboard.f10
 
+# Pufferfish's Skills: skill tree screen off K (Iris shader toggle)
+key_key.puffish_skills.open:key.keyboard.k:CONTROL
+
 # Unbound: duplicates of another mod's key (Trade Cycling cycles trades on C; Combat Roll rolls on R)
 key_key.easy_villagers.cycle_trades:key.keyboard.unknown
 key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown

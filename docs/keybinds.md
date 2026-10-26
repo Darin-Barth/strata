@@ -102,6 +102,7 @@ shipped, open **Options > Controls > Key Binds** and press **Reset All** (or res
 | Shift+G (hold) | Oritech implant controls |
 | Ctrl+H | Mekanism HUD on/off |
 | Shift+H | Neo Vitae: edit HUD layout |
+| Ctrl+K | Skill trees (Pufferfish's Skills: Combat, Mining, Fishing, Iron's magic) |
 
 **Graphics and camera**
 | Key | Action |
