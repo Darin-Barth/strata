@@ -12,7 +12,9 @@
 // the guard keeps the client-only event class off the dedicated server. Sounds or particles
 // missing from the client's registries are skipped.
 // KubeJS startup scripts share one scope: every top-level name here starts with "portalAmb".
-if (Platform.isClientEnvironment()) {
+// Everything lives inside a function: Rhino rejects `const` inside a bare if-block with
+// "redeclaration of var" (0.4.0/0.4.1 clients hit this; the server never runs the block).
+const portalAmbSetup = () => {
   const portalAmbMc = Java.loadClass('net.minecraft.client.Minecraft')
   const portalAmbRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
   const portalAmbRL = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -137,3 +139,5 @@ if (Platform.isClientEnvironment()) {
     }
   })
 }
+
+if (Platform.isClientEnvironment()) portalAmbSetup()

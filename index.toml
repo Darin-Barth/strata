@@ -166,7 +166,7 @@ hash = "1a9c89005759238032eb29c3fadd4fa307a68a471e450f12d16b39766806d788"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "f4e341dea5a75e10d197a7906842f10cc7910d870df03d599aed0dfe63ba26a4"
+hash = "fcd4792c74938216ed5ed7f10f7683711397b5a71b46349719c0848f619eadde"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
@@ -5598,7 +5598,7 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "2588d523c6effba83cc3ffab51cda62e260effa6a6142676b43738b42bb57267"
+hash = "8638c9d911429da486b8c01517ffaa8495aa876de1636830482e967644e3faba"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
