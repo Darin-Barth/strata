@@ -27,6 +27,7 @@ Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(c
 | Cataclysm Sunken City still generates in Overworld deep oceans | Leviathan drops aren't Abyssal-only | Pair Leviathan drops with pearls in recipes (done below), or empty `#cataclysm:has_structure/sunken_city_biomes` *(decision G1)* |
 
 ## 2. Tech
+**Approved by Darin (Oct 26):** all ten as proposed.
 | # | Gate | Needs | Stage |
 |---|---|---|---|
 | T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
