@@ -79,7 +79,7 @@ element {
   width = 320
   height = 12
   stay_on_screen = false
-  source = Strata 0.3.0 beta  ·  Minecraft {"placeholder":"mcversion"}  ·  NeoForge {"placeholder":"loaderver"}
+  source = Strata 0.4.0 beta  ·  Minecraft {"placeholder":"mcversion"}  ·  NeoForge {"placeholder":"loaderver"}
   source_mode = direct
   shadow = true
   scale = 1.0
