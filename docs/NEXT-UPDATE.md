@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **Per-player loot in pre-filled structure chests**: Apocalyptic Bosses' dungeons and Inventory Pets' structures had their items baked into the chests, so Lootr couldn't make them per-player. `tools/lootify_structures.py` turns each such chest into an exact loot table (`kubejs/data/strata/loot_table/lootified/`) and patches the templates (`kubejs/data/<mod>/structure/`). The 1,043 chests already in the world were converted live on Oct 25 (`tools/lootify_world.py`). Balance note: there are about 70 Apocalyptic "multiple bosses" dungeons within 5,000 blocks, each with enchanted golden apples, and per-player loot multiplies that.
 - **Graves are owner-only**: only the owner (and ops) can break a grave, so a grave always pops back into the owner's original slots, armor included (`break_pickup` was already on). Crouching on your grave also returns everything (`sneak_pickup`).
 - **New: `/sethome` and `/home`**: one home per player, any dimension, 10-second cooldown after each `/home` (KubeJS, server-only).
 - **New: friends can't hurt each other**: damage between players in the same FTB Teams party, or whose teams list each other as allies, is cancelled, including arrows and spells. Allies keep separate quest progress. Everyone else can still fight (KubeJS, server-only).
