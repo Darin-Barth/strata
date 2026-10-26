@@ -22,30 +22,9 @@ Guiding test for every mod: keep it when it adds a different way to play; questi
 
 Travel and logistics must cost something, so trains, airships and power grids stay worth building.
 
-**Teleporting**
+**Teleporting and flight:** the current rules are in CLAUDE.md ("Limited teleport", "No easy creative flight"), and the item-by-item rulings are in `docs/gate-map.md` section 5. In short: one `/home` per player with a 10-second cooldown (`kubejs/server_scripts/strata_home.js`); no `/back`, `/rtp` or `/tpa`; Waystones cost XP by distance (more across dimensions); earned teleporting is fine; flight is fine when it's hard to get or costs something to run (Darin's Oct 25 review passed every current source). Removed Oct 26: Iron's Recall, Draconic dislocators, Helium Flamingo, Wind Staff, Linking Book.
 
-- No free commands for players: no `/home`, `/back`, `/rtp`, `/tpa` (leave out FTB Essentials or disable these for non-ops).
-- Waystones allowed, with an XP cost that scales with distance and an extra cost across dimensions; warp scrolls and warp stones removed from loot.
-- Earned teleporting is fine: Mekanism Teleporters (power + fixed points), Ars Nouveau warp, short-range blink spells, Vampirism's vampire teleport skill, the Royal Telelocator (breaks, repaired with Royal Ender Pearls).
-
-**Flight: it has to cost something** (fuel, power, mana, stamina, durability). Free creative-style flight is out.
-
-| Source | Verdict |
-| --- | --- |
-| Mekanism jetpack (hydrogen), PneumaticCraft Jet Boots (air) | Allowed |
-| Ars Nouveau / Iron's flight (mana) | Allowed |
-| Cobblemon riding, including flying Pokémon (stamina), in every dimension | Allowed |
-| Elytra (rockets, durability), airships | Allowed |
-| MekaSuit flight module | Allowed as a late-game reward |
-| Inventory Pets Cloud pet | Test: out unless feeding is a real cost (or raise its cost with KubeJS) |
-| Excessive Utilities angel-ring style items | Remove or tie to a cost (XP or power) |
-| Any "wear it and fly free" item | Same treatment as the Cloud pet |
-
-**Wireless items and power come in tiers**
-
-1. Early: cables, pipes, belts, trains, IE power lines. No wireless.
-2. Mid (after entering the Nether or the first major boss): wireless within one dimension — Flux Networks, AE2 wireless terminals, Mekanism quantum entangloporters.
-3. Late: cross-dimension wireless — AE2 Quantum Network Bridge. Until then, moving goods between dimensions takes a train or airship.
+**Wireless: no tiers** (Darin, Oct 25; confirmed Oct 26). Flux Networks, Mekanism entangloporters, AE2 wireless and Mighty Mail work across dimensions as the mods ship them; AE2's Quantum Network Bridge keeps its own recipe cost. Power still has a ladder (CLAUDE.md).
 
 ## Progression and difficulty
 
@@ -202,33 +181,28 @@ Ship recommended RAM and Java flags with the pack; tune treehouse's garbage coll
 
 These are the tweaks that make the pack feel designed rather than piled together.
 
-- [ ] Remove Create: New Age wire recipes (keep Crafts & Additions + IE wires)
-- [ ] Lower Crafts & Additions alternator FE output; keep it below New Age generators
+- [ ] Remove Create: New Age wire recipes (keep Crafts & Additions + IE wires). Just work; first check New Age generators can still hand FE to C&A or IE.
+- [ ] Lower Crafts & Additions alternator FE output (ships at the default 480 FE at max RPM, equal to New Age today). Just work: ship ~240.
 - [x] ~~Gate wireless~~: dropped (Darin, Oct 25 and again Oct 26): no wireless tiers; see CLAUDE.md
-- [ ] Gate top-tier Mekanism / AE2 parts behind boss drops
-- [ ] Waystones: distance-scaled XP cost, extra cost across dimensions; remove warp scrolls/stones from loot
-- [ ] Disable or re-gate Inventory Pets that teleport or give free flight (Cloud, Nether Portal, Ender Chest — review the rest)
-- [ ] Excessive Utilities: remove or cost-gate any free-flight item
-- [ ] Player commands: no `/home`, `/back`, `/rtp`, `/tpa` for non-ops
+- [ ] Gate top-tier Mekanism / AE2 parts behind boss drops: proposal in `docs/gate-map.md` (T1–T10), waiting for Darin.
+- [x] Waystones: distance XP cost is the mod default (0.01 XP per block, 27 levels across dimensions); no loot table contains warp scrolls or stones (audit Oct 26). *Open:* warp scrolls and warp plates are craftable and cost 0 XP (decision).
+- [ ] Inventory Pets: flight pets settled (must be fed; CLAUDE.md). *Open, decision:* teleport pets: House (a second /home fed iron nuggets), End Portal (skips End Remastered's 12-eye portal), Nether Portal, Enderman (auto-teleport near death).
+- [x] Excessive Utilities flight: settled by the Oct 25 flight review (Angel Ring needs Grid Power).
+- [x] Player commands: `/home` + `/sethome` only (`strata_home.js`, 9a6507f); no Essentials-type mod.
 - [x] ~~Progressive difficulty KubeJS script~~ (dropped Oct 26, see Progression and difficulty): server-wide stage (Normal → Expert on the first Nether entry → Master on the first Dragon kill), stored in server persistent data. On spawn, scale health/damage/armor of regular hostile mobs by stage × per-dimension multiplier (modest Nether step; bigger in the End, Twilight Forest, Deeper and Darker, Cataclysm areas; none in the Pokémon world). Skip bosses (`c:bosses` tag + an explicit list: Cataclysm, Mowzie's, BoMD, Twilight bosses, Wither, Dragon, Warden). Op commands to view/set the stage. Tested in test 6
-- [ ] Apotheosis: elite mobs rare near spawn, more common far out and in other dimensions
-- [ ] Create Big Cannons: limit block damage; FTB Chunks claims block explosions
-- [ ] Vampirism: PvP between factions only
-- [ ] Almost Unified: pick preferred ores/ingots
-- [x] Pokémon world datapack, spawns, starter/HUD and portal (Oct 24; see Pokémon world section)
-- [ ] After the Pokémon world retest passes: add CobblemonOptimizer (MR `cobblemonoptimizer` 5.0.0, NeoForge, MIT) as Keep, server-side, and test it (Darin, Oct 24). It throttles and freezes distant Pokémon and cuts spawns when TPS drops.
-- [ ] Ice and Fire CE dragon riding is free flight: decide how it fits the flight rule (earned only, e.g. a fully grown tamed dragon, and/or a stamina or food cost). Dragon Meal Taming was not added.
-- [ ] Create Stuff & Additions jetpacks and Building Gadgets 2 copy-paste: check against the flight rule and set a sane block limit.
-- [ ] ChoiceTheorem's Overhauled Village and Aquamirae add structures: settle their configs before pregeneration.
-- [ ] Wave 4 checks (gap-analysis picks): Horseman horse summon off if long-range; End Remastered eye sources vs quest pacing; Ars Elemental Air focus and Ars Additions warp items vs the flight/teleport rules; TorchMaster Mega Torch radius; Legendary Monsters Overworld spawns; add new bosses (Legendary Monsters, Eternal Nether, Seven Seas) to the difficulty skip list; Lootr and rarity pass for all new structures (MVS, MNS, MES, Seven Seas, Tidal Towns, floating islands); Extended Crafting endgame recipes in KubeJS.
-- [ ] Wave 5 checks (round 2): Ad Astra rocket tiers gated behind bosses, its Overworld ores and planet oxygen/teleport rules; Create Jetpack air use vs airships (Nether gate possible); In Control! rules for the horror dimension; Structurify spacing pass for all structure mods; LootJS script to strip warp scrolls/stones and add boss-drop gates; Immersive Optimization tested with farms, Create contraptions and Cobblemon.
-- [x] Unusual End tested with Nullscape (Oct 24): same seed, the same 1,000×1,000-block outer-End area (4,225 chunks) with and without it. Nullscape's biome source wins: Unusual End's biomes showed up in **5 chunks (0.1%)** and it added 3 small structures (chorus cane, wanderer island, flying End ship). Not worth a mod slot while Nullscape is in; it only makes sense if Nullscape is swapped out. Map: `docs/images/end-unusual-end-compare.png`. Side finding: Nullscape's Shadowlands biome builds islands from dead coral and amethyst on purpose.
-- [x] Ice and Fire put ice dragon roosts and caves **in the End**: its `structure_gen/ice` biome tag includes `#c:is_cold`, which covers End biomes (and `fire` uses `#c:is_hot`, which covers the Nether). Overridden in `kubejs/data/iceandfire/tags/worldgen/biome/structure_gen/` to `#c:is_cold/overworld` / `#c:is_hot/overworld`. Note: fire dragon roosts still include plains and meadow, i.e. possibly near spawn; check in the seed re-scout.
-- [x] Strongholds (Oct 24): Integrated Stronghold replaces YUNG's Better Strongholds (Darin's pick, to match Integrated Villages; its author recommends running it alone). It is huge and full of Create puzzles and traps. **End Remastered fix (Oct 25):** End Remastered turns off vanilla Eyes of Ender (`USE_EYE_OF_ENDER = false`) and only puts its own `endrem:ancient_portal_frame` into the *vanilla* stronghold's portal room (a mixin on `StrongholdPieces$PortalRoom`). Integrated Stronghold builds its own portal room with 12 vanilla frames, so no eye could open it (soft-lock). Fix: `kubejs/data/integrated_stronghold/worldgen/processor_list/portal_room_processor.json` adds rule processors that swap every vanilla frame for End Remastered's (facing kept, eye off), and drops Integrated's random-eye processor to match `FRAME_HAS_RANDOM_EYE = false`. Verified on the test seed: the portal room at about -3838, Y -23, -2719 has all 12 frames as `endrem:ancient_portal_frame` in a correct inward ring. **In-game test (Oct 25, computer-use session): PASS.** 12 different End Remastered eyes into the 12 frames opened the portal (all 9 inner blocks became `end_portal`) and walking in reached the End platform. Cosmetic: the frame's tooltip shows the raw key `block.endrem.ancient_portal_frame` and inserted eyes aren't drawn on it (add a lang entry via KubeJS if it bothers anyone). First End entry stalled the server 17.7 s (fresh End generation; pregenerating the End fixes it).
-  - Eye sources checked: End Remastered injects eyes by vanilla loot-table ID (configs in `config/EndRemastered-NeoForge/Eyes/`). YUNG's Better Desert Temples, Jungle Temples, Dungeons and Nether Fortresses still use those vanilla tables in their chests, and When Dungeons Arise adds more, so old, rogue, lost and nether eyes stay obtainable. 14 eyes come from loot or mobs; cryptic and evil come from code; 12 open the portal. If eyes feel too rare, add YUNG's own tables (e.g. `betterdeserttemples:chests/...`) to the eye configs' `loot_tables_id`.
-- [ ] In-game test notes (Oct 25): new structures look right and their loot containers are all Lootr (vanilla ones are empty decor); Seven Seas pirate junk can sit wedged in frozen-ocean icebergs. Client FPS 60 (vsync) with p99.5 27–57, but client heap ran at 79–94% of 16 GB, so watch memory. At 24 blocks/s on a fresh map chunks don't keep up, and the server spikes 27–38 s on teleports to fresh areas: pregenerate every dimension. Recurring log errors to chase: a structure references missing items `byg:emeraldite_shards` and `create:crushed_gold_ore` ("Item must not be minecraft:air"), Ice and Fire attachment errors, Blueprint's END repaletter. Report: side-session notes `main-ingame-test-results.md`.
-- [ ] Wave 6 checks (Oct 25): Apocalyptic Bosses (author advertises "OP items": balance pass against Apotheosis and boss gating, add its 25+ bosses to the difficulty skip list, tune its Overworld spawns near spawn); Oritech exosuit/jetpack flight must cost power (like MekaSuit); Draconic Evolution (beta) armor flight is power-costed but endgame-tier, gate its tiers behind bosses and keep its Chaos Guardian out of the difficulty script; Crystal Chronicles (alpha) adds its own dimension and an End sub-biome; WaterFrames loads pictures/videos from URLs (WATERViSION player is alpha). Decided: Oritech over Modern Industrialization (MI overlaps Mekanism most); Cobblemon Kanto and Wings of Fire left out (Ice and Fire dragons cover flying mounts).
-- [ ] Happy Ghast (Vanilla Backport, `dried_ghasts`): a free-flight mount, so cost-gate it (e.g. an expensive harness recipe and/or harness durability) to fit the flight rule.
+- [ ] Apotheosis: elite mobs rare near spawn. Just work: Apotheosis has no distance setting, so a KubeJS radius check (plus its per-dimension invader data).
+- [ ] Create Big Cannons: limit block damage (ships `damageRestriction = ALL_DAMAGE`; set `NO_EXPLOSIVE_DAMAGE`, decision). FTB Chunks claims already block explosions (default).
+- [ ] Vampirism: PvP between factions only (`pvpOnlyBetweenFactions` is false). Decision; team protection already exists (`strata_team_protection.js`).
+- [ ] Almost Unified: preferred ores/ingots. Small decision (default priority minecraft > kubejs > create > IE > mekanism); ship the file.
+- [ ] CobblemonOptimizer (MR `cobblemonoptimizer` 5.0.0; Darin approved Oct 24; the Pokémon retest passed). Just work: add it and test.
+- [x] Ice and Fire dragon riding: settled by the Oct 25 flight review (taming a dragon is real effort). Optional: `flightStamina` is still off.
+- [ ] Create Stuff & Additions jetpacks: settled (they burn fuel). *Open, just work:* Building Gadgets 2 copy-paste limit (default 50 FE per block, 1M FE = ~20k blocks per charge): confirm or lower.
+- [x] ChoiceTheorem's Overhauled Village and Aquamirae configs: moot; the world was pregenerated and went live Oct 25 (changes would only reach chunks past 5,000 blocks).
+- [ ] Wave 4 checks. Done or settled: End Remastered eyes (in-game pass Oct 25), Ars Elemental Air focus and Ars Additions warp (mana, earned), TorchMaster (default 64, in the quest book), difficulty skip list (moot), Lootr (39c5841). *Open:* Horseman horn summon range (decision: cap ~128 blocks, same dimension), Mega Torches would stop spawns in the Hollow (decision: block them there), Legendary Monsters Overworld spawns (work), Extended Crafting endgame (gate map T10). Rarity pass for new structures: low value now the world is pregenerated.
+- [ ] Wave 5 checks. Done or settled: Ad Astra oxygen and launch rules (defaults), Create Jetpack air (ongoing cost), In Control! for the Hollow (00757be), LootJS strip script (`strata_removed_items.js`). *Open:* Ad Astra rocket gates (gate map T7/T8), Ad Astra Overworld ores (check), Structurify spacing (probably drop: world pregenerated), Immersive Optimization test with farms, contraptions and Cobblemon (work).
+- [ ] In-game test notes (Oct 25): Lootr confirmed; Seven Seas junk in icebergs is cosmetic (ignore); client heap 79–94% of 16 GB (watch). Pregenerated: Overworld, Nether, End, Aether, Kakuto, Twilight (d91b9e3). *Open, work:* pregenerate the Hollow, the Abyssal Plain and Crystal Chronicles' dimension; chase the log errors (`byg:emeraldite_shards` and `create:crushed_gold_ore` in a structure, Ice and Fire attachment errors, Blueprint's END repaletter). Report: side-session notes `main-ingame-test-results.md`.
+- [ ] Wave 6 checks. Done or settled: Apocalyptic Bosses loot and density (8fb8e2a), skip list (moot), Oritech flight (research cost; gate map §5), WaterFrames (URL whitelist is image and video hosts only); Oritech over Modern Industrialization, Cobblemon Kanto and Wings of Fire left out. *Open:* Apocalyptic ultimate ingot (gate map G6), Draconic tiers (T9), Oritech flight dragon heart (G5) and an in-game check that the exosuit jetpack drains power, Crystal Chronicles: pregenerate and check its End sub-biome against Nullscape (work).
+- [x] Happy Ghast: settled by the Oct 25 flight review. Optional: a harness cost if it ever feels cheap.
 - [x] Inventory Pets structures made rare (Oct 24): their chests have items baked in (no loot table), so Lootr can't make them per-player, and they were everywhere (24 tree tops near spawn). Overrides in `kubejs/data/inventorypets/`: tree top 24-chunk spacing, underground dungeon/Nether/End dungeons 40, sea cave 48. **Sky dungeons only generate in the Aether** (24 spacing; they sit on island tops at about Y 132). Measured nearest-structure distances from five points: tree top 0.5–3.8 km, underground 0.6–3.2 km, sea cave 1.3–2.8 km, Nether 0.4–1.9 km (Nether blocks), End 0.3–0.9 km, Aether sky dungeon 0.06–0.9 km.
 
 ## Test plan and open questions
@@ -256,7 +230,7 @@ Test with the whole group early, before writing quests, so heavy mods are found 
 **Open questions**
 
 - Decided: EMI as the recipe viewer (JEI installed alongside for its plugins), Terralith out; gravestone = GraveStone Mod, dynamic lighting = LambDynamicLights.
-- Modern Industrialization or Oritech? Decide during the creative test.
+- ~~Modern Industrialization or Oritech?~~ Oritech (wave 6, Oct 25).
 - ~~Spice of Life or Diet?~~ Spice of Life: Onion.
 - Remaining choices are settled during testing (below).
 - ~~Which portal method for the Pokémon world?~~ BBL Portals (KubeJS): Alph Stone frame + Johto Bell; World Portal crashes.
