@@ -578,11 +578,11 @@ hash = "0476a5c396e06e18f6268c70cad7b2dd46d1cafa946d33590da7b5562d0ffda7"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/tidecaller.png"
-hash = "02afc1c1c49c96b566527feb73b361bf28f66528f4e6eb025c145a3cac63985c"
+hash = "0956d6f3a52de75c410759d413c48de2abf02d204fc7d8c0ac662c5eb5ae3c05"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/tidecaller.png.mcmeta"
-hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
+hash = "0ac39bbed6164f84aea70b2716966415db03ccfc726d57adadf55b361797b75e"
 
 [[files]]
 file = "kubejs/client_scripts/pokeworld_party_hud.js"
