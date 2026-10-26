@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/mos_sunken_ship",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_ship_wreck_oak",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_ship_wreck_dark_oak",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 36,
+    "separation": 12,
+    "salt": 731000016
+  }
+}

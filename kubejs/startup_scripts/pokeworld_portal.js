@@ -81,6 +81,8 @@ StartupEvents.registry('item', event => {
   event.create('strata:hollow_ember').displayName('Hollow Ember').rarity('rare')
   // Abyssal Plain: rare drop from the deep and its ruins; a late-game gate material.
   event.create('strata:abyssal_pearl').displayName('Abyssal Pearl').rarity('epic')
+  // Summons the Leviathan (Cataclysm) in the Trench: the Abyssal Plain's final boss (abyssal_rules.js).
+  event.create('strata:leviathan_lure').displayName('Leviathan Lure').rarity('epic').maxStackSize(1)
 })
 
 PortalEvents.register(event => {

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/joshie_small_fossil",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 12,
+    "salt": 731000010
+  }
+}

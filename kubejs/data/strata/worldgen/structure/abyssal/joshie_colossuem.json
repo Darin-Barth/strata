@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "joshie:colosseum",
+  "size": 1,
+  "start_height": {
+    "absolute": 10
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false,
+  "biomes": "#strata:abyssal_group/trench",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:guardian",
+          "weight": 1,
+          "minCount": 2,
+          "maxCount": 4
+        },
+        {
+          "type": "minecraft:drowned",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 3
+        }
+      ]
+    }
+  }
+}

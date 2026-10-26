@@ -1,4 +1,4 @@
-# The Abyssal Plain: design proposal (Oct 26, 2026)
+# The Abyssal Plain (approved and built Oct 26, 2026)
 
 A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautica and of Huge Deer's "Surviving Minecraft's Abyss Mod" (Darin, Oct 26): water everywhere, no surface, a deep seafloor to explore, and bases you have to engineer before you can breathe in them. Mod research: `docs/abyssal-plain-mod-research.md`.
 
@@ -56,6 +56,17 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 - Unique materials from vents, trenches and the Leviathan (e.g. an "Abyssal Pearl" gate item, like the Hollow's Ember).
 - Per-player Lootr chests in all ruins and wrecks.
 - A Field Guide / scanning quest chapter ("Abyssal Survey").
+
+## 7a. What was built (Oct 26)
+- **Generator:** `tools/build_abyssal_plain.py --out kubejs/data --mods <server mods folder>` writes the dimension, noise settings, biomes, features, tags, spawn wiring, structure copies and loot modifiers. Re-run after an update to Hybrid Aquatic, Alex's Caves, Sunken Spires or MOS.
+- **Heights:** the column runs Y −48 to 591 because the standard noise generator hard-codes **lava below Y −54** in every dimension. Ceiling underside ~Y 560 (sea level 568), shelves ~Y 479, the plain ~Y 314, trench floors ~Y 14. Depths below the ceiling are as designed.
+- **What the ceiling breaks, and the workarounds:** surface rules count depth from the topmost air and water doesn't reset that count, so seafloor sediment is laid down as disk features (clay/mud, sand/gravel, blackstone/magma, mud/moss, abyssmarine). Vanilla kelp, seagrass, sea pickles and coral find their own height from the OCEAN_FLOOR heightmap, so they're rebuilt as our own block-column/simple-block features. All decorations use down-scanning placement (`environment_scan`, max 32 blocks). `initial_density_without_jaggedness` is 0, like the Nether. Alex's Caves' boulders, tube worms and anemones don't place outside its chasm biome and are left out; its mussels, black vents, whale falls and Deep One ruins work.
+- **Structures:** 26 copies under `strata:abyssal/` at fixed heights with `beard_box` (Sunken Spires: spires, temple, conduit ruins, spikes, fossils, forge, shrine, trial chamber buried under the plain, Colosseum and Sunken City in the trench; Moog's: Atlantis ruins and tribune, castle, church, archway, temple, wrecks, garden, magma ravine, conduit arch, dog statue, dragon skeletons in the trench). Sunken Spires now exists only here (its biome tag is emptied); Moog's keeps its Overworld oceans too. Test: the Colosseum generated on the trench floor (Y 0–40).
+- **The Leviathan:** Cataclysm's Sunken City picks its height in code from the ocean-floor heightmap, so it can't be moved here. Instead the **Leviathan Lure** (6 Abyssal Pearls + Karkinos Claw + Heart of the Sea + Immortal Embryo, both boss drops guaranteed) summons the Leviathan when used in the Trench below Y 120 (one at a time).
+- **Creatures:** Hybrid Aquatic's trench and vent species via its trench tags (its own Overworld biomes off), Alex's Caves' deep-sea creatures and Deep Ones and the Hullbreaker in the biome spawn lists (its six cave biomes off), Naturalist anglerfish/isopod and Upgrade Aquatic thrashers via their tags, Alex's Mobs frilled shark/giant squid/cachalot via their spawn configs.
+- **Scripts:** `server_scripts/abyssal_rules.js` (Tidecaller and Lure recipes, Lifepod, flood rule, no Conduit power, no sponges, Pearl drops, Lure use); the Hollow's damage cap also covers `hybrid_aquatic` and `alexscaves`; `client_scripts/strata_lang.js` names every custom dimension and biome (the Pokémon world's and the Hollow's had no names before).
+- **Test server (Oct 26):** clean boot; 6,561-chunk sample: no air pockets, no lava (a few vent blocks), floors at design heights, sediment coverage 50–88% by biome, kelp/seagrass/coral/sea pickles/sponges/vents/brine pools present; all five biomes found only in the Abyssal Plain.
+- **Not yet tested with a client:** the portal and Lifepod, the flood rule, creature spawns, Deep Seas pressure under a ceiling, a pumped-dry or parked-hull base, the Lure.
 
 ## 7. Build steps
 1. Add the chosen mods; set Hybrid Aquatic's Overworld biomes off and retarget its tags.

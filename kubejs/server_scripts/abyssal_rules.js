@@ -19,6 +19,41 @@ ServerEvents.recipes(event => {
     B: 'create_submarine:ballast_tank',
     C: 'minecraft:conduit',
   }).id('strata:tidecaller')
+  // The boss ladder: the Karkinos' claw, the Hullbreaker's embryo and six Abyssal Pearls.
+  event.shaped('strata:leviathan_lure', [
+    'PKP',
+    'PHP',
+    'PIP',
+  ], {
+    P: 'strata:abyssal_pearl',
+    K: 'hybrid_aquatic:karkinos_claw',
+    H: 'minecraft:heart_of_the_sea',
+    I: 'alexscaves:immortal_embryo',
+  }).id('strata:leviathan_lure')
+})
+
+// The Leviathan Lure: used in the Trench below Y 120, it calls up Cataclysm's Leviathan, the
+// Abyssal Plain's final boss. One at a time near the player; the lure is used up.
+ItemEvents.rightClicked('strata:leviathan_lure', event => {
+  const player = event.player
+  if (!abyssalIn(player)) return
+  if (String(player.block.biomeId) !== 'strata:the_trench' || player.y > 120) {
+    player.displayClientMessage(Text.aqua('Nothing answers. It needs the deep: the Trench, below Y 120.').italic(), true)
+    return
+  }
+  const around = player.level.getEntities(player, player.boundingBox.inflate(160))
+  let leviathanNear = false
+  for (let i = 0; i < around.size(); i++) if (String(around.get(i).type) === 'cataclysm:the_leviathan') leviathanNear = true
+  if (leviathanNear) {
+    player.displayClientMessage(Text.red('The Leviathan is already here.'), true)
+    return
+  }
+  player.mainHandItem.count--
+  const r = player.yaw * Math.PI / 180
+  const x = player.x - Math.sin(r) * 24, z = player.z + Math.cos(r) * 24, y = player.y - 6
+  event.server.runCommandSilent(`execute in ${abyssalDimensionId} run summon cataclysm:the_leviathan ${x.toFixed(1)} ${y.toFixed(1)} ${z.toFixed(1)}`)
+  event.server.runCommandSilent(`execute in ${abyssalDimensionId} positioned ${player.x} ${player.y} ${player.z} run tellraw @a[distance=..200] {"text":"Something vast stirs in the trench...","color":"dark_aqua","italic":true}`)
+  event.cancel()
 })
 
 // --- The Lifepod -----------------------------------------------------------------------------

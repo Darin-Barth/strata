@@ -28,6 +28,9 @@
     "strata:hollow_ember/graveyard/medium_loot",
     "strata:hollow_ember/graveyard/small_loot",
     "strata:hollow_ember/weeping_angels/catacombs",
-    "strata:abyssal_pearl/alexscaves/abyssal_ruins"
+    "strata:abyssal_pearl/alexscaves/abyssal_ruins",
+    "strata:abyssal_pearl/joshie/colosseum_middle",
+    "strata:abyssal_pearl/joshie/colosseum_top",
+    "strata:abyssal_pearl/joshie/trial_chamber_chest"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/mos_dragon_skeleton",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_sea_dragon_skeleton",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 48,
+    "separation": 16,
+    "salt": 731000013
+  }
+}

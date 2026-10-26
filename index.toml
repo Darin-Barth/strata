@@ -557,6 +557,14 @@ file = "kubejs/assets/strata/textures/item/hollow_ember.png.mcmeta"
 hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
 
 [[files]]
+file = "kubejs/assets/strata/textures/item/leviathan_lure.png"
+hash = "ee24b9dda63e81fbcc5c30857a252d3e8d40975a74a73e12d4fa033689826c84"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/leviathan_lure.png.mcmeta"
+hash = "4035373a4e38adcd143aad74f3845fd5211b374ba922d7611b36679d07a42a79"
+
+[[files]]
 file = "kubejs/assets/strata/textures/item/pale_lantern.png"
 hash = "16df1afb71aa7c4a925b78c5de1dab684b45f754ade3c22c2377027c9e724a7d"
 
@@ -2377,6 +2385,10 @@ file = "kubejs/data/inventorypets/worldgen/structure_set/underground_dungeon.jso
 hash = "de24f6614dce05825eb7af75761a42ef9d8a16b498dbc53c620c8951c576e560"
 
 [[files]]
+file = "kubejs/data/joshie/tags/worldgen/biome/has_structure/conduit_ruins.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/ancient_city.json"
 hash = "fc8b80d83d0ae38c272ef8948f150ec59238f867936ba7c3c6ae2a0fc0b8db98"
 
@@ -2474,7 +2486,7 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "f4567f2d8c2265bb797805884e521ca2bbabd2ab939ec9146b9c45d071e438f9"
+hash = "2c4ea97b3590dd008d81a36977ee1c29e96a4cdc91c6bc41b41df41e8494cb43"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeon_v2.nbt"
@@ -4197,6 +4209,18 @@ file = "kubejs/data/strata/loot_modifiers/abyssal_pearl/alexscaves/abyssal_ruins
 hash = "f1fe8bfb45282aa130bec54db445d299cd155a022801614f0fdecbd392227c20"
 
 [[files]]
+file = "kubejs/data/strata/loot_modifiers/abyssal_pearl/joshie/colosseum_middle.json"
+hash = "b65abdf7543b0225e296854541c13594ee9dea76350297bdbbe96bafd7dcaa86"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/abyssal_pearl/joshie/colosseum_top.json"
+hash = "017b9b04fe5ebc107a829b59d2ca45094ccfb58970618982a3162f4a1ab07cad"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/abyssal_pearl/joshie/trial_chamber_chest.json"
+hash = "2a29311ac7bca14928635afc880f35ef3c9d10804de7de4e97f97d8d8f384311"
+
+[[files]]
 file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/crypt_loot.json"
 hash = "04a7829c2c69a52980025c2ad43ce2c49449b3043e628112d61f3562c7ef43a9"
 
@@ -4533,6 +4557,26 @@ file = "kubejs/data/strata/tags/worldgen/biome/abyssal_deep.json"
 hash = "b8d335e9df3d2075177771905254d63e17fddb95feb53dbd4e7611ffd1bdad90"
 
 [[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/abyssal_group/floor.json"
+hash = "d44e4975b8166309c4e1630c4d84996375af2d1e7eb5ef7d20b21aa3e711c5d4"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/abyssal_group/garden.json"
+hash = "0587f1fa97f3390083576ab23fb1fa8d2db91f11955cf45f0eb541e3bf47b4d1"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/abyssal_group/plain.json"
+hash = "35d52db6b8a2d265db455f0101c7818fab828ee08cc87a88fed41960e100a1ef"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/abyssal_group/trench.json"
+hash = "275b08ca3eb7e44169e7ba79106921c8461f30d24d1ec2e0eb6504ade7d764db"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/biome/abyssal_group/vents.json"
+hash = "ec8e6a5a7a6371bf269df00c80e06df9db68efe77cad056ee41764334320dfe7"
+
+[[files]]
 file = "kubejs/data/strata/tags/worldgen/biome/abyssal_plain_biomes.json"
 hash = "4c402cac8dd8aed95c49bace0343e12005079d74b8983080f750c446e510d539"
 
@@ -4865,6 +4909,178 @@ file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/whalefall.
 hash = "02b1e946c4c0f0f746638d28448cb781c1c2c2b52513917d517a2d1e6b9f7608"
 
 [[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_colossuem.json"
+hash = "1c2134db667c6fae7c899fe6373402b3482b125306daabba72c46094602d3058"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_conduit_ruins.json"
+hash = "26e65bdbbb4e974b748962a943de2a385118d235ec14a49465b7ceac6956515f"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_floating_spikes.json"
+hash = "0ce3b185e2015bf0c52b2cdf0ebbe1784e199e11fd54eb0adeffaf077475f808"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_large_fossil.json"
+hash = "7f2dacb074e9bdfe4439790ac41af33fdd451098993c117a0c6544e22a5b1c0c"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_ocean_temple.json"
+hash = "d6780ed05a08356355f25a4d957dae13242a270a048c15289b534d9221f06d3f"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_prismarine_forge.json"
+hash = "7391d8fd12686aebb822fadd20d00114ba271d27f6a8f3a90521fb49f4f8e34b"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_prismarine_trial_chamber.json"
+hash = "80132aaafff6a533fefebecde807d4093e1f438c76e1898523c72c241dea2416"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_small_fossil.json"
+hash = "25e37ae15831e004d13fdd3187b6e1fac4e77e7af405a147482c03e99d70721c"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_spires.json"
+hash = "3a881c8837a46536011cc9ac832485799ca24db5d1ef5fec10c4d8a030c39558"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_sunken_city.json"
+hash = "279d7908dd5c23b06ecc925442750e51b57c4df39f85d6d08341e5e0fce894cf"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_trident_shrine.json"
+hash = "9ebdc4fdd9b890e4702f08d2aecba9267dae5b33a1ccb27bde6486cdc5cec571"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_atlantis_tribune.json"
+hash = "9f946e2d37177addb8c95601fd62884d5c15916b532bde415be95869fb409d86"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_conduit_arch.json"
+hash = "902bbedd949f539e77eee02c2f696aa97414938c992143e1179b58d2ae80a6c7"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_dragon_skeleton.json"
+hash = "51572c6c82b413534d92337e844f5ee11819a7c9737114fe109d4d73e93e4f36"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_magma_block_ravine.json"
+hash = "41a0af3693943965164302ecde6341ca29d34191ece03c88a5dc58fd028e3706"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_prismarine_dog_statue.json"
+hash = "dd0a0735bb0ef43365ed31e7c9905204915b0ebe8fad9d2275945f99444ff17b"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ruined_archway.json"
+hash = "a027b2f31d5006a5987c53d1b7ce942712928780172664869bb6ddfdf90edd54"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ruined_castle.json"
+hash = "62ca7c67fad49d208836c39c5bfba723442d2a7c0e2e1473ba71ef8f37a345e5"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ruined_church.json"
+hash = "2d45d5374d319bbeedd0f0931dfedf2a428ad45177e012b5192140f94e58018d"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ruins_atlantis.json"
+hash = "65576ab91fd5fb3898802169a1496c12172f444d99132a53d655869394137f88"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_sea_dragon_skeleton.json"
+hash = "3cfca7b571058c6171ff51a8223cfee05fbf21a97506cc50677065ce21ff4bb0"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ship_wreck_dark_oak.json"
+hash = "176565a1977a55d9c1ff5f1240a4bf5b9a0ea6552df02da719efdaaed1b39b8f"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_ship_wreck_oak.json"
+hash = "f42180f95fb8d23892cd8618cd96ede36fbdefd65d215d9c6b700ec148502899"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_small_ocean_temple.json"
+hash = "c52a15da9c8622794a6e87b13a933bd8ba96c8ba2dca2ee9a846b673892c57f8"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_sunken_ship.json"
+hash = "be0a695dd894842bc268a2d3acfa2d8c187beb6f5eab0e712ead32543c624dff"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure/abyssal/mos_underwater_garden.json"
+hash = "43772da5c1ea62fc9f127cc05c87799bd5d80f29ca908ce741b55ebc14064a12"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/atlantis.json"
+hash = "71d02813f350b582dd8e1f4e3be33c0983cc238c77fe9ad45d8c9b143430df63"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/atlantis_tribune.json"
+hash = "6c075ef29c7590e80b84b8178f00d2490d228e8167604059482a4a4bb5219f54"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/colossuem.json"
+hash = "a233471b13d10d43f04a9f35baa88bdfb3abcbd1403d761f5500a2a93ddd27fb"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/conduit_ruins.json"
+hash = "8dd4affde07c27ba23e23f39bce0bdadfb506fa51f3058e5ce18e9ddb10e0f4b"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/floating_spikes.json"
+hash = "6f9d9a40218b61e6bd7daa404e34f62445adf229c7f040d587827bcdcce55bef"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/large_fossil.json"
+hash = "d59932e6c1a09c0d1be746a41c1cc68bfe6139c811186b76c20db13d2fb3b65d"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/ocean_ruins.json"
+hash = "2a843ea159a60bc5a34d4223c93fe0c6311c40af3cfbc169a8191bfa684aa2a6"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/ocean_temple.json"
+hash = "e20f4b51bf4baeefb573a724027134541847ed8a20bc03320f06e3f9d2c3e29c"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/oddities.json"
+hash = "56f111bacaea22840b028380faeebe48c2978edf31f4c936787b76e9fc258b39"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/prismarine_forge.json"
+hash = "c9aa1401395f544777c7febca92c850d9b7f42889bc919fe4794cdaad88f1f78"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/small_fossil.json"
+hash = "63af88330d8ec03188cb1ef1161176a9338268914fe47bd0d1ef06020007cdb4"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/spires.json"
+hash = "e1845977bbf31da0e6af5805b2b6abebb8a397507a89b965a67e6124c82f2c15"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/sunken_city.json"
+hash = "ef212b7ca90f3f07bc5f8519a9c382f29fb7d0d2a652e70822a4a4193d6fc9c5"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/trench_bones.json"
+hash = "56c6e49d748e76f14103b219517967177cb3cffdc526c79f8e66a96da0a62762"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/trial_chamber.json"
+hash = "d217b9bc0966397f0fabb0c6a1f59e0248c56069d016578ac2e1ff2f497abe62"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/trident_shrine.json"
+hash = "cff352ae9c13a1fa910cc0697d48a7033d73a71cb4a495dea51d8d83a3967f98"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/structure_set/abyssal/wrecks.json"
+hash = "4eb5556dba4c3302c0ffc3835a31f0eeabeb9ce4791ddd6eb85d8139e3a5f65b"
+
+[[files]]
 file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_ravenous_biome_modifier.json"
 hash = "50d9f58d6829a101f5f04829bc00bfda3e7ef8fa256afc645f76348550e5ea94"
 
@@ -4894,7 +5110,7 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "36b6935c8f88b6c9d439e1ac7fdac1c6c1c4530a437179bf86387b82eacdd47a"
+hash = "323cdd5eb2e442c7dfa23e2e4fa5c2dd3979d6d102fb03dc9dafb59183bc0d78"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
@@ -4934,7 +5150,7 @@ hash = "db24136ea42635fd3ed1e4f746d7b47b45888288d0a3818723b91977c42c120d"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "3500f61d57f34a44a598b28c1458501662940c829584e8ec852bde099094e7a3"
+hash = "ffe4edf1ee56a8e6ceea753c2e668c5a8d7cdf6aecc0d4ec84664c3e96a9a382"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"

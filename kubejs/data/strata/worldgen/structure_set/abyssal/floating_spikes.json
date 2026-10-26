@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/joshie_floating_spikes",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 64,
+    "separation": 20,
+    "salt": 731000004
+  }
+}

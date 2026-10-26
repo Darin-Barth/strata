@@ -343,7 +343,9 @@ def tag(values, replace=True):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="kubejs/data")
-    out = ap.parse_args().out
+    ap.add_argument("--mods", help="folder with the pack's mod jars (for the structure copies)")
+    a = ap.parse_args()
+    out, args_mods = a.out, a.mods
 
     write(out, f"{NS}/dimension_type/abyssal_plain.json", {
         "ultrawarm": False, "natural": False, "piglin_safe": False, "respawn_anchor_works": False, "bed_works": True,
@@ -396,11 +398,15 @@ def main():
     write(out, "naturalist/tags/worldgen/biome/has_anglerfish.json", tag(deep, replace=False))
     write(out, "naturalist/tags/worldgen/biome/has_giant_isopod.json", tag(deep, replace=False))
     write(out, "upgrade_aquatic/tags/worldgen/biome/has_spawn/thrasher.json", tag([c("abyssal_shelf"), c("abyssal_plain")], replace=False))
+    if args_mods:
+        build_structures(out, args_mods)
+
     # Abyssal Pearls in the Deep One ruins' chests (Alex's Caves), like the Hollow's Ember.
     write(out, f"{NS}/loot_table/inject/abyssal_pearl.json", {"type": "minecraft:chest", "pools": [{
         "rolls": 1, "entries": [{"type": "minecraft:item", "name": c("abyssal_pearl"), "functions": [
             {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}]}]}]})
-    pearl_chests = {"alexscaves:chests/abyssal_ruins": 0.35}
+    pearl_chests = {"alexscaves:chests/abyssal_ruins": 0.35, "joshie:colosseum_middle": 0.5,
+                    "joshie:colosseum_top": 0.5, "joshie:trial_chamber_chest": 0.4}
     entries = []
     for table, chance in pearl_chests.items():
         ns, path = table.split(":")
@@ -416,6 +422,82 @@ def main():
     write(out, "neoforge/loot_modifiers/global_loot_modifiers.json", glm)
 
     print(f"Abyssal Plain: {len(BIOMES)} biomes, {sum(len(v) for v in FEATURES.values())} floor features, written to {out}")
+
+
+# --- Structures ----------------------------------------------------------------------------------
+# Seafloor structures place themselves on the OCEAN_FLOOR_WG heightmap, which here is the top of the
+# cap. Copies under strata:abyssal/ start at a fixed height on the floor of their biome group and
+# mold the terrain around them (beard_box). Sunken Spires moves here entirely (its own biome tag is
+# emptied); Moog's Ocean Structures keeps its Overworld oceans and gets seafloor copies here.
+PLAIN_FLOOR, TRENCH_FLOOR = PLAIN_Y - 1, 14 - 1
+GROUP_TAGS = {
+    "floor": ["abyssal_plain", "bioluminescent_garden", "hydrothermal_field"],
+    "plain": ["abyssal_plain"], "garden": ["bioluminescent_garden"], "vents": ["hydrothermal_field"], "trench": ["the_trench"],
+}
+# (source structure, group, base Y, structure set name, spacing, separation)
+STRUCTURES = [
+    ("joshie:sunken_spires/spires", "plain", PLAIN_FLOOR, "spires", 120, 40),
+    ("joshie:sunken_spires/ocean_temple", "plain", PLAIN_FLOOR, "ocean_temple", 64, 20),
+    ("joshie:sunken_spires/conduit_ruins", "garden", PLAIN_FLOOR, "conduit_ruins", 48, 16),
+    ("joshie:sunken_spires/floating_spikes", "floor", PLAIN_FLOOR, "floating_spikes", 64, 20),
+    ("joshie:sunken_spires/large_fossil", "floor", PLAIN_FLOOR, "large_fossil", 96, 30),
+    ("joshie:sunken_spires/small_fossil", "floor", PLAIN_FLOOR, "small_fossil", 40, 12),
+    ("joshie:sunken_spires/prismarine_forge", "vents", PLAIN_FLOOR, "prismarine_forge", 72, 24),
+    ("joshie:sunken_spires/trident_shrine", "plain", PLAIN_FLOOR, "trident_shrine", 96, 32),
+    ("joshie:sunken_spires/prismarine_trial_chamber", "plain", PLAIN_FLOOR - 45, "trial_chamber", 96, 32),
+    ("joshie:sunken_spires/colossuem", "trench", TRENCH_FLOOR, "colossuem", 64, 20),
+    ("joshie:sunken_spires/sunken_city", "trench", TRENCH_FLOOR, "sunken_city", 96, 30),
+    ("mos:ruins_atlantis", "plain", PLAIN_FLOOR, "atlantis", 72, 24),
+    ("mos:atlantis_tribune", "plain", PLAIN_FLOOR, "atlantis_tribune", 72, 24),
+    ("mos:ruined_castle", "plain", PLAIN_FLOOR, "ocean_ruins", 40, 14),
+    ("mos:ruined_church", "plain", PLAIN_FLOOR, "ocean_ruins", 40, 14),
+    ("mos:ruined_archway", "floor", PLAIN_FLOOR, "ocean_ruins", 40, 14),
+    ("mos:small_ocean_temple", "plain", PLAIN_FLOOR, "ocean_ruins", 40, 14),
+    ("mos:sunken_ship", "floor", PLAIN_FLOOR, "wrecks", 36, 12),
+    ("mos:ship_wreck_oak", "floor", PLAIN_FLOOR, "wrecks", 36, 12),
+    ("mos:ship_wreck_dark_oak", "floor", PLAIN_FLOOR, "wrecks", 36, 12),
+    ("mos:underwater_garden", "garden", PLAIN_FLOOR, "oddities", 40, 14),
+    ("mos:magma_block_ravine", "vents", PLAIN_FLOOR, "oddities", 40, 14),
+    ("mos:conduit_arch", "garden", PLAIN_FLOOR, "oddities", 40, 14),
+    ("mos:prismarine_dog_statue", "plain", PLAIN_FLOOR, "oddities", 40, 14),
+    ("mos:dragon_skeleton", "trench", TRENCH_FLOOR, "trench_bones", 48, 16),
+    ("mos:sea_dragon_skeleton", "trench", TRENCH_FLOOR, "trench_bones", 48, 16),
+]
+
+
+def build_structures(out, mods_dir):
+    import glob
+    import zipfile
+    jars = {"joshie": glob.glob(os.path.join(mods_dir, "sunken-spires*.jar"))[0],
+            "mos": glob.glob(os.path.join(mods_dir, "MoogsOcean*.jar"))[0]}
+    for g, bs in GROUP_TAGS.items():
+        write(out, f"{NS}/tags/worldgen/biome/abyssal_group/{g}.json", tag([c(b) for b in bs]))
+    sets = {}
+    for i, (src, group, base_y, set_name, spacing, separation) in enumerate(STRUCTURES):
+        ns, path = src.split(":")
+        with zipfile.ZipFile(jars[ns]) as z:
+            st = json.loads(z.read(f"data/{ns}/worldgen/structure/{path}.json"))
+        h = st.get("start_height", {"absolute": 0})
+        if isinstance(h, dict) and "absolute" in h:
+            st["start_height"] = {"absolute": base_y + h["absolute"]}
+        else:  # uniform heights: keep their spread, shifted onto our floor
+            lo, hi = h["min_inclusive"]["absolute"], h["max_inclusive"]["absolute"]
+            st["start_height"] = {"type": "minecraft:uniform", "min_inclusive": {"absolute": base_y + lo},
+                                  "max_inclusive": {"absolute": base_y + hi}}
+        st.pop("project_start_to_heightmap", None)
+        st["biomes"] = f"#{NS}:abyssal_group/{group}"
+        st["terrain_adaptation"] = "beard_box"
+        name = f"{ns}_{path.split('/')[-1]}"
+        write(out, f"{NS}/worldgen/structure/abyssal/{name}.json", st)
+        sets.setdefault(set_name, (spacing, separation, []))[2].append(c(f"abyssal/{name}"))
+    for k, (set_name, (spacing, separation, members)) in enumerate(sorted(sets.items())):
+        write(out, f"{NS}/worldgen/structure_set/abyssal/{set_name}.json", {
+            "structures": [{"structure": m, "weight": 1} for m in members],
+            "placement": {"type": "minecraft:random_spread", "spacing": spacing, "separation": separation,
+                          "salt": 731_000_000 + k}})
+    # Sunken Spires' ruins exist only down here now.
+    write(out, "joshie/tags/worldgen/biome/has_structure/conduit_ruins.json", tag([]))
+    print(f"structures: {len(STRUCTURES)} copies in {len(sets)} sets")
 
 
 if __name__ == "__main__":
