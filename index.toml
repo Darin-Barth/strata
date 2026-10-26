@@ -69,6 +69,10 @@ file = "config/dungeonconfig/dungeonconfig.json5"
 hash = "ef7bed1f286e6040a4d2c5fc5b5e21ae938986375a9e89fe47b90ba5cd230796"
 
 [[files]]
+file = "config/everycomp-common.toml"
+hash = "36bd0375bd32e4fb60ed53e1b7fa61ebec8855c7ea68b230b3119a7d2afe31e3"
+
+[[files]]
 file = "config/fancymenu/assets/strata/background.png"
 hash = "88a47bd763a9d53c3d9e3b9e04fa1903b2646bcc0c4380398452761741395624"
 
