@@ -24,6 +24,12 @@
 	#Extra biome; Regions Unexplored is the sole biome mod (keeps worldgen lighter).
 	"Glimmering Weald" = false
 
+[tweaks]
+	#EMI shows every recipe, so the vanilla recipe book doesn't need them all unlocked. With it on, each player got
+	#~19,000 recipe advancements on first join (a 3.3 MB advancements file) and every later join froze the server
+	#~9 s while vanilla decoded it (Oct 25 join profile: PlayerAdvancements.load).
+	"Automatic Recipe Unlock" = false
+
 [automation]
 	#Default is already off; kept off so pistons can't move Create/Mekanism/AE2 block entities (dupe/crash risk).
 	"Pistons Move Tile Entities" = false

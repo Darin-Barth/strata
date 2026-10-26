@@ -310,7 +310,7 @@ hash = "773b0f469fa4cdf997fbe8a5c76c106a8bea1193eb13093c4102a7748effb1f3"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "e19a6141a26292cdf486e81f53cf176c443578ad004a27b207cf1b101885fe66"
+hash = "90b56bbe84f3314d2dd07c8bcc3b3e896d7c4b9141037f707bc666810f9e0f98"
 
 [[files]]
 file = "config/rctmod-server.toml"
