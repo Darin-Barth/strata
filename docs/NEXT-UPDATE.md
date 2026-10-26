@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **Graves are owner-only**: only the owner (and ops) can break a grave, so a grave always pops back into the owner's original slots, armor included (`break_pickup` was already on). Crouching on your grave also returns everything (`sneak_pickup`).
 - **New: `/sethome` and `/home`**: one home per player, any dimension, 10-second cooldown after each `/home` (KubeJS, server-only).
 - **New: friends can't hurt each other**: damage between players in the same FTB Teams party, or whose teams list each other as allies, is cancelled, including arrows and spells. Allies keep separate quest progress. Everyone else can still fight (KubeJS, server-only).
 - **IPN cleanup**: the purple arrows on hotbar and armor slots were Inventory Profiles Next's auto-refill indicator icons, now off (auto-refill still works). Artifacts' Everlasting Beef and Eternal Steak are blacklisted from auto-refill, which stops the repeating "replace failed" warning. Ships `config/inventoryprofilesnext/inventoryprofiles.json` (not preserved, so it resets players' IPN settings on each update; switch to `preserve = true` once people customize IPN).

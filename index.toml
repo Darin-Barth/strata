@@ -269,6 +269,10 @@ file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
 hash = "0ea63a12f7606224e5700bd4944500ccb3f94e102df02f667fc2cdeb8b96a4e2"
 
 [[files]]
+file = "config/gravestone-server.toml"
+hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
+
+[[files]]
 file = "config/guardvillagers-common.toml"
 hash = "1ab9b8f4909302c57f1177fcef3489752ad7e0767fedeef1211bc451a103771a"
 
@@ -1899,6 +1903,30 @@ file = "kubejs/data/integrated_stronghold/worldgen/processor_list/portal_room_pr
 hash = "1eb552fa44b9cdcb5b9c564aab2cbef559ac5b4687e27975ce98eafdaff72bf9"
 
 [[files]]
+file = "kubejs/data/inventorypets/structure/nether_dungeon.nbt"
+hash = "3b83cb93e326698c493e51cd0f46045abd48a6ad94a485968228a695088157fd"
+
+[[files]]
+file = "kubejs/data/inventorypets/structure/sea_cave.nbt"
+hash = "5cb8205b27b5008d69652f5d076f665bcfbe1a62514984ba8461c34b738ad58f"
+
+[[files]]
+file = "kubejs/data/inventorypets/structure/sky_dungeon.nbt"
+hash = "98bdf8842419090e67f0310eb4a32df6137316a49acd07f22d9dfa38c09ffb9f"
+
+[[files]]
+file = "kubejs/data/inventorypets/structure/space_dungeon.nbt"
+hash = "34021cc14b337d69aa045c23bc29c40ac73dfc82bee5944a13548ed91493265f"
+
+[[files]]
+file = "kubejs/data/inventorypets/structure/tree_top.nbt"
+hash = "29f6c5b5e23a2a944b4b5b12965a6d973330cd284ba1186733fccf30f20908fd"
+
+[[files]]
+file = "kubejs/data/inventorypets/structure/underground_dungeon.nbt"
+hash = "32bd3891420641d83679e372e2200736d77027a3a4aa5742af12dfa448e0cd2d"
+
+[[files]]
 file = "kubejs/data/inventorypets/tags/worldgen/biome/has_structure/sky_dungeon_biomes.json"
 hash = "c8ea0ee29eccaeec1274db06ba1a812ff2ddf0de921607922c21c170e193631e"
 
@@ -2017,6 +2045,50 @@ hash = "cf0312120d9e6a7522f20961e665205233704eafd657e6b801a1d73d03167108"
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
 hash = "b0426e8c35c99b3ca0c2e703c21ade593dc5d2c432713e1cc458d9312f4f603f"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeon_v2.nbt"
+hash = "f284bb2ac51ac9595566ec6ad17f5288327d28483b493d7c7ac3b27e43cb82fa"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeonv1.nbt"
+hash = "2c53cf5531e5eb70013f047853125d0a440f0a49a10d872f9764ee970e3d8e7c"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeonv2.nbt"
+hash = "ad157546914931b62b3e19f63a8b57ddcbf2ceba51409bfa53bd8b9a6c4ba130"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/furacas_dungeonv1.nbt"
+hash = "b13fbd64ff7931b8de534a5e45c30b985e7083f30af61636967d7e960cd5ae6d"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/lavagod_dungeonv1.nbt"
+hash = "facbfb9e770f6d993d0a8676f3c7a7f015dd9409889f09cd600ac051e99fa5cf"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/lavalord_dungeonv1.nbt"
+hash = "2eb32cd56d582f1dcc130ed59c2ee6e568e050c1a941b6e21ffd6cefefcd8a4b"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/multiplebosses_dungeonv1.nbt"
+hash = "0f11469e92f82ac85e001f2bb3406532e237cf1b4dd0ad02045caee801afd2ee"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/pets_dungeonv1.nbt"
+hash = "7c9ee3a4b4397d581815e2dcd551ecee82596b7f439cbef65a35df2e910c59e0"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/silencedeath_dungeonv1.nbt"
+hash = "ccc447909a6d8bb79f8938b7240986701318dd58c19f2d661360a86cb411a10e"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/silencedeath_dungeonv3.nbt"
+hash = "2a659ba978bed0ccb569da11df9bb7debb4958886aea41c37d024ed726bec4f0"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/structure/skeletongod_dungeonv1.nbt"
+hash = "78dcee55636c83f7aac655291b28f1b17f3f69881ef0757d3783410edb7a8ffe"
 
 [[files]]
 file = "kubejs/data/pokeworld/dimension/pokeworld.json"
@@ -3625,6 +3697,250 @@ hash = "ba635629a0803aa0cad5cd01f33f721bfcc78724a0a446ca3cd5421530bd859b"
 [[files]]
 file = "kubejs/data/pokeworld/worldgen/template_pool/village/taiga/houses.json"
 hash = "7af8a9359ae933a2bf512ec0159d65fe5b83a19a7f668b6ad3f4e532c22949f7"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/nether_dungeon/0.json"
+hash = "5ad7a5682a1a41f2ae12ee5eb1f94510fd212a36aa42c6f293fd85fbe00a474b"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/sea_cave/0.json"
+hash = "5e9546dc9bff2ea028f4700c6949dc80d085aaca464ee8dbcb0962dad7f5cf72"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/sky_dungeon/0.json"
+hash = "4d8b7c43533ffd8b477bdfe8c98c2f886c8591d2e4bd4628c1697fe018bbb14f"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/space_dungeon/0.json"
+hash = "5ad7a5682a1a41f2ae12ee5eb1f94510fd212a36aa42c6f293fd85fbe00a474b"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/tree_top/0.json"
+hash = "c9db0cf2858386a8aee4106b8749bbb334b1b9c8ca172428fde5e7377ae634d9"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/inventorypets/underground_dungeon/0.json"
+hash = "77176344ea42b1bb0682c863dec6198096c44f1d077124c95e3b0b7cdf75540e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeon_v2/0.json"
+hash = "24b79e5fba742d5ac972471d9cf3bbcffb51e84bd774dd485d699682841df7f1"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeon_v2/1.json"
+hash = "ad65b42aef1c0fa3fdeffe08005656adac20e77c1dc6f769dc5ff80a3e84de9d"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeon_v2/2.json"
+hash = "c01efd87057d3d82403f150edaeb5eb6ab6597c81f0dba3521431acded1fd211"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv1/0.json"
+hash = "f379f080be02770bfb7a7f6b7c3861f34c0e6dd825b1a2d98b32032b68676044"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv1/1.json"
+hash = "ad65b42aef1c0fa3fdeffe08005656adac20e77c1dc6f769dc5ff80a3e84de9d"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv1/2.json"
+hash = "c01efd87057d3d82403f150edaeb5eb6ab6597c81f0dba3521431acded1fd211"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv2/0.json"
+hash = "24b79e5fba742d5ac972471d9cf3bbcffb51e84bd774dd485d699682841df7f1"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv2/1.json"
+hash = "ad65b42aef1c0fa3fdeffe08005656adac20e77c1dc6f769dc5ff80a3e84de9d"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/finalboss_dungeonv2/2.json"
+hash = "c01efd87057d3d82403f150edaeb5eb6ab6597c81f0dba3521431acded1fd211"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/furacas_dungeonv1/0.json"
+hash = "f8cdbf692e05e179b0cd57599d128f573642f9c7ce321c69c6b7c885936343a9"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/furacas_dungeonv1/1.json"
+hash = "f6dc9679b50b24e4445fdb5a4168a58fbe0bf191ebbfd6c84fdf212c3de0a55f"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/furacas_dungeonv1/2.json"
+hash = "fb3fe2f1f6a0b1eec99d0ceac1d6882e0550863efae9817cdcbbdc24a0d2a667"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/lavagod_dungeonv1/0.json"
+hash = "0e4a833fc56ae7dd1ae14aa7376d2ebcb807a2626f8c898ccdab704a20ae0138"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/lavagod_dungeonv1/1.json"
+hash = "0222c1b598ac7e90ccc57e857404be5e71155ef35bc50c37de9259e3a37268c0"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/lavagod_dungeonv1/2.json"
+hash = "e2816d2a1233be109693c0cbf25342d810fd796fa8b712afbff6915031c48620"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/lavagod_dungeonv1/3.json"
+hash = "31f38ffc1a5319434d2536268ce964ef0ebe22716e47f627860efab7d630bcf7"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/lavalord_dungeonv1/0.json"
+hash = "cb9d02c2fbe144d4b16c9084ccef2b56fc2e7736bf7ffe645aed2f48316d63db"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/0.json"
+hash = "6ae6696c4b929f1d2281fc7f6a9ab49cb983c8e0443e2836f8a615d917ce4231"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/1.json"
+hash = "006417067d182ac48d024987c5071d0e95d042417f7f3db998d4adddc3a8a880"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/10.json"
+hash = "1b4e0ae4c28d66926ebcd939c59a96404af85eadc6c39f4cbc54e9bb33e0793d"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/11.json"
+hash = "f4377b523f0c5ef6bb758ec9a455c08195f64e022c9e092d80c2e88a767484d0"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/2.json"
+hash = "1c49731ddcadd3e9cb54ddfb4ee19fbd12457ac29dfdd4b6baf18e8583cee455"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/3.json"
+hash = "5844514a155dcb10dd026db46fae89d45072fa49a18381929810f7d29ff58113"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/4.json"
+hash = "bfa663fe9cd1a3b8601d08b45864b746b60255a6af1663a7651deb154c1552c5"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/5.json"
+hash = "006417067d182ac48d024987c5071d0e95d042417f7f3db998d4adddc3a8a880"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/6.json"
+hash = "1abe1bb54a6639364487bcc18dfe1f315a97aa4f73e4c8dff58252e44b91d3f3"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/7.json"
+hash = "7f7a0575c188b52fb1bc6dd05323cee56c3889f4217b8ccca7e17b2c4481ef25"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/8.json"
+hash = "eb001660d587c7a89a0bbc205561b24ad3d106cb3c4eb20ed35f991f356680c2"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/multiplebosses_dungeonv1/9.json"
+hash = "006417067d182ac48d024987c5071d0e95d042417f7f3db998d4adddc3a8a880"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/pets_dungeonv1/0.json"
+hash = "f30025b4fa9a7ee2290d57b6d23ccaf804cce2e7db6126266c5834b1b020ed61"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/pets_dungeonv1/1.json"
+hash = "15be23494c7e635ae9504dbe055767d0d74831a789a18a53f804d5e138fcaec0"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/pets_dungeonv1/2.json"
+hash = "1a97f9fd5efa2924ef5cc504c0a6081158cf420aa8b612a851174d59c5a55d69"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/pets_dungeonv1/3.json"
+hash = "782f407c77d181fad2702435896bcab76645f5d50e56f78a63523eb46ce608e2"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/pets_dungeonv1/4.json"
+hash = "782f407c77d181fad2702435896bcab76645f5d50e56f78a63523eb46ce608e2"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv1/0.json"
+hash = "5c9a9426f8c7b8a5308991b6d47b6ef2ea15aff3c8416cceb56ac167db0b59a4"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv1/1.json"
+hash = "1a80c6b9890861a1fd7ae0a88af3ed5beb591e3e59dddaff6d7a2c551b4d23b5"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv1/2.json"
+hash = "ae224f5ff6dcb69a37616ed2685e319e0a6c18f2aa3e00961e914faecc93e7a0"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv1/3.json"
+hash = "47f5c4256c73dd1450d58c98dbf370948ced56f48691a93f67d3fc02133370e6"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv1/4.json"
+hash = "34ee2a8dc0e1aa3f7a048ad998b0f49269f7067038a3cd686287d4f9e3cc7d1e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv3/0.json"
+hash = "bbe6859a2b80a3a6492d40559e649ddd819b08c333ceaca086e8cc36604ad84c"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv3/1.json"
+hash = "c4e18f4fb454e824ab2fcf35cbcdf2f17608b3022d49321c0dd2c52903912c16"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv3/2.json"
+hash = "6313cfe8d1bfdaadc056fb3d7870bce6d0b917c84714530c5320cc137302a51e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/silencedeath_dungeonv3/3.json"
+hash = "34ee2a8dc0e1aa3f7a048ad998b0f49269f7067038a3cd686287d4f9e3cc7d1e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/0.json"
+hash = "89ed352c4791fb05e60433586c0cff2ef55ce783ad950282d6a68a89fe677fa2"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/1.json"
+hash = "864ba774ae91944b3afa580beb76312a6d342a096e6a56147e24198d66dd7fd8"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/10.json"
+hash = "5e5cbf1997af6bae86c882252024df3f3aae399e23a953d4da6b51fb2717a08e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/11.json"
+hash = "6d7e983c8b9a7b958e79b6b1123d16b6d14f790e5f61a63ad86b4499b2588997"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/2.json"
+hash = "8216eb91347fe31ac02b708697c7a318f3b36d0459f02d3c199d27782bcd5ac6"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/3.json"
+hash = "b262db688566a6d6d7cf7a4a90fc68e4b71ebf6ae022495518b4eaf0598d6ad5"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/4.json"
+hash = "f8ab4654ac1ca73ad7a771f4acff183af573713c7e8a4ae3278cc063a3657b9b"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/5.json"
+hash = "b87fe440758398e0349b230945c2444dd7907fed0f1976a796a1438f717927b2"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/6.json"
+hash = "8ffccb4bf7e818cc652935f56cc4f67cb8417f7f4c5a737949cc623df1927d44"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/7.json"
+hash = "f0b5a2f8b8a5beb64a78e7ebae868a143aced2f2b2991d8d4fa691ec29d668a6"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/8.json"
+hash = "b6b0ce0066ca200043d6b5d8a49a730d804df6bada42a34af9b830e12a26cdfa"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dungeonv1/9.json"
+hash = "3785c4b4b561d33e38fa1113d0b30cf5398be19230554406b8a3283b59d0b417"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
