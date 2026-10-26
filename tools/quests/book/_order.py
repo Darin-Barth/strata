@@ -18,7 +18,7 @@ CHAPTERS = [
     "ars_nouveau", "irons_spells", "occultism", "neo_vitae", "theurgy", "vampirism",
     # exploration
     "explorers_guide", "nether", "twilight_forest", "aether", "deeper_darker", "ad_astra", "the_end",
-    "pokemon_world",
+    "pokemon_world", "abyssal_plain",
     # bosses & combat
     "combat_gear", "cataclysm", "ice_and_fire", "boss_hunter",
     # life & cozy

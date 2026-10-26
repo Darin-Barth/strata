@@ -86,6 +86,12 @@ def adv(advancement, criterion="", title=None):
                 [("advancements", advancement)])
 
 
+def observe(entity, title=None, ticks=20):
+    """Look at a living entity of this type for `ticks` (1 s by default)."""
+    return Task("observation", {"observation_type": "entity_type", "observe_type": 5,
+                                "timer": Long(ticks), "to_observe": entity}, title, [("entities", entity)])
+
+
 # ---- rewards -----------------------------------------------------------------------------
 class Reward:
     def __init__(self, type_, data, ids=()):
@@ -197,5 +203,5 @@ def all_chapters():
     return list(_CHAPTERS)
 
 
-__all__ = ["chapter", "item", "check", "dim", "kill", "structure", "biome", "adv", "xp", "levels",
+__all__ = ["chapter", "item", "check", "dim", "kill", "structure", "biome", "adv", "observe", "xp", "levels",
            "give", "bag", "Double", "Float", "Long"]

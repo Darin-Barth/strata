@@ -26,19 +26,19 @@ q("bell", "The Johto Bell", deps="intro", icon="pokeworld:johto_bell", tier=2,
     The Johto Bell is &areusable&r: ringing the portal never uses it up.""",
   rewards=[give("minecraft:diamond")])
 
-q("frames", "Poké Portal Frames", deps="bell", icon="pokeworld:poke_portal_frame", tier=2,
+q("frames", "Alph Stone", deps="bell", icon="pokeworld:poke_portal_frame", tier=2,
   tasks=item("pokeworld:poke_portal_frame", 10), desc="""
-    Craft red-and-white &ePoké Portal Frame&r blocks: red dye, redstone, iron,
-    a diamond and white dye make &e8&r at a time.
+    Carve &eAlph Stone&r, the ancient stone of Johto's ruins: eight &eChiseled Sandstone&r
+    around a &bdiamond&r make &e8&r at a time.
 
     You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall.
-    Leave the corners out if you're short.""",
+    The stones join into one carved gateway, and the corners make it look whole.""",
   rewards=[give("minecraft:red_dye", 6), give("minecraft:white_dye", 6)])
 
 q("portal", "Ring the Bell", deps="frames", icon="pokeworld:johto_bell", tier=3,
   tasks=dim("pokeworld:pokeworld", title="Enter the Kakuto Region"), desc="""
-    Build the frame (like a Nether portal, but with Poké Portal Frames) and use the
-    &eJohto Bell&r on it. The portal fills with red light. Step in!
+    Build the frame (like a Nether portal, but with Alph Stone) and ring the
+    &eJohto Bell&r on it. The old gateway wakes up. Step in!
 
     A matching portal is built on the other side, and it leads straight back to the
     Overworld at the same spot. Your Pokémon party HUD only shows inside the Kakuto Region.""",
