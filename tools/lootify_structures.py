@@ -36,6 +36,42 @@ def old_item(it):
     return str(it["id"]), int(it.get("Count", it.get("count", 1))), it.get("tag") or {}
 
 
+# Balance profiles (Darin, Oct 25: "good items to encourage people to do the dungeon, but not so much
+# loot that you are set"). A namespace listed here gets randomised, smaller loot instead of an exact
+# copy: (chance the stack appears at all, fraction of the original count to roll up to, hard max).
+# Items not listed use DEFAULT_RULE. Exact copies are kept for namespaces not listed (Inventory Pets).
+BALANCE = {
+    "panascraftrpgmod": {
+        "minecraft:enchanted_golden_apple": (0.25, 0.0, 1),
+        "minecraft:totem_of_undying": (0.25, 0.0, 1),
+        "minecraft:netherite_ingot": (0.35, 0.0, 1),
+        "minecraft:netherite_upgrade_smithing_template": (0.35, 0.0, 1),
+        "minecraft:netherite_scrap": (0.5, 0.0, 2),
+        "minecraft:netherite_sword": (0.35, 0.0, 1),
+        "minecraft:diamond_block": (0.4, 0.0, 1),
+        "minecraft:diamond": (0.75, 0.0, 2),
+        "minecraft:gold_block": (0.6, 0.0, 2),
+        "minecraft:golden_apple": (0.6, 0.0, 2),
+        "minecraft:echo_shard": (1.0, 0.0, 4),
+        "minecraft:enchanted_book": (0.5, 0.0, 1),
+    },
+}
+# Unlisted items in a balanced namespace: gear (count 1) 50% chance; stacks roll 1..half the count.
+DEFAULT_RULE = (None, 0.5, 64)
+
+
+def balanced_pool(ns, item_id, count, tag):
+    rules = BALANCE[ns]
+    chance, frac, cap = rules.get(item_id) or (
+        (0.5, 0.0, 1) if count == 1 or item_id.startswith("deeperdarker:warden_") or "warden" in item_id
+        else DEFAULT_RULE)
+    hi = max(1, min(cap, round(count * frac) if frac else cap))
+    pool = entry_for(item_id, {"type": "minecraft:uniform", "min": 1, "max": hi} if hi > 1 else 1, tag)
+    if chance is not None and chance < 1.0:
+        pool["conditions"] = [{"condition": "minecraft:random_chance", "chance": chance}]
+    return pool
+
+
 def entry_for(item_id, count, tag):
     functions = [{"function": "minecraft:set_count", "count": count}]
     enchants = {}
@@ -71,7 +107,19 @@ def main():
                 table = f"strata:lootified/{ns}/{struct}/{changed}"
                 path = OUT_DATA / "strata" / "loot_table" / "lootified" / ns / struct / f"{changed}.json"
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(json.dumps({"type": "minecraft:chest", "pools": [entry_for(*s) for s in kept]}, indent=2) + "\n", newline="\n")
+                if ns in BALANCE:
+                    # Merge repeated stacks of the same plain item first, so a chest with five single
+                    # enchanted golden apples rolls once for "enchanted golden apples", not five times.
+                    merged, special = {}, []
+                    for item_id, count, tag in kept:
+                        if tag.get("Enchantments") or tag.get("StoredEnchantments") or tag.get("display"):
+                            special.append((item_id, count, tag))
+                        else:
+                            merged[item_id] = merged.get(item_id, 0) + count
+                    pools = [balanced_pool(ns, i, c, {}) for i, c in merged.items()] + [balanced_pool(ns, *s) for s in special]
+                else:
+                    pools = [entry_for(*s) for s in kept]
+                path.write_text(json.dumps({"type": "minecraft:chest", "pools": pools}, indent=2) + "\n", newline="\n")
                 index[signature([{"id": i, "count": c} for i, c, _ in stacks])] = table
                 del nb["Items"]
                 nb["LootTable"] = nbtlib.String(table)

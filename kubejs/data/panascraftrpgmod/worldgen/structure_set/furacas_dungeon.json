@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "panascraftrpgmod:furacas_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 42,
+    "salt": 1094379351
+  }
+}

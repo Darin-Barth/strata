@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "panascraftrpgmod:lava_lord_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 80,
+    "separation": 72,
+    "salt": 1070631428
+  }
+}
