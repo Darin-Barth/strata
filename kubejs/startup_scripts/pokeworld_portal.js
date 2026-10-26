@@ -14,6 +14,9 @@
 // The Hollow (horror dimension, docs/hollow-design.md):
 //   Frame: resin bricks (Vanilla Backport); resin only comes from Overworld Pale Gardens.
 //   Pale Lantern: Creaking Heart (Silk Touch) + soul lantern + resin clumps; reusable.
+// The Abyssal Plain (underwater dimension, docs/abyssal-plain-design.md):
+//   Frame: dark prismarine. Tidecaller: a Conduit between two Deep Seas ballast tanks, prismarine
+//   crystals down both sides; reusable. You arrive in a Lifepod (server_scripts/abyssal_rules.js).
 const PORTALS = [
   {
     frame: 'pokeworld:poke_portal_frame',
@@ -38,9 +41,23 @@ const PORTALS = [
     // Its texture pulses (animated); no enchantment shimmer on top of that.
     noGlint: true,
   },
+  {
+    frame: 'minecraft:dark_prismarine',
+    existingFrame: true,
+    igniter: 'strata:tidecaller',
+    igniterName: 'Tidecaller',
+    destination: 'strata:abyssal_plain',
+    tint: 0x1E7FB0,
+    noGlint: true,
+  },
 ]
 
 StartupEvents.registry('block', event => {
+  // The Abyssal Plain's Lifepod (arrival chamber): unbreakable, so its air pocket can't be flooded.
+  event.create('strata:lifepod_hull').displayName('Lifepod Hull').soundType('metal').mapColor('color_light_gray')
+    .hardness(-1).resistance(3600000).requiresTool(false)
+  event.create('strata:lifepod_window').displayName('Lifepod Window').soundType('glass').mapColor('color_light_blue')
+    .hardness(-1).resistance(3600000).notSolid().defaultTranslucent()
   PORTALS.filter(p => !p.existingFrame).forEach(p => {
     event.create(p.frame)
       .displayName(p.frameName)
@@ -62,6 +79,8 @@ StartupEvents.registry('item', event => {
   // Dropped by the Hollow's horror mobs and found in its chests (server_scripts/hollow_rules.js).
   // Its texture pulses (animated), so no enchantment shimmer.
   event.create('strata:hollow_ember').displayName('Hollow Ember').rarity('rare')
+  // Abyssal Plain: rare drop from the deep and its ruins; a late-game gate material.
+  event.create('strata:abyssal_pearl').displayName('Abyssal Pearl').rarity('epic')
 })
 
 PortalEvents.register(event => {

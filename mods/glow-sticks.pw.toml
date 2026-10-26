@@ -1,0 +1,13 @@
+name = "Glow Sticks"
+filename = "glow_sticks-neoforge-1.21.1-7.5.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pr7UDXB2/versions/1dP9DxPC/glow_sticks-neoforge-1.21.1-7.5.1.jar"
+hash-format = "sha512"
+hash = "7482c24b38f084a31999e93a59c95448edbec9f5ce8751eb0e0304eae34e8baa8ccab0bcb1357a85b71105d4d168f5cd908d94f4fe017b98a82f22fb08790d46"
+
+[update]
+[update.modrinth]
+mod-id = "pr7UDXB2"
+version = "1dP9DxPC"

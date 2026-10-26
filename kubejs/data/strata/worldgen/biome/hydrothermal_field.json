@@ -1,0 +1,82 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "fog_color": 330260,
+    "sky_color": 0,
+    "water_color": 2759188,
+    "water_fog_color": 1707016,
+    "ambient_sound": "minecraft:ambient.underwater.loop",
+    "additions_sound": {
+      "sound": "minecraft:ambient.underwater.loop.additions.rare",
+      "tick_chance": 0.012
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 3000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "music": {
+      "sound": "minecraft:music.under_water",
+      "min_delay": 6000,
+      "max_delay": 18000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [
+      {
+        "type": "alexscaves:lanternfish",
+        "weight": 30,
+        "minCount": 6,
+        "maxCount": 10
+      }
+    ],
+    "misc": [],
+    "alexscaves:deep_sea_creature": [
+      {
+        "type": "alexscaves:sea_pig",
+        "weight": 40,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "alexscaves:gossamer_worm",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "strata:abyssal/hydrothermal_field/sediment_blackstone",
+      "strata:abyssal/hydrothermal_field/sediment_magma_block"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "strata:abyssal/hydrothermal_field/black_vents",
+      "strata:abyssal/hydrothermal_field/thermal_vents",
+      "strata:abyssal/hydrothermal_field/brine_pools",
+      "strata:abyssal/hydrothermal_field/magma"
+    ],
+    []
+  ]
+}

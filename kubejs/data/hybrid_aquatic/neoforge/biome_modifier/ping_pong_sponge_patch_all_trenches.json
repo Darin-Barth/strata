@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#strata:none",
+  "features": "hybrid_aquatic:ping_pong_sponge_patch",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "strata:abyssal_plain",
+    "strata:hydrothermal_field"
+  ]
+}

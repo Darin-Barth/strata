@@ -1,0 +1,110 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "fog_color": 330260,
+    "sky_color": 0,
+    "water_color": 132623,
+    "water_fog_color": 66314,
+    "ambient_sound": "alexscaves:abyssal_chasm_ambience",
+    "additions_sound": {
+      "sound": "minecraft:ambient.underwater.loop.additions.rare",
+      "tick_chance": 0.012
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 3000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "music": {
+      "sound": "alexscaves:abyssal_chasm_music",
+      "min_delay": 6000,
+      "max_delay": 18000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "alexscaves:deep_one",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "alexscaves:deep_one_knight",
+        "weight": 4,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "alexscaves:deep_one_mage",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [
+      {
+        "type": "alexscaves:hullbreaker",
+        "weight": 4,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [
+      {
+        "type": "alexscaves:lanternfish",
+        "weight": 40,
+        "minCount": 8,
+        "maxCount": 12
+      }
+    ],
+    "misc": [],
+    "alexscaves:deep_sea_creature": [
+      {
+        "type": "alexscaves:tripodfish",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "alexscaves:gossamer_worm",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "strata:abyssal/the_trench/sediment_abyssmarine",
+      "strata:abyssal/the_trench/sediment_tuff"
+    ],
+    [],
+    [
+      "strata:abyssal/the_trench/whalefall",
+      "strata:abyssal/the_trench/deep_one_ruins"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "strata:abyssal/the_trench/black_vents",
+      "strata:abyssal/the_trench/glass_sponges",
+      "strata:abyssal/the_trench/mussels"
+    ],
+    []
+  ]
+}

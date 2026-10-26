@@ -1,0 +1,13 @@
+name = "Scannable"
+filename = "scannable-MC1.21.1-neoforge-1.8.1+a7f6831.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YqFnwJHf/versions/UkovcbSL/scannable-MC1.21.1-neoforge-1.8.1%2Ba7f6831.jar"
+hash-format = "sha512"
+hash = "526f6a9656ab78f2ee72bc7940ad5e0f3c5d13fb1ecf87d5e1f82d0a5165a941ead9b1c719fe5ea84a1dad87c48e54c6c5bf23d8f6710586fcead4a46c729309"
+
+[update]
+[update.modrinth]
+mod-id = "YqFnwJHf"
+version = "UkovcbSL"

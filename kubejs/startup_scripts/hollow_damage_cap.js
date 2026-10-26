@@ -1,4 +1,4 @@
-// The Hollow: scary but fair (Darin, Oct 25: "I really don't want BS mobs that just kill you
+// The Hollow and the Abyssal Plain: scary but fair (Darin, Oct 25: "I really don't want BS mobs that just kill you
 // without any chance of survival"). One hit from a horror mob can take at most 40% of a player's
 // max health (after armor), and horror mobs can't hurt a player in the first 10 seconds after
 // arriving in the Hollow. Bosses keep their designed damage. Applies wherever the hit happens, so
@@ -7,7 +7,9 @@
 // KubeJS scripts share one scope per type: every top-level name here starts with "hollowCap".
 const hollowCapEntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 const hollowCapNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spirits', 'the_ravenous',
-  'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed']
+  'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed',
+  // the Abyssal Plain's deep-sea creatures
+  'hybrid_aquatic', 'alexscaves']
 const hollowCapBosses = ['graveyard:lich', 'grim_and_bleak:gate_guardian']
 const hollowCapFraction = 0.4
 const hollowCapGraceMs = 10 * 1000
