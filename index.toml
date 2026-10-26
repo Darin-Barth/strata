@@ -537,12 +537,28 @@ file = "kubejs/assets/pokeworld/textures/item/johto_bell.png.mcmeta"
 hash = "cf675e173ac81548228e8069ad9a4ca2bdfa1838452f2a97999efb87ece1e699"
 
 [[files]]
+file = "kubejs/assets/portals/textures/block/custom_portal.png"
+hash = "ba8e5249bdae294f05e3af8ec168b6a309afd7de1a605b56d337fba50a6ca9e7"
+
+[[files]]
+file = "kubejs/assets/portals/textures/block/custom_portal.png.mcmeta"
+hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
+
+[[files]]
 file = "kubejs/assets/portals/textures/block/molten_custom_portal.png"
 hash = "ae16df3f15cf55ca53f7a75ae75eb96bb21b8fc6134ccd65815a8a341f7fe09a"
 
 [[files]]
 file = "kubejs/assets/portals/textures/block/molten_custom_portal.png.mcmeta"
 hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
+
+[[files]]
+file = "kubejs/assets/portals/textures/block/nether_custom_portal.png"
+hash = "0c9d323201fd69ef5470f1395774f8dbab46e65e1139e93a943ed9fc0b8809ea"
+
+[[files]]
+file = "kubejs/assets/portals/textures/block/nether_custom_portal.png.mcmeta"
+hash = "f0069565e436235496e88560fbd9893701149da15efe18d01772126656bc4e6a"
 
 [[files]]
 file = "kubejs/assets/strata/textures/block/lifepod_hull.png"
@@ -5157,20 +5173,20 @@ file = "kubejs/server_scripts/tag_fixes.js"
 hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
-file = "kubejs/startup_scripts/abyssal_portal_ambience.js"
-hash = "6fc3a4ea20d6787df06182e88bfc495f5318db1606e0f2a6f7966f252c0884c3"
-
-[[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
 hash = "db24136ea42635fd3ed1e4f746d7b47b45888288d0a3818723b91977c42c120d"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "22fd2c117a5927831e24a60f3f89cf6f463c2ae6e5da671faffabf0a2a325106"
+hash = "b4aea5c456027a97a4c6bb98e68f2c97155939578c9539ad3bed436284734c0c"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"
 hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
+
+[[files]]
+file = "kubejs/startup_scripts/portal_ambience.js"
+hash = "2588d523c6effba83cc3ffab51cda62e260effa6a6142676b43738b42bb57267"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

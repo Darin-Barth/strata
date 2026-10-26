@@ -26,8 +26,11 @@ const PORTALS = [
     igniter: 'pokeworld:johto_bell',
     igniterName: 'Johto Bell',
     destination: 'pokeworld:pokeworld',
-    // Ultra Wormhole cyan: an ancient gateway waking up.
-    tint: 0x6FF2FF,
+    // Its own animated texture ("Unown Drift": murky gold, Unown glyphs drifting up and lighting
+    // one at a time), painted over BBL Portals' "default" slot (assets/portals/textures/block).
+    // The tint multiplies that texture and colours the portal's dust: warm white, pale gold dust.
+    portalTexture: 'default',
+    tint: 0xFFF0C8,
     // Its texture twinkles (animated); no enchantment shimmer on top of that.
     noGlint: true,
   },
@@ -37,7 +40,10 @@ const PORTALS = [
     igniter: 'strata:pale_lantern',
     igniterName: 'Pale Lantern',
     destination: 'strata:hollow',
-    tint: 0x3B2A33,
+    // Its own texture ("Dead Signal": grey TV static that freezes now and then and once drops to
+    // black), painted over the "nether" slot. Ash-grey tint: grey dust like ash.
+    portalTexture: 'nether',
+    tint: 0xC8C4CC,
     // Its texture pulses (animated); no enchantment shimmer on top of that.
     noGlint: true,
   },
@@ -55,7 +61,7 @@ const PORTALS = [
     // Stepping in: water rushing over you. Arriving: something huge, far off.
     inPortalSound: 'minecraft:ambient.underwater.enter',
     arrivalSound: 'minecraft:ambient.underwater.loop.additions.ultra_rare',
-    // Deep-sea ambience and water particles around it: startup_scripts/abyssal_portal_ambience.js.
+    // Sounds and particles around all three portals: startup_scripts/portal_ambience.js.
     noGlint: true,
   },
 ]

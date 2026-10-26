@@ -9,6 +9,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
   - The soul lantern means a Nether trip (soul sand/soil), so the Hollow is mid-game.
   - Reusable, like the Johto Bell. Lighting the portal plays a heartbeat or creak sound.
 - Same portal setup as the Pokémon world (BBL Portals, one more entry in `kubejs/startup_scripts/pokeworld_portal.js`). It links 1:1 and returns to the Overworld.
+- **Look and sound (Darin, Oct 26):** "Dead Signal", grey TV static that freezes now and then and once drops to black, in BBL Portals' "nether" texture slot; ash-grey dust. Near it the Nether whoosh becomes whispers, creaking, a slow heartbeat and cave noises, with long stretches of silence; ash, pale petals and smoke drift off it (`startup_scripts/portal_ambience.js`). Hollow portals lit before this change may show the Pokémon portal's texture until they are broken and relit (the texture is stored in each portal block when it is lit).
 
 ## 2. The world
 - **Dimension type:** permanent night (`fixed_time` 18000), `ambient_light` 0, monsters spawn at light 0–7. Beds don't let you sleep ("Something is watching you." via KubeJS), and respawn anchors don't work.
