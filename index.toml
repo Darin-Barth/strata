@@ -406,7 +406,11 @@ hash = "695493d144261589f68a08dd7c412c371fa14d5ea47efe8b0a9e5ee799bbbdb1"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/bell_fragment.png"
-hash = "55dd13925d230c64c1f952e3046a4a39c0d058d886f594a48ffced7874c3d7ea"
+hash = "efacf9a24cb422fafde39e2f277acad563fa75103e2205488eb6afc89dde7552"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/item/bell_fragment.png.mcmeta"
+hash = "cf675e173ac81548228e8069ad9a4ca2bdfa1838452f2a97999efb87ece1e699"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/johto_bell.png"
