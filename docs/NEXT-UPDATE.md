@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **Soul elytra no longer fits the Elytra Slot** (KubeJS tag). Elytra Slot's newest version expects an older Deeper and Darker, so the soul elytra's boost errored there; worn in the chest slot it works.
 - **Locator bar shows player heads and compass points** (`config/vanillabackport-client.toml`).
 - **Minimap locked to north**, so the player arrow turns to show where you're looking (`config/xaero/minimap/profiles/default.cfg`).
   Both are preserved, so players who already have these files keep their own settings. Existing players switch the options in-game.
