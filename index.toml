@@ -537,6 +537,14 @@ file = "kubejs/assets/pokeworld/textures/item/johto_bell.png.mcmeta"
 hash = "cf675e173ac81548228e8069ad9a4ca2bdfa1838452f2a97999efb87ece1e699"
 
 [[files]]
+file = "kubejs/assets/portals/textures/block/molten_custom_portal.png"
+hash = "ae16df3f15cf55ca53f7a75ae75eb96bb21b8fc6134ccd65815a8a341f7fe09a"
+
+[[files]]
+file = "kubejs/assets/portals/textures/block/molten_custom_portal.png.mcmeta"
+hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
+
+[[files]]
 file = "kubejs/assets/strata/textures/block/lifepod_hull.png"
 hash = "5778f7c7025da0518639be579a909a7d14ffc553b68cf6600e2b48123bd2bd01"
 
@@ -5149,12 +5157,16 @@ file = "kubejs/server_scripts/tag_fixes.js"
 hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
+file = "kubejs/startup_scripts/abyssal_portal_ambience.js"
+hash = "6fc3a4ea20d6787df06182e88bfc495f5318db1606e0f2a6f7966f252c0884c3"
+
+[[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
 hash = "db24136ea42635fd3ed1e4f746d7b47b45888288d0a3818723b91977c42c120d"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "ffe4edf1ee56a8e6ceea753c2e668c5a8d7cdf6aecc0d4ec84664c3e96a9a382"
+hash = "22fd2c117a5927831e24a60f3f89cf6f463c2ae6e5da671faffabf0a2a325106"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"

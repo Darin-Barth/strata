@@ -47,7 +47,15 @@ const PORTALS = [
     igniter: 'strata:tidecaller',
     igniterName: 'Tidecaller',
     destination: 'strata:abyssal_plain',
-    tint: 0x1E7FB0,
+    // Its own animated texture ("marine snow": near-black water, drifting flecks, a blinking light),
+    // painted over BBL Portals' unused "molten" slot (assets/portals/textures/block). The tint
+    // multiplies that texture and colours the portal's dust, so keep it near white: pale flecks.
+    portalTexture: 'molten',
+    tint: 0xD8F0FF,
+    // Stepping in: water rushing over you. Arriving: something huge, far off.
+    inPortalSound: 'minecraft:ambient.underwater.enter',
+    arrivalSound: 'minecraft:ambient.underwater.loop.additions.ultra_rare',
+    // Deep-sea ambience and water particles around it: startup_scripts/abyssal_portal_ambience.js.
     noGlint: true,
   },
 ]
@@ -87,11 +95,14 @@ StartupEvents.registry('item', event => {
 
 PortalEvents.register(event => {
   PORTALS.forEach(p => {
-    event.create()
+    const portal = event.create()
       .frameBlock(p.frame)
       .lightWithItem(p.igniter)
       .setDestination(p.destination)
       .returnDim('minecraft:overworld')
       .tint(p.tint)
+    if (p.portalTexture) portal.portalTexture(p.portalTexture)
+    if (p.inPortalSound) portal.inPortalAmbienceSound(p.inPortalSound, 0.8, 0.9)
+    if (p.arrivalSound) portal.afterTeleportationAmbienceSound(p.arrivalSound, 1.0, 0.8)
   })
 })
