@@ -166,7 +166,7 @@ hash = "1a9c89005759238032eb29c3fadd4fa307a68a471e450f12d16b39766806d788"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "4869100037abfdad2ce0d343d643c71ce1c84d10d1acb4a16f2a09ef0210d49f"
+hash = "f4e341dea5a75e10d197a7906842f10cc7910d870df03d599aed0dfe63ba26a4"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
@@ -6797,7 +6797,7 @@ metafile = true
 
 [[files]]
 file = "mods/item-descriptions.pw.toml"
-hash = "b902e2a8d9a070dec6136632ea901f2bcb7185c41554d08128f377a1825ed495"
+hash = "449b6cd2fb278ccd881e5781c782bb01aeaf11025e79030943a5554a4e3eba6c"
 metafile = true
 
 [[files]]
