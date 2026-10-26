@@ -4045,6 +4045,10 @@ file = "kubejs/data/pokeworld/worldgen/template_pool/village/taiga/houses.json"
 hash = "7af8a9359ae933a2bf512ec0159d65fe5b83a19a7f668b6ad3f4e532c22949f7"
 
 [[files]]
+file = "kubejs/data/puffish_skills/puffish_skills/categories/combat/experience.json"
+hash = "3b0d2f5547ef54c8218881aaa51d3fd64cf58dcc486a99c1d3567afc776de51c"
+
+[[files]]
 file = "kubejs/data/strata/dimension/hollow.json"
 hash = "fc37306fff422702a3d616b5592204b9612eaee91685c46588c9f35dc1e8be24"
 
@@ -4355,6 +4359,30 @@ hash = "4a4d37e028b66f8ccfe57905b9e987bd13579f14693c2e2ed49dd553a8055732"
 [[files]]
 file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mutants.json"
 hash = "7a707b63cf4a6559ed92d8bf64cd518eaeca70dfb875347fcdd70004505ef241"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/categories/fishing/category.json"
+hash = "6541b8a92bb613be7cfc228a6ea283fdd22b2bd5f279282efeae035e579a3f4f"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/categories/fishing/connections.json"
+hash = "72d38e85a8eed45bb77fb88edf5f116d67837c437176d93fcf1f9ec9c98ee577"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/categories/fishing/definitions.json"
+hash = "d2df8621c74baeff1ce7789c3997d915850d3f5f2cbe80da78478ea78af48871"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/categories/fishing/experience.json"
+hash = "dd2f14835aadc34cc2f17fb648d2db8ef7473478e0f28a1969361aa4d0801969"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/categories/fishing/skills.json"
+hash = "88cb15746f74b159c545426471ec37bcf08080b3259d7ec791c49ba18ad7ae43"
+
+[[files]]
+file = "kubejs/data/strata/puffish_skills/config.json"
+hash = "afe82924139b0f252c358071e385b9cf40859c4c3c96d725f65ab6ac7472b9e2"
 
 [[files]]
 file = "kubejs/data/strata/tags/worldgen/biome/hollow_biomes.json"
@@ -4749,6 +4777,11 @@ metafile = true
 [[files]]
 file = "mods/atmospherics.pw.toml"
 hash = "f12b246fef3275920f5fb335c3c592ac9406f6ee7c3ab2b38f430dafadd461f5"
+metafile = true
+
+[[files]]
+file = "mods/attributes.pw.toml"
+hash = "11ab8a365c5bed4941664f25b31f51ee4db08885c49a0fce64cba5aa5555e2cc"
 metafile = true
 
 [[files]]
@@ -5202,6 +5235,11 @@ hash = "a6967d761dde867ccc1af53dc9f4e530eb9917a9cb21d0fc15708e8cd2c0f2ba"
 metafile = true
 
 [[files]]
+file = "mods/default-skill-trees.pw.toml"
+hash = "bd5044206dc78d8b5dba24aa8f64ef27f97da205e464ed678d818f2efa29c5a6"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "6d37de7b436e094a7834d51b5d9d803653ab445e1041853f32a61599b054c7bf"
 metafile = true
@@ -5652,6 +5690,11 @@ hash = "2db93ea83a0b72b3d6f4066748c18072520d1c7df5e1774c6687c596f7c023b9"
 metafile = true
 
 [[files]]
+file = "mods/irons-spells-n-spellbooks-dynamic-skill-trees.pw.toml"
+hash = "16d067a8f294335dcf3f4858b7285e90f4da66d081e2cf941106c97a10baef80"
+metafile = true
+
+[[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
 hash = "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2"
 metafile = true
@@ -6077,6 +6120,11 @@ hash = "7aa8bf129e51bda25386e18ebcd0db7eae278e95227406e8101a320cacf2f9b6"
 metafile = true
 
 [[files]]
+file = "mods/pufferfishs-unofficial-additions.pw.toml"
+hash = "3a37a1911cee7925936f8720012eb00bcf4fbae5771a0869e4ce61e405eac91b"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "2e0b31d4a3d4298045b368558ce7fe191a13bccb02a4524ca748598a9dcf4ca5"
 metafile = true
@@ -6229,6 +6277,11 @@ metafile = true
 [[files]]
 file = "mods/simply-tooltips.pw.toml"
 hash = "bb5dc8ac909aee1955532a65145f7ebfc3a88289610298e821a974fdda5f1822"
+metafile = true
+
+[[files]]
+file = "mods/skills.pw.toml"
+hash = "77e3c81c00c0a4c61aedea5e57760dac58f181788d670012e66f60614365def3"
 metafile = true
 
 [[files]]

@@ -1,0 +1,232 @@
+{
+  "luck_root": {
+    "title": "+0.25 Luck",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "luck": {
+    "title": "+0.25 Luck",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "luck_cap": {
+    "title": "Sea's Favor: +1 Luck",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "heart_of_the_sea"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "breath": {
+    "title": "+1 Breath",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "water_breathing"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "swim": {
+    "title": "+10% Swim Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "dolphins_grace"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.water_movement_efficiency",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "dig": {
+    "title": "+25% Underwater Mining",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "prismarine_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:player.submerged_mining_speed",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "diver_cap": {
+    "title": "Deep Diver: +2 Breath, +20% Swim Speed",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "turtle_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.water_movement_efficiency",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "heart": {
+    "title": "+1 Heart",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "health_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "stride": {
+    "title": "+3% Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.03,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "sailor_cap": {
+    "title": "Old Salt: +1 Heart, +0.5 Luck",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "nautilus_shell"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

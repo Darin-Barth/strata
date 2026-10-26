@@ -1,0 +1,73 @@
+{
+  "0_0": {
+    "x": 0,
+    "y": 0,
+    "definition": "luck_root",
+    "root": true
+  },
+  "0_-1": {
+    "x": 0,
+    "y": -64,
+    "definition": "luck"
+  },
+  "0_-2": {
+    "x": 0,
+    "y": -128,
+    "definition": "luck"
+  },
+  "0_-3": {
+    "x": 0,
+    "y": -192,
+    "definition": "luck"
+  },
+  "0_-4": {
+    "x": 0,
+    "y": -256,
+    "definition": "luck_cap"
+  },
+  "-1_0": {
+    "x": -64,
+    "y": 0,
+    "definition": "breath"
+  },
+  "-2_0": {
+    "x": -128,
+    "y": 0,
+    "definition": "swim"
+  },
+  "-3_0": {
+    "x": -192,
+    "y": 0,
+    "definition": "breath"
+  },
+  "-4_0": {
+    "x": -256,
+    "y": 0,
+    "definition": "dig"
+  },
+  "-5_0": {
+    "x": -320,
+    "y": 0,
+    "definition": "diver_cap"
+  },
+  "1_0": {
+    "x": 64,
+    "y": 0,
+    "definition": "stride"
+  },
+  "2_0": {
+    "x": 128,
+    "y": 0,
+    "definition": "heart"
+  },
+  "3_0": {
+    "x": 192,
+    "y": 0,
+    "definition": "stride"
+  },
+  "4_0": {
+    "x": 256,
+    "y": 0,
+    "definition": "sailor_cap"
+  }
+}
