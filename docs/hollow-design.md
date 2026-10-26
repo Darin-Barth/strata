@@ -1,5 +1,7 @@
 # The Hollow (approved Oct 25, 2026; built Oct 26)
 
+> Progression proposal (quest chapter, boss ladder, the Pale Beacon, fixes): `docs/hollow-progression.md`. What Hollow Ember gates across the pack: `docs/gate-map.md`.
+
 A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread and atmosphere, with some combat, and has unique loot that makes the trip worth it (Darin, Oct 25). Horror mobs exist only here. Mod research and build checks are in `docs/hollow-mod-research.md`.
 
 ## 1. Getting there
