@@ -402,31 +402,35 @@ hash = "d25f2253a4497657601104ef956556dfb69acbb506aa6eb6fecaba447e2d8e2f"
 
 [[files]]
 file = "kubejs/assets/pokeworld/blockstates/poke_portal_frame.json"
-hash = "5fec22a7b63f96200c97234c45357f91b8ec279dcd4461b89b540019d045b4aa"
+hash = "3a761df83c3b617e1cc70acb01b32e85ccc53268b4ed2bccb1305f6074ed1c43"
 
 [[files]]
 file = "kubejs/assets/pokeworld/models/block/alph_stone.json"
 hash = "1ce9ac2b1dce8e85b5d2b696dd7666c92c1a5f88ec53f8390865d98c43a601f2"
 
 [[files]]
-file = "kubejs/assets/pokeworld/models/block/alph_stone_eye.json"
-hash = "2b1a1d3a84433a4593c958034b1bf3d3e098d3b2139a6c86956ac0e57f054c4a"
-
-[[files]]
 file = "kubejs/assets/pokeworld/models/block/alph_stone_mossy.json"
 hash = "d9aa92329842ebc7841b0ef93d109f885338bfa73dd3d87afab6b59cb7cdd0cd"
 
 [[files]]
-file = "kubejs/assets/pokeworld/models/block/alph_stone_rune.json"
-hash = "5beeec78b6d985febfc70e1686f1756550316812c38e0c47b0fabd6a534b5eb6"
+file = "kubejs/assets/pokeworld/models/block/alph_stone_unown_a.json"
+hash = "21e4cef853aeddd7cc9836a27ec03ff55fd48ecf45fb18a068a63c3e721b28be"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone_unown_excl.json"
+hash = "a6f6f96b8049306064d4bdba3c3984503369b1c0d525ccffc7e89c41d88ea054"
+
+[[files]]
+file = "kubejs/assets/pokeworld/models/block/alph_stone_unown_o.json"
+hash = "b89c4318e18981717a221b169823bcf4c510e45dbaa7d83b2b7e4eb58ad727be"
 
 [[files]]
 file = "kubejs/assets/pokeworld/models/block/poke_portal_frame.json"
-hash = "4496a59cadaf93f05483da70230211c65f48d34efd09cdefc0cafb306712de82"
+hash = "a933eb02030c3a5874f1f92b93fc22ac7d67d2b20cfa8027d1f21789b1f0efe1"
 
 [[files]]
 file = "kubejs/assets/pokeworld/models/item/poke_portal_frame.json"
-hash = "4496a59cadaf93f05483da70230211c65f48d34efd09cdefc0cafb306712de82"
+hash = "a933eb02030c3a5874f1f92b93fc22ac7d67d2b20cfa8027d1f21789b1f0efe1"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/block/alph_stone.png"
@@ -434,14 +438,6 @@ hash = "86947cc70fd4b41da17216eb06a388d269d4599198a53d0f8e70e5c1cfe172cd"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/block/alph_stone.png.mcmeta"
-hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
-
-[[files]]
-file = "kubejs/assets/pokeworld/textures/block/alph_stone_eye.png"
-hash = "11c1f93343e161d5b6449a00f9423f8caf793349a38e3b1c6998d33ca041e7e6"
-
-[[files]]
-file = "kubejs/assets/pokeworld/textures/block/alph_stone_eye.png.mcmeta"
 hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
 
 [[files]]
@@ -453,11 +449,27 @@ file = "kubejs/assets/pokeworld/textures/block/alph_stone_mossy.png.mcmeta"
 hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
 
 [[files]]
-file = "kubejs/assets/pokeworld/textures/block/alph_stone_rune.png"
-hash = "60f2c87d240ed8601b6eb04f046ff6c9472118a4e4bc1754e01517d59ab6eeb0"
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_a.png"
+hash = "6917b93c34be8b2ddc003a49a361b243f0bc16c69528f25e6ba443d8217053eb"
 
 [[files]]
-file = "kubejs/assets/pokeworld/textures/block/alph_stone_rune.png.mcmeta"
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_a.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_excl.png"
+hash = "f09df42011c19657e65b630945216d396f0a1de38c49ac718656acde052eab7a"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_excl.png.mcmeta"
+hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_o.png"
+hash = "223d96148a5fa369341fdadbf67c5b072dbd3e6395e2eb53589795bc716b2643"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/block/alph_stone_unown_o.png.mcmeta"
 hash = "6160505c13320fea8a3692d708be25bd6074e32334cc5d22bac2f4e8ccf4da86"
 
 [[files]]
