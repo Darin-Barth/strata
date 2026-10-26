@@ -41,7 +41,7 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 - **The boss: Cataclysm's Leviathan.** Move the Sunken City into the Trench (`#cataclysm:has_structure/sunken_city_biomes`), so the Abyssal Plain has a real final goal. Its drops can gate late tiers.
 - Ice and Fire sea serpents: possible in the Trench, but they're very dangerous; decide after the playtest.
 
-**Your call: Alex's Caves Continued.** Its Abyssal Chasm is the best ready-made abyss content (the Hullbreaker, lanternfish, tripodfish, Deep Ones, black vents) but it's 75 MB, its five other cave biomes would need switching off, and its submarine and diving suit duplicate Deep Seas.
+**Alex's Caves Continued: abyss content only (Darin, Oct 26, option B).** Its Abyssal Chasm creatures (Deep Ones, Deep One knights and mages, the Hullbreaker, lanternfish, tripodfish) spawn only through ordinary biome spawn lists, with nothing in their code tied to its own chasm biome (checked in the 1.1.3 jar), so they and its abyssal blocks go into the Trench and Hydrothermal Field. **All six of its Overworld cave biomes are switched off** in its config (the Overworld is pregenerated, so they would only appear past 5 km with seams; Forlorn Hollows overlaps the Hollow; its submarine and diving suit overlap Deep Seas and stay unused). Cost: about 85 MB more content (RAM, startup, join time).
 
 ## 6. Rewards
 - Unique materials from vents, trenches and the Leviathan (e.g. an "Abyssal Pearl" gate item, like the Hollow's Ember).
@@ -58,6 +58,5 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 
 ## 8. Open questions
 - Portal frame and igniter: the dark prismarine + Tidecaller idea, or something else.
-- Alex's Caves Continued: in or out.
 - Breathing gear: allow (pressure is the gate) or cap inside the dimension.
 - Whether hull bases work as fixed bases (playtest), and what to do if they don't (e.g. a Lifepod-style "habitat module" block that seals a room).
