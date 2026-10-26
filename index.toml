@@ -410,7 +410,11 @@ hash = "55dd13925d230c64c1f952e3046a4a39c0d058d886f594a48ffced7874c3d7ea"
 
 [[files]]
 file = "kubejs/assets/pokeworld/textures/item/johto_bell.png"
-hash = "3003e45ce6805d02081db496059e039c9cc0f2345c7c461d0d60d2e7aab1f9c0"
+hash = "55f07c7d297bdb6556bdd4971407a939667e6c25cfd8d3beed4ab900846596d8"
+
+[[files]]
+file = "kubejs/assets/pokeworld/textures/item/johto_bell.png.mcmeta"
+hash = "cf675e173ac81548228e8069ad9a4ca2bdfa1838452f2a97999efb87ece1e699"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/hollow_ember.png"
@@ -4430,7 +4434,7 @@ hash = "f6fb8d5452a7f20817a1dc6b6438867830c8ae9cba7a930ff975958221c3ad82"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "fd8a53f7268e493e97f0e54699ef49a0869eb56f18bf794e1c839eae01b99f61"
+hash = "5df9e57395a678d8c0a85f6a5cd8874b0dfdec161fa1ec0ffe1a8ffad321b447"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"

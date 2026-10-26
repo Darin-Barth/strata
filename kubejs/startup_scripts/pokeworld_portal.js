@@ -19,6 +19,8 @@ const PORTALS = [
     igniterName: 'Johto Bell',
     destination: 'pokeworld:pokeworld',
     tint: 0xE3350D,
+    // Its texture twinkles (animated); no enchantment shimmer on top of that.
+    noGlint: true,
   },
   {
     frame: 'minecraft:resin_bricks',
