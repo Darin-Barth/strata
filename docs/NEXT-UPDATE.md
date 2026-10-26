@@ -5,6 +5,7 @@ beta server yet. Policy: changes ship together in one update (push + new `.mrpac
 critical hotfix goes out on its own. Clear this list when the release goes out.
 
 ## Changes
+- **New default keymap, no clashing keys** (`config/defaultoptions/keybindings.txt`, Default Options): 45 actions that fired together with another key in normal play now have their own key (mostly the mod's own letter plus Alt/Ctrl/Shift; e.g. Iron's cast X, spell wheel C, Vampirism Alt+V/Alt+R, Cobblemon Alt+T/Alt+M, Curios Alt+G), and 2 duplicates are unbound. Voice chat, Combat Roll R, Xaero M/Y/U and backpack B keep their keys. Cheat sheet: `docs/keybinds.md`. **Only applies to new installs and keys a player never set**: Default Options never overwrites existing keybinds, so current players press Reset All in Controls to get it.
 - **Soul elytra no longer fits the Elytra Slot** (KubeJS tag). Elytra Slot's newest version expects an older Deeper and Darker, so the soul elytra's boost errored there; worn in the chest slot it works.
 - **Locator bar shows player heads and compass points** (`config/vanillabackport-client.toml`).
 - **Minimap locked to north**, so the player arrow turns to show where you're looking (`config/xaero/minimap/profiles/default.cfg`).

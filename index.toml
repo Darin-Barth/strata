@@ -57,6 +57,10 @@ file = "config/customwindowtitle/strata.png"
 hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "7fde95b2f506a2bd11bfb9594f6fb05eb165686c9a4d89ad8fa7174b750cf0b4"
+
+[[files]]
 file = "config/drippyloadingscreen/options.txt"
 hash = "851aca4b626bdfece6ab083f6b40d949b84c0a4318aeba5212a657ed7122ddb7"
 

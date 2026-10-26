@@ -1,0 +1,75 @@
+# Strata default keybinds (Default Options). Format: key_<action>:<key>[:<ALT|CONTROL|SHIFT>]
+# Only bindings that differ from the mods' own defaults are listed; everything else keeps its default.
+# Applies to new installs and to keys a player has never set (an existing options.txt entry is never overwritten).
+# Player-facing list: docs/keybinds.md
+
+# Magic: Iron's Spells off V/R (voice chat, Combat Roll); Ars selection HUD off V
+key_key.irons_spellbooks.spellbook_cast:key.keyboard.x
+key_key.irons_spellbooks.spell_wheel:key.keyboard.c
+key_key.ars_nouveau.selection_hud:key.keyboard.c:ALT
+
+# Vampirism / Werewolves / Bloodlines: same keys as the mods' defaults, plus Alt
+key_keys.vampirism.suck:key.keyboard.v:ALT
+key_keys.werewolves.bite:key.keyboard.v:ALT
+key_keys.vampirism.action:key.keyboard.r:ALT
+key_keys.vampirism.select_skills:key.keyboard.p:ALT
+key_keys.vampirism.vision:key.keyboard.n:ALT
+key_keys.bloodines.devour_soul:key.keyboard.v:CONTROL
+
+# Cobblemon: off R (Combat Roll), M (Xaero map), O (Iris)
+key_key.cobblemon.throwpartypokemon:key.keyboard.t:ALT
+key_key.cobblemon.summary:key.keyboard.m:ALT
+key_key.cobblemon.hideparty:key.keyboard.o:ALT
+
+# Accessory screens: Curios off G (voice group), Accessories off H
+key_key.curios.open.desc:key.keyboard.g:ALT
+key_accessories.key.open_accessories_screen:key.keyboard.h:ALT
+
+# Bags and remote storage off B (Sophisticated Backpacks), V and N (voice chat)
+key_key.occultism.backpack:key.keyboard.b:ALT
+key_key.occultism.ender_bag:key.keyboard.e:ALT
+key_key.occultism.storage_remote:key.keyboard.n:SHIFT
+key_key.toms_storage.open_terminal:key.keyboard.b:CONTROL
+
+# Maps and voice: M stays Xaero's world map, U its waypoint list
+key_gui.xaero_new_waypoint:key.keyboard.u:ALT
+key_gui.xaero_enlarge_map:key.keyboard.y:ALT
+key_key.ftbchunks.map:key.keyboard.m:SHIFT
+key_key.mute_microphone:key.keyboard.m:CONTROL
+
+# HUD and relic keys off G, H and K
+key_key.mekanism.key_hud:key.keyboard.h:CONTROL
+key_key.neovitae.edit_hud:key.keyboard.h:SHIFT
+key_key.oritech.augment_screen:key.keyboard.g:SHIFT
+key_key.forsaken_relics.cycle_mode:key.keyboard.g:CONTROL
+key_key.forsaken_relics.relic_screen:key.keyboard.k:ALT
+key_key.relics.active_abilities_list:key.mouse.4
+
+# Quark: variant selector off R, rotation lock off K, hotbar swapper stays Z
+key_quark.keybind.variant_selector:key.keyboard.r:CONTROL
+key_quark.keybind.lock_rotation:key.keyboard.k:SHIFT
+
+# Iris: K toggle and O pack screen stay; reload moves off R
+key_iris.keybind.reload:key.keyboard.o:SHIFT
+
+# Building: Effortless Building off Alt, Z, Y and keypad +
+key_key.effortlessbuilding.open_radial_menu:key.keyboard.e:CONTROL
+key_key.effortlessbuilding.undo.desc:key.keyboard.z:CONTROL
+key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
+key_key.effortlessbuilding.open_modifiers_screen:key.keyboard.keypad.subtract
+key_key.draconicevolution.place_item:key.keyboard.p:SHIFT
+key_key.easy_villagers.pick_up:key.keyboard.v:SHIFT
+
+# Camera: Shoulder Surfing off U and the up/down arrows (Xaero waypoints, Cobblemon party)
+key_key.shouldersurfing.swap_shoulder:key.keyboard.u:CONTROL
+key_key.shouldersurfing.adjust_camera_in:key.keyboard.home
+key_key.shouldersurfing.adjust_camera_out:key.keyboard.end
+
+# Rarely used menus to the F row
+key_key.atmospherics.open:key.keyboard.f6
+key_key.dungeonconfig.open:key.keyboard.f8
+key_key.kubejs.kubedex:key.keyboard.f10
+
+# Unbound: duplicates of another mod's key (Trade Cycling cycles trades on C; Combat Roll rolls on R)
+key_key.easy_villagers.cycle_trades:key.keyboard.unknown
+key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown
