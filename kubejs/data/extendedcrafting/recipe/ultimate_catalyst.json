@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XCX",
+    "CIC",
+    "XCX"
+  ],
+  "key": {
+    "I": {
+      "item": "extendedcrafting:black_iron_ingot"
+    },
+    "C": {
+      "item": "extendedcrafting:ultimate_component"
+    },
+    "X": {
+      "item": "strata:abyssal_pearl"
+    }
+  },
+  "result": {
+    "id": "extendedcrafting:ultimate_catalyst"
+  }
+}

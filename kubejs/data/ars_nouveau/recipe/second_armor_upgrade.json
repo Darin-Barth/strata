@@ -1,0 +1,19 @@
+{
+  "type": "ars_nouveau:armor_upgrade",
+  "pedestalItems": [
+    {
+      "tag": "c:ender_pearls"
+    },
+    {
+      "tag": "c:ender_pearls"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "bosses_of_mass_destruction:ancient_anima"
+    }
+  ],
+  "sourceCost": 5000,
+  "tier": 2
+}

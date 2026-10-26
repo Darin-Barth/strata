@@ -397,8 +397,24 @@ file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "eeb83c0dd9c3667917bbc7b00f3215c5d369f9e2083d99c4228fd50facd926d8"
 
 [[files]]
+file = "config/irons_spellbooks_spell_config/irons_spellbooks/black_hole.json"
+hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+
+[[files]]
+file = "config/irons_spellbooks_spell_config/irons_spellbooks/dragon_breath.json"
+hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+
+[[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/recall.json"
 hash = "27e8ddcfc3bb01c8b1b6c646e7be2e166141d6c304fcde0f1275c279a0204d8a"
+
+[[files]]
+file = "config/irons_spellbooks_spell_config/irons_spellbooks/sculk_tentacles.json"
+hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+
+[[files]]
+file = "config/irons_spellbooks_spell_config/irons_spellbooks/starfall.json"
+hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -667,6 +683,78 @@ hash = "81dc7c46ea6512841fe76f5ae810db14656e4f68753c66f5c200d3ce0cde1b89"
 [[files]]
 file = "kubejs/client_scripts/strata_lang.js"
 hash = "6f6950f7892ae649e70c20fc719bbf6377880cc3776bc78243c79f96aafbfd62"
+
+[[files]]
+file = "kubejs/data/ad_astra/recipe/calorite_engine.json"
+hash = "d10b44f47611efea5b6fb2f7ace134f44d25ebe7e37a9f9d4f2933bca530ee0d"
+
+[[files]]
+file = "kubejs/data/ad_astra/recipe/desh_engine.json"
+hash = "bff199c16594e30afc0def64a070ed3b09474348af1435a1dfb77f69a5c42571"
+
+[[files]]
+file = "kubejs/data/ae2/recipe/network/cells/item_storage_components_cell_256k_part.json"
+hash = "4e3625c3f075de5a03022488f7a3e2f6a65d0fcd06c154b59dbcdf053defef34"
+
+[[files]]
+file = "kubejs/data/apotheosis/advancement/progression/pinnacle.json"
+hash = "d8ac2d0cc0cc9c2e67940a6067b16303c7586b483983fad88edfd9445eac24d5"
+
+[[files]]
+file = "kubejs/data/apotheosis/advancement/progression/summit.json"
+hash = "630c015af0e6706a6d453c16df8b8c4632141ad94f902a12cbb48983d72596a0"
+
+[[files]]
+file = "kubejs/data/apotheosis/recipe/augmenting_table.json"
+hash = "a967ce9dd0c0398370199f52bbd408a3d5bf84a826f5ecb9b0253db4f30d0ca5"
+
+[[files]]
+file = "kubejs/data/apotheosis/recipe/gem_cutting/flawless.json"
+hash = "b725751b71e8a5e2fedfceaf960e2e79c793587527ebb77ed4c573d1eb0ace41"
+
+[[files]]
+file = "kubejs/data/apothic_enchanting/recipe/crystal_seashelf.json"
+hash = "30d7a6588ec713b9d01cfe2e86c7a35b0d1e117296613b18e5d26a5c5e71a30e"
+
+[[files]]
+file = "kubejs/data/apothic_enchanting/recipe/heart_seashelf.json"
+hash = "2ae89cea8bd3e4a0ba6720eabe5b0eb7147cb948c109fc2911399c45c948d419"
+
+[[files]]
+file = "kubejs/data/appflux/recipe/256m_core.json"
+hash = "bec6673e83baeca237d0eea89d7eb3af30823dff9f22112b0b7dade3d256c3b3"
+
+[[files]]
+file = "kubejs/data/ars_elemental/recipe/mark_of_mastery.json"
+hash = "94811393e148583334987c9f5120058dcd1c239c4e89d707e318fa97891f3b4d"
+
+[[files]]
+file = "kubejs/data/ars_nouveau/recipe/apprentice_book_upgrade.json"
+hash = "eb7d675cf9a59e298201601e1bb7ed4675d433569830ea183291c105b3996610"
+
+[[files]]
+file = "kubejs/data/ars_nouveau/recipe/archmage_book_upgrade.json"
+hash = "06edaaf8b709cc994fbabee818ae26d5a89684ea0a617107e9f08fabe52c3ba9"
+
+[[files]]
+file = "kubejs/data/ars_nouveau/recipe/second_armor_upgrade.json"
+hash = "2519d5ca5273f7565756ba157230e34c4abcd17b4189c842f52930fc8f1d2db2"
+
+[[files]]
+file = "kubejs/data/bigreactors/recipe/reactor/reinforced/controller_ingots_uranium.json"
+hash = "e32a46bdccea979b210f58ce24929508d53d2e8ecb0981bfce8356b0839d2955"
+
+[[files]]
+file = "kubejs/data/bigreactors/recipe/reactor/reinforced/controller_ingots_yellorium.json"
+hash = "cb00a146b56bec6d43b5ad9233ad96a8ab14f20254cdc2b72fb9925559aa081a"
+
+[[files]]
+file = "kubejs/data/bigreactors/recipe/turbine/reinforced/controller.json"
+hash = "6cd35e453b5bd7ca5181377fc9d3af8787bc9ca091b39398523d67baf49d63a9"
+
+[[files]]
+file = "kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "kubejs/data/cobblemon/spawn_detail_presets/ancient_city.json"
@@ -2133,6 +2221,22 @@ file = "kubejs/data/cobblestructures/worldgen/structure/pokepitstop.json"
 hash = "395c6d3e4195f6068599c5534e1a5edb1ec37fcfe57ad9a446bd491bc2c7c2d4"
 
 [[files]]
+file = "kubejs/data/create_new_age/recipe/shaped/reactor_fuel_acceptor.json"
+hash = "0428888c74ac6ea371a476d2bc933c7e018b56f08b81e5b517eb78a02818a0d5"
+
+[[files]]
+file = "kubejs/data/draconicevolution/recipe/components/awakened_core.json"
+hash = "e03c78319f78620f56b8aee7dffe5b0194a8155b668bfc7cd84759100dc26fa4"
+
+[[files]]
+file = "kubejs/data/extendedcrafting/recipe/ultimate_catalyst.json"
+hash = "e37bb2f818274e83a81b6f92b5be485f112c1aba39b3c43ab80402e419a335ce"
+
+[[files]]
+file = "kubejs/data/extendedcrafting/recipe/ultimate_table.json"
+hash = "fef0438ad6ea799c42ea97db1a6d3552e711ac927fa9d6e8b24b910a7442390c"
+
+[[files]]
 file = "kubejs/data/graveyard/tags/worldgen/biome/acolyte_spawns.json"
 hash = "56380a0aa8d0f27242bb36579a66c5b175da66ca0be0abe3e57f612918e9c756"
 
@@ -2465,12 +2569,148 @@ file = "kubejs/data/inventorypets/worldgen/structure_set/underground_dungeon.jso
 hash = "de24f6614dce05825eb7af75761a42ef9d8a16b498dbc53c620c8951c576e560"
 
 [[files]]
+file = "kubejs/data/irons_nouveau/recipe/glyph_black_hole.json"
+hash = "ac5d3cfddb77750b05fc21ef37eaa2c7aeaab83d933b59477ef0bac53ceba3ec"
+
+[[files]]
+file = "kubejs/data/irons_nouveau/recipe/glyph_dragon_breath.json"
+hash = "9c726b9098d2d004ce0b0c1b04ddfd06c075a00f0f8f73b1e66cd4b3b2a9917d"
+
+[[files]]
+file = "kubejs/data/irons_nouveau/recipe/glyph_sculk_tentacles.json"
+hash = "1df9364e08cd7cc6b676b05e7dc6aeb666f574e5ce12ab40122d805dfef90f24"
+
+[[files]]
+file = "kubejs/data/irons_nouveau/recipe/glyph_starfall.json"
+hash = "836b37f88f0cf2f46f1b0ba5018a01b5c08d18b45370f1beab5c9b1ceba921df"
+
+[[files]]
+file = "kubejs/data/irons_spellbooks/recipe/alchemist_cauldron/brew_legendary_ink.json"
+hash = "cdad39d53eecf2abb8d924522f624027410cee8dd984cdde971498da9c58ab6e"
+
+[[files]]
+file = "kubejs/data/irons_spellbooks/recipe/diamond_spell_book.json"
+hash = "82cc66d13a5d210a533cdc783d242d2c3914ba57ef2639c04de584223cd145d8"
+
+[[files]]
+file = "kubejs/data/irons_spellbooks/recipe/netherite_spell_book.json"
+hash = "8f949153a30b852dba202e6fe2003e429f24430b650c071bcd2fed52277718c8"
+
+[[files]]
 file = "kubejs/data/joshie/tags/worldgen/biome/has_structure/conduit_ruins.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "kubejs/data/legendary_monsters/neoforge/biome_modifier/bomber.json"
 hash = "d89b3e744079b316f9c7a29b2d456540cbeabafe422a801f8e11467070ded0cd"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/antiprotonic_nucleosynthesizer.json"
+hash = "e85934ee583402920ccab0f929514beee3df66949f5b4e4c8edb1e6433ed1ae4"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/bin/ultimate.json"
+hash = "5fce22b4a78c7f675e257f5681f6f93ee99ed10fb12aa8b3fa9e715e542769f8"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/chemical_tank/ultimate.json"
+hash = "e2949f324a13c907df9acea00631d24aa5d30b7ea53c5fe746516a1d1ac6294a"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/energy_cube/ultimate.json"
+hash = "980c210ad6e8967be8ad3a66f6e520430461b658e1811b511bae2d31d0bac613"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/combining.json"
+hash = "3360572c240bb603f68a63182a8a1d1fdc91d2a10eaf3236d569d85d25f8a15e"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/compressing.json"
+hash = "6008e8b787b9b2d3cef7d9affee2504e909077a526e7530599799334ec7857cf"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/crushing.json"
+hash = "e58195a59930a54294e572f6fbcc2d437f4a86b8039cc2657b7d59374e733a18"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/enriching.json"
+hash = "2261184c6b53a285d29cbda41e44f9cfd96bb6d03686025edb8d73579e0f5b5c"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/infusing.json"
+hash = "ba8caaff36f01f326af56080df7b8f0aa61dd1f035feb6e8432a843e6615a7cf"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/injecting.json"
+hash = "265184fb3b2339d3b5455bf0eba81ccc5f1eb9524374d58dd19b1a4182a509ff"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/purifying.json"
+hash = "cc3d7ca37d6f34e6b985d40d8e21f870808b55562fd30dc07609948d0b76dfa6"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/sawing.json"
+hash = "a8b642791e04925c5864e07dd2a6f96cb0b95a9dc09f6d8b648511b783f22014"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/factory/ultimate/smelting.json"
+hash = "853c5c0f5321c7259a85a032bd6ba9d8b37b6bdb2820ce4aba00f3032681afff"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/fluid_tank/ultimate.json"
+hash = "e51810f8a9f7a0265594fb35e4a397d9e26ff68b880bd0cafd0729c5eb3dd157"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/induction/cell/ultimate.json"
+hash = "43ae0cc3f758c36d099f27085c79d2cf29d63947cd62e5781b62d9db96134bba"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/induction/provider/ultimate.json"
+hash = "aae786838021d715d1f76ced395b1e9efa5c0482d8bcd3fc8c81612e9146df42"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/meka_tool.json"
+hash = "23f81887444152a87ecb3900e40286d2f73b541a1ca68b4ead28c079f7627225"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/mekasuit_bodyarmor.json"
+hash = "cccb62314569ab34cc2c45a6d95581b799ca152984d8ddfdd2605d798b4921b1"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/mekasuit_boots.json"
+hash = "2c4c9458f880758595b4d8ebbff6535c88f422693fbac7713a3e0a9fe9e654ba"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/mekasuit_helmet.json"
+hash = "022d15bda8593283bc339e1aeb36cdbfb63a819c580b21809ff39f645ad18957"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/mekasuit_pants.json"
+hash = "e5cae79039d4746b1e134c8107ce505b5c0a30eeed1c5ca9bb61c439858e3096"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/qio_drive_supermassive.json"
+hash = "ca23dc0b2f598473756c8ba2ff4aab07238902f1316961984ca993b76ff48110"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/sps_port.json"
+hash = "59842eacaf7fa79d8046d0b4294fa95ea14a2aa4124b405ebedbc15772fb72b2"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/supercharged_coil.json"
+hash = "0aabd48c6a6b0be8555f06920560b62d5b8738f76f142f2d3bce5b4d53de1b3b"
+
+[[files]]
+file = "kubejs/data/mekanism/recipe/tier_installer/ultimate.json"
+hash = "924d3c307b34292f3953baf1014e97d9e231839cad1ac08ea2d1d8f04a35a45d"
+
+[[files]]
+file = "kubejs/data/mekanismgenerators/recipe/fission_reactor/port.json"
+hash = "b035f27eb847bd2bdfb30cd2b27f77785cc9b054fda1cb8a32c0fa6872645413"
+
+[[files]]
+file = "kubejs/data/mekanismgenerators/recipe/reactor/controller.json"
+hash = "14854070c9fc63ec005c70a6cef5bc108bdf2b8d785f7fe8002182da3a3be2b0"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/ancient_city.json"
@@ -2571,6 +2811,58 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
 hash = "0b6f5c78c09a4472424cabac44391306928dc0dc73dd6a50e3b1285580776016"
+
+[[files]]
+file = "kubejs/data/neovitae/recipe/alchemytable/reagent_teleposition.json"
+hash = "718387914eda187cf4d147efb6c93d2eccf43baff7241b00f070d594d354041b"
+
+[[files]]
+file = "kubejs/data/neovitae/recipe/athanor/orb/prismatic_spiritus_gem.json"
+hash = "fae3091b89c05739aa11f902c86c86aaf9ac5d23e40b85048be4ae570afc225e"
+
+[[files]]
+file = "kubejs/data/neovitae/recipe/hellfire_forge/crystal_cluster.json"
+hash = "2bad4db1aeae620cc5412dabdfc7a0b96a630ecd9733fe6c8de7d7621923c274"
+
+[[files]]
+file = "kubejs/data/neovitae/recipe/meteor/diamond.json"
+hash = "14d8183068eace38f9a52d136096f9fd98ab4eb69238bf515726cf805217a471"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/crafting/book_of_binding_djinni.json"
+hash = "865ee272753a13f697ae740f540ceeb6134309a203c69f89a0b0e6a60a5ede03"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/crafting/book_of_binding_djinni_from_empty.json"
+hash = "743c6a3448f621444f2b1ea4ee9c614d9112c5e3d17bcccaffa8f55c3ca4c48f"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/ritual/craft_dimensional_mineshaft.json"
+hash = "9d7694c3852137d3a86a637922f8bfcd54c1047695e0e6c5af30b4dd6777781e"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/ritual/craft_miner_djinni_ores.json"
+hash = "96b88198dcbb8f2e9f45e18f6cec5e7e7ea1e07a06a58657ab8d5d327c5e964c"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/ritual/possess_warden.json"
+hash = "5fc55219a8a3c06cc9b72d8e6f58e271f56a80c875b5490ec77b515a6e9962d9"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/ritual/summon_unbound_afrit.json"
+hash = "6433125132847c889c3fa2b847035fe7749655aeb02ceea32f2a5de320aa4f51"
+
+[[files]]
+file = "kubejs/data/occultism/recipe/ritual/summon_unbound_marid.json"
+hash = "c0b9962a9e3b9bce8f6a7be2918f490135073be62363a409eec799d4a38cdf05"
+
+[[files]]
+file = "kubejs/data/oritech/recipe/augment/flight.json"
+hash = "745607d11db4264b84a508cc6abf5101bdea9aa5d33efb81d9a32ab307fae124"
+
+[[files]]
+file = "kubejs/data/panascraftrpgmod/recipe/ultimate_lord_ingot_recipe.json"
+hash = "cdc37f4c327fe896080f5d1b1733f9e568c1cd9804a5c85112f240712d43ad27"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/structure/finalboss_dungeon_v2.nbt"
@@ -4637,6 +4929,18 @@ file = "kubejs/data/strata/puffish_skills/config.json"
 hash = "afe82924139b0f252c358071e385b9cf40859c4c3c96d725f65ab6ac7472b9e2"
 
 [[files]]
+file = "kubejs/data/strata/tags/item/dragon_bloods.json"
+hash = "ee93877e6dd175b5cb1e4e8972907cd52601e5783efbd03400befb40da1bd7e6"
+
+[[files]]
+file = "kubejs/data/strata/tags/item/dragon_hearts.json"
+hash = "a33402323c711ed2d599d76b078e8cba20c6cf06343d5c322e0d9b22eafd018e"
+
+[[files]]
+file = "kubejs/data/strata/tags/item/lich_relics.json"
+hash = "fff98c588d140200149320fe5af7e76e26eb6d163189f806ad36df53ca06418b"
+
+[[files]]
 file = "kubejs/data/strata/tags/worldgen/biome/abyssal_deep.json"
 hash = "b8d335e9df3d2075177771905254d63e17fddb95feb53dbd4e7611ffd1bdad90"
 
@@ -5173,8 +5477,44 @@ file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_screecher_biome_mod
 hash = "2b5e996d2f10f109f8c4d2a95cc6b9038f8b26e28e7c3faae2587a7b23edcd9f"
 
 [[files]]
+file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_calorite_from_alchemical_niter_metals_precious.json"
+hash = "1a41ad3b7e30a6cc165f0f68986178e0680461a00184b3dc24b6480358a109eb"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_calorite_from_alchemical_sulfurs_metals_precious.json"
+hash = "1a41ad3b7e30a6cc165f0f68986178e0680461a00184b3dc24b6480358a109eb"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_nether_star_from_alchemical_niter_mobs_precious.json"
+hash = "1a41ad3b7e30a6cc165f0f68986178e0680461a00184b3dc24b6480358a109eb"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_netherite_from_alchemical_niter_metals_precious.json"
+hash = "d38f935d6ea27991f39e148404d7a3569967c5f6d1f1ea118e116b2c76e894f4"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_netherite_from_alchemical_sulfurs_metals_precious.json"
+hash = "6f8c4e50b563838b4c790b1603db360b099a90c1f2281d066b975179a4501338"
+
+[[files]]
 file = "kubejs/data/upgrade_aquatic/tags/worldgen/biome/has_spawn/thrasher.json"
 hash = "744b7c279a17a17ee4d9ce565772497b77687015b76bf408ae4bd2519c327a9d"
+
+[[files]]
+file = "kubejs/data/vampirism/vampirism/tasks/hunter_lord3.json"
+hash = "7098e7940852fbf127fa219f64abe3d2a4262f9d5173c3dd8f0b0b33cc46adf3"
+
+[[files]]
+file = "kubejs/data/vampirism/vampirism/tasks/hunter_lord5.json"
+hash = "829e1bf135f66dd156c3e776afd3fbba23197a0951d430552345473d57ec1b20"
+
+[[files]]
+file = "kubejs/data/vampirism/vampirism/tasks/vampire_lord3.json"
+hash = "79383e8bc79473741214f834fb64cb784b439757636b9dcc28662bbe6bba02e4"
+
+[[files]]
+file = "kubejs/data/vampirism/vampirism/tasks/vampire_lord5.json"
+hash = "f90d7f13d0495d7f844cd6759c57f344d345e31978db59af66d5f8adfb207d42"
 
 [[files]]
 file = "kubejs/data/weeping_angels/neoforge/biome_modifier/snow_angel.json"

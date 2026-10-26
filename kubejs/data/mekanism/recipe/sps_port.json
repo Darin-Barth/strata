@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mekanism:sps_casing"
+    },
+    "C": {
+      "tag": "c:circuits/ultimate"
+    },
+    "X": {
+      "item": "strata:abyssal_pearl"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#C#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:sps_port"
+  }
+}

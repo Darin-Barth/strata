@@ -1,0 +1,53 @@
+{
+  "requirements": {
+    "requirements": [
+      {
+        "type": "vampirism:item",
+        "description": {
+          "translate": "item.minecraft.gold_ingot"
+        },
+        "id": "minecraft:gold_ingot",
+        "item": {
+          "count": 32,
+          "id": "minecraft:gold_ingot"
+        }
+      },
+      {
+        "type": "vampirism:entity_type",
+        "amount": 50,
+        "description": {
+          "translate": "entity_tag.vampirism.vampire"
+        },
+        "entityType": "vampirism:vampire",
+        "id": "vampirism:vampire"
+      },
+      {
+        "type": "vampirism:item",
+        "description": {
+          "translate": "item.strata.hollow_ember",
+          "fallback": "Hollow Ember"
+        },
+        "id": "strata:hollow_ember",
+        "item": {
+          "count": 2,
+          "id": "strata:hollow_ember"
+        }
+      }
+    ]
+  },
+  "rewards": {
+    "type": "vampirism:lord_level",
+    "description": "{\"translate\":\"task_reward.vampirism.lord_level_reward\",\"with\":[3]}",
+    "targetLevel": 3
+  },
+  "title": {
+    "translate": "task.vampirism.hunter_lord3"
+  },
+  "unlocker": [
+    {
+      "type": "vampirism:lord_level",
+      "exact": true,
+      "reqLordLevel": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "occultism:book_of_binding_empty"
+    },
+    "g": {
+      "tag": "c:dyes/purple"
+    },
+    "E": {
+      "item": "bosses_of_mass_destruction:blazing_eye"
+    }
+  },
+  "pattern": [
+    "Eg ",
+    "gbg",
+    " g "
+  ],
+  "result": {
+    "count": 1,
+    "id": "occultism:book_of_binding_djinni"
+  }
+}

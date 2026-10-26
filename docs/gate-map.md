@@ -1,6 +1,6 @@
 # Gate map: what late tiers cost (proposal, Oct 26, 2026)
 
-**Status: proposal for Darin's review; section 5 decided (Oct 26). Nothing built yet.**
+**Status: approved by Darin and built Oct 26.** Generators: `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` (re-run after a mod update; each writes datapack overrides at the mod's own path under `kubejs/data`).
 
 The design doc's rule says late tiers need boss drops ("Boss gating"), but nothing enforces it yet. This map is the plan for that, across all three pillars plus gear.
 
@@ -109,6 +109,16 @@ Checked in the jars on Oct 26.
 Powah, Oritech and the Draconic reactor still need a place on the power ladder.
 
 **Built Oct 26** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo, Wind Staff and Linking Book filtered out of all loot (LootJS). Copies players already have keep working.
+
+## Build notes (Oct 26)
+Built as datapack overrides; checked on the test server (every sampled recipe shows the new ingredient, the Theurgy routes are gone, no load errors). Where a recipe had no free slot, the cheapest ingredient was swapped. Deviations from the tables:
+- **T2:** ultimate transmitters (cables, pipes, tubes) left ungated: crafted in bulk, a cell per 8 would pile up. The tier is gated through installers, factories, cube, induction, tanks and bin.
+- **T8:** the jet suit isn't gated piece by piece; its flying chestplate needs the calorite engine.
+- **T9:** the 2 Embers replace 2 of the 4 awakened draconium ingots, so the craft still uses 8 fusion injectors.
+- **T10:** the ultimate table's grid was full: the Abyssal Egg replaces its emerald block and the 4 Pearls go into the ultimate catalyst (whose only use is the table).
+- **M20:** on the Book of Binding (Djinni) (crafted once, reused for every djinni ritual), not on yellow chalk (used up: one boss kill per stick).
+- **M3:** the four legendary-spell glyphs (black hole, starfall, sculk tentacles, dragon breath).
+- New tags: `#strata:dragon_bloods`, `#strata:dragon_hearts`, `#strata:lich_relics`.
 
 ## 6. Building it
 1. Section 1 fixes and section 5 removals (KubeJS `event.remove` + Iron's spell config datapack).

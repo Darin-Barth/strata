@@ -1,0 +1,58 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/netherite"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/netherite"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/netherite"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "theurgy:alchemical_sulfurs/metals/precious"
+      }
+    }
+  ],
+  "type": "theurgy:reformation",
+  "category": "misc",
+  "mercuryFlux": 200,
+  "result": {
+    "type": "theurgy:item",
+    "count": 1,
+    "id": "theurgy:alchemical_sulfur_netherite"
+  },
+  "sources": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "theurgy:alchemical_sulfurs/metals/precious"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "strata:hollow_ember"
+      }
+    }
+  ],
+  "target": {
+    "item": "theurgy:alchemical_sulfur_netherite"
+  },
+  "time": 100
+}

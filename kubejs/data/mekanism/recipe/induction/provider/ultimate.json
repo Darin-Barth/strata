@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mekanism:ultimate_energy_cube"
+    },
+    "C": {
+      "tag": "c:circuits/ultimate"
+    },
+    "P": {
+      "item": "mekanism:elite_induction_provider"
+    },
+    "X": {
+      "item": "cataclysm:lava_power_cell"
+    }
+  },
+  "pattern": [
+    "XPC",
+    "P#P",
+    "CPC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:ultimate_induction_provider"
+  }
+}

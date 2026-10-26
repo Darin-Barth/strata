@@ -1,0 +1,27 @@
+{
+  "type": "neovitae:alchemytable",
+  "input": [
+    {
+      "item": "neovitae:teleposer"
+    },
+    {
+      "tag": "c:ingots/gold"
+    },
+    {
+      "item": "neovitae:blood_pearl"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "legendary_monsters:portal_shard"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "neovitae:reagent_teleposition"
+  },
+  "syphon": 10000,
+  "ticks": 200,
+  "upgradeLevel": 4
+}

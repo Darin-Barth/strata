@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "vbv",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "cataclysm:cursium_ingot"
+    },
+    "v": {
+      "item": "panascraftrpgmod:void_gem"
+    }
+  },
+  "result": {
+    "id": "panascraftrpgmod:ultimate_ingot",
+    "count": 2
+  }
+}
