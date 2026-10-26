@@ -42,6 +42,30 @@ file = "config/alexsmobs/giant_squid_spawns.json"
 hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
 
 [[files]]
+file = "config/almostunified/debug.json"
+hash = "435ad46870d033c8652097d64c6ec592907e5ab6f1877240532a6a1743d4fca5"
+
+[[files]]
+file = "config/almostunified/duplicates.json"
+hash = "b70f57eadf6eec0ce43acd4c441f08feac1432826e04cb8e2736a73997c20c08"
+
+[[files]]
+file = "config/almostunified/placeholders.json"
+hash = "43733b207b9f0238c7a5bec47f19e8fd5bec80499b286e0ac4994671702dfed9"
+
+[[files]]
+file = "config/almostunified/startup.json"
+hash = "37f013c49586db025c17f9fa6657c6f239e0169ebc97ef682ff114a2ede43c5e"
+
+[[files]]
+file = "config/almostunified/tags.json"
+hash = "2512b9c947342813ee667013941f07c3be8323ac4cb8d3d1686dd8530c7c66b1"
+
+[[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "89d043f526a728d3b80a2048bd0e943e10caea7f079ed3d58b1a4e5267efeedb"
+
+[[files]]
 file = "config/amc.json"
 hash = "fc3ae3e673e01a119aad42909b0878c3a9b618adfbd1c369eeb275c624e2c704"
 
@@ -82,6 +106,14 @@ preserve = true
 [[files]]
 file = "config/create_submarine-common.toml"
 hash = "5d1561ecf97f5fed423484843ed3d576cea9e2c9765ec0f6edb1a4a3afadb548"
+
+[[files]]
+file = "config/createaddition-common.toml"
+hash = "900a9fc89c1567943656a9a6e62560a97484edfcc5ac5054e0a138cce5363a9e"
+
+[[files]]
+file = "config/createbigcannons-server.toml"
+hash = "22d546aecaed2bfaf8f4417104b1e322cd5b57979d343fd68759aa645571cef1"
 
 [[files]]
 file = "config/createtweakedcontrollers-client.toml"
@@ -337,6 +369,10 @@ file = "config/guardvillagers-common.toml"
 hash = "1ab9b8f4909302c57f1177fcef3489752ad7e0767fedeef1211bc451a103771a"
 
 [[files]]
+file = "config/horseman-server.toml"
+hash = "c1e3e0450107c3e24feb96ae6b59fc765c7499b474b93892620af36ad426ce53"
+
+[[files]]
 file = "config/hybrid_aquatic.json"
 hash = "7c5d7f1871a3d027d01584652e27ed143bdffc2063082f7666c31c5fe3286a4c"
 
@@ -354,11 +390,11 @@ hash = "afd73d64ac978202fcfadf461cb60294cd54cf1a194bb9a3fdd5da466b9e8846"
 
 [[files]]
 file = "config/inventorypets-common.toml"
-hash = "04821b12229970efa59fb29612a4d492d3778fa79a0194258c03d99f447fe888"
+hash = "31ae174bc8ebaa8601b1cbb84ab8ab760b1298f2ef6fdaecdb03f7a46bbf8743"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "c44080e85634ec3352193aa1d65647e1f59d741771b10863157e14dc0acf08f1"
+hash = "eeb83c0dd9c3667917bbc7b00f3215c5d369f9e2083d99c4228fd50facd926d8"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/recall.json"
@@ -405,6 +441,10 @@ file = "config/simplebackups-common.toml"
 hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
 
 [[files]]
+file = "config/solonion-client.json"
+hash = "fc1e15276c85b6714eca7d84cbd3b79d175d687426ce0b51b0dec49894b5af91"
+
+[[files]]
 file = "config/streamsreflowing.properties"
 hash = "36753d897ac456a47aa8998b61561358d84c8417443db70d2d9ab989c07bb8d6"
 
@@ -418,6 +458,10 @@ file = "config/tide/tide_server.json"
 hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
 
 [[files]]
+file = "config/vampirism-server.toml"
+hash = "17d8a9ec086abba0219b40860326713754a14336418936836d95b784f1bb78b0"
+
+[[files]]
 file = "config/vanillabackport-client.toml"
 hash = "ad05cfc51b07b659d291e62278f8a8dc0a30b4f64aff0b56120ca011ddd26878"
 preserve = true
@@ -425,6 +469,10 @@ preserve = true
 [[files]]
 file = "config/vanillabackport-common.toml"
 hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
+
+[[files]]
+file = "config/waystones-common.toml"
+hash = "8459e2b044fca5000feb1fd5432bb87cf06e9568bbb729207afaec1d9a6d0751"
 
 [[files]]
 file = "config/weeping-angels-spawns.toml"
@@ -2419,6 +2467,10 @@ hash = "de24f6614dce05825eb7af75761a42ef9d8a16b498dbc53c620c8951c576e560"
 [[files]]
 file = "kubejs/data/joshie/tags/worldgen/biome/has_structure/conduit_ruins.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/legendary_monsters/neoforge/biome_modifier/bomber.json"
+hash = "d89b3e744079b316f9c7a29b2d456540cbeabafe422a801f8e11467070ded0cd"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/ancient_city.json"
@@ -5154,7 +5206,7 @@ hash = "df04b734c8a12142addc3f1c864d498692fb6a2beaa760c91d6d9776d1a7a507"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "6ed2c885d27b85bc41f27b8318f7cb37b9211f06b3eef8773ea297acd342acfb"
+hash = "f9113568b4e1457762a28d28641dc2a8ba29b95c87a8d0aaaf90b2b73b213bae"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
@@ -5169,8 +5221,16 @@ file = "kubejs/server_scripts/pokeworld_starter.js"
 hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
 
 [[files]]
+file = "kubejs/server_scripts/strata_elites.js"
+hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
+
+[[files]]
 file = "kubejs/server_scripts/strata_home.js"
 hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
+
+[[files]]
+file = "kubejs/server_scripts/strata_power.js"
+hash = "4dc440968f597165810d233862576cf9420b31e7c0f230b226f547ec3848b9dc"
 
 [[files]]
 file = "kubejs/server_scripts/strata_removed_items.js"
@@ -5613,6 +5673,11 @@ metafile = true
 [[files]]
 file = "mods/cobblemonextrastructures.pw.toml"
 hash = "225afd4bdf5f89682d5ad9320216e64e9ae02270031c46e5b334d5fa42e1da60"
+metafile = true
+
+[[files]]
+file = "mods/cobblemonoptimizer.pw.toml"
+hash = "fa61cf10508eed8c59221a0e839b292f513f2aa3c0d76f53d08bbbd839e60a21"
 metafile = true
 
 [[files]]

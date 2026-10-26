@@ -340,7 +340,7 @@
 	#Disable the Enderman pet (default:false)
 	disableEnderman = false
 	#Disable the End Portal pet (default:false)
-	disableEndPortal = false
+	disableEndPortal = true
 	#Disable the Flying Saddle pet (default:false)
 	disableFlyingSaddle = false
 	#Disable the Furnace pet (default:false)
@@ -350,7 +350,7 @@
 	#Disable the Heart pet (default:false)
 	disableHeart = false
 	#Disable the House pet (default:false)
-	disableHouse = false
+	disableHouse = true
 	#Disable the Illuminati pet (default:false)
 	disableIlluminati = false
 	#Disable the Iron Golem pet (default:false)
