@@ -5174,7 +5174,7 @@ hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
 
 [[files]]
 file = "kubejs/server_scripts/strata_removed_items.js"
-hash = "bd9eb7885df0be7c55dde860a6308c911243e1e160bae7e280db4825acfc9772"
+hash = "0d9187ce1c2920775a769f4b9484ed4f706ddf51909b03de6b85aa9588c4f826"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"

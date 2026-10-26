@@ -93,7 +93,7 @@ Checked in the jars on Oct 26.
    - **Player dislocator:** the basic one plus a draconium core and a ghast tear. Teleports you to a player who sneaks to agree, so it's a /tpa.
    - **Point-to-point pair:** the same, but between two linked dislocators.
    - **Advanced dislocator:** fusion crafting with a wyvern core (needs a nether star). Unlimited saved spots in any dimension; each jump burns 1 ender pearl.
-3. **Forsaken Relics linking book:** Darin wanted **home only**, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config. Open: remove it from loot, or try a KubeJS lock to home mode (needs a client test).
+3. **Forsaken Relics linking book:** **removed from loot** (Darin, Oct 26). He wanted home-only, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
 4. **Oritech portal augment:** **kept** (Darin, Oct 26).
    - A body augment that opens a portal back to your research station.
    - Researching it is a big one-time cost: the top (Arcane) station, 250 million RF, 16 ender pearls, 64 obsidian, an Unholy Intelligence and 32 adamant ingots.
@@ -109,7 +109,7 @@ Checked in the jars on Oct 26.
 
 Powah, Oritech and the Draconic reactor still need a place on the power ladder.
 
-**Built Oct 26** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo and Wind Staff filtered out of all loot (LootJS). Copies players already have keep working.
+**Built Oct 26** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo, Wind Staff and Linking Book filtered out of all loot (LootJS). Copies players already have keep working.
 
 ## 6. Building it
 1. Section 1 fixes and section 5 removals (KubeJS `event.remove` + Iron's spell config datapack).
