@@ -44,35 +44,32 @@ Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(c
 Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Extended Crafting stars. The Mekanism ultimate circuit has two recipes and feeds everything, so it's gated through its outputs (T2), not directly.
 
 ## 3. Magic: road blocks along the way
-| # | Gate | Needs | Stage |
-|---|---|---|---|
-| M1 | Ars Nouveau tier-3 mage armor upgrade (`ars_nouveau:second_armor_upgrade`, now 2 ender pearls + chorus + source) | +1 **E** | mid |
-| M2 | Ars Elemental Mark of Mastery (elemental foci and armor; pedestals full) | swap one pedestal item for **E** | late |
-| M3 | Iron & Nouveau glyphs of legendary spells (black hole, starfall, sculk tentacles, ...) | +1 **E** each | late |
-| M4 | Ars archmage book (already a nether star + Wilden Chimera tribute) | swap one ender pearl for **P** | late |
-| M5 | Iron's Spells legendary ink (now epic ink + 1 amethyst) | amethyst → **E** | mid–late |
-| M6 | Iron's Spells strongest spells (black hole, starfall, sculk tentacles, dragon breath) | loot only: `allow_crafting=false` in the spell config | late |
-| M7 | Iron's Spells netherite spellbook (already a loot-only ruined book) | +1 **P** | endgame |
-| M8 | Occultism afrit tier (red chalk): summon unbound afrit ritual | +1 **E** | mid |
-| M9 | Occultism marid tier (blue chalk): summon unbound marid ritual (already uses a conduit) | +1 **P** | late |
-| M10 | Occultism infinite ores: miner djinni / dimensional mineshaft rituals | +1 **E** | mid |
-| M11 | Theurgy netherite route (both sulfur recipes) | +1 **E** | mid–late |
-| M12 | Neo Vitae transcendent orb: hellfire-forge crystal cluster (slots full) | sculk → **E** | late |
-| M13 | Neo Vitae deus tier: prismatic gem (athanor) *(check slots)* | +1 **P** | endgame |
-| M14 | Neo Vitae diamond meteor (1 diamond → a sphere of diamond ore) | input → **P**, or remove | late |
-| M15 | Neo Vitae teleposition reagent | +1 **E** | mid–late |
-| M16 | Vampirism lord level 3 (vampire and hunter tasks) | 2 **E** | late |
-| M17 | Vampirism lord level 5 | 2 **P** | endgame |
+**Approved by Darin (Oct 26), rebalanced** so magic isn't Hollow-heavy: each gate's material fits its theme, from 10 different sources. Item IDs checked in the jars. *(check)* = recipe-slot room to confirm while building (swap for a similar material if full).
 
-**Earlier road blocks** (so magic doesn't fly through early-mid):
+| # | Gate | Needs | Source | Stage |
+|---|---|---|---|---|
+| M18 | Ars apprentice book upgrade *(check)* | 1 `twilightforest:naga_scale` | Naga (Twilight) | early–mid |
+| M19 | Iron's diamond spellbook *(check)* | 1 `twilightforest:lich_trophy` or a Lich scepter | Twilight Lich | mid |
+| M20 | Occultism djinni tier (yellow chalk) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
+| M1 | Ars tier-3 mage armor upgrade (`second_armor_upgrade`) | +1 `bosses_of_mass_destruction:ancient_anima` | Night Lich (BoMD, drops 2) | mid |
+| M5 | Iron's legendary ink | amethyst → any Ice and Fire dragon blood (`iceandfire:{fire,ice,lightning}_dragon_blood`) | Ice and Fire dragons | mid–late |
+| M8 | Occultism afrit tier: summon unbound afrit ritual | +1 **E** | the Hollow | mid |
+| M10 | Occultism miner djinni / dimensional mineshaft rituals | +1 `deeperdarker:warden_carapace` | Otherside temples (Deeper and Darker) | mid |
+| M11 | Theurgy netherite route (both sulfur recipes) | +1 **E** | the Hollow | mid–late |
+| M15 | Neo Vitae teleposition reagent | +1 `legendary_monsters:portal_shard` | The Obliterator (Legendary Monsters) | mid–late |
+| M16 | Vampirism lord level 3 (vampire and hunter tasks) | 2 **E** | the Hollow | late |
+| M2 | Ars Elemental Mark of Mastery (pedestals full) | one pedestal item → any Ice and Fire dragon heart | Ice and Fire dragons | late |
+| M3 | Iron & Nouveau legendary-spell glyphs (black hole, starfall, sculk tentacles, ...) | +1 **E** each | the Hollow | late |
+| M4 | Ars archmage book | one ender pearl → **P** | the Abyssal Plain | late |
+| M6 | Iron's strongest spells (black hole, starfall, sculk tentacles, dragon breath) | loot only: `allow_crafting=false` | dungeons | late |
+| M9 | Occultism marid tier: summon unbound marid ritual | +1 **P** | the Abyssal Plain | late |
+| M12 | Neo Vitae crystal cluster (transcendent orb; slots full) | sculk → `bosses_of_mass_destruction:obsidian_heart` | Obsidilith (BoMD, End) | late |
+| M14 | Neo Vitae diamond meteor | input → **P** | the Abyssal Plain | late |
+| M7 | Iron's netherite spellbook | +1 `alexsmobs:void_worm_mandible` | Void Worm (End) | endgame |
+| M13 | Neo Vitae prismatic gem (deus tier) *(check)* | +1 **P** | the Abyssal Plain | endgame |
+| M17 | Vampirism lord level 5 | 2 **P** | the Abyssal Plain | endgame |
 
-| # | Gate | Needs | Stage |
-|---|---|---|---|
-| M18 | Ars apprentice book upgrade *(check)* | 1 `twilightforest:naga_scale` (Naga) | early–mid |
-| M19 | Iron's Spells diamond spellbook *(check)* | 1 Twilight Lich drop (scepter or trophy) | mid |
-| M20 | Occultism djinni tier (yellow chalk) *(check)* | 1 Nether boss drop (`cataclysm:ignitium_ingot` or a Bosses of Mass Destruction item) | mid |
-
-Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cataclysm spellbooks (boss loot), Occultism's marid master miner, Neo Vitae's archmage orb (its own demon dungeon).
+Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cataclysm spellbooks (boss loot), Occultism's marid master miner, Neo Vitae's archmage orb (its own demon dungeon), Ars' archmage nether star. Ars Ritual of Flight and warp scrolls stay (they pass the flight and teleport rules).
 
 ## 4. Gear
 | # | Gate | Needs | Stage |
