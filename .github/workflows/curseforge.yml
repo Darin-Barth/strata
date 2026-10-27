@@ -1,0 +1,58 @@
+# Builds the CurseForge zip for a GitHub release, attaches it to the release, and uploads it to CurseForge.
+# The upload only runs when the repo variable CURSEFORGE_UPLOAD is "true" (set it once Drive-By-Wire is on
+# CurseForge's approved list). It also needs the secret CURSEFORGE_TOKEN and the variable CURSEFORGE_PROJECT_ID.
+# Re-run for an existing release: Actions > CurseForge > Run workflow, with the tag (e.g. v0.5.0).
+name: CurseForge
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to build and upload (e.g. v0.5.0)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  curseforge:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@170b22d785959dda5876b54b7f16e1b807a57fb6
+
+      - name: Build the CurseForge zip
+        run: |
+          version="${TAG#v}"
+          zip="Strata-$version-curseforge.zip"
+          packwiz cf export -o "$zip"
+          echo "ZIP=$zip" >> "$GITHUB_ENV"
+          echo "DISPLAY=Strata $version" >> "$GITHUB_ENV"
+          unzip -l "$zip" | grep -E 'overrides/mods/' || true
+
+      - name: Attach it to the GitHub release
+        run: gh release upload "$TAG" "$ZIP" --clobber
+
+      - name: Upload to CurseForge
+        if: vars.CURSEFORGE_UPLOAD == 'true'
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
+          RELEASE_TYPE: ${{ vars.CURSEFORGE_RELEASE_TYPE }}
+        run: |
+          export CHANGELOG="$(gh release view "$TAG" --json body -q .body)"
+          python3 -I tools/curseforge_upload.py "$ZIP" "$DISPLAY"
