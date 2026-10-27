@@ -47,7 +47,8 @@
 	#
 	#Strata (Darin, Oct 26): no Chipped / Rechiseled / Macaw's Furniture / Handcrafted copies in modded woods.
 	#Measured on the test server: 23,002 fewer blocks, 872 MB less server memory. Server and players must match.
-	blacklist = ["chipped", "rechiseled", "mcwfurnitures", "handcrafted"]
+	#Also no Quark (posts etc.) / Another Furniture copies (Darin, Oct 27): 760k fewer block states, ~150 MB more on the server.
+	blacklist = ["chipped", "rechiseled", "mcwfurnitures", "handcrafted", "quark", "another_furniture"]
 
 [other]
 	#Disable all of Supported Mods on EveryCompat's side. This feature is same as Library-Section which do not have any Wood Modules.

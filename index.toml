@@ -154,7 +154,7 @@ hash = "36bd0375bd32e4fb60ed53e1b7fa61ebec8855c7ea68b230b3119a7d2afe31e3"
 
 [[files]]
 file = "config/everycomp-hazardous.toml"
-hash = "5315010e41d1754de8fbd8540f9af697f819b108e8d94c7226881009d99a1ad5"
+hash = "fdc3564ac9f2367b55a724742c879673b2ede67e4afa9edfdfe1c4c23c375e6b"
 
 [[files]]
 file = "config/fancymenu/assets/strata/background.png"
