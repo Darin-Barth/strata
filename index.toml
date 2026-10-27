@@ -6,6 +6,10 @@ hash = "fb793f96e8295ee813b67989024f80d614ce93df912e8879ceb44a5c0302255c"
 preserve = true
 
 [[files]]
+file = "config/alexscaves-general.toml"
+hash = "ac9c7c389b6634ad3ab084670336d4a8b880aabe09732cde5d9ed753627e1b80"
+
+[[files]]
 file = "config/alexscaves_biome_generation/abyssal_chasm.json"
 hash = "84659991b67a8a54107eacfb971ae9ec9853a430e62019fb3ca055ab078e334c"
 
@@ -475,7 +479,7 @@ hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
 
 [[files]]
 file = "config/vampirism-server.toml"
-hash = "17d8a9ec086abba0219b40860326713754a14336418936836d95b784f1bb78b0"
+hash = "82ef85cd91585272b71e89cb2ff616bb18e5fcee64db50c1fe430ace88e41899"
 
 [[files]]
 file = "config/vanillabackport-client.toml"

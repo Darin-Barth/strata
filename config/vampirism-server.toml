@@ -63,4 +63,4 @@
 
 	[server.internal]
 		#Send message about Guide-API once
-		infoAboutGuideAPI = true
+		infoAboutGuideAPI = false

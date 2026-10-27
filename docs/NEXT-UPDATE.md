@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v0.4.0**, Oct 26, 2026; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- (nothing queued yet)
+- Quieter join chat: no Alex's Caves "incompatible with Tectonic" warning (its cave biomes are off in the Overworld on purpose; the Abyssal Plain uses its abyss content) and no Vampirism Guide-API tip.
 
 ## Release checklist
 1. Bump `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt`.
