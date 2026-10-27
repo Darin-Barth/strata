@@ -51,7 +51,7 @@ Also in the Hollow: Creakings (Pale Garden copy). Not used: Born in Chaos (spawn
   - Sanity: hallucinations mostly just scare you, but below 25% sanity some become real mobs that attack (Rotting Stalker, Sneaking Terror; capped like every horror mob). Light, campfires, friends and resting outside the Hollow recover sanity. Kept on purpose (Darin, Oct 26).
 - **No one-shots:** a KubeJS damage cap so a single hit from any Hollow horror mob can take at most ~40% of a player's max health (bosses excluded, since they keep designed stats). This also covers mod updates that buff damage.
 - **Tuned in testing:** Cave Dweller and Ravenous damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only) and theft/light-breaking off if they feel cheap; Sanity's drain rate.
-- **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and GraveStone keeps items safe on death.
+- **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and Corail Tombstone keeps items safe on death.
 - Spawn rates start low; we raise them after playtests rather than the other way round.
 
 ## 3b. Dread events (Darin, Oct 25)

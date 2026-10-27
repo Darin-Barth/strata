@@ -36,7 +36,7 @@ Challenge is there for anyone who wants it, but the world stays friendly for bui
 - **Apotheosis:** randomized gear, gems, elite mobs. Configure elites to be rare near spawn and more common in the Nether, End and far out.
 - **Boss gating:** quests and KubeJS recipes require boss drops for late tiers (for example Cataclysm drops for top Mekanism/AE2 parts and cross-dimension wireless).
 - **Other scalers to watch:** Vampirism scales its own mobs to nearby player level — include it in the Nether-jump play test.
-- **Safety nets:** GraveStone Mod so death doesn't scatter items; Redomesticate (Domestication Innovation fork) so pets aren't lost for good.
+- **Safety nets:** Corail Tombstone (replaced GraveStone Mod, Oct 27) so death doesn't scatter items; Redomesticate (Domestication Innovation fork) so pets aren't lost for good.
 - **Combat feel:** Better Combat + Apothic Combat + Combat Roll (not Epic Fight).
 
 ## Tech pillar
@@ -229,7 +229,7 @@ Test with the whole group early, before writing quests, so heavy mods are found 
 
 **Open questions**
 
-- Decided: EMI as the recipe viewer (JEI installed alongside for its plugins), Terralith out; gravestone = GraveStone Mod, dynamic lighting = LambDynamicLights.
+- Decided: EMI as the recipe viewer (JEI installed alongside for its plugins), Terralith out; gravestone = GraveStone Mod (replaced by Corail Tombstone, Oct 27), dynamic lighting = LambDynamicLights.
 - ~~Modern Industrialization or Oritech?~~ Oritech (wave 6, Oct 25).
 - ~~Spice of Life or Diet?~~ Spice of Life: Onion.
 - Remaining choices are settled during testing (below).

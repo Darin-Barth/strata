@@ -24,7 +24,7 @@ against the mod jars by `tools/quests/check_ids.py`.
 5. **Timber!** — logs (FallingTree, FTB Ultimine with the ` key).
 6. **A Bag for Everything** — Sophisticated Backpack.
 7. **Home Sweet Claim** — FTB Teams (make a team) + FTB Chunks claims from the map.
-8. **When Things Go Wrong** — GraveStone, PlayerRevive, Redomesticate (pets come back).
+8. **When Things Go Wrong** — Corail Tombstone, PlayerRevive, Redomesticate (pets come back).
 9. **Rules of the Road** — no /home, /back, /tpa; flight costs fuel/power/mana/stamina.
 10. **Waystones** — find or craft one; XP cost grows with distance, more across dimensions.
 11. **Iron Age** — iron tools and armor, Apotheosis gear and Better Combat basics.

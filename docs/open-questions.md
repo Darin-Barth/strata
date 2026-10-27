@@ -46,6 +46,6 @@ Context for whoever answers: Strata is a 1.21.1 NeoForge kitchen-sink pack (Crea
 23. **Cobblemon Kanto map** (second portal, later): still planned? Any license info already checked?
 
 ## Already decided (no answer needed)
-- Gravestone: GraveStone Mod. Dynamic lighting: LambDynamicLights.
+- Gravestone: Corail Tombstone (replaced GraveStone Mod, Oct 27). Dynamic lighting: LambDynamicLights.
 - Create: Steam 'n' Rails: using the unofficial 1.21.1 port (beta); snow-track crash is test 10.
 - No Mons In My World: Fabric-only; we recreate it when we build the Pokémon world (options are in the design doc).
