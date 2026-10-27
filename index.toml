@@ -398,7 +398,7 @@ hash = "31ae174bc8ebaa8601b1cbb84ab8ab760b1298f2ef6fdaecdb03f7a46bbf8743"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "ec65d8a7ed952ea1cbab269b70a5154435edca23da9bc57c6c7cf0eab18a0f06"
+hash = "f6865385751b69264f639d7c6cde54689af7858540e983e0a3215b906b9aecae"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/black_hole.json"
