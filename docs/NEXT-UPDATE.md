@@ -3,13 +3,7 @@
 Changes committed on master since the last release (**v0.4.0**, Oct 26, 2026; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- **Vampires can drown in the Abyssal Plain** (only there; Water Breathing, Conduit power or a diving helmet still work).
-- **Hollow fog:** heavy fog (about 10 blocks); hold a lantern, torch or other light to push it back to about 28.
-- **Kakuto Region: only Pokémon spawn** (and wandering trainers); no vanilla or other mobs.
-- **Sort buttons are back** in chests and the inventory along with the Continuous Crafting checkbox (only the IPN settings button stays hidden).
-- **The 40% horror-hit cap now works**, and mobs no longer freeze ("suspended") when they hit a player.
-- **Sanity indicator** shows in the Hollow only.
-- **Hotfix 0.4.3 (ready):** Abyssal Plain arrival puts players in a Lifepod on the sea floor with its own return portal (Overworld portal re-linked; existing buried portals fixed on the next trip). 28 `const`-in-loop/try Rhino bugs fixed (Lifepod builder, flood rule, dread events, Ravenous spawner, portal sounds). Quieter join chat (Ravenous auto-advancement, backup notices ops-only, DH mod notice for new installs, Alex's Caves and Vampirism tips).
+- (nothing queued yet)
 
 ## Release checklist
 1. Bump `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt`.
