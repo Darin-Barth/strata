@@ -22,6 +22,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
   - Dark palettes copied from Regions Unexplored (ashen woodland, blackwood taiga, fungal fen)
   - Grim & Bleak's 8 biomes (eerie forest, grim taiga, bleak plains, grimstone mountains, ...): they only exist in its own dimension, so we use them directly
   - Caves: deep dark style plus dripstone
+- **Fog (Darin, Oct 26):** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`.
 - **Atmosphere** (biome effects, no extra mods): dark fog and black sky, ash/spore particles, cave mood sounds, quiet ambient loops, Deep Dark style music. AmbientSounds (in the pack) adds Hollow-only soundscapes such as whispers and distant knocks. A KubeJS script adds short Darkness pulses now and then while in the Hollow.
 
 ## 3. Mobs (8 new mods)

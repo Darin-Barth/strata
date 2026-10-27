@@ -56,5 +56,19 @@
     ],
     "when": "onjoin",
     "result": "deny"
+  },
+  {
+    "dimension": "pokeworld:pokeworld",
+    "mod": [
+      "cobblemon",
+      "rctmod"
+    ],
+    "when": "position",
+    "result": "default"
+  },
+  {
+    "dimension": "pokeworld:pokeworld",
+    "when": "position",
+    "result": "deny"
   }
 ]
