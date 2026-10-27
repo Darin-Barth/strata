@@ -5834,7 +5834,7 @@ hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
 
 [[files]]
 file = "kubejs/server_scripts/strata_pets.js"
-hash = "32edb50e44c54c157f5459ca314909c74293d300ff0faf7a39e6f058e3be5654"
+hash = "9719d929902b62e4fac923625fa832c59fc65616b2434950a8c50531b07fe1d5"
 
 [[files]]
 file = "kubejs/server_scripts/strata_power.js"

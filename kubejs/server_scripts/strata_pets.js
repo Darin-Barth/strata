@@ -27,3 +27,22 @@ const strataPetRecipes = [
 ServerEvents.recipes(event => {
   strataPetRecipes.forEach(id => event.remove({ id: 'inventorypets:' + id }))
 })
+
+// The Nether Portal pet only works once you've been to the Nether yourself (Darin, Oct 27):
+// using it before that is cancelled with a message. "Been there" = the vanilla advancement
+// minecraft:nether/root ("Nether": enter the Nether), so players who went before this rule count.
+ItemEvents.rightClicked('inventorypets:pet_nether_portal', event => {
+  if (strataPetBeenToNether(event.player)) return
+  event.player.displayClientMessage(Text.red('The Nether Portal pet only works once you have been to the Nether yourself.'), true)
+  event.cancel()
+})
+
+function strataPetBeenToNether(player) {
+  try {
+    let holder = player.server.advancements.get('minecraft:nether/root')
+    return holder != null && player.advancements.getOrStartProgress(holder).isDone()
+  } catch (e) {
+    console.warn(`strata_pets: Nether check failed, allowing the pet: ${e}`)
+    return true
+  }
+}
