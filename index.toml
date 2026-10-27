@@ -5546,11 +5546,11 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "355bbd6c287c9f2af61b00462c8f785905d8477d546d7ee4244efd5ab5196c9c"
+hash = "a53e63e7f8869978b27a4bb7d57b2bb24ea93702b9781edf33986565cb788fb7"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "dc53991d730b42bea975cf99126c66fe36c9251a3d97f5079c257019fb5d11f2"
+hash = "8448db79f7ad5b4a1bf969665a6cb54fc12fcd40b9758be76a7594beaea57291"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
@@ -5598,7 +5598,7 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "0c0c7d5d2044a51dd9fecf71de0d1389d3af2243d212bf9533aff0eaa2a4069c"
+hash = "07e31c2d67d74f12c0dcde5bd6016a4f0f0d5550f08ab68c7b0f96bc8706601b"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
@@ -5610,7 +5610,7 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "ecdd5b5475da27e1d72f261ec7a92ce50f99ffa7f93d0955c44d133a97529191"
+hash = "b15535c7195b94084a995e2988188a03ecdd835aa48508948262d160a70dc023"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

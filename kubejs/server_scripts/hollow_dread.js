@@ -121,15 +121,15 @@ PlayerEvents.tick(event => {
   // The watcher vanishes when looked at (checked often), or quietly after 15 s.
   const w = hollowDreadWatchers[player.username]
   if (w && player.age % 4 === 0) {
-    const e = w.entity
+    let e = w.entity
     if (!e.isAlive() || !hollowDreadOk(player) || Date.now() > w.until) {
       if (e.isAlive()) e.discard()
       delete hollowDreadWatchers[player.username]
     } else {
-      const look = hollowDreadLook(player)
-      const vx = e.x - player.x, vy = e.y + 2.2 - (player.y + 1.62), vz = e.z - player.z
-      const len = Math.sqrt(vx * vx + vy * vy + vz * vz)
-      const cos = (vx * look[0] + vy * look[1] + vz * look[2]) / len
+      let look = hollowDreadLook(player)
+      let vx = e.x - player.x, vy = e.y + 2.2 - (player.y + 1.62), vz = e.z - player.z
+      let len = Math.sqrt(vx * vx + vy * vy + vz * vz)
+      let cos = (vx * look[0] + vy * look[1] + vz * look[2]) / len
       if (cos > Math.cos(20 * Math.PI / 180)) {
         player.server.runCommandSilent(`execute in strata:hollow run particle minecraft:large_smoke ${e.x} ${e.y + 1.5} ${e.z} 0.3 1 0.3 0.01 30 force ${player.username}`)
         hollowDreadSound(player, 'minecraft:entity.enderman.teleport', e.x, e.y + 1, e.z, 0.3, 0.5)

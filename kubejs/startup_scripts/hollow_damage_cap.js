@@ -5,7 +5,6 @@
 // a horror mob that follows someone through a portal is capped too. A startup script because
 // native listeners registered in server scripts would stack up on every /reload.
 // KubeJS scripts share one scope per type: every top-level name here starts with "hollowCap".
-const hollowCapEntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 const hollowCapNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spirits', 'the_ravenous',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed',
   // the Abyssal Plain's deep-sea creatures
@@ -22,16 +21,17 @@ const hollowCapSourcelessTypes = ['weeping_angels:snapped_neck', 'weeping_angels
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Pre', event => {
   const victim = event.getEntity()
   if (!victim || victim.level.isClientSide() || !victim.isPlayer()) return
-  const attacker = event.getSource().getEntity()
+  // KubeJS wraps DamageSource: the attacker is `.actual` (getEntity() isn't visible to scripts).
+  const attacker = event.getSource().actual
   if (!attacker) {
-    const key = event.getSource().typeHolder().unwrapKey()
+    let key = event.getSource().typeHolder().unwrapKey()
     if (!key.isPresent() || hollowCapSourcelessTypes.indexOf(String(key.get().location())) < 0) return
-    if (String(victim.level.dimension().location()) !== 'strata:hollow') return
-    const cap = victim.getMaxHealth() * hollowCapFraction
+    if (String(victim.level.dimension) !== 'strata:hollow') return
+    let cap = victim.getMaxHealth() * hollowCapFraction
     if (event.getNewDamage() > cap) event.setNewDamage(cap)
     return
   }
-  const id = String(hollowCapEntityType.getKey(attacker.getType()))
+  const id = String(attacker.type)
   if (hollowCapBosses.indexOf(id) >= 0) return
   if (hollowCapNamespaces.indexOf(id.split(':')[0]) < 0) return
   const arrived = victim.persistentData.getLong('strata_hollow_arrived')

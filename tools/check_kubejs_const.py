@@ -1,9 +1,9 @@
-"""Find `const` declarations inside loop bodies or try/catch blocks in KubeJS scripts.
+"""Find `const` declarations inside nested blocks (loops, try/catch, if/else, ...) in KubeJS scripts.
 
-KubeJS's Rhino (2101) gets these wrong at runtime: a `const` inside a for/while body keeps its
-first value on every iteration, and one inside try/catch throws "redeclaration of var". `let` is
-fine everywhere, and `const` is fine at the top of a function or script and inside a plain `if`.
-(Found Oct 26 testing on the server; a const inside a top-level `if` also failed on clients.)
+KubeJS's Rhino (2101) scopes these wrongly: a `const` inside a for/while body keeps its first value
+on every iteration, one inside try/catch or a top-level `if` throws "redeclaration of var", and two
+block consts with the same name in one function clash. `let` is fine everywhere; `const` is safe
+only directly in a function body or at the top level of a script. (Tested Oct 26 on the server.)
 
 Usage: python -I tools/check_kubejs_const.py [kubejs dir]   -> lists offending lines, exit 1 if any
 """
@@ -74,7 +74,7 @@ def check(path):
             for kind in reversed(stack):
                 if kind == "function": break
                 inner.append(kind)
-            if any(k in LOOP_OR_TRY for k in inner):
+            if inner:
                 bad.append(src.count("\n", 0, i) + 1)
     return bad
 
@@ -90,7 +90,7 @@ def main():
                 for ln in check(p):
                     found += 1
                     print(f"{p}:{ln}: {lines[ln - 1].strip()[:110]}")
-    print(f"{found} const declaration(s) inside loops or try blocks")
+    print(f"{found} const declaration(s) inside nested blocks")
     sys.exit(1 if found else 0)
 
 

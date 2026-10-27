@@ -140,10 +140,10 @@ const abyssalRaisePod = (level, server, px, py, pz) => {
   } else {
     area.lightPortal(abyssalBlocks.DARK_PRISMARINE)
     // Re-link whichever Overworld portal led to the buried one.
-    const storage = abyssalPortalsMod.PORTAL_LINKING_STORAGE
-    const links = storage ? storage.PORTAL_LINKS.get(abyssalRL.parse(abyssalDimensionId)) : null
+    let storage = abyssalPortalsMod.PORTAL_LINKING_STORAGE
+    let links = storage ? storage.PORTAL_LINKS.get(abyssalRL.parse(abyssalDimensionId)) : null
     if (links) {
-      const it = links.entrySet().iterator()
+      let it = links.entrySet().iterator()
       let oldKey = null, overworld = null
       while (it.hasNext()) {
         let e = it.next(), k = e.getKey()

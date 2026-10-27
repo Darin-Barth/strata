@@ -14,7 +14,7 @@
 // KubeJS startup scripts share one scope: every top-level name here starts with "portalAmb".
 // Everything lives inside a function: Rhino rejects `const` inside a bare if-block with
 // "redeclaration of var" (0.4.0/0.4.1 clients hit this; the server never runs the block).
-// Also no `const` inside loops or try blocks anywhere (Rhino keeps the first value or throws):
+// Also no `const` inside any nested block anywhere (Rhino reuses the first value or throws):
 // tools/check_kubejs_const.py checks every script.
 const portalAmbSetup = () => {
   const portalAmbMc = Java.loadClass('net.minecraft.client.Minecraft')

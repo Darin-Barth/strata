@@ -34,7 +34,7 @@ Test for any mod: keep if it adds a different way to play; question it if it dup
 2. Configs + KubeJS to-do list (see design doc). 3. Test server on treehouse + backups + Discord bridge + Chunky. 4. Test plan, then FTB Quests. 5. Pokémon world.
 
 ## Working notes
-- KubeJS (Rhino) scripts: never `const` inside a loop body, try/catch or a top-level block (Rhino reuses the first value or throws); use `let`. Run `python -I tools/check_kubejs_const.py` before committing scripts. Client-only code paths aren't exercised by server boots: test them with the guard forced on.
+- KubeJS (Rhino) scripts: never `const` inside a loop body, try/catch or a top-level block (Rhino reuses the first value or throws); use `let`. Run `python -I tools/check_kubejs_const.py` before committing scripts. Some Java names differ through KubeJS wrappers: DamageSource attacker is `.actual` (no getEntity()), a level's dimension is the property `level.dimension` (an ID), `entity.type` is the ID string; probe on the test server when unsure. Client-only code paths aren't exercised by server boots: test them with the guard forced on.
 - packwiz: `packwiz refresh` after manual edits; `packwiz mr add <slug>` / `packwiz cf add <slug>`.
 - Lookup script and results: `tools/` (results in `tools/lookup-results.json`).
 - Configs in `config/` ship with the pack. Pack-balance configs (Quark, ModernFix) are enforced. Per-player comfort/performance configs (Distant Horizons, Camera Overhaul) get `preserve = true` in `index.toml` so updates don't overwrite players' own settings (`packwiz refresh` keeps the flag).
