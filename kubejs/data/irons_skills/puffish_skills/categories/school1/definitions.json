@@ -1,0 +1,610 @@
+{
+  "school_reset": {
+    "title": "Primary School Reset",
+    "description": "This allows you to choose another school without losing the experience!",
+    "cost": "0",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:wayward_compass"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "command": "puffish_skills skills reset @p irons_skills:school1"
+        }
+      }
+    ]
+  },
+  "secondary_school_unlock": {
+    "title": "Unlock Secondary School (Keystone: +10% Spell Power)",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:diamond_spell_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "command": "puffish_skills category unlock @p irons_skills:school2"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "blood_spell_power+0.01": {
+    "title": "+2% Blood Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blood_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "blood_spell_power+0.02": {
+    "title": "+4% Blood Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blood_vial"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "blood_spell_power+0.03": {
+    "title": "+6% Blood Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blood_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ender_spell_power+0.01": {
+    "title": "+2% Ender Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ender_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ender_spell_power+0.02": {
+    "title": "+4% Ender Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ender_spell_power+0.03": {
+    "title": "+6% Ender Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ender_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "evocation_spell_power+0.01": {
+    "title": "+2% Evocation Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:evocation_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "evocation_spell_power+0.02": {
+    "title": "+4% Evocation Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "evocation_spell_power+0.03": {
+    "title": "+6% Evocation Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:evocation_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fire_spell_power+0.01": {
+    "title": "+2% Fire Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:fire_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fire_spell_power+0.02": {
+    "title": "+4% Fire Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fire_spell_power+0.03": {
+    "title": "+6% Fire Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:fire_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "holy_spell_power+0.01": {
+    "title": "+2% Holy Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:holy_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "holy_spell_power+0.02": {
+    "title": "+4% Holy Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:divine_pearl"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "holy_spell_power+0.03": {
+    "title": "+6% Holy Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:holy_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ice_spell_power+0.01": {
+    "title": "+2% Ice Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ice_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ice_spell_power+0.02": {
+    "title": "+4% Ice Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:frozen_bone"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ice_spell_power+0.03": {
+    "title": "+6% Ice Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ice_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "lightning_spell_power+0.01": {
+    "title": "+2% Lightning Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:lightning_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "lightning_spell_power+0.02": {
+    "title": "+4% Lightning Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:lightning_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "lightning_spell_power+0.03": {
+    "title": "+6% Lightning Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:lightning_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "nature_spell_power+0.01": {
+    "title": "+2% Nature Magic Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "nature_spell_power+0.02": {
+    "title": "+4% Nature Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:poisonous_potato"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "nature_spell_power+0.03": {
+    "title": "+6% Nature Magic Power",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:nature_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

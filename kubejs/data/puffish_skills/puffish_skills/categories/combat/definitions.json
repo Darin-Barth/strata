@@ -1,0 +1,297 @@
+{
+  "root": {
+    "title": "+2 Health",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "health_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "melee": {
+    "title": "+6% Melee Damage",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.melee_damage",
+          "value": 0.06,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "attack_speed": {
+    "title": "+5% Attack Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "golden_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.attack_speed",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "bloodthirst": {
+    "title": "Bloodthirst: 5% Life Steal",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "redstone_block"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:life_steal",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Heal for 5% of the damage you deal. Keystone: costs 3 points."
+  },
+  "ranged": {
+    "title": "+6% Ranged Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "arrow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.ranged_damage",
+          "value": 0.06,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "draw_speed": {
+    "title": "+10% Draw Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "deadeye": {
+    "title": "Deadeye: +20% Arrow Speed, 3 Armor Pierce",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "spectral_arrow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:arrow_velocity",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:armor_pierce",
+          "value": 3,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Arrows fly faster and ignore 3 points of armor. Keystone: costs 3 points."
+  },
+  "health": {
+    "title": "+2 Health",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "health_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "resistance": {
+    "title": "+2% Resistance",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "resistance"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.resistance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "bulwark": {
+    "title": "Bulwark: 5% Dodge Chance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "shield"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:dodge_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "5% of attacks miss you completely. Keystone: costs 3 points."
+  },
+  "crit_damage": {
+    "title": "+5% Crit Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_damage",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "move_speed": {
+    "title": "+4% Movement Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.movement_speed",
+          "value": 0.04,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "executioner": {
+    "title": "Executioner: +10% Crit Chance, +25% Crit Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_damage",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
+  }
+}

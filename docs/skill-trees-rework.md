@@ -1,6 +1,7 @@
-# Skill trees rework (draft for Darin, Oct 27)
+# Skill trees rework (Darin approved Oct 27)
 
-Status: **proposal, nothing built yet.** Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
+Status: **built** by `tools/build_skill_trees.py` (queued for 0.5.0; re-run after a skill-tree add-on
+update). Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
 Trees (Combat, Mining), Iron's Spells Dynamic Skill Trees (magic) and our own Fishing tree.
 
 ## Why they feel worthless today
@@ -55,9 +56,12 @@ stone. Same 20-level curve.
 
 Keep the add-on's layout (a general tree, then pick a school, then a second school), but:
 - **XP:** about a third of today's (first tree around 15,000 XP instead of 44,700).
-- **Node values:** tripled, so a spell-power node is +3% and not +1%.
-- **Keystones:** −10% cooldowns at the end of the general tree, +10% school spell power at the
-  end of each school tree.
+- **Node values:** doubled, so a spell-power node is +2% to +6%. (The draft said tripled; with all
+  50 points kept that would have tripled top-end spell power, against "same power at the top".
+  Instead the general tree has half the points, 25, with nodes twice as strong; the school trees
+  keep their points, so a maxed school is about twice as strong as before.)
+- **Keystones:** −10% cooldowns on the node that opens the school trees, and +10% spell power
+  (all schools; the node is shared by every school path) on the node that ends each school tree.
 
 ### Fishing (ours)
 

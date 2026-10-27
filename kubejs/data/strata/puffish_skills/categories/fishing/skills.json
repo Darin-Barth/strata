@@ -50,6 +50,11 @@
     "y": 0,
     "definition": "diver_cap"
   },
+  "-6_0": {
+    "x": -384,
+    "y": 0,
+    "definition": "sea_legs"
+  },
   "1_0": {
     "x": 64,
     "y": 0,

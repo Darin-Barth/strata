@@ -1,0 +1,73 @@
+{
+  "0_0": {
+    "x": 0,
+    "y": 0,
+    "definition": "root",
+    "root": true
+  },
+  "-1_0": {
+    "x": -64,
+    "y": 0,
+    "definition": "speed"
+  },
+  "-2_0": {
+    "x": -128,
+    "y": 0,
+    "definition": "speed"
+  },
+  "-3_0": {
+    "x": -192,
+    "y": 0,
+    "definition": "speed"
+  },
+  "-4_0": {
+    "x": -256,
+    "y": 0,
+    "definition": "speed"
+  },
+  "-5_0": {
+    "x": -320,
+    "y": 0,
+    "definition": "speed"
+  },
+  "-6_0": {
+    "x": -384,
+    "y": 0,
+    "definition": "tunneler"
+  },
+  "1_0": {
+    "x": 64,
+    "y": 0,
+    "definition": "speed"
+  },
+  "2_0": {
+    "x": 128,
+    "y": 0,
+    "definition": "speed"
+  },
+  "3_0": {
+    "x": 192,
+    "y": 0,
+    "definition": "lucky_strike"
+  },
+  "4_0": {
+    "x": 256,
+    "y": 0,
+    "definition": "lucky_strike"
+  },
+  "0_-1": {
+    "x": 0,
+    "y": -64,
+    "definition": "experience"
+  },
+  "0_-2": {
+    "x": 0,
+    "y": -128,
+    "definition": "experience"
+  },
+  "0_-3": {
+    "x": 0,
+    "y": -192,
+    "definition": "deep_delver"
+  }
+}
