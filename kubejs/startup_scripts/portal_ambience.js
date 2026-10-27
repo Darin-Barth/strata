@@ -14,6 +14,8 @@
 // KubeJS startup scripts share one scope: every top-level name here starts with "portalAmb".
 // Everything lives inside a function: Rhino rejects `const` inside a bare if-block with
 // "redeclaration of var" (0.4.0/0.4.1 clients hit this; the server never runs the block).
+// Also no `const` inside loops or try blocks anywhere (Rhino keeps the first value or throws):
+// tools/check_kubejs_const.py checks every script.
 const portalAmbSetup = () => {
   const portalAmbMc = Java.loadClass('net.minecraft.client.Minecraft')
   const portalAmbRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
@@ -105,18 +107,18 @@ const portalAmbSetup = () => {
 
   NativeEvents.onEvent('net.neoforged.neoforge.client.event.sound.PlaySoundEvent', event => {
     try {
-      const sound = event.getOriginalSound()
+      let sound = event.getOriginalSound()
       if (!sound || String(sound.getLocation()) !== 'minecraft:block.portal.ambient') return
-      const level = portalAmbMc.getInstance().level
+      let level = portalAmbMc.getInstance().level
       if (!level) return
-      const x = sound.getX(), y = sound.getY(), z = sound.getZ()
-      const state = String(level.getBlockState(portalAmbBlockPos.containing(x, y, z)))
+      let x = sound.getX(), y = sound.getY(), z = sound.getZ()
+      let state = String(level.getBlockState(portalAmbBlockPos.containing(x, y, z)))
       if (state.indexOf('portals:custom_portal') < 0) return
-      const m = state.match(/texture=([a-z]+)/)
-      const style = m ? portalAmbStyles[m[1]] : null
+      let m = state.match(/texture=([a-z]+)/)
+      let style = m ? portalAmbStyles[m[1]] : null
       if (!style) return
       style.particles(level, x, y, z)
-      const now = Date.now()
+      let now = Date.now()
       if (now < portalAmbNext[m[1]]) {
         event.setSound(null)
         return
@@ -125,13 +127,13 @@ const portalAmbSetup = () => {
       if (Math.random() < style.silenceChance) {
         portalAmbNext[m[1]] = now + style.silenceMs[0] + Math.random() * (style.silenceMs[1] - style.silenceMs[0])
       }
-      const s = portalAmbPick(style.sounds)
-      const soundEvent = portalAmbRegistries.SOUND_EVENT.get(portalAmbRL.parse(s[0]))
+      let s = portalAmbPick(style.sounds)
+      let soundEvent = portalAmbRegistries.SOUND_EVENT.get(portalAmbRL.parse(s[0]))
       if (!soundEvent) {
         event.setSound(null)
         return
       }
-      const pitch = s[3] + Math.random() * (s[4] - s[3])
+      let pitch = s[3] + Math.random() * (s[4] - s[3])
       event.setSound(new portalAmbSimpleSound(soundEvent, portalAmbSoundSource.AMBIENT, s[2], pitch,
         portalAmbSoundInstance.createUnseededRandom(), x, y, z))
     } catch (e) {

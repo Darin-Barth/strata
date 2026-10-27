@@ -71,7 +71,7 @@ const hollowDreadEvents = {
     const px = Math.floor(player.x), py = Math.floor(player.y), pz = Math.floor(player.z)
     const found = []
     for (let dx = -7; dx <= 7; dx++) for (let dy = -3; dy <= 4; dy++) for (let dz = -7; dz <= 7; dz++) {
-      const b = level.getBlock(px + dx, py + dy, pz + dz)
+      let b = level.getBlock(px + dx, py + dy, pz + dz)
       if (hollowDreadTorches.indexOf(String(b.id)) >= 0) found.push(b)
     }
     if (found.length === 0) return false
@@ -93,9 +93,9 @@ const hollowDreadEvents = {
     const d = hollowDreadRand(18, 26)
     const x = Math.floor(player.x - Math.sin(yaw) * d), z = Math.floor(player.z + Math.cos(yaw) * d)
     for (let y = Math.floor(player.y) + 8; y > Math.floor(player.y) - 12; y--) {
-      const ground = level.getBlock(x, y - 1, z), feet = level.getBlock(x, y, z), head = level.getBlock(x, y + 2, z)
+      let ground = level.getBlock(x, y - 1, z), feet = level.getBlock(x, y, z), head = level.getBlock(x, y + 2, z)
       if (ground.id !== 'minecraft:air' && feet.id === 'minecraft:air' && head.id === 'minecraft:air') {
-        const e = level.createEntity('minecraft:enderman')
+        let e = level.createEntity('minecraft:enderman')
         e.setPosition(x + 0.5, y, z + 0.5)
         e.setNoAi(true)
         e.setSilent(true)

@@ -27,13 +27,13 @@ const hollowRavCount = (player, type, radius) => {
 const hollowRavSpawn = (player, type) => {
   const level = player.level
   for (let attempt = 0; attempt < 6; attempt++) {
-    const angle = Math.random() * Math.PI * 2
-    const dist = 48 + Math.random() * 24
-    const x = Math.floor(player.x + Math.cos(angle) * dist)
-    const z = Math.floor(player.z + Math.sin(angle) * dist)
+    let angle = Math.random() * Math.PI * 2
+    let dist = 48 + Math.random() * 24
+    let x = Math.floor(player.x + Math.cos(angle) * dist)
+    let z = Math.floor(player.z + Math.sin(angle) * dist)
     if (!level.isLoaded(new hollowRavBlockPos(x, 64, z))) continue
-    const y = level.getHeight(hollowRavHeightmap.MOTION_BLOCKING_NO_LEAVES, x, z)
-    const pos = new hollowRavBlockPos(x, y, z)
+    let y = level.getHeight(hollowRavHeightmap.MOTION_BLOCKING_NO_LEAVES, x, z)
+    let pos = new hollowRavBlockPos(x, y, z)
     if (!level.canSeeSky(pos)) continue
     if (!level.getBlockState(pos.below()).getFluidState().isEmpty()) continue
     player.server.runCommandSilent(`execute in ${hollowRavDimension} run summon ${type} ${x + 0.5} ${y} ${z + 0.5}`)
@@ -53,7 +53,7 @@ ServerEvents.tick(event => {
     const arrived = player.persistentData.getLong('strata_hollow_arrived')
     if (arrived > 0 && Date.now() - arrived < hollowRavQuietMs) return
     for (let i = 0; i < hollowRavKinds.length; i++) {
-      const k = hollowRavKinds[i]
+      let k = hollowRavKinds[i]
       if (Math.random() >= k[1]) continue
       if (hollowRavCount(player, k[0], k[3]) > k[2]) continue
       hollowRavSpawn(player, k[0])

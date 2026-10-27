@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v0.4.0**, Oct 26, 2026; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- Quieter join chat: no Alex's Caves "incompatible with Tectonic" warning (its cave biomes are off in the Overworld on purpose; the Abyssal Plain uses its abyss content) and no Vampirism Guide-API tip.
+- **Hotfix 0.4.3 (ready):** Abyssal Plain arrival puts players in a Lifepod on the sea floor with its own return portal (Overworld portal re-linked; existing buried portals fixed on the next trip). 28 `const`-in-loop/try Rhino bugs fixed (Lifepod builder, flood rule, dread events, Ravenous spawner, portal sounds). Quieter join chat (Ravenous auto-advancement, backup notices ops-only, DH mod notice for new installs, Alex's Caves and Vampirism tips).
 
 ## Release checklist
 1. Bump `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt`.

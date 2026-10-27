@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "fb793f96e8295ee813b67989024f80d614ce93df912e8879ceb44a5c0302255c"
+hash = "501e3d46ed545a880b3f2db3bf558bfd6dc51891cbf63145c19838125e51af10"
 preserve = true
 
 [[files]]
@@ -170,7 +170,7 @@ hash = "1a9c89005759238032eb29c3fadd4fa307a68a471e450f12d16b39766806d788"
 
 [[files]]
 file = "config/fancymenu/customization/strata_title_screen.txt"
-hash = "fcd4792c74938216ed5ed7f10f7683711397b5a71b46349719c0848f619eadde"
+hash = "65267b861448af396b0c54a0965e9e582b240ec7d4c8392a32f4c8482ae0e790"
 
 [[files]]
 file = "config/fancymenu/customization/strata_world_loading.txt"
@@ -459,6 +459,10 @@ hash = "11b5942622bc408407d15f51ad3b542cc0875f0a86113c55f477c514925c5d6d"
 [[files]]
 file = "config/simplebackups-common.toml"
 hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
+
+[[files]]
+file = "config/simplebackups-server.toml"
+hash = "bef4d3a00c4592215316b65fea55b65ffba26cbf64672358016cf9841ffbd49e"
 
 [[files]]
 file = "config/solonion-client.json"
@@ -5473,6 +5477,10 @@ file = "kubejs/data/strata/worldgen/structure_set/abyssal/wrecks.json"
 hash = "4eb5556dba4c3302c0ffc3835a31f0eeabeb9ce4791ddd6eb85d8139e3a5f65b"
 
 [[files]]
+file = "kubejs/data/the_ravenous/advancement/the_ravenous_advancement.json"
+hash = "645285c3dec5ab7c48f8072ce14de227f6973b0c5dc943d407e045ded1314ce1"
+
+[[files]]
 file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_ravenous_biome_modifier.json"
 hash = "50d9f58d6829a101f5f04829bc00bfda3e7ef8fa256afc645f76348550e5ea94"
 
@@ -5538,15 +5546,15 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "323cdd5eb2e442c7dfa23e2e4fa5c2dd3979d6d102fb03dc9dafb59183bc0d78"
+hash = "355bbd6c287c9f2af61b00462c8f785905d8477d546d7ee4244efd5ab5196c9c"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "fa7d7e837240908ec3f9ed95e035494bf4bdd04f90bc7a7f732b9eba4ed5e363"
+hash = "dc53991d730b42bea975cf99126c66fe36c9251a3d97f5079c257019fb5d11f2"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
-hash = "df04b734c8a12142addc3f1c864d498692fb6a2beaa760c91d6d9776d1a7a507"
+hash = "e01ae32942c7c66297f54cfb5f780591fd5fd0cab71be47e2f030cabb9ce3c6a"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
@@ -5602,7 +5610,7 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "8638c9d911429da486b8c01517ffaa8495aa876de1636830482e967644e3faba"
+hash = "ecdd5b5475da27e1d72f261ec7a92ce50f99ffa7f93d0955c44d133a97529191"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

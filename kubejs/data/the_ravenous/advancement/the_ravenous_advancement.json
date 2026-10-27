@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "the_ravenous:textures/screens/wallskin.png",
+    "icon": {
+      "id": "the_ravenous:ravenous_trophy"
+    },
+    "title": {
+      "translate": "advancements.the_ravenous_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.the_ravenous_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "the_ravenous_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
