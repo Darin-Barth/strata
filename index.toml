@@ -450,11 +450,11 @@ hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
 
 [[files]]
 file = "config/sanity_renewed/default.toml"
-hash = "237a2b57d571054eac030bb71416f57318d9bc9538ba4d59fb540764a93b9106"
+hash = "c2eba5173b31f0f3388eb0881c63e705f494078c9bc87036cb211af03da0db64"
 
 [[files]]
 file = "config/sanity_renewed/dimension/hollow.toml"
-hash = "11b5942622bc408407d15f51ad3b542cc0875f0a86113c55f477c514925c5d6d"
+hash = "88931dcd01cadeee7c2372db6c6eba839f13673407cb653ff58530eaf9df49d7"
 
 [[files]]
 file = "config/simplebackups-common.toml"

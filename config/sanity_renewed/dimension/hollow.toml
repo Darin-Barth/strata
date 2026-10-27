@@ -14,3 +14,8 @@ applied_dimensions = [ "strata:hollow" ]
 	[sanity.multiplayer]
 		# Sticking together matters more in the Hollow
 		sane_player_company = 0.12
+
+[sanity.client]
+	# The brain indicator shows in the Hollow only (default.toml hides it elsewhere).
+	[sanity.client.indicator]
+		render = true

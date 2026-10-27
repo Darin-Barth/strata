@@ -264,7 +264,8 @@
 		#Sanity indicator configuration
 		[sanity.client.indicator]
 			#Whether to render sanity indicator
-			render = true
+			#Strata: hidden outside the Hollow (sanity only matters there); dimension/hollow.toml turns it on.
+			render = false
 			#Whether to twitch sanity indicator at low sanity levels
 			twitch = true
 			#Sanity indicator scale
