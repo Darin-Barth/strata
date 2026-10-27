@@ -86,10 +86,10 @@ q("claims", "Home Sweet Claim", deps="team", icon="minecraft:oak_door", desc="""
     Claimed land is safe from griefing and explosions.""",
   rewards=[give("minecraft:white_bed")])
 
-q("safety", "When Things Go Wrong", deps="claims", icon="gravestone:gravestone", desc="""
+q("safety", "When Things Go Wrong", deps="claims", icon="tombstone:grave_key", desc="""
     Dying isn't the end:
 
-    &eGraveStone&r: your items wait in a grave where you died. Walk back and open it.
+    &eCorail Tombstone&r: your items wait in a grave where you died, and you respawn with a Grave's Key. Hold right-click with the key to teleport to your grave, or walk back and open it.
     &ePlayerRevive&r: when you go down, a friend has a little while to revive you.
     &eRedomesticate&r: if your tamed pet dies, it can be brought back, so it's never lost for good.""",
   rewards=[give("minecraft:golden_carrot", 8)])

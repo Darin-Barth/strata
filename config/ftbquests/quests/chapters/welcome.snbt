@@ -193,7 +193,7 @@
 			x: 5.25d
 			y: 12.0d
 			dependencies: ["772EB687B23B503B"]
-			icon: { id: "gravestone:gravestone" }
+			icon: { id: "tombstone:grave_key" }
 			tasks: [
 				{ id: "56D90B4B31C48506", type: "checkmark" }
 			]

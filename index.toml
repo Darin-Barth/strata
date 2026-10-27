@@ -46,10 +46,6 @@ file = "config/alexsmobs/giant_squid_spawns.json"
 hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
 
 [[files]]
-file = "config/almostunified/debug.json"
-hash = "435ad46870d033c8652097d64c6ec592907e5ab6f1877240532a6a1743d4fca5"
-
-[[files]]
 file = "config/almostunified/duplicates.json"
 hash = "b70f57eadf6eec0ce43acd4c441f08feac1432826e04cb8e2736a73997c20c08"
 
@@ -338,7 +334,7 @@ hash = "6de59d5a91d1392499b8744c84b4217dffc8ec5b43e20a9a566c17a7093dcfa7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "0e6b70850763562d016d283bac76d489672d9bb6ee91f6cdb56e82f713726583"
+hash = "a6ae81156b3048ebf6f0d0e87efa957f929f46cbe967ecd19b95dbeaf527e497"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -346,7 +342,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1f92f55b7a429ebc0a45eb34132be26ee91ebf4a8c36899dae6d61df836006b4"
+hash = "6a3a636158fb027fd29334832bb5bab01404e2a1552d8b15719133156ee16331"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -363,10 +359,6 @@ hash = "2433a67a5f93f11bb3448a2192339f0aa1973a10106db283f57492d4b1984d8b"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
 hash = "0ea63a12f7606224e5700bd4944500ccb3f94e102df02f667fc2cdeb8b96a4e2"
-
-[[files]]
-file = "config/gravestone-server.toml"
-hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -488,6 +480,10 @@ preserve = true
 [[files]]
 file = "config/tide/tide_server.json"
 hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
+
+[[files]]
+file = "config/tombstone-server.toml"
+hash = "71ecedca206053cb791055e56d51a1107c9ba0a91924fa3628be2d1e1ce82815"
 
 [[files]]
 file = "config/vampirism-server.toml"
@@ -5849,6 +5845,10 @@ file = "kubejs/server_scripts/strata_team_protection.js"
 hash = "16900faf31fb733af93b96311387ce93ed4126960cbe65dc61b3992bb9447dc3"
 
 [[files]]
+file = "kubejs/server_scripts/strata_tombstone.js"
+hash = "b52141d7468185a51eb0ce9fdf320c371fcbc2ee8a67c4cb54490eec12afa8b8"
+
+[[files]]
 file = "kubejs/server_scripts/tag_fixes.js"
 hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
@@ -6359,6 +6359,11 @@ metafile = true
 [[files]]
 file = "mods/copycats.pw.toml"
 hash = "a02cb5d1b919b5357e785f4b996cc36480d0a5b5fc5192f21ae1edefd6497657"
+metafile = true
+
+[[files]]
+file = "mods/corail-tombstone.pw.toml"
+hash = "7b4e74ebfc923568149d8a27a90217788713f184af1333d2f93708dfbab83dfd"
 metafile = true
 
 [[files]]
@@ -6884,11 +6889,6 @@ metafile = true
 [[files]]
 file = "mods/glow-sticks.pw.toml"
 hash = "ea07b84d03030c6a72c5d089cc46b2a2271ec2b7c9f371291bbf011b94da2372"
-metafile = true
-
-[[files]]
-file = "mods/gravestone-mod.pw.toml"
-hash = "177f9a246f67d8d5eb0038ea6dcd107ab1d9f815cac6dd5e710c5cec36369b93"
 metafile = true
 
 [[files]]
