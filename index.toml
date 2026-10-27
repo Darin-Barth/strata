@@ -5597,6 +5597,10 @@ file = "kubejs/server_scripts/tag_fixes.js"
 hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
+file = "kubejs/startup_scripts/abyssal_vampire_air.js"
+hash = "c3ff49e0d34b0cbd5c67618c2bd5a2c11cc701b7c6303acb041fa484cfaffe60"
+
+[[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
 hash = "07e31c2d67d74f12c0dcde5bd6016a4f0f0d5550f08ab68c7b0f96bc8706601b"
 
