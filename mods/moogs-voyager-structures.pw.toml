@@ -11,3 +11,6 @@ hash = "80e9e4a6543e8fc7d24d7e1fb4d4245d1d30f9aaf02ae2ba1098956106bea411a4502ce1
 [update.modrinth]
 mod-id = "OQAgZMH1"
 version = "PiFoSPXI"
+[update.curseforge]
+file-id = 8970306
+project-id = 656977

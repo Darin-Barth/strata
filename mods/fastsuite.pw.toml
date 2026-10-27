@@ -11,3 +11,6 @@ hash = "16356d513a7569d3b6815c4697b916098e0fdfbe2f2d0189c19099e95569a363d1442607
 [update.modrinth]
 mod-id = "roccmqou"
 version = "OQZRQcDM"
+[update.curseforge]
+file-id = 7527945
+project-id = 475117

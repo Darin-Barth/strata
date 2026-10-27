@@ -11,3 +11,6 @@ hash = "b2d04d89333dd4da4636275e49ad9c59f347e64dbc48e169253eefbd9b2828c5652a41c3
 [update.modrinth]
 mod-id = "RpyTo7KH"
 version = "x4IDBdv8"
+[update.curseforge]
+file-id = 7333573
+project-id = 1085994

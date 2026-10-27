@@ -12,3 +12,6 @@ hash = "832167baa1bbf5938a6a9be67925bc491aa35b1b83b89a16ae83ddfcfecfc3d78c56b2e5
 [update.modrinth]
 mod-id = "Wq5SjeWM"
 version = "E22W2MsG"
+[update.curseforge]
+file-id = 8089432
+project-id = 367706

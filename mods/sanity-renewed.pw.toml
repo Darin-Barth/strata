@@ -11,3 +11,6 @@ hash = "37f5d85b869928671db9b60df6062ae5a44477d4070c797a234b84ec75401ef31f5d821e
 [update.modrinth]
 mod-id = "Fq25IOS1"
 version = "irfuxUSJ"
+[update.curseforge]
+file-id = 8727008
+project-id = 1547994

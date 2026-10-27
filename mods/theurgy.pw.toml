@@ -11,3 +11,6 @@ hash = "9adc54b4cf2f0f2901aa2bccf175cfc067337f56573d6fb0060180b1c03e4db518cdf4e4
 [update.modrinth]
 mod-id = "uOVMgoil"
 version = "AZi4xOcw"
+[update.curseforge]
+file-id = 9080461
+project-id = 430636

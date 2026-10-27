@@ -12,3 +12,6 @@ hash = "395b5b1fdde9b0c2b02322118aae01f901dca624014db64c093e7d6fcada351a73d8c503
 [update.modrinth]
 mod-id = "UaizcMKP"
 version = "OrkSfQ0u"
+[update.curseforge]
+file-id = 8228839
+project-id = 1101501

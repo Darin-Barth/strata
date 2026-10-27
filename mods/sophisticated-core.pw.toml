@@ -11,3 +11,6 @@ hash = "e4b24ceb806443a5f6611ef4b10e193d300d0aba507a64c64c52f9ebd1cdb95052e6eebc
 [update.modrinth]
 mod-id = "nmoqTijg"
 version = "gtPF4VTh"
+[update.curseforge]
+file-id = 9279274
+project-id = 618298

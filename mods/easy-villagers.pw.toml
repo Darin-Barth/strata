@@ -11,3 +11,6 @@ hash = "8d74ed2130cc8b5b07b71378abb645f2e6326580b5f3a8ceb5ab3ae7be8a80d17b2e9afb
 [update.modrinth]
 mod-id = "Kaov2qgi"
 version = "Z8Z2WZUm"
+[update.curseforge]
+file-id = 9289481
+project-id = 400514

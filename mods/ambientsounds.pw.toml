@@ -11,3 +11,6 @@ hash = "1e615137f1e4d4e2cd0f366560922304f6d96ce7a73e9e55bae2572a1f03916efccc633b
 [update.modrinth]
 mod-id = "fM515JnW"
 version = "WGalCQAo"
+[update.curseforge]
+file-id = 9254776
+project-id = 254284

@@ -11,3 +11,6 @@ hash = "a30c55813348a1f1f2869996e627f7357b9a47de478c477ef02b767d36a33f4ffad8836c
 [update.modrinth]
 mod-id = "BpwWFOVM"
 version = "swTb6NU9"
+[update.curseforge]
+file-id = 7919197
+project-id = 309516

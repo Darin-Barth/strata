@@ -11,3 +11,6 @@ hash = "5bb854764e4174d1c4de8614a4409604506e65625c233752aae02c60855c6b1777dcb950
 [update.modrinth]
 mod-id = "72RRCWM6"
 version = "ALACNhoR"
+[update.curseforge]
+file-id = 9315745
+project-id = 1470590

@@ -11,3 +11,6 @@ hash = "c9c4f22ed1657da646331f519e5d40495cc7e92a6683800691823dfcaf858973c8f20228
 [update.modrinth]
 mod-id = "rOUBggPv"
 version = "OG6Edgmm"
+[update.curseforge]
+file-id = 9083552
+project-id = 454372

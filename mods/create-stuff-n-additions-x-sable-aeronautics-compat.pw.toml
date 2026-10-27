@@ -11,3 +11,6 @@ hash = "f0b4ecbaaaa1886e392901fc6e131873536af04b51c3dc43b67bcd276f32dcaed07ea9cb
 [update.modrinth]
 mod-id = "gsAqDfOu"
 version = "iGTmXDCM"
+[update.curseforge]
+file-id = 9000433
+project-id = 1541139

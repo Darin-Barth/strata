@@ -11,3 +11,6 @@ hash = "4acbb13a3484b4095b0bcba01e1b8add1974a2db1733e13f7f3c8048c8967ff5f351ccc5
 [update.modrinth]
 mod-id = "cdEXZLO4"
 version = "j2XQWLuk"
+[update.curseforge]
+file-id = 6486273
+project-id = 1238317

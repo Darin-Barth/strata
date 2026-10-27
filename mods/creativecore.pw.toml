@@ -11,3 +11,6 @@ hash = "864301fa1229511203fc291e9b683db5af3cb4aa4faed0ef1eb54112491b3c97f9b5006b
 [update.modrinth]
 mod-id = "OsZiaDHq"
 version = "vRMtFt35"
+[update.curseforge]
+file-id = 9108041
+project-id = 257814

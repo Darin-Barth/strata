@@ -11,3 +11,6 @@ hash = "d4d0a383b5288a7272392ae475d67bc947cd019bc627612bd01992f5ecd702bda078fe75
 [update.modrinth]
 mod-id = "btq68HMO"
 version = "qZxkZR8W"
+[update.curseforge]
+file-id = 9104646
+project-id = 820977

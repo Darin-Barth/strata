@@ -11,3 +11,6 @@ hash = "44567e3ca5f39c6a70b3bf68bce37de5455c04c54bb6f373041c049d7d8ec5ba54137c3c
 [update.modrinth]
 mod-id = "QivVPB8W"
 version = "kbVnoPBK"
+[update.curseforge]
+file-id = 9290817
+project-id = 514468

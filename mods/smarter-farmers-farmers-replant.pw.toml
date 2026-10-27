@@ -11,3 +11,6 @@ hash = "a79babd2e4fd42823dbbfc6afedd30e57462d693fe255b7e4306023d0567f183196c9b14
 [update.modrinth]
 mod-id = "Bh6ZOMvp"
 version = "odppGdXf"
+[update.curseforge]
+file-id = 7120722
+project-id = 491290

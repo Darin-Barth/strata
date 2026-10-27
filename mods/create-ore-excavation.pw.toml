@@ -11,3 +11,6 @@ hash = "844ae32ff0d22f4d3c83db3bae2f6edc0f74cd1a530f900bf18829838d5a354b1e439e52
 [update.modrinth]
 mod-id = "ResbpANg"
 version = "tivxiPTo"
+[update.curseforge]
+file-id = 7199305
+project-id = 649832

@@ -11,3 +11,6 @@ hash = "4d969c457a01e49a242ebc03112031bd338be08fc4ab36540b222b0a64e72a778a6534ad
 [update.modrinth]
 mod-id = "derP0ten"
 version = "dauEcrnZ"
+[update.curseforge]
+file-id = 7232511
+project-id = 852665

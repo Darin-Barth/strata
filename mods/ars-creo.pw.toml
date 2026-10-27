@@ -11,3 +11,6 @@ hash = "55204c30088bdfbb8764a50b0bf61aa80aeb234c5200aa5cc35224d1b58940df3e0fbbdd
 [update.modrinth]
 mod-id = "fZ324GMc"
 version = "LqOllHms"
+[update.curseforge]
+file-id = 8139067
+project-id = 575698

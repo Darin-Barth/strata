@@ -11,3 +11,6 @@ hash = "7e7dcccde6e4c37483ad6a9958635833503f7fdb647e4e8369484d7e416ec08b02ae1a59
 [update.modrinth]
 mod-id = "nqFNRALS"
 version = "nCXGFcYp"
+[update.curseforge]
+file-id = 8126896
+project-id = 1288799

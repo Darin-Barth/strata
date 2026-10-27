@@ -11,3 +11,6 @@ hash = "c3d8511f5eec5a4ec7240f69cf6952038d72d4e32b48a0ace7b10d729a4073c1181e6dbc
 [update.modrinth]
 mod-id = "JWGBpFUP"
 version = "L6VSDdC4"
+[update.curseforge]
+file-id = 9104664
+project-id = 688768

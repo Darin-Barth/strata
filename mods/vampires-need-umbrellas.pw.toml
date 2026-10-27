@@ -11,3 +11,6 @@ hash = "a15d8336f7f73b9b12245b7f222bfd2acf452572406661ba720b768528934dbfa558c401
 [update.modrinth]
 mod-id = "FaUysFni"
 version = "gA6GeHzf"
+[update.curseforge]
+file-id = 6902555
+project-id = 364129

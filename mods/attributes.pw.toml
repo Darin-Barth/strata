@@ -11,3 +11,6 @@ hash = "e92d8a653b8c8e0b481aac1722ac5da9ca9174e61b3607e1b28c714e55c6b6399f68592b
 [update.modrinth]
 mod-id = "FCFcFw09"
 version = "ZySEqrUb"
+[update.curseforge]
+file-id = 8610466
+project-id = 991341
