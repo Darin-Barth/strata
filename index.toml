@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "501e3d46ed545a880b3f2db3bf558bfd6dc51891cbf63145c19838125e51af10"
+hash = "567071bf8885e9bfa88a024563ba01235789b10234c1d0b01471d54dde4d01ce"
 preserve = true
 
 [[files]]
@@ -151,6 +151,10 @@ hash = "ef7bed1f286e6040a4d2c5fc5b5e21ae938986375a9e89fe47b90ba5cd230796"
 [[files]]
 file = "config/everycomp-common.toml"
 hash = "36bd0375bd32e4fb60ed53e1b7fa61ebec8855c7ea68b230b3119a7d2afe31e3"
+
+[[files]]
+file = "config/everycomp-hazardous.toml"
+hash = "5315010e41d1754de8fbd8540f9af697f819b108e8d94c7226881009d99a1ad5"
 
 [[files]]
 file = "config/fancymenu/assets/strata/background.png"
