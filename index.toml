@@ -6051,7 +6051,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobblestructures.pw.toml"
-hash = "b039333c0042fc6e90fef9ce9590fe2a77a9b69ddc8f22f1e517c99f885995f9"
+hash = "687513461b8b6b7d71f1691656a1c73f3283367bd35205494d994c257326a00b"
 metafile = true
 
 [[files]]
@@ -7511,7 +7511,7 @@ metafile = true
 
 [[files]]
 file = "mods/sunken-spires.pw.toml"
-hash = "bb55a451673c82a1298a2c2394179ac0c8b75fea012117ba942e3bef72c8fcd6"
+hash = "45b5b3b45e1b601e814b01c6622ba806aa1c8aad20f3ef047d47f4259ffea9e0"
 metafile = true
 
 [[files]]

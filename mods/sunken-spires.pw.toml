@@ -1,6 +1,6 @@
 name = "Sunken Spires"
 filename = "sunken-spires-1.0.jar"
-side = "both"
+side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/annHP7q0/versions/z8rNnW0F/sunken-spires-1.0.jar"

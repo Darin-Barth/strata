@@ -119,14 +119,15 @@ def main():
             entry = (manual[fn]["project-id"], manual[fn]["file-id"])
         if entry:
             new += f"[update.curseforge]\nfile-id = {entry[1]}\nproject-id = {entry[0]}\n"
-        else:
+        elif field(t, "side") != "server":     # server-only files never go into the players' zip
             missing.append(fn)
         if new != t:
             open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1
     stale = [k for k in manual if k not in {v[1] for v in files.values()}]
     print(f"{len(files)} Modrinth files: {len(ids)} matched on CurseForge, "
-          f"{len(files) - len(ids) - len(missing)} from curseforge-manual.json, {len(missing)} without; {changed} rewritten")
+          f"{sum(1 for v in files.values() if v[1] in manual)} from curseforge-manual.json, "
+          f"{len(missing)} players need without one; {changed} rewritten")
     for fn in missing:
         print(f"  no CurseForge file (goes into the zip's overrides): {fn}")
     for k in stale:
