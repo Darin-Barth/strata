@@ -346,7 +346,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6c5f79a93688e660052472132cbf479050e6910f77d5ceebf135cb0ed65bf35f"
+hash = "1f92f55b7a429ebc0a45eb34132be26ee91ebf4a8c36899dae6d61df836006b4"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -398,7 +398,7 @@ hash = "afd73d64ac978202fcfadf461cb60294cd54cf1a194bb9a3fdd5da466b9e8846"
 
 [[files]]
 file = "config/inventorypets-common.toml"
-hash = "31ae174bc8ebaa8601b1cbb84ab8ab760b1298f2ef6fdaecdb03f7a46bbf8743"
+hash = "b449cb23f03701629407de7c22b9c580fe3d7e4bbcc94d83eccb22f4230fd32d"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -2822,7 +2822,7 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "0b6f5c78c09a4472424cabac44391306928dc0dc73dd6a50e3b1285580776016"
+hash = "737cc3ae854b5150fd31576680e130c3b06926e6e76ed20918ce6f9ec50576c0"
 
 [[files]]
 file = "kubejs/data/neovitae/recipe/alchemytable/reagent_teleposition.json"
@@ -4661,12 +4661,176 @@ file = "kubejs/data/strata/loot_modifiers/hollow_ember/weeping_angels/catacombs.
 hash = "d925b94d8054d50a0c741dd932e9280bbde27a5ebba5de4cdb0a3ebc34fb75d3"
 
 [[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterdeserttemples/storage.json"
+hash = "ad63aa67a88055b4fcc90b557f60f3a242b62546f7f9162a2b7cd75990c84e03"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterdungeons/skeleton_dungeon/common.json"
+hash = "4d0f3e4514f80abc913e032c41ab28278521267f1e4fc0f257ac7d6493874526"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterdungeons/small_dungeon/loot_piles.json"
+hash = "23ada80e5c0751ce390e1a092e5b46ac7530ff5484c37b5de250798e8ec07830"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterdungeons/spider_dungeon/egg_room.json"
+hash = "a2c880df2372c1696085d2bfa4c88e9e20d825461ab1fa8856f4b42d7c081ff5"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterdungeons/zombie_dungeon/common.json"
+hash = "95a76a05c53d14bffe34dbdfaf3f2dd8d03d525232661afcee75927ed1186a8b"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterjungletemples/campsite.json"
+hash = "00e805990e419d38739fc2ca1fa5cc0413f8c00e509433f0785dc25070f2d9f7"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/betterwitchhuts/hut_0.json"
+hash = "dbec53d3896b2922a48a3243c2fd0679f118406d9d2f4a2467e76e0411450f08"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/abandoned_mineshaft.json"
+hash = "49e3873bca6f5644329243df8e12726c0a850e43b2fbe001d5937348100c448c"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/buried_treasure.json"
+hash = "195eed5a341f5074bffb681575786f02ea3171cf1f7131f0d03c3c575b4158dc"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/desert_pyramid.json"
+hash = "50566ebd6faf36bc8a856bfd82b3c85942dffb0b3517cdd38107dd4b0c21be49"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/igloo_chest.json"
+hash = "543049fd13de5bb749bf5359305b089819de10782850e281163ecea651973c04"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/jungle_temple.json"
+hash = "3a693c6c2e62cca9b5eeef368ee1ba02654eaa6858ff0ff09f5260d4e0916134"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/pillager_outpost.json"
+hash = "a6e076af16da81c609fd656c485e441454d3077152f7d12d9a5bc1e677cc2c55"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/ruined_portal.json"
+hash = "31ca0d0c5b44369942896fbb4ef9f40f06e9bd9be680102e8ca8a48a60dae608"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/shipwreck_treasure.json"
+hash = "889bf6748d4f2880ddb474a3c043edb1e3021e615389568f6d40a8879007590f"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/common/minecraft/simple_dungeon.json"
+hash = "8a9978f1022b644ff8a854ed5037221ac86bc4624da7d51a23ce1b80a0720e37"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/betterdeserttemples/tomb_pharaoh.json"
+hash = "413545c20ec249b6c1cccc7effc5b69c5fc7191e9363253bad93efd86aef560a"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/integrated_stronghold/sanctorum.json"
+hash = "43c59fa12e034ea5078f11874a4e164a3ae2e897f7e65bd69f06cf6abda3ed6a"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/minecraft/ancient_city.json"
+hash = "b9cfa02b154cd1d25a7ea9b1f4e763c11e20a86488735103bf1d7af936c78bda"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/minecraft/bastion_treasure.json"
+hash = "f95a959c1e89cd65ae63053eabc28fd101cfe59dfa5ab66fc79647937aad67e9"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/minecraft/end_city_treasure.json"
+hash = "86868e8c55c736b4a9fe566fa8004076e1f6039fdfdad9a9e307142813ff15c2"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/legendary/minecraft/trial_chambers/reward_ominous.json"
+hash = "40f6080c74a455fea425ce213cfcad2c9b8e5d4fa9f9b9d972e99bb950ef3acb"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterdeserttemples/tomb.json"
+hash = "a18bda60ca722d489fac1d96047b95fcdeccb1820e477570557e0965d5ed1a68"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterdungeons/skeleton_dungeon/middle.json"
+hash = "7853c7741e2f76f950a1869c5a3a7b6473dbefb686546d413f170826979de0bf"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterdungeons/zombie_dungeon/tombstone.json"
+hash = "059a6b4dd65c21cb8c239f741a51e3d40fd4381c506c80aa50b1dce2ada2ba0d"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterfortresses/hall.json"
+hash = "03dad0e8a81ecdcfd0e815f638bfc0ef5bb640ea8f53924305a64d297f878aba"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterfortresses/keep.json"
+hash = "d74d22c8c164cf7dd4f543ac50d8bcbcff9819b35953fc3fa9d56ffd93c4f439"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betterjungletemples/treasure.json"
+hash = "161dc7f5f270811c3cf9a24df0d7fbc626325c2555c95058b1ae1f0cdf1e9414"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/betteroceanmonuments/upper_side_chamber.json"
+hash = "2c0d4e77b8896a4efbae3195391e2162b24a3ded1adafd2d7ca6790348e71412"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/integrated_stronghold/armory.json"
+hash = "0f110e9ef33e2f0d60236425021480c6276a0e65e1a7055fb41c13f1f215af32"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/integrated_stronghold/grand_library.json"
+hash = "aef1deeff5bbe499c31f586d5d315b4d101054fc3aa8ca0de749cfcb82c5bac7"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/integrated_stronghold/treasure.json"
+hash = "a79f9ecee13888e3e0d6a7d02d5295747cddfa8567914ff990a9344be4dd479b"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/bastion_other.json"
+hash = "9473f1ca7400596e8906244f4d86b1f090d2f44f5154e05b06d4e260ccb4b96e"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/nether_bridge.json"
+hash = "5f48ac7d6eaddaa2e726cd0159033ae7cacd0d4f133276d855e301dc97dda421"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/stronghold_corridor.json"
+hash = "7b7801a193b8ff46560a37205845e03ddcf860876cab26e2f9b389462e0a3b03"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/stronghold_library.json"
+hash = "33344f8faf1464c01ed5eb2aceeee8b39cdec0d6f9ca51ec01b76fe82ad40987"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/trial_chambers/reward.json"
+hash = "022ff3c9f414c62d00e9666838c49953ac8179634dc486aa1c5befd032bf3cb4"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/woodland_mansion.json"
+hash = "44d671dafeb14e93e4595838d19f24758504c1797fea1edfeecdc4f58b8893eb"
+
+[[files]]
 file = "kubejs/data/strata/loot_table/inject/abyssal_pearl.json"
 hash = "fb299fd20d4348451547500fa034252d3a95f6ad02e5bb100fc315a30206d2b3"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/inject/hollow_ember.json"
 hash = "da84abb1291efd114a964c4b758701a2d76f468dbb0a49010b1b3e3b0b62289f"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/inject/pets_common.json"
+hash = "ebc6b14a5050628adc18cff9409826214d9846b9cde1d44ab856b127d2185c50"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/inject/pets_legendary.json"
+hash = "c0e89e498903ac8fb3d8dede0debd8171f1bedd96bdd284daebe9960bcae3e1d"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/inject/pets_rare.json"
+hash = "c53e5f5e5c587a4d0f95f076cbda2b1253ea9f04681a0bb2c8d50d3d4477b116"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/lootified/inventorypets/nether_dungeon/0.json"
@@ -4951,6 +5115,18 @@ hash = "a33402323c711ed2d599d76b078e8cba20c6cf06343d5c322e0d9b22eafd018e"
 [[files]]
 file = "kubejs/data/strata/tags/item/lich_relics.json"
 hash = "fff98c588d140200149320fe5af7e76e26eb6d163189f806ad36df53ca06418b"
+
+[[files]]
+file = "kubejs/data/strata/tags/item/pets/common.json"
+hash = "5128352222de3bd880334ad050448aa8952bb8694769457aad07e1b4ec42963e"
+
+[[files]]
+file = "kubejs/data/strata/tags/item/pets/legendary.json"
+hash = "8565f753c377951055d97bfd110513d2ab4ff2538e4184ece678f351c0bbf8c8"
+
+[[files]]
+file = "kubejs/data/strata/tags/item/pets/rare.json"
+hash = "70114598effd846b70a5769c0f855012fc2c6903badfa976c4600357455d479f"
 
 [[files]]
 file = "kubejs/data/strata/tags/worldgen/biome/abyssal_deep.json"
@@ -5583,6 +5759,10 @@ hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
 [[files]]
 file = "kubejs/server_scripts/strata_home.js"
 hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
+
+[[files]]
+file = "kubejs/server_scripts/strata_pets.js"
+hash = "32edb50e44c54c157f5459ca314909c74293d300ff0faf7a39e6f058e3be5654"
 
 [[files]]
 file = "kubejs/server_scripts/strata_power.js"

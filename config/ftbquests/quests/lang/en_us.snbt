@@ -4507,7 +4507,9 @@
 	task.39035EB3F79DAC78.title: "Get your first Inventory Pet"
 	quest.2EAEB13007DBA1D1.title: "Pets in Your Pocket"
 	quest.2EAEB13007DBA1D1.quest_desc: [
-		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. Some cute ones to start with:"
+		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; End cities and ancient cities the legendary ones."
+		""
+		"Some cute ones to look out for:"
 		""
 		"&eChicken Pet&r: a speed boost, and it lays eggs for you."
 		"&eCow Pet&r: clears bad potion effects and fills buckets with milk."
@@ -4525,7 +4527,7 @@
 	quest.490063265F5E24D9.quest_desc: [
 		"Collect five different pocket pets! Good ones for cozy players: the Sheep, Mooshroom, Banana, Jukebox, Bed and Crafting Table pets."
 		""
-		"Press &eR&r on a pet to see its recipe and &eU&r on its food."
+		"Press &eU&r on a pet's food to see how to make it."
 	]
 	task.03914571C3B810EF.title: "Visit a Tree Top"
 	quest.4C2A84DBE0B7E5CC.title: "Find a Pet Dungeon"

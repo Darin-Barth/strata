@@ -66,7 +66,7 @@
 	#Allow Petrifier to make legendary pets (default:false)
 	allowPetrifierLegendaries = false
 	#Disable the Petrifier (default:false)
-	disablePetrifier = false
+	disablePetrifier = true
 	#Enable Loot Pet with FTBUltimine installed (default:false)
 	enableLootWithFTBUltimine = false
 	#Disable Machines that can Activate items (default:false)
@@ -112,7 +112,7 @@
 	#Illuminati cooldown duration in minutes (default: 1)
 	# Default: 1
 	# Range: 1 ~ 10
-	illuminatiCooldown = 1
+	illuminatiCooldown = 10
 	#Illuminati invisibility duration in minutes (default: 1)
 	# Default: 1
 	# Range: 1 ~ 3
@@ -124,7 +124,7 @@
 	#Juggernaut cooldown duration in minutes (default: 1)
 	# Default: 1
 	# Range: 1 ~ 10
-	juggernautCooldown = 1
+	juggernautCooldown = 10
 	#Juggernaut shield wall duration in minutes (default: 1)
 	# Default: 1
 	# Range: 1 ~ 3
@@ -136,9 +136,9 @@
 	#Factor by which PacMan Powerup bonus increases with every kill (default: 3)
 	# Default: 3
 	# Range: 1 ~ 10
-	pacManPowerupFactor = 3
+	pacManPowerupFactor = 1
 	#Disable Pingot Pet auto extract ability (default:false)
-	disablePingotAutoExtract = false
+	disablePingotAutoExtract = true
 	#Reduce the number of Quantum Crystal Monster Pet minions (default:false)
 	reduceQuantumCrystalMonsterMinions = false
 	#Disable Slime revival sound (default:false)
@@ -162,7 +162,7 @@
 	# Range: 1 ~ 5000
 	petEatTimerFactor = 120
 	#Anvil Pet's favorite food
-	foodAnvil = "minecraft:iron_nugget"
+	foodAnvil = "minecraft:iron_ingot"
 	#Apple Pet's favorite food
 	foodApple = "minecraft:gold_ingot"
 	#April Fool Pet's favorite food
@@ -174,7 +174,7 @@
 	#Biome Pet's favorite food
 	foodBiome = "minecraft:grass_block"
 	#Black Hole Pet's favorite food
-	foodBlackHole = "inventorypets:nugget_obsidian"
+	foodBlackHole = "inventorypets:nugget_ender"
 	#Blaze Pet's favorite food
 	foodBlaze = "minecraft:quartz"
 	#Brewing Stand Pet's favorite food
@@ -224,15 +224,15 @@
 	#Iron Golem Pet's favorite food
 	foodIronGolem = "minecraft:iron_ingot"
 	#Illuminati Pet's favorite food
-	foodIlluminati = "inventorypets:nugget_emerald"
+	foodIlluminati = "inventorypets:nugget_diamond"
 	#Juggernaut Pet's favorite food
-	foodJuggernaut = "inventorypets:nugget_obsidian"
+	foodJuggernaut = "inventorypets:nugget_diamond"
 	#Jukebox Pet's favorite food
 	foodJukebox = "minecraft:redstone"
 	#Lead Pet's favorite food
 	foodLead = "minecraft:string"
 	#Loot Pet's favorite food
-	foodLoot = "minecraft:gold_nugget"
+	foodLoot = "inventorypets:nugget_emerald"
 	#Magma Cube Pet's favorite food
 	foodMagmaCube = "minecraft:quartz"
 	#Mickerson Pet's favorite food
@@ -246,19 +246,19 @@
 	#Ocelot Pet's favorite food
 	foodOcelot = "minecraft:cooked_cod"
 	#Pac-Man Pet's favorite food
-	foodPacMan = "minecraft:cookie"
+	foodPacMan = "minecraft:golden_carrot"
 	#Pig Pet's favorite food
 	foodPig = "minecraft:carrot"
 	#Pingot Pet's favorite food
 	foodPingot = "inventorypets:nugget_diamond"
 	#Pixie Pet's favorite food
-	foodPixie = "inventorypets:nugget_emerald"
+	foodPixie = "inventorypets:nugget_diamond"
 	#Pufferfish Pet's favorite food
 	foodPufferfish = "minecraft:glowstone_dust"
 	#Purplicious Cow Pet's favorite food
 	foodPurpliciousCow = "inventorypets:nugget_diamond"
 	#Quantum Crystal Monster Pet's favorite food
-	foodQuantumCrystalMonster = "inventorypets:nugget_lapis"
+	foodQuantumCrystalMonster = "inventorypets:nugget_emerald"
 	#Quiver Pet's favorite food
 	foodQuiver = "minecraft:feather"
 	#Saddle Pet's favorite food
@@ -270,7 +270,7 @@
 	#Siamese Pet's favorite food
 	foodSiamese = "minecraft:cooked_chicken"
 	#Silverfish Pet's favorite food
-	foodSilverfish = "minecraft:cobblestone"
+	foodSilverfish = "inventorypets:nugget_ender"
 	#Slime Pet's favorite food
 	foodSlime = "minecraft:golden_apple"
 	#Snow Golem Pet's favorite food
@@ -282,11 +282,11 @@
 	#Squid Pet's favorite food
 	foodSquid = "minecraft:cod"
 	#Sun Pet's favorite food
-	foodSun = "minecraft:gold_ingot"
+	foodSun = "inventorypets:nugget_diamond"
 	#Torch Pet's favorite food
 	foodTorch = "inventorypets:nugget_coal"
 	#Wither Pet's favorite food
-	foodWither = "minecraft:soul_sand"
+	foodWither = "inventorypets:nugget_netherite"
 	#Wolf Pet's favorite food
 	foodWolf = "minecraft:bone"
 	#Disable the Anvil pet (default:false)

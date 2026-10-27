@@ -75,7 +75,11 @@ q("horn", "Call Your Horse", deps="horse", icon="horseman:copper_horn", tier=2,
 q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chicken", tier=2,
   tasks=adv("inventorypets:1", title="Get your first Inventory Pet"), desc="""
     &eInventory Pets&r are tiny helpers that live in your inventory. Each one has a
-    little power. Some cute ones to start with:
+    little power. You can't craft them here: you &afind&r them in chests. Dungeons,
+    mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses
+    the handy ones; End cities and ancient cities the legendary ones.
+
+    Some cute ones to look out for:
 
     &eChicken Pet&r: a speed boost, and it lays eggs for you.
     &eCow Pet&r: clears bad potion effects and fills buckets with milk.
@@ -96,7 +100,7 @@ q("pet_collector", "Pet Collector", deps="pocket_pet", icon="inventorypets:pet_s
     Collect five different pocket pets! Good ones for cozy players:
     the Sheep, Mooshroom, Banana, Jukebox, Bed and Crafting Table pets.
 
-    Press &eR&r on a pet to see its recipe and &eU&r on its food.""",
+    Press &eU&r on a pet's food to see how to make it.""",
   rewards=[give("inventorypets:nugget_emerald", 8), give("plushies:sheep_plushie")])
 
 q("pet_dungeon", "Find a Pet Dungeon", deps="pocket_pet", icon="inventorypets:nugget_diamond",
