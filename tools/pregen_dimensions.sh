@@ -3,7 +3,7 @@
 # each dimension has its own scheduler thread). Run WITHOUT C2ME. Usage: tools/pregen_dimensions.sh
 set -u
 r(){ docker exec strata-world rcon-cli "$*" 2>&1 | sed 's/\x1b\[[0-9;]*m//g'; }
-QUEUE=("minecraft:the_nether -45 -408 1250" "minecraft:the_end 0 0 2000" "aether:the_aether -358 -3260 1500" "pokeworld:pokeworld -358 -3260 2000" "twilightforest:twilight_forest -358 -3260 1500")
+QUEUE=("minecraft:the_nether 52 2 1250" "minecraft:the_end 0 0 2000" "aether:the_aether 416 16 1000" "pokeworld:pokeworld 416 16 2000" "twilightforest:twilight_forest 416 16 1500" "strata:abyssal_plain 416 16 1000" "strata:hollow 416 16 1000")
 r "sable paused true" >/dev/null
 start_task(){ set -- $1; r "chunky world $1" >/dev/null; r "chunky center $2 $3" >/dev/null; r "chunky shape circle" >/dev/null; r "chunky radius $4" >/dev/null; r "chunky start" >/dev/null; r "chunky confirm" >/dev/null; echo "$(date +%H:%M) started $1 r=$4"; }
 running=0; i=0; t0=$(date -u +%Y-%m-%dT%H:%M:%SZ)

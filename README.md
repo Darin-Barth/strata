@@ -40,6 +40,7 @@ Strata is built around travel and earning your power, so a few things work diffe
 - **Teleporting is limited.** Everyone gets one `/home` (`/sethome` to set it, 10-second cooldown). There's no `/back`, `/rtp` or `/tpa`. Waystones cost XP: more for long trips, extra across dimensions. You can *earn* teleporting later (Mekanism teleporters, Ars Nouveau warps, blink spells).
 - **Flight takes effort.** Every way to fly takes real work to get (boss materials, late-game tiers, a tamed dragon) or costs something to run (fuel, power, mana, food, stamina).
 - **Difficulty is per player.** Pick your own Apotheosis World Tier (Ctrl+T) once you unlock more. Bosses keep their designed strength.
+- **Every dimension has its own ores.** The basics are at home; osmium is richest under the Abyssal Plain's seafloor, mithril grows in the Hollow, and draconium waits in the Nether and the End ([ore map](docs/ore-map.md)).
 - **Late tiers are boss-gated.** Nuclear power, top storage, the best rockets and the strongest magic need boss drops, Hollow Embers or Abyssal Pearls ([gate map](docs/gate-map.md)).
 - **Quests pay out in loot bags.** Bigger quests give bigger bags; each one rolls a rarity from Common to Legendary, then an item from across the pack.
 - **Boss fights are group events.** Nothing drops on the floor: everyone who hits a boss gets their own Boss Loot Bag with a full share of its loot.
@@ -90,6 +91,7 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 | `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` | Boss-gated recipe overrides ([gate map](docs/gate-map.md)) |
 | `tools/build_balance.py` | Balance-patch recipe changes ([balance patch](docs/balance-patch.md)) |
 | `tools/build_skill_trees.py` | Pufferfish's Skills trees ([rework](docs/skill-trees-rework.md)) |
+| `tools/build_ores.py` | The ore map: which ores spawn in which dimension, duplicate ores off ([ore map](docs/ore-map.md)) |
 | `tools/build_pet_loot.py` | Inventory Pets loot injection (chests and boss drops) |
 | `tools/build_quest_bags.py` | Quest loot bags: rarity pools, bag odds and textures |
 | `tools/build_boss_bags.py` | One Boss Loot Bag texture per boss (colours from the boss's own texture, a themed emblem); needs Pillow |
