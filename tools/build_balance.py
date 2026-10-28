@@ -10,8 +10,14 @@ kubejs/server_scripts/strata_balance.js; config-only changes ship in config/.
      gear, Mending, the Totem of Undying and the ominous trial key are worth 1.5x as much (a bigger
      bounty to pay one out) and come up a quarter as often. (3x worth was too much: Bountiful then
      can't build a bounty big enough for netherite armor, so it would never show up.)
+  E3 Create Enchantment Industry's Apotheosis machines get the same gate costs as Apotheosis' own
+     tables (docs/gate-map.md G3/G4): the Affix Augmentor takes a Hollow Ember (G3, one-time like
+     the augmenting table). G4 costs a Pearl per flawless cut, so config/create_enchantment_
+     industry-apotheosis-server.toml makes the Gem Cutter's Normal->Flawless and Flawless->Perfect
+     cuts cost more Crystal Essence than it can hold (those stay on Apotheosis' own table), and
+     caps its affix templates at 2 (was 4).
 
-Run from the repo root (re-run after a Theurgy or Bountiful update):
+Run from the repo root (re-run after a Theurgy, Bountiful or Create Enchantment Industry update):
   python -I tools/build_balance.py --mods <mods dir> --out kubejs/data
 """
 import argparse
@@ -22,6 +28,12 @@ import zipfile
 
 THEURGY = "theurgy-"
 BOUNTIFUL = "bountiful-"
+CEI = "create-enchantment-industry-"
+EMBER = "strata:hollow_ember"
+# recipe path -> (row, col, expected key or " " for an empty slot, new item)
+CEI_GATES = {
+    "data/create_enchantment_industry/recipe/crafting/affix_augmentor.json": (1, 0, " ", EMBER),
+}
 BOUNTIFUL_POOLS = ["armorer_rews", "toolsmith_rews", "cleric_rews", "_all_rews"]
 BOUNTIFUL_TOP = re.compile(r"netherite|diamond|mending|totem_of_undying|ominous_trial_key")
 # liquefaction ingredient tag prefix -> {old count: new count}
@@ -77,12 +89,26 @@ def bountiful(mods, out):
     return n
 
 
+def cei(mods, out):
+    z = jar(mods, CEI)
+    for name, (row, col, expect, item) in CEI_GATES.items():
+        r = json.loads(z.read(name))
+        line = r["pattern"][row]
+        if line[col] != expect:
+            raise SystemExit(f"{name}: expected {expect!r} at {row},{col}, found {line[col]!r} (mod update?)")
+        r["key"]["G"] = {"item": item}
+        r["pattern"][row] = line[:col] + "G" + line[col + 1:]
+        write(out, name[len("data/"):], r)
+    return len(CEI_GATES)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--mods", required=True)
     ap.add_argument("--out", default="kubejs/data")
     a = ap.parse_args()
     print(f"D2 Theurgy liquefaction: {theurgy(a.mods, a.out)} recipes scaled")
+    print(f"E3 Create Enchantment Industry: {cei(a.mods, a.out)} machines gated")
     print(f"G1 Bountiful: {bountiful(a.mods, a.out)} top rewards made rarer and pricier")
 
 

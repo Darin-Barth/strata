@@ -12,8 +12,20 @@ Status: **partly built** (queued for 0.5.0, boot-tested Oct 27). Darin's answers
   loot; Relics extended configs on), G1 (Bountiful's top rewards kept, worth 1.5x and a quarter as
   common), G3 (Carry On can't pick up spawners, trial spawners or vaults; the Mekanism cardboard box
   still can), G4 (10 starter cogs), G5 (epic quest bag 1 netherite ingot instead of 2).
-- **Keep as is:** A5, B1-B3 (magic stays; Lopez), C4, D1, E6, F4, F7, G2, H1, H2, I4.
-- **Open (questions answered in chat):** A2-A4, C1, C2, D4, D5, E3, F3, F5, F6, I1.
+- **Built, part 2:** A2-A4 (the `strata:unfarmable` tag also blocks Ars jars and Drygmys, Occultism soul
+  gems, Industrial Foregoing's duplicator and imprisonment tool, and Oritech's spawner; normal mobs
+  stay farmable), C1 (Rainbow Generator 250,000 FE/t), C2 (Powah reactors: starter 60, basic 240,
+  hardened 600, blazing 1,500, niotic 4,000, spirited 12,000, nitro 40,000 FE/t; the gate is still
+  open, see I1), E3 (Affix Augmentor needs a Hollow Ember; the Gem Cutter's flawless and perfect cuts
+  are out of reach, so they stay on Apotheosis' table with its Pearl; affix templates capped at 2),
+  F6 (explosions and Big Cannons shots do at most 10 per hit to Bosses of Mass Destruction and
+  Bosses'Rise bosses; `startup_scripts/strata_boss_blast_cap.js`).
+- **Keep as is:** A5, B1-B3 (magic stays; Lopez), C4, D1, D4, D5, E6, F3 (extremely expensive), F4,
+  F5 (resets on death), F7, G2, H1, H2, I4.
+- **Correction to I1:** the Qliphoth Awakening cores *do* have a use: combined with a weapon or armor
+  in a crafting table they add Chesed's lightning, Malkuth's fireballs or Geburah's damage cap (done
+  in code, so the recipe scan missed it). Their trophies have no use. Open: which item gates Powah's
+  higher reactors.
 
 From four read-only audits (tech, magic,
 gear/bosses, everyday/QoL) that read the mods' own recipes, loot and configs on the 0.5.0 test

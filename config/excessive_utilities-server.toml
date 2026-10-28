@@ -234,7 +234,7 @@
 		#How much FE per tick the Rainbow Generator produces when active.
 		# Default: 25000000
 		# Range: > 1
-		rainbowGeneratorFePerTick = 25000000
+		rainbowGeneratorFePerTick = 250000
 
 	[machines.furnace]
 		#The amount of FE the Furnace will burn per tick while active.

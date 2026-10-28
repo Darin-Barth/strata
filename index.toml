@@ -116,6 +116,10 @@ hash = "eec64681017779e529ab998ca131d3c0532bd00509520cdaa19e1e0f9caa3b3c"
 preserve = true
 
 [[files]]
+file = "config/create_enchantment_industry-apotheosis-server.toml"
+hash = "19b06245bfd2afe1436e79510cf30f03d4841f07a97b6c662353b873f5b3cf77"
+
+[[files]]
 file = "config/create_submarine-common.toml"
 hash = "5d1561ecf97f5fed423484843ed3d576cea9e2c9765ec0f6edb1a4a3afadb548"
 
@@ -166,7 +170,7 @@ hash = "fdc3564ac9f2367b55a724742c879673b2ede67e4afa9edfdfe1c4c23c375e6b"
 
 [[files]]
 file = "config/excessive_utilities-server.toml"
-hash = "44def4887ebd71f46f7459b8730315a41f7a9d03cf733c3fbfb5693b46f3094d"
+hash = "b7dbe3878cb459f09f57f190a828c63c18c6c458ecd959854c377bfe49f23940"
 
 [[files]]
 file = "config/fancymenu/assets/strata/background.png"
@@ -463,6 +467,10 @@ hash = "95a6ce1a5c2bfdfc3c2842a171b34ddbbd69536c54521edce3086db3b4b4134c"
 [[files]]
 file = "config/playerrevive.json"
 hash = "773b0f469fa4cdf997fbe8a5c76c106a8bea1193eb13093c4102a7748effb1f3"
+
+[[files]]
+file = "config/powah.json5"
+hash = "6046e3e20332fbf7cd0f9e6946647a735ee5e39888c0fb056e60de2e6eb6eb88"
 
 [[files]]
 file = "config/quark-common.toml"
@@ -809,6 +817,10 @@ file = "kubejs/data/ars_nouveau/recipe/second_armor_upgrade.json"
 hash = "2519d5ca5273f7565756ba157230e34c4abcd17b4189c842f52930fc8f1d2db2"
 
 [[files]]
+file = "kubejs/data/ars_nouveau/tags/entity_type/drygmy_blacklist.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
 file = "kubejs/data/bigreactors/recipe/reactor/reinforced/controller_ingots_uranium.json"
 hash = "e32a46bdccea979b210f58ce24929508d53d2e8ecb0981bfce8356b0839d2955"
 
@@ -835,6 +847,10 @@ hash = "75bebe70c4d7a06f3988329df95fd680b4951b9e9fff7a69d18f9f32a6c23892"
 [[files]]
 file = "kubejs/data/bountiful/bounty_pools/bountiful/toolsmith_rews.json"
 hash = "d9da65beec2defe8113d532f0f521f04be507309f9a3298ec1b818e1f1e884d7"
+
+[[files]]
+file = "kubejs/data/c/tags/entity_type/capturing_not_supported.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json"
@@ -2305,6 +2321,10 @@ file = "kubejs/data/cobblestructures/worldgen/structure/pokepitstop.json"
 hash = "395c6d3e4195f6068599c5534e1a5edb1ec37fcfe57ad9a446bd491bc2c7c2d4"
 
 [[files]]
+file = "kubejs/data/create_enchantment_industry/recipe/crafting/affix_augmentor.json"
+hash = "6c87222e9aba40d014393deace1c7d23b76e882d6e28afec4d6097d61ca50370"
+
+[[files]]
 file = "kubejs/data/create_new_age/recipe/shaped/reactor_fuel_acceptor.json"
 hash = "0428888c74ac6ea371a476d2bc933c7e018b56f08b81e5b517eb78a02818a0d5"
 
@@ -2531,6 +2551,14 @@ hash = "616eb65fbe93d41716901b31cb52ee6a757d1fa6350c9841f7b5ee9cda2ddedd"
 [[files]]
 file = "kubejs/data/iceandfire/tags/worldgen/biome/structure_gen/ice.json"
 hash = "a02f79185a598611f50cc35d94fad5f459bd38c55f9062612a9648d292eb54f9"
+
+[[files]]
+file = "kubejs/data/industrialforegoing/tags/entity_type/mob_duplicator_blacklist.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
+file = "kubejs/data/industrialforegoing/tags/entity_type/mob_imprisonment_tool_blacklist.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
 
 [[files]]
 file = "kubejs/data/integrated_cobblemon/worldgen/structure/bug_gym.json"
@@ -2987,6 +3015,10 @@ hash = "745607d11db4264b84a508cc6abf5101bdea9aa5d33efb81d9a32ab307fae124"
 [[files]]
 file = "kubejs/data/oritech/recipe/crafting/controller.json"
 hash = "6a29f3b07587725903051c8a8245d7929f10b48bacaf155233ec7ac16727cb4d"
+
+[[files]]
+file = "kubejs/data/oritech/tags/entity_type/spawner_blacklist.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/recipe/ultimate_lord_ingot_recipe.json"
@@ -6163,6 +6195,10 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
 hash = "b15535c7195b94084a995e2988188a03ecdd835aa48508948262d160a70dc023"
+
+[[files]]
+file = "kubejs/startup_scripts/strata_boss_blast_cap.js"
+hash = "dadc3be2c7cfaca8c7518baaaea8b37292de07c12f9828e6b843d09866a31ea3"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
