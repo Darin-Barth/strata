@@ -120,7 +120,7 @@ PlayerEvents.tick(event => {
   const player = event.player
   // The watcher vanishes when looked at (checked often), or quietly after 15 s.
   const w = hollowDreadWatchers[player.username]
-  if (w && player.age % 4 === 0) {
+  if (w && player.tickCount % 4 === 0) {
     let e = w.entity
     if (!e.isAlive() || !hollowDreadOk(player) || Date.now() > w.until) {
       if (e.isAlive()) e.discard()
@@ -139,7 +139,7 @@ PlayerEvents.tick(event => {
     }
   }
 
-  if (player.age % 40 !== 0) return
+  if (player.tickCount % 40 !== 0) return
   if (!hollowDreadOk(player) || player.isCreative() || player.isSpectator()) return
   const arrived = player.persistentData.getLong('strata_hollow_arrived')
   if (arrived > 0 && Date.now() - arrived < hollowDreadQuietStartMs) return

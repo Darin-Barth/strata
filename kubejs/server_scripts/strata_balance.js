@@ -25,7 +25,7 @@ const strataBalancePlain = 'strata:abyssal_plain'
 
 PlayerEvents.tick(event => {
   const player = event.player
-  if (player.age % 40 !== 0 || String(player.level.dimension) !== strataBalancePlain) return
+  if (player.tickCount % 40 !== 0 || String(player.level.dimension) !== strataBalancePlain) return
   strataBalanceUnequipCharm(player)
 })
 

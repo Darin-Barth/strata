@@ -2561,6 +2561,10 @@ file = "kubejs/data/industrialforegoing/tags/entity_type/mob_imprisonment_tool_b
 hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
 
 [[files]]
+file = "kubejs/data/integrated_cobblemon/loot_table/chests/fire_gym/fire_gym.json"
+hash = "4321e0171ad82fbca4efccce3fce969a5bfafad074bb50a2cbdac98a1e9fe541"
+
+[[files]]
 file = "kubejs/data/integrated_cobblemon/worldgen/structure/bug_gym.json"
 hash = "794eec755014870790a9588bda3afafd5402d8f7b086489db67b825a309eb684"
 
@@ -6110,11 +6114,11 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "a53e63e7f8869978b27a4bb7d57b2bb24ea93702b9781edf33986565cb788fb7"
+hash = "d84c103ecf8f4dc3ba630d59ddb7ec5dae93a864f44edce1e2519e086d9f560f"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "8448db79f7ad5b4a1bf969665a6cb54fc12fcd40b9758be76a7594beaea57291"
+hash = "8ebda2bba4c99ce9d6f161e2e1307609185f38692b9dc53973dd61810be69c6c"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
@@ -6122,7 +6126,7 @@ hash = "e01ae32942c7c66297f54cfb5f780591fd5fd0cab71be47e2f030cabb9ce3c6a"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "f9113568b4e1457762a28d28641dc2a8ba29b95c87a8d0aaaf90b2b73b213bae"
+hash = "73682c41549e54f0641f38321b8d74ffe8de856bf64fec2f9932b548cc92dc05"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
@@ -6138,7 +6142,7 @@ hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
 
 [[files]]
 file = "kubejs/server_scripts/strata_balance.js"
-hash = "4874ab2962a65c85a258defd82ef686cb2a059dc8186b30af2c92773f5781dc9"
+hash = "9adab55f81d0d91849ea4a755e52a869676508b009189908daed61bab68fe61e"
 
 [[files]]
 file = "kubejs/server_scripts/strata_elites.js"

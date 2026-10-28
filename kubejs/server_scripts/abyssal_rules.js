@@ -180,7 +180,7 @@ const abyssalArrive = (player) => {
 
 PlayerEvents.tick(event => {
   const player = event.player
-  if (player.age % 10 !== 0) return
+  if (player.tickCount % 10 !== 0) return
   const data = player.persistentData
   if (abyssalIn(player)) {
     if (!data.getBoolean('strata_abyss_inside')) {
@@ -188,7 +188,7 @@ PlayerEvents.tick(event => {
       abyssalArrive(player)
     }
     // No Conduit power down here: bases have to be engineered (Darin, Oct 26).
-    if (player.age % 20 === 0) player.server.runCommandSilent(`effect clear ${player.username} minecraft:conduit_power`)
+    if (player.tickCount % 20 === 0) player.server.runCommandSilent(`effect clear ${player.username} minecraft:conduit_power`)
   } else if (data.getBoolean('strata_abyss_inside')) {
     data.putBoolean('strata_abyss_inside', false)
   }

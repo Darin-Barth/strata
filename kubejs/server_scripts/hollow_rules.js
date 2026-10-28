@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 // the dread events' quiet start (hollow_dread.js). Cleared on leaving.
 PlayerEvents.tick(event => {
   const player = event.player
-  if (player.age % 10 !== 0) return
+  if (player.tickCount % 10 !== 0) return
   const data = player.persistentData
   if (hollowIn(player)) {
     if (!data.getBoolean('strata_hollow_inside')) {

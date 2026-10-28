@@ -5,7 +5,7 @@ Strata is a big modpack (about 400 mods). It runs on Minecraft 1.21.1 with NeoFo
 
 ## 1. Install
 1. Install the Modrinth App from https://modrinth.com/app and sign in with your Microsoft/Minecraft account.
-2. Download **Strata-0.2.0.mrpack** from the latest release: https://github.com/Darin-Barth/strata/releases/latest
+2. Download the newest **Strata-<version>.mrpack** from the latest release: https://github.com/Darin-Barth/strata/releases/latest
 3. In the Modrinth App: **+ (Create instance) → From file** → pick the `.mrpack` you downloaded. It downloads
    everything; the first time takes a few minutes.
 
@@ -48,6 +48,7 @@ folder into the new one before launching (instance → **⋮ → Open folder**).
 ## Good to know
 - Open the quest book from the **quest button in your inventory**. Start with the **Welcome to Strata** chapter; it
   explains the rules and where to go next.
-- No free teleporting, and flight always costs something (fuel, power, mana or stamina).
-- Difficulty steps up after the first Nether trip and again after the Ender Dragon.
+- Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
+  Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
+- Difficulty is per player: press **Ctrl+T** to pick your Apotheosis World Tier once you unlock more.
 - This is a **beta**: some balance rules aren't enforced yet. If something seems broken or too easy, tell Darin.
