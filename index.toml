@@ -817,6 +817,10 @@ file = "kubejs/data/ars_nouveau/recipe/second_armor_upgrade.json"
 hash = "2519d5ca5273f7565756ba157230e34c4abcd17b4189c842f52930fc8f1d2db2"
 
 [[files]]
+file = "kubejs/data/ars_nouveau/recipe/stable_warp_scroll.json"
+hash = "dd41bb0ad5eeb53cd347b1dd5531e57b71f80455648d3f8dbef9642b83aafbc4"
+
+[[files]]
 file = "kubejs/data/ars_nouveau/tags/entity_type/drygmy_blacklist.json"
 hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
 

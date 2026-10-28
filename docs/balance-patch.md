@@ -64,6 +64,7 @@ farmable.
 | G3 | **Carry On** | can't pick up spawners, trial spawners or vaults; the Mekanism cardboard box still can |
 | G4 | **Create Numismatics** coins | 10 starter cogs |
 | G5 | Quest bags (random bags across the book) | the epic bag gives 1 netherite ingot |
+| G6 | Ars Nouveau **Stabilized Warp Scroll**: never used up, crosses dimensions, free to use | +2 echo shards in its Enchanting Apparatus recipe (gate M21, `tools/gates/build_magic.py`); the single-use Warp Scroll is unchanged |
 
 ## Still to check
 

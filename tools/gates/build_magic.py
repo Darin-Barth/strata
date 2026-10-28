@@ -8,7 +8,7 @@ mod update can't silently undo it: re-run this after updating any of the mods be
 Writes:
   * section 1 fixes: Theurgy nether star and calorite sulfur reformation routes disabled; netherite
     sulfur reformation +1 strata:hollow_ember (M11); Occultism possess_warden +1 hollow_ember
-  * section 3 rows M1-M20 (recipe overrides and Vampirism lord-task overrides)
+  * section 3 rows M1-M21 (recipe overrides and Vampirism lord-task overrides)
   * item tags strata:dragon_bloods, strata:dragon_hearts, strata:lich_relics (any-of ingredients)
 M6 (Iron's allow_crafting=false) lives in config/irons_spellbooks_spell_config/, not here.
 
@@ -178,6 +178,11 @@ def build(b):
     b.edit("ars_nouveau", "second_armor_upgrade",
            append("pedestalItems", item("bosses_of_mass_destruction:ancient_anima")),
            "M1: +1 ancient_anima pedestal")
+    # M21 Ars stabilized warp scroll: reusable, cross-dimension and free to use, so it costs echo
+    # shards (ancient cities); the single-use warp scroll stays as it is.
+    b.edit("ars_nouveau", "stable_warp_scroll",
+           lambda r: r["pedestalItems"].extend([item("minecraft:echo_shard")] * 2),
+           "M21: +2 echo_shard pedestals")
     # M5 Iron's legendary ink: amethyst -> any dragon blood.
     b.edit("irons_spellbooks", "alchemist_cauldron/brew_legendary_ink",
            set_key("input", tag("strata:dragon_bloods")), "M5: amethyst -> #strata:dragon_bloods")

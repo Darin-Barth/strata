@@ -48,6 +48,7 @@ Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Exte
 | M18 | Ars apprentice book upgrade *(check)* | 1 `twilightforest:naga_scale` | Naga (Twilight) | early–mid |
 | M19 | Iron's diamond spellbook *(check)* | 1 `twilightforest:lich_trophy` or a Lich scepter | Twilight Lich | mid |
 | M20 | Occultism djinni tier (Book of Binding (Djinni)) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
+| M21 | Ars Stabilized Warp Scroll (reusable, cross-dimension) | +2 `minecraft:echo_shard` | Ancient cities (Deep Dark) | mid |
 | M1 | Ars tier-3 mage armor upgrade (`second_armor_upgrade`) | +1 `bosses_of_mass_destruction:ancient_anima` | Night Lich (BoMD, drops 2) | mid |
 | M5 | Iron's legendary ink | amethyst → any Ice and Fire dragon blood (`iceandfire:{fire,ice,lightning}_dragon_blood`) | Ice and Fire dragons | mid–late |
 | M8 | Occultism afrit tier: summon unbound afrit ritual | +1 **E** | the Hollow | mid |
@@ -66,7 +67,7 @@ Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Exte
 | M13 | Neo Vitae prismatic gem (deus tier) *(check)* | +1 **P** | the Abyssal Plain | endgame |
 | M17 | Vampirism lord level 5 | 2 **P** | the Abyssal Plain | endgame |
 
-Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cataclysm spellbooks (boss loot), Occultism's marid master miner, Neo Vitae's archmage orb (its own demon dungeon), Ars' archmage nether star. Ars Ritual of Flight and warp scrolls stay (they pass the flight and teleport rules).
+Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cataclysm spellbooks (boss loot), Occultism's marid master miner, Neo Vitae's archmage orb (its own demon dungeon), Ars' archmage nether star. Ars Ritual of Flight and the single-use Warp Scroll stay as shipped (they pass the flight and teleport rules); the reusable Stabilized Warp Scroll is row M21.
 
 ## 4. Gear
 | # | Gate | Needs | Stage |

@@ -22,7 +22,8 @@ Travel and logistics must cost something, so trains, airships and power grids st
 
 **Teleporting:**
 - One `/home` per player with a 10-second cooldown (`kubejs/server_scripts/strata_home.js`). Non-ops have no `/back`, `/rtp` or `/tpa`.
-- Waystones cost XP by distance, with an extra cost across dimensions. Warp scrolls and stones are removed from loot.
+- Waystones cost XP by distance, with an extra cost across dimensions. Waystones' warp scrolls and stones are removed from loot.
+- Ars Nouveau's single-use Warp Scroll (same dimension) stays as shipped. Its reusable, cross-dimension Stabilized Warp Scroll needs 2 echo shards (gate M21).
 - Earned teleporting is fine: Mekanism teleporters, Ars, blink spells, the Vampirism skill, Iron's Portal spell, the Oritech portal augment.
 - Removed (`server_scripts/strata_removed_items.js`): Iron's Recall spell, all Draconic dislocators, Helium Flamingo, Wind Staff and Forsaken Relics' Linking Book.
 - Corail Tombstone: its teleport tablets are off (`config/tombstone-server.toml`) and its teleport commands are ops-only (`server_scripts/strata_tombstone.js`). The Grave's Key teleport to your grave stays.
