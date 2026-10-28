@@ -5,14 +5,14 @@
 The design doc's rule says late tiers need boss drops ("Boss gating"). This map enforces it across all three pillars plus gear. Gates are not limited to tech mods: magic tends to be easier and stronger, so it gets road blocks along the way.
 
 Principles:
-- **Add an ingredient; don't rewrite recipes.** One KubeJS file per pillar (`server_scripts/gates_tech.js`, `gates_magic.js`, `gates_gear.js`), so a mod update can't silently undo a gate.
+- **Add an ingredient; don't rewrite recipes.** One generator per pillar (`tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py`). Re-running it after a mod update keeps every gate in step with the mod's recipes.
 - **Spread the bosses.** No single boss gates more than a couple of rows, and every pillar has gates at mid, late and endgame, not just at the top.
 - **Magic gets more road blocks than tech**, and earlier ones.
 - **Close bypasses first.** A gate that can be crafted around isn't a gate (section 1).
 - **Don't gate what the core rules protect** (`docs/design-doc.md`): wireless (Flux Networks, entangloporters, AE2 wireless and the Quantum Bridge as shipped), earned teleporting, and flight that has an ongoing cost.
 - **Gate materials:** `strata:hollow_ember` (E, the Hollow), `strata:abyssal_pearl` (P, the Abyssal Plain), and boss drops.
 
-Item and recipe IDs below were read from the mod jars. Rows marked *(check)* needed a recipe-slot check while building (deviations are in Build notes).
+Item and recipe IDs below were read from the mod jars. Rows marked *(check)* had their recipe slots checked while building (deviations are in Build notes).
 
 ## 1. Bypasses to close first
 **Resolution:** Theurgy nether star and calorite routes removed and its netherite route +1 E; `possess_warden` +1 E; renewable nether stars accepted (no nether-star boss gates); Cataclysm's Overworld Sunken City removed (empty `#cataclysm:has_structure/sunken_city_biomes`).
@@ -22,7 +22,7 @@ Item and recipe IDs below were read from the mod jars. Rows marked *(check)* nee
 | Oritech particle collider makes nether stars | Nether star as a Wither-only gate | Accept it: nether stars aren't a boss gate. Use boss-specific drops below |
 | Mekanism antiprotonic nucleosynthesizer makes nether stars, dragon eggs, hearts of the sea | Same | Gate the SPS (row T5); accept the rest |
 | Occultism `possess_warden` (6 sculk) | Free warden drops → Apotheosis sculkshelves | +E |
-| Cataclysm Sunken City still generates in Overworld deep oceans | Leviathan drops aren't Abyssal-only | Pair Leviathan drops with pearls in recipes (done below), and empty `#cataclysm:has_structure/sunken_city_biomes` (chosen: Sunken City removed from the Overworld) |
+| Cataclysm's Sunken City generates in Overworld deep oceans by default | Leviathan drops aren't Abyssal-only | Empty `#cataclysm:has_structure/sunken_city_biomes` (no Sunken City in the Overworld), and pair Leviathan drops with pearls in recipes (below) |
 
 ## 2. Tech
 | # | Gate | Needs | Stage |
@@ -47,7 +47,7 @@ Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Exte
 |---|---|---|---|---|
 | M18 | Ars apprentice book upgrade *(check)* | 1 `twilightforest:naga_scale` | Naga (Twilight) | early–mid |
 | M19 | Iron's diamond spellbook *(check)* | 1 `twilightforest:lich_trophy` or a Lich scepter | Twilight Lich | mid |
-| M20 | Occultism djinni tier (yellow chalk) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
+| M20 | Occultism djinni tier (Book of Binding (Djinni)) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
 | M1 | Ars tier-3 mage armor upgrade (`second_armor_upgrade`) | +1 `bosses_of_mass_destruction:ancient_anima` | Night Lich (BoMD, drops 2) | mid |
 | M5 | Iron's legendary ink | amethyst → any Ice and Fire dragon blood (`iceandfire:{fire,ice,lightning}_dragon_blood`) | Ice and Fire dragons | mid–late |
 | M8 | Occultism afrit tier: summon unbound afrit ritual | +1 **E** | the Hollow | mid |
@@ -75,8 +75,8 @@ Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cat
 | G2 | Apotheosis Pinnacle world tier (already epic gear + a Dragon kill) | own 1 **P** | endgame |
 | G3 | Apotheosis augmenting table | +1 **E** | late |
 | G4 | Apotheosis flawless gem cutting; heart and crystal seashelves | +1 **P** | endgame |
-| G5 | Oritech flight augment (needs an in-game check that it drains power) | 1 Ice and Fire dragon heart | late |
-| G6 | Apocalyptic Bosses ultimate ingot (now netherite + nether star + amethyst, 2 per craft) | nether star → 2 `panascraftrpgmod:void_gem` + 1 `cataclysm:cursium_ingot` | endgame |
+| G5 | Oritech flight augment | 1 Ice and Fire dragon heart | late |
+| G6 | Apocalyptic Bosses ultimate ingot (netherite + nether star + amethyst, 2 per craft) | nether star → 2 `panascraftrpgmod:void_gem` + 1 `cataclysm:cursium_ingot` | endgame |
 
 ## 5. Teleport and flight items
 Standard: an item that is very easy to get or cheap to use is removed. Checked in the mod jars.
@@ -89,7 +89,7 @@ Standard: an item that is very easy to get or cheap to use is removed. Checked i
    - **Player dislocator:** the basic one plus a draconium core and a ghast tear. Teleports you to a player who sneaks to agree, so it's a /tpa.
    - **Point-to-point pair:** the same, but between two linked dislocators.
    - **Advanced dislocator:** fusion crafting with a wyvern core (needs a nether star). Unlimited saved spots in any dimension; each jump burns 1 ender pearl.
-3. **Forsaken Relics linking book:** **removed from loot**. A home-only mode would have been acceptable, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
+3. **Forsaken Relics linking book:** **removed from loot**. Its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
 4. **Oritech portal augment:** **kept**.
    - A body augment that opens a portal back to your research station.
    - Researching it is a big one-time cost: the top (Arcane) station, 250 million RF, 16 ender pearls, 64 obsidian, an Unholy Intelligence and 32 adamant ingots.
@@ -111,15 +111,15 @@ Powah, Oritech and the Draconic reactor still need a place on the power ladder.
 Built as datapack overrides; checked on the test server (every sampled recipe shows the new ingredient, the Theurgy routes are gone, no load errors). Where a recipe had no free slot, the cheapest ingredient was swapped. Deviations from the tables:
 - **T2:** ultimate transmitters (cables, pipes, tubes) left ungated: crafted in bulk, a cell per 8 would pile up. The tier is gated through installers, factories, cube, induction, tanks and bin.
 - **T8:** the jet suit isn't gated piece by piece; its flying chestplate needs the calorite engine.
-- **T9:** the 2 Embers replace 2 of the 4 awakened draconium ingots, so the craft still uses 8 fusion injectors.
-- **T10:** the ultimate table's grid was full: the Abyssal Egg replaces its emerald block and the 4 Pearls go into the ultimate catalyst (whose only use is the table).
-- **M20:** on the Book of Binding (Djinni) (crafted once, reused for every djinni ritual), not on yellow chalk (used up: one boss kill per stick).
+- **T9:** the 2 Embers take the place of 2 of the 4 awakened draconium ingots, so the craft still uses 8 fusion injectors.
+- **T10:** the ultimate table's grid was full: the Abyssal Egg takes its emerald block's slot and the 4 Pearls go into the ultimate catalyst (whose only use is the table).
+- **M20:** the gate sits on the Book of Binding (Djinni), which is crafted once and reused for every djinni ritual. Chalk is used up, so a chalk gate would cost one boss kill per stick.
 - **M3:** the four legendary-spell glyphs (black hole, starfall, sculk tentacles, dragon breath).
 - New tags: `#strata:dragon_bloods`, `#strata:dragon_hearts`, `#strata:lich_relics`.
 
 ## 6. Building it
-1. Section 1 fixes and section 5 removals (KubeJS `event.remove` + Iron's spell config datapack).
-2. `gates_tech.js`, `gates_magic.js`, `gates_gear.js` (KubeJS `event.replaceInput` / recipe rebuilds; ritual and altar recipes via their KubeJS add-on or a datapack override).
+1. Section 1 fixes: the Theurgy and `possess_warden` changes come from the gate generators; the empty Sunken City tag is `kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json`. Section 5 removals: `server_scripts/strata_removed_items.js` and the Iron's spell config datapack.
+2. `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` write the recipe overrides under `kubejs/data`, ritual and altar recipes included.
 3. Apotheosis and Vampirism advancement and task overrides (datapack under `kubejs/data`).
 4. The quest book: say on each gated item's quest what it needs and where to get it, so nobody hits a wall blind.
 5. Test server: every gated recipe shows the new ingredient in EMI; no old recipe left behind; boot with 0 errors.

@@ -204,7 +204,7 @@ R = {
     "Spark": (C, "MR spark 1.10.124"),
 }
 
-# --- Decisions after phase 1 (docs/open-questions.md answers, Oct 23, 2026) ---
+# --- Decisions after phase 1 ---
 
 # Rows renamed to the mod actually chosen. Old name -> new name (applied once, then R uses the new name).
 RENAMES = {
@@ -275,7 +275,7 @@ NEW_ROWS = [
      "MR quark 4.1-487 + zeta 1.1-40"),
     ("Staged difficulty (KubeJS script)", "Difficulty", "Exploration", "KubeJS", "Server", "Keep", C, "KubeJS",
      "Normal > Expert (first Nether entry) > Master (first Dragon kill); per-dimension multipliers; bosses excluded. Phase 2",
-     "Our own script, replaces Majrusz's (see docs/difficulty-options.md)"),
+     "Our own script, replaces Majrusz's"),
     ("Bosses'Rise", 'Bosses', 'Exploration', 'GeckoLib', 'Both', 'Keep', C, 'Gate', "Souls-like boss fights (5 structures). Add bosses to the difficulty script's exclude list", "CF bossesrise 2.1.2 (player request)"),
     ('Qliphoth Awakening', 'Bosses', 'Exploration', 'FDLib', 'Both', 'Keep', C, 'Gate', 'Endgame bosses (3 structures)', "CF qliphoth-awakening 3.2 (player request)"),
     ('Cinematic Cataclysm', 'Bosses', 'Exploration', 'Cataclysm, FDLib', 'Both', 'Keep', C, None, 'Cinematic boss intros for Cataclysm', "CF cinematic-cataclysm 1.0.1 (player request)"),
@@ -296,7 +296,7 @@ NEW_ROWS = [
      "All features on incl. Pale Garden/Dappled Forest/Sulfur Caves in the Overworld; resin only from Pale Gardens (mansion/trader resin off). Happy Ghast to be cost-gated. Reshapes the Overworld: seed re-scouted",
      "MR vanillabackport 1.2.1 + platform 1.4.1"),
     ("Integrated Villages", "Structures", "Exploration", "Integrated API, Create", "Both", "Keep", C, None,
-     "Favourite from MC Eternal 2: themed villages full of Create machinery (Airship, Mediterranean, Clockwork, Marketstead, Pirate, Tavern...). Boot-tested Oct 24",
+     "Themed villages full of Create machinery (Airship, Mediterranean, Clockwork, Marketstead, Pirate, Tavern...). Boot-tested Oct 24",
      "MR integrated-villages 1.3.3"),
     ("Custom Window Title", "Visuals", "Visuals", None, "Client", "Keep", C, "Config",
      "Window title 'Strata' and the S logo as the taskbar icon (config/customwindowtitle-client.toml)",
@@ -331,7 +331,7 @@ NEW_ROWS = [
     ("Aquamirae", "Structures", "Exploration", None, "Both", "Keep", C, "Worldgen", "Ice Maze ocean content and bosses (ocean gap)", "MR aquamirae 7.2.13"),
     ("Born in Chaos", "Mobs", "Exploration", None, "Both", "Maybe", C, "Config", "Horror dimension only: confine spawns there", "Reserved for the horror dimension"),
     ("Mutant Monsters", "Mobs", "Exploration", None, "Both", "Maybe", C, "Config", "Horror dimension only: confine spawns there", "Reserved for the horror dimension"),
-    # Wave 4 (Oct 24): gap-analysis picks (docs/mod-gap-analysis.md)
+    # Wave 4 (Oct 24): gap-analysis picks
     ("Ember's Floating Islands", 'Structures', 'Exploration', None, 'Both', 'Keep', C, 'Worldgen', 'Sky islands to fly to', 'MR embers-floating-islands floating_islands-1.5.3-1.21.1-neoforge.jar'),
     ('Sky Whale Ship', 'Structures', 'Exploration', None, 'Both', 'Keep', C, 'Worldgen', 'Sky whale-ship structure', 'MR sky-whale-ship sky_whale_ship-neoforge-1.21.1.jar'),
     ("MVS - Moog's Voyager Structures", 'Structures', 'Exploration', None, 'Both', 'Keep', C, 'Worldgen', '130+ vanilla-style structures. Spacing via config or Sparse Structures', 'MR moogs-voyager-structures MoogsVoyagerStructures-universal-1.21-5.1.3.jar'),

@@ -14,13 +14,13 @@ Scary but fair still holds: no one-shots, and every threat has a warning and a c
 - **The rewards are worth it.** Hollow Embers and the boss trophies gate strong items across the whole pack, magic included.
 - **There's a story to piece together.** A lost expedition left pages behind, and they point toward the Sanctuary.
 
-## 2. Fixes to the current build (items 1–6 done)
-1. **The Ravenous and its Screechers never spawn.** Their spawn code requires open sky and a biome tagged `#minecraft:is_overworld`, and Hollow biomes deliberately aren't. Fix: a KubeJS spawner in the Hollow (rare, at night-level light, open sky, away from the portal and the Sanctuary). Don't tag the biomes: that would let Overworld mobs in.
-2. **The Corrupted Champion (Graveyard lich) can't be summoned.** Its blood vial only fills from villagers, and the Hollow has none. Fix: in `config/graveyard`, set `bloodEntities` to the Hollow's own mobs (for example tormented villagers, ghouls and other Graveyard undead; to be confirmed against the entity list).
-3. **The damage cap misses hits without an attacker.** That covers the Weeping Angel neck snap and Grim & Bleak's 500-damage smite around a dying Gate Guardian. Fix: also cap by damage type in the Hollow, for Weeping Angels and Grim & Bleak (`godly_power`).
-4. **One Hollow Ember loot modifier never fires.** It targets `grim_and_bleak:chests/abandonned_tower_loot`, which no structure uses. Move it to `small_tent_loot` and `cabinloot`.
-5. **Sanity hallucinations can hurt.** Below 25% sanity they become real mobs. Keep it, because it's good bite: they're under the damage cap and you get warned well before. `docs/hollow-design.md` section 3a and the quest text reflect this.
-6. **Check Chemical X.** Mutant Monsters' potion turns vanilla mobs into mutants in any dimension. Confirm that In Control! stops those mutants outside the Hollow.
+## 2. Fixes in the current build
+1. **The Ravenous and its Screechers spawn from a KubeJS spawner** in the Hollow (`server_scripts/hollow_ravenous.js`): rare, at night-level light, open sky, away from the portal and the Sanctuary. Their own spawn code needs a biome tagged `#minecraft:is_overworld`, and Hollow biomes never carry that tag, so Overworld mobs stay out.
+2. **The Corrupted Champion (Graveyard lich) can be summoned in the Hollow.** Its blood vial fills from villagers by default. `bloodEntities` in `config/graveyard/graveyard.json5` also lists the Hollow's own mobs (tormented villagers, corrupted pillagers, vindicators and evokers, acolytes).
+3. **The damage cap also covers hits without an attacker.** In the Hollow it caps by damage type for Weeping Angels (the neck snap) and Grim & Bleak (`godly_power`, the 500-damage smite around a dying Gate Guardian).
+4. **Hollow Ember loot modifiers** target Grim & Bleak's `small_tent_loot` and `cabinloot`. `grim_and_bleak:chests/abandonned_tower_loot` is used by no structure, so it carries none.
+5. **Sanity hallucinations can hurt.** Below 25% sanity they become real mobs. They are under the damage cap and you get warned well before. `docs/hollow-design.md` section 3a and the quest text reflect this.
+6. **Chemical X.** Mutant Monsters' potion turns vanilla mobs into mutants in any dimension. In Control!'s deny rule covers those mutants outside the Hollow.
 
 ## 3. The quest chapter "The Hollow" (about 26 quests, 5 tracks)
 It follows the same shape as the Abyssal Plain chapter. Rewards follow the tier defaults, and gate materials are never quest rewards.
@@ -87,7 +87,7 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 | Tech | MekaSuit pieces and Meka-Tool | 2 each |
 | Tech | Draconic Evolution awakened core | 2 |
 | Magic | Ars Nouveau tier-3 mage armor upgrade | 1 per piece |
-| Magic | Iron's Spells legendary ink (replaces the amethyst) | 1 |
+| Magic | Iron's Spells legendary ink (in the amethyst's slot) | 1 |
 | Magic | Iron & Nouveau legendary-spell glyphs | 1 |
 | Magic | Occultism afrit summoning (red chalk tier) and the miner djinni | 1 each |
 | Magic | Theurgy netherite route | 1 |
@@ -95,14 +95,14 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 | Magic | Vampirism lord level 3 (vampire and hunter) | 2 |
 | Gear | Apotheosis Summit world tier (advancement) | 1 owned |
 
-Supply today: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for players who visit regularly, and none for players who never go. That pull toward the Hollow is intended, but everything gated is optional (decision D4).
+Supply: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for players who visit regularly, and none for players who never go. That pull toward the Hollow is intended, but everything gated is optional (decision D4).
 
 ## 6. Design decisions
-- **D1. The Ravenous eats blocks** (the mod's default). Keep it on: camps need obsidian walls or the Sanctuary. That's the biggest piece of bite. Or turn it off, so it only hunts and builds are safe. **Decided: on.**
-- **D2. Low sanity spawns real hallucination mobs** below 25%. **Decided: keep them** (capped, with warning).
-- **D3. The Pale Beacon needs 1 Hollow Ember per in-game day**, rather than being free once built. **Decided: feed it.**
-- **D4. How hard Hollow Ember gates:** only the items in section 5, or also the Apotheosis Pinnacle tier (killing the Corrupted Champion or Gate Guardian)? **Decided: section 5 only;** Pinnacle stays the Dragon.
-- **D5. The Lost Signal story pages:** worth it (6 written pages, quest text)? **Decided: yes.**
+- **D1. The Ravenous eats blocks** (the mod's default, on). Camps need obsidian walls or the Sanctuary. That's the biggest piece of bite.
+- **D2. Low sanity spawns real hallucination mobs** below 25% (capped, with warning).
+- **D3. The Pale Beacon needs 1 Hollow Ember per in-game day.**
+- **D4. Hollow Ember gates only the items in section 5.** The Apotheosis Pinnacle tier stays tied to the Dragon.
+- **D5. The Lost Signal story** has 6 written pages with quest text.
 
 ## 7. Research notes (from the mod jars)
 - **Corrupted Champion** (`graveyard:lich`):
@@ -129,5 +129,5 @@ Supply today: horror mobs drop one 15% of the time, mutants 1–2 half the time,
 - **Strong items to watch:**
   - Grim & Bleak's Totem of Resurrection: reusable, costs "worthiness".
   - Grim & Bleak's offering ritual pays out netherite and enchanted golden apples.
-  - Carbon Blood's Blood Dash: a short dash to a target, which counts as earned movement.
+  - Grim & Bleak's Carbon Blood gear and its Blood Dash: a short dash to a target, which counts as earned movement.
   - The Nameless Hanged trade (corruption for 2 emeralds) is an emerald engine. Consider lowering it.

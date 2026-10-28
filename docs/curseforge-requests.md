@@ -1,10 +1,10 @@
 # CurseForge requests (drafts)
 
-The two mods that kept Strata's CurseForge zip from being accepted. The maintainer submits these.
+Two mods in the pack that need action on CurseForge before the CurseForge zip matches the Modrinth pack. The maintainer submits these.
 
 ## 1. Drive-By-Wire with Sable: CurseForge approved-list request
 
-Status: being submitted through the request form. It was not on the list before (all six tabs checked).
+Status: being submitted through the request form. It is not on the list (all six tabs checked).
 
 Where: CurseForge's Approved Non-CurseForge Mods list,
 https://docs.google.com/spreadsheets/d/176Wv-PZUo9hFxy6oC6N8tWdquBLPRtSuLbNK-r0_byM/edit
@@ -27,12 +27,12 @@ Text (paste into the form's fields, or as the ticket body):
 > pack description.
 
 Risk: the "All Rights Reserved" line in the jar could get it declined. If it is, ask the author on Modrinth to fix
-that line (or upload the mod to CurseForge), or drop the mod from both versions of the pack.
+that line or upload the mod to CurseForge.
 
 ## 2. Serene Seasons: GitHub issue asking for the 1.21.1 builds on CurseForge
 
 Status: on hold. The pack uses 10.1.0.3, which CurseForge has. Optional: ask on Glitchfiend's Discord (search
-"curseforge" first); if 10.1.0.9 appears on CurseForge, move back up.
+"curseforge" first). When 10.1.0.9 appears on CurseForge, the pack switches to it.
 
 Where: https://github.com/Glitchfiend/SereneSeasons/issues/new/choose (signed in to GitHub; pick the feature-request
 template if it asks, and put the text under its headings). Related open issue: #590 (asks for 26.1 on CurseForge, no

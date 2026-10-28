@@ -4,7 +4,7 @@
 
 > Progression design (quest chapter, boss ladder, the Pale Beacon, fixes): `docs/hollow-progression.md`. What Hollow Ember gates across the pack: `docs/gate-map.md`.
 
-A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread and atmosphere, with some combat, and has unique loot that makes the trip worth it. Horror mobs exist only here. Mod research and build checks are in `docs/hollow-mod-research.md`.
+A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread and atmosphere, with some combat, and has unique loot that makes the trip worth it. Horror mobs exist only here.
 
 ## 1. Getting there
 - **Frame:** a nether-portal-shaped frame of **resin bricks** (Vanilla Backport). Resin only comes from Overworld Pale Gardens (`resin_loot` and `pale_trades` are already off).
@@ -13,7 +13,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
   - The soul lantern means a Nether trip (soul sand/soil), so the Hollow is mid-game.
   - Reusable, like the Johto Bell. Lighting the portal plays a heartbeat or creak sound.
 - Same portal setup as the Pokémon world (BBL Portals, one more entry in `kubejs/startup_scripts/pokeworld_portal.js`). It links 1:1 and returns to the Overworld.
-- **Look and sound:** "Dead Signal", grey TV static that freezes now and then and once drops to black, in BBL Portals' "nether" texture slot; ash-grey dust. Near it the Nether whoosh becomes whispers, creaking, a slow heartbeat and cave noises, with long stretches of silence; ash, pale petals and smoke drift off it (`startup_scripts/portal_ambience.js`). The texture is stored in each portal block when it is lit, so a Hollow portal lit under an older pack version may show the Pokémon portal's texture until it is broken and relit.
+- **Look and sound:** "Dead Signal", grey TV static that freezes now and then and once drops to black, in BBL Portals' "nether" texture slot; ash-grey dust. Near it the Nether whoosh becomes whispers, creaking, a slow heartbeat and cave noises, with long stretches of silence; ash, pale petals and smoke drift off it (`startup_scripts/portal_ambience.js`). The texture is stored in each portal block when it is lit; breaking and relighting a portal refreshes it.
 
 ## 2. The world
 - **Dimension type:** permanent night (`fixed_time` 18000), `ambient_light` 0, monsters spawn at light 0–7. Beds don't let you sleep ("Something is watching you." via KubeJS), and respawn anchors don't work.
@@ -39,7 +39,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
 | Combat + loot | The Graveyard 4.0 | spawn/structure tags → Hollow biomes; hordes off (needs new dependency villagertradingplus) |
 | Mini-bosses | Mutant Monsters | config spawns 0; our own Hollow spawn file |
 
-Also in the Hollow: Creakings (Pale Garden copy). Not used: Born in Chaos (spawn rules hard-code the Overworld; possible later with a custom spawner), and every mod whose scares follow the player into other dimensions or grief bases (list in the research doc).
+Also in the Hollow: Creakings (Pale Garden copy). Every horror mod in the pack keeps its scares inside the Hollow and does not grief bases.
 
 **Safety net:** an In Control! rule denies every horror mod's mobs outside `strata:hollow`, so a mod update can't leak them.
 
@@ -52,7 +52,7 @@ No mob kills a player without a chance to survive. The Hollow should be scary an
   - Mutants: big, visible mini-bosses with readable attacks.
   - Sanity: hallucinations mostly just scare you, but below 25% sanity some become real mobs that attack (Rotting Stalker, Sneaking Terror; capped like every horror mob). Light, campfires, nearby players and resting outside the Hollow recover sanity. This is intentional.
 - **No one-shots:** a KubeJS damage cap so a single hit from any Hollow horror mob can take at most ~40% of a player's max health (bosses excluded, since they keep designed stats). This also covers mod updates that buff damage.
-- **Tuned in testing:** Cave Dweller and Ravenous damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only) and theft/light-breaking off if they feel cheap; Sanity's drain rate.
+- **Tuned in testing:** Cave Dweller and Ravenous damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only), with theft and light breaking off; Sanity's drain rate.
 - **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and Corail Tombstone keeps items safe on death.
 - Spawn rates start low; we raise them after playtests rather than the other way round.
 
@@ -88,7 +88,7 @@ No mob kills a player without a chance to survive. The Hollow should be scary an
 6. Pregenerate the Hollow on the server with Chunky.
 
 ## 6. Open items
-- Sanity meter: kept (section 3a). It is the strongest dread piece, but its HUD still needs a client test.
-- The Graveyard 4.0 is a recent release and adds a dependency; the fallback is the unofficial 2.6.2 port.
+- Sanity meter (section 3a): the strongest dread piece; its HUD still needs a client test.
+- The Graveyard 4.0 is a recent release and needs VillagersTradingPlus.
 - What Hollow Ember gates: `docs/gate-map.md` and `docs/hollow-progression.md`.
-- Difficulty: there is no server-wide staged difficulty. The Hollow's mobs keep their designed stats, like bosses.
+- Difficulty: the Hollow's mobs keep their designed stats, like bosses.

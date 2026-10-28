@@ -18,19 +18,19 @@ against the mod jars by `tools/quests/check_ids.py`.
 ## Starter flow (chapter "Welcome to Strata")
 1. **Welcome to Strata** — Build. Fly. Explore. How the quest book works.
 2. **A Tavern Town** — you spawn by a tavern; villagers, Bountiful board, Guard Villagers.
-3. **What's That Recipe?** — EMI (R = recipe, U = uses), JEI/JER for drops and ore heights.
+3. **What's That Recipe?** — EMI (R = recipe, U = uses), plus ore heights, drops and breeding in EMI.
 4. **Find Your Way** — Xaero's minimap/world map, waypoints, Ping Wheel.
 5. **Timber!** — logs (FallingTree, FTB Ultimine with the ` key).
 6. **A Bag for Everything** — Sophisticated Backpack.
 7. **Home Sweet Claim** — FTB Teams (make a team) + FTB Chunks claims from the map.
 8. **When Things Go Wrong** — Corail Tombstone, PlayerRevive, Redomesticate (pets come back).
-9. **Rules of the Road** — no /home, /back, /tpa; flight costs fuel/power/mana/stamina.
+9. **Rules of the Road** — one /home (10-second cooldown), no /back, /rtp or /tpa; flight costs fuel/power/mana/stamina.
 10. **Waystones** — find or craft one; XP cost grows with distance, more across dimensions.
 11. **Iron Age** — iron tools and armor, Apotheosis gear and Better Combat basics.
-12. **The World Gets Harder** — staged difficulty: Normal → Expert after the first Nether visit → Master
-    after the Dragon. Bosses keep their own stats.
+12. **Choose Your Challenge** — Apotheosis World Tiers (Ctrl+T), picked by each player; other dimensions
+    are tougher than home; bosses keep their own stats.
 13. **Pick a Path** — branches to: Tech (Create), Magic (Ars Nouveau), Exploration, Life & Cozy,
-    Pokémon World. Nothing is locked; all chapters stay visible.
+    Pokémon (the Kakuto Region). Nothing is locked; all chapters stay visible.
 
 ## Chapters (groups → chapters)
 **Start here:** Welcome to Strata
@@ -44,10 +44,10 @@ against the mod jars by `tools/quests/check_ids.py`.
 5. Create: Extras — Enchantment Industry, Big Cannons, Slice & Dice / Central Kitchen, Deco/Copycats.
 6. Immersive Engineering — hammer, coke oven, blast furnace, wires & transformers, Excavator.
 7. Mekanism — metallurgic infuser, ore tiers ×2→×5, generators, jetpack, fission/fusion, MekaSuit (late).
-8. Applied Energistics 2 — meteorites, inscriber, ME system, autocrafting; wireless after Nether; QNB late.
+8. Applied Energistics 2 — meteorites, inscriber, ME system, autocrafting, wireless; QNB late.
 9. Industrial Foregoing, PneumaticCraft, Powah, Extreme Reactors (one chapter "More Machines", one
    column each).
-10. Logistics & Wireless — Integrated Dynamics, LaserIO, Flux Networks (mid tier).
+10. Logistics & Wireless — Integrated Dynamics, LaserIO, Flux Networks.
 11. Oritech.
 12. Resource Farming — Mystical Agriculture, Productive Bees, Mob Grinding Utils.
 13. Endgame — Draconic Evolution, Extended Crafting.
@@ -64,28 +64,28 @@ against the mod jars by `tools/quests/check_ids.py`.
 
 **Exploration**
 20. Explorer's Guide — compasses, YUNG's/IDAS/WDA structures, Lootr, Artifacts & Relics, archeology.
-21. The Nether — Incendium, Eternal Nether, Nether fortress; difficulty step to Expert.
+21. The Nether — Incendium, Eternal Nether, Nether fortress.
 22. Twilight Forest — progression boss by boss.
 23. The Aether (+ Deep Aether, Aether Villages).
 24. Deeper and Darker — the Otherside.
 25. Ad Astra — rockets and planets.
 26. The End — End Remastered's eyes, Integrated Stronghold, Dragon (unlocks the Pinnacle World Tier), Nullscape.
-27. Pokémon World — Bell Fragment → Johto Bell, portal frame, starter, Pokécenters, gyms, CobbleDollars.
+27. The Kakuto Region (Pokémon) — Bell Fragment → Johto Bell, portal frame, starter, Pokécenters, gyms, CobbleDollars.
+28. The Abyssal Plain — depth, base, survey, ruins and bosses, ending in the Deep Station.
+29. The Hollow (planned; `docs/hollow-progression.md`).
 
 **Bosses & Combat**
-28. Combat & Gear — Better Combat, Combat Roll, Apotheosis gems/affixes/enchanting, Simply Swords.
-29. L_Ender's Cataclysm — the eight bosses in order (+ Integrated Cataclysm).
-30. Ice and Fire — dragons, the dragon forge; riding is late and earned.
-31. Boss Hunter — Mowzie's, BoMD, Bosses'Rise, Qliphoth, Legendary Monsters, Apocalyptic Bosses.
+30. Combat & Gear — Better Combat, Combat Roll, Apotheosis gems/affixes/enchanting, Simply Swords.
+31. L_Ender's Cataclysm — the eight bosses in order (+ Integrated Cataclysm).
+32. Ice and Fire — dragons, the dragon forge; riding is late and earned.
+33. Boss Hunter — Mowzie's, BoMD, Bosses'Rise, Qliphoth, Legendary Monsters, Apocalyptic Bosses.
 
 **Life & Cozy**
-32. Farming & Food — Farmer's Delight + delights, Croptopia, Vinery, Brewin', Spice of Life, seasons.
-33. Pets & Critters — taming, Inventory Pets, Naturalist/Alex's Mobs, Plushies, Easy Villagers.
-34. Building & Decorating — Chipped/Rechiseled, Macaw's, Handcrafted, FramedBlocks, gadgets and wands.
-35. Storage — Sophisticated Storage, Functional Storage, Tom's Simple Storage.
-36. Fishing — Aquaculture 2, Tide (journal).
-
-About 35 chapters, ~10–20 quests each (~450 quests).
+34. Farming & Food — Farmer's Delight + delights, Croptopia, Vinery, Brewin', Spice of Life, seasons.
+35. Pets & Critters — taming, Inventory Pets, Naturalist/Alex's Mobs, Plushies, Easy Villagers.
+36. Building & Decorating — Chipped/Rechiseled, Macaw's, Handcrafted, FramedBlocks, gadgets and wands.
+37. Storage — Sophisticated Storage, Functional Storage, Tom's Simple Storage.
+38. Fishing — Aquaculture 2, Tide (journal).
 
 ## Status
 Built: 38 chapters, 820 quests, 4 loot bags. Every distinct ID validates against a registry dump of the
@@ -95,32 +95,11 @@ Gate anchors used across chapters: `cataclysm/ignis` (nuclear power), `cataclysm
 (Mekanism ultimate tier), `cataclysm/ender_guardian` (AE2 256k cells, AppliedFlux, QIO),
 `the_end/dragon` (Draconic awakened tier, Pinnacle World Tier, Ice and Fire dragon riding).
 
-## Rule problems found while writing (need config/KubeJS; quests don't feature or reward these)
-Free or cheap flight:
-- Oritech Flight augment ("creative-style free flight"), Mystical Agriculture flight_augment.
-- Create Stuff 'N Additions jetpacks: andesite tier on coal, copper on water; "Above the Clouds" enchant.
-- Cataclysm: Spellbooks Excelsius chestplate ("infinite flight"); BoMD Table of Elevation (creative flight 7x7).
-- Ice and Fire: hippogryphs (early) and dragons ridable from stage 3; `dragon.flightStamina` and
-  `hippogryphs.flightStamina` are false in config (turning them on is an easy fix).
-- Aether: Valkyrie armor (free temporary flight, reforgeable), Phygs; Deeper and Darker Soul Elytra (cooldown boost).
-- Draconic Wyvern flight module is a cheap pre-Dragon craft (power-costed).
-- Apotheosis loot can hold Potions of Flying; Inventory Pets Flying Saddle pet.
-Free teleport:
-- Oritech Portal augment (return portal = /home), Draconic Dislocators, Occultism Entity Wormhole,
-  Bloodlines Gravebound phylactery teleport, Inventory Pets House/Enderman pets, BoMD Charged Ender Pearl,
-  Legendary Monsters annihilator helmet/chorus blade, Artifacts/Relics/Forsaken Relics teleport accessories.
+## Open items (config/KubeJS; quests don't feature or reward these)
+- Flight, teleport and wireless items follow the rules in `docs/design-doc.md` and `docs/gate-map.md`
+  section 5.
 - Explorer's Compass `allowTeleport = true` (probably op-only; set false).
-Wireless outside the tiers:
-- Flux Networks and Mekanism entangloporters/teleporters work across dimensions by default.
-- Mighty Mail mailboxes work in any dimension from day one (`allowedDimensions`).
-- Powah Ender Cells/Gates and Player Transmitter; ExtendedAE wireless connector/hub/terminal;
-  Occultism Storage Accessor/Stable Wormhole (cross-dim); Deeper and Darker Sculk Transmitter;
-  Draconic wireless crystals; Oritech energy poles (competes with IE as long-distance grid);
-  Gadgets & Gizmos Industrial Alternator + andesite cable (bypasses the C&A alternator nerf).
-Other:
-- Apotheosis world tiers (Ctrl+T, per player) are a second mob scaler next to the staged-difficulty script.
 - Apocalyptic Bosses: boss chests hold elytra/nether stars/netherite; several bosses spawn in plains/forests.
-- Extended Crafting Ultimate Ingot has no recipe (endgame KubeJS still to do); Numismatics coins have no
-  recipe (decide how money enters the server).
-- Keybind clashes in the client: B (backpack/Xaero waypoint/Occultism), R (Combat Roll/Iron's wheel),
-  M (Xaero/FTB Chunks map), V (voice/Deep Aether), Z (Bosses'Rise roll/Xaero).
+- Extended Crafting Ultimate Ingot has no recipe (endgame KubeJS still to do).
+- Numismatics coins have no recipe; players start with 10 starter cogs (`docs/balance-patch.md` G4).
+- Keybind clashes in the client: `docs/keybinds.md`.

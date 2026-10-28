@@ -2,7 +2,7 @@
 
 **Status: built.**
 
-A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautica: water everywhere, no surface, a deep seafloor to explore, and bases you have to engineer before you can breathe in them. Mod research: `docs/abyssal-plain-mod-research.md`.
+A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautica: water everywhere, no surface, a deep seafloor to explore, and bases you have to engineer before you can breathe in them.
 
 ## 1. Design decisions
 - **No surface.** A rock ceiling sits above the water; there is nowhere to swim up to.
@@ -28,13 +28,13 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 ## 4. Rules
 - **The sea always wins:** in this dimension, any block broken that would leave air becomes water (KubeJS). There is no "dig a dry tunnel" trick. The Lifepod is exempt.
 - **Bases are pressure hulls:** you build a sealed structure, pump it dry through a Decompression Chamber airlock, and keep the air with an Electrolyzer + Oxygen Diffuser. Hull blocks have depth ratings, so deeper bases need better hulls. **To test in game:** whether a hull parked on the seafloor works as a permanent base (the oxygen system is written for submarines; it may need the base to be an assembled "ship" that rests on the floor).
-- **Breathing gear:** several existing items give long or free breathing (Create backtank, Aquamirae oxygen tank, Aquaculture Neptunium, water-breathing spells and potions). Pressure still limits depth for all of them, so they are allowed: they make the shelves comfortable, they don't unlock the trenches. Option: cap them inside the dimension if they trivialise it.
+- **Breathing gear:** several existing items give long or free breathing (Create backtank, Aquamirae oxygen tank, Aquaculture Neptunium, water-breathing spells and potions). Pressure still limits depth for all of them, so they are allowed: they make the shelves comfortable, they don't unlock the trenches.
 - **No Conduit power in the Abyssal Plain:** a placed Conduit would give water breathing, night vision and fast mining around a base and make the pumps, airlocks and oxygen pointless. Conduits keep working everywhere else (KubeJS: remove the effect inside the dimension).
 - **Scary but fair:** the Hollow's damage cap and grace period apply here too, bosses excepted.
 
 ## 5. Life and content
-**New mods (recommended):**
-- **Hybrid Aquatic** (+ Hybrid API): the main kit, about 140 creatures (trench anglerfish, barreleye, dragonfish, fangtooth, colossal and vampire squid, firefly squid, yeti crab, the Karkinos miniboss) plus thermal vents, brine pools, glass sponges and whale-fall structures. Spawns follow its own biome tags, so we point the trench and vent creatures at our biomes; its Overworld biomes can be switched off in config. Its diving suits likely give free breathing: gate or remove (KubeJS).
+**Mods added for this dimension:**
+- **Hybrid Aquatic** (+ Hybrid API): the main kit, about 140 creatures (trench anglerfish, barreleye, dragonfish, fangtooth, colossal and vampire squid, firefly squid, yeti crab, the Karkinos miniboss) plus thermal vents, brine pools, glass sponges and whale-fall structures. Spawns follow its own biome tags, so we point the trench and vent creatures at our biomes; its Overworld biomes can be switched off in config. Its diving suits fall under the breathing-gear rule (section 4): pressure still limits them.
 - **Scannable**: an FE-powered scanner, the Subnautica scanner feel.
 - **Field Guide** (+ Immersive Overlays, Item Descriptions, client): scan creatures and plants with a spyglass to fill an in-game encyclopedia. Natural FTB Quests goals.
 - **Sunken Spires**: 11 ruins of an ancient civilisation with minibosses and a prismarine trial chamber.
@@ -42,8 +42,7 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 
 **Already in the pack, moved or shared here:**
 - Naturalist anglerfish and giant isopod (its `#naturalist:has_*` tags), Alex's Mobs frilled shark, giant squid and cachalot (spawn configs), Upgrade Aquatic thrasher and great thrasher plus its prismarine coral and jelly torches, Critters and Companions dumbo octopus, Regions Unexplored deep flora.
-- **The boss: Cataclysm's Leviathan.** Move the Sunken City into the Trench (`#cataclysm:has_structure/sunken_city_biomes`), so the Abyssal Plain has a real final goal. Its drops can gate late tiers.
-- Ice and Fire sea serpents: possible in the Trench, but they're very dangerous; decide after the playtest.
+- **The boss: Cataclysm's Leviathan**, summoned in the Trench with the Leviathan Lure (section 7a). It is the Abyssal Plain's final goal, and its drops gate late tiers.
 
 **Alex's Caves Continued: abyss content only.** Its Abyssal Chasm creatures (Deep Ones, Deep One knights and mages, the Hullbreaker, lanternfish, tripodfish) spawn only through ordinary biome spawn lists, with nothing in their code tied to its own chasm biome (checked in the 1.1.3 jar), so they and its abyssal blocks go into the Trench and Hydrothermal Field. **All six of its Overworld cave biomes are switched off** in its config (the Overworld is pregenerated, so they would only appear past 5 km with seams; Forlorn Hollows overlaps the Hollow; its submarine and diving suit overlap Deep Seas and stay unused). Cost: about 85 MB more content (RAM, startup, join time).
 
@@ -56,7 +55,7 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 **Payoff outside the dimension:** the pack rule that late Mekanism and AE2 tiers need boss drops gets one of its gates here: the Leviathan's drop plus rare **Abyssal Pearls** from the trenches. Deep-only crafting also unlocks the best hull tier and deep-dive upgrades. All of it becomes an "Abyssal Plain" FTB Quests chapter.
 
 ## 6. Rewards
-- Unique materials from vents, trenches and the Leviathan (e.g. an "Abyssal Pearl" gate item, like the Hollow's Ember).
+- Unique materials from vents, trenches and the Leviathan, including the **Abyssal Pearl** gate item (like the Hollow's Ember).
 - Per-player Lootr chests in all ruins and wrecks.
 - A Field Guide / scanning quest chapter ("Abyssal Survey").
 
@@ -64,22 +63,23 @@ A fully underwater dimension, `strata:abyssal_plain`, in the spirit of Subnautic
 - **Generator:** `tools/build_abyssal_plain.py --out kubejs/data --mods <server mods folder>` writes the dimension, noise settings, biomes, features, tags, spawn wiring, structure copies and loot modifiers. Re-run after an update to Hybrid Aquatic, Alex's Caves, Sunken Spires or MOS.
 - **Heights:** the column runs Y −48 to 591 because the standard noise generator hard-codes **lava below Y −54** in every dimension. Ceiling underside ~Y 560 (sea level 568), shelves ~Y 479, the plain ~Y 314, trench floors ~Y 14. Depths below the ceiling are as designed.
 - **What the ceiling breaks, and the workarounds:** surface rules count depth from the topmost air and water doesn't reset that count, so seafloor sediment is laid down as disk features (clay/mud, sand/gravel, blackstone/magma, mud/moss, abyssmarine). Vanilla kelp, seagrass, sea pickles and coral find their own height from the OCEAN_FLOOR heightmap, so they're rebuilt as our own block-column/simple-block features. All decorations use down-scanning placement (`environment_scan`, max 32 blocks). `initial_density_without_jaggedness` is 0, like the Nether. Alex's Caves' boulders, tube worms and anemones don't place outside its chasm biome and are left out; its mussels, black vents, whale falls and Deep One ruins work.
-- **Structures:** 26 copies under `strata:abyssal/` at fixed heights with `beard_box` (Sunken Spires: spires, temple, conduit ruins, spikes, fossils, forge, shrine, trial chamber buried under the plain, Colosseum and Sunken City in the trench; Moog's: Atlantis ruins and tribune, castle, church, archway, temple, wrecks, garden, magma ravine, conduit arch, dog statue, dragon skeletons in the trench). Sunken Spires now exists only here (its biome tag is emptied); Moog's keeps its Overworld oceans too. Test: the Colosseum generated on the trench floor (Y 0–40).
-- **The Leviathan:** Cataclysm's Sunken City picks its height in code from the ocean-floor heightmap, so it can't be moved here. Instead the **Leviathan Lure** (6 Abyssal Pearls + Karkinos Claw + Heart of the Sea + Immortal Embryo, both boss drops guaranteed) summons the Leviathan when used in the Trench below Y 120 (one at a time).
+- **Structures:** 26 copies under `strata:abyssal/` at fixed heights with `beard_box` (Sunken Spires: spires, temple, conduit ruins, spikes, fossils, forge, shrine, trial chamber buried under the plain, Colosseum and Sunken City in the trench; Moog's: Atlantis ruins and tribune, castle, church, archway, temple, wrecks, garden, magma ravine, conduit arch, dog statue, dragon skeletons in the trench). Sunken Spires exists only here (its biome tag is emptied); Moog's keeps its Overworld oceans too. Test: the Colosseum generated on the trench floor (Y 0–40).
+- **The Leviathan:** Cataclysm's Sunken City picks its height in code from the ocean-floor heightmap, so it can't be placed here. The **Leviathan Lure** (6 Abyssal Pearls + Karkinos Claw + Heart of the Sea + Immortal Embryo, both boss drops guaranteed) summons the Leviathan when used in the Trench below Y 120 (one at a time).
 - **Creatures:** Hybrid Aquatic's trench and vent species via its trench tags (its own Overworld biomes off), Alex's Caves' deep-sea creatures and Deep Ones and the Hullbreaker in the biome spawn lists (its six cave biomes off), Naturalist anglerfish/isopod and Upgrade Aquatic thrashers via their tags, Alex's Mobs frilled shark/giant squid/cachalot via their spawn configs.
 - **Quests:** `config/ftbquests/quests/chapters/abyssal_plain.snbt`, 23 quests in the Exploration group after the Pokémon World: intro and rules, depth (shelves, diving suit, plain, first submarine, trench), base (airlock and pump, electrolyzer and oxygen diffuser), survey (Field Guide, creature observations, Scannable), ruins (Atlantis, trial chamber, Colosseum, Sunken City), bosses (Karkinos, Hullbreaker, 6 pearls, Lure, Leviathan), ending in the Deep Station. Loads clean on the test server; the observation tasks are the first in the pack, so check them in the quest editor.
-- **Scripts:** `server_scripts/abyssal_rules.js` (Tidecaller and Lure recipes, Lifepod, flood rule, no Conduit power, no sponges, Pearl drops, Lure use); the Hollow's damage cap also covers `hybrid_aquatic` and `alexscaves`; `client_scripts/strata_lang.js` names every custom dimension and biome (the Pokémon world's and the Hollow's had no names before).
+- **Scripts:** `server_scripts/abyssal_rules.js` (Tidecaller and Lure recipes, Lifepod, flood rule, no Conduit power, no sponges, Pearl drops, Lure use); the Hollow's damage cap also covers `hybrid_aquatic` and `alexscaves`; `client_scripts/strata_lang.js` names every custom dimension and biome.
 - **Test server:** clean boot; 6,561-chunk sample: no air pockets, no lava (a few vent blocks), floors at design heights, sediment coverage 50–88% by biome, kelp/seagrass/coral/sea pickles/sponges/vents/brine pools present; all five biomes found only in the Abyssal Plain.
 - **Not yet tested with a client:** the portal (look, sounds, particles) and Lifepod, the flood rule, creature spawns, Deep Seas pressure under a ceiling, a pumped-dry or parked-hull base, the Lure.
 
 ## 7. Build steps
-1. Add the chosen mods; set Hybrid Aquatic's Overworld biomes off and retarget its tags.
+1. Add the mods; set Hybrid Aquatic's Overworld biomes off and retarget its tags.
 2. `tools/build_abyssal_plain.py`: dimension, ceilinged noise settings, biomes, tags, down-scanning placed features, structure copies.
-3. KubeJS: portal and Tidecaller, Lifepod generation and protection, the flood rule, damage cap/grace, breathing-gear gates.
+3. KubeJS: portal and Tidecaller, Lifepod generation and protection, the flood rule, damage cap/grace, no Conduit power, no sponges.
 4. Test server: leak check (nothing aquatic-only escapes, no Overworld ocean content inside), spawn counts per biome, structures land on the floor.
 5. **Playtest with clients:** Lifepod arrival, a pumped-dry hull base on the seafloor, pressure bands, submarine dive to the Trench, the Leviathan.
 6. Pregenerate on the server (taller dimension, so roughly 1.7× the Hollow's generation time).
 
 ## 8. Open items
 - Breathing gear: allowed (pressure is the gate), revisit after the playtest.
-- Whether hull bases work as fixed bases (playtest), and what to do if they don't (e.g. a Lifepod-style "habitat module" block that seals a room).
+- Whether hull bases work as fixed bases (playtest).
+- Ice and Fire sea serpents in the Trench: they are very dangerous; decide after the playtest.

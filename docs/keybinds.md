@@ -2,10 +2,10 @@
 
 Strata ships a default key layout (`config/defaultoptions/keybindings.txt`, applied by the Default Options mod) so
 that no two keys you use in normal play fire at once. It only applies to **new installs** and to keys you have never
-set. Default Options never overwrites a key that is already in your `options.txt`. If you joined before this layout
-shipped, open **Options > Controls > Key Binds** and press **Reset All** (or reset single keys) to switch to it.
+set. Default Options never overwrites a key that is already in your `options.txt`. If your keys differ from this
+layout, open **Options > Controls > Key Binds** and press **Reset All** (or reset single keys) to switch to it.
 
-"Alt+X" means hold Alt, then press X. The general rule: when a mod's default key was already taken, its key is now the
+"Alt+X" means hold Alt, then press X. The general rule: when a mod's default key is already taken, its key is the
 **same letter with Alt** (or Ctrl or Shift).
 
 ## Cheat sheet
@@ -119,11 +119,11 @@ suit modes (V/G/J/B, N item mode), jetpacks, Ad Astra suit flight, Cataclysm / L
 abilities, Building Wands, Building Gadgets, Mechanical Trowel, Create Thrusters tools, Pneumaticcraft armor,
 Twilight Forest Traveller's gear, Ice and Fire dragon riding, Vampirism crossbow ammo (C).
 
-## What moved, and why
+## Keys changed from the mods' defaults
 
-Each move fixes two actions that both fired from one key in normal play. Moved from the mods' defaults:
+Each change keeps two actions from firing from one key in normal play.
 
-| Action | Was | Now | Clashed with |
+| Action | Mod default | Strata | Clashes with on the default |
 |---|---|---|---|
 | Iron's Spells cast | V | X | Voice chat menu, Vampirism suck, Werewolves bite, Ars HUD, satchels |
 | Iron's Spells spell wheel | R | C | Combat Roll |
@@ -169,8 +169,8 @@ Each move fixes two actions that both fired from one key in normal play. Moved f
 
 **Unbound** (each duplicates another mod's key):
 - Easy Villagers "cycle trades" (C): Trade Cycling does the same thing on the same key in the villager screen, so
-  trades cycled twice per press.
-- Block Factory's Bosses "dodge roll" (Z): Combat Roll (R) is the pack's dodge.
+  trades would cycle twice per press.
+- Bosses'Rise (Block Factory's Bosses) "dodge roll" (Z): Combat Roll (R) is the pack's dodge.
 
 **Kept on purpose**
 - Simple Voice Chat keeps all its defaults except mute (V, G, N, H). Combat Roll keeps R. Xaero keeps M, Y, U,
