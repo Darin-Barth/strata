@@ -50,10 +50,6 @@ file = "config/alexsmobs/giant_squid_spawns.json"
 hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
 
 [[files]]
-file = "config/almostunified/debug.json"
-hash = "435ad46870d033c8652097d64c6ec592907e5ab6f1877240532a6a1743d4fca5"
-
-[[files]]
 file = "config/almostunified/duplicates.json"
 hash = "b70f57eadf6eec0ce43acd4c441f08feac1432826e04cb8e2736a73997c20c08"
 
