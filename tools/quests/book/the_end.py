@@ -95,17 +95,15 @@ q("dragon", "The Ender Dragon", deps="portal", icon="minecraft:dragon_head", tie
     lands on the portal. &eYUNG's Better End Island&r makes the main island and its
     towers grander than usual.
 
-    &cWhen the dragon dies, the whole server moves to Master difficulty.&r
-    Regular mobs everywhere get much tougher. Bosses stay as they are.
-    Make sure your friends are ready before you strike the final blow!""",
+    Bring your friends: the dragon is the first real group fight.""",
   rewards=[give("minecraft:diamond_block", 2)])
 
-q("master", "Master Mode", deps="dragon", icon="minecraft:wither_skeleton_skull", desc="""
-    You're in &cMaster&r difficulty now. Upgrade your gear, use Apotheosis gems and
-    affixes, and keep your armor repaired.
+q("master", "Dragonslayer", deps="dragon", icon="minecraft:wither_skeleton_skull", desc="""
+    The dragon's defeat opens the way to the late game:
+    the &5Pinnacle&r World Tier needs a Dragon kill, and &eDraconic Evolution&r's top cores need
+    its dragon heart.
 
-    The dragon's defeat also opens the way to the late game: top-tier Draconic Evolution
-    and Extended Crafting recipes need it (with a Cataclysm boss).""",
+    Upgrade your gear, use Apotheosis gems and affixes, and keep your armor repaired.""",
   rewards=[give("minecraft:totem_of_undying")])
 
 # --- the outer islands ------------------------------------------------------------------
@@ -150,6 +148,6 @@ q("where_next", "Where Next?", deps="dragon", icon="minecraft:compass", shape="h
   desc="""
     The End is beaten, but the pack isn't:
 
-    &cBosses & Combat&r: the &5Ender Guardian&r (Cataclysm) unlocks cross-dimension wireless.
+    &cBosses & Combat&r: the &5Ender Guardian&r (Cataclysm) drops the Void Core for the biggest storage.
     &bAd Astra&r: rockets to other planets.
     &bTech&r: the late tiers of Mekanism, AE2 and Draconic Evolution.""")

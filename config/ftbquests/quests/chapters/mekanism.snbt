@@ -626,7 +626,7 @@
 			id: "550C948E3F573CF8"
 			x: 10.5d
 			y: 12.0d
-			dependencies: ["1EE2955765873671", "65459A133D3C4EFE"]
+			dependencies: ["1EE2955765873671"]
 			icon: { id: "mekanism:quantum_entangloporter" }
 			tasks: [
 				{

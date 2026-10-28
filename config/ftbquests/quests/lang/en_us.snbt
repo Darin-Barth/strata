@@ -100,7 +100,7 @@
 	quest.318FBADF9FE10E66.quest_desc: [
 		"Strata is built around travel, so a few things are different here:"
 		""
-		"&cNo free teleporting.&r There's no /home, /back, /rtp or /tpa."
+		"&cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown), and there's no /back, /rtp or /tpa."
 		"&cFlight costs something:&r fuel, power, mana, stamina or durability. No \"wear it and fly forever\" items."
 		""
 		"That's why trains, airships, elytra, mounts and roads are worth building. You can still earn teleporting later: Mekanism teleporters, Ars Nouveau warps and blink spells all have a cost."
@@ -114,21 +114,19 @@
 		""
 		"You can also craft your own (look it up with &eR&r)."
 	]
-	quest.15654BD960144D8E.title: "The World Gets Harder"
+	quest.15654BD960144D8E.title: "Choose Your Challenge"
 	quest.15654BD960144D8E.quest_desc: [
-		"Strata's difficulty rises in steps, for everyone on the server at once:"
+		"Difficulty in Strata is &eyours to pick&r, not the server's. Everyone plays at their own pace."
 		""
-		"&aNormal&r: the start."
-		"&eExpert&r: after anyone first enters &cthe Nether&r. Mobs hit a bit harder."
-		"&cMaster&r: after the &5Ender Dragon&r is defeated."
+		"&eWorld Tiers&r (Apotheosis, &eCtrl+T&r): a higher tier makes the mobs around &eyou&r tougher and the loot better. You unlock tiers with better gear and bigger kills, and switch them on only when you're ready (see &cCombat \\& Gear&r)."
 		""
-		"Other dimensions (the End, Twilight Forest, Deeper and Darker) are tougher than home. Bosses always keep their own designed strength. Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn."
+		"Other dimensions (the End, Twilight Forest, Deeper and Darker, the Hollow) are tougher than home. Bosses always keep their own designed strength. Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn."
 	]
 	quest.65459A133D3C4EFE.title: "Into the Nether"
 	quest.65459A133D3C4EFE.quest_desc: [
 		"Build a portal from obsidian and light it. Bring armor, food and blocks!"
 		""
-		"Entering the Nether moves the server to &eExpert&r difficulty. It also unlocks the middle tier of wireless tech: Flux Networks, AE2 wireless terminals and Mekanism quantum entangloporters."
+		"Nether mobs hit hard and lava is everywhere: go in with iron armor and a shield."
 		""
 		"See the &cThe Nether&r chapter for what's out there."
 	]
@@ -481,7 +479,7 @@
 	quest.28007822CBD71855.quest_desc: [
 		"Strata has &cno free teleporting&r, so getting people and stuff around is a big deal. &eCreate trains&r are the answer: you build the train yourself, block by block, and it drives your tracks on a timetable."
 		""
-		"Trains carry players, chests and tanks between your bases, mines and farms. Later, they're how goods cross between far-away places before wireless exists."
+		"Trains carry players, chests and tanks between your bases, mines and farms. They're the fun way to move goods between far-away places, long before wireless is cheap."
 		""
 		"You'll need brass for most train parts (see &bCreate: Getting Moving&r)."
 	]
@@ -927,7 +925,7 @@
 	quest.0179AD1E229DFE2E.quest_desc: [
 		"&eHigh Voltage&r steel lines are Strata's long-distance power. They carry the most power and reach the farthest between poles."
 		""
-		"&6Plan a grid:&r HV between buildings and outposts, a substation (HV Transformer, then a Transformer) at each end, and LV or Mekanism cables inside. There's no wireless power early on, so a real power line is the way to move energy."
+		"&6Plan a grid:&r HV between buildings and outposts, a substation (HV Transformer, then a Transformer) at each end, and LV or Mekanism cables inside. Wireless power (Flux Networks) costs a lot, so a real power line is the cheap way to move energy."
 	]
 	quest.4A69185969BDB2AE.title: "Crusher"
 	quest.4A69185969BDB2AE.quest_desc: [
@@ -1120,9 +1118,9 @@
 	]
 	quest.550C948E3F573CF8.title: "Quantum Entangloporter"
 	quest.550C948E3F573CF8.quest_desc: [
-		"Mid-game wireless. Two &eQuantum Entangloporters&r on the same frequency act like one block: items, fluids, gases, power and heat put into one come out of the other."
+		"Wireless anything. Two &eQuantum Entangloporters&r on the same frequency act like one block: items, fluids, gases, power and heat put into one come out of the other."
 		""
-		"It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment. It's part of Strata's wireless tier that opens after the Nether."
+		"It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment. It works across dimensions too."
 	]
 	quest.704A0A13B6F0CE96.title: "Ultimate Tier"
 	quest.704A0A13B6F0CE96.quest_desc: [
@@ -1299,16 +1297,15 @@
 	quest.573B94C480D57557.quest_desc: [
 		"Mid-game wireless: a &eWireless Access Point&r on your network lets a &eWireless Terminal&r reach it from nearby. It runs on stored power, so charge it in a Charger."
 		""
-		"Range is limited; &eWireless Boosters&r in the access point stretch it. It's part of Strata's wireless tier that opens after the Nether."
+		"Range is limited; &eWireless Boosters&r in the access point stretch it."
 	]
 	quest.561058F56B975552.title: "256k Cells"
 	quest.561058F56B975552.quest_desc: [
-		"The biggest standard cell. Strata places the top cells after the"
-		"&cNetherite Monstrosity&r: boss drops will be part of the recipe."
+		"The biggest standard cell. Its cell component needs a &5Void Core&r from the &cEnder Guardian&r (Cataclysm, End citadel)."
 	]
 	quest.0F7CF4639F4C3D2F.title: "Quantum Network Bridge"
 	quest.0F7CF4639F4C3D2F.quest_desc: [
-		"The &5Quantum Network Bridge&r links two ME networks anywhere, &eeven in other dimensions&r. It's Strata's only cross-dimension wireless, so it's late."
+		"The &5Quantum Network Bridge&r links two ME networks anywhere, &eeven in other dimensions&r. The parts are expensive, so it's a late-game project."
 		""
 		"Build a ring of 8 &eQuantum Rings&r around a &eQuantum Link Chamber&r at each end. &eEntangled Singularities&r (made in pairs, in an explosion) go in the chambers. Both ends must stay loaded. Gated behind the &cEnder Guardian&r."
 	]
@@ -1446,7 +1443,7 @@
 		"&bIntegrated Dynamics&r: read anything (a chest, a tank, the time of day) and make your base react to it."
 		"&bLaserIO&r: move items, fluids and power between nearby blocks with lasers."
 		"&bMore Red&r: compact redstone logic gates and wires."
-		"&bFlux Networks&r: wireless power, &cafter the Nether&r."
+		"&bFlux Networks&r: wireless power, even across dimensions."
 	]
 	quest.01ADE2B171793530.title: "ID: Menril"
 	quest.01ADE2B171793530.quest_desc: [
@@ -1509,7 +1506,7 @@
 	]
 	quest.2208B866CA7D5293.title: "Flux Dust"
 	quest.2208B866CA7D5293.quest_desc: [
-		"&bFlux Networks&r sends power without wires. It's part of Strata's wireless tier that opens &eafter the Nether&r."
+		"&bFlux Networks&r sends power without wires, even to other dimensions."
 		""
 		"&eFlux Dust&r is made in the world by crushing redstone between &ebedrock&r and &eobsidian&r. Press &eR&r on Flux Dust to see the setup."
 	]
@@ -2680,11 +2677,11 @@
 		""
 		"Bring: a stack of blocks, food, a bow, and a &eflint and steel&r to relight your portal. Lava is everywhere. Fire resistance potions are your best friend."
 	]
-	quest.334584320691A8F2.title: "Expert Mode"
+	quest.334584320691A8F2.title: "Tougher Down Here"
 	quest.334584320691A8F2.quest_desc: [
-		"Your first trip here moved the whole server to &eExpert&r difficulty. Regular mobs everywhere hit a bit harder and have more health. Bosses don't change."
+		"The Nether is a step up from home: wither skeletons, blazes, ghasts and the mobs from &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld."
 		""
-		"It's a modest step. Upgrade your armor soon, and keep a shield in your off-hand. The next step, &cMaster&r, comes after the Ender Dragon."
+		"Upgrade your armor soon, and keep a shield in your off-hand. Your own &eWorld Tier&r (Ctrl+T) still decides how tough mobs around you get."
 	]
 	quest.63E001FFDB4BBB22.title: "Piglin Manners"
 	quest.63E001FFDB4BBB22.quest_desc: [
@@ -2791,7 +2788,7 @@
 	quest.14038F77BDCCE0BA.quest_desc: [
 		"The Nether opens up a lot:"
 		""
-		"&bSame-dimension wireless&r tech is unlocked now (see the Tech chapters)."
+		"&bNetherite&r and Nether materials feed the mid tiers of the Tech chapters."
 		"&5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need."
 		"&cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs."
 		"&cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether."
@@ -3270,13 +3267,13 @@
 	quest.5E75F524FF7A94CC.quest_desc: [
 		"The dragon heals from the &dEnd Crystals&r on top of the obsidian towers. Shoot or break the crystals first (some are in cages), then fight the dragon when it lands on the portal. &eYUNG's Better End Island&r makes the main island and its towers grander than usual."
 		""
-		"&cWhen the dragon dies, the whole server moves to Master difficulty.&r Regular mobs everywhere get much tougher. Bosses stay as they are. Make sure your friends are ready before you strike the final blow!"
+		"Bring your friends: the dragon is the first real group fight."
 	]
-	quest.145D0A13C975E69D.title: "Master Mode"
+	quest.145D0A13C975E69D.title: "Dragonslayer"
 	quest.145D0A13C975E69D.quest_desc: [
-		"You're in &cMaster&r difficulty now. Upgrade your gear, use Apotheosis gems and affixes, and keep your armor repaired."
+		"The dragon's defeat opens the way to the late game: the &5Pinnacle&r World Tier needs a Dragon kill, and &eDraconic Evolution&r's top cores need its dragon heart."
 		""
-		"The dragon's defeat also opens the way to the late game: top-tier Draconic Evolution and Extended Crafting recipes need it (with a Cataclysm boss)."
+		"Upgrade your gear, use Apotheosis gems and affixes, and keep your armor repaired."
 	]
 	task.24D6B1EB806B4CEE.title: "Visit the Crystal Peaks"
 	quest.3AC1D988D35F91DA.title: "The Outer Islands"
@@ -3312,7 +3309,7 @@
 	quest.39AFFA04EBA96910.quest_desc: [
 		"The End is beaten, but the pack isn't:"
 		""
-		"&cBosses \\& Combat&r: the &5Ender Guardian&r (Cataclysm) unlocks cross-dimension wireless."
+		"&cBosses \\& Combat&r: the &5Ender Guardian&r (Cataclysm) drops the Void Core for the biggest storage."
 		"&bAd Astra&r: rockets to other planets."
 		"&bTech&r: the late tiers of Mekanism, AE2 and Draconic Evolution."
 	]
@@ -3695,9 +3692,9 @@
 	task.6A8C0D9280E92618.title: "Unlock Summit"
 	quest.3560C883825FA029.title: "World Tier: Summit"
 	quest.3560C883825FA029.quest_desc: [
-		"A full set of &9Rare&r affix gear, and the &cWither&r defeated."
+		"A full set of &9Rare&r affix gear, the &cWither&r defeated, and a &6Hollow Ember&r in your inventory."
 		""
-		"The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear and the Ender Dragon defeated: the best loot and the toughest mobs."
+		"The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear, the Ender Dragon defeated and an &bAbyssal Pearl&r: the best loot and the toughest mobs."
 	]
 	quest.088A01960AF3EC4F.title: "Not a Diamond"
 	quest.088A01960AF3EC4F.quest_desc: [
@@ -3801,7 +3798,7 @@
 	quest.2842BDBFC2178FC0.quest_desc: [
 		"&cL_Ender's Cataclysm&r adds huge boss fights, each in its own lair: a forge in the Nether, an arena of fire, a pyramid, a factory, a sunken city, a frozen prison, a sky-high temple and a citadel in the End."
 		""
-		"&6Why it matters:&r killing these bosses is how Strata unlocks the late game. Top Mekanism and AE2 tiers and &ecross-dimension wireless&r wait behind them."
+		"&6Why it matters:&r killing these bosses is how Strata unlocks the late game. Nuclear power, top Mekanism and AE2 tiers and the best rockets wait behind them."
 		""
 		"Bosses keep their designed strength. Bring good gear, food, and friends."
 	]
@@ -3894,7 +3891,7 @@
 		"Out on the End's outer islands (past the Dragon's gateway) stands the &5Ruined Citadel&r. An &eEye of Void&r points the way. Ender Golems guard it, and so does the Ender Guardian."
 		""
 		"&6Drops:&r the &eGauntlet of Guard&r (pulls enemies to you)."
-		"&6Unlocks:&r &ecross-dimension wireless&r (the AE2 Quantum Network Bridge)."
+		"&6Unlocks:&r the &eVoid Core&r for the biggest storage (AE2 256k cells, AppliedFlux, QIO)."
 	]
 	task.377CBD57623E7E34.title: "Defeat every Cataclysm boss"
 	quest.0B240502643A3717.title: "The Cataclysmfarer"
@@ -3925,7 +3922,7 @@
 	quest.53DE2D46F18BDACB.quest_desc: [
 		"With bosses down, go claim what they unlocked:"
 		""
-		"&bMekanism&r and &bAE2&r: their late tiers open after the Netherite Monstrosity or Ignis. Cross-dimension wireless opens after the Ender Guardian."
+		"&bNuclear power&r needs Ignis' Ignitium; &bMekanism&r's ultimate tier needs the Monstrosity's Lava Power Cells; the biggest &bAE2&r and QIO storage needs the Ender Guardian's Void Core."
 		"&cBoss Hunter&r: many more bosses from other mods."
 		"&cIce and Fire&r: dragons."
 	]
@@ -4074,7 +4071,7 @@
 	quest.3498B3B6B39E8EA3.quest_desc: [
 		"Strata has bosses from many mods, scattered all over the world. This chapter is a hunting list: one branch per mod, with where to look."
 		""
-		"Every boss keeps its designed strength (the world's difficulty steps don't touch them). Most are built for a group: bring friends, food, and a way home."
+		"Every boss keeps its designed strength (World Tiers don't change them). Most are built for a group: bring friends, food, and a way home."
 		""
 		"&eTip:&r an &eExplorer's Compass&r finds structures by name, and many mods add an \"Eye\" that you throw to point the way."
 	]

@@ -280,7 +280,7 @@
 			id: "2208B866CA7D5293"
 			x: 1.75d
 			y: 6.0d
-			dependencies: ["3EF08C213EF1C9E0", "65459A133D3C4EFE"]
+			dependencies: ["3EF08C213EF1C9E0"]
 			icon: { id: "fluxnetworks:flux_dust" }
 			tasks: [
 				{

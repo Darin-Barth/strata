@@ -210,7 +210,7 @@ hash = "5c7bc85256f5e590ddb0ed62611b467c989d54a1116e1aceb32db35e05dbc91d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "85beaa04729432458890ea00591d9dd371dd6b03b4e51df8663793e3484f1b96"
+hash = "9df804d6dc23e4076aafc0f62f198f78e50fa2ab0c2c6ae9ec338c8757c79a3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aether.snbt"
@@ -290,11 +290,11 @@ hash = "5fc106ba43d4cdcef7585ca6b300567e4d0adad6d54b778315a55f50a7568391"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/logistics.snbt"
-hash = "fe5b4e9fa1cf4049ea1658a4eed586270dbe6b30b36ca3160e0f466738d44b19"
+hash = "d7d27885deb20179f293983c9f459c5ae8a232acf2f34c3a47f73ff7b878f26e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "768295238bc698b183626dbebeeb45cf9a1fe1b061258c5091c614680b937a28"
+hash = "0d577cf09562798542f492d7be25a3810882dd9fcfd301c932967ba7509e3b25"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/more_machines.snbt"
@@ -358,7 +358,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "050bb7eaeb2f6afab51ca87147200671ea6040dcc02e1560a4ae0b83db7968e8"
+hash = "19e87701a60793ba3000ae4b385550207d7efa897d8453435d768d0132132de8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"

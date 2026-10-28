@@ -228,14 +228,14 @@ q("teleporter", "Teleporter", deps="circuits_up", icon="mekanism:teleporter", ti
     Every jump costs &epower&r, and longer trips cost more. There's a teleporter only
     where someone built one, so a network takes real work.""")
 
-q("entangloporter", "Quantum Entangloporter", deps=["circuits_up", "welcome/nether"],
+q("entangloporter", "Quantum Entangloporter", deps="circuits_up",
   icon="mekanism:quantum_entangloporter", tier=4, tasks=item("mekanism:quantum_entangloporter"),
   desc="""
-    Mid-game wireless. Two &eQuantum Entangloporters&r on the same frequency act like
+    Wireless anything. Two &eQuantum Entangloporters&r on the same frequency act like
     one block: items, fluids, gases, power and heat put into one come out of the other.
 
     It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment.
-    It's part of Strata's wireless tier that opens after the Nether.""")
+    It works across dimensions too.""")
 
 # --- late game (boss gated) -------------------------------------------------------------
 q("ultimate", "Ultimate Tier", deps=["circuits_up", "cataclysm/netherite_monstrosity"],

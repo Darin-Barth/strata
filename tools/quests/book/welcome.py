@@ -120,7 +120,8 @@ q("bounty", "Odd Jobs", deps="tavern", icon="bountiful:bountyboard",
 q("rules", "Rules of the Road", deps="map", icon="minecraft:writable_book", desc="""
     Strata is built around travel, so a few things are different here:
 
-    &cNo free teleporting.&r There's no /home, /back, /rtp or /tpa.
+    &cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown),
+    and there's no /back, /rtp or /tpa.
     &cFlight costs something:&r fuel, power, mana, stamina or durability.
     No "wear it and fly forever" items.
 
@@ -139,14 +140,14 @@ q("waystones", "Waystones", deps="rules", icon="waystones:waystone",
     You can also craft your own (look it up with &eR&r).""",
   rewards=[give("minecraft:experience_bottle", 16)], tier=2)
 
-q("difficulty", "The World Gets Harder", deps="iron_age", icon="minecraft:zombie_head", desc="""
-    Strata's difficulty rises in steps, for everyone on the server at once:
+q("difficulty", "Choose Your Challenge", deps="iron_age", icon="minecraft:zombie_head", desc="""
+    Difficulty in Strata is &eyours to pick&r, not the server's. Everyone plays at their own pace.
 
-    &aNormal&r: the start.
-    &eExpert&r: after anyone first enters &cthe Nether&r. Mobs hit a bit harder.
-    &cMaster&r: after the &5Ender Dragon&r is defeated.
+    &eWorld Tiers&r (Apotheosis, &eCtrl+T&r): a higher tier makes the mobs around &eyou&r tougher
+    and the loot better. You unlock tiers with better gear and bigger kills, and switch them on
+    only when you're ready (see &cCombat & Gear&r).
 
-    Other dimensions (the End, Twilight Forest, Deeper and Darker) are tougher than home.
+    Other dimensions (the End, Twilight Forest, Deeper and Darker, the Hollow) are tougher than home.
     Bosses always keep their own designed strength.
     Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn.""")
 
@@ -154,9 +155,7 @@ q("nether", "Into the Nether", deps="difficulty", icon="minecraft:netherrack", t
   tasks=dim("minecraft:the_nether"), desc="""
     Build a portal from obsidian and light it. Bring armor, food and blocks!
 
-    Entering the Nether moves the server to &eExpert&r difficulty.
-    It also unlocks the middle tier of wireless tech: Flux Networks, AE2 wireless terminals
-    and Mekanism quantum entangloporters.
+    Nether mobs hit hard and lava is everywhere: go in with iron armor and a shield.
 
     See the &cThe Nether&r chapter for what's out there.""")
 

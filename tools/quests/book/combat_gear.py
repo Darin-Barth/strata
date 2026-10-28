@@ -112,10 +112,10 @@ q("ascent", "World Tier: Ascent", deps="world_tiers", icon="minecraft:gold_block
 
 q("summit", "World Tier: Summit", deps="ascent", icon="minecraft:wither_skeleton_skull", tier=4,
   optional=True, tasks=adv("apotheosis:progression/summit", title="Unlock Summit"), desc="""
-    A full set of &9Rare&r affix gear, and the &cWither&r defeated.
+    A full set of &9Rare&r affix gear, the &cWither&r defeated, and a &6Hollow Ember&r in your inventory.
 
-    The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear and the Ender Dragon
-    defeated: the best loot and the toughest mobs.""")
+    The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear, the Ender Dragon
+    defeated and an &bAbyssal Pearl&r: the best loot and the toughest mobs.""")
 
 q("gem_dust", "Not a Diamond", deps="affix", icon="apotheosis:gem_dust", tier=2,
   tasks=item("apotheosis:gem_dust"), desc="""

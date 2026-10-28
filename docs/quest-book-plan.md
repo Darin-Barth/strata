@@ -70,7 +70,7 @@ against the mod jars by `tools/quests/check_ids.py`.
 23. The Aether (+ Deep Aether, Aether Villages).
 24. Deeper and Darker — the Otherside.
 25. Ad Astra — rockets and planets.
-26. The End — End Remastered's eyes, Integrated Stronghold, Dragon (→ Master difficulty), Nullscape.
+26. The End — End Remastered's eyes, Integrated Stronghold, Dragon (unlocks the Pinnacle World Tier), Nullscape.
 27. Pokémon World — Bell Fragment → Johto Bell, portal frame, starter, Pokécenters, gyms, CobbleDollars.
 
 **Bosses & Combat**

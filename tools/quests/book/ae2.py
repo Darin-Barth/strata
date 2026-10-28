@@ -196,27 +196,26 @@ q("appmek", "Applied Mekanistics: Chemical Cells", deps=["cells_up", "mekanism/s
     Hook your ore line's tanks to the network and pull exactly what each machine needs.""",
   tier=3)
 
-# --- wireless (gated) -------------------------------------------------------------------
-q("wireless", "Wireless Terminal", deps=["terminal", "welcome/nether"], icon="ae2:wireless_terminal",
+# --- wireless --------------------------------------------------------------------------
+q("wireless", "Wireless Terminal", deps="terminal", icon="ae2:wireless_terminal",
   tier=3, tasks=[item("ae2:wireless_access_point"), item("ae2:wireless_terminal")], desc="""
     Mid-game wireless: a &eWireless Access Point&r on your network lets a
     &eWireless Terminal&r reach it from nearby. It runs on stored power, so charge it
     in a Charger.
 
-    Range is limited; &eWireless Boosters&r in the access point stretch it.
-    It's part of Strata's wireless tier that opens after the Nether.""")
+    Range is limited; &eWireless Boosters&r in the access point stretch it.""")
 
-q("cells_late", "256k Cells", deps=["cells_up", "cataclysm/netherite_monstrosity"],
+q("cells_late", "256k Cells", deps=["cells_up", "cataclysm/ender_guardian"],
   icon="ae2:item_storage_cell_256k", tier=4, tasks=item("ae2:item_storage_cell_256k"), desc="""
-    The biggest standard cell. Strata places the top cells after the
-    &cNetherite Monstrosity&r: boss drops will be part of the recipe.""")
+    The biggest standard cell. Its cell component needs a &5Void Core&r from the
+    &cEnder Guardian&r (Cataclysm, End citadel).""")
 
-q("quantum", "Quantum Network Bridge", deps=["autocraft", "cataclysm/ender_guardian"],
+q("quantum", "Quantum Network Bridge", deps="autocraft",
   icon="ae2:quantum_link", tier=5, size=1.5, shape="diamond",
   tasks=[item("ae2:quantum_ring", 8), item("ae2:quantum_link"),
          item("ae2:quantum_entangled_singularity", 2)], desc="""
     The &5Quantum Network Bridge&r links two ME networks anywhere, &eeven in other
-    dimensions&r. It's Strata's only cross-dimension wireless, so it's late.
+    dimensions&r. The parts are expensive, so it's a late-game project.
 
     Build a ring of 8 &eQuantum Rings&r around a &eQuantum Link Chamber&r at each end.
     &eEntangled Singularities&r (made in pairs, in an explosion) go in the chambers.

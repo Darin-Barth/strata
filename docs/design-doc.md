@@ -54,7 +54,7 @@ Tech is the heaviest pillar: Create plus its add-on ecosystem, Mekanism, AE2, an
 - Crafts & Additions hanging wires for local runs around factories.
 - Immersive Engineering LV/MV/HV lines for long distance between buildings, with transformers at substations. Both carry FE and meet at an FE block (for example an accumulator).
 - New Age's wire recipes removed with KubeJS; its generators, motors and nuclear stay.
-- Inside bases, Mekanism universal cables; Flux Networks later per the wireless tiers.
+- Inside bases, Mekanism universal cables; Flux Networks for wireless power (no wireless tiers).
 
 **Mod groups** (full list in the tracker)
 

@@ -14,12 +14,12 @@ q("intro", "What is the Nether?", deps="welcome/nether", icon="minecraft:netherr
     Lava is everywhere. Fire resistance potions are your best friend.""",
   rewards=[give("minecraft:cooked_beef", 16), give("minecraft:flint_and_steel")])
 
-q("expert", "Expert Mode", deps="intro", icon="minecraft:skeleton_skull", desc="""
-    Your first trip here moved the whole server to &eExpert&r difficulty.
-    Regular mobs everywhere hit a bit harder and have more health. Bosses don't change.
+q("expert", "Tougher Down Here", deps="intro", icon="minecraft:skeleton_skull", desc="""
+    The Nether is a step up from home: wither skeletons, blazes, ghasts and the mobs from
+    &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld.
 
-    It's a modest step. Upgrade your armor soon, and keep a shield in your off-hand.
-    The next step, &cMaster&r, comes after the Ender Dragon.""",
+    Upgrade your armor soon, and keep a shield in your off-hand.
+    Your own &eWorld Tier&r (Ctrl+T) still decides how tough mobs around you get.""",
   rewards=[give("minecraft:golden_apple", 2)])
 
 q("gold", "Piglin Manners", deps="intro", icon="minecraft:golden_helmet",
@@ -155,7 +155,7 @@ q("where_next", "Where Next?", deps=["fortress", "netherite_gear"], icon="minecr
   shape="hexagon", tier=2, desc="""
     The Nether opens up a lot:
 
-    &bSame-dimension wireless&r tech is unlocked now (see the Tech chapters).
+    &bNetherite&r and Nether materials feed the mid tiers of the Tech chapters.
     &5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need.
     &cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs.
     &cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether.""")

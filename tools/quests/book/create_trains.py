@@ -11,7 +11,7 @@ q("intro", "Why Trains?", deps="welcome/path_tech", icon="create:controls", size
     and it drives your tracks on a timetable.
 
     Trains carry players, chests and tanks between your bases, mines and farms.
-    Later, they're how goods cross between far-away places before wireless exists.
+    They're the fun way to move goods between far-away places, long before wireless is cheap.
 
     You'll need brass for most train parts (see &bCreate: Getting Moving&r).""")
 
