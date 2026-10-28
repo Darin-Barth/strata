@@ -1,6 +1,7 @@
 # Balance patch proposal (Oct 27)
 
-Status: **proposal for Darin, nothing changed yet.** From four read-only audits (tech, magic,
+Status: **proposal for Darin, nothing changed yet.** Darin's calls so far (Oct 27): C4, E6, F7 and H2
+stay as they are; he's going through the rest item by item. From four read-only audits (tech, magic,
 gear/bosses, everyday/QoL) that read the mods' own recipes, loot and configs on the 0.5.0 test
 server. The key numbers were re-checked by hand. "Inference" means read from code or text but not
 tried in game. Skill trees and Inventory Pets were handled separately (already queued).
@@ -36,7 +37,7 @@ Pearls...) becomes renewable from a base farm through several routes:
 | C1 | Excessive Utilities **Rainbow Generator** | `rainbowGeneratorFePerTick = 25000000` (25 M FE/t) | 50,000 |
 | C2 | **Powah** reactors: basic 1,000 FE/t from Overworld uraninite, no boss item; blazing 10k, niotic 25k, spirited 100k. Makes C&A and New Age pointless (*too weak* by comparison) | `powah.json5` | ignitium ingot in the blazing and higher reactor recipes (like T1); rates of blazing+ to 25% |
 | C3 | **Oritech fission reactor** controller has no boss item; 25,000 FE/t | `crafting/controller.json` | ignitium ingot, like T1 |
-| C4 | IE **diesel generator** 4096 FE/t, ungated, above New Age | `dieselGen_output` | **Your call** (it needs a fuel chain, so it does have a running cost) |
+| C4 | IE **diesel generator** 4096 FE/t, ungated, above New Age | `dieselGen_output` | Keep (Darin, Oct 27) |
 
 ## D. Ore and resource multiplication (Mekanism 5× is the intended top)
 
@@ -57,7 +58,7 @@ Pearls...) becomes renewable from a base farm through several routes:
 | E3 | **Create Enchantment Industry** skips gear gates G3/G4: Affix Augmentor with no Ember, Gem Cutter to Perfect with no Pearl, affixes up to level 4 | recipes, `apotheoticAffixTemplateMaxLevel = 4.0` | Ember in the Augmentor, Pearl in the Gem Cutter, template max 2 |
 | E4 | **Sophisticated omega stack upgrade**: unlimited per slot, skips the void-core gate (T6) on big storage | enabled in `sophisticatedcore-common.toml` | disable (both mods) |
 | E5 | **Simply Swords** uniques: hard pity at 75 chests, and Lootr rolls per player, so everyone gets one early | `loot.toml` | hard pity 250, weight 0.02 |
-| E6 | Relics **Glitchy Mantle** walks on air, End loot, free to run | constants | **Your call** under the flight rule (late, but free) |
+| E6 | Relics **Glitchy Mantle** walks on air, End loot, free to run | constants | Keep (Darin, Oct 27) |
 
 ## F. Survivability (makes bosses and the Hollow's 40% cap moot)
 
@@ -69,7 +70,7 @@ Pearls...) becomes renewable from a base farm through several routes:
 | F4 | Ars 'n Spells resonance ×5 spell damage near full mana (inference: may stack with F3) | config | 1.5 |
 | F5 | **Spice of Life: Onion** gives permanent Strength II, Regeneration and Speed for eating varied food; with Croptopia + Farmer's Delight that's trivial | generated `solonion.json` (the pack ships none) | ship it with health and toughness steps only, no effects |
 | F6 | **Boss damage caps**: Cataclysm and Legendary Monsters cap each hit at 20–25; BoMD and Bosses'Rise have none, so a nuke, a cannon or dragonsteel deletes them | configs | KubeJS cap of 25 per hit (10 for explosions) on `#c:bosses` outside Cataclysm |
-| F7 | **Death is nearly free**: PlayerRevive revives forever with no item, downed players can't be hit by mobs; Tombstone's `soulbound_enchanting_table = true` (default false) | repo configs | **Your call**: revive needs a golden apple and mobs can hit downed players; Soulbound from books only |
+| F7 | **Death is nearly free**: PlayerRevive revives forever with no item, downed players can't be hit by mobs; Tombstone's `soulbound_enchanting_table = true` (default false) | repo configs | Keep (Darin, Oct 27): cheap deaths suit the group |
 
 ## G. Economy and everyday
 
@@ -86,7 +87,7 @@ Pearls...) becomes renewable from a base farm through several routes:
 | # | What | Evidence | Rec |
 |---|---|---|---|
 | H1 | Risk-free resource world: full vanilla ores incl. diamonds, and copies of ancient cities, trial chambers, mansions, monuments, with In Control denying hostile spawns | `kubejs/data/pokeworld/...` | drop those four structure copies; cut diamond/gold/redstone ore features (`build_pokeworld.py`) |
-| H2 | **Flying Pokémon** everywhere within about an hour (Pidgeotto at level 18, 2× XP, rare candies for emeralds) | 53 species with AIR riding | **Your call**: AIR riding only in the Pokémon world, or only final-stage flyers |
+| H2 | **Flying Pokémon** everywhere within about an hour (Pidgeotto at level 18, 2× XP, rare candies for emeralds) | 53 species with AIR riding | Keep (Darin, Oct 27): riding everywhere includes flying |
 
 ## I. Too weak to bother with
 
