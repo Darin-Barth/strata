@@ -501,6 +501,10 @@ file = "config/reliquified_artifacts/relics/cross_necklace.yaml"
 hash = "2572c312ff59e9b02cd620dcf924458dff53501c90239f36190fe0d41e23dd99"
 
 [[files]]
+file = "config/royalvariations.toml"
+hash = "11baf918c09062c9feac7d8c9471d8a5de3d8b7c48aeb4af69397802f1ae70dd"
+
+[[files]]
 file = "config/sanity_renewed/default.toml"
 hash = "c2eba5173b31f0f3388eb0881c63e705f494078c9bc87036cb211af03da0db64"
 
@@ -564,7 +568,7 @@ hash = "8459e2b044fca5000feb1fd5432bb87cf06e9568bbb729207afaec1d9a6d0751"
 
 [[files]]
 file = "config/weeping-angels-spawns.toml"
-hash = "044842c6dab6725643cae9ba949786c3133508fcaef8885aba146a116fc1af18"
+hash = "041bf0d2c3664751077d87e6f16d909e1a80303b891ec8d1b493eb3252c6c64d"
 
 [[files]]
 file = "config/weeping_angels-common.toml"
