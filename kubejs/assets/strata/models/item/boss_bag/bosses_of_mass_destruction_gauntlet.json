@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "strata:item/boss_bag/bosses_of_mass_destruction_gauntlet"
+  }
+}

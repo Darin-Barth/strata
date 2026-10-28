@@ -89,7 +89,8 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 | `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` | Boss-gated recipe overrides ([gate map](docs/gate-map.md)) |
 | `tools/build_balance.py` | Balance-patch recipe changes ([balance patch](docs/balance-patch.md)) |
 | `tools/build_skill_trees.py` | Pufferfish's Skills trees ([rework](docs/skill-trees-rework.md)) |
-| `tools/build_pet_loot.py` | Inventory Pets loot injection |
+| `tools/build_pet_loot.py` | Inventory Pets loot injection (chests and boss drops) |
+| `tools/build_boss_bags.py` | One Boss Loot Bag texture per boss (colours from the boss's own texture, a themed emblem); needs Pillow |
 
 ### Everyday commands
 

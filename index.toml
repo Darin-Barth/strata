@@ -705,6 +705,206 @@ file = "kubejs/assets/portals/textures/block/nether_custom_portal.png.mcmeta"
 hash = "f0069565e436235496e88560fbd9893701149da15efe18d01772126656bc4e6a"
 
 [[files]]
+file = "kubejs/assets/strata/models/item/boss_bag.json"
+hash = "ef39e1ce78c0e99d7a12a4c28c0d54556d4e3b5525a0e9518623dcda9ece9bfe"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/aether_slider.json"
+hash = "5295d8c3727f719566f5b46f356a940764ac3d09cef8c94fa8a9908ed6ca0ff3"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/aether_sun_spirit.json"
+hash = "a328a4597c0ae31b4322a5648beee9361c340af468bb38b8343ee3f69ecad88f"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/aether_valkyrie_queen.json"
+hash = "d808ab525ee19e05cafbe5cf18ecffa14a985c0da2cfb067cdbb21640dac89b4"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/alexscaves_hullbreaker.json"
+hash = "ab4cface555a474d7a8c5788fc85ca6988f5f383b1731eb0e3839464d5bd0ba0"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/alexscaves_luxtructosaurus.json"
+hash = "e9393d01e1cd6e9fa525f3e49ba977dc945969de325ffa2587f41935f00d655e"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/alexsmobs_void_worm.json"
+hash = "ddf778ce1c5b24f8adb231ee82b68fb36d3e457da9657a854ea33beeda67d8fd"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/ars_nouveau_wilden_boss.json"
+hash = "365a8bed4481a20448dcd765d8fb4334a449998adbce0445a247e574e707c616"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/block_factorys_bosses_infernal_dragon.json"
+hash = "296fd93780004fe872235fcc8f71d0cc32ad7c192a15fc7a1fd850d1d451ca3b"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/block_factorys_bosses_kraken.json"
+hash = "657dbe3745299d4568a499fe213a22b9c336378598be008ab34ce43699543257"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/block_factorys_bosses_sandworm.json"
+hash = "004be6ecbdaa23dfbb9b059dc22e0daa9dfff3d49ecdc40d815e683b28d96194"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/block_factorys_bosses_underworld_knight.json"
+hash = "48d5f7362ea5ce1d5ac23e6644124d29de15eecb58b31c46d02e5e9fc390221b"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/block_factorys_bosses_yeti.json"
+hash = "37e57081a6a3958c0d4abe601c3d445a28f0886d826985daa75e349a5f0eee36"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/bosses_of_mass_destruction_gauntlet.json"
+hash = "f6b0e34e745201830d8d66103253be0b28f09f2b4ddf2934f31a3c7101136c75"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/bosses_of_mass_destruction_lich.json"
+hash = "00d2abc928529d66b81109549ca5d677f64e4291c63f169b937ed6a705856890"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/bosses_of_mass_destruction_obsidilith.json"
+hash = "4a9678a26ba642d5ed60a2ee0f767cc6f3296378e5bdd39a674b76418d2ae7c7"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/bosses_of_mass_destruction_void_blossom.json"
+hash = "74dd3ed59488eed39a765020c3bbd328921cc42e9947656718f05a0b8af6d7fb"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_ancient_remnant.json"
+hash = "420c55278e00c94c403a290ac9558ea859a2d2c6b620f870db2faee9e2792f5d"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_ender_golem.json"
+hash = "9bdb5d5659812111ab8eed925e4d2c72baacbb5f23b35039c8e1a9a61b9f71f4"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_ender_guardian.json"
+hash = "98f7b784a47410cafdc07f12760fa236de0cd76d2b21f1efa980867bd444cc6c"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_ignis.json"
+hash = "c09b53dd85631bfed11e393cdca2398d5839110719dd3d02ffaeadb60a0dfc33"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_maledictus.json"
+hash = "cf249e6198887c1b3ee5c045be5dee78aea59d66bb481a0a7ce07d98dd3824af"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_netherite_monstrosity.json"
+hash = "f54c633943f054f37f7effe2b3254d8dd3bcd6602fa66a4738a4c02af7579943"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_scylla.json"
+hash = "0ab38355befbbb87dbc6ed54bc29a8874296a4e673b189a13e005536b8bd9edf"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_the_baby_leviathan.json"
+hash = "98adb3921289f1df04d261b5a8e58f18ebded6bc468ce3c2b1f11438ed6d3f40"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_the_harbinger.json"
+hash = "affa80d38d1b4bcc5076c409d75adcf7aec0e811845dd04f0d5f2e285fc38e07"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/cataclysm_the_leviathan.json"
+hash = "8ea653e48520b30fbf85810d916d6ea400b849575adbe3846e0e682e512115ee"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/deep_aether_eots_controller.json"
+hash = "ed02849dcaec5f8ea76754728099e4c40b9bd5f1e7367389d4b5da97a4383e2f"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/graveyard_lich.json"
+hash = "3d0366af78f82d0ef8fa2d18e4889c0a0864c2d4282bb0c417980d2f63c567c9"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/hybrid_aquatic_karkinos.json"
+hash = "caf23079742b82c8ec2649728d954de2a9b7c64c74cb9acb78b9ee6ea67241d9"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/irons_spellbooks_dead_king.json"
+hash = "aa94f7433e32d91e4196a8cf9481c37836cf9dac79f9ed1b2a30dd9802185725"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/irons_spellbooks_fire_boss.json"
+hash = "5ffb7a97a9f839ae6a8b18346faef50b78032e1f7786a3ea7b067a05fbfc1e87"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/legendary_monsters_cloud_golem.json"
+hash = "a433f7bb2a5a292d4fe037f7e903ff675468b4e398a850f9ed4da2aa884c4249"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/legendary_monsters_posessed_paladin.json"
+hash = "13be0de8150e3974fe9237edc1ac30b6f5ce8073ce4a87118592ced4120daf3f"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/legendary_monsters_the_obliterator.json"
+hash = "57d73f677df3a232d43e2bfbe6d70d82e5a2243b3391f01fd631015ccfbf6e7b"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/minecraft_warden.json"
+hash = "3fdee1659e358b4fa5b8c771a715452492753e12334223d7f31cd3c36c2875bc"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/minecraft_wither.json"
+hash = "310f890e676ad9f9887a65e7d4d99e939b54782f17e177d9085516aabf179fa5"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/mowziesmobs_ferrous_wroughtnaut.json"
+hash = "a2c94f5034990cdc2e77a7ec4d8064a9279bef05d31f9399f429b3eea35351bf"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/mowziesmobs_frostmaw.json"
+hash = "7530e88c16ee01943d2e400291fd772a33cab380381dec4abf35a2eb9ab15a6c"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/mowziesmobs_sculptor.json"
+hash = "1c0e55fc8d1e3b2c23c5e44c33f52741aaa9d7c41f2aaf97d6b6ae57de143323"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/mowziesmobs_umvuthi.json"
+hash = "8d49e03bf0a68e271548651c2dc3cc74cfe544007372a460efcb9193b08d87a4"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_alpha_yeti.json"
+hash = "f8195d8fd593c8684376dc64cae9574455498ba362a8ac6bc03b94405676309d"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_hydra.json"
+hash = "92428cbb1337dba1687e7b541156a8d5a1ac7bf8bfe0bd157ab06bf489516423"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_knight_phantom.json"
+hash = "9c1849c46c6e311584ec9fe9c64dc2ef51e6c3e94e96cd0db407dec807272a37"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_lich.json"
+hash = "a0cf04a0e596cc36d1a9709d5cae3b6586eb00cef2b83ecc85170a48993d2db2"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_minoshroom.json"
+hash = "5701d3a19fe0bad910e370933031635cc91f9a112b206a0a4bd59211077879ff"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_naga.json"
+hash = "fa7ee4618ecc7c813959dbf740e60add332540eb816bc492bfc24307c9a1ad23"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_plateau_boss.json"
+hash = "91e3adcc2ba8884b549f925d2220ba96d3ed032f0828c2b917daf63c6fd95080"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_snow_queen.json"
+hash = "2a42f89094742a4f0a5c75af003ee1247fb157534f4d795cf829793d0a83c84e"
+
+[[files]]
+file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_ur_ghast.json"
+hash = "c833778da7497fd09f6737c43284bfb677929dff4491c0186a919af462b75aad"
+
+[[files]]
 file = "kubejs/assets/strata/textures/block/lifepod_hull.png"
 hash = "5778f7c7025da0518639be579a909a7d14ffc553b68cf6600e2b48123bd2bd01"
 
@@ -719,6 +919,206 @@ hash = "b8bd68a42c682f18cf35cfecb12a4c43b18ec8198bccabcea4ae3a5a20d3ab7c"
 [[files]]
 file = "kubejs/assets/strata/textures/item/abyssal_pearl.png.mcmeta"
 hash = "172637f399beb0b0b17e7e40a5f826461195c0b98fa38c57a70345f0c923d5da"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/aether_slider.png"
+hash = "a017b1f2fb1bee1de4e532eb11882ac51bcffa1a5d49c74f6ae6edc07eb870b3"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/aether_sun_spirit.png"
+hash = "e52e5b40ef7e1176989f22133c94d8986678a417179a1410591af3fae979a28f"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/aether_valkyrie_queen.png"
+hash = "e57abfaa55da3cca5811d859be71eec12c4a1a021f0742567f163fb1b6cdd801"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/alexscaves_hullbreaker.png"
+hash = "1892de9a331777ee95b1dd966e4ef86bd63aaf675e274c4dd1eca73e1ef09847"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/alexscaves_luxtructosaurus.png"
+hash = "e843b51b75079258da572ab29670589616f709f45b430c29b5adbdb218c59c91"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/alexsmobs_void_worm.png"
+hash = "241ddf4f63013dcadf95552ca0c3afb249d5527c8d2026feaf71f674a32bd25d"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/ars_nouveau_wilden_boss.png"
+hash = "eadbde0960b22757e0b84c382d4976801db9e28521f917013346f9749eec6506"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/block_factorys_bosses_infernal_dragon.png"
+hash = "6a30a007418957e007f66bfc29a8856dabc5f60631b8bd5b9404ef1b8c787f4e"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/block_factorys_bosses_kraken.png"
+hash = "b109f99a6431a06f72e8dfdc9fa6ced17db85cc109b17f044f9e85fc067d241f"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/block_factorys_bosses_sandworm.png"
+hash = "8ef781eb4721cfe39b9dffe35d7189602fda1108fb6379b4d2023a9aaec4fe53"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/block_factorys_bosses_underworld_knight.png"
+hash = "b773b33640679590673a10e1e5a326821659a4ea306ce6a012449e49095eef46"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/block_factorys_bosses_yeti.png"
+hash = "fffe2e87de2ac255a6e8a9ad2346df0d77a1d4328cbce1d2487091162c9a9137"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/bosses_of_mass_destruction_gauntlet.png"
+hash = "0c1069af1106a9922cfd587962973e6232684b442a7118ead65647cc6a527c17"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/bosses_of_mass_destruction_lich.png"
+hash = "d50cef9b92f9493f3e1aa59ed02ba12b4729f5cacb65571827de1c81797fcac5"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/bosses_of_mass_destruction_obsidilith.png"
+hash = "088e5051ddb573f596f7eb86bfa25227a9da535fda27dc98a28477bdff9dddfe"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/bosses_of_mass_destruction_void_blossom.png"
+hash = "02f541639b23e6c6e483b17fe58c17267bb16a4e38f6f5678af1ea8d6c04b408"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_ancient_remnant.png"
+hash = "d1ae8528b89d20ba31922b12be9a26080b89835081ec419f04e2f6c01e10bbb4"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_ender_golem.png"
+hash = "02e76b2d5b72f8256161b097e61fe2497e0c876faa688fa58b593133b13ef952"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_ender_guardian.png"
+hash = "26c30f3db12577f7766f4a24c18fa17cbbd1ba17ee43ef438b36284b3bb313bb"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_ignis.png"
+hash = "0e8448059d1666673397fe741d97a19d832ab1fa897f9427dca621bc31ace92e"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_maledictus.png"
+hash = "e9c3e2ca7efe24333a5c5414acd65d0d7e78c98d54dec0b81fbceff059b5a596"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_netherite_monstrosity.png"
+hash = "8b44c76405252864e0050d07347cc4bbee853e4898ff330890d0c45636560fda"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_scylla.png"
+hash = "5917dd09523535e1ac81a153dd3697c2ea674cd1f1917bf90d61b1ffc292653d"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_the_baby_leviathan.png"
+hash = "e6b91e442af3ae534ad2d7e06238f47e47a125d3e4348b4fb875260fa3a6a276"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_the_harbinger.png"
+hash = "3270abc88cde32652f74e8140c8813717bfaf35ca60881b032fe5090e5bdb483"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/cataclysm_the_leviathan.png"
+hash = "5366d7ac875fb76af485be0ebab328bae6d50f51830e541354b138b82d7381bb"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/deep_aether_eots_controller.png"
+hash = "4f3fb79ebdbe36161009f8e3278c1dccedafb23052e0c96604fc35ae242b2165"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/default.png"
+hash = "d1da2ce78b61394842993be5f914a32f279bb9d1cb16f5ef7a3790cc1030f203"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/graveyard_lich.png"
+hash = "6909547cc7795147ee80ea23c390e60d0731e04a077197b7c04060ce67f888b4"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/hybrid_aquatic_karkinos.png"
+hash = "79426487921cf915dceb65938ef89a52daf4087e13cb3c9f49dfdb55b0560acb"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/irons_spellbooks_dead_king.png"
+hash = "b94c30b3b2976a62da05fc5d7a8da418723050fe157d5660f064c6cbfb7ca5b6"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/irons_spellbooks_fire_boss.png"
+hash = "b3dc46321ba8971b9e10eca0d937111babe09b6d199c43eceefdb6d453762769"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/legendary_monsters_cloud_golem.png"
+hash = "7afde78bf0c4cc3987364bd1d68b0f20a096d2c9bb2136af0bb1e868476b66e7"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/legendary_monsters_posessed_paladin.png"
+hash = "8a978dab59a17be7809defccab8d098fa60fc7c4cbc2cdbd33299d8fb852cb88"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/legendary_monsters_the_obliterator.png"
+hash = "b07304f1eae1431a026fe2bd8932e69fd26b837cefd47cd5fab8495d202c3524"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/minecraft_warden.png"
+hash = "87b1c16b0710308e6f2474b62e534b69d19c8acff11e0b3476702bf4b2f953eb"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/minecraft_wither.png"
+hash = "329af516380f29a08dea524cb33c902f2b61a47e84ab8b7e66d4ce0a4a036e94"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/mowziesmobs_ferrous_wroughtnaut.png"
+hash = "4f469d5053b18b2b4d6f7f0c7bddeeed6f20cb5ff9c0585c697b42211990a3ac"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/mowziesmobs_frostmaw.png"
+hash = "c1c699796e19ea3f41824ddad322c9c7c53f4d958f2f3de3978eff76fe76522c"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/mowziesmobs_sculptor.png"
+hash = "b1486c0a7c44e6839db0be9471848d0176afb55d43f054e7db9aac325ef42b17"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/mowziesmobs_umvuthi.png"
+hash = "70d274ee2d808d43d67593ad97c80d06d8f2003898bc892f7aeb6b44221d1bb9"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_alpha_yeti.png"
+hash = "14d8abc463e6d75722884616304b027a12b732ff362e7cfc45f0b9f050f97c92"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_hydra.png"
+hash = "eafec0cca9a77479031fe28e19d0416c530e24e51b1e1e5a88704507a0633bd9"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_knight_phantom.png"
+hash = "63bbc2841d2fe8f0cf46df8fe0632a2eada1c6434bf7f343fa57adc9ccfc7675"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_lich.png"
+hash = "ce15a076d88e8cb8fb6ba317d83f7078ca99a1c82a87288c7ffcf1304efdea95"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_minoshroom.png"
+hash = "66ac5c08ac0874ae67e424591819978f4c80e3386e7f841e45bb69e1cc90c769"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_naga.png"
+hash = "eead95abe3a7907784d059e18d1ad19fced0bef4b848b4c3fe3113f2196c51e6"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_plateau_boss.png"
+hash = "e1c0536fad98e7d68351ad4136d0b36f7d77f93d11637b73413b420a63e50f9e"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_snow_queen.png"
+hash = "efa6921e697a64ea511436f28223387ab366b4953a9c7f435f985705feffdc3f"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_ur_ghast.png"
+hash = "01214d07af0208ad55f486ea865ef052dba9545d8eb31b55a2291aa70184308d"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/hollow_ember.png"
@@ -6229,8 +6629,12 @@ file = "kubejs/server_scripts/strata_balance.js"
 hash = "e92bb955f9d655b7321d2f53bcc94cc993bce7f83f00ae61613f7c96fe1b5d2b"
 
 [[files]]
+file = "kubejs/server_scripts/strata_boss_bag_models.js"
+hash = "5546971d447ba25672a757e5155196594b577f4974d68e81c16ff5e5e27074a3"
+
+[[files]]
 file = "kubejs/server_scripts/strata_boss_bags.js"
-hash = "7936eb95d0a5f9f137f58feae4f8e71b233aa3bf449029602ed3ed5bc3970db8"
+hash = "b3049cfe1d736a55b32c4818caac3dddccc87053a7430e26102ab145edc4db4a"
 
 [[files]]
 file = "kubejs/server_scripts/strata_elites.js"
@@ -6290,7 +6694,7 @@ hash = "a965f37cc07dcc6b4fd553eb849eef1a671f94877dcad44f807c13782980448d"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_bags.js"
-hash = "f625a1abc0b93dc7cf9c629891575391b8e0f95a8c45610057b27005ca9daa90"
+hash = "b5bc8ec970c2b5a056d42a1add5851942f5ca8f99d7b591989af1a377566d76d"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_blast_cap.js"

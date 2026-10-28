@@ -16,6 +16,7 @@ const bossBagRegistries = Java.loadClass('net.minecraft.core.registries.Registri
 const bossBagRL = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const bossBagTypes = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries').ENTITY_TYPE
 const bossBagStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const bossBagModelData = Java.loadClass('net.minecraft.world.item.component.CustomModelData')
 const bossBagTag = bossBagTagKey.create(bossBagRegistries.ENTITY_TYPE, bossBagRL.parse('strata:boss_bags'))
 const bossBagWindowMs = 10 * 60 * 1000
 const bossBagMaxStacks = 256
@@ -92,13 +93,17 @@ function bossBagMerge(stacks) {
   return out
 }
 
-function bossBagGive(player, bossName, rolled) {
+// bossBagModels (strata_boss_bag_models.js, generated) picks each boss's own bag texture.
+function bossBagGive(player, boss, rolled) {
+  const bossName = bossBagEntityType(boss).getDescription().getString()
+  const model = bossBagModels[String(boss.type)]
   const stacks = bossBagMerge(rolled)
   if (stacks.length === 0) return
   for (let start = 0; start < stacks.length; start += bossBagMaxStacks) {
     let bag = Item.of('strata:boss_bag')
     bag.set(bossBagComponents.CONTAINER, bossBagContents.fromItems(stacks.slice(start, start + bossBagMaxStacks)))
     bag.set(bossBagComponents.CUSTOM_NAME, Text.gold(`${bossName} Loot Bag`).italic(false))
+    if (model) bag.set(bossBagComponents.CUSTOM_MODEL_DATA, new bossBagModelData(model))
     player.give(bag)
   }
   player.tell(Text.gold(`Your share of the loot: ${bossName} Loot Bag`).append(Text.gray(' (right-click to open)')))
@@ -125,18 +130,17 @@ EntityEvents.drops(event => {
   const killer = event.source.actual
   let main = fighters.find(f => killer && killer.isPlayer() && String(f.player.uuid) === String(killer.uuid))
   if (!main) main = fighters.reduce((a, b) => (b.last > a.last ? b : a))
-  const bossName = bossBagEntityType(boss).getDescription().getString()
 
   const drops = []
   event.drops.forEach(itemEntity => {
     let stack = itemEntity.getItem()
     if (!stack.isEmpty()) drops.push(stack.copy())
   })
-  bossBagGive(main.player, bossName, drops)
+  bossBagGive(main.player, boss, drops)
   fighters.forEach(f => {
     if (f === main) return
     try {
-      bossBagGive(f.player, bossName, bossBagRoll(boss, f.player, event.source))
+      bossBagGive(f.player, boss, bossBagRoll(boss, f.player, event.source))
     } catch (e) {
       console.error(`strata_boss_bags: rolling ${boss.type} loot for ${f.player.username} failed: ${e}`)
     }
