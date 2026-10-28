@@ -289,15 +289,10 @@
 			x: 8.75d
 			y: 7.5d
 			dependencies: ["76CD0AE56805CC78"]
-			icon: { id: "fieldguide:field_guide" }
+			icon: { id: "minecraft:spyglass" }
 			tasks: [
 				{
 					id: "5032CDFFFF2C73EA"
-					type: "item"
-					item: { count: 1, id: "fieldguide:field_guide" }
-				}
-				{
-					id: "2EFBA69705F1B145"
 					type: "advancement"
 					advancement: "fieldguide:first_discovery"
 					criterion: ""

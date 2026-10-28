@@ -99,9 +99,9 @@ q("trench", "The Trench", deps="sub", icon="alexscaves:abyssmarine", at=(15.75, 
     It's home to the &bDeep Ones&r, a drowned people with knights and mages, and to the &cHullbreaker&r, a monster that hunts submarines. The best ruins and the best loot are down here too.""")
 
 # --- survey track ---
-q("guide", "Field Guide", deps="rules", icon="fieldguide:field_guide", at=(8.75, 7.5), tier=2,
-  tasks=[item("fieldguide:field_guide"), adv("fieldguide:first_discovery", title="Make your first discovery")], desc="""
-    Everything down here is new to science. Craft a &eField Guide&r (a book and a spyglass), then look at creatures and plants through your &espyglass&r to scan them into it.
+q("guide", "Field Guide", deps="rules", icon="minecraft:spyglass", at=(8.75, 7.5), tier=2,
+  tasks=adv("fieldguide:first_discovery", title="Make your first discovery"), desc="""
+    Everything down here is new to science. Look at creatures and plants through a &espyglass&r to scan them into your &eField Guide&r, then open the guide with its key (Options > Controls > Field Guide).
 
     Each discovery fills in a page of notes.""")
 
