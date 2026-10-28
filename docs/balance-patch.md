@@ -15,8 +15,8 @@ Status: **partly built** (queued for 0.5.0, boot-tested Oct 27). Darin's answers
 - **Built, part 2:** A2-A4 (the `strata:unfarmable` tag also blocks Ars jars and Drygmys, Occultism soul
   gems, Industrial Foregoing's duplicator and imprisonment tool, and Oritech's spawner; normal mobs
   stay farmable), C1 (Rainbow Generator 250,000 FE/t), C2 (Powah reactors: starter 60, basic 240,
-  hardened 600, blazing 1,500, niotic 4,000, spirited 12,000, nitro 40,000 FE/t; the gate is still
-  open, see I1), E3 (Affix Augmentor needs a Hollow Ember; the Gem Cutter's flawless and perfect cuts
+  hardened 600, blazing 1,500, niotic 4,000, spirited 6,000, nitro 15,000 FE/t; no boss gate
+  (Darin, Oct 27): Powah stays below the gated nuclear options instead), E3 (Affix Augmentor needs a Hollow Ember; the Gem Cutter's flawless and perfect cuts
   are out of reach, so they stay on Apotheosis' table with its Pearl; affix templates capped at 2),
   F6 (explosions and Big Cannons shots do at most 10 per hit to Bosses of Mass Destruction and
   Bosses'Rise bosses; `startup_scripts/strata_boss_blast_cap.js`).
@@ -24,8 +24,7 @@ Status: **partly built** (queued for 0.5.0, boot-tested Oct 27). Darin's answers
   F5 (resets on death), F7, G2, H1, H2, I4.
 - **Correction to I1:** the Qliphoth Awakening cores *do* have a use: combined with a weapon or armor
   in a crafting table they add Chesed's lightning, Malkuth's fireballs or Geburah's damage cap (done
-  in code, so the recipe scan missed it). Their trophies have no use. Open: which item gates Powah's
-  higher reactors.
+  in code, so the recipe scan missed it). Their trophies have no use. Powah got no gate (capped below nuclear instead).
 
 From four read-only audits (tech, magic,
 gear/bosses, everyday/QoL) that read the mods' own recipes, loot and configs on the 0.5.0 test

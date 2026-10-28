@@ -470,7 +470,7 @@ hash = "773b0f469fa4cdf997fbe8a5c76c106a8bea1193eb13093c4102a7748effb1f3"
 
 [[files]]
 file = "config/powah.json5"
-hash = "6046e3e20332fbf7cd0f9e6946647a735ee5e39888c0fb056e60de2e6eb6eb88"
+hash = "bf282890cc5b3af7714c5c496fc5dc775eaf00b53bfd993615ff1c84fb45c263"
 
 [[files]]
 file = "config/quark-common.toml"
