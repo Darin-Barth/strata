@@ -1,7 +1,7 @@
 # Ore map (proposal)
 
-**Status: proposed, not built.** Applies to a freshly generated world only: ore placement is fixed when a
-chunk generates, so this has to be final before pregeneration.
+**Status: built** (`tools/build_ores.py`). Applies to a freshly generated world only: ore placement is fixed
+when a chunk generates.
 
 Today every mod generates its ores on its defaults, mostly everywhere in the Overworld. Almost Unified
 merges duplicate items in recipes and hides them in EMI, but every duplicate ore still generates and drops its
@@ -38,21 +38,21 @@ every tech line startable at home.
 
 | Ore | Today | Proposed | How |
 |---|---|---|---|
-| Osmium (Mekanism) | Overworld: upper 65/chunk, middle 6, small 8 | Overworld about a fifth of today (enough for early Mekanism); Abyssal Plain: big deepslate veins (size ~12, ~20/chunk) on the Shelf, Plain and Trench | `config/Mekanism/world.toml` (thin) + a Strata feature in the Abyssal Plain biomes |
-| Fluorite (Mekanism) | Overworld deep, 5 + 3/chunk | Overworld about half; Hydrothermal Field: rich veins near the vents | Mekanism config + Strata feature |
+| Osmium (Mekanism) | Overworld: upper 65/chunk, middle 6, small 8 | Overworld about a fifth of today (enough for early Mekanism); Abyssal Plain: big deepslate veins (size 10, 10/chunk) on the Shelf, Plain and Trench | `config/Mekanism/world.toml` (thin) + a Strata feature in the Abyssal Plain biomes |
+| Fluorite (Mekanism) | Overworld deep, 5 + 3/chunk | Overworld about half (smaller buried veins); Hydrothermal Field: rich veins near the vents | Mekanism config + Strata feature |
 | Uranium (IE, Almost Unified target) | Overworld -64..-16, 9/chunk | Unchanged (deep and already fairly rare); Alex's Caves Toxic Caves keep their radrock uranium | none |
 | Uranium (Mekanism, Oritech patch), yellorite (Extreme Reactors) | All generate (duplicates of IE uranium) | Off | Mekanism config; datapack overrides for Oritech and Extreme Reactors |
 | Uraninite (Powah) | Overworld, 3 veins | Unchanged (its own reactor fuel; Powah reactors are already nerfed) | none |
 | Lead | IE + Mekanism | IE only | Mekanism config |
 | Silver | IE + Occultism + Ice and Fire + Werewolves | IE only | Werewolves config; datapack overrides for Occultism and Ice and Fire |
 | Nickel | IE + Oritech | IE only | datapack override (Oritech) |
-| Platinum | Oritech (deepslate + End stone) + Create Propulsion (not unified) | One platinum, unified to Oritech: thin deep Overworld, rich End | Create Propulsion ore off (datapack); add platinum to Almost Unified; tune Oritech's two features |
+| Platinum | Oritech (deepslate + End stone) + Create Propulsion (not unified) | Create Propulsion's platinum (airship parts) thin at home; Oritech's platinum in the End only. They stay two items: each mod's recipes ask for its own platinum | Propulsion counts halved; Oritech's Overworld feature off |
 | Draconium | Overworld (rare), Nether, End | Nether + End only | datapack override (Overworld feature) |
 | Mithril (Iron's Spells) | Overworld -63..-38, 7/chunk | Overworld about a third; Hollow: rich veins | datapack retune + Strata feature (Hollow biomes, grimstone target) |
 | Zinc, thorium, magnetite (Create, Create New Age) | Overworld | Unchanged | none |
 | Bauxite, tin, sal ammoniac, inferium, prosperity, sapphire | Overworld | Unchanged | none |
 | Iesnium, benitoite, soulium, anglesite, enderitium | Nether / End | Unchanged | none |
-| Oritech resource nodes | Surface boulders with ore, 1 in 350–500 chunks; the rarest includes uranium and platinum | Keep the boulders; drop uranium and platinum from them | datapack override |
+| Oritech resource nodes | Surface boulders with ore, 1 in 350–500 chunks | Unchanged (so rare they only add a trace of Oritech's nickel, uranium and platinum) | none |
 
 ## Other mining dimensions
 
@@ -75,10 +75,13 @@ every tech line startable at home.
 - Quest text that says where to find these ores is updated with it (Mekanism's osmium, Draconic's
   draconium, Iron's mithril, Oritech's platinum).
 
-## Open questions
+## Measured (test world, 441–490 chunks per dimension)
 
-1. How thin should home osmium be: a fifth of today, or less?
-2. Platinum: Create Propulsion also uses it (fluid tanks and vessels). Is "thin at home, rich in the End"
-   enough for airship builders, or should platinum stay common in the Overworld?
-3. Mithril: thin at home plus rich in the Hollow, or Hollow only?
-4. Should the Kakuto Region keep its full vanilla ore set, or be lighter so it isn't the easiest place to mine?
+| Ore | Overworld | Abyssal Plain | Hollow | End |
+|---|---|---|---|---|
+| Osmium | 9.1 / chunk | 78.8 / chunk | – | – |
+| Fluorite | 8.4 / chunk | 9.2 / chunk (all in the Hydrothermal Field) | – | – |
+| Mithril | 0.7 / chunk | – | 10.7 / chunk | – |
+| Draconium | none | – | – | 1.5 / chunk |
+| Platinum | 11.8 / chunk (Propulsion) | – | – | 3.1 / chunk (Oritech) |
+| Duplicate silver, lead, uranium, nickel, yellorite | none (traces of Oritech's from its rare boulders) | – | – | – |

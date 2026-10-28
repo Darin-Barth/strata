@@ -10,6 +10,10 @@ file = "config/Mekanism/tools-materials-startup.toml"
 hash = "24866c4ae027992393bb2041c9c9f8d0b2d89edcf2633eae19d2992b9addc7b9"
 
 [[files]]
+file = "config/Mekanism/world.toml"
+hash = "704d2e73d608ba0ebd07c1e3e4a23ae7f7e1f69fc357995cb6ba1b6a96d30837"
+
+[[files]]
 file = "config/alexscaves-general.toml"
 hash = "ac9c7c389b6634ad3ab084670336d4a8b880aabe09732cde5d9ed753627e1b80"
 
@@ -358,7 +362,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d0230763ef6c83dfa495d27b8738f8bc8d2fc0342e1182b9491b119e10c437f2"
+hash = "380e1c5a05074e9ee7cf9869c14379a90db2f131e239ba0faade63fb5767750a"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -1235,6 +1239,14 @@ hash = "dd41bb0ad5eeb53cd347b1dd5531e57b71f80455648d3f8dbef9642b83aafbc4"
 [[files]]
 file = "kubejs/data/ars_nouveau/tags/entity_type/drygmy_blacklist.json"
 hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
+file = "kubejs/data/bigreactors/neoforge/biome_modifier/yellorite.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/bigreactors/neoforge/biome_modifier/yellorite_deepslate.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
 file = "kubejs/data/bigreactors/recipe/reactor/reinforced/controller_ingots_uranium.json"
@@ -2745,6 +2757,26 @@ file = "kubejs/data/create_new_age/recipe/shaped/reactor_fuel_acceptor.json"
 hash = "0428888c74ac6ea371a476d2bc933c7e018b56f08b81e5b517eb78a02818a0d5"
 
 [[files]]
+file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum.json"
+hash = "402054e3a010b1ddfad427175faa01afa3970d5f2e31edc2e6a4789cacdba743"
+
+[[files]]
+file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum_buried.json"
+hash = "6a638b0174259c3592bdc3fdab22e42b88e922ea3e1101a831543580bbca4c49"
+
+[[files]]
+file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum_large.json"
+hash = "083a56f19f95ae55e927804c45b2a3df403fb5e3ba25340708e4c551aa2d074b"
+
+[[files]]
+file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum_medium.json"
+hash = "da2cba9fd861410af653fd001e2d75b86a1b1152c8c797fc6f85aaf05e39dd41"
+
+[[files]]
+file = "kubejs/data/draconicevolution/neoforge/biome_modifier/overworld_draconium_ore.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
 file = "kubejs/data/draconicevolution/recipe/components/awakened_core.json"
 hash = "e03c78319f78620f56b8aee7dffe5b0194a8155b668bfc7cd84759100dc26fa4"
 
@@ -2961,6 +2993,10 @@ file = "kubejs/data/hybrid_aquatic/neoforge/biome_modifier/trench_brine_pools_al
 hash = "83d646b57c4d8df5e71c441c0e7cc3a91b05ca4bc3b169f6b0fb3e57cd559708"
 
 [[files]]
+file = "kubejs/data/iceandfire/neoforge/biome_modifier/silver_ore.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
 file = "kubejs/data/iceandfire/tags/worldgen/biome/structure_gen/fire.json"
 hash = "616eb65fbe93d41716901b31cb52ee6a757d1fa6350c9841f7b5ee9cda2ddedd"
 
@@ -3161,6 +3197,10 @@ file = "kubejs/data/irons_spellbooks/recipe/netherite_spell_book.json"
 hash = "8f949153a30b852dba202e6fe2003e429f24430b650c071bcd2fed52277718c8"
 
 [[files]]
+file = "kubejs/data/irons_spellbooks/worldgen/placed_feature/ore_mithril_placement.json"
+hash = "41dea5085a6f322d8964688c840f979a50fd2e85315be3eabe3e172c45bae1ef"
+
+[[files]]
 file = "kubejs/data/joshie/tags/worldgen/biome/has_structure/conduit_ruins.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
@@ -3267,6 +3307,10 @@ hash = "0aabd48c6a6b0be8555f06920560b62d5b8738f76f142f2d3bce5b4d53de1b3b"
 [[files]]
 file = "kubejs/data/mekanism/recipe/tier_installer/ultimate.json"
 hash = "924d3c307b34292f3953baf1014e97d9e231839cad1ac08ea2d1d8f04a35a45d"
+
+[[files]]
+file = "kubejs/data/mekanism/tags/worldgen/biome/spawn_ores.json"
+hash = "a7a86535dff3a63938644e8456df41ff7aaab85f6cf6112bc85cab975f1a181f"
 
 [[files]]
 file = "kubejs/data/mekanismgenerators/recipe/fission_reactor/port.json"
@@ -3401,6 +3445,14 @@ file = "kubejs/data/neovitae/recipe/meteor/diamond.json"
 hash = "14d8183068eace38f9a52d136096f9fd98ab4eb69238bf515726cf805217a471"
 
 [[files]]
+file = "kubejs/data/occultism/neoforge/biome_modifier/add_ore_silver.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/occultism/neoforge/biome_modifier/add_ore_silver_deepslate.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
 file = "kubejs/data/occultism/recipe/crafting/book_of_binding_djinni.json"
 hash = "865ee272753a13f697ae740f540ceeb6134309a203c69f89a0b0e6a60a5ede03"
 
@@ -3427,6 +3479,18 @@ hash = "6433125132847c889c3fa2b847035fe7749655aeb02ceea32f2a5de320aa4f51"
 [[files]]
 file = "kubejs/data/occultism/recipe/ritual/summon_unbound_marid.json"
 hash = "c0b9962a9e3b9bce8f6a7be2918f490135073be62363a409eec799d4a38cdf05"
+
+[[files]]
+file = "kubejs/data/oritech/neoforge/biome_modifier/ore_nickel.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/oritech/neoforge/biome_modifier/ore_platinum.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/oritech/neoforge/biome_modifier/uranium_patch.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
 file = "kubejs/data/oritech/recipe/augment/flight.json"
@@ -5773,6 +5837,18 @@ file = "kubejs/data/strata/loot_table/lootified/panascraftrpgmod/skeletongod_dun
 hash = "4a4d37e028b66f8ccfe57905b9e987bd13579f14693c2e2ed49dd553a8055732"
 
 [[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_fluorite.json"
+hash = "5ce59a0bbccacd3d02275953dc16ce981e82eca3468dfe41815124c83523c88b"
+
+[[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_osmium.json"
+hash = "8f5a0fabe679358d74011042205820d08b1385b78d802d97c8ba26640288bf95"
+
+[[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mithril.json"
+hash = "1682d2ebba0c7fd52b3874f9605c20f13851c6b62980550c06bdfb8f45a2342c"
+
+[[files]]
 file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mutants.json"
 hash = "7a707b63cf4a6559ed92d8bf64cd518eaeca70dfb875347fcdd70004505ef241"
 
@@ -6029,6 +6105,18 @@ file = "kubejs/data/strata/worldgen/configured_feature/abyssal/the_trench/sedime
 hash = "d5209ef0f909bef8116de178ff41b6290ef0ef02cb591cf04b5ce01a073adcf5"
 
 [[files]]
+file = "kubejs/data/strata/worldgen/configured_feature/abyssal_fluorite.json"
+hash = "ebc0289abe536785e00413d406c5f5726585a5d58975e92f0afb32a4de1dbc1c"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/configured_feature/abyssal_osmium.json"
+hash = "94f99dfd79be5b3747ac161c78cd10f3e20fff094600af6d7fc7f7077f59feb7"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/configured_feature/hollow_mithril.json"
+hash = "c49430c227da6bfe87603f313108dc255dd4987b1a496461483df497b6236817"
+
+[[files]]
 file = "kubejs/data/strata/worldgen/noise_settings/abyssal_plain.json"
 hash = "1e5de35f6db066dfc1ea270baa7544976bbec0100a1fa0190952fcfc31d72ca0"
 
@@ -6191,6 +6279,18 @@ hash = "8071156a307b4028617bcec8b7db40959233d8655ce385d0534aec9c11efa1cb"
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/whalefall.json"
 hash = "02b1e946c4c0f0f746638d28448cb781c1c2c2b52513917d517a2d1e6b9f7608"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/placed_feature/abyssal_fluorite.json"
+hash = "13bed380fc21b15849ba963d508a0afd57d00ee5389f505a7d08e09b96dd076e"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/placed_feature/abyssal_osmium.json"
+hash = "4f337d02f5d82f7d564934389880691ad2fd658192f13cf8d944bbcf7a1b74b6"
+
+[[files]]
+file = "kubejs/data/strata/worldgen/placed_feature/hollow_mithril.json"
+hash = "bf86ecfcbce2b30c4a6fa663b8c08731dfd18bc49c297d4891cf84a03458cfb3"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_colossuem.json"
@@ -6623,6 +6723,10 @@ hash = "a1be796650263db1f1b92532ca3305ff765a97dee2633eb83b3d70868abcfa9c"
 [[files]]
 file = "kubejs/data/weeping_angels/tags/worldgen/biome/spawns/weeping_angels.json"
 hash = "67800d37802c8ade85a9389b89851dd72ac772b24dcbc64ef16d5c7234f442f6"
+
+[[files]]
+file = "kubejs/data/werewolves/neoforge/biome_modifier/gen/silver_ore.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
 file = "kubejs/data/whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json"

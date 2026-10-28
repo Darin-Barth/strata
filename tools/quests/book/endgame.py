@@ -17,8 +17,8 @@ q("intro", "The Long Road", icon="draconicevolution:draconium_ingot", deps="welc
 # --- Draconic Evolution -----------------------------------------------------------------
 q("draconium", "Draconium", deps="intro", icon="draconicevolution:draconium_ingot",
   tasks=item("draconicevolution:draconium_ingot", 16), desc="""
-    &eDraconium Ore&r is rare and deep. It shows up in the Overworld, the Nether and
-    the End (the End has the most). Smelt the dust or ore into ingots.
+    &eDraconium&r only forms where dragon energy soaks the rock: deep in &cthe Nether&r
+    (rare) and all through &5the End&r (most of it). Smelt the dust or ore into ingots.
 
     The &eInformation Tablet&r is Draconic Evolution's guide.""",
   rewards=[give("minecraft:diamond", 4)])

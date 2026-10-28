@@ -140,7 +140,8 @@ q("bestiary_beasts", "Other Beasts", deps="bestiary", icon="iceandfire:troll_tus
     from frozen Mausoleums, plus trolls, death worms, cockatrices, stymphalian birds,
     pixies and hippogryphs.
 
-    Silver ore (for silver weapons, great against undead) and sapphires are new ores too.""")
+    Silver (for silver weapons, great against undead) and sapphires (snowy biomes) are worth
+    mining too.""")
 
 q("hydra", "The Hydra", deps="bestiary_beasts", icon="iceandfire:hydra_heart", tier=4, shape="hexagon",
   tasks=kill("iceandfire:hydra"), desc="""

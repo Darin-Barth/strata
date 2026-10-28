@@ -969,9 +969,9 @@
 	]
 	quest.2FFB22C0A92AC872.title: "Osmium"
 	quest.2FFB22C0A92AC872.quest_desc: [
-		"&eOsmium&r is Mekanism's main metal. Its blue-grey ore is common underground. Smelt the raw ore into ingots."
+		"&eOsmium&r is Mekanism's main metal. Its blue-grey ore is scarce at home: enough to get started. The rich seams formed under the crushing weight of the deep sea, in the &bAbyssal Plain&r. Smelt the raw ore into ingots."
 		""
-		"Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too: Mekanism uses all of them later."
+		"Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too: Mekanism uses all of them later (fluorite is richest around the Abyssal Plain's vents)."
 	]
 	quest.413043436901FC89.title: "Metallurgic Infuser"
 	quest.413043436901FC89.quest_desc: [
@@ -1733,7 +1733,7 @@
 	]
 	quest.2DED5A01D6C48666.title: "Draconium"
 	quest.2DED5A01D6C48666.quest_desc: [
-		"&eDraconium Ore&r is rare and deep. It shows up in the Overworld, the Nether and the End (the End has the most). Smelt the dust or ore into ingots."
+		"&eDraconium&r only forms where dragon energy soaks the rock: deep in &cthe Nether&r (rare) and all through &5the End&r (most of it). Smelt the dust or ore into ingots."
 		""
 		"The &eInformation Tablet&r is Draconic Evolution's guide."
 	]
@@ -2110,7 +2110,7 @@
 	quest.1006BE110A92440E.quest_desc: [
 		"The strongest Iron's workstation: &elevel up scrolls&r (scroll + ink of the next rarity), upgrade armor and spell books, and &eimbue weapons&r with a spell."
 		""
-		"Late game also brings &eMithril&r (a rare ore below y = -38, hidden from air; needs a netherite pickaxe) and &eupgrade orbs&r (an orb plus 8 runes)."
+		"Late game also brings &eMithril&r (needs a netherite pickaxe). A few veins hide below y = -38 at home; it grows richest in the dark of &5the Hollow&r and &eupgrade orbs&r (an orb plus 8 runes)."
 	]
 	quest.6F8F8E34558B0C4F.title: "The Best Books"
 	quest.6F8F8E34558B0C4F.quest_desc: [
@@ -3494,6 +3494,8 @@
 		""
 		"Keep an eye out for the hot &cHydrothermal Fields&r (vents and magma) and the glowing &bBioluminescent Gardens&r."
 		""
+		"The seafloor rock hides the richest &eosmium&r anywhere, and the vents grow &efluorite&r: dig in from a sealed base."
+		""
 		"Bring back a &eGlass Sponge&r. It's only for decorating: it won't soak up any water."
 	]
 	quest.0547F11ECACBC841.title: "First Air"
@@ -4026,7 +4028,7 @@
 		""
 		"&eHydra&r in swamp hills, &eCyclopes&r in sea caves on beaches, &eGorgons&r under beach temples, &eSea Serpents&r in the ocean, &eSirens&r on ocean rocks, &eDread&r undead from frozen Mausoleums, plus trolls, death worms, cockatrices, stymphalian birds, pixies and hippogryphs."
 		""
-		"Silver ore (for silver weapons, great against undead) and sapphires are new ores too."
+		"Silver (for silver weapons, great against undead) and sapphires (snowy biomes) are worth mining too."
 	]
 	quest.68B34314E0250826.title: "The Hydra"
 	quest.68B34314E0250826.quest_desc: [

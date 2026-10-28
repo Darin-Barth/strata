@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#strata:abyssal_plain_biomes",
+  "features": "strata:abyssal_osmium",
+  "step": "underground_ores"
+}

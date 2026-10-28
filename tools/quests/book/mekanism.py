@@ -17,11 +17,12 @@ q("intro", "What is Mekanism?", icon="mekanism:steel_casing", deps="welcome/iron
 # --- basics -----------------------------------------------------------------------------
 q("osmium", "Osmium", deps="intro", icon="mekanism:ingot_osmium",
   tasks=item("mekanism:ingot_osmium", 8), desc="""
-    &eOsmium&r is Mekanism's main metal. Its blue-grey ore is common underground.
-    Smelt the raw ore into ingots.
+    &eOsmium&r is Mekanism's main metal. Its blue-grey ore is scarce at home: enough to
+    get started. The rich seams formed under the crushing weight of the deep sea, in the
+    &bAbyssal Plain&r. Smelt the raw ore into ingots.
 
     Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too:
-    Mekanism uses all of them later.""",
+    Mekanism uses all of them later (fluorite is richest around the Abyssal Plain's vents).""",
   rewards=[give("mekanism:raw_osmium", 8)])
 
 q("infuser", "Metallurgic Infuser", deps="osmium", icon="mekanism:metallurgic_infuser", tier=2,

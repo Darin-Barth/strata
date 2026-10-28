@@ -67,6 +67,8 @@ q("plain", "The Plain", deps="suit", icon="hybrid_aquatic:glass_sponge", at=(12.
 
     Keep an eye out for the hot &cHydrothermal Fields&r (vents and magma) and the glowing &bBioluminescent Gardens&r.
 
+    The seafloor rock hides the richest &eosmium&r anywhere, and the vents grow &efluorite&r: dig in from a sealed base.
+
     Bring back a &eGlass Sponge&r. It's only for decorating: it won't soak up any water.""")
 
 # --- base track ---
