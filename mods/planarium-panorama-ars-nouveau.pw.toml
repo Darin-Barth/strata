@@ -1,0 +1,13 @@
+name = "Planarium Panorama"
+filename = "planariumpanorama-1.21.1-1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "390a75f2d47a8ed59b88fff3a1741bd5b13b0042"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9314078
+project-id = 1753148

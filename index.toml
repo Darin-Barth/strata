@@ -8301,6 +8301,11 @@ hash = "58884eea440c6009426264dadf190820c97671c8fb63c1acea5270cdf75485bd"
 metafile = true
 
 [[files]]
+file = "mods/planarium-panorama-ars-nouveau.pw.toml"
+hash = "ae4c7ac640fb8ca9eb5fc18e36fcabec4c3b99c2fbc7ed2fd96c7c0c88c22e7d"
+metafile = true
+
+[[files]]
 file = "mods/platform.pw.toml"
 hash = "483e9caef5f94862b25fa0782e26b0373980a561035af4de34590d0ef7c28697"
 metafile = true

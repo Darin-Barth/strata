@@ -86,6 +86,8 @@ Ars Nouveau is the hub; the other magic mods connect to it through bridge mods s
 
 Fifth magic mod: Neo Vitae (Blood Magic continuation).
 
+Ars add-ons for fun: **Planarium Panorama** turns an Ars Planarium (a pocket dimension in a jar) into a window: from inside, the jar's real surroundings show as a giant world with synced sky, weather, lighting and sound. Beta; cosmetic only.
+
 **Vampirism** is opt-in per player: vampire, hunter, or ignore it. Add-ons: Vampirism Integrations, Werewolves, Vampire's Delight, Vampires Need Umbrellas, Vampiric Ageing and Bloodlines. PvP is between factions only (config). Test vampires against the food variety mod.
 
 ## Exploration pillar
