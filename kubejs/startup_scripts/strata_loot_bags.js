@@ -3,12 +3,13 @@
 // (tools/build_quest_bags.py). Textures in kubejs/assets/strata/textures/item/.
 StartupEvents.registry('item', event => {
   ;[
-    ['strata:loot_bag_small', 'Small Loot Bag', 'common'],
-    ['strata:loot_bag', 'Loot Bag', 'uncommon'],
-    ['strata:loot_bag_large', 'Large Loot Bag', 'rare'],
-    ['strata:loot_bag_grand', 'Grand Loot Bag', 'epic'],
+    // id, name, name colour, enchantment glint (the textures also sparkle more by tier)
+    ['strata:loot_bag_small', 'Small Loot Bag', 'common', false],
+    ['strata:loot_bag', 'Loot Bag', 'uncommon', false],
+    ['strata:loot_bag_large', 'Large Loot Bag', 'rare', true],
+    ['strata:loot_bag_grand', 'Grand Loot Bag', 'epic', true],
   ].forEach(b => {
-    event.create(b[0]).displayName(b[1]).rarity(b[2])
+    event.create(b[0]).displayName(b[1]).rarity(b[2]).glow(b[3])
       .tooltip(Text.gray('Right-click to open: Common, Uncommon, Rare, Epic or Legendary loot'))
   })
 })

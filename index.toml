@@ -1122,15 +1122,27 @@ hash = "4035373a4e38adcd143aad74f3845fd5211b374ba922d7611b36679d07a42a79"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/loot_bag.png"
-hash = "abdc90464f48b6bea9c154834aec8c4f0f5efacebfe0e1ac59961ae025389d1a"
+hash = "9b8104292c796b1b13181bc979cc5b13e434a6b57b516c4c7bb848495a2da006"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag.png.mcmeta"
+hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/loot_bag_grand.png"
-hash = "fada0af9e7127313ab838878769da097bafbb9ff102398401d89ad6144177933"
+hash = "b5147ea6e6092cc0011bd8349d8b3d513af6ce8149c2c0b36ed62d92f079e212"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag_grand.png.mcmeta"
+hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/loot_bag_large.png"
-hash = "cfbe034b79e727c3a7d0fb0611e8abcd1f8aaf9beef5ffdc2e89893c3c47f4c6"
+hash = "5914e018bb7f3ce361b66bdd35a63810632b9bae929b1a188c15b84acc4e99ab"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag_large.png.mcmeta"
+hash = "4e4dc7d973bb284c1558d6d2bca26a36699b9b11954e12085c632cc3e4ae97f1"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/loot_bag_small.png"
@@ -6730,7 +6742,7 @@ hash = "bd29d584239dff6ef4348b2dd085add7309de0bc5742a147a172ba7caa152837"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_loot_bags.js"
-hash = "94766519920b9ad9ddf950720c17fd1c44d1f02862daf3cada3be910ff0ac969"
+hash = "68ea6ad5fef39e39ac431c43cc0109b46fdbd73a053c39722ca46371c91d59a5"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

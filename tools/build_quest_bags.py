@@ -5,7 +5,11 @@ Four bags, one per quest tier, with better rarity odds the bigger the quest. Wri
   * kubejs/data/strata/loot_table/loot_bags/<rarity>.json: one pool per rarity (items from across
     the pack; no flight, teleport or wireless items, no gate materials)
   * kubejs/server_scripts/strata_loot_bag_odds.js: bag -> rarity weights (read by strata_loot_bags.js)
-  * kubejs/assets/strata/textures/item/<bag>.png: the bag textures (same sack as the boss bags)
+  * kubejs/assets/strata/textures/item/<bag>.png: the bag textures (same sack as the boss bags).
+    Each tier looks more special: the Small bag is plain; the Loot Bag twinkles now and then; the
+    Large bag twinkles more (and has the enchantment glint, set in startup_scripts/strata_loot_bags.js);
+    the Grand bag has golden sparkles all around and a pulsing emblem (and the glint). Animated
+    textures are vertical frame strips with a .png.mcmeta.
 Check every item ID with the quest checker's registry (tools/quests/registry.json) when editing pools.
 
 Run from the repo root (needs Pillow): python tools/build_quest_bags.py
@@ -25,6 +29,7 @@ REGISTRY = "tools/quests/registry.json"
 RARITIES = ["common", "uncommon", "rare", "epic", "legendary"]
 
 # bag item -> (display name, cloth, rope, emblem colour, rarity weights in RARITIES order)
+# (sparkle count, sparkle colour, emblem pulse) per bag for the animated effect; 0 sparkles = static.
 BAGS = {
     "loot_bag_small": ("Small Loot Bag", "#8a5a32", "#c9a46a", "#f2efe6", [70, 22, 6, 1.8, 0.2]),
     "loot_bag": ("Loot Bag", "#2f5d9e", "#c9a46a", "#f4d35e", [50, 30, 14, 5, 1]),
@@ -90,6 +95,16 @@ POOLS = {
     ],
 }
 
+EFFECTS = {
+    "loot_bag_small": (0, None, False),
+    "loot_bag": (2, "#ffffff", False),
+    "loot_bag_large": (4, "#e6c8ff", False),
+    "loot_bag_grand": (8, "#ffe27a", True),
+}
+FRAMES = 16
+# Where sparkles can appear: transparent pixels around the sack, spread out.
+SPARKLE_SPOTS = [(2, 1), (13, 2), (1, 7), (14, 8), (3, 14), (12, 14), (14, 4), (1, 11)]
+
 QUESTION = [".EEE.", "E...E", "..EE.", ".....", "..E.."]
 
 
@@ -100,6 +115,32 @@ def entry(name, count, weight):
     if count > 1:
         e["functions"] = [{"function": "minecraft:set_count", "count": count}]
     return e
+
+
+def animated(cloth, rope, emblem, count, sparkle, pulse):
+    """A vertical strip of FRAMES frames: sparkles blink in turn around the sack; with pulse, the
+    emblem brightens and fades."""
+    from PIL import Image
+    from build_boss_bags import shade
+    strip = Image.new("RGBA", (16, 16 * FRAMES), (0, 0, 0, 0))
+    spots = SPARKLE_SPOTS[:count]
+    for f in range(FRAMES):
+        glow = 1 + 0.35 * (1 - abs(f - FRAMES / 2) / (FRAMES / 2)) if pulse else 1
+        frame = draw_bag(cloth, rope, shade(emblem, glow), "question")
+        px = frame.load()
+        for i, (x, y) in enumerate(spots):
+            # each sparkle is lit for 3 frames, spread evenly over the cycle
+            age = (f - i * FRAMES // max(1, count)) % FRAMES
+            if age > 2:
+                continue
+            if px[x, y][3] == 0:
+                px[x, y] = (sparkle if age == 1 else shade(sparkle, 0.75)) + (255,)
+            if age == 1:
+                for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    if 0 <= x + dx < 16 and 0 <= y + dy < 16 and px[x + dx, y + dy][3] == 0:
+                        px[x + dx, y + dy] = shade(sparkle, 0.7) + (200,)
+        strip.paste(frame, (0, 16 * f))
+    return strip
 
 
 def main():
@@ -121,7 +162,18 @@ def main():
     import build_boss_bags
     build_boss_bags.EMBLEMS["question"] = QUESTION
     for bag, (_, cloth, rope, emblem, _) in BAGS.items():
-        draw_bag(hexrgb(cloth), hexrgb(rope), hexrgb(emblem), "question").save(os.path.join(TEXTURES, f"{bag}.png"))
+        count, colour, pulse = EFFECTS[bag]
+        path = os.path.join(TEXTURES, f"{bag}.png")
+        meta = path + ".mcmeta"
+        if count == 0 and not pulse:
+            draw_bag(hexrgb(cloth), hexrgb(rope), hexrgb(emblem), "question").save(path)
+            if os.path.exists(meta):
+                os.remove(meta)
+            continue
+        animated(hexrgb(cloth), hexrgb(rope), hexrgb(emblem), count, hexrgb(colour), pulse).save(path)
+        with open(meta, "w", encoding="utf-8", newline="\n") as f:
+            json.dump({"animation": {"frametime": 2}}, f)
+            f.write("\n")
     print(f"{len(POOLS)} rarity pools ({sum(len(p) for p in POOLS.values())} entries), {len(BAGS)} bags")
 
 
