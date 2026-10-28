@@ -9,7 +9,7 @@ The pack is named Strata, tagline "Build. Fly. Explore." It targets **Minecraft 
 | Minecraft / loader | 1.21.1 / NeoForge (newest version Create Aeronautics supports) |
 | Size | 500–600 mods; no hard ceiling |
 | Players | 5–6, mixed PC specs; includes newer players who prefer exploration and cozy content |
-| Hosting | treehouse (Ryzen 5 3600, 32 GB RAM, Debian 13 + Docker, itzg image) |
+| Hosting | A dedicated server running the itzg/minecraft-server Docker image (32 GB RAM recommended) |
 | Pillars | 1. Technology and automation (Create, Mekanism) · 2. Magic · 3. Exploration, bosses, dungeons |
 | Structure | Sandbox with FTB Quests chapters per mod and boss |
 | Feel | A "full" world: wildlife, ambience, structures and visuals so it never feels empty |
@@ -101,13 +101,12 @@ The world is built for long-distance travel: big terrain, lots of structures, re
 - **Reasons to keep exploring:** Apotheosis gear and gems; boss drops gating progression; Relics/Artifacts accessories.
 - **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips.
 - **Pregenerate** the world with Chunky before anyone joins; heavy worldgen is the main server performance risk (see `docs/worldgen-profile.md`).
-  1. **Seed:** `-6609605124472974960`, spawn at 416, 16 in the middle of an Integrated Villages Mossy Mounds village (open plains with rivers, a lake, the coast to the south and mountains to the north-east).
-     - **How it runs:** pregeneration is centered at the spawn. The Overworld runs with **C2ME** added to the pregeneration server only (never to the pack): Chunky, circle, 5,000-block radius, all CPU threads. The other dimensions run without C2ME, two at a time (`tools/pregen_dimensions.sh`). `tools/start_pregen.sh` is the Docker version of the Overworld step.
-     - **Sizes:** Overworld 5,000 (circle); Nether 1,250 around spawn/8; End 2,000 around 0/0; Pokémon world 2,000; Twilight Forest 1,500; Aether, Abyssal Plain and Hollow 1,000 around spawn.
+  1. **How it runs:** pregeneration is centered at the spawn. The Overworld runs with **C2ME** added to the pregeneration server only (never to the pack): Chunky, circle, 5,000-block radius, all CPU threads. The other dimensions run without C2ME, two at a time (`tools/pregen_dimensions.sh`). `tools/start_pregen.sh` is the Docker version of the Overworld step.
+     - **Recommended sizes:** Overworld 5,000 (circle); Nether 1,250 around spawn/8; End 2,000 around 0/0; Pokémon world 2,000; Twilight Forest 1,500; Aether, Abyssal Plain and Hollow 1,000 around spawn.
      - **Notes:** long runs build up a scheduler/heap backlog (rate drops to 1–2 chunks/s); a clean restart clears it and Chunky resumes. Run `/sable paused true` during pregen (Sable's physics thread competes for the main thread). **`/sable paused` with no argument toggles it**, so always pass true/false; set it back to false after pregen.
-     - **Aether trap:** the Aether's `DungeonBlacklistFilter` placement filter calls `Level.getChunk` from inside worldgen and deadlocks the pregen around chunk -73,-281 (≈ block -1168,-4496). The Aether is therefore pregenerated to 1,000 blocks (concentric), and that spot generates on demand. Watch for a stall if someone flies there.
+     - **Aether trap:** the Aether's `DungeonBlacklistFilter` placement filter calls `Level.getChunk` from inside worldgen and can deadlock a pregen. Keep the Aether pregen small (1,000 blocks) and let the rest generate on demand; if Chunky stalls in the Aether, skip that area.
   2. **Finish every worldgen-affecting change before pregenerating.** Pregenerated chunks never pick up later worldgen changes. That includes the Pokémon world's Cobblemon worldgen (apricorns, evolution-stone ores, Integrated Cobblemon gyms and Pokécenters), the Artifacts/IDAS chest fixes, the ore map (`docs/ore-map.md`, `tools/build_ores.py`), and any structure configs.
-  3. **Pregenerate on a fast desktop** (i5-13600K, much faster than treehouse) with the same settings as the server, then copy the world to treehouse.
+  3. **Pregenerate on a fast desktop** with the same pack, then copy the world to the server.
   4. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false` (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`). Chunky keeps expanding the border in the background after launch if needed.
 
 ## Pokémon world
@@ -179,7 +178,7 @@ Every heavy visual is client-side and optional, so weaker PCs turn it off and no
 | Client | Sodium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, BadOptimizations, AllTheLeaks |
 | Server | Lithium, Noisium, Chunky (pregen), Clumps, Let Me Despawn, Spark |
 
-Ship recommended RAM and Java flags with the pack; tune treehouse's garbage collector settings once the pack is up. Set up automatic world backups before day one.
+Ship recommended RAM and Java flags with the pack; tune the server's garbage collector settings once the pack is up. Set up automatic world backups before day one.
 
 ## KubeJS and config to-do
 
@@ -235,8 +234,8 @@ Test with all players early, before writing quests, so heavy mods are found by n
 5. Wire comparison in creative: Crafts & Additions vs IE (range, throughput, looks).
 6. Vampires vs Spice of Life: Onion.
 7. Cloud pet upkeep cost.
-8. Multiplayer play test on treehouse: several airships in the air, players spread out, Spark running.
-9. Steam 'n' Rails (unofficial 1.21.1 port, beta) on treehouse: lay snow-paved tracks, let it snow (and a Serene Seasons winter), run trains; watch for the crash/kick from port issue #361 (fix proposed in PR #372, not merged). Also check assembled trains with shaders on, plus couplers and Conductor Whistle.
+8. Multiplayer play test on the server: several airships in the air, players spread out, Spark running.
+9. Steam 'n' Rails (unofficial 1.21.1 port, beta) on the server: lay snow-paved tracks, let it snow (and a Serene Seasons winter), run trains; watch for the crash/kick from port issue #361 (fix proposed in PR #372, not merged). Also check assembled trains with shaders on, plus couplers and Conductor Whistle.
 10. Bosses of Mass Destruction (NeoForge port): summon each boss, check drops, and confirm the bosses keep their designed stats (Apotheosis must not scale them).
 11. Quark: after first launch, confirm config/quark-common.toml kept the disabled modules (sorting, easy transferring, tool restock, Pathfinder Maps, Ancient Tomes, Glimmering Weald) and look for other overlaps.
 12. Maps: Xaero's Minimap + World Map are the map mods. FTB Chunks has its own minimap and large map; turn the FTB minimap off in its client settings (and ship that as a default), then check that claims are still easy to see and manage from FTB Chunks' map.
@@ -262,6 +261,6 @@ The build uses the mod tracker (`docs/strata-mod-tracker.xlsx`) as the input lis
 2. Verify every "verify" mod in the tracker against the CurseForge/Modrinth APIs for a 1.21.1 NeoForge build; packwiz fails loudly on any mod without one.
 3. Resolve open decisions as mods are added.
 4. Write the KubeJS scripts and configs from the to-do list.
-5. Stand up a test server on treehouse (itzg/minecraft-server) with backups and the Discord bridge (Simple Discord Link); pregenerate with Chunky.
+5. Stand up a test server (itzg/minecraft-server) with backups and the Discord bridge (Simple Discord Link); pregenerate with Chunky.
 6. Run the test plan, then write FTB Quests chapters.
 7. Build the Pokémon world datapack and portal once the base pack is stable.

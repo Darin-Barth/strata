@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Boot the real Strata world (container strata-world, data in server/) from a pack copy served on :8080,
-# set the spawn, and start Chunky. Usage: tools/start_pregen.sh <pack-dir>
+# set the spawn, and start Chunky. Usage: tools/start_pregen.sh <pack-dir> <seed> <spawn x> <spawn z> [radius]
 # just `docker start strata-world` and run `chunky continue` over rcon.
 set -u
 REPO="$(cd "$(dirname "$0")/.." && pwd)"; D="$REPO/server"; PACK="$1"
-SEED=-6609605124472974960; SX=416; SY=70; SZ=16; RADIUS=5000
+SEED="$2"; SX="$3"; SY=70; SZ="$4"; RADIUS="${5:-5000}"
 r(){ docker exec strata-world rcon-cli "$*" 2>&1 | sed 's/\x1b\[[0-9;]*m//g'; }
 mkdir -p "$D"
 (cd "$PACK" && "$HOME/go/bin/packwiz.exe" refresh >/dev/null && exec "$HOME/go/bin/packwiz.exe" serve --port 8080) > "$D/../build/serve-pregen.log" 2>&1 &

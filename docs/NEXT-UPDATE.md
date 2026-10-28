@@ -1,6 +1,6 @@
 # Queued for the next update
 
-Changes committed on master since the last release (**v0.4.3**; notes in the GitHub release) that haven't been released yet. This release will be **v0.5.0** (version already set in `pack.toml` and the title screen). Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
+Changes committed on master since the last release (**v0.4.3**; notes in the GitHub release) that haven't been released yet. This release will be **v1.0.0**, the first full release (version already set in `pack.toml` and the title screen). Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
 - **Less memory:** Every Compat no longer makes Chipped, Rechiseled, Macaw's Furniture and Handcrafted copies in modded woods (23,002 fewer blocks; 872 MB less on the server, likely 1-1.5 GB less in your game). It also drops its Quark (posts, ladders, chests...) and Another Furniture copies in modded woods: 760k fewer block states, so a lighter, faster-loading game. Quark's and Another Furniture's own blocks stay. Those blocks disappear if anyone placed them. Distant Horizons default view distance 64 chunks for new installs.
@@ -29,7 +29,7 @@ Changes committed on master since the last release (**v0.4.3**; notes in the Git
 **Check while playing (tested in normal play after release):** the Nether Portal pet refuses before your first Nether visit and works after; bosses can't be jarred (Ars) or soul-gemmed (Occultism); explosions and Big Cannons shots do at most 10 per hit to Bosses of Mass Destruction and Bosses'Rise bosses. Report anything odd and it gets a hotfix.
 
 ## Release checklist
-1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both 0.5.0).
+1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both 1.0.0; the title screen shows 1.0).
 2. `python -I tools/curseforge_ids.py` (re-adds CurseForge IDs after mod updates; fix any "no longer used" line in
    `tools/curseforge-manual.json`), `packwiz refresh`, commit, `git push` (master, and sync `next-update`). Check no stray files sit under the server's `kubejs/data`: KubeJS refuses to start on an uppercase file name there.
 3. `packwiz mr export -o build/Strata-<version>.mrpack`; `gh release create v<version>` with the notes below.

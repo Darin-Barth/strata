@@ -1,4 +1,4 @@
-# Joining the Strata beta
+# Joining a Strata server
 
 Strata is a big modpack (about 400 mods). It runs on Minecraft 1.21.1 with NeoForge, and you install it through the free
 **Modrinth App**.
@@ -34,7 +34,7 @@ You'll see a plain window for a few seconds instead of the Strata splash, then t
 don't touch this file. On memory: give Java about half your Mac's RAM (8 GB on a 16 GB Mac); 8 GB-RAM Macs can't run the pack.
 
 ## 3. Join
-**Multiplayer → Add Server**, address: **strata.dev-duo.com**. The server has a whitelist; ask the server admin if you can't
+**Multiplayer → Add Server** with the address the server admin gives you. Servers usually have a whitelist; ask the admin if you can't
 get in.
 
 The first time you load into the world it takes a minute; that's normal for a pack this size.
@@ -51,4 +51,4 @@ folder into the new one before launching (instance → **⋮ → Open folder**).
 - Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
 - Difficulty is per player: press **Ctrl+T** to pick your Apotheosis World Tier once you unlock more.
-- This is a **beta**: some balance rules aren't enforced yet. If something seems broken or too easy, tell the server admin.
+- If something seems broken or too easy, tell the server admin: fixes ship as small updates.

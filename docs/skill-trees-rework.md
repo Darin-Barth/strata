@@ -1,6 +1,6 @@
 # Skill trees rework
 
-Status: **built** by `tools/build_skill_trees.py` (queued for 0.5.0; re-run after a skill-tree add-on
+Status: **built** by `tools/build_skill_trees.py` (shipped in 1.0; re-run after a skill-tree add-on
 update). Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
 Trees (Combat, Mining), Iron's Spells Dynamic Skill Trees (magic) and our own Fishing tree.
 
