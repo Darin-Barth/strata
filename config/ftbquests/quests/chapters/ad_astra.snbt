@@ -68,7 +68,11 @@
 			]
 			rewards: [
 				{ id: "3D523BC7BE7B5B2C", type: "xp", xp: 250 }
-				{ id: "07B852DB16F4D192", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "07B852DB16F4D192"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "0F0CD1E091F8DC16"
 					type: "item"
@@ -92,7 +96,11 @@
 			]
 			rewards: [
 				{ id: "08105ADAA30BECA5", type: "xp", xp: 250 }
-				{ id: "167B7971171A4C09", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "167B7971171A4C09"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "4541A84A1D6B688B"
 					type: "item"
@@ -116,7 +124,11 @@
 			]
 			rewards: [
 				{ id: "58687F3718BDF77F", type: "xp", xp: 250 }
-				{ id: "3EAE64142462BCB2", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "3EAE64142462BCB2"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "73EB898832C7CB0B"
 					type: "item"
@@ -154,7 +166,11 @@
 			]
 			rewards: [
 				{ id: "091C885931A46CD0", type: "xp", xp: 250 }
-				{ id: "097A65309D21CB52", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "097A65309D21CB52"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "0C3CEA629397AF1A"
 					type: "item"
@@ -177,7 +193,11 @@
 			]
 			rewards: [
 				{ id: "1FE6FC62A5684E3B", type: "xp", xp: 250 }
-				{ id: "630AB52A984F6C15", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "630AB52A984F6C15"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "6C6B8280BB56FA69"
 					type: "item"
@@ -206,7 +226,11 @@
 			]
 			rewards: [
 				{ id: "73E3FBBF2C00D6B8", type: "xp", xp: 500 }
-				{ id: "7830CE697BC94786", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "7830CE697BC94786"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 			]
 		}
 		{
@@ -220,7 +244,11 @@
 			]
 			rewards: [
 				{ id: "1C4C8C0BE6AA8FDB", type: "xp", xp: 500 }
-				{ id: "121EDA47F6C2615F", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "121EDA47F6C2615F"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 				{
 					id: "3D53E36C784665A4"
 					type: "item"
@@ -245,7 +273,11 @@
 			]
 			rewards: [
 				{ id: "13DD0B891BE2484D", type: "xp", xp: 500 }
-				{ id: "61BE1213D887CD9A", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "61BE1213D887CD9A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 			]
 		}
 		{
@@ -288,7 +320,11 @@
 			]
 			rewards: [
 				{ id: "1D41B6E95BB93CDE", type: "xp", xp: 500 }
-				{ id: "174B1A2472537A20", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "174B1A2472537A20"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 			]
 		}
 		{
@@ -303,7 +339,11 @@
 			]
 			rewards: [
 				{ id: "2B61721EB91DAA17", type: "xp", xp: 500 }
-				{ id: "5D1AA6C20618DDDA", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "5D1AA6C20618DDDA"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 			]
 		}
 		{
@@ -322,7 +362,11 @@
 			]
 			rewards: [
 				{ id: "3E04A9388343A782", type: "xp_levels", xp_levels: 10 }
-				{ id: "5AE3A781C470D5FE", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "5AE3A781C470D5FE"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
 			]
 		}
 		{
@@ -355,7 +399,11 @@
 			]
 			rewards: [
 				{ id: "2524E375016582C0", type: "xp_levels", xp_levels: 10 }
-				{ id: "2385FC944229E249", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "2385FC944229E249"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
 			]
 		}
 		{
@@ -375,7 +423,11 @@
 			]
 			rewards: [
 				{ id: "20945362CE85C811", type: "xp_levels", xp_levels: 20 }
-				{ id: "3F14B6E5CC819DE5", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "3F14B6E5CC819DE5"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
 			]
 		}
 		{
@@ -396,7 +448,11 @@
 			]
 			rewards: [
 				{ id: "43C9104A07222346", type: "xp_levels", xp_levels: 20 }
-				{ id: "57F89579B20DB08A", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "57F89579B20DB08A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
 			]
 		}
 		{
@@ -411,7 +467,11 @@
 			]
 			rewards: [
 				{ id: "7CC76EDA4CEDF27F", type: "xp_levels", xp_levels: 20 }
-				{ id: "3E14A9573DA55E9D", type: "random", table_id: 2792261334234192333L }
+				{
+					id: "3E14A9573DA55E9D"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
 			]
 		}
 		{
@@ -426,7 +486,11 @@
 			]
 			rewards: [
 				{ id: "58C711DEB774A0EA", type: "xp", xp: 250 }
-				{ id: "42E8C1BF56F988C1", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "42E8C1BF56F988C1"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 			]
 		}
 	]

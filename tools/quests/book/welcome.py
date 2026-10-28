@@ -15,6 +15,10 @@ q("welcome", "Welcome to Strata!", icon="ftbquests:book", size=1.5, shape="gear"
     Nothing is locked: jump to whatever looks fun. Quests inside a chapter open up in order.
 
     Open the book any time with the book button at the top-left of your inventory.
+
+    Bigger quests reward &eLoot Bags&r: right-click one to see what you got. Each bag rolls a
+    rarity (&fCommon&r, &aUncommon&r, &bRare&r, &dEpic&r or &6Legendary&r), then an item from it.
+    Bigger bags have better odds.
     Click the checkmark below to get started!""",
   rewards=[give("minecraft:bread", 16), give("minecraft:torch", 32)])
 

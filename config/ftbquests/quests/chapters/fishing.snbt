@@ -183,7 +183,11 @@
 			]
 			rewards: [
 				{ id: "03629B3725561E02", type: "xp", xp: 250 }
-				{ id: "3FE02ED0CDCEF2B3", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "3FE02ED0CDCEF2B3"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "67268B6E0E758F94"
 					type: "item"
@@ -280,7 +284,11 @@
 			]
 			rewards: [
 				{ id: "0F5FE8DD255B9F75", type: "xp", xp: 500 }
-				{ id: "734D72833CE88BE5", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "734D72833CE88BE5"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 				{
 					id: "103183F9A3EC96AA"
 					type: "item"
@@ -313,7 +321,11 @@
 			]
 			rewards: [
 				{ id: "72A2A015D087D374", type: "xp_levels", xp_levels: 10 }
-				{ id: "4C8877E654855FF3", type: "random", table_id: 2382341390593558078L }
+				{
+					id: "4C8877E654855FF3"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
 				{
 					id: "06656A22BF7A9AEC"
 					type: "item"
@@ -391,7 +403,11 @@
 			]
 			rewards: [
 				{ id: "55AF950433DEAB1D", type: "xp", xp: 250 }
-				{ id: "1E8C7A22A4311875", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "1E8C7A22A4311875"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "57832601472FC5F3"
 					type: "item"
@@ -442,7 +458,11 @@
 			]
 			rewards: [
 				{ id: "60139B1744671D00", type: "xp", xp: 500 }
-				{ id: "536D29D893C5350A", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "536D29D893C5350A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 				{
 					id: "1CA03D5D85B76A42"
 					type: "item"
@@ -502,7 +522,11 @@
 			]
 			rewards: [
 				{ id: "4EB96DDA19CF570B", type: "xp", xp: 250 }
-				{ id: "5045E721397FBA7E", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "5045E721397FBA7E"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "3946C82B0D93265C"
 					type: "item"

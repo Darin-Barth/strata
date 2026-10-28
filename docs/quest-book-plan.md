@@ -9,7 +9,7 @@ against the mod jars by `tools/quests/check_ids.py`.
   craft the key block, use it, make the next tier. Descriptions: 2–4 short lines, approachable, with the
   key controls/tips ("Press U on an item in EMI to see what it's used for").
 - Chapters end with a "Where next?" quest pointing to related chapters.
-- Rewards stay modest: XP, a few useful items, and loot bags (Common / Uncommon / Rare reward tables).
+- Rewards: XP, a few useful items, and quest loot bags by tier (Small, Loot, Large, Grand; `tools/build_quest_bags.py`). A bag rolls a rarity, then an item from that rarity's pool.
   No flight items, no teleport items, no wireless items as rewards.
 - Quest order follows the gate map (`docs/gate-map.md`): late Mekanism/AE2, nuclear power, Draconic and
   Extended Crafting finals come after the boss quests that supply their materials (Cataclysm, the Hollow,
@@ -88,7 +88,7 @@ against the mod jars by `tools/quests/check_ids.py`.
 38. Fishing — Aquaculture 2, Tide (journal).
 
 ## Status
-Built: 38 chapters, 820 quests, 4 loot bags. Every distinct ID validates against a registry dump of the
+Built: 38 chapters, 820 quests. Every distinct ID validates against a registry dump of the
 pack (`python -I tools/quests/build.py`), and the book loads on the server and in the client.
 
 Gate anchors used across chapters: `cataclysm/ignis` (nuclear power), `cataclysm/netherite_monstrosity`

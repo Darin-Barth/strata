@@ -202,155 +202,155 @@ hash = "bc624389ea3f194fba7d6bdf22b43a3ba62dfa331bafb141c0966c25ceb1ccf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/abyssal_plain.snbt"
-hash = "5e357b808d65fd447cdc2e785a849af5e5e83638b9f432e52753ffa40f348a7e"
+hash = "75a8a495e26f580c7c8d13e6137d6388299645a552331c282e0f0d19fa6e4d3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra.snbt"
-hash = "5c7bc85256f5e590ddb0ed62611b467c989d54a1116e1aceb32db35e05dbc91d"
+hash = "457ce3d059356b54e9d807550a1ffcdb45c0710fd16f6acae46fe9a554ec6491"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "9df804d6dc23e4076aafc0f62f198f78e50fa2ab0c2c6ae9ec338c8757c79a3e"
+hash = "dcf85a0e0073eb9e24e6c59c80f8ed0ba70660b4d7e3c8b3098bad30e9a0aadc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aether.snbt"
-hash = "ea312764beef5e9f27a40a932dd5e8f8981318a46d4529ba59b260809dec03cd"
+hash = "7dbbfa7da8d290cf770be388fa6386d56283e73d4307c7bdca04ccfaa2f8973c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ars_nouveau.snbt"
-hash = "1e6f0d5a4ddbf623da308ddeefaccefa5104b44fe354b08a610634a2af12339b"
+hash = "4f0d5db744f0278477ad8de00c0228dc19c4195a85388c6428d181d73c11a45b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/boss_hunter.snbt"
-hash = "2b93290ae33862359d6b5003a36013e3a9b435931bcf6666d976b9ad95189131"
+hash = "4e123ebe94078840cfe451b722c0f2a7aa76098973588861da3ebc27991a8b6c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/building.snbt"
-hash = "318ac5089812813a6852265210af527501e09c974c15fd45b917f0ba3734c301"
+hash = "1305fe1cf5a8d4146405f431b28edd0651b4b20262e3f9d3c4db050a4280ab63"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cataclysm.snbt"
-hash = "d82c0958e227611ac6d756480145f8304ff6c67fad80d7860419be86a6e2e914"
+hash = "9fad996ed0025df4cf6b0ccb41d182a25de90c17712c5378f0d2c70248049f6d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/combat_gear.snbt"
-hash = "cd3e0eec89eb0793c92af478cad078ea3d3bddff09ac35416f1169f864b1df51"
+hash = "0114b21249b55e02487bd133986bb573476fda7784889f15f6f4ec7016fb7a27"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_airships.snbt"
-hash = "028c9b06a5e473e7ed199508020474d6d50f3dbf938cfeb53068b8a4cecab070"
+hash = "6a2442aba2eefa71862576f7835913e9d150b09c670b40c3efb41677c528eb41"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
-hash = "2c4f41c6b1ed61a09574c071cf9e330544589f62761b2f2f024a4b29eef030d8"
+hash = "17b4fc96204ea6f6783d268ecd2d00430e0f3c66736ea5a4a8a01fe71521aa00"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_extras.snbt"
-hash = "6872a51f3535749faa5ebaf66308707421c00e0919b65dd398f58f4c9fc446e1"
+hash = "f40375101776b9df6ebb85999ee1cd2d3c5f78a1c019411f464e97b375cc71de"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_power.snbt"
-hash = "3f1271b59ce87323ffd539dd1375c2707c84bfe9e97398f953a5f9afbdd6d12e"
+hash = "e9aa849a080ba999839998cdb404ead44f5cb553daf9e887c2edb5a196585b26"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_trains.snbt"
-hash = "6a31bbaade0fd4d9a88f1b1a8798ed6e2c21f8d434a9b335d335b2d34343715e"
+hash = "d1032014c5b008a507fd41c767a547ec06feebd3ddb943995b536f954aa52243"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/deeper_darker.snbt"
-hash = "fc6f4097c4b2c5d1ab3f9a0cc660174e6e0df9374502423bf7d6cc291a3136e5"
+hash = "8bce04f2c9f24b1226b1329dc50d461977aedd910d5f42232e3f9fc060234b35"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/endgame.snbt"
-hash = "6a5bcbffb81d4002aab8ab6ecc600666c04d357feb8c20973ced5af4142a5283"
+hash = "c943a314281ee6c073a00b447e4bc2bfd811e0ea2ef53676db6e607f453b4a87"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/explorers_guide.snbt"
-hash = "8fbd9d66a54e751ceaca57da99a6167e262d79d6d212ae31af56a9f9b1615b39"
+hash = "edf044f9aa35676286dd689d714a8767e989f62da04c095f2d08637f4b0fe6fb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/farming_food.snbt"
-hash = "c48e26974d0093906f473bc1d9025da3aa0ef3e3b960e7a789d46531811de47e"
+hash = "8f9f1c7bffcd9e7fe22c1bdc9ebce804d0058534b12f2a3bca7ddc0de8ec2e1e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/fishing.snbt"
-hash = "5e90449765c80f7e80a43c96e0a4ae211b50f987fb99416a825e5d1e76cd2a6a"
+hash = "0451915aeb819d02e40d003beb05f9e25789ec936c7f2399d085f5d4497d37b5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ice_and_fire.snbt"
-hash = "d02cf417cb1c334b828bdd03838b3d64d9f7b41a32ff0c18fc9ec23064cdd1f6"
+hash = "d86dbd5923ef8f7b0ac11919597585400419d3e863fa1e7f1b1dbcc3ad37a41e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/immersive_engineering.snbt"
-hash = "bb728fd6ff6417c0e76cb64f0639908c4717a2c4fe73083ad75d59c48fb34024"
+hash = "4987689a34e1ae86f267fc379d4ed5308c808ffa49e260c54e73380329dced38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_spells.snbt"
-hash = "5fc106ba43d4cdcef7585ca6b300567e4d0adad6d54b778315a55f50a7568391"
+hash = "8a08ecca0de25053fd112f1646635a43ab24bd5fca6396926a6268b45fb104f7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/logistics.snbt"
-hash = "d7d27885deb20179f293983c9f459c5ae8a232acf2f34c3a47f73ff7b878f26e"
+hash = "0a4323c423e0215592e3c30f3d5efa8dbca072a4bea9c3a0ff7c1447b473a1f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "0d577cf09562798542f492d7be25a3810882dd9fcfd301c932967ba7509e3b25"
+hash = "09583bbba5633dfe0e843399b775acf8fbc24c35a96ad5afa6d6d47160ef5500"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/more_machines.snbt"
-hash = "65cc1ccc1e7451928724e2d7887127ef0637165acb929754982b1d7d2947f9c5"
+hash = "e3210b0da715c37410a816039b328613f38495810f14999ed5bd81b05038e92b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/neo_vitae.snbt"
-hash = "758ca245b153d9953e364d17a6a689273567778bee7f63b8fac4a37e266a3171"
+hash = "f4f738fe165852fb5ce56c03f6e76cbca66c06196b1b7e59cfe6ca6c016658fd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nether.snbt"
-hash = "5ecceb6b36f318feb1fef13e2ff2b8afc694218662c634b41ae3c93c9a6387ea"
+hash = "d76ade94003773898119a21a1123d9b63786e960f834d69e3fe809bc1b436f58"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/occultism.snbt"
-hash = "fe804e7529d5c9c450ab75c7195be9abef1fcef13f67faf8c5f8eb6172f7ad1f"
+hash = "510f8a11e87cc61b166791818bfdfec275bae955fd8c788a0895d5f636add9d2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/oritech.snbt"
-hash = "894b05c9ad34649e5665f9dda62fb80035f81f98888aa44a2af6c401a5a914f6"
+hash = "3b10b230fa96ae848227f509a030a45710344bf3d22ea44aa403592695130623"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pets_critters.snbt"
-hash = "4bbac02062cf618b4597e9d30d9b5bf2e5c46febefe38a8cb3ab04d4c403a2b0"
+hash = "78e0e9dbfe46b7e2ec2f9f6c442df8bbe197d55e01811b7c91e9ac6a51c78c63"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pokemon_world.snbt"
-hash = "5aa22c9c47ce93f2aac82052ad70f7df21f00655291fb846f0487301eb9364eb"
+hash = "6309e1feae17beea12f5fd1a26e774081accd533af926e70624c01e59bfdd7b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/resource_farming.snbt"
-hash = "4ee3c1fe3cafeb29fd6408772514e6531bf24c60ac9b05c4466be0f5cd8eeb39"
+hash = "c703f82886a16a0bb977a3042c2bef846d54516ebafc96df38f34172f714f222"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "f61ab0be5789be5c03fe7023c7f724789d2d7710eb75a98c1bc5eb7bb4b26e27"
+hash = "74b037c79d2e78cbbdf47bd05810e380c085c2bc7a873b2381dfb6adca844b00"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_end.snbt"
-hash = "a32da533f8e2167fe2221d8741e6d4323c04db111dc027df39549b4f19e47b36"
+hash = "c7a45961b04c33dedf70bd1e1ee8b8a306ee77fb1d1926fdd63a109a4a47282d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/theurgy.snbt"
-hash = "b1156d710e25ae28d8515c7421bf9380353198e14154f7e299eca28ae1c19fa9"
+hash = "9390eed658e7bb5886df0fecda42856bfb1e3db936fdfc6c4eadd5437040a648"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/twilight_forest.snbt"
-hash = "9fbfaf7ce79581469ed8a52527e69b3492ef958d71b9978a6fad2949a9673cd3"
+hash = "33e623bd37f1cc0f0ead9ac1fd06b69717de37e456d61e19318be4a23a191f7b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vampirism.snbt"
-hash = "6de59d5a91d1392499b8744c84b4217dffc8ec5b43e20a9a566c17a7093dcfa7"
+hash = "a1cd9ac41381fa2f2dc0fc1ba75e1cceaa47c51c197b482ae4758c1a997977bb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "ce0914061a36c9bd7fa8bd44ffc7cba425ce1ce54477d292a6bdaf9b85cacc72"
+hash = "f0886ce5132804882f5ae06604db216ecd0a3f4f1100672d65c168780e84f649"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -358,23 +358,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b12b02bbbc6203d4654908568335acd8ff6a6ca8ae07272a8442cd09bba011a3"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/common.snbt"
-hash = "c3258a816c3b4181106b478e9e8758e22af9bf937c541a4397189fa48e00be08"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/epic.snbt"
-hash = "3a7d9467f4f763b81f06c4b441b7deec855de96375a66d9480910875ae644fb8"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/rare.snbt"
-hash = "2433a67a5f93f11bb3448a2192339f0aa1973a10106db283f57492d4b1984d8b"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
-hash = "0ea63a12f7606224e5700bd4944500ccb3f94e102df02f667fc2cdeb8b96a4e2"
+hash = "d0230763ef6c83dfa495d27b8738f8bc8d2fc0342e1182b9491b119e10c437f2"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -1135,6 +1119,22 @@ hash = "ee24b9dda63e81fbcc5c30857a252d3e8d40975a74a73e12d4fa033689826c84"
 [[files]]
 file = "kubejs/assets/strata/textures/item/leviathan_lure.png.mcmeta"
 hash = "4035373a4e38adcd143aad74f3845fd5211b374ba922d7611b36679d07a42a79"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag.png"
+hash = "abdc90464f48b6bea9c154834aec8c4f0f5efacebfe0e1ac59961ae025389d1a"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag_grand.png"
+hash = "fada0af9e7127313ab838878769da097bafbb9ff102398401d89ad6144177933"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag_large.png"
+hash = "cfbe034b79e727c3a7d0fb0611e8abcd1f8aaf9beef5ffdc2e89893c3c47f4c6"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/loot_bag_small.png"
+hash = "6636518ba4e8bc0830402314c1957029ea35f60a49d8833288b5b50c86db6187"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/pale_lantern.png"
@@ -5497,6 +5497,26 @@ file = "kubejs/data/strata/loot_table/inject/pets_rare.json"
 hash = "c53e5f5e5c587a4d0f95f076cbda2b1253ea9f04681a0bb2c8d50d3d4477b116"
 
 [[files]]
+file = "kubejs/data/strata/loot_table/loot_bags/common.json"
+hash = "b98240e726ac6f5c8f9a4573bd34de92e733c844888e04c9f0e30111fcf68807"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/loot_bags/epic.json"
+hash = "eb09299e6ac616a51776102fd9edbce6f59555c26f14109a88df15bf9a134056"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/loot_bags/legendary.json"
+hash = "1be8a6236c43ddafdf5fecd943e77110dd65931c577faeb55f69c860bd10d567"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/loot_bags/rare.json"
+hash = "27c801942c63cbfba7039ff52850c3a14b63f0f67c14d6d689e0b14454f8ac28"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/loot_bags/uncommon.json"
+hash = "a8ba2128a1c2e90f5b2a8b045652172ea65d555b539064dbc82f389896d16165"
+
+[[files]]
 file = "kubejs/data/strata/loot_table/lootified/inventorypets/nether_dungeon/0.json"
 hash = "138570ff367bbdb8ca9638db8ebeaeb30f3fcc79465900f8bbb3e9d69dc85ad0"
 
@@ -6645,6 +6665,14 @@ file = "kubejs/server_scripts/strata_home.js"
 hash = "773c7a4e1858669a3e5e9af575efff1aed28272e7ed9917d11a3ca67d9ad0c2c"
 
 [[files]]
+file = "kubejs/server_scripts/strata_loot_bag_odds.js"
+hash = "4904ac772b72e87ba966deeadfb64c58f31d759c0742c5c5fe384cc62d69f018"
+
+[[files]]
+file = "kubejs/server_scripts/strata_loot_bags.js"
+hash = "409b9d4892f7828a1b6ff7eeafd687fded6b31cae129a10fb2e87de541db6771"
+
+[[files]]
 file = "kubejs/server_scripts/strata_pets.js"
 hash = "c4e6c864111ea58b96efdb010f0c796926364c5e881a06df4c31de82915a6913"
 
@@ -6699,6 +6727,10 @@ hash = "b5bc8ec970c2b5a056d42a1add5851942f5ca8f99d7b591989af1a377566d76d"
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_blast_cap.js"
 hash = "bd29d584239dff6ef4348b2dd085add7309de0bc5742a147a172ba7caa152837"
+
+[[files]]
+file = "kubejs/startup_scripts/strata_loot_bags.js"
+hash = "94766519920b9ad9ddf950720c17fd1c44d1f02862daf3cada3be910ff0ac969"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

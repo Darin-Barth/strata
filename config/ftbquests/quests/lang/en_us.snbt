@@ -1,9 +1,5 @@
 {
 	file.0000000000000001.title: "Strata"
-	reward_table.27B22058501FC0DC.title: "Common Supply Bag"
-	reward_table.2C273A09128CA2CE.title: "Uncommon Supply Bag"
-	reward_table.210FC6DF600A063E.title: "Rare Treasure Bag"
-	reward_table.26C01AE3B31659CD.title: "Epic Treasure Bag"
 	chapter_group.2EAA9718BAF5A32A.title: "Tech"
 	chapter_group.03203A1312E25E36.title: "Magic"
 	chapter_group.76581968F62E459A.title: "Exploration"
@@ -17,7 +13,9 @@
 		""
 		"This quest book is your guide. Each chapter on the left covers one big mod. Nothing is locked: jump to whatever looks fun. Quests inside a chapter open up in order."
 		""
-		"Open the book any time with the book button at the top-left of your inventory. Click the checkmark below to get started!"
+		"Open the book any time with the book button at the top-left of your inventory."
+		""
+		"Bigger quests reward &eLoot Bags&r: right-click one to see what you got. Each bag rolls a rarity (&fCommon&r, &aUncommon&r, &bRare&r, &dEpic&r or &6Legendary&r), then an item from it. Bigger bags have better odds. Click the checkmark below to get started!"
 	]
 	quest.4707DC7691146290.title: "What's That Recipe?"
 	quest.4707DC7691146290.quest_desc: [

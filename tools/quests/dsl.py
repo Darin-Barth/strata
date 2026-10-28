@@ -113,9 +113,14 @@ def give(iid, count=1):
     return Reward("item", d, [("items", iid)])
 
 
-def bag(table):
-    """One random roll from a reward table (see book/_tables.py)."""
-    return Reward("random", {"table": table})
+# Quest loot bags (tools/build_quest_bags.py): opening one rolls a rarity, then an item from its pool.
+BAGS = {"common": "strata:loot_bag_small", "uncommon": "strata:loot_bag",
+        "rare": "strata:loot_bag_large", "epic": "strata:loot_bag_grand"}
+
+
+def bag(size):
+    """A quest loot bag; bigger bags have better rarity odds."""
+    return give(BAGS[size])
 
 
 # Default rewards by quest tier (generous by design); explicit rewards= are added on top.

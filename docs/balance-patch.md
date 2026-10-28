@@ -63,7 +63,7 @@ farmable.
 | G1 | **Bountiful** top rewards (netherite armor, diamond tools, Mending, totems) | kept, worth 1.5× and a quarter as common |
 | G3 | **Carry On** | can't pick up spawners, trial spawners or vaults; the Mekanism cardboard box still can |
 | G4 | **Create Numismatics** coins | 10 starter cogs |
-| G5 | Quest bags (random bags across the book) | the epic bag gives 1 netherite ingot |
+| G5 | Quest loot bags (`tools/build_quest_bags.py`) | rarity odds by bag size (Small 70/22/6/1.8/0.2 % Common to Legendary, Grand 0/25/40/27/8 %); pools leave out flight, teleport and wireless items and every gate material; netherite is Epic (1) or Legendary (2) |
 | G6 | Ars Nouveau **Stabilized Warp Scroll**: never used up, crosses dimensions, free to use | +2 echo shards in its Enchanting Apparatus recipe (gate M21, `tools/gates/build_magic.py`); the single-use Warp Scroll is unchanged |
 | G7 | **Inventory Pets** sources | legendary chest chance 2.5%; Cloud, Sun, Wither, Black Hole and Pufferfish also drop from a themed boss at 15% per player (`tools/build_pet_loot.py`); the Nether Portal pet only in Nether fortress and bastion chests; Slime pet chest-only |
 | G8 | **Boss loot** shared out by fighting, not by grabbing | every player who hit a boss gets a Boss Loot Bag with a full roll of its loot; boss materials scale with group size by design (`strata_boss_bags.js`) |
