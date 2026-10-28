@@ -1,5 +1,5 @@
-// The Hollow and the Abyssal Plain: scary but fair (Darin, Oct 25: "I really don't want BS mobs that just kill you
-// without any chance of survival"). One hit from a horror mob can take at most 40% of a player's
+// The Hollow and the Abyssal Plain: scary but fair: no mob should kill a player
+// without a chance of survival. One hit from a horror mob can take at most 40% of a player's
 // max health (after armor), and horror mobs can't hurt a player in the first 10 seconds after
 // arriving in the Hollow. Bosses keep their designed damage. Applies wherever the hit happens, so
 // a horror mob that follows someone through a portal is capped too. A startup script because

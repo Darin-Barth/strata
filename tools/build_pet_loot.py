@@ -1,6 +1,6 @@
 """Generate Strata's Inventory Pets loot (kubejs/data/...): pets are found, not crafted.
 
-Darin (Oct 27): pets should be fun finds in loot, not crafted (their recipes are removed in
+Design: pets should be fun finds in loot, not crafted (their recipes are removed in
 kubejs/server_scripts/strata_pets.js), and the strong ones stay but are weaker (config and
 upkeep food in config/inventorypets-common.toml). This writes:
   * three item tags, strata:pets/common, strata:pets/rare and strata:pets/legendary

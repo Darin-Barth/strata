@@ -1,8 +1,8 @@
-# Strata — mod gap analysis (Oct 24, 2026)
+# Strata — mod gap analysis
 
-What the current list (~310 mods in `mods/`) covers well, where it is thin, and mods that would fill the gaps. Darin picks; nothing here has been added.
+What the current list (~310 mods in `mods/`) covers well, where it is thin, and mods that would fill the gaps. What was adopted is in the two Outcome sections.
 
-**How builds were checked (Oct 24, 2026):** every suggestion was checked against the Modrinth API (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`). CurseForge-only mods were added to a throwaway packwiz pack outside the repo; `packwiz cf export` raised no "downloads disabled" warning for any of them. Version numbers are the newest 1.21.1 NeoForge build at check time.
+**How builds were checked:** every suggestion was checked against the Modrinth API (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`). CurseForge-only mods were added to a throwaway packwiz pack outside the repo; `packwiz cf export` raised no "downloads disabled" warning for any of them. Version numbers are the newest 1.21.1 NeoForge build at check time (October 2026).
 
 **Worldgen key** (the seed is chosen last, after all worldgen changes; pregeneration comes after that):
 - **Biomes (OW)**: adds Overworld biomes, reshapes the world. None of the picks below do this.
@@ -12,11 +12,11 @@ What the current list (~310 mods in `mods/`) covers well, where it is thin, and 
 
 Not re-suggested (in the pack or already decided against): MCA Reborn, Small Ships, Immersive Aircraft, The Bumblezone, Alex's Caves, Epic Fight, C2ME, Moonrise, Terralith, Dynamic Trees, MineColonies, Majrusz's, T.O Magic 'n Extras (= Traveloptics), Frieren Flight, FTB Essentials (Cut), Born in Chaos and Mutant Monsters (horror dimension).
 
-## Decision (Oct 24, 2026): approved list
+## Outcome: approved list
 
-Darin approved the recommendations, with these choices: MVS (not Repurposed Structures), Simply Swords only (no Spartan Weaponry, Silent Gear or Immersive Armors), no sixth magic mod, Let's Do Vinery only (not Farm & Charm). Defaults where the doc said "one or the other": Moog's Nether Structures over Formations Nether, Croptopia over Expanded Delight.
+The recommendations were approved, with these choices: MVS (not Repurposed Structures), Simply Swords only (no Spartan Weaponry, Silent Gear or Immersive Armors), no sixth magic mod, Let's Do Vinery only (not Farm & Charm). Defaults where the doc said "one or the other": Moog's Nether Structures over Formations Nether, Croptopia over Expanded Delight.
 
-**Add (Keep):** (added to the pack Oct 24, wave 4)
+**Add (Keep):** (status: added, wave 4)
 - Overworld: Ember's Floating Islands, Sky Whale Ship, MVS – Moog's Voyager Structures, Kobolds, Hopo Better Ruined Portals
 - Oceans: When Dungeons Arise: Seven Seas, Integrated Seven Seas, Upgrade Aquatic (+ Blueprint), Tidal Towns, Ocean's Delight, Illager Warship, Illager War Trireme
 - Nether: MNS – Moog's Nether Structures, Nether Depths Upgrade, My Nether's Delight, Eternal Nether (check Incendium overlap on first boot)
@@ -43,18 +43,18 @@ Darin approved the recommendations, with these choices: MVS (not Repurposed Stru
 | --- | --- | --- |
 | Overworld structures | YUNG's suite, Towns and Towers, When Dungeons Arise, Dungeons and Taverns, IDAS, Explorify, Integrated Villages, ChoiceTheorem's villages, Cataclysm, Bosses'Rise, Qliphoth | **Well covered** on land. Thin: **sky structures** (the "Fly" in "Build. Fly. Explore." has little to fly *to*), small ruins between the big set pieces |
 | Oceans | Aquamirae, YUNG's monuments, Aquaculture 2, Tide 2, Alex's Mobs | **Thin.** Few ocean structures, little underwater life beyond vanilla, no ocean food add-on |
-| Nether | Incendium, YUNG's fortresses, Cataclysm Nether bosses | **Thin** for a dimension that is the Expert-stage gate: few structures, nothing in the lava seas, no Nether food |
+| Nether | Incendium, YUNG's fortresses, Cataclysm Nether bosses | **Thin** for the first big step up in danger: few structures, nothing in the lava seas, no Nether food |
 | End | Nullscape, YUNG's End Island, End's Delight, Cataclysm End bosses | **Thin**: big terrain, little in it. End cities are the only common structure |
 | Aether | Aether, Deep Aether, Aether's Delight, Inventory Pets sky dungeons | **OK.** Aether Redux and Lost Content have no 1.21.1 NeoForge build; only small add-ons available |
 | Early-game travel | Horses, boats, Waystones (XP cost), Create trains later | **Slightly thin** until trains/airships; horses could matter more |
 | Combat and gear variety | Apotheosis, Better Combat, Apothic Combat, Combat Roll, Mekanism Tools, Artifacts, Relics, Ice and Fire gear, Iron's armor | **Thin on weapon types**: Better Combat has few weapon shapes to animate |
 | Bosses and late game | Cataclysm, Mowzie's, BoMD, Bosses'Rise, Qliphoth, Ice and Fire, Twilight, Aquamirae | Bosses **well covered**. Thin: a **post-boss "big build" goal** for the tech side |
-| Tech | Create + many add-ons, Mekanism, AE2, IE, IF, PneumaticCraft, Powah, Extreme Reactors, ID, LaserIO | **Very well covered.** Only open item: MI vs Oritech (still Maybe) |
+| Tech | Create + many add-ons, Mekanism, AE2, IE, IF, PneumaticCraft, Powah, Extreme Reactors, ID, LaserIO | **Very well covered.** MI vs Oritech resolved: Oritech |
 | Magic | Ars + 7 add-ons/bridges, Iron's, Occultism, Neo Vitae, Vampirism | **Well covered.** Ars has no elemental/school add-on; one more distinct magic style is optional |
 | Farming and food | Farmer's Delight + 7 add-ons, Slice & Dice, Central Kitchen, Serene Seasons, Spice of Life | Covered, but **crop variety is low** for Spice of Life (only vanilla + FD crops); no drinks/brewing |
 | Building and decoration | Macaw's suite, Handcrafted, Chipped, Rechiseled, FramedBlocks, Supplementaries, Another Furniture, Create Deco, building gadgets | **Fully covered.** Don't add more |
 | QoL | EMI/JEI, Jade, AppleSkin, IPN, Ultimine, FallingTree, Polymorph, Carry On, Xaero's, Sophisticated, Locked In Slots | Mostly covered. Small gaps: enchantment descriptions (Apotheosis has many), crafting-grid buttons, base mob-proofing, crash help |
-| Multiplayer / social | Voice Chat, WATUT, Mighty Mail, FTB Teams/Chunks, Numismatics, Trading Floor, PlayerRevive, Discord link | Covered. Small gap: **pinging** a spot for friends |
+| Multiplayer / social | Voice Chat, WATUT, Mighty Mail, FTB Teams/Chunks, Numismatics, Trading Floor, PlayerRevive, Discord link | Covered. Small gap: **pinging** a spot for teammates |
 | Server admin | Simple Backups, spark, Chunky, Simple Discord Link, Let Me Despawn | **Gaps**: crash protection for the world, permissions, big-packet fixes |
 | Performance | Sodium, Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, BadOptimizations, AllTheLeaks, Noisium, Clumps | Good base. **Gaps for a structure-heavy pack**: jigsaw structure generation (pregen time), async structure locating (Explorer's Compass, maps, dolphins) |
 
@@ -68,7 +68,7 @@ Darin approved the recommendations, with these choices: MVS (not Repurposed Stru
 | **Sky Whale Ship** | Modrinth `sky-whale-ship` 1.0.3 (release, Nov 2025; 1 build, small) | A whale-ship structure in the sky | Structures. Small one-off; low maintenance risk, low update activity |
 | **MVS – Moog's Voyager Structures** | Modrinth `moogs-voyager-structures` 5.1.3 (release, Sep 2026); server-only | 130+ vanilla-style structures (ruins, towers, camps, ocean pieces) to fill gaps between big set pieces | Structures. Many; set spacing with Sparse Structures or its config |
 | **Repurposed Structures** | Modrinth `repurposed-structures-forge` 7.5.22 (release, Aug 2026); server-only | Biome variants of vanilla structures (jungle fortress, Nether/End variants, more villages, wells, shipwrecks) | Structures in all three dimensions. Overlaps a bit with YUNG's and Integrated Villages; disable its village/mineshaft/stronghold variants in config so YUNG's stays in charge |
-| Kobolds | Modrinth `kobolds` 4.0.2 (release, Oct 2026) | Small friendly lizard villagers with dens and trades | Structures + mobs. "Cute" content for the newer players |
+| Kobolds | Modrinth `kobolds` 4.0.2 (release, Oct 2026) | Small friendly lizard villagers with dens and trades | Structures + mobs. "Cute" content |
 | Hopo Better Ruined Portals | Modrinth 1.4.4b (release, Apr 2025) | Nicer ruined portals | Structures (replaces vanilla). Optional |
 
 Tool if structure density gets out of hand: **Sparse Structures** (`sparsestructures` 3.0, server-only) spreads all structures out by one multiplier.
@@ -83,7 +83,7 @@ Tool if structure density gets out of hand: **Sparse Structures** (`sparsestruct
 | **Ocean's Delight** | Modrinth 1.0.4 (release, Apr 2026) | Farmer's Delight recipes for ocean foods | None. Gives fishers (Tide/Aquaculture) a food use |
 | Illager Warship / Illager War Trireme | Modrinth 1.0.1 each (release, Aug 2025) | One giant illager warship structure (oceans); a trireme in warm oceans | Structures. Both are static ocean structures, not flying |
 
-### Nether (Expert-stage gate)
+### Nether
 
 | Mod | Source / build | What it adds | Rules / worldgen |
 | --- | --- | --- | --- |
@@ -91,7 +91,7 @@ Tool if structure density gets out of hand: **Sparse Structures** (`sparsestruct
 | **Nether Depths Upgrade** | Modrinth 3.3 (release, Sep 2026) | Lava fish, lava fishing, plants in the lava seas | Other-dim features. Pairs with Tide |
 | **My Nether's Delight** | Modrinth 1.10.4.1 (release, Sep 2026) | Farmer's Delight Nether crops and food | Light Nether features. Vampire players benefit (Nether food) — check vs Vampire's Delight in test 7 |
 | Formations Nether | Modrinth 1.0.5b (release, Sep 2026) | Small Nether structures | Other-dim structures. Alternative to MNS, not both |
-| Eternal Nether | Modrinth 21.1.3 (release, Jul 2025) | Bygone Nether continuation: new mobs and structures | Other-dim structures + mobs. New mobs fall under the difficulty script; check Incendium overlap first. Lower priority |
+| Eternal Nether | Modrinth 21.1.3 (release, Jul 2025) | Bygone Nether continuation: new mobs and structures | Other-dim structures + mobs. Check Incendium overlap first. Lower priority |
 
 ### End
 
@@ -134,7 +134,7 @@ The big Aether add-ons (Aether Redux, Lost Content, Genesis) have **no 1.21.1 Ne
 | --- | --- | --- | --- |
 | **Extended Crafting** | Modrinth 7.0.9 (release, Sep 2026) | Big crafting tables (up to 9×9), combination crafting | None. The usual "final craft" tool for a pack-made endgame item (boss drops + every tech mod). Recipes are ours in KubeJS |
 | Draconic Evolution | Modrinth 3.1.4.633 (**beta**, Sep 2026); 2 deps | Endgame tech, Chaos Guardian boss, armor with **flight** | Beta. Its armor flight is power-costed, but it is another top-tier tech line next to Mekanism; boss stats and flight need review. Only if Mek/AE2 endgame feels short |
-| Legendary Monsters | Modrinth 2.2.4 (release, Oct 2026) | Early/mid/late bosses in 13 structures | Already a **Maybe** in the friend list (Overworld spawns to tune). Still the strongest boss pick left |
+| Legendary Monsters | Modrinth 2.2.4 (release, Oct 2026) | Early/mid/late bosses in 13 structures | Already a **Maybe** in the mod requests review (Overworld spawns to tune). Still the strongest boss pick left |
 
 ### Tech
 
@@ -143,7 +143,7 @@ Very well covered; nothing is missing. One idea that adds a different way to pla
 | Mod | Source / build | What it adds | Rules |
 | --- | --- | --- | --- |
 | Create Ore Excavation | Modrinth 1.6.8 (release, Nov 2025) | Hidden infinite ore veins mined by Create drills | No worldgen blocks (veins are data). Gives Create a reason to set up remote mining outposts reached by train or airship |
-| Modern Industrialization / Oritech | MI 2.5.11, Oritech 1.2.13 (both release, Oct 2026) | Still an open Maybe (pick one in the creative test) | Oritech has flight items (jetpack, exosuit); check costs |
+| Modern Industrialization / Oritech | MI 2.5.11, Oritech 1.2.13 (both release, Oct 2026) | Was an open Maybe; resolved: Oritech is in the pack | Oritech has flight items (jetpack, exosuit); check costs |
 
 ### Magic
 
@@ -152,7 +152,7 @@ Very well covered; nothing is missing. One idea that adds a different way to pla
 | **Ars Elemental** | CurseForge only, `ars_elemental-1.21.1-0.7.10.4` | Elemental schools, focuses and armor for Ars | The standard Ars add-on and missing here. Check the Air focus (fall-damage/levitation help, not free flight) |
 | Ars Additions | Modrinth 21.3.0 (release, Feb 2026) | Small Ars QoL and tweaks | None. Check any warp-related additions against the teleport rule |
 | Theurgy | Modrinth 1.78.0 (release, Oct 2026) | Alchemy: replicate and transmute matter | A different style (alchemy) that connects to the resource side; overlaps a little with Mystical Agriculture |
-| Malum / Eidolon: Repraised / Forbidden & Arcanus | Malum 1.8.2, Eidolon 0.5.0.7, F&A 2.6.1 (all release) | Dark/soul magic; necromancy; magic + building blocks | All have builds, but magic already has five systems. Only if the group wants a sixth. Eidolon is an unofficial port. Ars Technica (CF, 2.7.6) overlaps Ars Creo |
+| Malum / Eidolon: Repraised / Forbidden & Arcanus | Malum 1.8.2, Eidolon 0.5.0.7, F&A 2.6.1 (all release) | Dark/soul magic; necromancy; magic + building blocks | All have builds, but magic already has five systems. Only if a sixth is wanted. Eidolon is an unofficial port. Ars Technica (CF, 2.7.6) overlaps Ars Creo |
 
 ### Farming and food
 
@@ -181,7 +181,7 @@ Fully covered; no picks. **Amendments** (Modrinth 1.21-2.2.0, by the Supplementa
 
 | Mod | Source / build | What it adds | Rules |
 | --- | --- | --- | --- |
-| **Ping Wheel** | Modrinth 1.12.2 (**beta**, Apr 2026); both sides | Ping a spot or mob for friends | Small and widely used despite the beta tag. `ping-to-map-xaeros` shows pings on Xaero's |
+| **Ping Wheel** | Modrinth 1.12.2 (**beta**, Apr 2026); both sides | Ping a spot or mob for other players | Small and widely used despite the beta tag. `ping-to-map-xaeros` shows pings on Xaero's |
 | Emotecraft | Modrinth 2.4.12 (release, Aug 2025); server optional | Player emotes | Quark already has an emotes module. Only if Quark's is turned off |
 
 ### Server admin
@@ -207,7 +207,7 @@ Fully covered; no picks. **Amendments** (Modrinth 1.21-2.2.0, by the Supplementa
 
 ## Top picks
 
-If Darin takes only a short list, these fill the clearest gaps with the least risk (all release builds unless noted):
+As a short list, these fill the clearest gaps with the least risk (all release builds unless noted):
 
 1. **Ember's Floating Islands** + **Sky Whale Ship**: things to fly to (structures).
 2. **When Dungeons Arise: Seven Seas** + **Upgrade Aquatic** + **Ocean's Delight**: the ocean gap (structures; Upgrade Aquatic needs Blueprint).
@@ -225,16 +225,16 @@ Worth a deliberate yes/no: **End Remastered** (changes how the End opens), **Leg
 ## If any are added
 
 - Everything marked Structures or Other-dim worldgen: decide before pregeneration, and before the seed is re-scouted if the change could move features near spawn.
-- New mobs and bosses (Kobolds, Eternal Nether, Legendary Monsters, Upgrade Aquatic thrashers): add bosses to the difficulty script's skip list; check regular mobs at the Expert/Master stages.
+- New mobs and bosses (Kobolds, Eternal Nether, Legendary Monsters, Upgrade Aquatic thrashers): keep bosses at their designed stats; check regular mobs at the higher Apotheosis World Tiers.
 - New structures: Lootr check and a rarity pass.
 - Flight check: Draconic Evolution armor, Oritech exosuit/jetpack, Ars Elemental Air focus, Immersive Armors sets.
 - Teleport check: Horseman horse summon, Ars Additions.
 
 ---
 
-# Round 2 (Oct 24, 2026): server performance and notable mods not yet considered
+# Round 2: server performance and notable mods not yet considered
 
-Same build checks as above. Darin asked for (a) every optimization that helps the treehouse server, and (b) popular, well-regarded mods that are simply missing, even where nothing is "thin". Candidates came from the ~700 most-downloaded 1.21.1 NeoForge mods on Modrinth, minus what's in the pack, plus a few CurseForge-only staples.
+Same build checks as above. Scope: (a) every optimization that helps the treehouse server, and (b) popular, well-regarded mods that are simply missing, even where nothing is "thin". Candidates came from the ~700 most-downloaded 1.21.1 NeoForge mods on Modrinth, minus what's in the pack, plus a few CurseForge-only staples.
 
 ## A. Server performance
 
@@ -249,7 +249,7 @@ The pack already has the core set (Lithium, ModernFix, FerriteCore, AllTheLeaks,
 | **Create: Threaded Trains** | Modrinth 1.0.0 (release, Nov 2025); server-only | Runs Create's rail network on its own thread | Large win once the train network grows. The author warns that add-ons touching trains can freeze the server, and we run the unofficial Steam 'n' Rails port. Trial it on the test server with backups (test 10); drop it if it misbehaves |
 | **AI Improvements** | Modrinth 0.5.3 (release, Jun 2024; tagged for 1.21.1) | Cheaper vanilla mob AI (goal selection, look controls) | Old but simple; no gameplay change at defaults |
 | **Achievements Optimizer** | Modrinth 2.1.0 (release, Aug 2025) | Faster advancement checks | Big packs have thousands of advancements (recipe unlocks) |
-| CobblemonOptimizer | Modrinth 5.0.0 (release, Sep 2026; NeoForge jar despite "Fabric" in its text) | Throttles and freezes distant Pokémon, lowers spawns under load | For the Pokémon world; pass to that session |
+| CobblemonOptimizer | Modrinth 5.0.0 (release, Sep 2026; NeoForge jar despite "Fabric" in its text) | Throttles and freezes distant Pokémon, lowers spawns under load | For the Pokémon world work |
 
 **Optional**
 
@@ -279,7 +279,7 @@ The pack already has the core set (Lithium, ModernFix, FerriteCore, AllTheLeaks,
 | **Ad Astra** | Modrinth 1.16.26 (release, Sep 2026); 3 deps (Resourceful Lib/Config, Common Storage Lib) | Rockets to the Moon, Mars, Venus, Mercury and Glacio; space stations; oxygen; new metals | Fits "Build. Fly. Explore." Rockets burn fuel (earned cross-dimension travel) and the jet suit uses fuel. Other-dim worldgen (planets). A late-game goal of its own; gate rocket tiers behind bosses. Check whether its ores generate in the Overworld |
 | **CC: Tweaked** | Modrinth 1.120.2 (tagged **alpha** on 1.21.1, Aug 2026; still the build everyone uses) | Programmable computers and turtles | A different way to play (code your base). Talks to other mods through peripherals. Turtles mine and build; no flight or teleport |
 | **Create Jetpack** | Modrinth 5.2.1 (release, Jul 2026) | Jetpack powered by a Create backtank's compressed air | Allowed by the flight rule (air runs out). Earlier and cheaper than Mekanism's jetpack: check it doesn't undercut airships; could gate it behind the Nether |
-| **Exposure** | Modrinth 1.9.19 (release, Sep 2026) | Cameras, film, darkroom developing, photo albums | Social and exploring fun for the newer players. Photos are stored on the server (small files) |
+| **Exposure** | Modrinth 1.9.19 (release, Sep 2026) | Cameras, film, darkroom developing, photo albums | Social and exploring fun. Photos are stored on the server (small files) |
 | **Cooking for Blockheads** | CurseForge 21.1.24 | Kitchen multiblock that cooks from connected storage | Cozy side; works with Farmer's Delight recipes |
 | **Create: Interiors** | Modrinth 0.6.1 (release, Jan 2026) | Seats, sofas and furniture that work on trains and contraptions | Makes trains and airships livable |
 | **MSS – Moog's Soaring Structures** | Modrinth 2.2.0 (release, Sep 2026); server-only | Floating islands with loot, mobs and dungeons | Structures. Another "things to fly to" pick, same author as MVS/MNS/MES |
@@ -311,7 +311,7 @@ The pack already has the core set (Lithium, ModernFix, FerriteCore, AllTheLeaks,
 
 Not Enough Animations, 3D Skin Layers, Subtle Effects (particles and small sounds for the "full world" feel), Particle Rain, Traveler's Titles (biome/dimension name on entry), Shoulder Surfing Reloaded (better third person while flying), Shulker Box Tooltip, Durability Tooltip, Elytra Slot (needs Curios + Caelus, both in), Do a Barrel Roll (elytra flight feel; can cause motion sickness like Camera Overhaul, so ship it off). All have release 1.21.1 NeoForge builds except Better Advancements (2024 beta). No Chat Reports (2.9.1, optional on both sides) is common on private servers.
 
-### Cobblemon add-ons (for the Pokémon world session)
+### Cobblemon add-ons (for the Pokémon world)
 
 Popular with 1.21.1 builds: Mega Showdown, Cobbreeding, Fight or Flight Reborn, Raid Dens, PokeNav, CobblemonOptimizer. Not reviewed here.
 
@@ -326,7 +326,7 @@ Biomes O' Plenty, Oh The Biomes We've Gone, Nature's Spirit, Galosphere (add Ove
 - **Gameplay decisions:** Ad Astra, CC: Tweaked, Create Jetpack, Exposure, Cooking for Blockheads, Create: Interiors, MSS – Moog's Soaring Structures, Better Archeology, Ribbits.
 - **Client polish:** pick freely; all optional.
 
-## Round 2 decision (Oct 24, 2026)
+## Round 2 outcome
 
 **Add (Keep):**
 - Performance: Immersive Optimization, FTB Quests Optimizer, AI Improvements, Achievements Optimizer
@@ -336,4 +336,4 @@ Biomes O' Plenty, Oh The Biomes We've Gone, Nature's Spirit, Galosphere (add Ove
 - EMI add-ons: EMI Ores, EMI Addon: Extra Mod Integrations, Just Enough Breeding, Advanced Loot Info (beta)
 - Client polish (side = client, optional): Not Enough Animations, 3D Skin Layers, Subtle Effects, Particle Rain, Traveler's Titles, Shoulder Surfing Reloaded, Shulker Box Tooltip, Durability Tooltip; Elytra Slot (both sides)
 
-**Not now:** Create: Threaded Trains, ServerCore, CC: Tweaked, Exposure, the rest of the Optional/Not recommended lists. The config tuning list (pregenerate all dimensions, simulation distance, `spawnChunkRadius`, FTB Chunks force-load caps) wasn't picked yet; it costs no downloads and can be decided in phase 3.
+**Not now:** Create: Threaded Trains, ServerCore, CC: Tweaked, Exposure, the rest of the Optional/Not recommended lists. The config tuning list (pregenerate all dimensions, simulation distance, `spawnChunkRadius`, FTB Chunks force-load caps) is still open; it costs no downloads and belongs to phase 3.

@@ -1,6 +1,5 @@
-// The Hollow's fog (client only). Darin, Oct 26: "heavy fog, it should be hard to navigate.
-// Holding a lantern helps clear some of the fog"; "pretty punishing if you don't have a light
-// source, but don't make it impossible." In the Hollow you see about 10 blocks; holding a light
+// The Hollow's fog (client only). Heavy fog that makes navigation hard; holding a light clears some
+// of it. Punishing without a light source, but never impossible. In the Hollow you see about 10 blocks; holding a light
 // (any lantern or torch, the Pale Lantern, glowstone, froglights, end rods, sea lanterns, glow
 // sticks...) in either hand pushes the fog back to about 28. It eases between the two instead of
 // snapping. Underwater and lava fog are left alone. Visual only, and it works without shaders;

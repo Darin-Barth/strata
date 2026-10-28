@@ -1,4 +1,4 @@
-// /sethome and /home for every player (Darin, Oct 25, 2026): one home each, any dimension,
+// /sethome and /home for every player: one home each, any dimension,
 // 10-second cooldown after each /home. The home lives in the player's KubeJS persistent data,
 // so it survives logouts, deaths and server restarts.
 // KubeJS server scripts share one scope: every top-level name here starts with "home".

@@ -1,4 +1,4 @@
-// The power grid (CLAUDE.md "Power"): Crafts & Additions wires locally, IE LV/MV/HV for long
+// The power grid (docs/design-doc.md, power): Crafts & Additions wires locally, IE LV/MV/HV for long
 // distance. Create: New Age's own wiring hangs its wires between Electrical Connectors, so the
 // connector recipe goes (its wires stay craftable: copper wire is an ingredient of its copper
 // circuit). New Age generators still hand FE over through their carbon brushes, which C&A

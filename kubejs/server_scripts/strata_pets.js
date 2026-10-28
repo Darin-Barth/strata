@@ -1,4 +1,4 @@
-// Inventory Pets are found, not crafted (Darin, Oct 27): every recipe that makes a pet is removed,
+// Inventory Pets are found, not crafted: every recipe that makes a pet is removed,
 // and so is the Petrifier (it turns mobs into pets; also off in config/inventorypets-common.toml).
 // Pets come from structure chests instead (tools/build_pet_loot.py: common, rare and legendary
 // tiers). The pet food nuggets and the Feed Bag keep their recipes. Pets players already have
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
   strataPetRecipes.forEach(id => event.remove({ id: 'inventorypets:' + id }))
 })
 
-// The Nether Portal pet only works once you've been to the Nether yourself (Darin, Oct 27):
+// The Nether Portal pet only works once you've been to the Nether yourself:
 // using it before that is cancelled with a message. "Been there" = the vanilla advancement
 // minecraft:nether/root ("Nether": enter the Nether), so players who went before this rule count.
 ItemEvents.rightClicked('inventorypets:pet_nether_portal', event => {

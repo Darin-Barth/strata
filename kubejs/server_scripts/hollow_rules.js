@@ -57,7 +57,7 @@ BlockEvents.rightClicked(event => {
 })
 
 // TorchMaster's Mega Torch stops every natural spawn in a 64-block radius, which would switch the
-// Hollow off around a base (Darin, Oct 26). The Pale Beacon is the Hollow's own safe zone.
+// Hollow off around a base. The Pale Beacon is the Hollow's own safe zone.
 BlockEvents.placed('torchmaster:megatorch', event => {
   if (!event.player || !hollowIn(event.player)) return
   event.player.displayClientMessage(Text.darkGray('The flame gutters out. Light alone won\'t hold the Hollow back.').italic(), true)

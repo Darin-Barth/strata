@@ -1,4 +1,4 @@
-# Strata quest book — plan (draft for Darin)
+# Strata quest book: plan
 
 FTB Quests 2101.1.37. Generated from Python sources in `tools/quests/` → `config/ftbquests/quests/`
 (chapter SNBT + text in `lang/en_us.snbt`, the format the in-game editor writes). Every item ID is checked
@@ -6,15 +6,14 @@ against the mod jars by `tools/quests/check_ids.py`.
 
 ## Style
 - Each chapter opens with a short "What is this mod?" quest (checkmark), then quests that teach by doing:
-  craft the key block, use it, make the next tier. Descriptions: 2–4 short lines, friendly, with the
+  craft the key block, use it, make the next tier. Descriptions: 2–4 short lines, approachable, with the
   key controls/tips ("Press U on an item in EMI to see what it's used for").
 - Chapters end with a "Where next?" quest pointing to related chapters.
 - Rewards stay modest: XP, a few useful items, and loot bags (Common / Uncommon / Rare reward tables).
   No flight items, no teleport items, no wireless items as rewards.
-- Quest order follows the design-doc gates: same-dimension wireless (Flux, AE2 wireless, entangloporters)
-  only after "Into the Nether"; cross-dimension (Quantum Network Bridge), late Mekanism/AE2, Draconic and
-  Extended Crafting finals after boss quests (Cataclysm). Quests only order things; KubeJS does the real
-  recipe gating (phase 2).
+- Quest order follows the gate map (`docs/gate-map.md`): late Mekanism/AE2, nuclear power, Draconic and
+  Extended Crafting finals come after the boss quests that supply their materials (Cataclysm, the Hollow,
+  the Abyssal Plain). Wireless is not gated. Quests only order things; the recipes do the real gating.
 
 ## Starter flow (chapter "Welcome to Strata")
 1. **Welcome to Strata** — Build. Fly. Explore. How the quest book works.
@@ -88,16 +87,13 @@ against the mod jars by `tools/quests/check_ids.py`.
 
 About 35 chapters, ~10–20 quests each (~450 quests).
 
-## Status (Oct 25, 2026)
-Built: 37 chapters, 795 quests, 4 loot bags. All 1,294 distinct IDs validate against the jars
-(`python -I tools/quests/build.py`), and a scratch NeoForge server with FTB Quests loaded the book
-("Loaded 6 chapter groups, 37 chapters, 795 quests"). Not yet seen in a real client.
+## Status
+Built: 38 chapters, 820 quests, 4 loot bags. Every distinct ID validates against a registry dump of the
+pack (`python -I tools/quests/build.py`), and the book loads on the server and in the client.
 
-Gate anchors used across chapters: `welcome/nether` (same-dimension wireless, brass/blaze tech),
-`cataclysm/netherite_monstrosity` (Mek ultimate/SPS/antimatter, AE2 256k, Extended Crafting Ultimate
-Table), `cataclysm/ignis` (MekaSuit, Draconic armor, Ad Astra tier 2), `cataclysm/ender_guardian`
-(AE2 Quantum Network Bridge, Draconic chaos tier, Ad Astra tier 4), `the_end/dragon` (Draconic awakened,
-Ice and Fire dragon riding).
+Gate anchors used across chapters: `cataclysm/ignis` (nuclear power), `cataclysm/netherite_monstrosity`
+(Mekanism ultimate tier), `cataclysm/ender_guardian` (AE2 256k cells, AppliedFlux, QIO),
+`the_end/dragon` (Draconic awakened tier, Pinnacle World Tier, Ice and Fire dragon riding).
 
 ## Rule problems found while writing (need config/KubeJS; quests don't feature or reward these)
 Free or cheap flight:

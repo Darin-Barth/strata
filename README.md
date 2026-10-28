@@ -4,7 +4,7 @@
 
 <h1 align="center">Strata</h1>
 <p align="center"><b>Build. Fly. Explore.</b><br>
-A big kitchen-sink Minecraft modpack for a small group of friends.</p>
+A large kitchen-sink Minecraft modpack for a small private server.</p>
 
 <p align="center">
   Minecraft 1.21.1 · NeoForge 21.1.264 · about 440 mods and libraries · managed with <a href="https://packwiz.infra.link/">packwiz</a>
@@ -21,7 +21,7 @@ Strata is a large modpack built around three ways to play, plus a cozy side:
 | **Tech** | Machines, trains, real airships you build block by block, factories and power grids | Create + add-ons, Create Aeronautics, Mekanism, AE2, Immersive Engineering, Oritech, Ad Astra, Draconic Evolution |
 | **Magic** | Design your own spells, rituals, spirits and vampires | Ars Nouveau (the hub), Iron's Spells 'n Spellbooks, Occultism, Vampirism, plus bridges that tie them together |
 | **Exploration** | New dimensions, dungeons, structures and boss fights | L_Ender's Cataclysm, Twilight Forest, Ice and Fire, Apotheosis, YUNG's, Tectonic + Regions Unexplored worldgen |
-| **Cozy** | Farming, cooking, pets, decorating, colonies | Farmer's Delight and friends, Inventory Pets, MineColonies, Macaw's, Chipped, Quark |
+| **Cozy** | Farming, cooking, pets, decorating, colonies | Farmer's Delight and its add-ons, Inventory Pets, MineColonies, Macaw's, Chipped, Quark |
 
 A 38-chapter **quest book** (FTB Quests) walks you through all of it. Start with *Welcome to Strata*: nothing is locked, so jump to whatever looks fun.
 
@@ -41,7 +41,7 @@ Strata is built around travel and earning your power, so a few things work diffe
 - **Flight takes effort.** Every way to fly takes real work to get (boss materials, late-game tiers, a tamed dragon) or costs something to run (fuel, power, mana, food, stamina).
 - **Difficulty is per player.** Pick your own Apotheosis World Tier (Ctrl+T) once you unlock more. Bosses keep their designed strength.
 - **Late tiers are boss-gated.** Nuclear power, top storage, the best rockets and the strongest magic need boss drops, Hollow Embers or Abyssal Pearls ([gate map](docs/gate-map.md)).
-- **Death is forgiving.** A friend can revive you while you bleed out (PlayerRevive). If nobody does, your items wait in a grave (Corail Tombstone), and you respawn with a Grave's Key that takes you back to it once.
+- **Death is forgiving.** Another player can revive you while you bleed out (PlayerRevive). If nobody does, your items wait in a grave (Corail Tombstone), and you respawn with a Grave's Key that takes you back to it once.
 
 ## Playing
 
@@ -51,7 +51,7 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 2. Download the newest `Strata-<version>.mrpack` from [Releases](https://github.com/Darin-Barth/strata/releases/latest).
 3. In the Modrinth App: **+ → From file** → pick the `.mrpack`.
 4. Give it **10–12 GB of memory** (8 GB minimum) and add `-XX:+UseZGC -XX:+ZGenerational` to its Java arguments.
-5. **Multiplayer → Add Server.** The server is whitelisted: ask Darin to be added.
+5. **Multiplayer → Add Server.** The server is whitelisted: ask the server admin to be added.
 
 **What you need:** a 64-bit PC with 16 GB of RAM or more (32 GB is comfortable), and a GPU that can run Sodium + Iris. Shaders, Distant Horizons and the other heavy visuals are optional and client-only. On a Mac, see the note in the joining guide.
 
@@ -76,7 +76,6 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 
 - **[docs/design-doc.md](docs/design-doc.md)**: the rules (what's in, what's out, and why).
 - **[docs/strata-mod-tracker.xlsx](docs/strata-mod-tracker.xlsx)** (sheet `Mods`): every mod with Keep / Maybe / Cut. Only **Keep** mods go in the pack.
-- **[CLAUDE.md](CLAUDE.md)**: hard constraints and working notes (KubeJS gotchas, packwiz habits).
 
 ### Generators (re-run after the matching mod updates)
 
@@ -132,5 +131,3 @@ The server runs the [itzg/minecraft-server](https://github.com/itzg/docker-minec
 ## Credits
 
 Strata is a curated list. All the real work belongs to the authors of the mods it includes, each under its own license; this repository only contains metadata pointing at their official downloads (Modrinth and CurseForge), plus Strata's own configs, scripts and data. Please support the mod authors.
-
-Pack design by Darin, built with help from Claude Code.

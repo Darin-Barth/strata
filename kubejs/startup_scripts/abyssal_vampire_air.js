@@ -1,5 +1,5 @@
-// Vampires can drown in the Abyssal Plain (Lopez / Darin, Oct 26: "make sure that in the abyssal
-// plain they aren't immune to drowning. Just in that dimension"). Vampirism refills a vampire
+// Vampires can drown in the Abyssal Plain (and only there; they keep their drowning immunity
+// everywhere else). Vampirism refills a vampire
 // player's air to full at the end of every tick (VampirePlayer.onUpdate on PlayerTickEvent.Post),
 // so this runs after it (lowest priority) and keeps the vampire's own air count there instead:
 // it drains underwater like vanilla (1 per tick, 2 damage every second at empty) and refills

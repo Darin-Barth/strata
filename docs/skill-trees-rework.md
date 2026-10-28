@@ -1,10 +1,10 @@
-# Skill trees rework (Darin approved Oct 27)
+# Skill trees rework
 
 Status: **built** by `tools/build_skill_trees.py` (queued for 0.5.0; re-run after a skill-tree add-on
 update). Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
 Trees (Combat, Mining), Iron's Spells Dynamic Skill Trees (magic) and our own Fishing tree.
 
-## Why they feel worthless today
+## Problems with the default trees
 
 | Tree | Levels (points) | What a node gives | Problem |
 |---|---|---|---|
@@ -27,10 +27,10 @@ Every node is a stat bump; none changes **how** you fight, mine or cast.
   end up with different builds.
 - **XP from what Strata players actually do:** all ores (the `c:ores` tag, so modded ores
   count), faster magic XP, kills as now (the anti-farm limit stays).
-- **Same power at the top:** a maxed tree ends near today's total, just concentrated where you
+- **Same power at the top:** a maxed tree ends near the default trees' total, just concentrated where you
   chose. Bosses and the Hollow's 40% damage cap stay balanced.
 
-## Proposed trees
+## Trees
 
 ### Combat (25 levels, 4 branches)
 
@@ -55,9 +55,9 @@ stone. Same 20-level curve.
 ### Magic (Iron's trees)
 
 Keep the add-on's layout (a general tree, then pick a school, then a second school), but:
-- **XP:** about a third of today's (first tree around 15,000 XP instead of 44,700).
-- **Node values:** doubled, so a spell-power node is +2% to +6%. (The draft said tripled; with all
-  50 points kept that would have tripled top-end spell power, against "same power at the top".
+- **XP:** about a third of the default (first tree around 15,000 XP instead of 44,700).
+- **Node values:** doubled, so a spell-power node is +2% to +6%. (Not tripled: with all
+  50 points kept, tripling would triple top-end spell power, against "same power at the top".
   Instead the general tree has half the points, 25, with nodes twice as strong; the school trees
   keep their points, so a maxed school is about twice as strong as before.)
 - **Keystones:** −10% cooldowns on the node that opens the school trees, and +10% spell power

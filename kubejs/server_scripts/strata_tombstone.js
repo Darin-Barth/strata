@@ -1,6 +1,6 @@
-// Corail Tombstone's player teleport commands are ops-only (limited-teleport rule, Darin Oct 27):
+// Corail Tombstone's player teleport commands are ops-only (limited-teleport rule):
 // /tbrequestteleport + /tbacceptteleport would be a /tpa, /tbteleportdeath a free trip to your last death.
-// The Grave's Key still teleports you to your grave (Darin's call). Its teleport tablets are switched off
+// The Grave's Key still teleports you to your grave (a one-time trip back to your items). Its teleport tablets are switched off
 // in config/tombstone-server.toml.
 // KubeJS server scripts share one scope: every top-level name here starts with "tombstone".
 const tombstoneOpsOnly = ['tbrequestteleport', 'tbacceptteleport', 'tbteleportdeath', 'tbteleport']

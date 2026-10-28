@@ -9,7 +9,7 @@ const abyssalNeighbours = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 
 const abyssalIsWater = block => !block.blockState.getFluidState().isEmpty()
 
 ServerEvents.recipes(event => {
-  // The Tidecaller lights a dark-prismarine portal frame (Darin's layout, Oct 26).
+  // The Tidecaller lights a dark-prismarine portal frame (Strata's layout).
   event.shaped('strata:tidecaller', [
     'PBP',
     'PCP',
@@ -64,7 +64,7 @@ ItemEvents.rightClicked('strata:leviathan_lure', event => {
 //
 // Portals link 1:1 by X/Z at roughly the same height, but the sea floor sits around Y 300 and
 // Overworld portals around Y 60-120, so BBL Portals usually builds the arrival portal inside the
-// rock under the sea (Darin, Oct 26: "everything is deepslate, no water"). Then the Lifepod goes
+// rock under the sea, with no water around it. Then the Lifepod goes
 // up onto the sea floor instead, with its own lit dark prismarine return portal; the Overworld
 // portal is re-linked to it and the buried portal removed, so later trips arrive in the pod.
 const abyssalHullId = 'strata:lifepod_hull'
@@ -187,7 +187,7 @@ PlayerEvents.tick(event => {
       data.putBoolean('strata_abyss_inside', true)
       abyssalArrive(player)
     }
-    // No Conduit power down here: bases have to be engineered (Darin, Oct 26).
+    // No Conduit power down here: bases have to be engineered.
     if (player.tickCount % 20 === 0) player.server.runCommandSilent(`effect clear ${player.username} minecraft:conduit_power`)
   } else if (data.getBoolean('strata_abyss_inside')) {
     data.putBoolean('strata_abyss_inside', false)

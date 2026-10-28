@@ -4,10 +4,11 @@ Pack: packwiz project `Strata` 0.1.0, Minecraft 1.21.1, NeoForge 21.1.264.
 Contents: 261 mods (Keep mods plus the libraries they need), 1 resource pack (Fresh Animations), 1 shader pack (Complementary Reimagined).
 Every Keep/Maybe row was checked against the Modrinth API, and through packwiz against CurseForge for anything missing on Modrinth. Results are in `docs/strata-mod-tracker.xlsx`: column G was updated and a new column J, "Phase 1 lookup", says where each build was found.
 Mods come from Modrinth where possible. 23 projects that only exist on CurseForge (or only have a build there) come from CurseForge.
+This report records the phase 1 build. Later changes are noted inline where they reverse something here; the design doc is current.
 
-## Claude Code picks
-- **Gravestone: GraveStone Mod** (henkelmax). It has the most downloads of the 1.21.1 NeoForge options (12.6M), release builds (updated Aug 2026), and no required dependencies. Its author also maintains Corpse and Simple Voice Chat. Corail Tombstone was rejected because its extras include grave teleport and recall features, which break the no-free-teleport rule. Corpse is a fine alternative if you'd rather have a corpse entity with a death-history screen.
-- **Dynamic lighting: LambDynamicLights**. It is the reference mod (64M downloads, updated Aug 2026) and has official NeoForge support. Its API is what other mods integrate with. Sodium Dynamic Lights is a port that was last updated in Jan 2025. RyoamicLights is still alpha. LambDynamicLights ships one multi-loader jar whose metadata lists Fabric API as required. That is only needed on Fabric, so I declined it. Confirm it in the launch test.
+## Selection notes
+- **Gravestone: GraveStone Mod** (henkelmax). It has the most downloads of the 1.21.1 NeoForge options (12.6M), release builds (updated Aug 2026), and no required dependencies. Its author also maintains Corpse and Simple Voice Chat. Corail Tombstone was rejected because its extras include grave teleport and recall features, which break the no-free-teleport rule. Corpse is the alternative for a corpse entity with a death-history screen. Later replaced by Corail Tombstone, with its teleport tablets off and its teleport commands ops-only.
+- **Dynamic lighting: LambDynamicLights**. It is the reference mod (64M downloads, updated Aug 2026) and has official NeoForge support. Its API is what other mods integrate with. Sodium Dynamic Lights is a port that was last updated in Jan 2025. RyoamicLights is still alpha. LambDynamicLights ships one multi-loader jar whose metadata lists Fabric API as required. That is only needed on Fabric, so it was declined. Confirm it in the launch test.
 
 ## Keep mods with no 1.21.1 NeoForge build
 | Mod | Outcome |
@@ -15,32 +16,32 @@ Mods come from Modrinth where possible. 23 projects that only exist on CurseForg
 | Botania, Ars Botania | Cut. Ars Botania requires Botania, which has no 1.21.1 build. No replacement: Ars, Iron's, Occultism, Vampirism and Neo Vitae cover magic |
 | Drive By Wire | Replaced by the fork **Drive-By-Wire with Sable** |
 | Domestication Innovation | Replaced by the fork **Redomesticate** |
-| No Mons In My World | Fabric-only (MIT), no NeoForge port. We recreate it when we build the Pokémon world; options are in the design doc (Pokémon world, step 2) |
+| No Mons In My World | Fabric-only (MIT), no NeoForge port. To be recreated when the Pokémon world is built; options are in the design doc (Pokémon world, step 2) |
 
 Maybe rows with no build: Blue Skies and Dimension Gated Difficulty (both cut) and Diet (Spice of Life: Onion was chosen instead).
 
 ## Names that matched more than one project
 - **Create Thrusters**: no mod has exactly this name. Resolved as **Create Aeronautics: Gadgets & Gizmos**, pinned to 1.2.10, the last stable 1.x build: 2.0 has had six pre-releases and betas in ten days, and the pre-releases are tagged as full releases. Create Propulsion: Simulated stays in too.
-- **FTB Quests / FTB Ultimine**: on Modrinth these names hit a translation pack and a fork (Ultimine Rewind). I used the official CurseForge projects.
+- **FTB Quests / FTB Ultimine**: on Modrinth these names hit a translation pack and a fork (Ultimine Rewind). The official CurseForge projects are used.
 - **Noisium**: the original (used), NoisiumForked and Noisiumed all exist.
 - **Bloodlines**: the bare CurseForge slug hit a different project. The real one is "Bloodlines - A Vampirism Addon".
-- **Falling Leaves**: CurseForge has two projects with this name. I used the Forge/NeoForge one (fallingleaves 2.6.0).
-- **Friends & Foes**: there are separate Fabric and Forge/NeoForge projects. I used the NeoForge one.
+- **Falling Leaves**: CurseForge has two projects with this name. The Forge/NeoForge one is used (fallingleaves 2.6.0).
+- **Friends & Foes**: there are separate Fabric and Forge/NeoForge projects. The NeoForge one is used.
 - **ExtendedAE** vs ExtendedAE-Plus (a separate add-on), **Polymorph** vs Polymorph+, **Cosmetic Armor Reworked** (original on CF, used) vs a Modrinth fork, **Twilight Forest** (Modrinth only has an unofficial Fabric port; used the official CF project), **Every Compat** (Wood Good, used; Stone Zone and others are sister mods), **Incendium** (now titled "Incendium Legacy"; same project), **Tide** (titled "Tide 2").
 - **Create Offroad** is bundled inside Create Aeronautics, so there's nothing separate to add.
 
 ## Known conflicts and risks
-- **Create: Steam 'n' Rails is the unofficial port** "Steam 'n' Rails Neoforge" (0.3.0-beta.2, Modrinth `create-steam-n-rails-1.21.1`). The official mod is still 1.20.1-only. The port requires Create ≥ 6.0.7 and NeoForge ≥ 21.1.233, which we meet. Known bug: weather on snow-paved tracks can crash singleplayer and kick everyone from a server (port issue #361; one-line fix in PR #372, not merged). Serene Seasons winters make this more likely. See test 10 in the design doc.
-- **Continuity was removed.** Its only NeoForge path is Sinytra Connector plus Forgified Fabric API, a layer for running Fabric mods. That's a crash risk in a pack this size. Fusion (native) plus Athena (pulled in by Chipped) cover connected textures. Re-add it if you want it anyway.
+- **Create: Steam 'n' Rails is the unofficial port** "Steam 'n' Rails Neoforge" (0.3.0-beta.2, Modrinth `create-steam-n-rails-1.21.1`). The official mod is still 1.20.1-only. The port requires Create ≥ 6.0.7 and NeoForge ≥ 21.1.233, which the pack meets. Known bug: weather on snow-paved tracks can crash singleplayer and kick everyone from a server (port issue #361; one-line fix in PR #372, not merged). Serene Seasons winters make this more likely. See test 10 in the design doc.
+- **Continuity was removed.** Its only NeoForge path is Sinytra Connector plus Forgified Fabric API, a layer for running Fabric mods. That's a crash risk in a pack this size. Fusion (native) plus Athena (pulled in by Chipped) cover connected textures.
 - **Create Aeronautics** lists "visual issues with Iris shaders" as a known incompatibility. This matches test 2 in the plan.
-- **JEI** is now installed alongside EMI so JEI plugins like Just Enough Resources work. EMI stays the main recipe viewer.
+- **JEI** is now installed alongside EMI so JEI plugins like Just Enough Resources work. EMI stays the main recipe viewer. (Later, JEI and JER were removed: JEI's recipe index took about 60 s on the client's main thread when joining and timed players out. EMI is now the only recipe viewer.)
 - **Quark + Zeta** stay (required by Integrated Cataclysm), with overlapping modules turned off (see below).
 - Modrinth-declared incompatibilities among the 237 Modrinth-sourced projects: **none found** (`tools/check_conflicts.py`).
 - The design's existing risks stand: Iron & Nouveau's listing says it works alongside Ars 'n Spells (test 4), and Vampirism plus the difficulty script plus Apotheosis scaling (test 6).
 - Several mods are beta builds: Crafts & Additions, Industrial Foregoing, Relics, Functional Storage, Serene Seasons, Bountiful, Iris, Simple Voice Chat, and others.
 
 ## Sides
-Packwiz took sides from Modrinth. I then applied the tracker: Xaero's maps, Distant Horizons, Complementary, Fresh Animations, Sound Physics and Falling Leaves are client-only. Chunky, Simple Backups, Noisium, Let Me Despawn, Nullscape and CobbleStructures are server-only. Incendium stays on both sides because it adds items and mobs.
+Packwiz took sides from Modrinth, then the tracker's sides were applied: Xaero's maps, Distant Horizons, Complementary, Fresh Animations, Sound Physics and Falling Leaves are client-only. Chunky, Simple Backups, Noisium, Let Me Despawn, Nullscape and CobbleStructures are server-only. Incendium stays on both sides because it adds items and mobs.
 
 ## Round 1 decisions applied (from docs/open-questions.md)
 **Added:** Create Aeronautics: Gadgets & Gizmos 1.2.10 (pinned), Drive-By-Wire with Sable, Redomesticate, JEI, Spice of Life: Onion, Neo Vitae, The Aether, Alex's Mobs Continued, Bosses of Mass Destruction Forge (test 11), Plushie Mod.
@@ -55,7 +56,7 @@ Packwiz took sides from Modrinth. I then applied the tracker: Xaero's maps, Dist
 | L_Ender's Cataclysm Delight 1.0.10b | Cataclysm | Boss-drop foods |
 | Aether's Delight 0.1.4.2 | The Aether | Beta, last updated Oct 2025 |
 
-Vampire's Delight, Create Slice & Dice and Central Kitchen were already in. Other candidates I left out: My Nether's Delight (Nether), Ocean's Delight, Expanded Delight, Chef's Delight (villagers).
+Vampire's Delight, Create Slice & Dice and Central Kitchen were already in. Other candidates left out: My Nether's Delight (Nether), Ocean's Delight, Expanded Delight, Chef's Delight (villagers).
 
 **Quark modules disabled** (`config/quark-common.toml`; module names checked against the Quark 4.1-487 jar):
 | Module | Overlaps with |
@@ -79,7 +80,7 @@ Quark 4.1 no longer has Matrix Enchanting, Backpacks or Totem of Holding, so tho
 | MC-Sync | ~0.4 MB | 6k | Smallest jar, but closed source, low adoption, sides not declared |
 | Discord & Chat Images | ~19 MB | 58k | Optional client part for chat images; heavier than needed |
 
-Simple Discord Link is the lightest option that's open source, server-only and widely used. MC-Sync is smaller on disk, but I wouldn't trust it on a server yet. **Added** (server-only, + CraterLib). It needs a Discord bot token and channel ID in its config when we set up the server.
+Simple Discord Link is the lightest option that's open source, server-only and widely used. MC-Sync is smaller on disk, but not yet trustworthy on a server. **Added** (server-only, + CraterLib). It needs a Discord bot token and channel ID in its config at server setup.
 
 ## First launch test: dedicated server (Oct 24, 2026)
 Run in Docker with the itzg image (`java21`), NeoForge 21.1.264, 8 GB, with the pack installed from `packwiz serve`. This is the same install path treehouse will use.
@@ -88,10 +89,10 @@ Run in Docker with the itzg image (`java21`), NeoForge 21.1.264, 8 GB, with the 
 
 Fixes found and applied:
 - **Kambrik** (needed by Bountiful) and **TerraBlender** (needed by YUNG's Cave Biomes) were missing. Their Modrinth listings don't declare these dependencies. Both are added.
-- **Majrusz's Progressive Difficulty Continued is excluded from the CurseForge API.** The author opted out of third-party downloads, so packwiz can't install it, and the test ran without it. This will block treehouse and packwiz-based player installs too. **Decided Oct 24: dropped.** Staged difficulty becomes a KubeJS script in phase 2 (see docs/difficulty-options.md).
+- **Majrusz's Progressive Difficulty Continued is excluded from the CurseForge API.** The author opted out of third-party downloads, so packwiz can't install it, and the test ran without it. This will block treehouse and packwiz-based player installs too. **Dropped.** The planned staged-difficulty KubeJS script (docs/difficulty-options.md) was later dropped too; difficulty is per player.
 
 Log findings (no action needed to boot):
-- Most of the ~300 ERROR lines are optional compatibility for mods we don't have (Botany Pots, ComputerCraft, BYG/BOP biomes, Hexcasting, FramedBlocks) and client classes the server skips. That's normal.
+- Most of the ~300 ERROR lines are optional compatibility for mods not in the pack (Botany Pots, ComputerCraft, BYG/BOP biomes, Hexcasting, FramedBlocks) and client classes the server skips. That's normal.
 - Small bugs in other mods: an Ender's Delight recipe (`chorus_pie_slice`) and a Create Deco recipe (`placard`) fail to parse, and Sable logs 14 physics-tag warnings for a Copycats+ block (`copycat_catwalk`). Worth reporting upstream.
 - **Every Compat** warns that its generated blocks are over a third of all blocks, mostly from Macaw's Furniture (2,741). Trim that in the phase 2 configs to save memory and load time.
 - Simple Discord Link disables itself until it has a bot token (expected).
@@ -123,5 +124,5 @@ Chunky + Spark on the Docker server, decoded locally: see `docs/worldgen-profile
 ## Still open
 - Iron & Nouveau vs Ars 'n Spells glyph overlap (see client test 3).
 1. Maps: FTB Chunks' own minimap overlaps Xaero's; turn it off client-side (test 13).
-2. Modern Industrialization vs Oritech: during the creative test.
-3. Pokémon world portal, and the Kanto map license: when we build the Pokémon world.
+2. Modern Industrialization vs Oritech: resolved, Oritech is in the pack.
+3. Pokémon world portal, and the Kanto map license: when the Pokémon world is built.

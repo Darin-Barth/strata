@@ -45,9 +45,9 @@
 	#        "variantvanillablocks"
 	#    ]
 	#
-	#Strata (Darin, Oct 26): no Chipped / Rechiseled / Macaw's Furniture / Handcrafted copies in modded woods.
+	#Strata: no Chipped / Rechiseled / Macaw's Furniture / Handcrafted copies in modded woods.
 	#Measured on the test server: 23,002 fewer blocks, 872 MB less server memory. Server and players must match.
-	#Also no Quark (posts etc.) / Another Furniture copies (Darin, Oct 27): 760k fewer block states, ~150 MB more on the server.
+	#Also no Quark (posts etc.) / Another Furniture copies: 760k fewer block states, ~150 MB more on the server.
 	blacklist = ["chipped", "rechiseled", "mcwfurnitures", "handcrafted", "quark", "another_furniture"]
 
 [other]

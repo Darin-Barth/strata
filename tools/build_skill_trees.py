@@ -1,5 +1,5 @@
 """Generate Strata's skill trees for Pufferfish's Skills (kubejs/data/...); design in
-docs/skill-trees-rework.md (Darin approved Oct 27).
+docs/skill-trees-rework.md.
 
 The trees that came with the pack gave +1% to +3% per node, so nobody noticed a point. These are
 fewer, bigger nodes with keystones (cost 3 points) that change how you play, and branches by

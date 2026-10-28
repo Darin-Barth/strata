@@ -10,7 +10,7 @@ python -I tools/quests/build.py   # writes config/ftbquests/quests/, checks ever
 - `book/<chapter>.py` — one file per chapter (see `welcome.py` for the reference style).
 - `dsl.py` — the helpers (`chapter`, `quest`, tasks, rewards). `snbt.py` — SNBT writer.
 - `check_ids.py` — validates every item, entity, dimension, structure, biome and advancement ID in
-  the SNBT files against the mod jars (Darin's Modrinth profile + `server/mods`, read-only). Also
+  the SNBT files against the mod jars (a client profile's `mods` folder + `server/mods`, read-only). Also
   catches edits made with the in-game editor. `find_ids.py` searches the index:
   `python -I tools/quests/find_ids.py "^mekanism:.*infuser"` (`-entities`, `-structures`, ... for other kinds).
 - `build.py --out <scratch dir> --only a,b` builds a subset somewhere else (for parallel work).
@@ -46,26 +46,24 @@ q("infuser", "Metallurgic Infuser", deps="intro", tasks=item("mekanism:metallurg
 
 ## Style and rules
 
-- Audience: six friends, two of them new to modded Minecraft. Short, friendly, concrete:
+- Audience: a small server where some players are new to modded Minecraft. Short, approachable, concrete:
   what the thing does, how to use it, what to do next. 2–6 lines per quest.
 - First quest of a chapter: "What is X?" (checkmark) explaining the mod's idea in plain words.
   Last: a "Where next?" pointer to related chapters.
 - Teach by doing: the item task is the thing the player should make or find next.
-- Rewards are generous (Darin's call) but never: flight items, teleport items (warp scrolls/stones,
+- Rewards are generous but never: flight items, teleport items (warp scrolls/stones,
   portstones), wireless items, or the item the next quest asks for.
-- Gates (design doc). Quests only order things; KubeJS does the real recipe gates later.
-  - Same-dimension wireless (Flux Networks, AE2 wireless terminals, Mekanism quantum
-    entangloporters, LaserIO across distance) depends on `welcome/nether`.
-  - Cross-dimension wireless (AE2 Quantum Network Bridge) depends on `cataclysm/ender_guardian`.
-  - Late Mekanism (SPS/antimatter, ultimate tier, MekaSuit) and late AE2 depend on
-    `cataclysm/netherite_monstrosity` or `cataclysm/ignis`.
+- Gates (`docs/gate-map.md`). Quests only order things; the recipes do the real gating.
+  - Wireless is not gated: Flux Networks, AE2 wireless and entangloporters have no boss dependency.
+  - Nuclear power depends on `cataclysm/ignis`; Mekanism's ultimate tier on
+    `cataclysm/netherite_monstrosity`; AE2 256k cells and QIO on `cataclysm/ender_guardian`.
   - Draconic Evolution's top tiers and Extended Crafting's final crafts depend on `the_end/dragon`
-    and a Cataclysm boss.
+    and boss materials (Cataclysm, Hollow Embers, Abyssal Pearls).
   - Flight (jetpacks, MekaSuit, Oritech exosuit, elytra) is presented as a costed, later reward,
     and its text says what it costs (fuel, power, mana, durability).
-- Keybinds: only name keys verified in Darin's client options. Known: R/U = recipe/uses in EMI,
+- Keybinds: only name keys from the shipped layout (`docs/keybinds.md`). Known: R/U = recipe/uses in EMI,
   M = Xaero world map, U = Xaero waypoints, ` = FTB Ultimine, V = voice chat, mouse 5 = ping,
-  B = backpack. Several keys clash (B, R, M, V), so for others say "its key in Options > Controls".
+  B = backpack. For anything else say "its key in Options > Controls".
 
 ## Registry dump (authoritative ID check)
 

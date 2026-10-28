@@ -1,4 +1,4 @@
-"""Gear gates G1-G6 of docs/gate-map.md (approved by Darin, Oct 26), as datapack overrides.
+"""Gear gates G1-G6 of docs/gate-map.md , as datapack overrides.
 
 Reads each original file from the mod jar, applies the change, and writes it back at the same
 path under kubejs/data, so the mod's own recipe or advancement is replaced. Re-run after a mod

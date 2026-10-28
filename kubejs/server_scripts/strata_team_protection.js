@@ -1,4 +1,4 @@
-// Friends can't hurt each other (Darin, Oct 25, 2026). Damage between two players is cancelled when
+// Teammates and allies can't hurt each other. Damage between two players is cancelled when
 // they are in the same FTB Teams party OR either team lists the other player as an ally. Allies keep
 // separate teams, so their FTB Quests progress stays separate. Covers melee, arrows and other
 // projectiles, spells: anything whose damage source traces back to the other player. Everyone else

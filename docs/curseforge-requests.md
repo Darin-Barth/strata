@@ -1,15 +1,15 @@
-# CurseForge requests (drafts, Oct 27, 2026)
+# CurseForge requests (drafts)
 
-The two mods that kept Strata's CurseForge zip from being accepted. Darin posts these.
+The two mods that kept Strata's CurseForge zip from being accepted. The maintainer submits these.
 
 ## 1. Drive-By-Wire with Sable: CurseForge approved-list request
 
-Darin is submitting this through the form (Oct 27). It was not on the list before (all six tabs checked).
+Status: being submitted through the request form. It was not on the list before (all six tabs checked).
 
 Where: CurseForge's Approved Non-CurseForge Mods list,
 https://docs.google.com/spreadsheets/d/176Wv-PZUo9hFxy6oC6N8tWdquBLPRtSuLbNK-r0_byM/edit
 (the request form is linked from the list; if it isn't there, open a ticket at https://support.curseforge.com).
-Signed in to your CurseForge account. CurseForge says reviews take several days and they reply with approved or declined.
+Submit while signed in to the pack's CurseForge account. CurseForge says reviews take several days and they reply with approved or declined.
 
 Text (paste into the form's fields, or as the ticket body):
 
@@ -26,12 +26,12 @@ Text (paste into the form's fields, or as the ticket body):
 > **Why:** we'd like to include it in our modpack, Strata (Minecraft 1.21.1, NeoForge), and credit the author in the
 > pack description.
 
-Heads-up: the "All Rights Reserved" line in the jar could get it declined. If it is, ask the author on Modrinth to fix
-that line (or upload the mod to CurseForge), or we drop the mod from both versions of the pack.
+Risk: the "All Rights Reserved" line in the jar could get it declined. If it is, ask the author on Modrinth to fix
+that line (or upload the mod to CurseForge), or drop the mod from both versions of the pack.
 
 ## 2. Serene Seasons: GitHub issue asking for the 1.21.1 builds on CurseForge
 
-On hold (Darin, Oct 27): the pack moved to 10.1.0.3, which CurseForge has. Optional: ask on Glitchfiend's Discord (search
+Status: on hold. The pack uses 10.1.0.3, which CurseForge has. Optional: ask on Glitchfiend's Discord (search
 "curseforge" first); if 10.1.0.9 appears on CurseForge, move back up.
 
 Where: https://github.com/Glitchfiend/SereneSeasons/issues/new/choose (signed in to GitHub; pick the feature-request

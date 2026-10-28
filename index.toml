@@ -162,7 +162,7 @@ hash = "36bd0375bd32e4fb60ed53e1b7fa61ebec8855c7ea68b230b3119a7d2afe31e3"
 
 [[files]]
 file = "config/everycomp-hazardous.toml"
-hash = "fdc3564ac9f2367b55a724742c879673b2ede67e4afa9edfdfe1c4c23c375e6b"
+hash = "3fd9507eb22c1d7af533c82760b5b7e60d840d2928a01074e216e2a2356a27c6"
 
 [[files]]
 file = "config/excessive_utilities-server.toml"
@@ -418,23 +418,23 @@ hash = "f6865385751b69264f639d7c6cde54689af7858540e983e0a3215b906b9aecae"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/black_hole.json"
-hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+hash = "e8ce2af505203e530dbc41a3a0cc04e4d8e8f9febaa6ccb29c74b00896a2f095"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/dragon_breath.json"
-hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+hash = "e8ce2af505203e530dbc41a3a0cc04e4d8e8f9febaa6ccb29c74b00896a2f095"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/recall.json"
-hash = "27e8ddcfc3bb01c8b1b6c646e7be2e166141d6c304fcde0f1275c279a0204d8a"
+hash = "f463e68be4cd1ad7689cb80a7624473a8614200092d0ac9388c7a4d7f7b432d6"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/sculk_tentacles.json"
-hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+hash = "e8ce2af505203e530dbc41a3a0cc04e4d8e8f9febaa6ccb29c74b00896a2f095"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/starfall.json"
-hash = "fd9bf3893c9cf0ebfcb0b898ce73ea5d028a8a8b1f083c1b6f02c79d24c7057a"
+hash = "e8ce2af505203e530dbc41a3a0cc04e4d8e8f9febaa6ccb29c74b00896a2f095"
 
 [[files]]
 file = "config/minecolonies-server.toml"
@@ -547,7 +547,7 @@ hash = "21637d8c2986c8e786ef18c1cf974f1406127cdf0860122174b2d12dccdee1bf"
 
 [[files]]
 file = "config/tombstone-server.toml"
-hash = "71ecedca206053cb791055e56d51a1107c9ba0a91924fa3628be2d1e1ce82815"
+hash = "66da3eb4558aef0cf660a907cdc6ebaf04b017fb2406c0aa8bd7358f0a15a644"
 
 [[files]]
 file = "config/vampirism-server.toml"
@@ -6114,19 +6114,19 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "d84c103ecf8f4dc3ba630d59ddb7ec5dae93a864f44edce1e2519e086d9f560f"
+hash = "236df88aeabd657d4f2b55d114fecc09d14035bcb466a47721ba496b19a2458c"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "8ebda2bba4c99ce9d6f161e2e1307609185f38692b9dc53973dd61810be69c6c"
+hash = "279a7616a6b154cff842d4552c9741a53ddcc5b060f5a81cd3ba31ea798371f0"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
-hash = "e01ae32942c7c66297f54cfb5f780591fd5fd0cab71be47e2f030cabb9ce3c6a"
+hash = "97545185895afecccad30e7dddec5bafceaf342f51a051a90a406f40014ee5f6"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "73682c41549e54f0641f38321b8d74ffe8de856bf64fec2f9932b548cc92dc05"
+hash = "d618a8beeded23ea38daeb2735544496caf710c068813831a61c63a90397c3f2"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
@@ -6142,7 +6142,7 @@ hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
 
 [[files]]
 file = "kubejs/server_scripts/strata_balance.js"
-hash = "9adab55f81d0d91849ea4a755e52a869676508b009189908daed61bab68fe61e"
+hash = "e92bb955f9d655b7321d2f53bcc94cc993bce7f83f00ae61613f7c96fe1b5d2b"
 
 [[files]]
 file = "kubejs/server_scripts/strata_elites.js"
@@ -6150,27 +6150,27 @@ hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
 
 [[files]]
 file = "kubejs/server_scripts/strata_home.js"
-hash = "74d41c40b37308b0d75a5741dd756cc6c95b78a2289a4ab596101a387a9168cb"
+hash = "773c7a4e1858669a3e5e9af575efff1aed28272e7ed9917d11a3ca67d9ad0c2c"
 
 [[files]]
 file = "kubejs/server_scripts/strata_pets.js"
-hash = "9719d929902b62e4fac923625fa832c59fc65616b2434950a8c50531b07fe1d5"
+hash = "c4e6c864111ea58b96efdb010f0c796926364c5e881a06df4c31de82915a6913"
 
 [[files]]
 file = "kubejs/server_scripts/strata_power.js"
-hash = "4dc440968f597165810d233862576cf9420b31e7c0f230b226f547ec3848b9dc"
+hash = "71939ea9c3c0bb510ac0d45fedbfdfbe6cb8613d7136ad704635f529ea3c3358"
 
 [[files]]
 file = "kubejs/server_scripts/strata_removed_items.js"
-hash = "0d9187ce1c2920775a769f4b9484ed4f706ddf51909b03de6b85aa9588c4f826"
+hash = "f2ef9aa657a65fdbe8d719669381cd575118d3617a33f9d43bd2121552a67e6a"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
-hash = "16900faf31fb733af93b96311387ce93ed4126960cbe65dc61b3992bb9447dc3"
+hash = "2aae8f65b020cfb8d298ec5f3a332a7ea8fef5bf6f18161998c08613ce3a7c8c"
 
 [[files]]
 file = "kubejs/server_scripts/strata_tombstone.js"
-hash = "b52141d7468185a51eb0ce9fdf320c371fcbc2ee8a67c4cb54490eec12afa8b8"
+hash = "bb84d5e9b09a3097015633bdf4a9c1d83bb2c0fbdf78576b364f7fbcff515b77"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"
@@ -6178,15 +6178,15 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/abyssal_vampire_air.js"
-hash = "c3ff49e0d34b0cbd5c67618c2bd5a2c11cc701b7c6303acb041fa484cfaffe60"
+hash = "c73857baeaa599bab7d528a163a2d70aea39e55c8f3df75fdce20ddb65f8233f"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "07e31c2d67d74f12c0dcde5bd6016a4f0f0d5550f08ab68c7b0f96bc8706601b"
+hash = "e0a8ad9cf5e4c2bde4b8d62f2ff2638e9282b60d69d43e645eb14c908848b7ab"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
-hash = "42882e420b5a33ad5ec9f19b31397d569d25b6a1cc432a3eb100fa9c7f4e89c7"
+hash = "4a30b1fc76664fad5c02c97c19521ac5c6741847f944d16629e5c85a283d77cf"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
@@ -6198,11 +6198,11 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "b15535c7195b94084a995e2988188a03ecdd835aa48508948262d160a70dc023"
+hash = "a965f37cc07dcc6b4fd553eb849eef1a671f94877dcad44f807c13782980448d"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_blast_cap.js"
-hash = "dadc3be2c7cfaca8c7518baaaea8b37292de07c12f9828e6b843d09866a31ea3"
+hash = "bd29d584239dff6ef4348b2dd085add7309de0bc5742a147a172ba7caa152837"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

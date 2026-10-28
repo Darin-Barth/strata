@@ -36,8 +36,8 @@ def old_item(it):
     return str(it["id"]), int(it.get("Count", it.get("count", 1))), it.get("tag") or {}
 
 
-# Balance profiles (Darin, Oct 25: "good items to encourage people to do the dungeon, but not so much
-# loot that you are set"). A namespace listed here gets randomised, smaller loot instead of an exact
+# Balance profiles (goal: loot good enough to make dungeons worth doing, but not so much that
+# one run sets a player up). A namespace listed here gets randomised, smaller loot instead of an exact
 # copy: (chance the stack appears at all, fraction of the original count to roll up to, hard max).
 # Items not listed use DEFAULT_RULE. Exact copies are kept for namespaces not listed (Inventory Pets).
 BALANCE = {

@@ -2,7 +2,7 @@
 // biome, and Hollow biomes are never tagged that (Overworld mobs would leak in), so its natural
 // spawns never fire there. This spawns it instead: rarely, out of sight, under open sky, not in
 // a player's first minutes after arriving. The Ravenous (one at a time near a player) and its
-// Screechers (up to three). It eats blocks by default (Darin, Oct 26: kept, real bite); it's
+// Screechers (up to three). It eats blocks by default (kept on purpose: it has a real bite); it's
 // confined to the Hollow by In Control! (config/incontrol/spawn.json).
 // KubeJS server scripts share one scope: every top-level name here starts with "hollowRav".
 const hollowRavHeightmap = Java.loadClass('net.minecraft.world.level.levelgen.Heightmap$Types')

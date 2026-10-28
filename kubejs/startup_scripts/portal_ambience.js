@@ -8,7 +8,7 @@
 //     stretches of total silence; ash, pale petals and smoke.
 //   molten (dark prismarine, Abyssal Plain): deep-sea calls and the Conduit's thrum; drips,
 //     splashes and glow sparkles.
-// Darin, Oct 26. A startup script so the listener is registered once (client scripts reload);
+// A startup script so the listener is registered once (client scripts reload);
 // the guard keeps the client-only event class off the dedicated server. Sounds or particles
 // missing from the client's registries are skipped.
 // KubeJS startup scripts share one scope: every top-level name here starts with "portalAmb".

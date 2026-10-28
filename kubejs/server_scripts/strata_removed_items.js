@@ -1,5 +1,5 @@
-// Items taken out of play for the limited-teleport and no-cheap-flight rules (Darin, Oct 26;
-// docs/gate-map.md section 5). "Super easy or cheap = I don't like it."
+// Items taken out of play for the limited-teleport and no-cheap-flight rules (docs/gate-map.md
+// section 5): anything super easy or cheap goes.
 // - Draconic Evolution dislocators: cheap saved-spot and to-a-player (/tpa) teleports, and the
 //   advanced one's unlimited waypoints. All four recipes removed.
 // - Iron's Spells Recall (free warp to spawn): disabled in

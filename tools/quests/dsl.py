@@ -118,7 +118,7 @@ def bag(table):
     return Reward("random", {"table": table})
 
 
-# Default rewards by quest tier (Darin chose "generous"); explicit rewards= are added on top.
+# Default rewards by quest tier (generous by design); explicit rewards= are added on top.
 TIER_REWARDS = {
     0: [],
     1: [xp(100)],

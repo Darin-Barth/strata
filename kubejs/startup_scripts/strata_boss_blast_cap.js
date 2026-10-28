@@ -1,4 +1,4 @@
-// Balance patch F6 (Darin, Oct 27; docs/balance-patch.md): Cataclysm and Legendary Monsters cap how
+// Balance patch F6 (docs/balance-patch.md): Cataclysm and Legendary Monsters cap how
 // much one hit can do to their bosses, but Bosses of Mass Destruction and Bosses'Rise don't, so an
 // Alex's Caves nuke or a Create Big Cannons shell deleted them. Explosions (and Big Cannons'
 // projectile damage) now do at most 10 per hit to those bosses. Swords, bows and spells stay

@@ -1,4 +1,4 @@
-// Strata balance patch (docs/balance-patch.md, Darin's answers Oct 27). Recipe count changes are
+// Strata balance patch (docs/balance-patch.md). Recipe count changes are
 // generated into kubejs/data by tools/build_balance.py; config changes ship in config/. This file
 // holds what needs a script.
 // KubeJS server scripts share one scope: every top-level name here starts with "strataBalance".

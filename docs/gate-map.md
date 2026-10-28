@@ -1,36 +1,33 @@
-# Gate map: what late tiers cost (proposal, Oct 26, 2026)
+# Gate map: what late tiers cost
 
-**Status: approved by Darin and built Oct 26.** Generators: `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` (re-run after a mod update; each writes datapack overrides at the mod's own path under `kubejs/data`).
+**Status: built.** Generators: `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` (re-run after a mod update; each writes datapack overrides at the mod's own path under `kubejs/data`).
 
-The design doc's rule says late tiers need boss drops ("Boss gating"), but nothing enforces it yet. This map is the plan for that, across all three pillars plus gear.
-
-Darin, Oct 26: gate "other mods as well instead of just tech mods. Magic tends to lean easier and also more overpowered... I would want some road blocks for magic along the way."
+The design doc's rule says late tiers need boss drops ("Boss gating"). This map enforces it across all three pillars plus gear. Gates are not limited to tech mods: magic tends to be easier and stronger, so it gets road blocks along the way.
 
 Principles:
 - **Add an ingredient; don't rewrite recipes.** One KubeJS file per pillar (`server_scripts/gates_tech.js`, `gates_magic.js`, `gates_gear.js`), so a mod update can't silently undo a gate.
 - **Spread the bosses.** No single boss gates more than a couple of rows, and every pillar has gates at mid, late and endgame, not just at the top.
 - **Magic gets more road blocks than tech**, and earlier ones.
 - **Close bypasses first.** A gate that can be crafted around isn't a gate (section 1).
-- **Don't gate what CLAUDE.md protects:** wireless (Flux Networks, entangloporters, AE2 wireless and the Quantum Bridge as shipped), earned teleporting, and flight that has an ongoing cost.
+- **Don't gate what the core rules protect** (`docs/design-doc.md`): wireless (Flux Networks, entangloporters, AE2 wireless and the Quantum Bridge as shipped), earned teleporting, and flight that has an ongoing cost.
 - **Gate materials:** `strata:hollow_ember` (E, the Hollow), `strata:abyssal_pearl` (P, the Abyssal Plain), and boss drops.
 
-Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(check)* need a recipe-slot check before building.
+Item and recipe IDs below were read from the mod jars. Rows marked *(check)* needed a recipe-slot check while building (deviations are in Build notes).
 
 ## 1. Bypasses to close first
-**Approved by Darin (Oct 26):** all four as recommended: Theurgy nether star and calorite routes removed and its netherite route +1 E; `possess_warden` +1 E; renewable nether stars accepted (no nether-star boss gates); Cataclysm's Overworld Sunken City removed (empty `#cataclysm:has_structure/sunken_city_biomes`).
+**Resolution:** Theurgy nether star and calorite routes removed and its netherite route +1 E; `possess_warden` +1 E; renewable nether stars accepted (no nether-star boss gates); Cataclysm's Overworld Sunken City removed (empty `#cataclysm:has_structure/sunken_city_biomes`).
 | Bypass | What it breaks | Fix |
 |---|---|---|
 | Theurgy: diamonds → precious niter → netherite / nether stars / calorite | Every nether-star gate (Ars archmage book, Occultism marid miner, Neo Vitae crystal cluster, Apotheosis augmenting table), plus Ad Astra's calorite tier | Remove the nether-star and calorite reformation recipes; netherite route +E (section 3) |
 | Oritech particle collider makes nether stars | Nether star as a Wither-only gate | Accept it: nether stars aren't a boss gate. Use boss-specific drops below |
 | Mekanism antiprotonic nucleosynthesizer makes nether stars, dragon eggs, hearts of the sea | Same | Gate the SPS (row T5); accept the rest |
 | Occultism `possess_warden` (6 sculk) | Free warden drops → Apotheosis sculkshelves | +E |
-| Cataclysm Sunken City still generates in Overworld deep oceans | Leviathan drops aren't Abyssal-only | Pair Leviathan drops with pearls in recipes (done below), or empty `#cataclysm:has_structure/sunken_city_biomes` *(decision G1)* |
+| Cataclysm Sunken City still generates in Overworld deep oceans | Leviathan drops aren't Abyssal-only | Pair Leviathan drops with pearls in recipes (done below), and empty `#cataclysm:has_structure/sunken_city_biomes` (chosen: Sunken City removed from the Overworld) |
 
 ## 2. Tech
-**Approved by Darin (Oct 26):** all ten as proposed.
 | # | Gate | Needs | Stage |
 |---|---|---|---|
-| T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers, Oritech fission reactor controller (added Oct 27, balance patch C3) | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
+| T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers, Oritech fission reactor controller (balance patch C3) | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
 | T2 | Mekanism ultimate tier: every recipe with a `mekanism:ultimate_*` output (installers, factories, cube, induction, tanks, bin) | 1 `cataclysm:lava_power_cell` (Netherite Monstrosity, 16–24 per kill) | late |
 | T3 | Mekanism fusion reactor controller | 1 `cataclysm:witherite_ingot` (Harbinger) + 4 **E** | endgame |
 | T4 | MekaSuit pieces and Meka-Tool | 2 **E** each | endgame |
@@ -44,7 +41,7 @@ Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(c
 Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Extended Crafting stars. The Mekanism ultimate circuit has two recipes and feeds everything, so it's gated through its outputs (T2), not directly.
 
 ## 3. Magic: road blocks along the way
-**Approved by Darin (Oct 26), rebalanced** so magic isn't Hollow-heavy: each gate's material fits its theme, from 10 different sources. Item IDs checked in the jars. *(check)* = recipe-slot room to confirm while building (swap for a similar material if full).
+**Balanced** so magic isn't Hollow-heavy: each gate's material fits its theme, from 10 different sources. Item IDs checked in the jars. *(check)* = recipe-slot room confirmed while building (swapped for a similar material if full).
 
 | # | Gate | Needs | Source | Stage |
 |---|---|---|---|---|
@@ -81,19 +78,19 @@ Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cat
 | G5 | Oritech flight augment (needs an in-game check that it drains power) | 1 Ice and Fire dragon heart | late |
 | G6 | Apocalyptic Bosses ultimate ingot (now netherite + nether star + amethyst, 2 per craft) | nether star → 2 `panascraftrpgmod:void_gem` + 1 `cataclysm:cursium_ingot` | endgame |
 
-## 5. Teleport and flight items (Darin, Oct 26: "super easy or cheap = I don't like it")
-Checked in the jars on Oct 26.
+## 5. Teleport and flight items
+Standard: an item that is very easy to get or cheap to use is removed. Checked in the mod jars.
 1. **Iron's Spells.**
    - **Recall** (free warp to spawn): **removed**, including the Iron & Nouveau glyph copy.
    - **Portal:** **kept**. Every cast costs 200 mana and has a 3-minute cooldown, and the portals expire.
    - **Pocket Dimension:** **kept**.
-2. **Draconic Evolution dislocators:** **all four removed** (Darin, Oct 26).
+2. **Draconic Evolution dislocators:** **all four removed**.
    - **Dislocator:** blaze powder, draconium dust and an Ender Eye. Remembers one spot in any dimension, limited uses.
    - **Player dislocator:** the basic one plus a draconium core and a ghast tear. Teleports you to a player who sneaks to agree, so it's a /tpa.
    - **Point-to-point pair:** the same, but between two linked dislocators.
    - **Advanced dislocator:** fusion crafting with a wyvern core (needs a nether star). Unlimited saved spots in any dimension; each jump burns 1 ender pearl.
-3. **Forsaken Relics linking book:** **removed from loot** (Darin, Oct 26). He wanted home-only, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
-4. **Oritech portal augment:** **kept** (Darin, Oct 26).
+3. **Forsaken Relics linking book:** **removed from loot**. A home-only mode would have been acceptable, but its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
+4. **Oritech portal augment:** **kept**.
    - A body augment that opens a portal back to your research station.
    - Researching it is a big one-time cost: the top (Arcane) station, 250 million RF, 16 ender pearls, 64 obsidian, an Unholy Intelligence and 32 adamant ingots.
    - After that every use is free and unlimited, with no cooldown.
@@ -104,13 +101,13 @@ Checked in the jars on Oct 26.
 
    The Aether's Cloud Staff isn't flight (it summons Cloud Minions that fight), so it stays.
    The Oritech flight augment is free to run but very costly to research (500 million RF, 64 ion thrusters, 32 plutonium pellets), so it passes the flight rule; row G5 adds a dragon heart.
-6. **Wireless:** **no tiers** (Darin, Oct 25, confirmed Oct 26). The old design-doc to-do is dropped.
+6. **Wireless:** **no tiers**, and never gated.
 
 Powah, Oritech and the Draconic reactor still need a place on the power ladder.
 
-**Built Oct 26** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo, Wind Staff and Linking Book filtered out of all loot (LootJS). Copies players already have keep working.
+**Built** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo, Wind Staff and Linking Book filtered out of all loot (LootJS). Copies players already have keep working.
 
-## Build notes (Oct 26)
+## Build notes
 Built as datapack overrides; checked on the test server (every sampled recipe shows the new ingredient, the Theurgy routes are gone, no load errors). Where a recipe had no free slot, the cheapest ingredient was swapped. Deviations from the tables:
 - **T2:** ultimate transmitters (cables, pipes, tubes) left ungated: crafted in bulk, a cell per 8 would pile up. The tier is gated through installers, factories, cube, induction, tanks and bin.
 - **T8:** the jet suit isn't gated piece by piece; its flying chestplate needs the calorite engine.

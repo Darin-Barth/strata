@@ -1,10 +1,10 @@
-# The Hollow: progression with bite (proposal, Oct 26, 2026)
+# The Hollow: progression with bite
 
-**Status: approved by Darin (Oct 26), D1–D5 as recommended. Not built yet.**
+**Status: approved (decisions D1–D5 in section 6). Not built yet.**
 
-Darin, Oct 26: "I want this dimension to have real 'bite', not a shallow jumpscare world." This builds on `docs/hollow-design.md` (the world, mobs, dread events, the 40% damage cap). That doc stays the reference for what's built. This one adds what to work toward.
+Goal: the Hollow should have real bite, not be a shallow jumpscare world. This builds on `docs/hollow-design.md` (the world, mobs, dread events, the 40% damage cap). That doc stays the reference for what's built. This one adds what to work toward.
 
-What gates elsewhere in the pack is in `docs/gate-map.md`. Research notes (from the mod jars, Oct 26) are summarised in section 7.
+What gates elsewhere in the pack is in `docs/gate-map.md`. Research notes (from the mod jars) are summarised in section 7.
 
 ## 1. What "bite" means here
 Scary but fair still holds: no one-shots, and every threat has a warning and a counter. Bite comes from **consequences and pressure, not cheap deaths**:
@@ -14,12 +14,12 @@ Scary but fair still holds: no one-shots, and every threat has a warning and a c
 - **The rewards are worth it.** Hollow Embers and the boss trophies gate strong items across the whole pack, magic included.
 - **There's a story to piece together.** A lost expedition left pages behind, and they point toward the Sanctuary.
 
-## 2. Fix first (bugs found in the current build): items 1–6 done Oct 26
+## 2. Fixes to the current build (items 1–6 done)
 1. **The Ravenous and its Screechers never spawn.** Their spawn code requires open sky and a biome tagged `#minecraft:is_overworld`, and Hollow biomes deliberately aren't. Fix: a KubeJS spawner in the Hollow (rare, at night-level light, open sky, away from the portal and the Sanctuary). Don't tag the biomes: that would let Overworld mobs in.
 2. **The Corrupted Champion (Graveyard lich) can't be summoned.** Its blood vial only fills from villagers, and the Hollow has none. Fix: in `config/graveyard`, set `bloodEntities` to the Hollow's own mobs (for example tormented villagers, ghouls and other Graveyard undead; to be confirmed against the entity list).
 3. **The damage cap misses hits without an attacker.** That covers the Weeping Angel neck snap and Grim & Bleak's 500-damage smite around a dying Gate Guardian. Fix: also cap by damage type in the Hollow, for Weeping Angels and Grim & Bleak (`godly_power`).
 4. **One Hollow Ember loot modifier never fires.** It targets `grim_and_bleak:chests/abandonned_tower_loot`, which no structure uses. Move it to `small_tent_loot` and `cabinloot`.
-5. **The design doc is wrong about Sanity.** Section 3a says hallucinations can't hurt. They can, below 25% sanity. Keep it, because it's good bite: they're under the damage cap and you get warned well before. Update the doc and the quest text.
+5. **Sanity hallucinations can hurt.** Below 25% sanity they become real mobs. Keep it, because it's good bite: they're under the damage cap and you get warned well before. `docs/hollow-design.md` section 3a and the quest text reflect this.
 6. **Check Chemical X.** Mutant Monsters' potion turns vanilla mobs into mutants in any dimension. Confirm that In Control! stops those mutants outside the Hollow.
 
 ## 3. The quest chapter "The Hollow" (about 26 quests, 5 tracks)
@@ -95,16 +95,16 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 | Magic | Vampirism lord level 3 (vampire and hunter) | 2 |
 | Gear | Apotheosis Summit world tier (advancement) | 1 owned |
 
-Supply today: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for a group that visits regularly, and none for players who never go. Darin wants that pull, but everything gated is optional (decision D4).
+Supply today: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for players who visit regularly, and none for players who never go. That pull toward the Hollow is intended, but everything gated is optional (decision D4).
 
-## 6. Decisions (Darin, Oct 26: all five as recommended)
+## 6. Design decisions
 - **D1. The Ravenous eats blocks** (the mod's default). Keep it on: camps need obsidian walls or the Sanctuary. That's the biggest piece of bite. Or turn it off, so it only hunts and builds are safe. **Decided: on.**
 - **D2. Low sanity spawns real hallucination mobs** below 25%. **Decided: keep them** (capped, with warning).
 - **D3. The Pale Beacon needs 1 Hollow Ember per in-game day**, rather than being free once built. **Decided: feed it.**
 - **D4. How hard Hollow Ember gates:** only the items in section 5, or also the Apotheosis Pinnacle tier (killing the Corrupted Champion or Gate Guardian)? **Decided: section 5 only;** Pinnacle stays the Dragon.
 - **D5. The Lost Signal story pages:** worth it (6 written pages, quest text)? **Decided: yes.**
 
-## 7. Research notes (from the mod jars, Oct 26)
+## 7. Research notes (from the mod jars)
 - **Corrupted Champion** (`graveyard:lich`):
   - Stats: 400 + 200 HP, armor 14, toughness 12, damage 30 (+40 hunting).
   - Abilities: summons up to 30 mobs, teleport-heals, levitation.

@@ -1,4 +1,4 @@
-// The Hollow's psychological events (Darin, Oct 25). Only for players inside strata:hollow, and
+// The Hollow's psychological events. Only for players inside strata:hollow, and
 // none of them can hurt anyone. Sounds are played to the one player they target.
 //   footsteps  steps come up behind you and stop when you turn around
 //   whisper    your own name, whispered

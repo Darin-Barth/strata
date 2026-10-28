@@ -34,13 +34,13 @@ You'll see a plain window for a few seconds instead of the Strata splash, then t
 don't touch this file. On memory: give Java about half your Mac's RAM (8 GB on a 16 GB Mac); 8 GB-RAM Macs can't run the pack.
 
 ## 3. Join
-**Multiplayer → Add Server**, address: **strata.dev-duo.com**. The server has a whitelist; ask Darin if you can't
+**Multiplayer → Add Server**, address: **strata.dev-duo.com**. The server has a whitelist; ask the server admin if you can't
 get in.
 
 The first time you load into the world it takes a minute; that's normal for a pack this size.
 
 ## Updating
-The server and the pack must be on the **same version**, or you'll be disconnected when joining. When Darin posts a
+The server and the pack must be on the **same version**, or you'll be disconnected when joining. When a
 new version, download the new `.mrpack` from the releases page and import it the same way as a new instance. To keep
 your keybinds and settings, copy `options.txt` (and `config/` if you changed mod settings) from the old instance
 folder into the new one before launching (instance → **⋮ → Open folder**).
@@ -51,4 +51,4 @@ folder into the new one before launching (instance → **⋮ → Open folder**).
 - Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
 - Difficulty is per player: press **Ctrl+T** to pick your Apotheosis World Tier once you unlock more.
-- This is a **beta**: some balance rules aren't enforced yet. If something seems broken or too easy, tell Darin.
+- This is a **beta**: some balance rules aren't enforced yet. If something seems broken or too easy, tell the server admin.

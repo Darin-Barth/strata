@@ -1,4 +1,4 @@
-# Worldgen performance profile (Oct 24, 2026)
+# Worldgen performance profile
 
 **Setup:** Docker test server (itzg `java21`, 8 GB, G1 GC), i5-13600K (20 threads), fresh world. Chunky pregenerated a 600-block radius (5,929 chunks) in the Overworld while Spark's async profiler recorded every thread. The profile was saved to a local file and decoded with `tools/profiling/` (nothing uploaded).
 
@@ -52,7 +52,7 @@ By step: noise fill (terrain shape) 37%, feature decoration 19%, the rest is aqu
 **Recommended settings** (ship in the pack docs / server compose):
 - Treehouse server: `MEMORY=12G`, `JVM_XX_OPTS=-XX:+UseZGC -XX:+ZGenerational`.
 - Singleplayer clients: 10 GB + the same two flags.
-- Multiplayer clients (no local worldgen): 8 GB + the same flags. Confirm in the group test.
+- Multiplayer clients (no local worldgen): 8 GB + the same flags. Confirm in a multiplayer test.
 
 ## Runs 3–5: other fixes (same seed, region and profiler; all with 12 GB + generational ZGC)
 | Run | Change | Time for 5,929 chunks | Stalls | Notes |
@@ -71,7 +71,7 @@ By step: noise fill (terrain shape) 37%, feature decoration 19%, the rest is aqu
 
 **Side finding (fixed):** both normal worlds still had ~170 Quark variant chests even with Quark's `Replace Worldgen Chests = false`. They come from Artifacts' campsites (`useModdedChests`, now set false in `config/artifacts/general.toml`) and from IDAS structures (no setting found). Lootr can't convert these, so their loot isn't per-player. Verify the Artifacts change in the next server test.
 
-## C2ME for the final Overworld pregen (Oct 25, 2026)
+## C2ME for the final Overworld pregen
 
 The Integrated Cobblemon gyms now generate in the Pokémon world (and Nether/End), so C2ME (`c2me-neoforge` 0.4.0-alpha.0.123) was re-tested as a **pregen-only** tool on the final seed `-1678324137078475659`, same 900×900-block area around spawn (3,481 chunks):
 

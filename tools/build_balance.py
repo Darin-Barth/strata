@@ -1,4 +1,4 @@
-"""Generate the recipe side of Strata's balance patch (docs/balance-patch.md, Darin's answers Oct 27)
+"""Generate the recipe side of Strata's balance patch (docs/balance-patch.md)
 as datapack overrides in kubejs/data/... Each recipe is read from its mod jar, changed, and written
 at the SAME path so it replaces the mod's own file. Removals are in
 kubejs/server_scripts/strata_balance.js; config-only changes ship in config/.
