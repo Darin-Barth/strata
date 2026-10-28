@@ -19,6 +19,7 @@ Changes committed on master since the last release (**v0.4.3**, Oct 26, 2026; no
 **Check while playing (Darin, Oct 27: tested in normal play after release):** the Nether Portal pet refuses before your first Nether visit and works after; the Charm of Sinking comes off in the Abyssal Plain; bosses can't be jarred (Ars) or soul-gemmed (Occultism); explosions and Big Cannons shots do at most 10 per hit to Bosses of Mass Destruction and Bosses'Rise bosses. Report anything odd and it gets a hotfix.
 
 ## Release checklist
+0. **Before releasing 0.5.0:** Skittlebud empties the 6 Every Compat willow chests at spawn (x -312, y 85-86, z -3207 to -3211). 0.5.0 drops Every Compat's Quark copies, so those chests and everything in them disappear (Darin asks him, Oct 27). They are the only removed-mod blocks in the world (full scan of the Oct 27 20:21 backup).
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both 0.5.0).
 2. `python -I tools/curseforge_ids.py` (re-adds CurseForge IDs after mod updates; fix any "no longer used" line in
    `tools/curseforge-manual.json`), `packwiz refresh`, commit, `git push` (master, and sync `next-update`). Check no stray files sit under the server's `kubejs/data`: KubeJS refuses to start on an uppercase file name there (Oct 26 outage).
