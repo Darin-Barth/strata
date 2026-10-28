@@ -9,3 +9,4 @@ server/
 .githooks/
 .github/
 config/almostunified/debug.json
+README.md
