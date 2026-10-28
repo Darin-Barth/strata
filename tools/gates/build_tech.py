@@ -10,7 +10,7 @@ Every change names the slot it touches and the key it expects there; if a mod up
 recipe around, the script stops with an error instead of writing a wrong override. Re-run after
 updating any of these mods:
   Mekanism, Mekanism Generators, Create: New Age, Extreme Reactors, AE2, AppliedFlux, Ad Astra,
-  Draconic Evolution, Extended Crafting.
+  Draconic Evolution, Extended Crafting, Oritech.
 
 Run from the repo root:
   python -I tools/gates/build_tech.py --mods <mods dir> --out kubejs/data
@@ -40,6 +40,7 @@ FLUX = "appliedflux-"
 ADASTRA = "adastra-"
 DE = "draconic-evolution-"
 EC = "extendedcrafting-"
+ORITECH = "oritech-neoforge-"
 
 # Ops for shaped recipes (minecraft:crafting_shaped and mekanism:mek_data):
 #   ("add", item, [(row, col), ...])            put item into empty slots (rows past the end of a
@@ -64,6 +65,8 @@ GATES = [
      [("swap", IGNITIUM, "R", [(2, 1)])]),
     ("T1", ER, "bigreactors", "turbine/reinforced/controller", "bigreactors:reinforced_turbinecontroller",
      [("swap", IGNITIUM, "R", [(2, 1)])]),
+    ("T1", ORITECH, "oritech", "crafting/controller", "oritech:reactor_controller",
+     [("add", IGNITIUM, [(0, 1)])]),
     # T2 Mekanism ultimate tier: 1 lava power cell (every grid is full, so a cheap slot is swapped)
     ("T2", MEK, "mekanism", "bin/ultimate", "mekanism:ultimate_bin",
      [("swap", LAVA_CELL, "_", [(2, 1)])]),

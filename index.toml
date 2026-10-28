@@ -6,6 +6,10 @@ hash = "567071bf8885e9bfa88a024563ba01235789b10234c1d0b01471d54dde4d01ce"
 preserve = true
 
 [[files]]
+file = "config/Mekanism/tools-materials-startup.toml"
+hash = "24866c4ae027992393bb2041c9c9f8d0b2d89edcf2633eae19d2992b9addc7b9"
+
+[[files]]
 file = "config/alexscaves-general.toml"
 hash = "ac9c7c389b6634ad3ab084670336d4a8b880aabe09732cde5d9ed753627e1b80"
 
@@ -46,6 +50,10 @@ file = "config/alexsmobs/giant_squid_spawns.json"
 hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
 
 [[files]]
+file = "config/almostunified/debug.json"
+hash = "435ad46870d033c8652097d64c6ec592907e5ab6f1877240532a6a1743d4fca5"
+
+[[files]]
 file = "config/almostunified/duplicates.json"
 hash = "b70f57eadf6eec0ce43acd4c441f08feac1432826e04cb8e2736a73997c20c08"
 
@@ -81,6 +89,10 @@ hash = "9dd65f10d532b41eee2599845cdfe7584f69024a9f5cd7bb65d9182f3483ce4d"
 file = "config/cameraoverhaul.toml"
 hash = "422c564e0a5dd0caed1a9c7f566daaa4c3bfc19015750c8a3aa544d142d1f44b"
 preserve = true
+
+[[files]]
+file = "config/carryon-common.toml"
+hash = "29aa3d34a3b9ccee4ecdcd447589093f45ee8da100b954c241a2c8cca71ba344"
 
 [[files]]
 file = "config/cave_dweller/server_config.toml"
@@ -151,6 +163,10 @@ hash = "36bd0375bd32e4fb60ed53e1b7fa61ebec8855c7ea68b230b3119a7d2afe31e3"
 [[files]]
 file = "config/everycomp-hazardous.toml"
 hash = "fdc3564ac9f2367b55a724742c879673b2ede67e4afa9edfdfe1c4c23c375e6b"
+
+[[files]]
+file = "config/excessive_utilities-server.toml"
+hash = "44def4887ebd71f46f7459b8730315a41f7a9d03cf733c3fbfb5693b46f3094d"
 
 [[files]]
 file = "config/fancymenu/assets/strata/background.png"
@@ -350,7 +366,7 @@ hash = "c3258a816c3b4181106b478e9e8758e22af9bf937c541a4397189fa48e00be08"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/epic.snbt"
-hash = "b318fb0e52fa1d78f15aac63c6532d4b483b317fbed3b3c5fd46306587556bc1"
+hash = "3a7d9467f4f763b81f06c4b441b7deec855de96375a66d9480910875ae644fb8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/rare.snbt"
@@ -379,6 +395,10 @@ hash = "7c5d7f1871a3d027d01584652e27ed143bdffc2063082f7666c31c5fe3286a4c"
 [[files]]
 file = "config/iceandfire/iaf-client.json"
 hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
+
+[[files]]
+file = "config/iceandfire/iaf-common.json"
+hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
 
 [[files]]
 file = "config/incontrol/spawn.json"
@@ -433,6 +453,10 @@ file = "config/mutantmonsters-server.toml"
 hash = "342ad2a84824910afc410a2fb2c520facf2a4b67763f08f6a9172a4ec88370e8"
 
 [[files]]
+file = "config/numismatics-server.toml"
+hash = "82321f391564a7e6ed48ce02a46a0f26c6c4abcc9975f74b40b56ac73da34d39"
+
+[[files]]
 file = "config/obscuria/aquamirae-early.json"
 hash = "95a6ce1a5c2bfdfc3c2842a171b34ddbbd69536c54521edce3086db3b4b4134c"
 
@@ -447,6 +471,30 @@ hash = "90b56bbe84f3314d2dd07c8bcc3b3e896d7c4b9141037f707bc666810f9e0f98"
 [[files]]
 file = "config/rctmod-server.toml"
 hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
+
+[[files]]
+file = "config/relics.yaml"
+hash = "a99ad6248bf0f596bd577b3c02135889b7421ce1f6872180df6ed627e43cb2aa"
+
+[[files]]
+file = "config/relics/relics/ghostly_mantle.yaml"
+hash = "51f5300bf5552dbed1aa671e82ee6189f448508d39d952c48f5b9f8cbbaec818"
+
+[[files]]
+file = "config/relics/relics/leafy_mantle.yaml"
+hash = "5d833ec593f18d9ae45677801a9301b0bd5926a0fae3c1c6b9414166cbb32f88"
+
+[[files]]
+file = "config/relics/relics/ring_of_the_seven_deadly_sins.yaml"
+hash = "f60f74b592a27e7b26592d22025dd49cdffd4f8320c0398f26486d2546e91e62"
+
+[[files]]
+file = "config/reliquified_artifacts/relics/chorus_totem.yaml"
+hash = "6a9a03ea0fb71420152e008906b7a379390a1672fdbb66b041a670b149572f1a"
+
+[[files]]
+file = "config/reliquified_artifacts/relics/cross_necklace.yaml"
+hash = "2572c312ff59e9b02cd620dcf924458dff53501c90239f36190fe0d41e23dd99"
 
 [[files]]
 file = "config/sanity_renewed/default.toml"
@@ -465,8 +513,16 @@ file = "config/simplebackups-server.toml"
 hash = "bef4d3a00c4592215316b65fea55b65ffba26cbf64672358016cf9841ffbd49e"
 
 [[files]]
+file = "config/simplyswords/loot.toml"
+hash = "bb46bada44c75506a37d5d0c3d3cd9e5a3dda2729ab6937e5916862b5adec796"
+
+[[files]]
 file = "config/solonion-client.json"
 hash = "fc1e15276c85b6714eca7d84cbd3b79d175d687426ce0b51b0dec49894b5af91"
+
+[[files]]
+file = "config/sophisticatedcore-common.toml"
+hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -763,6 +819,22 @@ hash = "cb00a146b56bec6d43b5ad9233ad96a8ab14f20254cdc2b72fb9925559aa081a"
 [[files]]
 file = "kubejs/data/bigreactors/recipe/turbine/reinforced/controller.json"
 hash = "6cd35e453b5bd7ca5181377fc9d3af8787bc9ca091b39398523d67baf49d63a9"
+
+[[files]]
+file = "kubejs/data/bountiful/bounty_pools/bountiful/_all_rews.json"
+hash = "521fa9b743eb6e34ef44cbadb49f69606edbb3e65a9c07e4dad531dfc1ce4b86"
+
+[[files]]
+file = "kubejs/data/bountiful/bounty_pools/bountiful/armorer_rews.json"
+hash = "7c97302d6f48ca6f740e6fe106a1f45d861d2adee7a6e2c48298908f3a148806"
+
+[[files]]
+file = "kubejs/data/bountiful/bounty_pools/bountiful/cleric_rews.json"
+hash = "75bebe70c4d7a06f3988329df95fd680b4951b9e9fff7a69d18f9f32a6c23892"
+
+[[files]]
+file = "kubejs/data/bountiful/bounty_pools/bountiful/toolsmith_rews.json"
+hash = "d9da65beec2defe8113d532f0f521f04be507309f9a3298ec1b818e1f1e884d7"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json"
@@ -2845,6 +2917,14 @@ file = "kubejs/data/minecraft/tags/worldgen/structure/village.json"
 hash = "cf0312120d9e6a7522f20961e665205233704eafd657e6b801a1d73d03167108"
 
 [[files]]
+file = "kubejs/data/mob_grinding_utils/tags/entity_type/no_spawn.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
+file = "kubejs/data/mob_grinding_utils/tags/entity_type/no_swab.json"
+hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
 file = "kubejs/data/naturalist/tags/worldgen/biome/has_anglerfish.json"
 hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
@@ -2903,6 +2983,10 @@ hash = "c0b9962a9e3b9bce8f6a7be2918f490135073be62363a409eec799d4a38cdf05"
 [[files]]
 file = "kubejs/data/oritech/recipe/augment/flight.json"
 hash = "745607d11db4264b84a508cc6abf5101bdea9aa5d33efb81d9a32ab307fae124"
+
+[[files]]
+file = "kubejs/data/oritech/recipe/crafting/controller.json"
+hash = "6a29f3b07587725903051c8a8245d7929f10b48bacaf155233ec7ac16727cb4d"
 
 [[files]]
 file = "kubejs/data/panascraftrpgmod/recipe/ultimate_lord_ingot_recipe.json"
@@ -5173,6 +5257,10 @@ file = "kubejs/data/strata/puffish_skills/config.json"
 hash = "afe82924139b0f252c358071e385b9cf40859c4c3c96d725f65ab6ac7472b9e2"
 
 [[files]]
+file = "kubejs/data/strata/tags/entity_type/unfarmable.json"
+hash = "76670ca7621ecb9df99fb2754e2077f6dba9807a399256f56e92f83d79ca095b"
+
+[[files]]
 file = "kubejs/data/strata/tags/item/dragon_bloods.json"
 hash = "ee93877e6dd175b5cb1e4e8972907cd52601e5783efbd03400befb40da1bd7e6"
 
@@ -5737,6 +5825,202 @@ file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_screecher_biome_mod
 hash = "2b5e996d2f10f109f8c4d2a95cc6b9038f8b26e28e7c3faae2587a7b23edcd9f"
 
 [[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_allthemodium_from_ores_allthemodium.json"
+hash = "c309a86846b250bcb1dc2617c2b088261b0d4c4a259995a98b6562e416d3f269"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_allthemodium_from_raw_materials_allthemodium.json"
+hash = "0313a4410fde3952684590259774a3fc7c67c7f7e59e96fc50edef3fc31b8c15"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_aluminum_from_ores_aluminum.json"
+hash = "0fd149a59552c800b56253184f4e7a6c53657c331ce6577fa35c8d5d4535f1fc"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_aluminum_from_raw_materials_aluminum.json"
+hash = "335b6c9b3c540a6cbc833ae7d7f778cde89efe9bf3e7dde96de3fdf156a9ae00"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_azure_silver_from_ores_azure_silver.json"
+hash = "c08c45900505e7525d7dada0744fbaf025db48670d272737dbeb5e4c64c42272"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_azure_silver_from_raw_materials_azure_silver.json"
+hash = "8f5fd0c258397cad03e07547c077d643ba9a388086f9d5986b418760f4fa08b9"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_calorite_from_ores_calorite.json"
+hash = "3a9ebbaa36525ef291ffb5ed434c13b3d119f64b7feeaba5b49a9deefc379721"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_calorite_from_raw_materials_calorite.json"
+hash = "a13a4e1ee1246ce3cdffbb9c0ca26e143963bc8cd078efd13c0c4d573f3d0cf1"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_cinnabar_from_ores_cinnabar.json"
+hash = "7c0c5edd4a8e3147c66eb299232de24cc320067ff51a8fe7f905318d4804b4fb"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_cinnabar_from_raw_materials_cinnabar.json"
+hash = "cab3f9a42a17600abf5faf404b90e59b1f1d3942acdeca63ea250326463c0a88"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_copper_from_ores_copper.json"
+hash = "cc9c670ae1e638a09f7ae228b03a9c31eee001669b12d2a3da280d70a2500715"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_copper_from_raw_materials_copper.json"
+hash = "55e64531cc20c1d720957c4301f6e2d19ddb5e768cc09c463dcc20ed1e535d41"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_crimson_iron_from_ores_crimson_iron.json"
+hash = "6ecd73de5cfcd0cfd2a04dca395de411a335c820c6fe639793ca1e77d0f5b696"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_crimson_iron_from_raw_materials_crimson_iron.json"
+hash = "d65231d4bc2bd4bcd45c7886382684cdadba52f1e7b311c304c6f1a66f9ee7ba"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_demonite_from_raw_materials_demonite.json"
+hash = "92919ca3abe9c98cdf0cf98f42773b39b0d3b9f93d7ecb5df6cb839d8acc1ab9"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_desh_from_ores_desh.json"
+hash = "f3593c1c85000a795d6daf90944b0f635108d37f61128b120d4454ef4dfe1a43"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_desh_from_raw_materials_desh.json"
+hash = "e2dba1df52899b1103c4de1cce078b6ef408223ee427228b0c2dea4d86dea7f8"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_gold_from_ores_gold.json"
+hash = "65c5cddb951bef7d1ec232e2b35d36f0ae2d89e0663ce70713d5d40a16d45fd8"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_gold_from_raw_materials_gold.json"
+hash = "3924ae7217236935e887c232a4aba29ba814e387a851faf8170005d8731a2688"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iesnium_from_ores_iesnium.json"
+hash = "8160e464c25c46014b3feea298da273715641d372c4ee29ad3ee9413525fe145"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iesnium_from_raw_materials_iesnium.json"
+hash = "557f945011b2be77bf7aaed5035b7e221bdeccfe4e13cdf09c3a1a5e234007c0"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iridium_from_ores_iridium.json"
+hash = "c40fd8be0e32e429308f8400c988c64b06dab01187db35b85c6c4d8e12ae06af"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iridium_from_raw_materials_iridium.json"
+hash = "85cbfa18750083efff8618a8995843b985f4f977df8ba75e593dd309a128bad2"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iron_from_ores_iron.json"
+hash = "5bcc91d2065a3d524882f7595ee53e732c35472ca5af44e7fbfbd6be729007e3"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_iron_from_raw_materials_iron.json"
+hash = "f16af2acada6666d1061794f6148e6f7fd4bbf3754d2100e67dce55e0e84d922"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_lead_from_ores_lead.json"
+hash = "66cb1ef9b1c521d7277e4c489f3598485108c0d613901082ed1d218e279f6d5f"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_lead_from_raw_materials_lead.json"
+hash = "6ab1a9cca95fded0d34cea5b7fae23aa73e494f3a9f036c33fce0782c8b9e22e"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_nickel_from_ores_nickel.json"
+hash = "3177d952bb73d900f44a92a497b80a543e8537063160a639799db0a725093357"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_nickel_from_raw_materials_nickel.json"
+hash = "7d6f4db53bc8e6ff4a8fff2454a56f9e06244a8d25669ddc4daa576f0fbc2146"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_osmium_from_ores_osmium.json"
+hash = "d3e5d86d772cdadaeae420c4a20fff485b6540d8cc7232bf5898aee3b23e160f"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_osmium_from_raw_materials_osmium.json"
+hash = "881f1ea13d3c8d35d34a845db420fe9bb7619f31dc38a1a3cd7ef6ae7ffc86cc"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_ostrum_from_ores_ostrum.json"
+hash = "6b194cc10dc078f28d010bbef7fd8c28cfc045edc10c154593de233dd8f82248"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_ostrum_from_raw_materials_ostrum.json"
+hash = "79cce778c31921242d849376455c4d16e23e13a8f73f2d5b7e131d3bef6104bd"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_platinum_from_ores_platinum.json"
+hash = "5280c5070ccb0315cb50ca682e5e46060befefc9667fe9d1406c3176a675953f"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_platinum_from_raw_materials_platinum.json"
+hash = "9e6fc9bfc923f14b886098c8dc52c04c658cff8efc1c712f6ac088fb9a7ed0a0"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_silver_from_ores_silver.json"
+hash = "fdb03d8b170f78b5d4c5e500a2dccdfe8e2ce4de8d316d6c945d05e0e8114b67"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_silver_from_raw_materials_silver.json"
+hash = "50e147f432572dfe69756e650643989b91ff5c6259db64bfe1cb6b601dd40342"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_tin_from_ores_tin.json"
+hash = "3d0be419b3cd4c9ec58bd5623cdd4fed903f54ea7d87dd0c8ea86d78a60b5df8"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_tin_from_raw_materials_tin.json"
+hash = "8cf23f12cd70c52e1126f8159e33992cbff2a819c983d59f65e53eb3b32356ca"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_unobtainium_from_ores_unobtainium.json"
+hash = "c37f969b5a2cf18b1a372ee598e2b2c145e3256891ddfd55e13cca9002cc1dd1"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_unobtainium_from_raw_materials_unobtainium.json"
+hash = "0ed4901a29e47672866afe67de9b40755c8944d78c5c5077ee52dedf4822e160"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_uraninite_from_ores_uraninite_poor.json"
+hash = "f8d4adc5598f2293f1fa9c35134f297c2d89386ae4cb86bfc63f2f7f0d690e13"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_uraninite_from_raw_materials_uraninite.json"
+hash = "00fcf9f5daa5cc5fc73affc47a78dc0fbc498244332ad35889c9b8c52dda52f6"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_uranium_from_ores_uranium.json"
+hash = "003df5c10a220174dee70f95ea0bedc95da4fc89dfa543fedbe40061efb211ca"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_uranium_from_raw_materials_uranium.json"
+hash = "105e0af0449adbf1685327659a39ce4615574652ea22163976e343985c0f09ad"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_vibranium_from_ores_vibranium.json"
+hash = "2f248a21e0191e231481335b49a7049d1dc2bdbbe77010c9b25e2020cc1d2fbc"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_vibranium_from_raw_materials_vibranium.json"
+hash = "9a4257c7e365d5965cf32801605651e19026c0c720ad3efdf42daa2fbd4fc66d"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_zinc_from_ores_zinc.json"
+hash = "7d99990a96329a0ec99f81fea25a44a65cdf2fd2eb549b09ed0c7d664e8da55b"
+
+[[files]]
+file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_zinc_from_raw_materials_zinc.json"
+hash = "6401d274e8fe23fae20de32941fb38f6c2c499f8c7c80574acba26fe84a7a229"
+
+[[files]]
 file = "kubejs/data/theurgy/recipe/reformation/alchemical_sulfur_calorite_from_alchemical_niter_metals_precious.json"
 hash = "1a41ad3b7e30a6cc165f0f68986178e0680461a00184b3dc24b6480358a109eb"
 
@@ -5819,6 +6103,10 @@ hash = "a3633d65a9d78bc1753e1ef4be3f177187c0c4da498ca16ac09d0013828fe2f0"
 [[files]]
 file = "kubejs/server_scripts/pokeworld_starter.js"
 hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
+
+[[files]]
+file = "kubejs/server_scripts/strata_balance.js"
+hash = "4874ab2962a65c85a258defd82ef686cb2a059dc8186b30af2c92773f5781dc9"
 
 [[files]]
 file = "kubejs/server_scripts/strata_elites.js"

@@ -42,7 +42,7 @@ TABLES = {
         ("minecraft:diamond_block", 1, 4),
     ]),
     "epic": ("Epic Treasure Bag", "minecraft:shulker_box", [
-        ("minecraft:netherite_ingot", 2, 8),
+        ("minecraft:netherite_ingot", 1, 8),   # halved (balance patch G5, Oct 27)
         ("minecraft:diamond_block", 4, 10),
         ("minecraft:enchanted_golden_apple", 1, 5),
         ("minecraft:totem_of_undying", 1, 5),

@@ -1,7 +1,21 @@
 # Balance patch proposal (Oct 27)
 
-Status: **proposal for Darin, nothing changed yet.** Darin's calls so far (Oct 27): C4, E6, F7 and H2
-stay as they are; he's going through the rest item by item. From four read-only audits (tech, magic,
+Status: **partly built** (queued for 0.5.0, boot-tested Oct 27). Darin's answers, Oct 27:
+
+- **Built:** A1 (Mob Swab and MGU spawner can't take bosses: tag `strata:unfarmable`), C3 (Oritech
+  fission controller needs ignitium, gate T1), D2 (Theurgy metal ores 3x, desh/ostrum reformation
+  removed), D3 (Ender Quarry perimeter 1,024 and 50 FE a block, Quantum Quarry 50,000 FE a block),
+  E1 (Refined Obsidian at netherite level), E2 (dragonsteel damage 14, armor 4/9/7/4, toughness 4),
+  E4 (omega stack upgrades off), E5 (Simply Swords unique weight 0.02, hard pity 250), F1 (Charm of
+  Sinking comes off in the Abyssal Plain, `strata_balance.js`), F2 (Ghostly Mantle >= 300 s, Chorus
+  Totem >= 180 s, Seven Sins "sloth" never unlocks, Cross Necklace +0.3 s / 10%, Leafy Mantle out of
+  loot; Relics extended configs on), G1 (Bountiful's top rewards kept, worth 1.5x and a quarter as
+  common), G3 (Carry On can't pick up spawners, trial spawners or vaults; the Mekanism cardboard box
+  still can), G4 (10 starter cogs), G5 (epic quest bag 1 netherite ingot instead of 2).
+- **Keep as is:** A5, B1-B3 (magic stays; Lopez), C4, D1, E6, F4, F7, G2, H1, H2, I4.
+- **Open (questions answered in chat):** A2-A4, C1, C2, D4, D5, E3, F3, F5, F6, I1.
+
+From four read-only audits (tech, magic,
 gear/bosses, everyday/QoL) that read the mods' own recipes, loot and configs on the 0.5.0 test
 server. The key numbers were re-checked by hand. "Inference" means read from code or text but not
 tried in game. Skill trees and Inventory Pets were handled separately (already queued).

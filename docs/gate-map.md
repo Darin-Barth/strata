@@ -30,7 +30,7 @@ Item and recipe IDs below were read from the mod jars on Oct 26. Rows marked *(c
 **Approved by Darin (Oct 26):** all ten as proposed.
 | # | Gate | Needs | Stage |
 |---|---|---|---|
-| T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
+| T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers, Oritech fission reactor controller (added Oct 27, balance patch C3) | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
 | T2 | Mekanism ultimate tier: every recipe with a `mekanism:ultimate_*` output (installers, factories, cube, induction, tanks, bin) | 1 `cataclysm:lava_power_cell` (Netherite Monstrosity, 16–24 per kill) | late |
 | T3 | Mekanism fusion reactor controller | 1 `cataclysm:witherite_ingot` (Harbinger) + 4 **E** | endgame |
 | T4 | MekaSuit pieces and Meka-Tool | 2 **E** each | endgame |
