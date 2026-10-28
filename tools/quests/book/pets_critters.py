@@ -77,8 +77,11 @@ q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chic
     &eInventory Pets&r are tiny helpers that live in your inventory. Each one has a
     little power. You can't craft them here: you &afind&r them in chests. Dungeons,
     mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses
-    the handy ones; End cities, ancient cities, bastion treasure and ominous trial vaults
-    the legendary ones.
+    the handy ones; Nether fortresses and bastions the Nether Portal pet.
+    The legendary ones are rare finds in End cities, ancient cities, bastion treasure and
+    ominous trial vaults, and five of them can drop from a boss: the Cloud from the Sun Spirit,
+    the Sun from Ignis, the Wither from the Harbinger, the Black Hole from the Ender Guardian
+    and the Pufferfish from Scylla or the Leviathan.
 
     Some cute ones to look out for:
 

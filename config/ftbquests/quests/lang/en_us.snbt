@@ -4073,6 +4073,8 @@
 		""
 		"Every boss keeps its designed strength (World Tiers don't change them). Most are built for a group: bring friends, food, and a way home."
 		""
+		"&6Boss loot bags:&r nothing drops on the floor. Everyone who hits the boss gets their own &eBoss Loot Bag&r with a full share of its loot. Right-click it to open."
+		""
 		"&eTip:&r an &eExplorer's Compass&r finds structures by name, and many mods add an \"Eye\" that you throw to point the way."
 	]
 	quest.41BE5C4E4454A209.title: "Mowzie's Mobs"
@@ -4512,7 +4514,7 @@
 	task.39035EB3F79DAC78.title: "Get your first Inventory Pet"
 	quest.2EAEB13007DBA1D1.title: "Pets in Your Pocket"
 	quest.2EAEB13007DBA1D1.quest_desc: [
-		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; End cities, ancient cities, bastion treasure and ominous trial vaults the legendary ones."
+		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; Nether fortresses and bastions the Nether Portal pet. The legendary ones are rare finds in End cities, ancient cities, bastion treasure and ominous trial vaults, and five of them can drop from a boss: the Cloud from the Sun Spirit, the Sun from Ignis, the Wither from the Harbinger, the Black Hole from the Ender Guardian and the Pufferfish from Scylla or the Leviathan."
 		""
 		"Some cute ones to look out for:"
 		""

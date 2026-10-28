@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/the_leviathan"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.15
+    }
+  ],
+  "table": "strata:inject/pet_pufferfish"
+}

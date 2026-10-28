@@ -41,6 +41,7 @@ Strata is built around travel and earning your power, so a few things work diffe
 - **Flight takes effort.** Every way to fly takes real work to get (boss materials, late-game tiers, a tamed dragon) or costs something to run (fuel, power, mana, food, stamina).
 - **Difficulty is per player.** Pick your own Apotheosis World Tier (Ctrl+T) once you unlock more. Bosses keep their designed strength.
 - **Late tiers are boss-gated.** Nuclear power, top storage, the best rockets and the strongest magic need boss drops, Hollow Embers or Abyssal Pearls ([gate map](docs/gate-map.md)).
+- **Boss fights are group events.** Nothing drops on the floor: everyone who hits a boss gets their own Boss Loot Bag with a full share of its loot.
 - **Death is forgiving.** Another player can revive you while you bleed out (PlayerRevive). If nobody does, your items wait in a grave (Corail Tombstone), and you respawn with a Grave's Key that takes you back to it once.
 
 ## Playing

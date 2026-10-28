@@ -7,7 +7,11 @@ upkeep food in config/inventorypets-common.toml). This writes:
   * one loot table per tier that gives one random pet from its tag
   * NeoForge add_table loot modifiers that add that table to structure chests with a chance:
     common pets in early structures, rare ones in strongholds, mansions, fortresses and the
-    like, legendary ones only in end-game chests (End cities, ancient cities, bastion treasure)
+    like, legendary ones only in end-game chests (End cities, ancient cities, bastion treasure);
+    the Nether Portal pet only in Nether chests (fortresses and bastions)
+  * boss drops: five legendary pets also have a chance to drop from a themed boss (the Slime pet,
+    a cheat-death pet, stays chest-only). Boss loot is rolled per player by the boss loot bags
+    (kubejs/server_scripts/strata_boss_bags.js), so everyone who fought the boss gets a roll.
 Lootr makes those chests per player, so every player gets their own roll.
 
 Left out: the House and End Portal pets (disabled in the config, teleports), the holiday and
@@ -30,9 +34,11 @@ TIERS = {
                "bed", "brewing_stand", "chest", "crafting_table", "double_chest", "enchanting_table",
                "ender_chest", "jukebox", "saddle", "cobblestone", "dirt"],
     # pets that stand in for a machine, a mining trip or a lot of armor
-    "rare": ["anvil", "furnace", "iron_golem", "enderman", "nether_portal", "flying_saddle", "biome",
+    "rare": ["anvil", "furnace", "iron_golem", "enderman", "flying_saddle", "biome",
              "dingot", "pingot", "loot", "pixie", "purplicious_cow", "qcm", "mickerson", "juggernaut",
              "illuminati", "pacman", "silverfish"],
+    # teleports to the Nether and back: found in the Nether only
+    "nether": ["nether_portal"],
     # the mod's own legendary pets
     "legendary": ["black_hole", "slime", "wither", "sun", "cloud", "pufferfish"],
 }
@@ -41,8 +47,19 @@ TIERS = {
 CHESTS = {
     "common": 0.08,
     "rare": 0.08,
-    "legendary": 0.05,
+    "nether": 0.06,
+    "legendary": 0.025,
 }
+
+# legendary pet -> boss entity loot tables it can drop from, and the chance per roll
+BOSS_DROPS = {
+    "cloud": ["aether:entities/sun_spirit"],
+    "wither": ["cataclysm:entities/the_harbinger"],
+    "sun": ["cataclysm:entities/ignis"],
+    "black_hole": ["cataclysm:entities/ender_guardian"],
+    "pufferfish": ["cataclysm:entities/scylla", "cataclysm:entities/the_leviathan"],
+}
+BOSS_CHANCE = 0.15
 TABLES = {
     "common": [
         "minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft",
@@ -65,6 +82,11 @@ TABLES = {
         "betteroceanmonuments:chests/upper_side_chamber",
         "integrated_stronghold:chests/grand_library", "integrated_stronghold:chests/treasure",
         "integrated_stronghold:chests/armory",
+    ],
+    "nether": [
+        "minecraft:chests/nether_bridge", "minecraft:chests/bastion_other",
+        "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_hoglin_stable",
+        "betterfortresses:chests/keep", "betterfortresses:chests/hall",
     ],
     "legendary": [
         "minecraft:chests/end_city_treasure", "minecraft:chests/ancient_city",
@@ -98,6 +120,17 @@ def main():
                 {"condition": "neoforge:loot_table_id", "loot_table_id": table},
                 {"condition": "minecraft:random_chance", "chance": CHESTS[tier]}],
                 "table": f"{NS}:inject/pets_{tier}"})
+            entries.append(f"{NS}:{name}")
+    for pet, tables in BOSS_DROPS.items():
+        write(out, f"{NS}/loot_table/inject/pet_{pet}.json", {"type": "minecraft:entity", "pools": [{
+            "rolls": 1, "entries": [{"type": "minecraft:item", "name": f"inventorypets:pet_{pet}"}]}]})
+        for table in tables:
+            ns, path = table.split(":")
+            name = f"pets/boss/{ns}/{path.replace('entities/', '')}"
+            write(out, f"{NS}/loot_modifiers/{name}.json", {"type": "neoforge:add_table", "conditions": [
+                {"condition": "neoforge:loot_table_id", "loot_table_id": table},
+                {"condition": "minecraft:random_chance", "chance": BOSS_CHANCE}],
+                "table": f"{NS}:inject/pet_{pet}"})
             entries.append(f"{NS}:{name}")
     glm_path = os.path.join(out, "neoforge/loot_modifiers/global_loot_modifiers.json")
     with open(glm_path, encoding="utf-8") as f:

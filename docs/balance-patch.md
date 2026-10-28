@@ -65,6 +65,8 @@ farmable.
 | G4 | **Create Numismatics** coins | 10 starter cogs |
 | G5 | Quest bags (random bags across the book) | the epic bag gives 1 netherite ingot |
 | G6 | Ars Nouveau **Stabilized Warp Scroll**: never used up, crosses dimensions, free to use | +2 echo shards in its Enchanting Apparatus recipe (gate M21, `tools/gates/build_magic.py`); the single-use Warp Scroll is unchanged |
+| G7 | **Inventory Pets** sources | legendary chest chance 2.5%; Cloud, Sun, Wither, Black Hole and Pufferfish also drop from a themed boss at 15% per player (`tools/build_pet_loot.py`); the Nether Portal pet only in Nether fortress and bastion chests; Slime pet chest-only |
+| G8 | **Boss loot** shared out by fighting, not by grabbing | every player who hit a boss gets a Boss Loot Bag with a full roll of its loot; boss materials scale with group size by design (`strata_boss_bags.js`) |
 
 ## Still to check
 

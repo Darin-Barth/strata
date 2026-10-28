@@ -64,11 +64,23 @@
     "strata:pets/rare/integrated_stronghold/grand_library",
     "strata:pets/rare/integrated_stronghold/treasure",
     "strata:pets/rare/integrated_stronghold/armory",
+    "strata:pets/nether/minecraft/nether_bridge",
+    "strata:pets/nether/minecraft/bastion_other",
+    "strata:pets/nether/minecraft/bastion_bridge",
+    "strata:pets/nether/minecraft/bastion_hoglin_stable",
+    "strata:pets/nether/betterfortresses/keep",
+    "strata:pets/nether/betterfortresses/hall",
     "strata:pets/legendary/minecraft/end_city_treasure",
     "strata:pets/legendary/minecraft/ancient_city",
     "strata:pets/legendary/minecraft/bastion_treasure",
     "strata:pets/legendary/minecraft/trial_chambers/reward_ominous",
     "strata:pets/legendary/betterdeserttemples/tomb_pharaoh",
-    "strata:pets/legendary/integrated_stronghold/sanctorum"
+    "strata:pets/legendary/integrated_stronghold/sanctorum",
+    "strata:pets/boss/aether/sun_spirit",
+    "strata:pets/boss/cataclysm/the_harbinger",
+    "strata:pets/boss/cataclysm/ignis",
+    "strata:pets/boss/cataclysm/ender_guardian",
+    "strata:pets/boss/cataclysm/scylla",
+    "strata:pets/boss/cataclysm/the_leviathan"
   ]
 }
