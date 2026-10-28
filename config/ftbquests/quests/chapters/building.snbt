@@ -12,7 +12,7 @@
 		{
 			id: "791208BAC6B60C6B"
 			x: 0.0d
-			y: 8.625d
+			y: 9.0d
 			icon: { id: "handcrafted:oak_couch" }
 			shape: "gear"
 			size: 1.5d
@@ -36,9 +36,27 @@
 			]
 		}
 		{
+			id: "52DC6690C8C2D58D"
+			x: 1.75d
+			y: 0.0d
+			dependencies: ["791208BAC6B60C6B"]
+			icon: { id: "minecolonies:blockhuttownhall" }
+			optional: true
+			tasks: [
+				{
+					id: "06B0D43629F66BDD"
+					type: "item"
+					item: { count: 1, id: "minecolonies:supplycampdeployer" }
+				}
+			]
+			rewards: [
+				{ id: "5C4C7057110891A0", type: "xp", xp: 100 }
+			]
+		}
+		{
 			id: "4B4702FEB8F9F4CB"
 			x: 1.75d
-			y: 0.75d
+			y: 2.25d
 			dependencies: ["791208BAC6B60C6B"]
 			icon: { id: "chipped:carpenters_table" }
 			tasks: [
@@ -61,7 +79,7 @@
 		{
 			id: "4731AB5132C87C29"
 			x: 3.5d
-			y: 0.0d
+			y: 1.5d
 			dependencies: ["4B4702FEB8F9F4CB"]
 			icon: { id: "chipped:mason_table" }
 			optional: true
@@ -85,7 +103,7 @@
 		{
 			id: "4995B74033826A86"
 			x: 3.5d
-			y: 1.5d
+			y: 3.0d
 			dependencies: ["4B4702FEB8F9F4CB"]
 			icon: { id: "rechiseled:chisel" }
 			tasks: [
@@ -108,7 +126,7 @@
 		{
 			id: "44168294F53DDB9A"
 			x: 5.25d
-			y: 1.5d
+			y: 3.0d
 			dependencies: ["4995B74033826A86"]
 			icon: { id: "framedblocks:framed_cube" }
 			optional: true
@@ -139,7 +157,7 @@
 		{
 			id: "3A2124EFF7DD6E2E"
 			x: 1.75d
-			y: 6.0d
+			y: 7.5d
 			dependencies: ["791208BAC6B60C6B"]
 			icon: { id: "handcrafted:hammer" }
 			tasks: [
@@ -167,7 +185,7 @@
 		{
 			id: "3A8DD09B28D07FA8"
 			x: 3.5d
-			y: 3.0d
+			y: 4.5d
 			dependencies: ["3A2124EFF7DD6E2E"]
 			icon: { id: "handcrafted:pink_cushion" }
 			optional: true
@@ -197,7 +215,7 @@
 		{
 			id: "6E1695F0A17C035C"
 			x: 3.5d
-			y: 6.375d
+			y: 7.875d
 			dependencies: ["3A2124EFF7DD6E2E"]
 			icon: { id: "mcwfurnitures:oak_desk" }
 			tasks: [
@@ -225,7 +243,7 @@
 		{
 			id: "437A8BB95378634A"
 			x: 5.25d
-			y: 6.375d
+			y: 7.875d
 			dependencies: ["6E1695F0A17C035C"]
 			icon: { id: "mcwroofs:oak_roof" }
 			tasks: [
@@ -249,7 +267,7 @@
 		{
 			id: "23AC8B9F5125787B"
 			x: 7.0d
-			y: 5.25d
+			y: 6.75d
 			dependencies: ["437A8BB95378634A"]
 			icon: { id: "mcwwindows:oak_window" }
 			tasks: [
@@ -284,7 +302,7 @@
 		{
 			id: "2647941D62D41D5E"
 			x: 8.75d
-			y: 4.5d
+			y: 6.0d
 			dependencies: ["23AC8B9F5125787B"]
 			icon: { id: "mcwlights:chain_lantern" }
 			optional: true
@@ -315,7 +333,7 @@
 		{
 			id: "70E3224746EC9E2E"
 			x: 8.75d
-			y: 6.0d
+			y: 7.5d
 			dependencies: ["23AC8B9F5125787B"]
 			icon: { id: "mcwpaths:cobblestone_square_paving" }
 			optional: true
@@ -340,7 +358,7 @@
 		{
 			id: "6CA9C679562543A0"
 			x: 3.5d
-			y: 9.0d
+			y: 10.5d
 			dependencies: ["3A2124EFF7DD6E2E"]
 			icon: { id: "another_furniture:red_sofa" }
 			tasks: [
@@ -368,7 +386,7 @@
 		{
 			id: "69D8C9521B15D6C5"
 			x: 5.25d
-			y: 9.0d
+			y: 10.5d
 			dependencies: ["6CA9C679562543A0"]
 			icon: { id: "minecraft:cherry_planks" }
 			tasks: [
@@ -393,7 +411,7 @@
 		{
 			id: "19A231EB3DF2353A"
 			x: 1.75d
-			y: 12.75d
+			y: 14.25d
 			dependencies: ["791208BAC6B60C6B"]
 			icon: { id: "supplementaries:jar" }
 			tasks: [
@@ -421,7 +439,7 @@
 		{
 			id: "5FB1C0F28CF27D85"
 			x: 3.5d
-			y: 10.5d
+			y: 12.0d
 			dependencies: ["19A231EB3DF2353A"]
 			icon: { id: "minecraft:flower_pot" }
 			tasks: [
@@ -446,7 +464,7 @@
 		{
 			id: "3292964F7F94CA7A"
 			x: 3.5d
-			y: 12.0d
+			y: 13.5d
 			dependencies: ["19A231EB3DF2353A"]
 			icon: { id: "waterframes:frame" }
 			optional: true
@@ -470,7 +488,7 @@
 		{
 			id: "281E74A5FE4C8423"
 			x: 3.5d
-			y: 13.5d
+			y: 15.0d
 			dependencies: ["19A231EB3DF2353A"]
 			icon: { id: "comforts:sleeping_bag_red" }
 			tasks: [
@@ -498,7 +516,7 @@
 		{
 			id: "2F1D18C4F205A098"
 			x: 1.75d
-			y: 16.5d
+			y: 18.0d
 			dependencies: ["791208BAC6B60C6B"]
 			icon: { id: "wands:stone_wand" }
 			tasks: [
@@ -527,7 +545,7 @@
 		{
 			id: "753BC9ECAB18DF84"
 			x: 3.5d
-			y: 16.5d
+			y: 18.0d
 			dependencies: ["2F1D18C4F205A098"]
 			icon: { id: "effortlessbuilding:randomizer_tool" }
 			tasks: [
@@ -546,7 +564,7 @@
 		{
 			id: "28138884B05ABB37"
 			x: 5.25d
-			y: 16.5d
+			y: 18.0d
 			dependencies: ["753BC9ECAB18DF84"]
 			icon: { id: "buildinggadgets2:gadget_building" }
 			tasks: [
@@ -570,7 +588,7 @@
 		{
 			id: "0DE1CA761A658287"
 			x: 3.5d
-			y: 15.0d
+			y: 16.5d
 			dependencies: ["19A231EB3DF2353A"]
 			icon: { id: "torchmaster:megatorch" }
 			tasks: [
@@ -594,7 +612,7 @@
 		{
 			id: "2D697EE6293222DE"
 			x: 7.0d
-			y: 7.5d
+			y: 9.0d
 			dependencies: [
 				"437A8BB95378634A"
 				"6CA9C679562543A0"
@@ -637,7 +655,7 @@
 		{
 			id: "3A4C73989588ECBE"
 			x: 8.75d
-			y: 7.5d
+			y: 9.0d
 			dependencies: ["2D697EE6293222DE"]
 			icon: { id: "minecraft:oak_sign" }
 			shape: "hexagon"

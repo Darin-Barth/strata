@@ -77,7 +77,8 @@ q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chic
     &eInventory Pets&r are tiny helpers that live in your inventory. Each one has a
     little power. You can't craft them here: you &afind&r them in chests. Dungeons,
     mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses
-    the handy ones; End cities and ancient cities the legendary ones.
+    the handy ones; End cities, ancient cities, bastion treasure and ominous trial vaults
+    the legendary ones.
 
     Some cute ones to look out for:
 

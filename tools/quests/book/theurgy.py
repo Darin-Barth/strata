@@ -62,12 +62,13 @@ q("sulfur", "Sulfur: Liquefaction", deps="solvent", icon="theurgy:liquefaction_c
     out comes &eIron Sulfur&r, several from one raw ore. This is where the multiplying happens.""",
   rewards=[give("minecraft:raw_iron", 8)])
 
-q("incubator", "Incubation: 3 Ingots from 1", deps=["sulfur", "salt", "mercury"], icon="theurgy:incubator",
+q("incubator", "Incubation: More Ingots from Ore", deps=["sulfur", "salt", "mercury"], icon="theurgy:incubator",
   tasks=[item("theurgy:incubator"), item("theurgy:incubator_salt_vessel"),
          item("theurgy:incubator_mercury_vessel"), item("theurgy:incubator_sulfur_vessel")],
   tier=3, desc="""
     The &eIncubator&r puts the three principles back together. Fill its &eSulfur&r, &eSalt&r and
-    &eMercury&r vessels, heat it, and collect &a3 iron ingots&r for every raw iron you liquefied.
+    &eMercury&r vessels, heat it, and collect &a2 iron ingots&r for every raw iron you liquefied
+    (&a3&r if you liquefy the ore block itself: mine it with Silk Touch).
 
     It works for most ores and raw metals. Look up any Sulfur with &eU&r to see what it makes.""",
   rewards=[give("minecraft:iron_block", 2)])

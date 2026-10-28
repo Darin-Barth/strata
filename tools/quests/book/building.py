@@ -14,6 +14,15 @@ q("intro", "What Can I Build?", icon="handcrafted:oak_couch", size=1.5, shape="g
     These quests show you the best tools. Then build your dream house!""",
   rewards=[give("minecraft:oak_log", 32), give("minecraft:cobblestone", 64)])
 
+q("colony", "Found a Colony", deps="intro", icon="minecolonies:blockhuttownhall", optional=True,
+  tasks=item("minecolonies:supplycampdeployer"), desc="""
+    &eMineColonies&r lets you build a whole town of NPC workers: builders, farmers, miners,
+    guards and dozens more. Craft a &eSupply Camp&r (press &eR&r on it), place it, and it gives you
+    a &eTown Hall&r to start your colony. Your builder then builds every other hut for you.
+
+    &cWarning:&r once your colony is founded, raiders attack it every couple of weeks
+    (in-game nights). Build guard towers before then.""")
+
 # --- new looks for old blocks -----------------------------------------------------------
 q("chipped", "One Block, Many Looks", deps="intro", icon="chipped:carpenters_table",
   tasks=item("chipped:carpenters_table"), desc="""
@@ -107,8 +116,9 @@ q("another_furniture", "Another Furniture", deps="handcrafted", icon="another_fu
 
 q("every_wood", "Every Wood, Every Style", deps="another_furniture", icon="minecraft:cherry_planks", desc="""
     Found a pretty new wood in another biome or dimension? Good news: &eEvery Compat&r
-    makes Macaw's, Handcrafted, Another Furniture and other furniture in &aevery wood type&r
-    from every mod. Search for the wood's name to see them all.""",
+    makes Macaw's roofs, doors, windows, fences and bridges in &aevery wood type&r from every mod.
+    Search for the wood's name to see them all. Furniture (Macaw's Furniture, Handcrafted,
+    Another Furniture) and Chipped or Rechiseled patterns come in the vanilla woods.""",
   rewards=[give("minecraft:cherry_log", 16), give("minecraft:birch_log", 16)])
 
 # --- little details -----------------------------------------------------------------------

@@ -352,7 +352,7 @@
 			id: "6B9F103C58B9251A"
 			x: 12.25d
 			y: 4.5d
-			dependencies: ["688AA5A95243C6C1"]
+			dependencies: ["688AA5A95243C6C1", "087C51290A82D487"]
 			icon: { id: "oritech:reactor_controller" }
 			tasks: [
 				{

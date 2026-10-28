@@ -47,6 +47,13 @@ q("iron_age", "Iron Age", deps="timber", icon="minecraft:iron_pickaxe", tier=2,
     &eCombat Roll&r lets you dodge-roll out of trouble: press &eR&r by default, or rebind it in Options > Controls.""",
   rewards=[give("minecraft:iron_ingot", 16), give("minecraft:shield")])
 
+q("skills", "Skill Trees", deps="iron_age", icon="minecraft:experience_bottle", desc="""
+    Press &eCtrl+K&r to open your &eskill trees&r: Combat, Mining, Fishing and Iron's magic.
+    You earn points by fighting, mining any ore in the pack, fishing and casting spells.
+
+    You can't max everything, so pick a branch that fits how you play. Each tree has a few
+    big &ekeystones&r (life steal, dodge, Fortune, ...) that change how you play.""")
+
 q("backpack", "A Bag for Everything", deps="recipes", icon="sophisticatedbackpacks:backpack",
   tasks=item("sophisticatedbackpacks:backpack"), desc="""
     Inventory full already? Craft a &eSophisticated Backpack&r.

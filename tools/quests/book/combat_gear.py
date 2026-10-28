@@ -55,7 +55,7 @@ q("simply_swords", "Simply Swords", deps="two_handed", icon="simplyswords:runic_
     &eSimply Swords&r adds 15 weapon types (chakram, glaive, halberd, rapier, scythe...)
     in iron, gold, diamond and netherite. Look them up with &eU&r on an iron ingot.
 
-    Dungeon chests can hold &6unique&r named weapons with special powers, and &eRunic Tablets&r.
+    Dungeon chests can (rarely) hold &6unique&r named weapons with special powers, and &eRunic Tablets&r.
     Bring a tablet back: it's the smithing template for runic weapons.""",
   rewards=[give("minecraft:diamond", 3)])
 

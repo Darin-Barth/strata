@@ -41,6 +41,12 @@
 		""
 		"Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach. &eCombat Roll&r lets you dodge-roll out of trouble: press &eR&r by default, or rebind it in Options > Controls."
 	]
+	quest.05D48797635FE7AC.title: "Skill Trees"
+	quest.05D48797635FE7AC.quest_desc: [
+		"Press &eCtrl+K&r to open your &eskill trees&r: Combat, Mining, Fishing and Iron's magic. You earn points by fighting, mining any ore in the pack, fishing and casting spells."
+		""
+		"You can't max everything, so pick a branch that fits how you play. Each tree has a few big &ekeystones&r (life steal, dodge, Fortune, ...) that change how you play."
+	]
 	quest.3CBEAA09E0AA8A33.title: "A Bag for Everything"
 	quest.3CBEAA09E0AA8A33.quest_desc: [
 		"Inventory full already? Craft a &eSophisticated Backpack&r."
@@ -555,7 +561,7 @@
 	quest.7BD95B1FE0C3C05A.quest_desc: [
 		"&eCreate: Numismatics&r adds coins: &eSpur&r, &eBevel&r, &eSprocket&r, &eCog&r, &eCrown&r and &eSun&r, from smallest to biggest. Hover over a coin to see its value."
 		""
-		"Coins can't be crafted. Here are a few to start your economy. Sell things to friends and they flow around the server."
+		"Coins can't be crafted. You started with &e10 Cogs&r, and here are a few smaller coins to go with them. Sell things to friends and they flow around the server."
 	]
 	quest.26C16B2F19AFD374.title: "Vendors"
 	quest.26C16B2F19AFD374.quest_desc: [
@@ -1090,13 +1096,13 @@
 	]
 	quest.59A4A7CF1DE61FBB.title: "Mekanism Tools"
 	quest.59A4A7CF1DE61FBB.quest_desc: [
-		"&bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze, steel, lapis, glowstone and the very strong &erefined obsidian&r."
+		"&bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze, steel, lapis, glowstone and &erefined obsidian&r (as tough as netherite)."
 		""
 		"Each also has a &ePaxel&r: pickaxe, axe and shovel in one."
 	]
 	quest.2173882612578849.title: "Refined Obsidian Armour"
 	quest.2173882612578849.quest_desc: [
-		"&eRefined Obsidian&r is one of the toughest metals around. Obsidian is crushed, infused with diamond and compressed with osmium into ingots (press &eR&r on the ingot to follow the chain)."
+		"&eRefined Obsidian&r is as tough as netherite, without the trip to the Nether. Obsidian is crushed, infused with diamond and compressed with osmium into ingots (press &eR&r on the ingot to follow the chain)."
 		""
 		"A full set is great armour for the dangerous dimensions."
 	]
@@ -1404,7 +1410,7 @@
 	task.38F10BD01D507382.title: "36 Reactor blocks"
 	quest.0C280A2767BBC7E2.title: "Powah: Reactor"
 	quest.0C280A2767BBC7E2.quest_desc: [
-		"The Powah &eReactor&r is a multiblock that burns &eUraninite&r (from Powah's own ore) for lots of power. Add coolant and a carbon source to make it run better."
+		"The Powah &eReactor&r is a multiblock that burns &eUraninite&r (from Powah's own ore) for power. Add coolant and a carbon source to make it run better. Each tier makes more: a Basic reactor about matches a Create alternator, a Nitro one makes 15,000 FE/t. The boss-gated nuclear reactors stay the top power."
 		""
 		"Place 36 reactor blocks of the same tier together and it builds itself."
 	]
@@ -1606,6 +1612,8 @@
 	quest.6B9F103C58B9251A.title: "Nuclear Power"
 	quest.6B9F103C58B9251A.quest_desc: [
 		"Oritech's &eNuclear Reactor&r is a multiblock of rods, heat pipes, vents and absorbers. It makes huge amounts of power, and a lot of heat."
+		""
+		"The &eReactor Controller&r needs an &eIgnitium Ingot&r, from &cIgnis&r (Cataclysm)."
 		""
 		"&cKeep it cool&r, or the light show will be bigger than you wanted."
 	]
@@ -2394,9 +2402,9 @@
 	quest.1C0D3E4C359CF7E3.quest_desc: [
 		"Fill the &eLiquefaction Cauldron&r with a Sal Ammoniac bucket, put in a &eraw iron&r, heat it: out comes &eIron Sulfur&r, several from one raw ore. This is where the multiplying happens."
 	]
-	quest.6DA5BFE87D61AA1D.title: "Incubation: 3 Ingots from 1"
+	quest.6DA5BFE87D61AA1D.title: "Incubation: More Ingots from Ore"
 	quest.6DA5BFE87D61AA1D.quest_desc: [
-		"The &eIncubator&r puts the three principles back together. Fill its &eSulfur&r, &eSalt&r and &eMercury&r vessels, heat it, and collect &a3 iron ingots&r for every raw iron you liquefied."
+		"The &eIncubator&r puts the three principles back together. Fill its &eSulfur&r, &eSalt&r and &eMercury&r vessels, heat it, and collect &a2 iron ingots&r for every raw iron you liquefied (&a3&r if you liquefy the ore block itself: mine it with Silk Touch)."
 		""
 		"It works for most ores and raw metals. Look up any Sulfur with &eU&r to see what it makes."
 	]
@@ -3645,7 +3653,7 @@
 	quest.2696AA538E0852AC.quest_desc: [
 		"&eSimply Swords&r adds 15 weapon types (chakram, glaive, halberd, rapier, scythe...) in iron, gold, diamond and netherite. Look them up with &eU&r on an iron ingot."
 		""
-		"Dungeon chests can hold &6unique&r named weapons with special powers, and &eRunic Tablets&r. Bring a tablet back: it's the smithing template for runic weapons."
+		"Dungeon chests can (rarely) hold &6unique&r named weapons with special powers, and &eRunic Tablets&r. Bring a tablet back: it's the smithing template for runic weapons."
 	]
 	quest.2F8E58A5B4853E90.title: "Runic Weapons"
 	quest.2F8E58A5B4853E90.quest_desc: [
@@ -3929,7 +3937,7 @@
 	quest.774FAD0489602A73.quest_desc: [
 		"&cIce and Fire&r fills the world with mythical creatures: &cfire&r, &bice&r and &elightning&r dragons, hydras, cyclopes, gorgons, sea serpents, sirens and more."
 		""
-		"Dragons are the big prize: their bones, blood and scales make the strongest gear here. They are also &cvery&r dangerous, and they burn, freeze and smash terrain. Don't build your base next to a roost."
+		"Dragons are the big prize: their bones, blood and scales make some of the best gear in the pack. They are also &cvery&r dangerous, and they burn, freeze and smash terrain. Don't build your base next to a roost."
 	]
 	quest.1714C91A438D9826.title: "The Bestiary"
 	quest.1714C91A438D9826.quest_desc: [
@@ -4507,7 +4515,7 @@
 	task.39035EB3F79DAC78.title: "Get your first Inventory Pet"
 	quest.2EAEB13007DBA1D1.title: "Pets in Your Pocket"
 	quest.2EAEB13007DBA1D1.quest_desc: [
-		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; End cities and ancient cities the legendary ones."
+		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; End cities, ancient cities, bastion treasure and ominous trial vaults the legendary ones."
 		""
 		"Some cute ones to look out for:"
 		""
@@ -4624,6 +4632,12 @@
 		""
 		"These quests show you the best tools. Then build your dream house!"
 	]
+	quest.52DC6690C8C2D58D.title: "Found a Colony"
+	quest.52DC6690C8C2D58D.quest_desc: [
+		"&eMineColonies&r lets you build a whole town of NPC workers: builders, farmers, miners, guards and dozens more. Craft a &eSupply Camp&r (press &eR&r on it), place it, and it gives you a &eTown Hall&r to start your colony. Your builder then builds every other hut for you."
+		""
+		"&cWarning:&r once your colony is founded, raiders attack it every couple of weeks (in-game nights). Build guard towers before then."
+	]
 	quest.4B4702FEB8F9F4CB.title: "One Block, Many Looks"
 	quest.4B4702FEB8F9F4CB.quest_desc: [
 		"&eChipped&r workbenches turn a plain block into dozens of new versions. Put planks in the &eCarpenter's Table&r and pick the look you like."
@@ -4689,7 +4703,7 @@
 	]
 	quest.69D8C9521B15D6C5.title: "Every Wood, Every Style"
 	quest.69D8C9521B15D6C5.quest_desc: [
-		"Found a pretty new wood in another biome or dimension? Good news: &eEvery Compat&r makes Macaw's, Handcrafted, Another Furniture and other furniture in &aevery wood type&r from every mod. Search for the wood's name to see them all."
+		"Found a pretty new wood in another biome or dimension? Good news: &eEvery Compat&r makes Macaw's roofs, doors, windows, fences and bridges in &aevery wood type&r from every mod. Search for the wood's name to see them all. Furniture (Macaw's Furniture, Handcrafted, Another Furniture) and Chipped or Rechiseled patterns come in the vanilla woods."
 	]
 	quest.19A231EB3DF2353A.title: "Little Things"
 	quest.19A231EB3DF2353A.quest_desc: [

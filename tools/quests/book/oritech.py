@@ -109,10 +109,12 @@ q("jetpack", "Exo Jetpack", deps=["exo", "welcome/nether"], icon="oritech:exo_je
 
     The Boosted Elytra versions work the same way.""")
 
-q("reactor", "Nuclear Power", deps="centrifuge", icon="oritech:reactor_controller", tier=5,
+q("reactor", "Nuclear Power", deps=["centrifuge", "cataclysm/ignis"], icon="oritech:reactor_controller", tier=5,
   tasks=[item("oritech:reactor_controller"), item("oritech:reactor_rod", 4)], desc="""
     Oritech's &eNuclear Reactor&r is a multiblock of rods, heat pipes, vents and
     absorbers. It makes huge amounts of power, and a lot of heat.
+
+    The &eReactor Controller&r needs an &eIgnitium Ingot&r, from &cIgnis&r (Cataclysm).
 
     &cKeep it cool&r, or the light show will be bigger than you wanted.""")
 

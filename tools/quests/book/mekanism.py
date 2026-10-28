@@ -198,14 +198,14 @@ q("fusion", "Fusion Reactor", deps="fission", icon="mekanismgenerators:fusion_re
 q("tools", "Mekanism Tools", deps="osmium", icon="mekanismtools:osmium_pickaxe",
   tasks=item("mekanismtools:osmium_pickaxe"), desc="""
     &bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze,
-    steel, lapis, glowstone and the very strong &erefined obsidian&r.
+    steel, lapis, glowstone and &erefined obsidian&r (as tough as netherite).
 
     Each also has a &ePaxel&r: pickaxe, axe and shovel in one.""",
   rewards=[give("mekanism:ingot_osmium", 8)])
 
 q("tools_up", "Refined Obsidian Armour", deps="tools", icon="mekanismtools:refined_obsidian_chestplate",
   tier=3, tasks=item("mekanismtools:refined_obsidian_chestplate"), desc="""
-    &eRefined Obsidian&r is one of the toughest metals around.
+    &eRefined Obsidian&r is as tough as netherite, without the trip to the Nether.
     Obsidian is crushed, infused with diamond and compressed with osmium into ingots
     (press &eR&r on the ingot to follow the chain).
 

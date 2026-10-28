@@ -230,7 +230,7 @@ hash = "2b93290ae33862359d6b5003a36013e3a9b435931bcf6666d976b9ad95189131"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/building.snbt"
-hash = "28b73a8261a3d10d56052048ddf76b16a342fc8edae51d7a40a34df0aa35b36a"
+hash = "318ac5089812813a6852265210af527501e09c974c15fd45b917f0ba3734c301"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cataclysm.snbt"
@@ -318,7 +318,7 @@ hash = "fe804e7529d5c9c450ab75c7195be9abef1fcef13f67faf8c5f8eb6172f7ad1f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/oritech.snbt"
-hash = "2ecf380be60d1fa8d13fffde993eb3b741ffa69690ea49cf0e1ceb853a597376"
+hash = "894b05c9ad34649e5665f9dda62fb80035f81f98888aa44a2af6c401a5a914f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pets_critters.snbt"
@@ -354,7 +354,7 @@ hash = "6de59d5a91d1392499b8744c84b4217dffc8ec5b43e20a9a566c17a7093dcfa7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "a6ae81156b3048ebf6f0d0e87efa957f929f46cbe967ecd19b95dbeaf527e497"
+hash = "ce0914061a36c9bd7fa8bd44ffc7cba425ce1ce54477d292a6bdaf9b85cacc72"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -362,7 +362,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6a3a636158fb027fd29334832bb5bab01404e2a1552d8b15719133156ee16331"
+hash = "2c66aaa44df4311fe5fff7596d7a047225017290ffe97d719258974cc312881e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"

@@ -129,7 +129,9 @@ q("powah_gen", "Powah: Generators", deps="powah_orb", icon="powah:furnator_start
 q("powah_reactor", "Powah: Reactor", deps="powah_gen", icon="powah:reactor_starter", tier=3,
   tasks=item("powah:reactor_starter", 36, title="36 Reactor blocks"), desc="""
     The Powah &eReactor&r is a multiblock that burns &eUraninite&r (from Powah's own ore)
-    for lots of power. Add coolant and a carbon source to make it run better.
+    for power. Add coolant and a carbon source to make it run better. Each tier makes more:
+    a Basic reactor about matches a Create alternator, a Nitro one makes 15,000 FE/t.
+    The boss-gated nuclear reactors stay the top power.
 
     Place 36 reactor blocks of the same tier together and it builds itself.""")
 

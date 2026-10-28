@@ -8,7 +8,7 @@ q("intro", "What is Ice and Fire?", icon="iceandfire:dragonscales_red", size=1.5
     &cIce and Fire&r fills the world with mythical creatures: &cfire&r, &bice&r and
     &elightning&r dragons, hydras, cyclopes, gorgons, sea serpents, sirens and more.
 
-    Dragons are the big prize: their bones, blood and scales make the strongest gear here.
+    Dragons are the big prize: their bones, blood and scales make some of the best gear in the pack.
     They are also &cvery&r dangerous, and they burn, freeze and smash terrain.
     Don't build your base next to a roost.""",
   rewards=[give("minecraft:bread", 16)])
