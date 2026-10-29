@@ -23,7 +23,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | H | Hide voice chat icons |
 | F4 | Mute microphone |
 | Caps Lock | Push to talk (voice chat) |
-| Right Alt | Whisper (voice chat). Keep both voice keys bound to some key: with no key set, the game logs an error every tick and stutters. |
+| Right Alt | Whisper (voice chat). Both voice keys must be bound to something: with no key set, the game logs an error every tick and stutters, so the pack binds an unbound one back to its default when you join. |
 
 **Combat and movement**
 | Key | Action |

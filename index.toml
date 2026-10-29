@@ -1221,6 +1221,10 @@ file = "kubejs/client_scripts/strata_lang.js"
 hash = "6f6950f7892ae649e70c20fc719bbf6377880cc3776bc78243c79f96aafbfd62"
 
 [[files]]
+file = "kubejs/client_scripts/strata_voice_keys.js"
+hash = "3e4a25b4880711652c80c457275db89fb0c3afabc265eb81cc2ca7f9fd314a1d"
+
+[[files]]
 file = "kubejs/data/ad_astra/recipe/calorite_engine.json"
 hash = "d10b44f47611efea5b6fb2f7ace134f44d25ebe7e37a9f9d4f2933bca530ee0d"
 
