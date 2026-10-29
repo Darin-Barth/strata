@@ -20,7 +20,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | N | Disable voice chat |
 | H | Hide voice chat icons |
 | Ctrl+M | Mute microphone |
-| (unbound) | Push to talk: voice chat's first-run setup asks you to pick one. Caps Lock is free. |
+| Caps Lock | Push to talk (voice chat). Keep it bound to some key: with push-to-talk on and no key set, the game logs an error every tick and stutters. |
 
 **Combat and movement**
 | Key | Action |
