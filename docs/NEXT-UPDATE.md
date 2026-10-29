@@ -3,7 +3,8 @@
 Changes committed on master since the last release (**v1.0.0**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- (nothing yet)
+- **No mob griefing of terrain:** creeper explosions (vanilla and modded creepers) still hurt, but break no blocks; endermen can't pick up blocks. TNT and other explosions are unchanged. (Server side: takes effect with a server restart.)
+- **No more "replace failed" warnings:** Inventory Profiles Next's big on-screen and sound alerts when a tool is about to break, or can't be swapped for a spare, are off. Its auto-refill still works. (Client side: comes with the next `.mrpack`.)
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).

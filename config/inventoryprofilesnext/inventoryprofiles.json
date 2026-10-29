@@ -5,7 +5,11 @@
     "AutoRefillSettings": {
         "auto_refill_enable_indicator_icons": false,
         "auto_refill_enable_horbar_indicator_icons": false,
-        "autorefill_blacklist": "artifacts:everlasting_beef,artifacts:eternal_steak"
+        "autorefill_blacklist": "artifacts:everlasting_beef,artifacts:eternal_steak",
+        "visual_replace_failed_notification": false,
+        "audio_replace_failed_notification": false,
+        "visual_durability_notification": false,
+        "audio_durability_notification": false
     },
     "GuiSettings": {
         "enable_inventory_buttons": true,

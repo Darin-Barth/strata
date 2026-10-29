@@ -402,7 +402,7 @@ hash = "b449cb23f03701629407de7c22b9c580fe3d7e4bbcc94d83eccb22f4230fd32d"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "f6865385751b69264f639d7c6cde54689af7858540e983e0a3215b906b9aecae"
+hash = "d5af3a609e6e83bbb9f333cdeb0e376c5d1100c7be1a8513e44ac54cf0e63a9b"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/black_hole.json"
@@ -3319,6 +3319,10 @@ hash = "b035f27eb847bd2bdfb30cd2b27f77785cc9b054fda1cb8a32c0fa6872645413"
 [[files]]
 file = "kubejs/data/mekanismgenerators/recipe/reactor/controller.json"
 hash = "14854070c9fc63ec005c70a6cef5bc108bdf2b8d785f7fe8002182da3a3be2b0"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/ancient_city.json"
@@ -6787,6 +6791,10 @@ hash = "4904ac772b72e87ba966deeadfb64c58f31d759c0742c5c5fe384cc62d69f018"
 [[files]]
 file = "kubejs/server_scripts/strata_loot_bags.js"
 hash = "409b9d4892f7828a1b6ff7eeafd687fded6b31cae129a10fb2e87de541db6771"
+
+[[files]]
+file = "kubejs/server_scripts/strata_no_griefing.js"
+hash = "439496057af081b8c7703efe8da0565dae91378042534609f555add8807b226c"
 
 [[files]]
 file = "kubejs/server_scripts/strata_pets.js"
