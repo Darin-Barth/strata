@@ -3301,24 +3301,24 @@
 		"The &bFrostbitten Temple&r in the snowy lands always holds a &eCold Eye&r in its treasure chest, but the &bFrostbitten Golem&r guards it."
 		"&eIgloos&r: about half of them hide a cellar (break the carpet in the floor to find the trapdoor), and that chest also holds a Cold Eye. Seeker's Compass: &eFrostbitten Temple&r (blue ice and snow)."
 	]
-	quest.75C82B8A15C9B399.title: "Uncured Rogue Eye"
+	quest.75C82B8A15C9B399.title: "Red-Hot Rogue Eye"
 	quest.75C82B8A15C9B399.quest_desc: [
-		"&o\"It taught our ancestors Redstone. Only a working machine can build it again.\""
+		"&o\"The machine eye that taught our ancestors Redstone. Only a working factory can forge another.\""
 		""
-		"The Rogue Eye is lost; you have to &ebuild&r one on a Create &eSequenced Assembly&r line. Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:"
+		"The Rogue Eye is lost; you have to &eforge&r one on a Create &eSequenced Assembly&r line. Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:"
 		""
 		"1. &eDeployer&r holding a &ePrecision Mechanism&r"
 		"2. &eDeployer&r holding an &eElectron Tube&r"
-		"3. &eSpout&r with &e250 mB of lava&r"
+		"3. &eSpout&r with &e250 mB of lava&r (it heats the metal)"
 		"4. &eMechanical Press&r"
 		""
-		"Then it comes out as an &eUncured Rogue Eye&r. Press &eR&r on it in EMI to see the steps, and hold &eW&r over each machine for its Ponder scene. You'll need 2 of each part per eye."
+		"It comes off the line as a glowing &6Red-Hot Rogue Eye&r. Press &eR&r on it in EMI to see the steps, and hold &eW&r over each machine for its Ponder scene. You'll need 2 of each part per eye."
 	]
 	quest.659E932BB4598A19.title: "Rogue Eye"
 	quest.659E932BB4598A19.quest_desc: [
-		"The new eye is still soft. &eCure&r it in soul-fire smoke:"
+		"Hot metal is still soft. &eHarden&r it the way smiths harden steel: &bquench&r it in water."
 		""
-		"Put a &bsoul campfire&r (or soul fire on soul sand) in front of an &eEncased Fan&r and run the fan. Everything in its air stream past the fire gets \"haunted\". Drop the Uncured Rogue Eye into the stream, or run a belt through it, and it becomes the &eRogue Eye&r."
+		"Put &bwater&r (a source block or a flowing stream) in front of an &eEncased Fan&r and run the fan: its air stream past the water washes everything in it (Create's \"Bulk Washing\"). Drop the Red-Hot Rogue Eye into the stream, or run a belt through it, and it hisses and hardens into the &eRogue Eye&r."
 	]
 	quest.5DE26DD88D0C36CF.title: "Dormant Magical Eye"
 	quest.5DE26DD88D0C36CF.quest_desc: [

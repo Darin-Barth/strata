@@ -309,12 +309,12 @@
 			x: 3.5d
 			y: 18.0d
 			dependencies: ["236EBDDB0F644A14"]
-			icon: { id: "strata:uncured_rogue_eye" }
+			icon: { id: "strata:red_hot_rogue_eye" }
 			tasks: [
 				{
 					id: "56D18B52E876901A"
 					type: "item"
-					item: { count: 1, id: "strata:uncured_rogue_eye" }
+					item: { count: 1, id: "strata:red_hot_rogue_eye" }
 				}
 			]
 			rewards: [

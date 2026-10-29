@@ -17,7 +17,7 @@ one has a single **guaranteed** source: no eye is a random chest or mob drop. Bu
 | Lost | Dungeons Arise Foundry treasure chests | Seeker's Compass: Foundry |
 | Black | pirate ship treasure chests (Corsair Corvette, Pirate Junk, Undead Pirate Ship) | Seeker's Compass: Pirate Ship |
 | Cold | `minecraft:chests/igloo_chest`: the Frostbitten Temple (always) and igloo cellars (about half of igloos) | Seeker's Compass: Frostbitten Temple |
-| Rogue | Create sequenced assembly from an Eye of Ender (2 loops: deploy precision mechanism, deploy electron tube, spout 250 mB lava, press) → Uncured Rogue Eye → haunting (Encased Fan through soul fire) | crafted |
+| Rogue | Create sequenced assembly from an Eye of Ender (2 loops: deploy precision mechanism, deploy electron tube, spout 250 mB lava, press) → Red-Hot Rogue Eye → quenched by washing (Encased Fan through water); redrawn as a machine eye (brass gear housing, green lens) in `kubejs/assets/endrem/textures` | crafted |
 | Magical | Ars Enchanting Apparatus (Eye of Ender, 7 essences, Source Gem Block, 5,000 source) → Dormant Magical Eye → Imbuement Chamber (amethyst cluster, ghast tear, Source Gem Block, 5,000 source) | crafted |
 | Undead, Witch, Exotic | End Remastered's own recipes (Undead Soul from skeleton horses, Witch Pupil from witches, conduits and corals): the **spares** | crafted |
 

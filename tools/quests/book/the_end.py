@@ -152,28 +152,29 @@ q("eye_cold", "Cold Eye", deps="eyes", icon="endrem:cold_eye", tier=3,
     Seeker's Compass: &eFrostbitten Temple&r (blue ice and snow).""")
 
 # --- built: Create and Ars Nouveau ---------------------------------------------------------
-q("rogue_assembly", "Uncured Rogue Eye", deps="eyes", icon="strata:uncured_rogue_eye", tier=3,
-  tasks=item("strata:uncured_rogue_eye"), desc="""
-    &o"It taught our ancestors Redstone. Only a working machine can build it again."
+q("rogue_assembly", "Red-Hot Rogue Eye", deps="eyes", icon="strata:red_hot_rogue_eye", tier=3,
+  tasks=item("strata:red_hot_rogue_eye"), desc="""
+    &o"The machine eye that taught our ancestors Redstone. Only a working factory can forge another."
 
-    The Rogue Eye is lost; you have to &ebuild&r one on a Create &eSequenced Assembly&r line.
+    The Rogue Eye is lost; you have to &eforge&r one on a Create &eSequenced Assembly&r line.
     Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:
 
     1. &eDeployer&r holding a &ePrecision Mechanism&r
     2. &eDeployer&r holding an &eElectron Tube&r
-    3. &eSpout&r with &e250 mB of lava&r
+    3. &eSpout&r with &e250 mB of lava&r (it heats the metal)
     4. &eMechanical Press&r
 
-    Then it comes out as an &eUncured Rogue Eye&r. Press &eR&r on it in EMI to see the steps,
+    It comes off the line as a glowing &6Red-Hot Rogue Eye&r. Press &eR&r on it in EMI to see the steps,
     and hold &eW&r over each machine for its Ponder scene. You'll need 2 of each part per eye.""")
 
 q("eye_rogue", "Rogue Eye", deps="rogue_assembly", icon="endrem:rogue_eye", tier=3,
   tasks=item("endrem:rogue_eye"), desc="""
-    The new eye is still soft. &eCure&r it in soul-fire smoke:
+    Hot metal is still soft. &eHarden&r it the way smiths harden steel: &bquench&r it in water.
 
-    Put a &bsoul campfire&r (or soul fire on soul sand) in front of an &eEncased Fan&r and run
-    the fan. Everything in its air stream past the fire gets "haunted". Drop the Uncured
-    Rogue Eye into the stream, or run a belt through it, and it becomes the &eRogue Eye&r.""")
+    Put &bwater&r (a source block or a flowing stream) in front of an &eEncased Fan&r and run the
+    fan: its air stream past the water washes everything in it (Create's "Bulk Washing").
+    Drop the Red-Hot Rogue Eye into the stream, or run a belt through it, and it hisses
+    and hardens into the &eRogue Eye&r.""")
 
 q("magical_binding", "Dormant Magical Eye", deps="eyes", icon="strata:dormant_magical_eye", tier=3,
   tasks=item("strata:dormant_magical_eye"), desc="""
