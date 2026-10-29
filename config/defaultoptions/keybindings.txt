@@ -76,6 +76,7 @@ key_key.puffish_skills.open:key.keyboard.k:CONTROL
 # Unbound: duplicates of another mod's key (Trade Cycling cycles trades on C; Combat Roll rolls on R)
 key_key.easy_villagers.cycle_trades:key.keyboard.unknown
 key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown
-# Voice chat push-to-talk on Caps Lock: left unbound, Simple Voice Chat checks the empty key every tick
+# Voice chat push-to-talk on Caps Lock and whisper on Right Alt: left unbound, Simple Voice Chat checks the empty keys every tick
 # and the game logs a GL error each time ("Invalid key -1"), which adds stutter.
 key_key.push_to_talk:key.keyboard.caps.lock
+key_key.whisper:key.keyboard.right.alt

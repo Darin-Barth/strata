@@ -4,7 +4,7 @@ Changes committed on master since the last release (**v1.0.0**; notes in the Git
 
 ## Changes
 - **No mob griefing of terrain:** creeper explosions (vanilla and modded creepers) still hurt, but break no blocks; endermen can't pick up blocks. TNT and other explosions are unchanged. (Server side: takes effect with a server restart.)
-- **Voice chat push-to-talk defaults to Caps Lock** (new installs and players who never set it): left unbound with push-to-talk on, the game logged an error every tick and stuttered. Players with an older install: bind it in Options > Controls, or switch voice chat to voice activation.
+- **Voice chat keys have defaults: push-to-talk on Caps Lock, whisper on Right Alt** (new installs and players who never set them): left unbound, the game logged an error every tick and stuttered. Players with an older install: bind both in Options > Controls.
 - **No more "replace failed" warnings:** Inventory Profiles Next's big on-screen and sound alerts when a tool is about to break, or can't be swapped for a spare, are off. Its auto-refill still works. (Client side: comes with the next `.mrpack`.)
 
 ## Release checklist

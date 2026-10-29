@@ -20,7 +20,8 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | N | Disable voice chat |
 | H | Hide voice chat icons |
 | Ctrl+M | Mute microphone |
-| Caps Lock | Push to talk (voice chat). Keep it bound to some key: with push-to-talk on and no key set, the game logs an error every tick and stutters. |
+| Caps Lock | Push to talk (voice chat) |
+| Right Alt | Whisper (voice chat). Keep both voice keys bound to some key: with no key set, the game logs an error every tick and stutters. |
 
 **Combat and movement**
 | Key | Action |

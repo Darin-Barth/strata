@@ -150,7 +150,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "841edf39798c616926f79262ddef02678482f3b18db2bdd8e32bbf59f57b466c"
+hash = "67234c91f06cd043a465199a5b51c800587e3dc53378ded8b6d8f4c68e0a4801"
 
 [[files]]
 file = "config/drippyloadingscreen/options.txt"
