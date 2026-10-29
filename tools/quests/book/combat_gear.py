@@ -91,9 +91,9 @@ q("elites", "Elites and Invaders", deps="affix", icon="minecraft:zombie_head", d
     They're mini-bosses that always drop a special affix item and often gems.
     Invaders never appear while your World Tier is &eHaven&r.""")
 
-q("world_tiers", "World Tiers (Ctrl+T)", deps="affix", icon="minecraft:beacon", tier=2,
+q("world_tiers", "World Tiers (Alt+L)", deps="affix", icon="minecraft:beacon", tier=2,
   tasks=adv("apotheosis:progression/frontier", title="Unlock Frontier"), desc="""
-    Press &eCtrl+T&r for the &eWorld Tier&r screen. Tiers are &eper player&r:
+    Press &eAlt+L&r for the &eWorld Tier&r screen. Tiers are &eper player&r:
     &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r.
 
     A higher tier makes mobs around &eyou&r tougher and loot better (it also raises the max

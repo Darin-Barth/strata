@@ -50,5 +50,5 @@ folder into the new one before launching (instance → **⋮ → Open folder**).
   explains the rules and where to go next.
 - Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
-- Difficulty is per player: press **Ctrl+T** to pick your Apotheosis World Tier once you unlock more.
+- Difficulty is per player: press **Alt+L** to pick your Apotheosis World Tier once you unlock more.
 - If something seems broken or too easy, tell the server admin: fixes ship as small updates.

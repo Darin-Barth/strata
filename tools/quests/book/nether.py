@@ -19,7 +19,7 @@ q("expert", "Tougher Down Here", deps="intro", icon="minecraft:skeleton_skull", 
     &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld.
 
     Upgrade your armor soon, and keep a shield in your off-hand.
-    Your own &eWorld Tier&r (Ctrl+T) still decides how tough mobs around you get.""",
+    Your own &eWorld Tier&r (Alt+L) still decides how tough mobs around you get.""",
   rewards=[give("minecraft:golden_apple", 2)])
 
 q("gold", "Piglin Manners", deps="intro", icon="minecraft:golden_helmet",

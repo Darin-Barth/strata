@@ -147,7 +147,7 @@ q("waystones", "Waystones", deps="rules", icon="waystones:waystone",
 q("difficulty", "Choose Your Challenge", deps="iron_age", icon="minecraft:zombie_head", desc="""
     Difficulty in Strata is &eyours to pick&r, not the server's. Everyone plays at their own pace.
 
-    &eWorld Tiers&r (Apotheosis, &eCtrl+T&r): a higher tier makes the mobs around &eyou&r tougher
+    &eWorld Tiers&r (Apotheosis, &eAlt+L&r): a higher tier makes the mobs around &eyou&r tougher
     and the loot better. You unlock tiers with better gear and bigger kills, and switch them on
     only when you're ready (see &cCombat & Gear&r).
 

@@ -39,7 +39,7 @@ Strata is built around travel and earning your power, so a few things work diffe
 
 - **Teleporting is limited.** Everyone gets one `/home` (`/sethome` to set it, 10-second cooldown). There's no `/back`, `/rtp` or `/tpa`. Waystones cost XP: more for long trips, extra across dimensions. You can *earn* teleporting later (Mekanism teleporters, Ars Nouveau warps, blink spells).
 - **Flight takes effort.** Every way to fly takes real work to get (boss materials, late-game tiers, a tamed dragon) or costs something to run (fuel, power, mana, food, stamina).
-- **Difficulty is per player.** Pick your own Apotheosis World Tier (Ctrl+T) once you unlock more. Bosses keep their designed strength.
+- **Difficulty is per player.** Pick your own Apotheosis World Tier (Alt+L) once you unlock more. Bosses keep their designed strength.
 - **Every dimension has its own ores.** The basics are at home; osmium is richest under the Abyssal Plain's seafloor, mithril grows in the Hollow, and draconium waits in the Nether and the End ([ore map](docs/ore-map.md)).
 - **Late tiers are boss-gated.** Nuclear power, top storage, the best rockets and the strongest magic need boss drops, Hollow Embers or Abyssal Pearls ([gate map](docs/gate-map.md)).
 - **The End is a quest.** The portal needs 12 different eyes, and none of them is luck: each is kept by a boss, sealed in one kind of treasure room, or built on a Create line or with Ars Nouveau magic. Seeker's Compasses lead the way if you'd rather not search ([end eyes](docs/end-eyes.md)).

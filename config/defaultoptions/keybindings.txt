@@ -29,13 +29,13 @@ key_accessories.key.open_accessories_screen:key.keyboard.h:ALT
 key_key.occultism.backpack:key.keyboard.b:ALT
 key_key.occultism.ender_bag:key.keyboard.e:ALT
 key_key.occultism.storage_remote:key.keyboard.n:SHIFT
-key_key.toms_storage.open_terminal:key.keyboard.b:CONTROL
+key_key.toms_storage.open_terminal:key.keyboard.j:ALT
 
 # Maps and voice: M stays Xaero's world map, U its waypoint list
 key_gui.xaero_new_waypoint:key.keyboard.u:ALT
 key_gui.xaero_enlarge_map:key.keyboard.y:ALT
 key_key.ftbchunks.map:key.keyboard.m:SHIFT
-key_key.mute_microphone:key.keyboard.m:CONTROL
+key_key.mute_microphone:key.keyboard.f4
 
 # HUD and relic keys off G, H and K
 key_key.mekanism.key_hud:key.keyboard.h:CONTROL
@@ -46,14 +46,14 @@ key_key.forsaken_relics.relic_screen:key.keyboard.k:ALT
 key_key.relics.active_abilities_list:key.mouse.4
 
 # Quark: variant selector off R, rotation lock off K, hotbar swapper stays Z
-key_quark.keybind.variant_selector:key.keyboard.r:CONTROL
+key_quark.keybind.variant_selector:key.keyboard.i:ALT
 key_quark.keybind.lock_rotation:key.keyboard.k:SHIFT
 
 # Iris: K toggle and O pack screen stay; reload moves off R
 key_iris.keybind.reload:key.keyboard.o:SHIFT
 
 # Building: Effortless Building off Alt, Z, Y and keypad +
-key_key.effortlessbuilding.open_radial_menu:key.keyboard.e:CONTROL
+key_key.effortlessbuilding.open_radial_menu:key.keyboard.i:CONTROL
 key_key.effortlessbuilding.undo.desc:key.keyboard.z:CONTROL
 key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
 key_key.effortlessbuilding.open_modifiers_screen:key.keyboard.keypad.subtract
@@ -81,3 +81,4 @@ key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown
 key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.right.alt
 key_key.fieldguide.open:key.keyboard.f:ALT
+key_key.apotheosis.open_world_tier_select:key.keyboard.l:ALT

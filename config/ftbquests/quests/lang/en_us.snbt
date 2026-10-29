@@ -116,7 +116,7 @@
 	quest.15654BD960144D8E.quest_desc: [
 		"Difficulty in Strata is &eyours to pick&r, not the server's. Everyone plays at their own pace."
 		""
-		"&eWorld Tiers&r (Apotheosis, &eCtrl+T&r): a higher tier makes the mobs around &eyou&r tougher and the loot better. You unlock tiers with better gear and bigger kills, and switch them on only when you're ready (see &cCombat \\& Gear&r)."
+		"&eWorld Tiers&r (Apotheosis, &eAlt+L&r): a higher tier makes the mobs around &eyou&r tougher and the loot better. You unlock tiers with better gear and bigger kills, and switch them on only when you're ready (see &cCombat \\& Gear&r)."
 		""
 		"Other dimensions (the End, Twilight Forest, Deeper and Darker, the Hollow) are tougher than home. Bosses always keep their own designed strength. Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn."
 	]
@@ -2679,7 +2679,7 @@
 	quest.334584320691A8F2.quest_desc: [
 		"The Nether is a step up from home: wither skeletons, blazes, ghasts and the mobs from &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld."
 		""
-		"Upgrade your armor soon, and keep a shield in your off-hand. Your own &eWorld Tier&r (Ctrl+T) still decides how tough mobs around you get."
+		"Upgrade your armor soon, and keep a shield in your off-hand. Your own &eWorld Tier&r (Alt+L) still decides how tough mobs around you get."
 	]
 	quest.63E001FFDB4BBB22.title: "Piglin Manners"
 	quest.63E001FFDB4BBB22.quest_desc: [
@@ -3775,9 +3775,9 @@
 		"&cApothic Invaders&r arrive with a loud noise, a chat message and a beam of light. They're mini-bosses that always drop a special affix item and often gems. Invaders never appear while your World Tier is &eHaven&r."
 	]
 	task.43D2BB04031BA783.title: "Unlock Frontier"
-	quest.3A399FBC4B396A71.title: "World Tiers (Ctrl+T)"
+	quest.3A399FBC4B396A71.title: "World Tiers (Alt+L)"
 	quest.3A399FBC4B396A71.quest_desc: [
-		"Press &eCtrl+T&r for the &eWorld Tier&r screen. Tiers are &eper player&r: &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r."
+		"Press &eAlt+L&r for the &eWorld Tier&r screen. Tiers are &eper player&r: &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r."
 		""
 		"A higher tier makes mobs around &eyou&r tougher and loot better (it also raises the max enchanting level). Unlocking a tier doesn't switch it on: you choose when, and can switch back. Hover a tier's icon to see what unlocks it."
 		""

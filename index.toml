@@ -154,7 +154,11 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "786dd0815c14c9b8e7e7fae669f4e9aab21cd182df686adc052dc36ad42b5920"
+hash = "28760e47df4144e996bb890a6091bc41eb2b11e5a1b0493a5371bf8a699ad0bc"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "38e92990b1b5a9c069082e0ba4e852379d0d7e62200b6e91edb83c41c77ebef1"
 
 [[files]]
 file = "config/drippyloadingscreen/options.txt"
@@ -370,7 +374,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b46a11a66f453e7d253d1fcb1a99b767368c600ed2b7afeb3777a8a245977275"
+hash = "7f7ba7328311d6228de733b3cabd0c378986a06184242da14147d588ad034209"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"

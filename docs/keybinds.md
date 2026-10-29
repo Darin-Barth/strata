@@ -19,7 +19,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | G | Group management |
 | N | Disable voice chat |
 | H | Hide voice chat icons |
-| Ctrl+M | Mute microphone |
+| F4 | Mute microphone |
 | Caps Lock | Push to talk (voice chat) |
 | Right Alt | Whisper (voice chat). Keep both voice keys bound to some key: with no key set, the game logs an error every tick and stutters. |
 
@@ -49,7 +49,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Alt+B | Occultism satchel |
 | Alt+E | Occultism ender satchel |
 | Shift+N | Occultism storage accessor |
-| Ctrl+B | Tom's Storage terminal |
+| Alt+J | Tom's Storage terminal |
 | Alt+G | Curios slots |
 | I | Aether accessories |
 | Alt+H | Accessories screen |
@@ -86,10 +86,10 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 **Building and tools**
 | Key | Action |
 |---|---|
-| Ctrl+R | Quark variant selector (stairs, slabs, walls of a held block) |
+| Alt+I | Quark variant selector (stairs, slabs, walls of a held block) |
 | Shift+K | Quark rotation lock |
 | Z (hold) + 1-3 | Quark hotbar swapper |
-| Ctrl+E (hold) | Effortless Building radial menu |
+| Ctrl+I (hold) | Effortless Building radial menu |
 | Ctrl+Z / Ctrl+Y | Effortless Building undo / redo |
 | Numpad - | Effortless Building modifier settings |
 | Shift+V | Easy Villagers: pick up villager |
@@ -105,6 +105,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Ctrl+H | Mekanism HUD on/off |
 | Shift+H | Neo Vitae: edit HUD layout |
 | Ctrl+K | Skill trees (Pufferfish's Skills: Combat, Mining, Fishing, Iron's magic) |
+| Alt+L | Apotheosis World Tier screen |
 
 **Graphics and camera**
 | Key | Action |
@@ -144,21 +145,22 @@ Each change keeps two actions from firing from one key in normal play.
 | Occultism satchel | B | Alt+B | Backpack |
 | Occultism ender satchel | V | Alt+E | Voice chat menu |
 | Occultism storage accessor | N | Shift+N | Disable voice chat |
-| Tom's Storage terminal | B | Ctrl+B | Backpack |
+| Tom's Storage terminal | B | Alt+J | Backpack (Ctrl+B also fired while sprinting) |
 | Xaero new waypoint | B | Alt+U | Backpack |
 | Xaero enlarge minimap | Z | Alt+Y | Quark hotbar swapper |
 | FTB Chunks map | M | Shift+M | Xaero world map |
-| Mute microphone | M | Ctrl+M | Xaero world map |
+| Mute microphone | M | F4 | Xaero world map (Ctrl+M also fired while sprinting) |
 | Mekanism HUD | H | Ctrl+H | Voice chat hide icons |
 | Neo Vitae edit HUD | H | Shift+H | Voice chat hide icons |
 | Oritech implant controls | G | Shift+G | Voice chat group |
 | Forsaken Relics mode | G | Ctrl+G | Voice chat group (fires while a relic is worn) |
 | Forsaken Relics screen | K | Alt+K | Iris shader toggle |
 | Relics active abilities | Left Alt | Mouse 4 | Iron's Alt + scroll spell picking, and every Alt key above |
-| Quark variant selector | R | Ctrl+R | Combat Roll |
+| Quark variant selector | R | Alt+I | Combat Roll (Ctrl+R also fired while sprinting) |
+| Apotheosis World Tier screen | Ctrl+T | Alt+L | Chat while sprinting |
 | Quark rotation lock | K | Shift+K | Iris shader toggle |
 | Iris reload shaders | R | Shift+O | Combat Roll (a roll would reload shaders) |
-| Effortless Building radial | Left Alt | Ctrl+E | Create toolbox, Iron's spell bar, every Alt key above |
+| Effortless Building radial | Left Alt | Ctrl+I | Create toolbox, Iron's spell bar, every Alt key above (Ctrl+E also fired while sprinting) |
 | Effortless Building undo / redo | Z / Y | Ctrl+Z / Ctrl+Y | Quark hotbar swapper / Xaero minimap settings |
 | Effortless Building modifiers | Numpad + | Numpad - | Xaero quick waypoint |
 | Draconic Evolution place item | P | Shift+P | Social Interactions |
@@ -183,6 +185,7 @@ Each change keeps two actions from firing from one key in normal play.
   item (see the list above) share keys freely.
 
 ## Things to know
+- **Sprinting holds Ctrl**, and a held Ctrl turns your next key into a Ctrl+key combo. So no Ctrl combo sits on a key you press while running (E, T, R, B, M, 1-9, Q, F): Ctrl+E opened the build wheel instead of your inventory. The Ctrl combos left (Ctrl+K skills, Ctrl+H, Ctrl+G, Ctrl+U, Ctrl+Z/Y) are on keys you don't press mid-run. (Effortless Building ignores an Alt modifier, so its wheel is Ctrl+I.)
 - **Holding a modifier claims the key.** With Shift held, V picks up a villager instead of opening the voice menu;
   with Alt held, 1-3 run Vampirism actions instead of switching hotbar slots (Vampirism's own default). If a key "does
   nothing", check you're not holding Shift, Ctrl or Alt.
