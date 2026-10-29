@@ -15,7 +15,13 @@ Changes committed on master since the last release (**v1.0.0**; notes in the Git
 - **A fresh install skips Minecraft's first-launch screens** (accessibility setup, multiplayer warning, movement tutorial pop-ups).
 
 ## Check before this release
-- **In a game client** (server boots don't run client code): the Rogue Eye family's textures (Incomplete, Red-Hot, the new Rogue Eye, the eye in a portal frame), the Dormant Magical Eye, the eyes' lore tooltips, and a **Seeker's Compass** right-click on a server: the message appears, the needle turns, and the server doesn't stall (searches run a few ms per tick; tested on a server only).
+Verified on a test server and a fresh client install: the End-eye loot (every treasure room gives its eye, no random eyes elsewhere), the Rogue and Magical Eye recipes, Seeker's Compass searches (spread over ticks, never generate chunks), the new item textures in game, Distant Horizons on the server (LODs stream to clients, server stays at 20 TPS) and off in the Hollow, the new key layout and first-launch skip on a fresh install, Keybind Atlas on Alt+Q.
+
+Still needs a person in game (one tester can't cover these):
+- An eye's lore tooltip, and a **Seeker's Compass** right-click by a real player (message, needle turns).
+- A boss eye in a group fight: every fighter's Boss Loot Bag holds the eye.
+- Two players online: each shows on the other's Xaero minimap and world map.
+- Known: on 2 of 25 test launches the client crashed while loading ("Duplicate client extensions registration for create:belt", a race inside Create's registration); a relaunch always worked. Watch for it after the release.
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).

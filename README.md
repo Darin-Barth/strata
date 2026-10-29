@@ -95,6 +95,7 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 | `tools/build_ores.py` | The ore map: which ores spawn in which dimension, duplicate ores off ([ore map](docs/ore-map.md)) |
 | `tools/build_pet_loot.py` | Inventory Pets loot injection (chests and boss drops) |
 | `tools/build_quest_bags.py` | Quest loot bags: rarity pools, bag odds and textures |
+| `tools/build_end_eyes.py` | End portal eyes: guaranteed sources, the Rogue and Magical Eye recipes, Seeker's Compass targets, eye textures and lore ([end eyes](docs/end-eyes.md)); needs Pillow |
 | `tools/build_boss_bags.py` | One Boss Loot Bag texture per boss (colours from the boss's own texture, a themed emblem); needs Pillow |
 
 ### Everyday commands

@@ -99,7 +99,8 @@ The world is built for long-distance travel: big terrain, lots of structures, re
 - **Bosses:** L\_Ender's Cataclysm + Integrated Cataclysm (Create doors, puzzles, traps), Mowzie's Mobs, Bosses of Mass Destruction (NeoForge port "Bosses of Mass Destruction Forge").
 - **Dimensions:** Twilight Forest, Deeper and Darker, The Aether (a sky dimension fits the flying theme). Nether: Incendium. End: Nullscape.
 - **Reasons to keep exploring:** Apotheosis gear and gems; boss drops gating progression; Relics/Artifacts accessories.
-- **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips.
+- **End portal eyes** (`docs/end-eyes.md`): each of the 15 obtainable eyes has one guaranteed source (5 bosses, 5 treasure rooms, a Create craft and an Ars Nouveau craft, 3 spare recipes); never a random drop. The portal needs any 12 different ones. Craftable Seeker's Compasses find the treasure rooms.
+- **Making airships matter:** limited teleporting (Core rules), loot on high peaks and sky islands, Explorer's Compass / Nature's Compass to plan trips (the End-eye places are found with Seeker's Compasses instead).
 - **Pregenerate** the world with Chunky before anyone joins; heavy worldgen is the main server performance risk (see `docs/worldgen-profile.md`).
   1. **How it runs:** pregeneration is centered at the spawn. The Overworld runs with **C2ME** added to the pregeneration server only (never to the pack): Chunky, circle, 5,000-block radius, all CPU threads. The other dimensions run without C2ME, two at a time (`tools/pregen_dimensions.sh`). `tools/start_pregen.sh` is the Docker version of the Overworld step.
      - **Recommended sizes:** Overworld 5,000 (circle); Nether 1,250 around spawn/8; End 2,000 around 0/0; Pokémon world 2,000; Twilight Forest 1,500; Aether, Abyssal Plain and Hollow 1,000 around spawn.
@@ -107,7 +108,8 @@ The world is built for long-distance travel: big terrain, lots of structures, re
      - **Aether trap:** the Aether's `DungeonBlacklistFilter` placement filter calls `Level.getChunk` from inside worldgen and can deadlock a pregen. Keep the Aether pregen small (1,000 blocks) and let the rest generate on demand; if Chunky stalls in the Aether, skip that area.
   2. **Finish every worldgen-affecting change before pregenerating.** Pregenerated chunks never pick up later worldgen changes. That includes the Pokémon world's Cobblemon worldgen (apricorns, evolution-stone ores, Integrated Cobblemon gyms and Pokécenters), the Artifacts/IDAS chest fixes, the ore map (`docs/ore-map.md`, `tools/build_ores.py`), and any structure configs.
   3. **Pregenerate on a fast desktop** with the same pack, then copy the world to the server.
-  4. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false` (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`). Chunky keeps expanding the border in the background after launch if needed.
+  4. **Distant Horizons LODs:** after pregeneration, `/dh pregen start minecraft:overworld <x> <z> <chunk radius>` over the same area builds the distant terrain players see (it reads existing chunks only). A full Overworld at about 5,600 blocks took under 3 hours with 12 threads and about 165 MB, with no server lag. It can run on the live server or on the desktop copy (the database is `world/data/DistantHorizons.sqlite`).
+  5. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false` (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`). Chunky keeps expanding the border in the background after launch if needed.
 
 ## Pokémon world
 
