@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "567071bf8885e9bfa88a024563ba01235789b10234c1d0b01471d54dde4d01ce"
+hash = "951ff63f97ecf91cf288ec23aa70783c4c1bd70d63f9b8324bd15e45f22caa08"
 preserve = true
 
 [[files]]
@@ -7061,6 +7061,10 @@ file = "kubejs/startup_scripts/strata_boss_blast_cap.js"
 hash = "bd29d584239dff6ef4348b2dd085add7309de0bc5742a147a172ba7caa152837"
 
 [[files]]
+file = "kubejs/startup_scripts/strata_dh_chunky.js"
+hash = "2726fa6feb3aa5c2f7884e51f8c381d53212326ac705e2bf529ec896f7f42b3d"
+
+[[files]]
 file = "kubejs/startup_scripts/strata_end_eyes.js"
 hash = "0dda2914bebd59c9ce90e361bfe84b062d6a856e5ab3e25fe555a5d72f15634f"
 
@@ -7790,7 +7794,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "5ccf0484ad62375da054e1ef25e281b5bf7baec95cabae833c3ecc3c7864f95f"
+hash = "5b45e20daed191a3c0123521e173bc117284df9274ba68ba7a8de64b1924bceb"
 metafile = true
 
 [[files]]

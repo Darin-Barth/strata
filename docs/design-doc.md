@@ -166,7 +166,7 @@ Every heavy visual is client-side and optional, so weaker PCs turn it off and no
 **Visuals (client)**
 
 - Shaders via Iris: Complementary Reimagined as the default (low-to-high presets).
-- Distant Horizons (optional per player): big payoff for airship flight.
+- Distant Horizons (optional per player, also on the server): big payoff for airship flight. The server streams distant terrain built from the land that already exists (it never generates new terrain), so players see the world far past their render distance. It's off in the Hollow and the Abyssal Plain (`ignoredDimensionCsv`): it draws its terrain with its own fog and would see straight through theirs.
 - Fresh Animations + Entity Model Features + Entity Texture Features; Fusion for connected textures.
 - Atmospherics (per-biome fog, sky, clouds, stars); mostly replaced when shaders are on, so it mainly helps non-shader players. Check its biome-teleport menu is op-only.
 - Sound Physics Remastered, AmbientSounds, Falling Leaves, Camera Overhaul, LambDynamicLights. Xaero's for maps.
@@ -239,7 +239,7 @@ Test with all players early, before writing quests, so heavy mods are found by n
 10. Bosses of Mass Destruction (NeoForge port): summon each boss, check drops, and confirm the bosses keep their designed stats (Apotheosis must not scale them).
 11. Quark: after first launch, confirm config/quark-common.toml kept the disabled modules (sorting, easy transferring, tool restock, Pathfinder Maps, Ancient Tomes, Glimmering Weald) and look for other overlaps.
 12. Maps: Xaero's Minimap + World Map are the map mods. FTB Chunks has its own minimap and large map; turn the FTB minimap off in its client settings (and ship that as a default), then check that claims are still easy to see and manage from FTB Chunks' map.
-13. Client comfort and performance defaults: Camera Overhaul ships **off** (its camera roll and sway cause motion sickness while flying; players can turn it on), and Distant Horizons ships at 128 chunks, 4 threads and `PRE_EXISTING_ONLY` (no LOD worldgen; its `FEATURES` default causes 48 s freezes and an out-of-memory crash in singleplayer). Both files are `preserve = true`, so player changes survive updates. Check that both feel right.
+13. Client comfort and performance defaults: Camera Overhaul ships **off** (its camera roll and sway cause motion sickness while flying; players can turn it on), and Distant Horizons ships at 128 chunks, 4 threads and `PRE_EXISTING_ONLY` (no LOD worldgen; its `FEATURES` default causes 48 s freezes and an out-of-memory crash in singleplayer), off in the Hollow and the Abyssal Plain. Both files are `preserve = true`, so player changes survive updates. Check that both feel right.
 14. Pokémon world with a client: craft Alph Stone and a Johto Bell (`/give` a Bell Fragment), build and light a portal, and travel both ways. The starter screen should open on first arrival and never on join. The party HUD should hide in the Overworld and show in the Pokémon world. Wild Pokémon should spawn only in the Pokémon world (stand around in an Overworld plains for a few minutes). A wandering RCT trainer and a gym battle should work, and a trainer summoned in the Overworld should still battle.
 
 ## Decisions

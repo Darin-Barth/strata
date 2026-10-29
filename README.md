@@ -57,7 +57,7 @@ The full guide is in **[docs/JOINING.md](docs/JOINING.md)**. Short version:
 4. Give it **10–12 GB of memory** (8 GB minimum) and add `-XX:+UseZGC -XX:+ZGenerational` to its Java arguments.
 5. **Multiplayer → Add Server.** The server is whitelisted: ask the server admin to be added.
 
-**What you need:** a 64-bit PC with 16 GB of RAM or more (32 GB is comfortable), and a GPU that can run Sodium + Iris. Shaders, Distant Horizons and the other heavy visuals are optional and client-only. On a Mac, see the note in the joining guide.
+**What you need:** a 64-bit PC with 16 GB of RAM or more (32 GB is comfortable), and a GPU that can run Sodium + Iris. Shaders, Distant Horizons and the other heavy visuals are optional. With Distant Horizons, the server sends you the far-away terrain, so from an airship you see the world for kilometres. On a Mac, see the note in the joining guide.
 
 **Updating:** the pack and the server must be on the same version. Import each new `.mrpack` as a new instance; [docs/JOINING.md](docs/JOINING.md#updating) explains how to keep your settings and keybinds. The default key layout is listed in [docs/keybinds.md](docs/keybinds.md).
 
