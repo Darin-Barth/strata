@@ -103,7 +103,7 @@ q("trench", "The Trench", deps="sub", icon="alexscaves:abyssmarine", at=(15.75, 
 # --- survey track ---
 q("guide", "Field Guide", deps="rules", icon="minecraft:spyglass", at=(8.75, 7.5), tier=2,
   tasks=adv("fieldguide:first_discovery", title="Make your first discovery"), desc="""
-    Everything down here is new to science. Look at creatures and plants through a &espyglass&r to scan them into your &eField Guide&r, then open the guide with its key (Options > Controls > Field Guide).
+    Everything down here is new to science. Look at creatures and plants through a &espyglass&r to scan them into your &eField Guide&r, then open the guide with &eAlt+F&r.
 
     Each discovery fills in a page of notes.""")
 

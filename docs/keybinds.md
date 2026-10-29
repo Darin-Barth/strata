@@ -45,6 +45,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Key | Action |
 |---|---|
 | B | Sophisticated Backpack |
+| Alt+F | Field Guide (creature and plant journal) |
 | Alt+B | Occultism satchel |
 | Alt+E | Occultism ender satchel |
 | Shift+N | Occultism storage accessor |

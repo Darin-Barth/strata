@@ -154,7 +154,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "67234c91f06cd043a465199a5b51c800587e3dc53378ded8b6d8f4c68e0a4801"
+hash = "786dd0815c14c9b8e7e7fae669f4e9aab21cd182df686adc052dc36ad42b5920"
 
 [[files]]
 file = "config/drippyloadingscreen/options.txt"
@@ -370,7 +370,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "94980af345da2b9da1dcf478c8a221df6779e53609d5638fe7b7755508a1dc95"
+hash = "b46a11a66f453e7d253d1fcb1a99b767368c600ed2b7afeb3777a8a245977275"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -569,6 +569,10 @@ hash = "041bf0d2c3664751077d87e6f16d909e1a80303b891ec8d1b493eb3252c6c64d"
 [[files]]
 file = "config/weeping_angels-common.toml"
 hash = "4105ae0d8bfec37a2b99e2311042b00633d0c4cd8d31e3179e754ca1c31242d9"
+
+[[files]]
+file = "config/xaero/lib/common.cfg"
+hash = "d46dfe4bfd416bfcdd2b757d33744b4e4595f489b6507eae3c62f5389b11a7c1"
 
 [[files]]
 file = "config/xaero/minimap/profiles/default.cfg"

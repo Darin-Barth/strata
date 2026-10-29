@@ -80,3 +80,4 @@ key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown
 # and the game logs a GL error each time ("Invalid key -1"), which adds stutter.
 key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.right.alt
+key_key.fieldguide.open:key.keyboard.f:ALT
