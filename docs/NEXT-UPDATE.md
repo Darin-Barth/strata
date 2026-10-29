@@ -17,6 +17,8 @@ Changes committed on master since the last release (**v1.0.0**; notes in the Git
 ## Check before this release
 Verified on a test server and a fresh client install: the End-eye loot (every treasure room gives its eye, no random eyes elsewhere), the Rogue and Magical Eye recipes, Seeker's Compass searches (spread over ticks, never generate chunks), the new item textures in game, Distant Horizons on the server (LODs stream to clients, server stays at 20 TPS) and off in the Hollow, the new key layout and first-launch skip on a fresh install, Keybind Atlas on Alt+Q.
 
+Release rehearsal passed (final 1.1.0 build): a fresh server installed by packwiz booted with 0 KubeJS errors and no Distant Horizons/Chunky crash (the one CurseForge-excluded jar, Cataclysm: Spellbooks, placed by hand as on the live server); a fresh `.mrpack` client's first launch skipped the first-launch screens, got the new key layout and bound voice keys, showed "Strata 1.1" and joined.
+
 Still needs a person in game (one tester can't cover these):
 - An eye's lore tooltip, and a **Seeker's Compass** right-click by a real player (message, needle turns).
 - A boss eye in a group fight: every fighter's Boss Loot Bag holds the eye.
