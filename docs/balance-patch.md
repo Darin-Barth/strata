@@ -67,6 +67,7 @@ farmable.
 | G6 | Ars Nouveau **Stabilized Warp Scroll**: never used up, crosses dimensions, free to use | +2 echo shards in its Enchanting Apparatus recipe (gate M21, `tools/gates/build_magic.py`); the single-use Warp Scroll is unchanged |
 | G7 | **Inventory Pets** sources | legendary chest chance 2.5%; Cloud, Sun, Wither, Black Hole and Pufferfish also drop from a themed boss at 15% per player (`tools/build_pet_loot.py`); the Nether Portal pet only in Nether fortress and bastion chests; Slime pet chest-only |
 | G8 | **Boss loot** shared out by fighting, not by grabbing | every player who hit a boss gets a Boss Loot Bag with a full roll of its loot; boss materials scale with group size by design (`strata_boss_bags.js`) |
+| G9 | **End Remastered eyes** in chests (many structure mods reuse the vanilla chest tables, and Lootr gives every player their own roll) | chest chances cut to about a third (mineshaft 6%, desert temple 5%, dungeon 1% each, jungle temple 15%, buried treasure 12%, shipwreck 2%, outpost 12%, fortress 10%, bastion treasure 35%, igloo 35%; mansion unchanged at 10%); eyes from mobs and bosses unchanged (`kubejs/data/endrem/loot_table/`) |
 
 ## Still to check
 

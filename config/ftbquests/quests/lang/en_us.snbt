@@ -4523,11 +4523,11 @@
 		"&eSiamese Pet&r: brings you little gifts."
 		"&eHeart Pet&r: heals your friends and pets."
 		""
-		"Each pet has a &afavorite food&r (look at its tooltip). Keep some in your inventory."
+		"Each pet has a &afavorite food&r (look at its tooltip). Pets only eat from a &eFeed Bag&r in your inventory, never loose food, and only while the pet sits in your hotbar."
 	]
 	quest.64F6BE2D96AF4F37.title: "Snack Pack"
 	quest.64F6BE2D96AF4F37.quest_desc: [
-		"The &eFeed Bag&r holds pet food, so your pocket pets stay fed without clogging up your inventory."
+		"Pets only eat from a &eFeed Bag&r: put their favorite food inside and keep the bag anywhere in your inventory. Loose food in your inventory is never eaten."
 	]
 	task.19A971B240F4C220.title: "Collect five Inventory Pets"
 	quest.490063265F5E24D9.title: "Pet Collector"

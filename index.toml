@@ -322,7 +322,7 @@ hash = "3b10b230fa96ae848227f509a030a45710344bf3d22ea44aa403592695130623"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pets_critters.snbt"
-hash = "78e0e9dbfe46b7e2ec2f9f6c442df8bbe197d55e01811b7c91e9ac6a51c78c63"
+hash = "2407069937bdfe593af299b1b94b775226ce2f8e35d6936e4dd2673aca43a0dc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pokemon_world.snbt"
@@ -362,7 +362,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "380e1c5a05074e9ee7cf9869c14379a90db2f131e239ba0faade63fb5767750a"
+hash = "bcb4a963f0d682d6cd0927c3334d68e66c22b99ee8f9d1cce2c221c2ef14802d"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -2779,6 +2779,50 @@ hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 [[files]]
 file = "kubejs/data/draconicevolution/recipe/components/awakened_core.json"
 hash = "e03c78319f78620f56b8aee7dffe5b0194a8155b668bfc7cd84759100dc26fa4"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/abandoned_mineshaft.json"
+hash = "b4ff5c5061a3e41e0579af8d5f9791e56c92deb7a661fb165f4498279baa478c"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/bastion_treasure.json"
+hash = "1b0467a312a8c6eb8aa1d97cc7eed4239a3b3937c4761f34870065aa2610528a"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/buried_treasure.json"
+hash = "dae9a1f86b67051612766983fb0330b31e83b42c988063c273a488489769fe3d"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/desert_pyramid.json"
+hash = "144abfdcfc056cffd5f001f56c4e229ecf367f88d66860ee7eb29db733f9958e"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/igloo_chest.json"
+hash = "18a59912ec040cdb845cf8c92d8a8bbac2aacce93ebc56ac6f31f567d16b8f65"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/jungle_temple.json"
+hash = "2f65b3c5409fc5b8d90199aaf0e91579006b3184310f764a3c63e807b3f7012e"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/nether_bridge.json"
+hash = "de5ab60963a9da9aeac17fd5be680b83a5a5bb4e9d9d80d7b2473cfed024abc7"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/pillager_outpost.json"
+hash = "ffbc61f21186746dbbe42c694e5c06df5a3534c02473be6dced4dd35d139772d"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/shipwreck_treasure.json"
+hash = "97b2f4e76f6ed62ae2c46ca796700b27f61e0d2b35e11197e40f7fa8f80112f0"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/simple_dungeon.json"
+hash = "81108fe80969b40b14cfe5543213e5e2969ea4043e4742b3d83dd55afc0684dd"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/chests/woodland_mansion.json"
+hash = "aa848bc9eb117a2d05c43c50faa062a3bc300de089401f292dbd72f0a2b864e2"
 
 [[files]]
 file = "kubejs/data/extendedcrafting/recipe/ultimate_catalyst.json"

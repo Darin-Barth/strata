@@ -90,13 +90,14 @@ q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chic
     &eSiamese Pet&r: brings you little gifts.
     &eHeart Pet&r: heals your friends and pets.
 
-    Each pet has a &afavorite food&r (look at its tooltip). Keep some in your inventory.""",
+    Each pet has a &afavorite food&r (look at its tooltip). Pets only eat from a
+    &eFeed Bag&r in your inventory, never loose food, and only while the pet sits in your hotbar.""",
   rewards=[give("inventorypets:nugget_coal", 16), give("inventorypets:nugget_lapis", 8)])
 
-q("feed_bag", "Snack Pack", deps="pocket_pet", icon="inventorypets:feed_bag", optional=True,
+q("feed_bag", "Snack Pack", deps="pocket_pet", icon="inventorypets:feed_bag",
   tasks=item("inventorypets:feed_bag"), desc="""
-    The &eFeed Bag&r holds pet food, so your pocket pets stay fed without
-    clogging up your inventory.""",
+    Pets only eat from a &eFeed Bag&r: put their favorite food inside and keep the bag
+    anywhere in your inventory. Loose food in your inventory is never eaten.""",
   rewards=[give("inventorypets:nugget_lapis", 8)])
 
 q("pet_collector", "Pet Collector", deps="pocket_pet", icon="inventorypets:pet_siamese", tier=3,

@@ -6,6 +6,8 @@ Changes committed on master since the last release (**v1.0.0**; notes in the Git
 - **No mob griefing of terrain:** creeper explosions (vanilla and modded creepers) still hurt, but break no blocks; endermen can't pick up blocks. TNT and other explosions are unchanged. (Server side: takes effect with a server restart.)
 - **Voice chat keys have defaults: push-to-talk on Caps Lock, whisper on Right Alt** (new installs and players who never set them): left unbound, the game logged an error every tick and stuttered. Players with an older install: bind both in Options > Controls.
 - **No more "replace failed" warnings:** Inventory Profiles Next's big on-screen and sound alerts when a tool is about to break, or can't be swapped for a spare, are off. Its auto-refill still works. (Client side: comes with the next `.mrpack`.)
+- **End portal eyes are rarer in chests:** about a third as common as before (they turned up too often with so many dungeon mods and per-player chests). Eyes from mobs and bosses are unchanged. (Server side: takes effect with a server restart.)
+- **Pet food explained:** pets only eat from a Feed Bag in your inventory (with the pet in your hotbar), never loose food. The pets quest now says so, and the Feed Bag quest is no longer optional.
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).

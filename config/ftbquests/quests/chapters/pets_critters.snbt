@@ -274,7 +274,6 @@
 			y: 6.0d
 			dependencies: ["2EAEB13007DBA1D1"]
 			icon: { id: "inventorypets:feed_bag" }
-			optional: true
 			tasks: [
 				{
 					id: "422BACA0EC93D8B5"
