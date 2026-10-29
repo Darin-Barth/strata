@@ -43,7 +43,8 @@ The first time you load into the world it takes a minute; that's normal for a pa
 The server and the pack must be on the **same version**, or you'll be disconnected when joining. When a
 new version, download the new `.mrpack` from the releases page and import it the same way as a new instance. To keep
 your keybinds and settings, copy `options.txt` (and `config/` if you changed mod settings) from the old instance
-folder into the new one before launching (instance → **⋮ → Open folder**).
+folder into the new one before launching (instance → **⋮ → Open folder**). An old `options.txt` also brings back the old key
+layout; when an update changes keys, Options > Controls > Key Binds > **Reset All** switches to the new one.
 
 ## Good to know
 - Open the quest book from the **quest button in your inventory**. Start with the **Welcome to Strata** chapter; it
@@ -51,4 +52,5 @@ folder into the new one before launching (instance → **⋮ → Open folder**).
 - Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
 - Difficulty is per player: press **Alt+L** to pick your Apotheosis World Tier once you unlock more.
+- Lost track of a key? Press **Alt+Q** for **Keybind Atlas**: a map of your keyboard and mouse showing what every key does and which mod it's from. You can search it and rebind keys right on the map. The full layout is in the [keybind guide](keybinds.md).
 - If something seems broken or too easy, tell the server admin: fixes ship as small updates.

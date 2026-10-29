@@ -154,7 +154,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "28760e47df4144e996bb890a6091bc41eb2b11e5a1b0493a5371bf8a699ad0bc"
+hash = "99ba501517cd8e244a79c95019231d919505d629b38f8c3c494a97c94118e42d"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -8313,6 +8313,11 @@ metafile = true
 [[files]]
 file = "mods/kambrik.pw.toml"
 hash = "45fea8478dcb03828ca2a0824483fa90561765f18fc437957b642bf366ec352b"
+metafile = true
+
+[[files]]
+file = "mods/keybind-atlas.pw.toml"
+hash = "78f8c67a3aa981339fd1046030acfe41f902c4e6cbede8db0a62e8c1399af0d3"
 metafile = true
 
 [[files]]

@@ -82,3 +82,4 @@ key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.right.alt
 key_key.fieldguide.open:key.keyboard.f:ALT
 key_key.apotheosis.open_world_tier_select:key.keyboard.l:ALT
+key_key.keybindatlas.open_keyboard:key.keyboard.q:ALT
