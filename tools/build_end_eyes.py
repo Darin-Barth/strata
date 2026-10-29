@@ -78,12 +78,14 @@ def ing(i):
 
 INC = f"{NS}:incomplete_rogue_eye"
 RECIPES = {
-    # Rogue Eye, step 1: a Create production line. Two loops of: deploy a precision mechanism, deploy an
-    # electron tube, pour in lava (it heats the metal), press. It comes off the line red-hot.
+    # Rogue Eye, step 1: a Create production line. Two loops of: deploy a brass sheet (the housing), deploy a
+    # precision mechanism, deploy an electron tube, pour in lava (it heats the metal), press. It comes off red-hot.
     "rogue_eye_assembly": {
         "type": "create:sequenced_assembly", "ingredient": ing("minecraft:ender_eye"), "loops": 2,
         "results": [{"id": f"{NS}:red_hot_rogue_eye"}], "transitional_item": {"id": INC},
         "sequence": [
+            {"type": "create:deploying", "ingredients": [ing(INC), ing("create:brass_sheet")],
+             "results": [{"id": INC}]},
             {"type": "create:deploying", "ingredients": [ing(INC), ing("create:precision_mechanism")],
              "results": [{"id": INC}]},
             {"type": "create:deploying", "ingredients": [ing(INC), ing("create:electron_tube")],
@@ -158,9 +160,9 @@ MACHINE = {  # light, mid, dark per part; outline
     "hot": {"housing": ("ffc46a", "f07a22", "b23e10"), "ring": ("e0662a", "b8461a", "7a2a10"),
             "lens": ("fff0a0", "ffb030", "e06a10"), "pupil": "7a1e06", "glint": "fffbe0", "rivet": "fff2c0",
             "outline": "3a0c04"},
-    "incomplete": {"housing": ("9aa3ac", "737c86", "4c535b"), "ring": ("5c646d", "444b53", "2e3339"),
-                   "lens": ("23272c", "1b1e22", "141619"), "pupil": "0e1012", "glint": None, "rivet": "c4ccd4",
-                   "outline": "1a1d21"},
+    "incomplete": {"housing": ("d9b25e", "a8803a", "735420"), "ring": ("5c646d", "444b53", "2e3339"),
+                   "lens": ("23272c", "1b1e22", "141619"), "pupil": "0e1012", "glint": None, "rivet": "e8d8a8",
+                   "outline": "2a1a0a"},
 }
 
 
@@ -168,9 +170,9 @@ def hexc(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4)) + (255,)
 
 
-def machine_eye(variant):
+def machine_eye(variant, pal=None):
     import math
-    pal = MACHINE[variant]
+    pal = pal or MACHINE[variant]
     im = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
     missing = {1, 4, 6} if variant == "incomplete" else set()  # teeth not fitted yet
     for y in range(16):
@@ -210,6 +212,32 @@ def machine_eye(variant):
     return out
 
 
+# The Red-Hot Rogue Eye pulses: frames blend the hot colours toward white-hot and back (an animated strip).
+WHITE_HOT = {"housing": ("fff4c8", "ffd27a", "ff8a2a"), "ring": ("ffb060", "f0802a", "c0501a"),
+             "lens": ("fffff0", "ffe8a0", "ffb040"), "pupil": "c04010", "glint": "ffffff", "rivet": "fffbe8",
+             "outline": "5a1806"}
+HOT_PULSE = (0.0, 0.2, 0.45, 0.65, 0.45, 0.2)
+
+
+def mix(a, b, t):
+    ca, cb = hexc(a), hexc(b)
+    return "".join(f"{round(ca[i] + (cb[i] - ca[i]) * t):02x}" for i in range(3))
+
+
+def hot_eye():
+    frames = []
+    for t in HOT_PULSE:
+        pal = {}
+        for k, v in MACHINE["hot"].items():
+            w = WHITE_HOT[k]
+            pal[k] = tuple(mix(a, b, t) for a, b in zip(v, w)) if isinstance(v, tuple) else mix(v, w, t)
+        frames.append(machine_eye("hot", pal))
+    strip = Image.new("RGBA", (16, 16 * len(frames)), (0, 0, 0, 0))
+    for i, f in enumerate(frames):
+        strip.alpha_composite(f, (0, 16 * i))
+    return strip
+
+
 FRAME_TOP = ["rbbbbbbr",  # the Rogue Eye seated in a portal frame, seen from above (8x8, used twice)
              "bsssssst",
              "bsLGGgst",
@@ -246,9 +274,12 @@ def textures(mods, out):
     dormant = ImageEnhance.Brightness(ImageEnhance.Color(tex("magical_eye")).enhance(0.1)).enhance(0.6)
     d = os.path.join(out, "assets", NS, "textures", "item")
     os.makedirs(d, exist_ok=True)
-    for name, im in (("incomplete_rogue_eye", machine_eye("incomplete")), ("red_hot_rogue_eye", machine_eye("hot")),
+    for name, im in (("incomplete_rogue_eye", machine_eye("incomplete")), ("red_hot_rogue_eye", hot_eye()),
                      ("dormant_magical_eye", dormant)):
         im.save(os.path.join(d, name + ".png"))
+    with open(os.path.join(d, "red_hot_rogue_eye.png.mcmeta"), "w", encoding="utf-8", newline="\n") as f:
+        json.dump({"animation": {"frametime": 4, "interpolate": True}}, f)
+        f.write("\n")
     e = os.path.join(out, "assets", "endrem", "textures")
     os.makedirs(os.path.join(e, "item"), exist_ok=True)
     os.makedirs(os.path.join(e, "block", "eyes"), exist_ok=True)

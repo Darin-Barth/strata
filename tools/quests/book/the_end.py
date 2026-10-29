@@ -159,13 +159,15 @@ q("rogue_assembly", "Red-Hot Rogue Eye", deps="eyes", icon="strata:red_hot_rogue
     The Rogue Eye is lost; you have to &eforge&r one on a Create &eSequenced Assembly&r line.
     Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:
 
-    1. &eDeployer&r holding a &ePrecision Mechanism&r
-    2. &eDeployer&r holding an &eElectron Tube&r
-    3. &eSpout&r with &e250 mB of lava&r (it heats the metal)
-    4. &eMechanical Press&r
+    1. &eDeployer&r holding a &eBrass Sheet&r (the housing)
+    2. &eDeployer&r holding a &ePrecision Mechanism&r
+    3. &eDeployer&r holding an &eElectron Tube&r
+    4. &eSpout&r with &e250 mB of lava&r (it heats the metal)
+    5. &eMechanical Press&r
 
     It comes off the line as a glowing &6Red-Hot Rogue Eye&r. Press &eR&r on it in EMI to see the steps,
-    and hold &eW&r over each machine for its Ponder scene. You'll need 2 of each part per eye.""")
+    and hold &eW&r over each machine for its Ponder scene. Per eye: 2 brass sheets, 2 precision
+    mechanisms, 2 electron tubes and 500 mB of lava.""")
 
 q("eye_rogue", "Rogue Eye", deps="rogue_assembly", icon="endrem:rogue_eye", tier=3,
   tasks=item("endrem:rogue_eye"), desc="""

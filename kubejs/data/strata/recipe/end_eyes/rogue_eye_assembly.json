@@ -20,6 +20,22 @@
           "item": "strata:incomplete_rogue_eye"
         },
         {
+          "item": "create:brass_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "strata:incomplete_rogue_eye"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "strata:incomplete_rogue_eye"
+        },
+        {
           "item": "create:precision_mechanism"
         }
       ],

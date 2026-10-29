@@ -370,7 +370,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "53465b6677c1a1ac58f70b0156a30855b699ef8aeea76720e2e2c9cea30d313f"
+hash = "94980af345da2b9da1dcf478c8a221df6779e53609d5638fe7b7755508a1dc95"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -586,7 +586,7 @@ hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
 [[files]]
 file = "kubejs/assets/endrem/lang/en_us.json"
-hash = "32cfe5e94e9d758b06ab8b970038f763f6aef27a54b77c3ec09ef98774043479"
+hash = "a146f0f5e1e853dec261733f54f3e8d06a2211b640e0fa91c79fb8f976eab685"
 
 [[files]]
 file = "kubejs/assets/endrem/textures/block/eyes/rogue_eye.png"
@@ -1142,7 +1142,7 @@ hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/incomplete_rogue_eye.png"
-hash = "358f9c18cdf1ef891e4396d639569767f92ae370e7b5046244513f4940a3d033"
+hash = "f5c977a006f42acc3757c642330604f46057fa82bea89e46dfbb02dfcf728ad0"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/leviathan_lure.png"
@@ -1190,7 +1190,11 @@ hash = "0476a5c396e06e18f6268c70cad7b2dd46d1cafa946d33590da7b5562d0ffda7"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/red_hot_rogue_eye.png"
-hash = "764fa8be6f1ff5ab108089a43881dd6fc6a2325ab9942c50bd9485bfd6576583"
+hash = "7b205cfee0be613908f3bad36c7fd6f446a2724b2d6f2c202d73031e1ba85f8d"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/red_hot_rogue_eye.png.mcmeta"
+hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/tidecaller.png"
@@ -6050,7 +6054,7 @@ hash = "5675cb2f07e5a6f6288f5bf961cb816b3e8d018c451afd02174165cba2dfc88b"
 
 [[files]]
 file = "kubejs/data/strata/recipe/end_eyes/rogue_eye_assembly.json"
-hash = "3ae1dca3a8b94d10e9a18e907aa7d75e910cfde1be5ef4b9672cbbecd64691de"
+hash = "611613d331d0ce17cbb2bb389156779be4dd87e4f239c693cb32cbb504b46e02"
 
 [[files]]
 file = "kubejs/data/strata/recipe/end_eyes/rogue_eye_quenching.json"
