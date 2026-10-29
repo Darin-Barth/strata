@@ -12,7 +12,7 @@
 		{
 			id: "715AC9DE038B7686"
 			x: 0.0d
-			y: 6.0d
+			y: 12.75d
 			dependencies: ["69686D19E9C55435"]
 			icon: { id: "minecraft:end_stone" }
 			shape: "gear"
@@ -33,9 +33,10 @@
 		{
 			id: "236EBDDB0F644A14"
 			x: 1.75d
-			y: 6.0d
+			y: 12.75d
 			dependencies: ["715AC9DE038B7686"]
 			icon: { id: "endrem:old_eye" }
+			size: 1.25d
 			tasks: [
 				{ id: "26151D8249390209", type: "checkmark" }
 			]
@@ -50,197 +51,384 @@
 			]
 		}
 		{
-			id: "03517C30EA185420"
+			id: "7F567AF96500B7B1"
 			x: 3.5d
 			y: 0.0d
 			dependencies: ["236EBDDB0F644A14"]
-			icon: { id: "endrem:old_eye" }
+			icon: { id: "endrem:cryptic_eye" }
+			shape: "hexagon"
 			optional: true
 			tasks: [
-				{
-					id: "54DF2A61A25ACE40"
-					type: "item"
-					item: { count: 1, id: "endrem:old_eye" }
-				}
-				{
-					id: "1855C77501669BAF"
-					type: "item"
-					item: { count: 1, id: "endrem:rogue_eye" }
-				}
-				{
-					id: "20DD634D066471A2"
-					type: "item"
-					item: { count: 1, id: "endrem:lost_eye" }
-				}
+				{ id: "7A01D97ABA3FB3DD", type: "checkmark" }
 			]
 			rewards: [
-				{ id: "6BB78F37CF24C74A", type: "xp", xp: 500 }
-				{
-					id: "712E73D8BB9EA1BA"
-					type: "item"
-					item: { count: 1, id: "strata:loot_bag" }
-				}
+				{ id: "73681F7C9D2D2581", type: "xp", xp: 100 }
+				{ id: "141B99585F49B040", type: "xp", xp: 50 }
 			]
 		}
 		{
-			id: "134273CA31BAD4C9"
+			id: "3DFE8D969DC659E2"
 			x: 3.5d
 			y: 1.5d
 			dependencies: ["236EBDDB0F644A14"]
-			icon: { id: "endrem:black_eye" }
-			optional: true
+			icon: { id: "minecraft:compass" }
 			tasks: [
-				{
-					id: "75C2C25C9032FD23"
-					type: "item"
-					item: { count: 1, id: "endrem:black_eye" }
-				}
-				{
-					id: "28E25B78E4E7D5CB"
-					type: "item"
-					item: { count: 1, id: "endrem:cold_eye" }
-				}
-				{
-					id: "7CE23871F0F36326"
-					type: "item"
-					item: { count: 1, id: "endrem:corrupted_eye" }
-				}
+				{ id: "5B8C8B33055131AB", type: "checkmark" }
 			]
 			rewards: [
-				{ id: "6C0C87A3870851CA", type: "xp", xp: 500 }
+				{ id: "64F5A8ABFE45E7FD", type: "xp", xp: 250 }
 				{
-					id: "0585386DEC40A038"
+					id: "4BF613B942942F6A"
 					type: "item"
-					item: { count: 1, id: "strata:loot_bag" }
+					item: { count: 1, id: "strata:loot_bag_small" }
 				}
 			]
 		}
 		{
-			id: "02A8D9A58EC477C7"
+			id: "575AB50DB9AE4EB7"
 			x: 3.5d
 			y: 3.0d
 			dependencies: ["236EBDDB0F644A14"]
-			icon: { id: "endrem:nether_eye" }
-			optional: true
+			icon: { id: "endrem:guardian_eye" }
 			tasks: [
 				{
-					id: "648FDB1A9CABD50F"
+					id: "00482E381CD58597"
 					type: "item"
-					item: { count: 1, id: "endrem:nether_eye" }
-				}
-				{
-					id: "236ED23F04CECFB9"
-					type: "item"
-					item: { count: 1, id: "endrem:cursed_eye" }
+					item: { count: 1, id: "endrem:guardian_eye" }
 				}
 			]
 			rewards: [
-				{ id: "7B949068BBF0712C", type: "xp", xp: 500 }
+				{ id: "7CD29A88A560EB02", type: "xp", xp: 500 }
 				{
-					id: "381155B7B785F816"
+					id: "76CC4834D4B918A1"
 					type: "item"
 					item: { count: 1, id: "strata:loot_bag" }
 				}
 			]
 		}
 		{
-			id: "4F2ED499D2E5CCC6"
+			id: "18892B849D7A60F0"
 			x: 3.5d
 			y: 4.5d
 			dependencies: ["236EBDDB0F644A14"]
 			icon: { id: "endrem:wither_eye" }
-			optional: true
 			tasks: [
 				{
-					id: "40B4C76EB0A8A5E3"
-					type: "item"
-					item: { count: 1, id: "endrem:magical_eye" }
-				}
-				{
-					id: "783888C6311EB1BE"
-					type: "item"
-					item: { count: 1, id: "endrem:guardian_eye" }
-				}
-				{
-					id: "1CBCACF316583167"
+					id: "614CC1DFAEF93CA5"
 					type: "item"
 					item: { count: 1, id: "endrem:wither_eye" }
 				}
 			]
 			rewards: [
-				{ id: "25245C44C830C51C", type: "xp_levels", xp_levels: 10 }
+				{ id: "46B267CBC437C9DB", type: "xp_levels", xp_levels: 10 }
 				{
-					id: "6E6AF67B03B5F9BB"
+					id: "2A4E1D0587351E5C"
 					type: "item"
 					item: { count: 1, id: "strata:loot_bag_large" }
 				}
 			]
 		}
 		{
-			id: "6FBD8A0F9924EBA9"
+			id: "45AB6822D714FD3C"
 			x: 3.5d
 			y: 6.0d
 			dependencies: ["236EBDDB0F644A14"]
-			icon: { id: "endrem:exotic_eye" }
-			optional: true
+			icon: { id: "endrem:cursed_eye" }
 			tasks: [
 				{
-					id: "4735BE1595FBE77B"
+					id: "3047591B0DFBCE47"
 					type: "item"
-					item: { count: 1, id: "endrem:witch_eye" }
-				}
-				{
-					id: "6BB8E2AD6E0B9981"
-					type: "item"
-					item: { count: 1, id: "endrem:undead_eye" }
-				}
-				{
-					id: "7859789E7A5C6FEE"
-					type: "item"
-					item: { count: 1, id: "endrem:exotic_eye" }
+					item: { count: 1, id: "endrem:cursed_eye" }
 				}
 			]
 			rewards: [
-				{ id: "544D4D2404056922", type: "xp", xp: 500 }
+				{ id: "5F06014F66EB557C", type: "xp_levels", xp_levels: 10 }
 				{
-					id: "6BE30D82D183E23B"
+					id: "4DCC2E617FBD0F86"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "4E4AE589BB3E6FAD"
+			x: 3.5d
+			y: 7.5d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:nether_eye" }
+			tasks: [
+				{
+					id: "391E6A57F0A7D954"
+					type: "item"
+					item: { count: 1, id: "endrem:nether_eye" }
+				}
+			]
+			rewards: [
+				{ id: "52E49F772CD9A263", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "3565FA68EB3034AC"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "659E5B2C90E00401"
+			x: 3.5d
+			y: 9.0d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:corrupted_eye" }
+			tasks: [
+				{
+					id: "7A115AA302706D86"
+					type: "item"
+					item: { count: 1, id: "endrem:corrupted_eye" }
+				}
+			]
+			rewards: [
+				{ id: "02448F93201455CA", type: "xp_levels", xp_levels: 20 }
+				{
+					id: "29320B669FCDF3C2"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
+			]
+		}
+		{
+			id: "324D3B2EDD9D9C10"
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:old_eye" }
+			tasks: [
+				{
+					id: "576241D733D555AB"
+					type: "item"
+					item: { count: 1, id: "endrem:old_eye" }
+				}
+			]
+			rewards: [
+				{ id: "03391E2AEDF66B21", type: "xp", xp: 500 }
+				{
+					id: "4D9E2AED77264002"
 					type: "item"
 					item: { count: 1, id: "strata:loot_bag" }
 				}
 			]
 		}
 		{
-			id: "6D264E5C108F4DE9"
+			id: "21C8170898C83098"
 			x: 3.5d
-			y: 7.5d
+			y: 12.0d
 			dependencies: ["236EBDDB0F644A14"]
 			icon: { id: "endrem:evil_eye" }
-			optional: true
 			tasks: [
 				{
-					id: "3C6DCF154588A3D0"
+					id: "4435AF614075D3FA"
 					type: "item"
 					item: { count: 1, id: "endrem:evil_eye" }
 				}
+			]
+			rewards: [
+				{ id: "1E52C2A0C0E56C2E", type: "xp", xp: 500 }
 				{
-					id: "04A09E740D355AF5"
+					id: "22D8186379BB4FE4"
 					type: "item"
-					item: { count: 1, id: "endrem:cryptic_eye" }
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "02055C53D27A8B8E"
+			x: 3.5d
+			y: 13.5d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:lost_eye" }
+			tasks: [
+				{
+					id: "039478E7AA0C4A69"
+					type: "item"
+					item: { count: 1, id: "endrem:lost_eye" }
 				}
 			]
 			rewards: [
-				{ id: "32A67EDE0BAB6474", type: "xp", xp: 500 }
+				{ id: "5881F94AE8209629", type: "xp", xp: 500 }
 				{
-					id: "2862AF07F841CDA1"
+					id: "778A01532B000785"
 					type: "item"
 					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "77AF62C1EBEDC293"
+			x: 3.5d
+			y: 15.0d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:black_eye" }
+			tasks: [
+				{
+					id: "53A339C6425DCED7"
+					type: "item"
+					item: { count: 1, id: "endrem:black_eye" }
+				}
+			]
+			rewards: [
+				{ id: "0391F5D61121A222", type: "xp", xp: 500 }
+				{
+					id: "6BD64ADEB13726F0"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "227C6BCBBAC9EACD"
+			x: 3.5d
+			y: 16.5d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:cold_eye" }
+			tasks: [
+				{
+					id: "5B6295A00E99D023"
+					type: "item"
+					item: { count: 1, id: "endrem:cold_eye" }
+				}
+			]
+			rewards: [
+				{ id: "474DC8BB58818CD9", type: "xp", xp: 500 }
+				{
+					id: "1522A98C2D1F1B1D"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "75C82B8A15C9B399"
+			x: 3.5d
+			y: 18.0d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "strata:uncured_rogue_eye" }
+			tasks: [
+				{
+					id: "56D18B52E876901A"
+					type: "item"
+					item: { count: 1, id: "strata:uncured_rogue_eye" }
+				}
+			]
+			rewards: [
+				{ id: "506B0E2FBF01CA32", type: "xp", xp: 500 }
+				{
+					id: "55D2626F3237EF6D"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "659E932BB4598A19"
+			x: 5.25d
+			y: 18.0d
+			dependencies: ["75C82B8A15C9B399"]
+			icon: { id: "endrem:rogue_eye" }
+			tasks: [
+				{
+					id: "0BA3C56A4C25ED09"
+					type: "item"
+					item: { count: 1, id: "endrem:rogue_eye" }
+				}
+			]
+			rewards: [
+				{ id: "1C1915F669EB4A0C", type: "xp", xp: 500 }
+				{
+					id: "68964DD8B8F27485"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "5DE26DD88D0C36CF"
+			x: 3.5d
+			y: 19.5d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "strata:dormant_magical_eye" }
+			tasks: [
+				{
+					id: "1249ABBC954AF195"
+					type: "item"
+					item: { count: 1, id: "strata:dormant_magical_eye" }
+				}
+			]
+			rewards: [
+				{ id: "545F7D7694A9CB45", type: "xp", xp: 500 }
+				{
+					id: "251450BBAEFC1E12"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "1390E7ED12B98B92"
+			x: 5.25d
+			y: 19.5d
+			dependencies: ["5DE26DD88D0C36CF"]
+			icon: { id: "endrem:magical_eye" }
+			tasks: [
+				{
+					id: "346AF14E8658E82C"
+					type: "item"
+					item: { count: 1, id: "endrem:magical_eye" }
+				}
+			]
+			rewards: [
+				{ id: "6F704B38BA5EF5BD", type: "xp", xp: 500 }
+				{
+					id: "60F52C36E828D381"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "38BF38674088EAC8"
+			x: 3.5d
+			y: 21.0d
+			dependencies: ["236EBDDB0F644A14"]
+			icon: { id: "endrem:exotic_eye" }
+			optional: true
+			tasks: [
+				{
+					id: "6BF3849BBD191F73"
+					type: "item"
+					item: { count: 1, id: "endrem:undead_eye" }
+				}
+				{
+					id: "678ABDCD61644D21"
+					type: "item"
+					item: { count: 1, id: "endrem:witch_eye" }
+				}
+				{
+					id: "303677C2F348EFA9"
+					type: "item"
+					item: { count: 1, id: "endrem:exotic_eye" }
+				}
+			]
+			rewards: [
+				{ id: "7B405D65AEF9E23D", type: "xp", xp: 250 }
+				{
+					id: "1ED3A11D56AF46C0"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
 				}
 			]
 		}
 		{
 			id: "68F92998FAC6D0FA"
 			x: 3.5d
-			y: 12.0d
+			y: 25.5d
 			dependencies: ["236EBDDB0F644A14"]
 			icon: { id: "minecraft:stone_bricks" }
 			tasks: [
@@ -264,7 +452,7 @@
 		{
 			id: "2E741F46B79C4891"
 			x: 5.25d
-			y: 12.0d
+			y: 25.5d
 			dependencies: ["68F92998FAC6D0FA"]
 			icon: { id: "endrem:ancient_portal_frame" }
 			tasks: [
@@ -282,7 +470,7 @@
 		{
 			id: "5E75F524FF7A94CC"
 			x: 7.0d
-			y: 12.0d
+			y: 25.5d
 			dependencies: ["2E741F46B79C4891"]
 			icon: { id: "minecraft:dragon_head" }
 			shape: "diamond"
@@ -313,7 +501,7 @@
 		{
 			id: "145D0A13C975E69D"
 			x: 8.75d
-			y: 9.0d
+			y: 22.5d
 			dependencies: ["5E75F524FF7A94CC"]
 			icon: { id: "minecraft:wither_skeleton_skull" }
 			tasks: [
@@ -331,7 +519,7 @@
 		{
 			id: "3AC1D988D35F91DA"
 			x: 8.75d
-			y: 11.625d
+			y: 25.125d
 			dependencies: ["5E75F524FF7A94CC"]
 			icon: { id: "minecraft:chorus_flower" }
 			tasks: [
@@ -355,7 +543,7 @@
 		{
 			id: "494C6E6B0082D282"
 			x: 10.5d
-			y: 10.5d
+			y: 24.0d
 			dependencies: ["3AC1D988D35F91DA"]
 			icon: { id: "minecraft:purpur_block" }
 			tasks: [
@@ -373,7 +561,7 @@
 		{
 			id: "6AB5B049A1AA7DAD"
 			x: 10.5d
-			y: 12.75d
+			y: 26.25d
 			dependencies: ["3AC1D988D35F91DA"]
 			icon: { id: "minecraft:purpur_pillar" }
 			tasks: [
@@ -396,7 +584,7 @@
 		{
 			id: "13A2FAE22B655DE7"
 			x: 12.25d
-			y: 12.0d
+			y: 25.5d
 			dependencies: ["6AB5B049A1AA7DAD"]
 			icon: { id: "minecraft:shulker_shell" }
 			tasks: [
@@ -418,7 +606,7 @@
 		{
 			id: "3EE901DAF546034E"
 			x: 12.25d
-			y: 13.5d
+			y: 27.0d
 			dependencies: ["6AB5B049A1AA7DAD"]
 			icon: { id: "minecraft:elytra" }
 			tasks: [
@@ -440,7 +628,7 @@
 		{
 			id: "39AFFA04EBA96910"
 			x: 8.75d
-			y: 15.0d
+			y: 28.5d
 			dependencies: ["5E75F524FF7A94CC"]
 			icon: { id: "minecraft:compass" }
 			shape: "hexagon"

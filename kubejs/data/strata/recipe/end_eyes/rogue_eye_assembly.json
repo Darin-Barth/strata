@@ -1,0 +1,80 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:ender_eye"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "id": "strata:uncured_rogue_eye"
+    }
+  ],
+  "transitional_item": {
+    "id": "strata:incomplete_rogue_eye"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "strata:incomplete_rogue_eye"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "strata:incomplete_rogue_eye"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "strata:incomplete_rogue_eye"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "strata:incomplete_rogue_eye"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "strata:incomplete_rogue_eye"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "strata:incomplete_rogue_eye"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "strata:incomplete_rogue_eye"
+        }
+      ],
+      "results": [
+        {
+          "id": "strata:incomplete_rogue_eye"
+        }
+      ]
+    }
+  ]
+}

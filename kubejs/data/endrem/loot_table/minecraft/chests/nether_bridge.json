@@ -1,26 +1,4 @@
 {
   "type": "minecraft:chest",
-  "pools": [
-    {
-      "name": "eye_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "endrem:nether_eye",
-          "weight": 100,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 900
-        }
-      ]
-    }
-  ]
+  "pools": []
 }

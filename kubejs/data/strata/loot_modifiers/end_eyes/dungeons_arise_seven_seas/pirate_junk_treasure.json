@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_treasure"
+    }
+  ],
+  "table": "strata:end_eyes/black_eye"
+}

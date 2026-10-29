@@ -81,6 +81,16 @@
     "strata:pets/boss/cataclysm/ignis",
     "strata:pets/boss/cataclysm/ender_guardian",
     "strata:pets/boss/cataclysm/scylla",
-    "strata:pets/boss/cataclysm/the_leviathan"
+    "strata:pets/boss/cataclysm/the_leviathan",
+    "strata:end_eyes/betterdeserttemples/tomb_pharaoh",
+    "strata:end_eyes/betterjungletemples/treasure",
+    "strata:end_eyes/dungeons_arise/foundry_treasure",
+    "strata:end_eyes/dungeons_arise_seven_seas/corsair_corvette_treasure",
+    "strata:end_eyes/dungeons_arise_seven_seas/pirate_junk_treasure",
+    "strata:end_eyes/dungeons_arise/undead_pirate_ship_treasure",
+    "strata:end_eyes/minecraft/igloo_chest",
+    "strata:end_eyes/cataclysm/ignis",
+    "strata:end_eyes/cataclysm/netherite_monstrosity",
+    "strata:end_eyes/cataclysm/the_harbinger"
   ]
 }

@@ -42,6 +42,7 @@ Strata is built around travel and earning your power, so a few things work diffe
 - **Difficulty is per player.** Pick your own Apotheosis World Tier (Ctrl+T) once you unlock more. Bosses keep their designed strength.
 - **Every dimension has its own ores.** The basics are at home; osmium is richest under the Abyssal Plain's seafloor, mithril grows in the Hollow, and draconium waits in the Nether and the End ([ore map](docs/ore-map.md)).
 - **Late tiers are boss-gated.** Nuclear power, top storage, the best rockets and the strongest magic need boss drops, Hollow Embers or Abyssal Pearls ([gate map](docs/gate-map.md)).
+- **The End is a quest.** The portal needs 12 different eyes, and none of them is luck: each is kept by a boss, sealed in one kind of treasure room, or built on a Create line or with Ars Nouveau magic. Seeker's Compasses lead the way if you'd rather not search ([end eyes](docs/end-eyes.md)).
 - **Quests pay out in loot bags.** Bigger quests give bigger bags; each one rolls a rarity from Common to Legendary, then an item from across the pack.
 - **Boss fights are group events.** Nothing drops on the floor: everyone who hits a boss gets their own Boss Loot Bag with a full share of its loot.
 - **Death is forgiving.** Another player can revive you while you bleed out (PlayerRevive). If nobody does, your items wait in a grave (Corail Tombstone), and you respawn with a Grave's Key that takes you back to it once.

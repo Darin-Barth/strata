@@ -55,8 +55,8 @@ q("desert_temple", "Better Desert Temple", deps="lootr", icon="minecraft:sandsto
     dungeons, mineshafts, witch huts, ocean monuments and Nether fortresses.
 
     Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure.
-    Watch your step, and keep an eye out for strange &5eyes&r in the chests
-    (you'll need them later, see &5The End&r).""",
+    Watch your step: the Pharaoh's tomb, the jungle temple's treasure room and other
+    places each guard one of the &5eyes&r that open the End (see &5The End&r).""",
   rewards=[give("minecraft:golden_apple", 1)])
 
 q("jungle_temple", "Better Jungle Temple", deps="desert_temple", icon="minecraft:mossy_cobblestone",

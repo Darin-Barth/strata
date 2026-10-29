@@ -2578,7 +2578,7 @@
 	quest.03F9FEFC8BC511A2.quest_desc: [
 		"&eYUNG's&r mods rebuild the classic structures: desert temples, jungle temples, dungeons, mineshafts, witch huts, ocean monuments and Nether fortresses."
 		""
-		"Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure. Watch your step, and keep an eye out for strange &5eyes&r in the chests (you'll need them later, see &5The End&r)."
+		"Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure. Watch your step: the Pharaoh's tomb, the jungle temple's treasure room and other places each guard one of the &5eyes&r that open the End (see &5The End&r)."
 	]
 	task.2CFF4B1CD2FC451F.title: "Explore a jungle temple"
 	quest.580BC1D468ECFDBC.title: "Better Jungle Temple"
@@ -2698,7 +2698,7 @@
 	quest.7E4CFCB8C2D54009.quest_desc: [
 		"&eYUNG's Better Nether Fortresses&r are huge brick mazes with bridges, towers and halls. Blazes and wither skeletons live here."
 		""
-		"Loot every chest: some hold a &5Nether Eye&r, one of the eyes you need to reach the End."
+		"The wither skeletons here drop the skulls that summon &5the Wither&r, keeper of the Wither Eye."
 	]
 	quest.6C41D3B98C3724FB.title: "Blaze Rods"
 	quest.6C41D3B98C3724FB.quest_desc: [
@@ -2787,7 +2787,7 @@
 		"The Nether opens up a lot:"
 		""
 		"&bNetherite&r and Nether materials feed the mid tiers of the Tech chapters."
-		"&5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need."
+		"&5The End&r: Ignis keeps the Cursed Eye and the Monstrosity the Nether Eye, two of the eyes you need."
 		"&cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs."
 		"&cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether."
 	]
@@ -3197,67 +3197,167 @@
 	quest.715AC9DE038B7686.quest_desc: [
 		"The End is a dark dimension of floating end-stone islands, home of the &5Ender Dragon&r."
 		""
-		"Getting there is a real quest in Strata. The portal is deep inside a giant &eIntegrated Stronghold&r, and it needs &e12 different magic eyes&r from &eEnd Remastered&r, gathered from all over the world."
+		"Getting there is a real quest in Strata. The portal is deep inside a giant &eIntegrated Stronghold&r, and it needs &e12 different magic eyes&r from &eEnd Remastered&r, taken from bosses, treasure rooms and your own workshops."
 		""
-		"This chapter tells you where every eye comes from."
+		"This chapter tells you exactly where every eye is."
 	]
 	quest.236EBDDB0F644A14.title: "Not Your Usual Eyes"
 	quest.236EBDDB0F644A14.quest_desc: [
-		"&cVanilla Eyes of Ender don't work here.&r They can't open the portal and won't fly toward the stronghold when thrown."
+		"&cVanilla Eyes of Ender don't open the portal here&r (they're still an ingredient)."
 		""
-		"Instead there are &e16 different End Remastered eyes&r. You need &e12 different ones&r: one for each of the 12 frames around the portal. The quests below show where to find them. Collect as a team!"
-	]
-	quest.03517C30EA185420.title: "Eyes of the Old World"
-	quest.03517C30EA185420.quest_desc: [
-		"&eOld Eye&r: desert temple chests and dungeon chests."
-		"&eRogue Eye&r: jungle temple chests."
-		"&eLost Eye&r: mineshaft chests and dungeon chests."
+		"The portal has &e12 frames&r, and each one needs a &edifferent&r End Remastered eye. You can get &e15 eyes&r, and every one has a &eguaranteed&r source. No lucky drops:"
 		""
-		"YUNG's desert temples, jungle temples and dungeons count."
-	]
-	quest.134273CA31BAD4C9.title: "Eyes of Sea and Snow"
-	quest.134273CA31BAD4C9.quest_desc: [
-		"&eBlack Eye&r: buried treasure and shipwreck treasure chests (treasure maps help!)."
-		"&eCold Eye&r: igloo chests (check for the hidden basement)."
-		"&eCorrupted Eye&r: pillager outpost chests."
-	]
-	quest.02A8D9A58EC477C7.title: "Eyes of the Nether"
-	quest.02A8D9A58EC477C7.quest_desc: [
-		"&eNether Eye&r: Nether fortress chests."
-		"&eCursed Eye&r: the treasure room of a bastion remnant."
+		"&c5 from bosses&r: beat the keeper, take its eye."
+		"&e5 from places&r: one treasure chest in one kind of structure always holds the eye."
+		"&b2 you build&r: one on a Create assembly line, one with Ars Nouveau magic."
+		"&73 spares&r: crafted from mob drops, to use instead of eyes you can't or won't get."
 		""
-		"See the &cThe Nether&r chapter for both places."
+		"Everyone gets their own copy: every player who fights a boss gets its eye in their Boss Loot Bag, and treasure chests have loot for each player. One finished portal works for everyone."
 	]
-	quest.4F2ED499D2E5CCC6.title: "Eyes of the Mighty"
-	quest.4F2ED499D2E5CCC6.quest_desc: [
-		"&eMagical Eye&r: dropped by &eEvokers&r (woodland mansions and raids), and found in woodland mansion chests."
-		"&eGuardian Eye&r: dropped by the &eElder Guardian&r in ocean monuments."
-		"&eWither Eye&r: dropped by &5the Wither&r."
-	]
-	quest.6FBD8A0F9924EBA9.title: "Eyes You Make"
-	quest.6FBD8A0F9924EBA9.quest_desc: [
-		"&eWitch Eye&r: an Eye of Ender plus a &eWitch Pupil&r (witches drop them)."
-		"&eUndead Eye&r: an &eUndead Soul&r (from skeleton horses) with a phantom membrane, bone, rotten flesh and ghast tear."
-		"&eExotic Eye&r: an Eye of Ender with two &econduits&r, two glow ink sacs and four corals."
+	task.7A01D97ABA3FB3DD.title: "I've heard the legend"
+	quest.7F567AF96500B7B1.title: "The Sixteen Eyes"
+	quest.7F567AF96500B7B1.quest_desc: [
+		"&oLong ago, the way to the End was sealed. Its sight was split into sixteen eyes and scattered across the world, each given to a keeper who would never give it up: a pharaoh and a pirate crew, kings and monsters, a forge and a frozen temple."
 		""
-		"So vanilla eyes are still useful as an ingredient! Press &eR&r on an eye for its recipe."
+		"&oSome were lost so completely that they can only be made again, by a machine that remembers Redstone, or by magic that remembers the Evoker."
+		""
+		"&oFifteen have been found. The sixteenth, the &5Cryptic Eye&r&o, never has."
+		""
+		"Hover over any eye: its tooltip says who keeps it."
 	]
-	quest.6D264E5C108F4DE9.title: "Strange Eyes"
-	quest.6D264E5C108F4DE9.quest_desc: [
-		"&eEvil Eye&r: some &eCleric&r villagers sell one (emeralds and a rabbit's foot)."
-		"&eCryptic Eye&r: very rarely appears in your inventory when you &eenchant&r something at an enchanting table. Keep enchanting!"
+	quest.3DFE8D969DC659E2.title: "Seeker's Compasses"
+	quest.3DFE8D969DC659E2.quest_desc: [
+		"Exploring is free, but if you'd rather go straight there, craft a &eSeeker's Compass&r for that place (look up \"Seeker's Compass\" in EMI). Each one costs a compass, an Eye of Ender and something that fits the place."
+		""
+		"&eRight-click&r it: the needle turns toward the nearest place that holds that eye, and a message says roughly how far. No coordinates: follow the needle. Right-click again any time to aim it from where you are now. It only works in the Overworld."
+		""
+		"Compasses: Pharaoh's Tomb, Jungle Temple, Foundry, Pirate Ship, Frostbitten Temple and Ocean Monument. The &eExplorer's Compass&r can't find these places."
+		""
+		"For the boss lairs use &eCataclysm's eyes&r: throw one and it flies toward its lair (&6Eye of Flame&r: Ignis, &6Eye of Monstrous&r: the Netherite Monstrosity,"
+		"&6Eye of Mech&r: the Harbinger). See the Cataclysm chapter."
+	]
+	quest.575AB50DB9AE4EB7.title: "Guardian Eye"
+	quest.575AB50DB9AE4EB7.quest_desc: [
+		"&o\"It has seen many warriors drown.\""
+		""
+		"Every &eElder Guardian&r drops a &eGuardian Eye&r. Each &eocean monument&r has three of them, so a group can take one each (only the player who kills it gets the eye)."
+		""
+		"Bring &eWater Breathing&r, &eNight Vision&r and milk for their Mining Fatigue. Find a monument with a &eSeeker's Compass: Ocean Monument&r, a cartographer's Ocean Explorer Map, or by sailing the deep ocean. The easiest boss eye."
+	]
+	quest.18892B849D7A60F0.title: "Wither Eye"
+	quest.18892B849D7A60F0.quest_desc: [
+		"&o\"Has witnessed destruction. Maybe it also witnessed your stuff disappear.\""
+		""
+		"&5The Wither&r always drops a &eWither Eye&r, one for everyone who fights it. Build it from 4 soul sand in a T with 3 &ewither skeleton skulls&r on top (wither skeletons in Nether fortresses drop the skulls)."
+		""
+		"Summon it far from home: it blows up everything around it."
+	]
+	quest.45AB6822D714FD3C.title: "Cursed Eye"
+	quest.45AB6822D714FD3C.quest_desc: [
+		"&o\"Ignis swore to guard it, and the oath burned itself into him.\""
+		""
+		"&6Ignis&r, the burning knight of the &cBurning Arena&r (Nether), always drops the &eCursed Eye&r, one for everyone who fights him. Find the arena with an &6Eye of Flame&r; the &eCataclysm&r chapter shows how to call him up."
+	]
+	quest.4E4AE589BB3E6FAD.title: "Nether Eye"
+	quest.4E4AE589BB3E6FAD.quest_desc: [
+		"&o\"Lost by a demon in the war between the Aether and the Nether.\""
+		""
+		"The &cNetherite Monstrosity&r keeps it locked in its forge-heart. It lives in the &cSoul Black Smith&r in the Nether: find it with an &6Eye of Monstrous&r. It always drops the &eNether Eye&r, one for everyone who fights it."
+	]
+	quest.659E5B2C90E00401.title: "Corrupted Eye"
+	quest.659E5B2C90E00401.quest_desc: [
+		"&o\"The eye of a greedy king, wired into the Harbinger by those who wanted his fortune.\""
+		""
+		"&7The Harbinger&r sleeps deep in the &7Ancient Factory&r (find it with an &6Eye of Mech&r) and only wakes for a &eNether Star&r, so beat the Wither first. It always drops the &eCorrupted Eye&r, one for everyone who fights it. The hardest eye of all."
+	]
+	quest.324D3B2EDD9D9C10.title: "Old Eye"
+	quest.324D3B2EDD9D9C10.quest_desc: [
+		"&o\"Buried with the Pharaoh, who swore to watch over the desert until the end of days.\""
+		""
+		"Every &edesert temple&r hides a &ePharaoh's Tomb&r: a throne room deep inside, with the Pharaoh's two treasure chests. Both always hold an &eOld Eye&r. The temple gives you &cMining Fatigue&r, so you can't dig around its traps: find the way in. Seeker's Compass: &ePharaoh's Tomb&r (gold and sandstone)."
+	]
+	quest.21C8170898C83098.title: "Evil Eye"
+	quest.21C8170898C83098.quest_desc: [
+		"&o\"A holy talisman against bad luck, hidden behind a hundred traps.\""
+		""
+		"Every &ejungle temple&r has one &etreasure room&r, past arrow traps, pits and a lever puzzle. Its chest always holds an &eEvil Eye&r. Seeker's Compass: &eJungle Temple&r (emeralds and mossy cobblestone)."
+	]
+	quest.02055C53D27A8B8E.title: "Lost Eye"
+	quest.02055C53D27A8B8E.quest_desc: [
+		"&o\"Forged by the first blacksmiths in the fires of the Foundry.\""
+		""
+		"The &cFoundry&r is a huge underground forge-dungeon (When Dungeons Arise), full of lava, furnaces and its old workers. Its &etreasure chests&r, in the big crossing halls, always hold a &eLost Eye&r. Bring fire resistance. Seeker's Compass: &eFoundry&r (iron and blast furnaces)."
+	]
+	quest.77AF62C1EBEDC293.title: "Black Eye"
+	quest.77AF62C1EBEDC293.quest_desc: [
+		"&o\"It gave sight to the legendary Black Pearl. Pirate captains still fight over it.\""
+		""
+		"Pirates sail the oceans: the &eCorsair Corvette&r, the &ePirate Junk&r and the ghostly &eUndead Pirate Ship&r. The captain's &etreasure chests&r always hold a &eBlack Eye&r. Expect a crew that shoots back. Seeker's Compass: &ePirate Ship&r (gold and boats)."
+	]
+	quest.227C6BCBBAC9EACD.title: "Cold Eye"
+	quest.227C6BCBBAC9EACD.quest_desc: [
+		"&o\"The Iceologers sealed it in ice before they vanished.\""
+		""
+		"The &bFrostbitten Temple&r in the snowy lands always holds a &eCold Eye&r in its treasure chest, but the &bFrostbitten Golem&r guards it."
+		"&eIgloos&r: about half of them hide a cellar (break the carpet in the floor to find the trapdoor), and that chest also holds a Cold Eye. Seeker's Compass: &eFrostbitten Temple&r (blue ice and snow)."
+	]
+	quest.75C82B8A15C9B399.title: "Uncured Rogue Eye"
+	quest.75C82B8A15C9B399.quest_desc: [
+		"&o\"It taught our ancestors Redstone. Only a working machine can build it again.\""
+		""
+		"The Rogue Eye is lost; you have to &ebuild&r one on a Create &eSequenced Assembly&r line. Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:"
+		""
+		"1. &eDeployer&r holding a &ePrecision Mechanism&r"
+		"2. &eDeployer&r holding an &eElectron Tube&r"
+		"3. &eSpout&r with &e250 mB of lava&r"
+		"4. &eMechanical Press&r"
+		""
+		"Then it comes out as an &eUncured Rogue Eye&r. Press &eR&r on it in EMI to see the steps, and hold &eW&r over each machine for its Ponder scene. You'll need 2 of each part per eye."
+	]
+	quest.659E932BB4598A19.title: "Rogue Eye"
+	quest.659E932BB4598A19.quest_desc: [
+		"The new eye is still soft. &eCure&r it in soul-fire smoke:"
+		""
+		"Put a &bsoul campfire&r (or soul fire on soul sand) in front of an &eEncased Fan&r and run the fan. Everything in its air stream past the fire gets \"haunted\". Drop the Uncured Rogue Eye into the stream, or run a belt through it, and it becomes the &eRogue Eye&r."
+	]
+	quest.5DE26DD88D0C36CF.title: "Dormant Magical Eye"
+	quest.5DE26DD88D0C36CF.quest_desc: [
+		"&o\"Without this eye the Evoker has no power.\""
+		""
+		"The Magical Eye was lost with the Evokers' magic. &eBind&r a new one on Ars Nouveau's"
+		"&eEnchanting Apparatus&r: an &eEye of Ender&r on the apparatus, and on the &eArcane Pedestals&r around it:"
+		""
+		"the 7 essences (&cFire&r, &9Water&r, &2Earth&r, &fAir&r, &bAbjuration&r, &dConjuration&r, &6Manipulation&r) and a &eSource Gem Block&r."
+		""
+		"It uses &e5,000 source&r from nearby Source Jars and gives a &eDormant Magical Eye&r. Press &eR&r on it in EMI to see the recipe."
+	]
+	quest.1390E7ED12B98B92.title: "Magical Eye"
+	quest.1390E7ED12B98B92.quest_desc: [
+		"Now &ewake&r it. Put the Dormant Magical Eye in an &eImbuement Chamber&r, with &eArcane Pedestals&r next to the chamber holding an &eAmethyst Cluster&r, a &eGhast Tear&r and a &eSource Gem Block&r."
+		""
+		"The chamber slowly draws &e5,000 source&r from nearby Source Jars. When it's full, the eye opens: the &eMagical Eye&r."
+	]
+	quest.38BF38674088EAC8.title: "Spare Eyes"
+	quest.38BF38674088EAC8.quest_desc: [
+		"Three eyes have nothing to guard them, so anyone can make them. Use them in place of any eyes you can't or won't get (a boss you'd rather skip, say). You only need 12."
+		""
+		"&eUndead Eye&r: an &eUndead Soul&r (skeleton horses drop them) with a phantom membrane, a bone, rotten flesh and a ghast tear."
+		"&eWitch Eye&r: an Eye of Ender and a &eWitch Pupil&r (witches drop them)."
+		"&eExotic Eye&r: an Eye of Ender with two conduits, two glow ink sacs and four corals."
+		""
+		"Press &eR&r on an eye in EMI for its recipe."
 	]
 	task.63C169EE7E205894.title: "Find the stronghold"
 	quest.68F92998FAC6D0FA.title: "Integrated Stronghold"
 	quest.68F92998FAC6D0FA.quest_desc: [
-		"Since eyes don't fly, use the &eExplorer's Compass&r to find the stronghold."
+		"Since eyes don't fly, use the &eExplorer's Compass&r to find the stronghold. You don't need the eyes to go in: find it early and come back with them."
 		""
 		"&eIntegrated Stronghold&r is &chuge&r: libraries, prisons, halls and Create-powered puzzles and traps. Bring lots of torches, food and friends, and set waypoints as you go so you can find the way out."
 	]
 	task.29FD8ECFE606127D.title: "Enter the End"
 	quest.2E741F46B79C4891.title: "Twelve Eyes"
 	quest.2E741F46B79C4891.quest_desc: [
-		"Deep inside, the portal room has a ring of &e12 Ancient Portal Frames&r. Put a &edifferent&r End Remastered eye in each frame. When all 12 are in, the portal opens."
+		"Deep inside, the portal room has a ring of &e12 Ancient Portal Frames&r. Put a &edifferent&r End Remastered eye in each frame (any 12 of the 15). When all 12 are in, the portal opens, for everyone."
 		""
 		"&cThere's no easy way back&r until you beat the dragon (or die). Bring a bed? No! Beds explode in the End. Bring blocks, a bow, potions and a pumpkin to wear so endermen leave you alone."
 	]

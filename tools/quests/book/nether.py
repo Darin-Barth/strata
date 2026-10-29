@@ -43,7 +43,7 @@ q("fortress", "Better Nether Fortress", deps="expert", icon="minecraft:nether_br
     &eYUNG's Better Nether Fortresses&r are huge brick mazes with bridges, towers and halls.
     Blazes and wither skeletons live here.
 
-    Loot every chest: some hold a &5Nether Eye&r, one of the eyes you need to reach the End.""",
+    The wither skeletons here drop the skulls that summon &5the Wither&r, keeper of the Wither Eye.""",
   rewards=[give("minecraft:golden_carrot", 16)])
 
 q("blaze", "Blaze Rods", deps="fortress", icon="minecraft:blaze_rod", tier=2,
@@ -156,6 +156,6 @@ q("where_next", "Where Next?", deps=["fortress", "netherite_gear"], icon="minecr
     The Nether opens up a lot:
 
     &bNetherite&r and Nether materials feed the mid tiers of the Tech chapters.
-    &5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need.
+    &5The End&r: Ignis keeps the Cursed Eye and the Monstrosity the Nether Eye, two of the eyes you need.
     &cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs.
     &cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether.""")

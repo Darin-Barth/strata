@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "strata:uncured_rogue_eye"
+    }
+  ],
+  "results": [
+    {
+      "id": "endrem:rogue_eye"
+    }
+  ]
+}

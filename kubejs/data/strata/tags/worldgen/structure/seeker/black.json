@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "dungeons_arise_seven_seas:corsair_corvette",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:pirate_junk",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise:undead_pirate_ship",
+      "required": false
+    }
+  ]
+}

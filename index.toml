@@ -6,6 +6,10 @@ hash = "567071bf8885e9bfa88a024563ba01235789b10234c1d0b01471d54dde4d01ce"
 preserve = true
 
 [[files]]
+file = "config/EndRemastered-NeoForge/endrem.json"
+hash = "61eae5780b9b41d327e3c59c1d1df845a56bcd8f3d2ac95ea3c086b53ffff9d4"
+
+[[files]]
 file = "config/Mekanism/tools-materials-startup.toml"
 hash = "24866c4ae027992393bb2041c9c9f8d0b2d89edcf2633eae19d2992b9addc7b9"
 
@@ -173,6 +177,10 @@ file = "config/excessive_utilities-server.toml"
 hash = "b7dbe3878cb459f09f57f190a828c63c18c6c458ecd959854c377bfe49f23940"
 
 [[files]]
+file = "config/explorerscompass-common.toml"
+hash = "b1b2fbbe5b027cdc30f63cb24071f3c8f4b83c26ddb7202035125f0258549788"
+
+[[files]]
 file = "config/fancymenu/assets/strata/background.png"
 hash = "88a47bd763a9d53c3d9e3b9e04fa1903b2646bcc0c4380398452761741395624"
 
@@ -338,7 +346,7 @@ hash = "74b037c79d2e78cbbdf47bd05810e380c085c2bc7a873b2381dfb6adca844b00"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_end.snbt"
-hash = "c7a45961b04c33dedf70bd1e1ee8b8a306ee77fb1d1926fdd63a109a4a47282d"
+hash = "0a6cd9843063a808a9ea5c0b6eb39d34cb23cbf1d7869aac9ac2489645626369"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/theurgy.snbt"
@@ -362,7 +370,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "bcb4a963f0d682d6cd0927c3334d68e66c22b99ee8f9d1cce2c221c2ef14802d"
+hash = "2d3b34482546e5781e92f8c7d6b8af1658dbecea8a55bfe1a71f4116a20b801e"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -575,6 +583,10 @@ preserve = true
 [[files]]
 file = "icon.png"
 hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
+
+[[files]]
+file = "kubejs/assets/endrem/lang/en_us.json"
+hash = "32cfe5e94e9d758b06ab8b970038f763f6aef27a54b77c3ec09ef98774043479"
 
 [[files]]
 file = "kubejs/assets/irons_nouveau/lang/en_us.json"
@@ -1109,12 +1121,20 @@ file = "kubejs/assets/strata/textures/item/boss_bag/twilightforest_ur_ghast.png"
 hash = "22a819a673026b4c7a3bf99fcd29a2f0ce09e7e5afb89c50d527d674c2591d51"
 
 [[files]]
+file = "kubejs/assets/strata/textures/item/dormant_magical_eye.png"
+hash = "02d7ee60240146ace2cb2963c122c7ff55f59acef4564b5a6061a71c09d71b33"
+
+[[files]]
 file = "kubejs/assets/strata/textures/item/hollow_ember.png"
 hash = "3f16080a4e47d8aebdb381b9d9686e8105da4df530ec25968ff4ddea1d6dd4ac"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/hollow_ember.png.mcmeta"
 hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/incomplete_rogue_eye.png"
+hash = "d984346643e46049a3e01f21c76e5223eb2c6ab30795b845ae30a464d123fb3a"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/leviathan_lure.png"
@@ -1167,6 +1187,10 @@ hash = "36304de8ab173283b9cae378ce5480582a87d22db78962b44b4f45a580dfd303"
 [[files]]
 file = "kubejs/assets/strata/textures/item/tidecaller.png.mcmeta"
 hash = "0ac39bbed6164f84aea70b2716966415db03ccfc726d57adadf55b361797b75e"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/uncured_rogue_eye.png"
+hash = "74ee21a93e5facdad1c6577d48d909be1b04ee7a1e9dd092a32284f7af1d15ba"
 
 [[files]]
 file = "kubejs/client_scripts/pokeworld_party_hud.js"
@@ -2782,47 +2806,59 @@ hash = "e03c78319f78620f56b8aee7dffe5b0194a8155b668bfc7cd84759100dc26fa4"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/abandoned_mineshaft.json"
-hash = "b4ff5c5061a3e41e0579af8d5f9791e56c92deb7a661fb165f4498279baa478c"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/bastion_treasure.json"
-hash = "1b0467a312a8c6eb8aa1d97cc7eed4239a3b3937c4761f34870065aa2610528a"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/buried_treasure.json"
-hash = "dae9a1f86b67051612766983fb0330b31e83b42c988063c273a488489769fe3d"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/desert_pyramid.json"
-hash = "144abfdcfc056cffd5f001f56c4e229ecf367f88d66860ee7eb29db733f9958e"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/igloo_chest.json"
-hash = "18a59912ec040cdb845cf8c92d8a8bbac2aacce93ebc56ac6f31f567d16b8f65"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/jungle_temple.json"
-hash = "2f65b3c5409fc5b8d90199aaf0e91579006b3184310f764a3c63e807b3f7012e"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/nether_bridge.json"
-hash = "de5ab60963a9da9aeac17fd5be680b83a5a5bb4e9d9d80d7b2473cfed024abc7"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/pillager_outpost.json"
-hash = "ffbc61f21186746dbbe42c694e5c06df5a3534c02473be6dced4dd35d139772d"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/shipwreck_treasure.json"
-hash = "97b2f4e76f6ed62ae2c46ca796700b27f61e0d2b35e11197e40f7fa8f80112f0"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/simple_dungeon.json"
-hash = "81108fe80969b40b14cfe5543213e5e2969ea4043e4742b3d83dd55afc0684dd"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/chests/woodland_mansion.json"
-hash = "aa848bc9eb117a2d05c43c50faa062a3bc300de089401f292dbd72f0a2b864e2"
+hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/entities/elder_guardian.json"
+hash = "0594bb989c05abdd0e6c66e37875549c31a85ab38682c4fe56523324b0725b2b"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/entities/evoker.json"
+hash = "901e3d1a8d2fcf1d60dc648470b7e458ff9e74823c20130fa1d7ce0e32ccbd86"
+
+[[files]]
+file = "kubejs/data/endrem/loot_table/minecraft/entities/wither.json"
+hash = "a16cb7cfe24ac2658547a6b64b1d6133d9336abb89e22fb3fd184b5f4c74e461"
 
 [[files]]
 file = "kubejs/data/extendedcrafting/recipe/ultimate_catalyst.json"
@@ -3474,7 +3510,7 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "64e175638705834a937ece4a0007abcc48e24f4223f2d0744bb99dcbd62966b8"
+hash = "5c2f4d06b23ec528a11b811f6f3a89490f1b0aef83e4454511883b8f00a44e5b"
 
 [[files]]
 file = "kubejs/data/neovitae/recipe/alchemytable/reagent_teleposition.json"
@@ -5325,6 +5361,46 @@ file = "kubejs/data/strata/loot_modifiers/abyssal_pearl/joshie/trial_chamber_che
 hash = "2a29311ac7bca14928635afc880f35ef3c9d10804de7de4e97f97d8d8f384311"
 
 [[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/betterdeserttemples/tomb_pharaoh.json"
+hash = "53ea346f977ee5116dd1e5dd7822741ccc852fe740f3067aed685b62ce7aec93"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/betterjungletemples/treasure.json"
+hash = "09c83f6f5cc80ea6b3ad9b415981994a403b863d95293b62d7458d96b7dfbfd1"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/cataclysm/ignis.json"
+hash = "ee5617b5e8af4a0f14d5fb814846678bc633fceed8a382f7de7c1fee3fa67100"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/cataclysm/netherite_monstrosity.json"
+hash = "dc6dafbab13ff832105c29733c699405337f7e04308190c1ce41e1677dc6b7e3"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/cataclysm/the_harbinger.json"
+hash = "3ebf27a6332bf9a38b49ac3320f479fe21a95f3b5cdad6ee6acaefd7277f73ac"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/dungeons_arise/foundry_treasure.json"
+hash = "d8d4537057b2b210c4a15ed682567688ec7fbc3d3657ad08a5d443f87d429b16"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/dungeons_arise/undead_pirate_ship_treasure.json"
+hash = "c028c07a708c307073337f9fa47e513cd046faa975160b3f064d96daa11a1722"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/dungeons_arise_seven_seas/corsair_corvette_treasure.json"
+hash = "a50e1ef98daa1ad6cc352f1932d36c940292ea224803fa406459366f5cdf3eb6"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/dungeons_arise_seven_seas/pirate_junk_treasure.json"
+hash = "66c4fb1219b8ab5f3d0e0339da1834c8981afd8ecae35413182ff1a24d9d41c4"
+
+[[files]]
+file = "kubejs/data/strata/loot_modifiers/end_eyes/minecraft/igloo_chest.json"
+hash = "60645f2a0d27808250c2dadfc279e44a68d5e5b7fbb3f60237ca50180d34a275"
+
+[[files]]
 file = "kubejs/data/strata/loot_modifiers/hollow_ember/graveyard/crypt_loot.json"
 hash = "04a7829c2c69a52980025c2ad43ce2c49449b3043e628112d61f3562c7ef43a9"
 
@@ -5575,6 +5651,38 @@ hash = "022ff3c9f414c62d00e9666838c49953ac8179634dc486aa1c5befd032bf3cb4"
 [[files]]
 file = "kubejs/data/strata/loot_modifiers/pets/rare/minecraft/woodland_mansion.json"
 hash = "44d671dafeb14e93e4595838d19f24758504c1797fea1edfeecdc4f58b8893eb"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/black_eye.json"
+hash = "7c04d8a79de08489c481584ad46b73de992106772e121f0186a206735bda0a36"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/cold_eye.json"
+hash = "ce0ab761311b76490708c756ce7475334776ca80b7f34d71662ff2bc5518c510"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/corrupted_eye.json"
+hash = "58fe273c6db4f7bfc12162ee0e1ff3315750ab94f0c6b8522671946ead7bba75"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/cursed_eye.json"
+hash = "1ac8a973453d5243810bc9d360fc2cd3a4e008832ca8d7bdb5f8fd77d9740a6e"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/evil_eye.json"
+hash = "ff72fd4b6f209c6a6bc1fd8d74c6efb0586f2741c7ed6a9e5ecbb13d5ef08c60"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/lost_eye.json"
+hash = "9bf878067e225246c20bae6ddfd594e238653ad6a76959535b34d966614a6b66"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/nether_eye.json"
+hash = "2c00a86cff1b2782dea40a33486d0ac3e4f754e08f9145f02ec0774c39e76517"
+
+[[files]]
+file = "kubejs/data/strata/loot_table/end_eyes/old_eye.json"
+hash = "381818f2b7de666062e47fdfe1218f501752eba3da061c6848a7ab544c6b2925"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/inject/abyssal_pearl.json"
@@ -5925,6 +6033,22 @@ file = "kubejs/data/strata/puffish_skills/config.json"
 hash = "afe82924139b0f252c358071e385b9cf40859c4c3c96d725f65ab6ac7472b9e2"
 
 [[files]]
+file = "kubejs/data/strata/recipe/end_eyes/magical_eye_awakening.json"
+hash = "d246c06c2fe759e17b8c505147c10fa2e9e3478a2d0eea046e365993cbfec902"
+
+[[files]]
+file = "kubejs/data/strata/recipe/end_eyes/magical_eye_binding.json"
+hash = "5675cb2f07e5a6f6288f5bf961cb816b3e8d018c451afd02174165cba2dfc88b"
+
+[[files]]
+file = "kubejs/data/strata/recipe/end_eyes/rogue_eye_assembly.json"
+hash = "b92983903db16cbc6bbe51d2303c1dc5f13cecfa5d79ada2e6792b324b419a32"
+
+[[files]]
+file = "kubejs/data/strata/recipe/end_eyes/rogue_eye_curing.json"
+hash = "1d596960f4a6299e479392158f4552e10cd171984df980dffb0847f799429375"
+
+[[files]]
 file = "kubejs/data/strata/tags/entity_type/boss_bags.json"
 hash = "7956bb12c18027b2114b36951c254ddc7385d3f2f563ad7c89c22f3376a2eff6"
 
@@ -6031,6 +6155,30 @@ hash = "33445edd0ef84c2404504b4d4474f63a959519884371ca8cd8766b589acfd96f"
 [[files]]
 file = "kubejs/data/strata/tags/worldgen/biome/none.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/black.json"
+hash = "580f00ecfa1101348d6ba0cd3b87da4d787abcc395ccf7c2ce248c9e5a319a51"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/cold.json"
+hash = "4268eb196cb31f7f0b1c3ac62ce0b0d033f540626fe61c7cf418eac10657586b"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/evil.json"
+hash = "9101ed09fe725b749b0f95bb85d94499dfcca83e9a44177fec2255a135def659"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/guardian.json"
+hash = "46a83ab0d20e54271caf17aa6dac27bf44c83a19d55d227674cb5f07da3b03c7"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/lost.json"
+hash = "a65e3f1872db93ae9f151c674f14c3fa858c1ec215f371735f220c43efd75a6b"
+
+[[files]]
+file = "kubejs/data/strata/tags/worldgen/structure/seeker/old.json"
+hash = "594a99f34c4b2032de96884d31689c6cd84f74daa26f5e3b35fc23947c2247d8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/abyssal_plain.json"
@@ -6825,6 +6973,10 @@ file = "kubejs/server_scripts/strata_elites.js"
 hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
 
 [[files]]
+file = "kubejs/server_scripts/strata_end_eyes.js"
+hash = "2f2a4d3cbbc3018231012ed28fa47d1d63c54990fdbe166fd022d79a8984439d"
+
+[[files]]
 file = "kubejs/server_scripts/strata_home.js"
 hash = "773c7a4e1858669a3e5e9af575efff1aed28272e7ed9917d11a3ca67d9ad0c2c"
 
@@ -6895,6 +7047,10 @@ hash = "b5bc8ec970c2b5a056d42a1add5851942f5ca8f99d7b591989af1a377566d76d"
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_blast_cap.js"
 hash = "bd29d584239dff6ef4348b2dd085add7309de0bc5742a147a172ba7caa152837"
+
+[[files]]
+file = "kubejs/startup_scripts/strata_end_eyes.js"
+hash = "fed66fb7786d83b366c8bdde2b14539b670c06903437449f734b390946980897"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_loot_bags.js"
