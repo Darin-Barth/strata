@@ -109,7 +109,7 @@ The world is built for long-distance travel: big terrain, lots of structures, re
   2. **Finish every worldgen-affecting change before pregenerating.** Pregenerated chunks never pick up later worldgen changes. That includes the Pokémon world's Cobblemon worldgen (apricorns, evolution-stone ores, Integrated Cobblemon gyms and Pokécenters), the Artifacts/IDAS chest fixes, the ore map (`docs/ore-map.md`, `tools/build_ores.py`), and any structure configs.
   3. **Pregenerate on a fast desktop** with the same pack, then copy the world to the server.
   4. **Distant Horizons LODs:** after pregeneration, `/dh pregen start minecraft:overworld <x> <z> <chunk radius>` over the same area builds the distant terrain players see (it reads existing chunks only). A full Overworld at about 5,600 blocks took under 3 hours with 12 threads and about 165 MB, with no server lag. It can run on the live server or on the desktop copy (the database is `world/data/DistantHorizons.sqlite`).
-  5. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false` (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`). Chunky keeps expanding the border in the background after launch if needed.
+  5. **Server settings:** 12 GB, `-XX:+UseZGC -XX:+ZGenerational`, `sync-chunk-writes=false`, view distance 8, simulation distance 6 (itzg: `MEMORY=12G`, `JVM_XX_OPTS`, `SYNC_CHUNK_WRITES=false`, `VIEW_DISTANCE=8`, `SIMULATION_DISTANCE=6`). At 10/8, four spread-out players kept the Overworld's main thread at about 62 ms per tick (16 TPS); Distant Horizons covers the far view. Chunky keeps expanding the border in the background after launch if needed.
 
 ## Pokémon world
 
