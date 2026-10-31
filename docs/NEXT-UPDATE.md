@@ -5,6 +5,7 @@ Changes committed on master since the last release (**v1.1.0**; notes in the Git
 ## Changes
 - **Inventory buttons no longer overlap:** Inventory Profiles Next shows only its Sort and Move All buttons (its sort-in-columns and sort-in-rows buttons covered the quest book button in your inventory and Sophisticated Backpacks' buttons in a backpack), and the Accessories button moved off the player preview. (Client side: comes with the next `.mrpack`; older installs can hide the two buttons in Inventory Profiles Next's settings, Gui tab.)
 - **Welcome quest "A Tavern Town" is now "Find a Village":** it assumed every world starts next to a tavern village; now any village counts. Progress already made on it is kept. (Server side: the quest book updates with the server restart.)
+- **Carry On picks up with Left Alt, not Shift:** hold **Left Alt** and right-click with an empty hand to pick up a block, chest or animal. Shift + right-click goes back to every other mod's own action (it opened Carry On instead of, for example, magic blocks). New installs get it automatically; older installs: Options > Controls > Carry On > Carry, set to Left Alt (or **Reset All**).
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).

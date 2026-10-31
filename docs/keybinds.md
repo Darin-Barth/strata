@@ -95,6 +95,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Ctrl+Z / Ctrl+Y | Effortless Building undo / redo |
 | Numpad - | Effortless Building modifier settings |
 | Shift+V | Easy Villagers: pick up villager |
+| Left Alt (hold) + right-click, empty hand | Carry On: pick up a block, chest or animal |
 | Shift+P | Draconic Evolution: place item |
 
 **Relics and gear HUDs**
@@ -167,6 +168,7 @@ Each change keeps two actions from firing from one key in normal play.
 | Effortless Building modifiers | Numpad + | Numpad - | Xaero quick waypoint |
 | Draconic Evolution place item | P | Shift+P | Social Interactions |
 | Easy Villagers pick up | V | Shift+V | Voice chat menu |
+| Carry On pick up (hold) | Shift (key unbound) | Left Alt | every mod's Shift + right-click action (opening blocks, magic) |
 | Shoulder Surfing swap shoulder | U | Ctrl+U | Xaero waypoint list |
 | Shoulder Surfing camera in / out | Up / Down | Home / End | Cobblemon party slot |
 | Atmospherics menu | B | F6 | Backpack |
@@ -191,7 +193,8 @@ Each change keeps two actions from firing from one key in normal play.
 - **Holding a modifier claims the key.** With Shift held, V picks up a villager instead of opening the voice menu;
   with Alt held, 1-3 run Vampirism actions instead of switching hotbar slots (Vampirism's own default). If a key "does
   nothing", check you're not holding Shift, Ctrl or Alt.
-- **Alt near a Create toolbox** briefly opens the toolbox menu (Create's default). Deep Aether's Slider Eye slam is
+- **Carry On uses Left Alt**, not Shift: with its key unbound it takes over Shift + right-click, which many mods use for their own actions. Binding it to anything frees Shift + right-click again.
+- **Alt near a Create toolbox** briefly opens the toolbox menu (Create's default), also while picking something up with Carry On. Deep Aether's Slider Eye slam is
   also on Alt.
 - **X and C with an Ars spell book in hand**: X/Z also flip the Ars spell slot, and C also opens the Ars book. If you
   mix both magic mods, rebind one of them.

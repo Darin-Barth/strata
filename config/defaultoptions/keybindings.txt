@@ -84,3 +84,4 @@ key_key.fieldguide.open:key.keyboard.f:ALT
 key_key.apotheosis.open_world_tier_select:key.keyboard.l:ALT
 key_key.keybindatlas.open_keyboard:key.keyboard.q:ALT
 key_key.keybindatlas.cycle_sets:key.keyboard.unknown
+key_key.carry.desc:key.keyboard.left.alt
