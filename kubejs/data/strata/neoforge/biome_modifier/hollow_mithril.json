@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#strata:hollow_biomes",
+  "features": "strata:hollow_mithril",
+  "step": "underground_ores"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "mos:ruined_church_pool",
+  "size": 1,
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 313
+  },
+  "terrain_adaptation": "beard_box",
+  "cannot_spawn_in_liquid": false,
+  "terrain_height_radius_check": 1,
+  "allowed_terrain_height_range": 6,
+  "biomes": "#strata:abyssal_group/plain"
+}

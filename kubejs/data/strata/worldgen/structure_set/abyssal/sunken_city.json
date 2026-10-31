@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mr_sunken_spires"
+    }
+  ],
+  "structures": [
+    {
+      "structure": "strata:abyssal/joshie_sunken_city",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 96,
+    "separation": 30,
+    "salt": 731000012
+  }
+}

@@ -11,3 +11,6 @@ hash = "b35a9dfdc7180ca851aea378ee4687e18b3aae717c16870a7762afc67dc0c77598fb2c4a
 [update.modrinth]
 mod-id = "LPjGiSO4"
 version = "3fv8O3xX"
+[update.curseforge]
+file-id = 7078265
+project-id = 570354

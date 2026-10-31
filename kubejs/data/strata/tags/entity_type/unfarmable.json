@@ -1,0 +1,46 @@
+{
+  "values": [
+    "#c:bosses",
+    "#twilightforest:bosses",
+    {
+      "id": "cataclysm:ender_golem",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_baby_leviathan",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:void_worm",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_dragon",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ice_dragon",
+      "required": false
+    },
+    {
+      "id": "iceandfire:lightning_dragon",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hullbreaker",
+      "required": false
+    },
+    {
+      "id": "hybrid_aquatic:karkinos",
+      "required": false
+    },
+    {
+      "id": "graveyard:lich",
+      "required": false
+    },
+    {
+      "id": "the_ravenous:the_ravenous",
+      "required": false
+    }
+  ]
+}

@@ -11,3 +11,6 @@ hash = "643a123df03d9a6cd597dce657b41914618093db8cf854b23c7d890434f41081380a2a67
 [update.modrinth]
 mod-id = "5JMG1gql"
 version = "Oxp773uX"
+[update.curseforge]
+file-id = 8796905
+project-id = 268387

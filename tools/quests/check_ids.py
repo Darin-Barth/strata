@@ -41,15 +41,29 @@ def newest_jar():
     return t
 
 
+REGISTRY = os.path.join(HERE, "registry.json")
+
+
 def load_index(rebuild=False):
     if rebuild or not os.path.exists(CACHE) or os.path.getmtime(CACHE) < newest_jar():
         idx = item_index.build(item_index.DEFAULT_MODS, item_index.DEFAULT_VANILLA)
         os.makedirs(os.path.dirname(CACHE), exist_ok=True)
         with open(CACHE, "w", encoding="utf-8") as f:
             json.dump(idx, f)
-        return idx
-    with open(CACHE, encoding="utf-8") as f:
-        return json.load(f)
+    else:
+        with open(CACHE, encoding="utf-8") as f:
+            idx = json.load(f)
+    # A registry dump from a running server (import_registry.py) is the authority where it exists:
+    # the jar scan also sees disabled items that still ship a model and a lang entry.
+    idx["source"] = "jar scan"
+    if os.path.exists(REGISTRY):
+        with open(REGISTRY, encoding="utf-8") as f:
+            reg = json.load(f)
+        for kind, ids in reg.items():
+            if ids:
+                idx[kind] = {i: "registry" for i in ids}
+        idx["source"] = "registry dump + jar scan (advancements)"
+    return idx
 
 
 def main(argv):
@@ -76,7 +90,7 @@ def main(argv):
                 print(f"UNKNOWN {kind[:-1]} {v} ({where})" + (f"  did you mean {', '.join(near)}?" if near else ""))
     total = sum(len(v) for v in found.values())
     print(f"checked {total} distinct IDs ({', '.join(f'{len(v)} {k}' for k, v in found.items())}) "
-          f"against {idx['jars']} jars: {'OK' if not bad else f'{bad} unknown'}")
+          f"against the {idx['source']} ({idx['jars']} jars): {'OK' if not bad else f'{bad} unknown'}")
     return 1 if bad else 0
 
 

@@ -1,0 +1,200 @@
+{
+  "eldricht_spell_power+0.01": {
+    "title": "+2% Eldritch Spell Power",
+    "description": "Cost: 2 Points",
+    "cost": "2",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:tarnished_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "gcxkscikzpgxhz6y"
+    }
+  },
+  "eldricht_spell_power+0.02": {
+    "title": "+4% Eldritch Spell Power",
+    "description": "Cost: 3 Points",
+    "cost": "3",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ancient_knowledge_fragment"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "gcxkscikzpgxhz6y"
+    }
+  },
+  "eldricht_spell_power+0.03": {
+    "title": "+6% Eldritch Spell Power",
+    "description": "Cost: 4 Points",
+    "cost": "4",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:eldritch_manuscript"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "mana_regen+0.03": {
+    "title": "+6% Mana Regen",
+    "description": "Cost: 3 Points",
+    "cost": "3",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:amethyst_resonance_charm"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "d3a8men1icin7nsk"
+    }
+  },
+  "cooldown_reduction+0.03": {
+    "title": "+6% Cooldown Reduction",
+    "description": "Cost: 3 Points",
+    "cost": "3",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:cooldown_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "7cvnpt6j478df3ip"
+    }
+  },
+  "max_mana+15": {
+    "title": "+30 Max Mana",
+    "description": "Cost: 3 Points",
+    "cost": "3",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:mana_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 30,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "g2lxvixn378ntzla"
+    }
+  },
+  "spell_resist+0.03": {
+    "title": "+6% Spell Resist",
+    "description": "Cost: 3 Points",
+    "cost": "3",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:protection_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

@@ -12,3 +12,6 @@ hash = "6b80bd14decd674cdd3232839e4632894a0dcb4ae6ff6eac5ac520d0b67c99b750a2abff
 [update.modrinth]
 mod-id = "Sza3GgEL"
 version = "MgD655V5"
+[update.curseforge]
+file-id = 9141062
+project-id = 1537945

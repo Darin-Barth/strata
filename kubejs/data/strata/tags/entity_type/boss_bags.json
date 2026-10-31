@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#c:bosses",
+    "#twilightforest:bosses",
+    { "id": "minecraft:wither", "required": false },
+    { "id": "minecraft:warden", "required": false },
+    { "id": "aether:slider", "required": false },
+    { "id": "aether:valkyrie_queen", "required": false },
+    { "id": "aether:sun_spirit", "required": false },
+    { "id": "cataclysm:ignis", "required": false },
+    { "id": "cataclysm:netherite_monstrosity", "required": false },
+    { "id": "cataclysm:the_harbinger", "required": false },
+    { "id": "cataclysm:the_leviathan", "required": false },
+    { "id": "cataclysm:scylla", "required": false },
+    { "id": "cataclysm:ender_guardian", "required": false },
+    { "id": "cataclysm:maledictus", "required": false },
+    { "id": "cataclysm:ancient_remnant", "required": false },
+    { "id": "cataclysm:ender_golem", "required": false },
+    { "id": "cataclysm:the_baby_leviathan", "required": false },
+    { "id": "bosses_of_mass_destruction:lich", "required": false },
+    { "id": "bosses_of_mass_destruction:void_blossom", "required": false },
+    { "id": "bosses_of_mass_destruction:gauntlet", "required": false },
+    { "id": "bosses_of_mass_destruction:obsidilith", "required": false },
+    { "id": "alexsmobs:void_worm", "required": false },
+    { "id": "alexscaves:hullbreaker", "required": false },
+    { "id": "hybrid_aquatic:karkinos", "required": false },
+    { "id": "graveyard:lich", "required": false }
+  ]
+}

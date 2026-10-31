@@ -10,7 +10,7 @@ q("intro", "What is Cataclysm?", icon="cataclysm:altar_of_fire", size=1.5, shape
     a sky-high temple and a citadel in the End.
 
     &6Why it matters:&r killing these bosses is how Strata unlocks the late game.
-    Top Mekanism and AE2 tiers and &ecross-dimension wireless&r wait behind them.
+    Nuclear power, top Mekanism and AE2 tiers and the best rockets wait behind them.
 
     Bosses keep their designed strength. Bring good gear, food, and friends.""",
   rewards=[give("minecraft:golden_apple", 2)])
@@ -141,7 +141,7 @@ q("ender_guardian", "The Ender Guardian", deps=["ignis", "the_end/dragon"], icon
     An &eEye of Void&r points the way. Ender Golems guard it, and so does the Ender Guardian.
 
     &6Drops:&r the &eGauntlet of Guard&r (pulls enemies to you).
-    &6Unlocks:&r &ecross-dimension wireless&r (the AE2 Quantum Network Bridge).""",
+    &6Unlocks:&r the &eVoid Core&r for the biggest storage (AE2 256k cells, AppliedFlux, QIO).""",
   rewards=[give("minecraft:shulker_shell", 4), give("minecraft:diamond_block", 2)])
 
 q("cataclysmfarer", "The Cataclysmfarer", deps=["ender_guardian", "scylla", "ancient_remnant"],
@@ -180,7 +180,7 @@ q("where_next", "Where Next?", deps=["netherite_monstrosity", "ignis"], icon="mi
   shape="diamond", desc="""
     With bosses down, go claim what they unlocked:
 
-    &bMekanism&r and &bAE2&r: their late tiers open after the Netherite Monstrosity or Ignis.
-    Cross-dimension wireless opens after the Ender Guardian.
+    &bNuclear power&r needs Ignis' Ignitium; &bMekanism&r's ultimate tier needs the Monstrosity's
+    Lava Power Cells; the biggest &bAE2&r and QIO storage needs the Ender Guardian's Void Core.
     &cBoss Hunter&r: many more bosses from other mods.
     &cIce and Fire&r: dragons.""")

@@ -1,0 +1,302 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "strata:item/boss_bag/default"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "strata:item/boss_bag/aether_slider"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "strata:item/boss_bag/aether_sun_spirit"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "strata:item/boss_bag/aether_valkyrie_queen"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "strata:item/boss_bag/alexscaves_hullbreaker"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "strata:item/boss_bag/alexscaves_luxtructosaurus"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "strata:item/boss_bag/alexsmobs_void_worm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "strata:item/boss_bag/ars_nouveau_wilden_boss"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "strata:item/boss_bag/block_factorys_bosses_infernal_dragon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "strata:item/boss_bag/block_factorys_bosses_kraken"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "strata:item/boss_bag/block_factorys_bosses_sandworm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "strata:item/boss_bag/block_factorys_bosses_underworld_knight"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "strata:item/boss_bag/block_factorys_bosses_yeti"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 13
+      },
+      "model": "strata:item/boss_bag/bosses_of_mass_destruction_gauntlet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 14
+      },
+      "model": "strata:item/boss_bag/bosses_of_mass_destruction_lich"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 15
+      },
+      "model": "strata:item/boss_bag/bosses_of_mass_destruction_obsidilith"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 16
+      },
+      "model": "strata:item/boss_bag/bosses_of_mass_destruction_void_blossom"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 17
+      },
+      "model": "strata:item/boss_bag/cataclysm_ancient_remnant"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 18
+      },
+      "model": "strata:item/boss_bag/cataclysm_ender_golem"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 19
+      },
+      "model": "strata:item/boss_bag/cataclysm_ender_guardian"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20
+      },
+      "model": "strata:item/boss_bag/cataclysm_ignis"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 21
+      },
+      "model": "strata:item/boss_bag/cataclysm_maledictus"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22
+      },
+      "model": "strata:item/boss_bag/cataclysm_netherite_monstrosity"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 23
+      },
+      "model": "strata:item/boss_bag/cataclysm_scylla"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 24
+      },
+      "model": "strata:item/boss_bag/cataclysm_the_baby_leviathan"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 25
+      },
+      "model": "strata:item/boss_bag/cataclysm_the_harbinger"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 26
+      },
+      "model": "strata:item/boss_bag/cataclysm_the_leviathan"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 27
+      },
+      "model": "strata:item/boss_bag/deep_aether_eots_controller"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 28
+      },
+      "model": "strata:item/boss_bag/graveyard_lich"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 29
+      },
+      "model": "strata:item/boss_bag/hybrid_aquatic_karkinos"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 30
+      },
+      "model": "strata:item/boss_bag/irons_spellbooks_dead_king"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 31
+      },
+      "model": "strata:item/boss_bag/irons_spellbooks_fire_boss"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 32
+      },
+      "model": "strata:item/boss_bag/legendary_monsters_cloud_golem"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 33
+      },
+      "model": "strata:item/boss_bag/legendary_monsters_posessed_paladin"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 34
+      },
+      "model": "strata:item/boss_bag/legendary_monsters_the_obliterator"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 35
+      },
+      "model": "strata:item/boss_bag/minecraft_warden"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 36
+      },
+      "model": "strata:item/boss_bag/minecraft_wither"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 37
+      },
+      "model": "strata:item/boss_bag/mowziesmobs_ferrous_wroughtnaut"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 38
+      },
+      "model": "strata:item/boss_bag/mowziesmobs_frostmaw"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 39
+      },
+      "model": "strata:item/boss_bag/mowziesmobs_sculptor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 40
+      },
+      "model": "strata:item/boss_bag/mowziesmobs_umvuthi"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 41
+      },
+      "model": "strata:item/boss_bag/twilightforest_alpha_yeti"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 42
+      },
+      "model": "strata:item/boss_bag/twilightforest_hydra"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 43
+      },
+      "model": "strata:item/boss_bag/twilightforest_knight_phantom"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 44
+      },
+      "model": "strata:item/boss_bag/twilightforest_lich"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 45
+      },
+      "model": "strata:item/boss_bag/twilightforest_minoshroom"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 46
+      },
+      "model": "strata:item/boss_bag/twilightforest_naga"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 47
+      },
+      "model": "strata:item/boss_bag/twilightforest_plateau_boss"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 48
+      },
+      "model": "strata:item/boss_bag/twilightforest_snow_queen"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 49
+      },
+      "model": "strata:item/boss_bag/twilightforest_ur_ghast"
+    }
+  ]
+}

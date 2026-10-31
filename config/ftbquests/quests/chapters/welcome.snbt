@@ -12,7 +12,7 @@
 		{
 			id: "7B00515BF7869680"
 			x: 0.0d
-			y: 9.5625d
+			y: 10.875d
 			icon: { id: "ftbquests:book" }
 			shape: "gear"
 			size: 1.5d
@@ -38,7 +38,7 @@
 		{
 			id: "4707DC7691146290"
 			x: 1.75d
-			y: 5.625d
+			y: 6.75d
 			dependencies: ["7B00515BF7869680"]
 			icon: { id: "minecraft:crafting_table" }
 			tasks: [
@@ -51,7 +51,7 @@
 		{
 			id: "05FD01447273E1AF"
 			x: 3.5d
-			y: 2.25d
+			y: 3.0d
 			dependencies: ["4707DC7691146290"]
 			icon: { id: "minecraft:iron_axe" }
 			tasks: [
@@ -80,7 +80,7 @@
 		{
 			id: "3EDE2ED0C4B6720C"
 			x: 5.25d
-			y: 2.25d
+			y: 3.0d
 			dependencies: ["05FD01447273E1AF"]
 			icon: { id: "minecraft:iron_pickaxe" }
 			tasks: [
@@ -97,7 +97,11 @@
 			]
 			rewards: [
 				{ id: "7D46454017C20D73", type: "xp", xp: 250 }
-				{ id: "5C8DF8B1116BE090", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "5C8DF8B1116BE090"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "38CA3F8F525FA03C"
 					type: "item"
@@ -112,9 +116,22 @@
 			]
 		}
 		{
+			id: "05D48797635FE7AC"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["3EDE2ED0C4B6720C"]
+			icon: { id: "minecraft:experience_bottle" }
+			tasks: [
+				{ id: "105CB78A69EC826F", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "3A5B739538CC3B61", type: "xp", xp: 100 }
+			]
+		}
+		{
 			id: "3CBEAA09E0AA8A33"
 			x: 3.5d
-			y: 9.0d
+			y: 10.5d
 			dependencies: ["4707DC7691146290"]
 			icon: { id: "sophisticatedbackpacks:backpack" }
 			tasks: [
@@ -141,7 +158,7 @@
 		{
 			id: "4DC634514C9F61B6"
 			x: 1.75d
-			y: 10.5d
+			y: 12.0d
 			dependencies: ["7B00515BF7869680"]
 			icon: { id: "minecraft:filled_map" }
 			tasks: [
@@ -154,7 +171,7 @@
 		{
 			id: "74CDBCF76E1C34D2"
 			x: 1.75d
-			y: 12.0d
+			y: 13.5d
 			dependencies: ["7B00515BF7869680"]
 			icon: { id: "minecraft:cake" }
 			tasks: [
@@ -173,7 +190,7 @@
 		{
 			id: "772EB687B23B503B"
 			x: 3.5d
-			y: 12.0d
+			y: 13.5d
 			dependencies: ["74CDBCF76E1C34D2"]
 			icon: { id: "minecraft:oak_door" }
 			tasks: [
@@ -191,9 +208,9 @@
 		{
 			id: "2C4E55E84F4EC03E"
 			x: 5.25d
-			y: 12.0d
+			y: 13.5d
 			dependencies: ["772EB687B23B503B"]
-			icon: { id: "gravestone:gravestone" }
+			icon: { id: "tombstone:grave_key" }
 			tasks: [
 				{ id: "56D90B4B31C48506", type: "checkmark" }
 			]
@@ -210,11 +227,11 @@
 		{
 			id: "341779864971F73C"
 			x: 1.75d
-			y: 13.5d
+			y: 15.0d
 			dependencies: ["7B00515BF7869680"]
 			icon: { id: "minecraft:bell" }
 			tasks: [
-				{ id: "353E403B56265797", type: "structure", structure: "integrated_villages:tavern_village" }
+				{ id: "353E403B56265797", type: "structure", structure: "#minecraft:village" }
 			]
 			rewards: [
 				{ id: "664E1F279F092A6C", type: "xp", xp: 100 }
@@ -229,7 +246,7 @@
 		{
 			id: "4FCC1D07B97286E2"
 			x: 3.5d
-			y: 13.5d
+			y: 15.0d
 			dependencies: ["341779864971F73C"]
 			icon: { id: "bountiful:bountyboard" }
 			tasks: [
@@ -241,13 +258,17 @@
 			]
 			rewards: [
 				{ id: "23191B526AE61A78", type: "xp", xp: 250 }
-				{ id: "090646BAE2D3A758", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "090646BAE2D3A758"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 			]
 		}
 		{
 			id: "318FBADF9FE10E66"
 			x: 3.5d
-			y: 10.5d
+			y: 12.0d
 			dependencies: ["4DC634514C9F61B6"]
 			icon: { id: "minecraft:writable_book" }
 			tasks: [
@@ -260,7 +281,7 @@
 		{
 			id: "43B65B6F74E24201"
 			x: 5.25d
-			y: 10.5d
+			y: 12.0d
 			dependencies: ["318FBADF9FE10E66"]
 			icon: { id: "waystones:waystone" }
 			tasks: [
@@ -272,7 +293,11 @@
 			]
 			rewards: [
 				{ id: "74CD3F05DE000EC0", type: "xp", xp: 250 }
-				{ id: "14328B5055EA894A", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "14328B5055EA894A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 				{
 					id: "43DB729E860DDBBC"
 					type: "item"
@@ -284,7 +309,7 @@
 		{
 			id: "15654BD960144D8E"
 			x: 7.0d
-			y: 0.0d
+			y: 1.5d
 			dependencies: ["3EDE2ED0C4B6720C"]
 			icon: { id: "minecraft:zombie_head" }
 			tasks: [
@@ -297,7 +322,7 @@
 		{
 			id: "65459A133D3C4EFE"
 			x: 8.75d
-			y: 0.0d
+			y: 1.5d
 			dependencies: ["15654BD960144D8E"]
 			icon: { id: "minecraft:netherrack" }
 			tasks: [
@@ -305,13 +330,17 @@
 			]
 			rewards: [
 				{ id: "2115534229427071", type: "xp", xp: 500 }
-				{ id: "0A0060FE64F97F52", type: "random", table_id: 3181575472400868046L }
+				{
+					id: "0A0060FE64F97F52"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
 			]
 		}
 		{
 			id: "7542BEE2CB678999"
 			x: 7.0d
-			y: 4.5d
+			y: 6.0d
 			dependencies: ["3EDE2ED0C4B6720C", "3CBEAA09E0AA8A33"]
 			icon: { id: "minecraft:oak_sign" }
 			shape: "hexagon"
@@ -321,13 +350,17 @@
 			]
 			rewards: [
 				{ id: "0D0EC82AC82D3A46", type: "xp", xp: 250 }
-				{ id: "1D6E5C40DD98E667", type: "random", table_id: 2860384277007155420L }
+				{
+					id: "1D6E5C40DD98E667"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
 			]
 		}
 		{
 			id: "5715BCB30A38CA73"
 			x: 8.75d
-			y: 1.5d
+			y: 3.0d
 			dependencies: ["7542BEE2CB678999"]
 			icon: { id: "create:cogwheel" }
 			tasks: [
@@ -350,7 +383,7 @@
 		{
 			id: "446B8E87AB946F62"
 			x: 8.75d
-			y: 3.0d
+			y: 4.5d
 			dependencies: ["7542BEE2CB678999"]
 			icon: { id: "ars_nouveau:novice_spell_book" }
 			tasks: [
@@ -373,7 +406,7 @@
 		{
 			id: "7667ED91A5A376BD"
 			x: 8.75d
-			y: 4.5d
+			y: 6.0d
 			dependencies: ["7542BEE2CB678999"]
 			icon: { id: "explorerscompass:explorerscompass" }
 			tasks: [
@@ -396,7 +429,7 @@
 		{
 			id: "003414113D5BA7F2"
 			x: 8.75d
-			y: 6.0d
+			y: 7.5d
 			dependencies: ["7542BEE2CB678999"]
 			icon: { id: "farmersdelight:cooking_pot" }
 			tasks: [
@@ -425,7 +458,7 @@
 		{
 			id: "65BD001383487C33"
 			x: 8.75d
-			y: 7.5d
+			y: 9.0d
 			dependencies: ["7542BEE2CB678999"]
 			icon: { id: "pokeworld:johto_bell" }
 			tasks: [

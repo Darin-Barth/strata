@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:circuits/ultimate"
+    },
+    "F": {
+      "item": "mekanismgenerators:fusion_reactor_frame"
+    },
+    "X": {
+      "item": "cataclysm:witherite_ingot"
+    },
+    "Y": {
+      "item": "strata:hollow_ember"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "FYF",
+    "YYY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanismgenerators:fusion_reactor_controller"
+  }
+}

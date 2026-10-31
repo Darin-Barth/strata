@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "betterjungletemples:chests/treasure"
+    }
+  ],
+  "table": "strata:end_eyes/evil_eye"
+}

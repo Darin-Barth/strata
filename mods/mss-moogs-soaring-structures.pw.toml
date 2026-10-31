@@ -11,3 +11,6 @@ hash = "1460cbb932e8f39c00bc7f980322696107c965094e00b9a05aa6b4ce6bc9babff5c3444b
 [update.modrinth]
 mod-id = "RJCLIx7k"
 version = "O20bIWkj"
+[update.curseforge]
+file-id = 8931330
+project-id = 1040210

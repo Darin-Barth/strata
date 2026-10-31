@@ -3,7 +3,7 @@
 Usage: python -I tools/quests/build.py [--no-check] [--out DIR] [--only chap1,chap2]
   --out DIR   write somewhere else (e.g. a scratch folder) instead of config/ftbquests/quests
   --only ...  build just these chapter files (dependencies on other chapters are skipped)
-Then run `packwiz refresh`. Text goes to lang/en_us.snbt (the format FTB Quests 2101.1.x's own
+Runs `packwiz refresh` when writing into the repo. Text goes to lang/en_us.snbt (the format FTB Quests 2101.1.x's own
 editor saves), so in-game edits and these sources use the same keys. The generator owns the
 whole quests folder: it is wiped and rewritten on every build, so make lasting edits here.
 """
@@ -189,6 +189,15 @@ if __name__ == "__main__":
     out = args[args.index("--out") + 1] if "--out" in args else OUT
     only = set(args[args.index("--only") + 1].split(",")) if "--only" in args else None
     build(out, only)
+    status = 0
     if "--no-check" not in args:
         import check_ids
-        sys.exit(check_ids.main([out]))
+        status = check_ids.main([out])
+    if os.path.abspath(out) == os.path.abspath(OUT):
+        # packwiz-installer trusts index.toml hashes: always commit the refreshed index with the quests
+        import subprocess
+        packwiz = shutil.which("packwiz") or os.path.expanduser("~/go/bin/packwiz.exe")
+        r = subprocess.run([packwiz, "refresh"], cwd=REPO, capture_output=True, text=True)
+        print("packwiz refresh:", "done" if r.returncode == 0 else f"FAILED {r.stderr.strip()}")
+        status = status or r.returncode
+    sys.exit(status)

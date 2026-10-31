@@ -55,8 +55,8 @@ q("desert_temple", "Better Desert Temple", deps="lootr", icon="minecraft:sandsto
     dungeons, mineshafts, witch huts, ocean monuments and Nether fortresses.
 
     Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure.
-    Watch your step, and keep an eye out for strange &5eyes&r in the chests
-    (you'll need them later, see &5The End&r).""",
+    Watch your step: the Pharaoh's tomb, the jungle temple's treasure room and other
+    places each guard one of the &5eyes&r that open the End (see &5The End&r).""",
   rewards=[give("minecraft:golden_apple", 1)])
 
 q("jungle_temple", "Better Jungle Temple", deps="desert_temple", icon="minecraft:mossy_cobblestone",
@@ -139,9 +139,9 @@ q("arch_table", "The Archeology Table", deps="archeology", icon="betterarcheolog
     what it is. Identified artifacts give you special powers.""",
   rewards=[give("minecraft:feather", 8), give("minecraft:iron_ingot", 4)])
 
-q("artifact", "A Mystery Solved", deps="arch_table", icon="betterarcheology:identified_artifact",
-  tier=2, tasks=item("betterarcheology:identified_artifact"), desc="""
-    Identify your first artifact. Read its tooltip to see what it does.
+q("artifact", "A Mystery Solved", deps="arch_table", icon="betterarcheology:unidentified_artifact",
+  tier=2, tasks=item("betterarcheology:unidentified_artifact", title="Craft an Unidentified Artifact"), desc="""
+    Craft an Unidentified Artifact from nine shards, then study it at the table. Read the result's tooltip to see what it does.
 
     Keep digging: there are lots of different ones to collect.""")
 
@@ -164,4 +164,4 @@ q("where_next", "Where Next?", deps=["desert_temple", "arise", "idas", "sky"],
     &aThe Twilight Forest&r: a magic forest with a chain of bosses.
     &bThe Aether&r: islands in the sky.
     &5The End&r: find 12 eyes and open the stronghold portal.
-    &cThe Pokémon World&r: if you've found a Bell Fragment.""")
+    &cThe Kakuto Region&r: if you've found a Bell Fragment.""")

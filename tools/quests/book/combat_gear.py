@@ -39,7 +39,7 @@ q("two_handed", "Big Swings", deps="better_combat", icon="simplyswords:iron_clay
   rewards=[give("minecraft:iron_ingot", 12)])
 
 q("combat_roll", "Dodge Roll", deps="better_combat", icon="minecraft:leather_boots", desc="""
-    &eCombat Roll&r: press the roll key (set it in Options > Controls) to dash a few blocks
+    &eCombat Roll&r: press &eR&r by default (or rebind it in Options > Controls) to dash a few blocks
     in the direction you're moving. An arrow on your HUD shows when it's ready again.
 
     &eThe rules here:&r a roll takes &e4 seconds&r to recharge, needs more than
@@ -55,7 +55,7 @@ q("simply_swords", "Simply Swords", deps="two_handed", icon="simplyswords:runic_
     &eSimply Swords&r adds 15 weapon types (chakram, glaive, halberd, rapier, scythe...)
     in iron, gold, diamond and netherite. Look them up with &eU&r on an iron ingot.
 
-    Dungeon chests can hold &6unique&r named weapons with special powers, and &eRunic Tablets&r.
+    Dungeon chests can (rarely) hold &6unique&r named weapons with special powers, and &eRunic Tablets&r.
     Bring a tablet back: it's the smithing template for runic weapons.""",
   rewards=[give("minecraft:diamond", 3)])
 
@@ -91,9 +91,9 @@ q("elites", "Elites and Invaders", deps="affix", icon="minecraft:zombie_head", d
     They're mini-bosses that always drop a special affix item and often gems.
     Invaders never appear while your World Tier is &eHaven&r.""")
 
-q("world_tiers", "World Tiers (Ctrl+T)", deps="affix", icon="minecraft:beacon", tier=2,
+q("world_tiers", "World Tiers (Alt+L)", deps="affix", icon="minecraft:beacon", tier=2,
   tasks=adv("apotheosis:progression/frontier", title="Unlock Frontier"), desc="""
-    Press &eCtrl+T&r for the &eWorld Tier&r screen. Tiers are &eper player&r:
+    Press &eAlt+L&r for the &eWorld Tier&r screen. Tiers are &eper player&r:
     &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r.
 
     A higher tier makes mobs around &eyou&r tougher and loot better (it also raises the max
@@ -112,10 +112,10 @@ q("ascent", "World Tier: Ascent", deps="world_tiers", icon="minecraft:gold_block
 
 q("summit", "World Tier: Summit", deps="ascent", icon="minecraft:wither_skeleton_skull", tier=4,
   optional=True, tasks=adv("apotheosis:progression/summit", title="Unlock Summit"), desc="""
-    A full set of &9Rare&r affix gear, and the &cWither&r defeated.
+    A full set of &9Rare&r affix gear, the &cWither&r defeated, and a &6Hollow Ember&r in your inventory.
 
-    The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear and the Ender Dragon
-    defeated: the best loot and the toughest mobs.""")
+    The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear, the Ender Dragon
+    defeated and an &bAbyssal Pearl&r: the best loot and the toughest mobs.""")
 
 q("gem_dust", "Not a Diamond", deps="affix", icon="apotheosis:gem_dust", tier=2,
   tasks=item("apotheosis:gem_dust"), desc="""

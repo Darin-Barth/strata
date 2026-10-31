@@ -1,0 +1,28 @@
+// Items taken out of play for the limited-teleport and no-cheap-flight rules (docs/gate-map.md
+// section 5): anything super easy or cheap goes.
+// - Draconic Evolution dislocators: cheap saved-spot and to-a-player (/tpa) teleports, and the
+//   advanced one's unlimited waypoints. All four recipes removed.
+// - Iron's Spells Recall (free warp to spawn): disabled in
+//   config/irons_spellbooks_spell_config/irons_spellbooks/recall.json.
+// - Artifacts' Helium Flamingo and Forsaken Relics' Wind Staff (cheap recharging flight) and
+//   Forsaken Relics' Linking Book (home, last death and marked-spot teleports, cross-dimension at
+//   higher ranks; its modes are hard-coded, so it can't be limited to home): taken out of every
+//   loot table (LootJS runs after other mods' loot modifiers, which is how Forsaken
+//   Relics adds its relics to chests).
+// Copies already in someone's inventory keep working; nothing is deleted from players.
+// KubeJS server scripts share one scope: every top-level name here starts with "strataRemoved".
+const strataRemovedRecipes = [
+  'draconicevolution:tools/dislocator',
+  'draconicevolution:tools/player_dislocator_unbound',
+  'draconicevolution:tools/p2p_dislocator_unbound',
+  'draconicevolution:tools/advanced_dislocator',
+]
+const strataRemovedLoot = ['artifacts:helium_flamingo', 'forsaken_relics:wind_staff', 'forsaken_relics:linking_book']
+
+ServerEvents.recipes(event => {
+  strataRemovedRecipes.forEach(id => event.remove({ id: id }))
+})
+
+LootJS.modifiers(event => {
+  event.addTableModifier(/.*/).removeLoot(strataRemovedLoot)
+})

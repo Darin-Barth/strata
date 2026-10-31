@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#strata:hollow_surface",
+  "spawners": {
+    "type": "the_ravenous:the_screecher",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

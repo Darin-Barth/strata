@@ -11,3 +11,6 @@ hash = "022797a3b0dd2fd88d9ce7a16a1204ef5ae6412127807e414fa760e3b6711924a18ce596
 [update.modrinth]
 mod-id = "C95ReXie"
 version = "4Wc9oVPI"
+[update.curseforge]
+file-id = 9291239
+project-id = 246640

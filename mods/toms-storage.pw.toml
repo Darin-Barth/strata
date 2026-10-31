@@ -11,3 +11,6 @@ hash = "53db61b4486616b3a78dfff83b58f9424dd9bf525ea3db4e444ff0403fb70aa9ab7fc097
 [update.modrinth]
 mod-id = "XZNI4Cpy"
 version = "WQAMoIMC"
+[update.curseforge]
+file-id = 8769956
+project-id = 378609

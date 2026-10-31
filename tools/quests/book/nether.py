@@ -14,12 +14,12 @@ q("intro", "What is the Nether?", deps="welcome/nether", icon="minecraft:netherr
     Lava is everywhere. Fire resistance potions are your best friend.""",
   rewards=[give("minecraft:cooked_beef", 16), give("minecraft:flint_and_steel")])
 
-q("expert", "Expert Mode", deps="intro", icon="minecraft:skeleton_skull", desc="""
-    Your first trip here moved the whole server to &eExpert&r difficulty.
-    Regular mobs everywhere hit a bit harder and have more health. Bosses don't change.
+q("expert", "Tougher Down Here", deps="intro", icon="minecraft:skeleton_skull", desc="""
+    The Nether is a step up from home: wither skeletons, blazes, ghasts and the mobs from
+    &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld.
 
-    It's a modest step. Upgrade your armor soon, and keep a shield in your off-hand.
-    The next step, &cMaster&r, comes after the Ender Dragon.""",
+    Upgrade your armor soon, and keep a shield in your off-hand.
+    Your own &eWorld Tier&r (Alt+L) still decides how tough mobs around you get.""",
   rewards=[give("minecraft:golden_apple", 2)])
 
 q("gold", "Piglin Manners", deps="intro", icon="minecraft:golden_helmet",
@@ -43,7 +43,7 @@ q("fortress", "Better Nether Fortress", deps="expert", icon="minecraft:nether_br
     &eYUNG's Better Nether Fortresses&r are huge brick mazes with bridges, towers and halls.
     Blazes and wither skeletons live here.
 
-    Loot every chest: some hold a &5Nether Eye&r, one of the eyes you need to reach the End.""",
+    The wither skeletons here drop the skulls that summon &5the Wither&r, keeper of the Wither Eye.""",
   rewards=[give("minecraft:golden_carrot", 16)])
 
 q("blaze", "Blaze Rods", deps="fortress", icon="minecraft:blaze_rod", tier=2,
@@ -145,8 +145,8 @@ q("lava_fishing", "Fishing in Lava", deps="debris", icon="netherdepthsupgrade:la
     Bonefish, searing cod, blazefish and more. Some are great food, some are ingredients.""",
   rewards=[give("minecraft:cooked_cod", 8)])
 
-q("cooking", "Nether Cooking", deps="intro", icon="mynethersdelight:nether_stove", optional=True,
-  tasks=item("mynethersdelight:nether_stove"), desc="""
+q("cooking", "Nether Cooking", deps="intro", icon="mynethersdelight:nether_bricks_stove", optional=True,
+  tasks=item("mynethersdelight:nether_bricks_stove"), desc="""
     &eMy Nether's Delight&r brings Farmer's Delight cooking to the Nether:
     hoglin and strider dishes, spicy peppers and a stove made of nether bricks.""",
   rewards=[give("minecraft:cooked_porkchop", 8)])
@@ -155,7 +155,7 @@ q("where_next", "Where Next?", deps=["fortress", "netherite_gear"], icon="minecr
   shape="hexagon", tier=2, desc="""
     The Nether opens up a lot:
 
-    &bSame-dimension wireless&r tech is unlocked now (see the Tech chapters).
-    &5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need.
+    &bNetherite&r and Nether materials feed the mid tiers of the Tech chapters.
+    &5The End&r: Ignis keeps the Cursed Eye and the Monstrosity the Nether Eye, two of the eyes you need.
     &cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs.
-    &cThe Pokémon World&r: the &cFire Gym&r is down here in the Nether.""")
+    &cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether.""")

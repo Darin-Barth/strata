@@ -1,9 +1,11 @@
 CLAUDE.md
 docs/
 tools/
-REPORT.md
 build/
-kubejs/data/inventorypets/README.md
 branding/
 .claude/
 server/
+.githooks/
+.github/
+config/almostunified/debug.json
+README.md

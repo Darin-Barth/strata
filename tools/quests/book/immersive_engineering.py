@@ -132,7 +132,7 @@ q("hv_wire", "HV: The Long-Distance Grid", deps="transformer", icon="immersiveen
 
     &6Plan a grid:&r HV between buildings and outposts, a substation (HV Transformer, then
     a Transformer) at each end, and LV or Mekanism cables inside.
-    There's no wireless power early on, so a real power line is the way to move energy.""",
+    Wireless power (Flux Networks) costs a lot, so a real power line is the cheap way to move energy.""",
   rewards=[give("immersiveengineering:ingot_steel", 16)])
 
 # --- machines ---------------------------------------------------------------------------

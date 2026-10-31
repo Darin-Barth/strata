@@ -1,0 +1,126 @@
+# Gate map: what late tiers cost
+
+**Status: built.** Generators: `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` (re-run after a mod update; each writes datapack overrides at the mod's own path under `kubejs/data`).
+
+The design doc's rule says late tiers need boss drops ("Boss gating"). This map enforces it across all three pillars plus gear. Gates are not limited to tech mods: magic tends to be easier and stronger, so it gets road blocks along the way.
+
+Principles:
+- **Add an ingredient; don't rewrite recipes.** One generator per pillar (`tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py`). Re-running it after a mod update keeps every gate in step with the mod's recipes.
+- **Spread the bosses.** No single boss gates more than a couple of rows, and every pillar has gates at mid, late and endgame, not just at the top.
+- **Magic gets more road blocks than tech**, and earlier ones.
+- **Close bypasses first.** A gate that can be crafted around isn't a gate (section 1).
+- **Don't gate what the core rules protect** (`docs/design-doc.md`): wireless (Flux Networks, entangloporters, AE2 wireless and the Quantum Bridge as shipped), earned teleporting, and flight that has an ongoing cost.
+- **Gate materials:** `strata:hollow_ember` (E, the Hollow), `strata:abyssal_pearl` (P, the Abyssal Plain), and boss drops.
+
+Item and recipe IDs below were read from the mod jars. Rows marked *(check)* had their recipe slots checked while building (deviations are in Build notes).
+
+## 1. Bypasses to close first
+**Resolution:** Theurgy nether star and calorite routes removed and its netherite route +1 E; `possess_warden` +1 E; renewable nether stars accepted (no nether-star boss gates); Cataclysm's Overworld Sunken City removed (empty `#cataclysm:has_structure/sunken_city_biomes`).
+| Bypass | What it breaks | Fix |
+|---|---|---|
+| Theurgy: diamonds → precious niter → netherite / nether stars / calorite | Every nether-star gate (Ars archmage book, Occultism marid miner, Neo Vitae crystal cluster, Apotheosis augmenting table), plus Ad Astra's calorite tier | Remove the nether-star and calorite reformation recipes; netherite route +E (section 3) |
+| Oritech particle collider makes nether stars | Nether star as a Wither-only gate | Accept it: nether stars aren't a boss gate. Use boss-specific drops below |
+| Mekanism antiprotonic nucleosynthesizer makes nether stars, dragon eggs, hearts of the sea | Same | Gate the SPS (row T5); accept the rest |
+| Occultism `possess_warden` (6 sculk) | Free warden drops → Apotheosis sculkshelves | +E |
+| Cataclysm's Sunken City generates in Overworld deep oceans by default | Leviathan drops aren't Abyssal-only | Empty `#cataclysm:has_structure/sunken_city_biomes` (no Sunken City in the Overworld), and pair Leviathan drops with pearls in recipes (below) |
+
+## 2. Tech
+| # | Gate | Needs | Stage |
+|---|---|---|---|
+| T1 | Nuclear: Mekanism fission port, Create New Age reactor fuel acceptor, Extreme Reactors reinforced controllers, Oritech fission reactor controller (balance patch C3) | 1 `cataclysm:ignitium_ingot` (Ignis, Nether) | late |
+| T2 | Mekanism ultimate tier: every recipe with a `mekanism:ultimate_*` output (installers, factories, cube, induction, tanks, bin) | 1 `cataclysm:lava_power_cell` (Netherite Monstrosity, 16–24 per kill) | late |
+| T3 | Mekanism fusion reactor controller | 1 `cataclysm:witherite_ingot` (Harbinger) + 4 **E** | endgame |
+| T4 | MekaSuit pieces and Meka-Tool | 2 **E** each | endgame |
+| T5 | SPS: supercharged coil, SPS port, antiprotonic nucleosynthesizer | 2 **P** each | endgame |
+| T6 | Top storage: AE2 256k cell component (covers every 256k item and Ars Énergistique's source cell), AppliedFlux 256M core, Mekanism QIO supermassive drive | 1 `cataclysm:void_core` (End citadel) | late |
+| T7 | Ad Astra tier 2 and up: desh engine (each later engine needs the previous one) | 1 `twilightforest:fiery_blood` (Hydra) | mid |
+| T8 | Ad Astra tier 4 and jet suit: calorite engine | 2 `cataclysm:essence_of_the_storm` (Scylla) | late |
+| T9 | Draconic Evolution awakened core (already needs the dragon heart) | +2 **E** | endgame |
+| T10 | Extended Crafting ultimate table | 1 `cataclysm:abyssal_egg` + 4 **P** | endgame |
+
+Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Extended Crafting stars. The Mekanism ultimate circuit has two recipes and feeds everything, so it's gated through its outputs (T2), not directly.
+
+## 3. Magic: road blocks along the way
+**Balanced** so magic isn't Hollow-heavy: each gate's material fits its theme, from 10 different sources. Item IDs checked in the jars. *(check)* = recipe-slot room confirmed while building (swapped for a similar material if full).
+
+| # | Gate | Needs | Source | Stage |
+|---|---|---|---|---|
+| M18 | Ars apprentice book upgrade *(check)* | 1 `twilightforest:naga_scale` | Naga (Twilight) | early–mid |
+| M19 | Iron's diamond spellbook *(check)* | 1 `twilightforest:lich_trophy` or a Lich scepter | Twilight Lich | mid |
+| M20 | Occultism djinni tier (Book of Binding (Djinni)) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
+| M21 | Ars Stabilized Warp Scroll (reusable, cross-dimension) | +2 `minecraft:echo_shard` | Ancient cities (Deep Dark) | mid |
+| M1 | Ars tier-3 mage armor upgrade (`second_armor_upgrade`) | +1 `bosses_of_mass_destruction:ancient_anima` | Night Lich (BoMD, drops 2) | mid |
+| M5 | Iron's legendary ink | amethyst → any Ice and Fire dragon blood (`iceandfire:{fire,ice,lightning}_dragon_blood`) | Ice and Fire dragons | mid–late |
+| M8 | Occultism afrit tier: summon unbound afrit ritual | +1 **E** | the Hollow | mid |
+| M10 | Occultism miner djinni / dimensional mineshaft rituals | +1 `deeperdarker:warden_carapace` | Otherside temples (Deeper and Darker) | mid |
+| M11 | Theurgy netherite route (both sulfur recipes) | +1 **E** | the Hollow | mid–late |
+| M15 | Neo Vitae teleposition reagent | +1 `legendary_monsters:portal_shard` | The Obliterator (Legendary Monsters) | mid–late |
+| M16 | Vampirism lord level 3 (vampire and hunter tasks) | 2 **E** | the Hollow | late |
+| M2 | Ars Elemental Mark of Mastery (pedestals full) | one pedestal item → any Ice and Fire dragon heart | Ice and Fire dragons | late |
+| M3 | Iron & Nouveau legendary-spell glyphs (black hole, starfall, sculk tentacles, ...) | +1 **E** each | the Hollow | late |
+| M4 | Ars archmage book | one ender pearl → **P** | the Abyssal Plain | late |
+| M6 | Iron's strongest spells (black hole, starfall, sculk tentacles, dragon breath) | loot only: `allow_crafting=false` | dungeons | late |
+| M9 | Occultism marid tier: summon unbound marid ritual | +1 **P** | the Abyssal Plain | late |
+| M12 | Neo Vitae crystal cluster (transcendent orb; slots full) | sculk → `bosses_of_mass_destruction:obsidian_heart` | Obsidilith (BoMD, End) | late |
+| M14 | Neo Vitae diamond meteor | input → **P** | the Abyssal Plain | late |
+| M7 | Iron's netherite spellbook | +1 `alexsmobs:void_worm_mandible` | Void Worm (End) | endgame |
+| M13 | Neo Vitae prismatic gem (deus tier) *(check)* | +1 **P** | the Abyssal Plain | endgame |
+| M17 | Vampirism lord level 5 | 2 **P** | the Abyssal Plain | endgame |
+
+Already gated (left alone): Iron's ruined book, dragonskin, Necronomicon and Cataclysm spellbooks (boss loot), Occultism's marid master miner, Neo Vitae's archmage orb (its own demon dungeon), Ars' archmage nether star. Ars Ritual of Flight and the single-use Warp Scroll stay as shipped (they pass the flight and teleport rules); the reusable Stabilized Warp Scroll is row M21.
+
+## 4. Gear
+| # | Gate | Needs | Stage |
+|---|---|---|---|
+| G1 | Apotheosis Summit world tier (already rare gear + a Wither kill) | own 1 **E** (advancement criterion) | late |
+| G2 | Apotheosis Pinnacle world tier (already epic gear + a Dragon kill) | own 1 **P** | endgame |
+| G3 | Apotheosis augmenting table | +1 **E** | late |
+| G4 | Apotheosis flawless gem cutting; heart and crystal seashelves | +1 **P** | endgame |
+| G5 | Oritech flight augment | 1 Ice and Fire dragon heart | late |
+| G6 | Apocalyptic Bosses ultimate ingot (netherite + nether star + amethyst, 2 per craft) | nether star → 2 `panascraftrpgmod:void_gem` + 1 `cataclysm:cursium_ingot` | endgame |
+
+## 5. Teleport and flight items
+Standard: an item that is very easy to get or cheap to use is removed. Checked in the mod jars.
+1. **Iron's Spells.**
+   - **Recall** (free warp to spawn): **removed**, including the Iron & Nouveau glyph copy.
+   - **Portal:** **kept**. Every cast costs 200 mana and has a 3-minute cooldown, and the portals expire.
+   - **Pocket Dimension:** **kept**.
+2. **Draconic Evolution dislocators:** **all four removed**.
+   - **Dislocator:** blaze powder, draconium dust and an Ender Eye. Remembers one spot in any dimension, limited uses.
+   - **Player dislocator:** the basic one plus a draconium core and a ghast tear. Teleports you to a player who sneaks to agree, so it's a /tpa.
+   - **Point-to-point pair:** the same, but between two linked dislocators.
+   - **Advanced dislocator:** fusion crafting with a wyvern core (needs a nether star). Unlimited saved spots in any dimension; each jump burns 1 ender pearl.
+3. **Forsaken Relics linking book:** **removed from loot**. Its modes (home, last death, marked spot) are hard-coded and Forsaken Relics has no config.
+4. **Oritech portal augment:** **kept**.
+   - A body augment that opens a portal back to your research station.
+   - Researching it is a big one-time cost: the top (Arcane) station, 250 million RF, 16 ender pearls, 64 obsidian, an Unholy Intelligence and 32 adamant ingots.
+   - After that every use is free and unlimited, with no cooldown.
+   - Late-game and earned, like the Mekanism portable teleporter.
+5. **Borderline flight:** **removed**:
+   - the Artifacts Helium Flamingo (short flight that recharges)
+   - the Forsaken Relics Wind Staff (wind jet that recharges)
+
+   The Aether's Cloud Staff isn't flight (it summons Cloud Minions that fight), so it stays.
+   The Oritech flight augment is free to run but very costly to research (500 million RF, 64 ion thrusters, 32 plutonium pellets), so it passes the flight rule; row G5 adds a dragon heart.
+6. **Wireless:** **no tiers**, and never gated.
+
+Powah, Oritech and the Draconic reactor still need a place on the power ladder.
+
+**Built** (`server_scripts/strata_removed_items.js`, `config/irons_spellbooks_spell_config/irons_spellbooks/recall.json`): Recall disabled; the four dislocator recipes removed; Helium Flamingo, Wind Staff and Linking Book filtered out of all loot (LootJS). Copies players already have keep working.
+
+## Build notes
+Built as datapack overrides; checked on the test server (every sampled recipe shows the new ingredient, the Theurgy routes are gone, no load errors). Where a recipe had no free slot, the cheapest ingredient was swapped. Deviations from the tables:
+- **T2:** ultimate transmitters (cables, pipes, tubes) left ungated: crafted in bulk, a cell per 8 would pile up. The tier is gated through installers, factories, cube, induction, tanks and bin.
+- **T8:** the jet suit isn't gated piece by piece; its flying chestplate needs the calorite engine.
+- **T9:** the 2 Embers take the place of 2 of the 4 awakened draconium ingots, so the craft still uses 8 fusion injectors.
+- **T10:** the ultimate table's grid was full: the Abyssal Egg takes its emerald block's slot and the 4 Pearls go into the ultimate catalyst (whose only use is the table).
+- **M20:** the gate sits on the Book of Binding (Djinni), which is crafted once and reused for every djinni ritual. Chalk is used up, so a chalk gate would cost one boss kill per stick.
+- **M3:** the four legendary-spell glyphs (black hole, starfall, sculk tentacles, dragon breath).
+- New tags: `#strata:dragon_bloods`, `#strata:dragon_hearts`, `#strata:lich_relics`.
+
+## 6. Building it
+1. Section 1 fixes: the Theurgy and `possess_warden` changes come from the gate generators; the empty Sunken City tag is `kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json`. Section 5 removals: `server_scripts/strata_removed_items.js` and the Iron's spell config datapack.
+2. `tools/gates/build_tech.py`, `build_magic.py`, `build_gear.py` write the recipe overrides under `kubejs/data`, ritual and altar recipes included.
+3. Apotheosis and Vampirism advancement and task overrides (datapack under `kubejs/data`).
+4. The quest book: say on each gated item's quest what it needs and where to get it, so nobody hits a wall blind.
+5. Test server: every gated recipe shows the new ingredient in EMI; no old recipe left behind; boot with 0 errors.

@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "strata:abyssal_plain",
+    "strata:bioluminescent_garden",
+    "strata:hydrothermal_field"
+  ]
+}

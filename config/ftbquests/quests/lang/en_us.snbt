@@ -1,9 +1,5 @@
 {
 	file.0000000000000001.title: "Strata"
-	reward_table.27B22058501FC0DC.title: "Common Supply Bag"
-	reward_table.2C273A09128CA2CE.title: "Uncommon Supply Bag"
-	reward_table.210FC6DF600A063E.title: "Rare Treasure Bag"
-	reward_table.26C01AE3B31659CD.title: "Epic Treasure Bag"
 	chapter_group.2EAA9718BAF5A32A.title: "Tech"
 	chapter_group.03203A1312E25E36.title: "Magic"
 	chapter_group.76581968F62E459A.title: "Exploration"
@@ -13,11 +9,13 @@
 	quest.7B00515BF7869680.quest_desc: [
 		"&6Build. Fly. Explore.&r"
 		""
-		"Strata is a big modpack with three paths: &bTech&r (machines, trains and airships), &dMagic&r (spells, rituals and spirits) and &aExploration&r (new dimensions, dungeons and bosses). There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon world."
+		"Strata is a big modpack with three paths: &bTech&r (machines, trains and airships), &dMagic&r (spells, rituals and spirits) and &aExploration&r (new dimensions, dungeons and bosses). There's also a cozy side (farming, cooking, pets, decorating) and a whole Pokémon region, Kakuto."
 		""
 		"This quest book is your guide. Each chapter on the left covers one big mod. Nothing is locked: jump to whatever looks fun. Quests inside a chapter open up in order."
 		""
-		"Open the book any time with the book button at the top-left of your inventory. Click the checkmark below to get started!"
+		"Open the book any time with the book button at the top-left of your inventory."
+		""
+		"Bigger quests reward &eLoot Bags&r: right-click one to see what you got. Each bag rolls a rarity (&fCommon&r, &aUncommon&r, &bRare&r, &dEpic&r or &6Legendary&r), then an item from it. Bigger bags have better odds. Click the checkmark below to get started!"
 	]
 	quest.4707DC7691146290.title: "What's That Recipe?"
 	quest.4707DC7691146290.quest_desc: [
@@ -25,7 +23,7 @@
 		""
 		"Hover over any item (in your inventory or the item list on the right) and press &eR&r to see how to make it, or &eU&r to see what it's used for."
 		""
-		"Type in the search bar to find items. Start with &e@&r to search by mod (&e@create&r). Just Enough Resources shows what mobs drop and the best heights to mine each ore."
+		"Type in the search bar to find items. Start with &e@&r to search by mod (&e@create&r). EMI also shows the best heights to mine each ore, what mobs and chests drop, and how to breed animals."
 	]
 	quest.05FD01447273E1AF.title: "Timber!"
 	quest.05FD01447273E1AF.quest_desc: [
@@ -39,7 +37,13 @@
 		""
 		"&eTip:&r Jade (the little box at the top of your screen) tells you what you're looking at and which tool you need to break it."
 		""
-		"Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach. &eCombat Roll&r lets you dodge-roll out of trouble (set its key in Options > Controls)."
+		"Weapons swing differently here (&eBetter Combat&r): each weapon has its own combo and reach. &eCombat Roll&r lets you dodge-roll out of trouble: press &eR&r by default, or rebind it in Options > Controls."
+	]
+	quest.05D48797635FE7AC.title: "Skill Trees"
+	quest.05D48797635FE7AC.quest_desc: [
+		"Press &eCtrl+K&r to open your &eskill trees&r: Combat, Mining, Fishing and Iron's magic. You earn points by fighting, mining any ore in the pack, fishing and casting spells."
+		""
+		"You can't max everything, so pick a branch that fits how you play. Each tree has a few big &ekeystones&r (life steal, dodge, Fortune, ...) that change how you play."
 	]
 	quest.3CBEAA09E0AA8A33.title: "A Bag for Everything"
 	quest.3CBEAA09E0AA8A33.quest_desc: [
@@ -75,14 +79,14 @@
 	quest.2C4E55E84F4EC03E.quest_desc: [
 		"Dying isn't the end:"
 		""
-		"&eGraveStone&r: your items wait in a grave where you died. Walk back and open it."
+		"&eCorail Tombstone&r: your items wait in a grave where you died, and you respawn with a Grave's Key. Hold right-click with the key to teleport to your grave, or walk back and open it."
 		"&ePlayerRevive&r: when you go down, a friend has a little while to revive you."
 		"&eRedomesticate&r: if your tamed pet dies, it can be brought back, so it's never lost for good."
 	]
-	task.353E403B56265797.title: "Visit the tavern village"
-	quest.341779864971F73C.title: "A Tavern Town"
+	task.353E403B56265797.title: "Visit any village"
+	quest.341779864971F73C.title: "Find a Village"
 	quest.341779864971F73C.quest_desc: [
-		"You start next to a village with a big tavern. It's a good first home base."
+		"Villages make a good first stop, and a good first home base. Strata's are bigger and stranger than vanilla's: some have taverns, harbours, windmills or airships."
 		""
 		"Villagers trade useful stuff. &eGuard Villagers&r protect them from raids. Look for the &eBounty Board&r: villagers post small jobs (bring items, defeat mobs) and pay in emeralds and loot."
 	]
@@ -94,7 +98,7 @@
 	quest.318FBADF9FE10E66.quest_desc: [
 		"Strata is built around travel, so a few things are different here:"
 		""
-		"&cNo free teleporting.&r There's no /home, /back, /rtp or /tpa."
+		"&cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown), and there's no /back, /rtp or /tpa."
 		"&cFlight costs something:&r fuel, power, mana, stamina or durability. No \"wear it and fly forever\" items."
 		""
 		"That's why trains, airships, elytra, mounts and roads are worth building. You can still earn teleporting later: Mekanism teleporters, Ars Nouveau warps and blink spells all have a cost."
@@ -108,21 +112,19 @@
 		""
 		"You can also craft your own (look it up with &eR&r)."
 	]
-	quest.15654BD960144D8E.title: "The World Gets Harder"
+	quest.15654BD960144D8E.title: "Choose Your Challenge"
 	quest.15654BD960144D8E.quest_desc: [
-		"Strata's difficulty rises in steps, for everyone on the server at once:"
+		"Difficulty in Strata is &eyours to pick&r, not the server's. Everyone plays at their own pace."
 		""
-		"&aNormal&r: the start."
-		"&eExpert&r: after anyone first enters &cthe Nether&r. Mobs hit a bit harder."
-		"&cMaster&r: after the &5Ender Dragon&r is defeated."
+		"&eWorld Tiers&r (Apotheosis, &eAlt+L&r): a higher tier makes the mobs around &eyou&r tougher and the loot better. You unlock tiers with better gear and bigger kills, and switch them on only when you're ready (see &cCombat \\& Gear&r)."
 		""
-		"Other dimensions (the End, Twilight Forest, Deeper and Darker) are tougher than home. Bosses always keep their own designed strength. Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn."
+		"Other dimensions (the End, Twilight Forest, Deeper and Darker, the Hollow) are tougher than home. Bosses always keep their own designed strength. Rare &6elite&r mobs (Apotheosis) carry better gear and drop it. They're rare near spawn."
 	]
 	quest.65459A133D3C4EFE.title: "Into the Nether"
 	quest.65459A133D3C4EFE.quest_desc: [
 		"Build a portal from obsidian and light it. Bring armor, food and blocks!"
 		""
-		"Entering the Nether moves the server to &eExpert&r difficulty. It also unlocks the middle tier of wireless tech: Flux Networks, AE2 wireless terminals and Mekanism quantum entangloporters."
+		"Nether mobs hit hard and lava is everywhere: go in with iron armor and a shield."
 		""
 		"See the &cThe Nether&r chapter for what's out there."
 	]
@@ -154,11 +156,11 @@
 		""
 		"Craft a &eCooking Pot&r and open &aFarming \\& Food&r. Pets \\& Critters and Building \\& Decorating are right next to it."
 	]
-	quest.65BD001383487C33.title: "Path: The Pokémon World"
+	quest.65BD001383487C33.title: "Path: Pokémon (the Kakuto Region)"
 	quest.65BD001383487C33.quest_desc: [
 		"Pokémon live in their own world, reached through a portal you build yourself."
 		""
-		"First you need a &eBell Fragment&r: they're rare finds in chests of dungeons, temples, mineshafts, ancient cities and woodland mansions. Open the &cPokémon World&r chapter for the rest."
+		"First you need a &eBell Fragment&r: they're rare finds in chests of dungeons, temples, mineshafts, ancient cities and woodland mansions. Open the &cKakuto Region&r chapter for the rest."
 	]
 	chapter.793E32936A23A83E.title: "Welcome to Strata"
 	chapter.793E32936A23A83E.chapter_subtitle: ["Build. Fly. Explore. Start here!"]
@@ -275,7 +277,7 @@
 	]
 	quest.2B21940EBDCD3028.title: "Zinc"
 	quest.2B21940EBDCD3028.quest_desc: [
-		"&eZinc&r is Create's own ore. Look for it underground (Just Enough Resources shows the best heights: press &eR&r on zinc ore)."
+		"&eZinc&r is Create's own ore. Look for it underground (EMI Ores shows the best heights: press &eR&r on zinc ore)."
 		""
 		"Smelt it into ingots. Crushing it first gives more."
 	]
@@ -475,7 +477,7 @@
 	quest.28007822CBD71855.quest_desc: [
 		"Strata has &cno free teleporting&r, so getting people and stuff around is a big deal. &eCreate trains&r are the answer: you build the train yourself, block by block, and it drives your tracks on a timetable."
 		""
-		"Trains carry players, chests and tanks between your bases, mines and farms. Later, they're how goods cross between far-away places before wireless exists."
+		"Trains carry players, chests and tanks between your bases, mines and farms. They're the fun way to move goods between far-away places, long before wireless is cheap."
 		""
 		"You'll need brass for most train parts (see &bCreate: Getting Moving&r)."
 	]
@@ -555,7 +557,7 @@
 	quest.7BD95B1FE0C3C05A.quest_desc: [
 		"&eCreate: Numismatics&r adds coins: &eSpur&r, &eBevel&r, &eSprocket&r, &eCog&r, &eCrown&r and &eSun&r, from smallest to biggest. Hover over a coin to see its value."
 		""
-		"Coins can't be crafted. Here are a few to start your economy. Sell things to friends and they flow around the server."
+		"Coins can't be crafted. You started with &e10 Cogs&r, and here are a few smaller coins to go with them. Sell things to friends and they flow around the server."
 	]
 	quest.26C16B2F19AFD374.title: "Vendors"
 	quest.26C16B2F19AFD374.quest_desc: [
@@ -921,7 +923,7 @@
 	quest.0179AD1E229DFE2E.quest_desc: [
 		"&eHigh Voltage&r steel lines are Strata's long-distance power. They carry the most power and reach the farthest between poles."
 		""
-		"&6Plan a grid:&r HV between buildings and outposts, a substation (HV Transformer, then a Transformer) at each end, and LV or Mekanism cables inside. There's no wireless power early on, so a real power line is the way to move energy."
+		"&6Plan a grid:&r HV between buildings and outposts, a substation (HV Transformer, then a Transformer) at each end, and LV or Mekanism cables inside. Wireless power (Flux Networks) costs a lot, so a real power line is the cheap way to move energy."
 	]
 	quest.4A69185969BDB2AE.title: "Crusher"
 	quest.4A69185969BDB2AE.quest_desc: [
@@ -967,9 +969,9 @@
 	]
 	quest.2FFB22C0A92AC872.title: "Osmium"
 	quest.2FFB22C0A92AC872.quest_desc: [
-		"&eOsmium&r is Mekanism's main metal. Its blue-grey ore is common underground. Smelt the raw ore into ingots."
+		"&eOsmium&r is Mekanism's main metal. Its blue-grey ore is scarce at home: enough to get started. The rich seams formed under the crushing weight of the deep sea, in the &bAbyssal Plain&r. Smelt the raw ore into ingots."
 		""
-		"Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too: Mekanism uses all of them later."
+		"Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too: Mekanism uses all of them later (fluorite is richest around the Abyssal Plain's vents)."
 	]
 	quest.413043436901FC89.title: "Metallurgic Infuser"
 	quest.413043436901FC89.quest_desc: [
@@ -1090,13 +1092,13 @@
 	]
 	quest.59A4A7CF1DE61FBB.title: "Mekanism Tools"
 	quest.59A4A7CF1DE61FBB.quest_desc: [
-		"&bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze, steel, lapis, glowstone and the very strong &erefined obsidian&r."
+		"&bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze, steel, lapis, glowstone and &erefined obsidian&r (as tough as netherite)."
 		""
 		"Each also has a &ePaxel&r: pickaxe, axe and shovel in one."
 	]
 	quest.2173882612578849.title: "Refined Obsidian Armour"
 	quest.2173882612578849.quest_desc: [
-		"&eRefined Obsidian&r is one of the toughest metals around. Obsidian is crushed, infused with diamond and compressed with osmium into ingots (press &eR&r on the ingot to follow the chain)."
+		"&eRefined Obsidian&r is as tough as netherite, without the trip to the Nether. Obsidian is crushed, infused with diamond and compressed with osmium into ingots (press &eR&r on the ingot to follow the chain)."
 		""
 		"A full set is great armour for the dangerous dimensions."
 	]
@@ -1114,9 +1116,9 @@
 	]
 	quest.550C948E3F573CF8.title: "Quantum Entangloporter"
 	quest.550C948E3F573CF8.quest_desc: [
-		"Mid-game wireless. Two &eQuantum Entangloporters&r on the same frequency act like one block: items, fluids, gases, power and heat put into one come out of the other."
+		"Wireless anything. Two &eQuantum Entangloporters&r on the same frequency act like one block: items, fluids, gases, power and heat put into one come out of the other."
 		""
-		"It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment. It's part of Strata's wireless tier that opens after the Nether."
+		"It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment. It works across dimensions too."
 	]
 	quest.704A0A13B6F0CE96.title: "Ultimate Tier"
 	quest.704A0A13B6F0CE96.quest_desc: [
@@ -1293,16 +1295,15 @@
 	quest.573B94C480D57557.quest_desc: [
 		"Mid-game wireless: a &eWireless Access Point&r on your network lets a &eWireless Terminal&r reach it from nearby. It runs on stored power, so charge it in a Charger."
 		""
-		"Range is limited; &eWireless Boosters&r in the access point stretch it. It's part of Strata's wireless tier that opens after the Nether."
+		"Range is limited; &eWireless Boosters&r in the access point stretch it."
 	]
 	quest.561058F56B975552.title: "256k Cells"
 	quest.561058F56B975552.quest_desc: [
-		"The biggest standard cell. Strata places the top cells after the"
-		"&cNetherite Monstrosity&r: boss drops will be part of the recipe."
+		"The biggest standard cell. Its cell component needs a &5Void Core&r from the &cEnder Guardian&r (Cataclysm, End citadel)."
 	]
 	quest.0F7CF4639F4C3D2F.title: "Quantum Network Bridge"
 	quest.0F7CF4639F4C3D2F.quest_desc: [
-		"The &5Quantum Network Bridge&r links two ME networks anywhere, &eeven in other dimensions&r. It's Strata's only cross-dimension wireless, so it's late."
+		"The &5Quantum Network Bridge&r links two ME networks anywhere, &eeven in other dimensions&r. The parts are expensive, so it's a late-game project."
 		""
 		"Build a ring of 8 &eQuantum Rings&r around a &eQuantum Link Chamber&r at each end. &eEntangled Singularities&r (made in pairs, in an explosion) go in the chambers. Both ends must stay loaded. Gated behind the &cEnder Guardian&r."
 	]
@@ -1404,7 +1405,7 @@
 	task.38F10BD01D507382.title: "36 Reactor blocks"
 	quest.0C280A2767BBC7E2.title: "Powah: Reactor"
 	quest.0C280A2767BBC7E2.quest_desc: [
-		"The Powah &eReactor&r is a multiblock that burns &eUraninite&r (from Powah's own ore) for lots of power. Add coolant and a carbon source to make it run better."
+		"The Powah &eReactor&r is a multiblock that burns &eUraninite&r (from Powah's own ore) for power. Add coolant and a carbon source to make it run better. Each tier makes more: a Basic reactor about matches a Create alternator, a Nitro one makes 15,000 FE/t. The boss-gated nuclear reactors stay the top power."
 		""
 		"Place 36 reactor blocks of the same tier together and it builds itself."
 	]
@@ -1440,13 +1441,13 @@
 		"&bIntegrated Dynamics&r: read anything (a chest, a tank, the time of day) and make your base react to it."
 		"&bLaserIO&r: move items, fluids and power between nearby blocks with lasers."
 		"&bMore Red&r: compact redstone logic gates and wires."
-		"&bFlux Networks&r: wireless power, &cafter the Nether&r."
+		"&bFlux Networks&r: wireless power, even across dimensions."
 	]
 	quest.01ADE2B171793530.title: "ID: Menril"
 	quest.01ADE2B171793530.quest_desc: [
 		"Integrated Dynamics runs on &eMenril&r, from pale blue Menril trees. Squeeze Menril logs in a &eSqueezer&r for resin, then dry the resin in a &eDrying Basin&r to get &eCrystallized Menril&r."
 		""
-		"The book &eOn the Dynamics of Integration&r explains the whole mod."
+		"The book &eOn the Dynamics of Integration&r (from the first quest) explains the whole mod."
 	]
 	quest.3BB43D04EF28DFA6.title: "ID: Logic Cables"
 	quest.3BB43D04EF28DFA6.quest_desc: [
@@ -1503,7 +1504,7 @@
 	]
 	quest.2208B866CA7D5293.title: "Flux Dust"
 	quest.2208B866CA7D5293.quest_desc: [
-		"&bFlux Networks&r sends power without wires. It's part of Strata's wireless tier that opens &eafter the Nether&r."
+		"&bFlux Networks&r sends power without wires, even to other dimensions."
 		""
 		"&eFlux Dust&r is made in the world by crushing redstone between &ebedrock&r and &eobsidian&r. Press &eR&r on Flux Dust to see the setup."
 	]
@@ -1606,6 +1607,8 @@
 	quest.6B9F103C58B9251A.title: "Nuclear Power"
 	quest.6B9F103C58B9251A.quest_desc: [
 		"Oritech's &eNuclear Reactor&r is a multiblock of rods, heat pipes, vents and absorbers. It makes huge amounts of power, and a lot of heat."
+		""
+		"The &eReactor Controller&r needs an &eIgnitium Ingot&r, from &cIgnis&r (Cataclysm)."
 		""
 		"&cKeep it cool&r, or the light show will be bigger than you wanted."
 	]
@@ -1730,7 +1733,7 @@
 	]
 	quest.2DED5A01D6C48666.title: "Draconium"
 	quest.2DED5A01D6C48666.quest_desc: [
-		"&eDraconium Ore&r is rare and deep. It shows up in the Overworld, the Nether and the End (the End has the most). Smelt the dust or ore into ingots."
+		"&eDraconium&r only forms where dragon energy soaks the rock: deep in &cthe Nether&r (rare) and all through &5the End&r (most of it). Smelt the dust or ore into ingots."
 		""
 		"The &eInformation Tablet&r is Draconic Evolution's guide."
 	]
@@ -1837,9 +1840,10 @@
 		""
 		"The other magic mods (Iron's Spells, Occultism) plug into Ars, so this is a great place to start."
 	]
+	task.5FA2E283AABFA0FA.title: "Read the Tattered Tome"
 	quest.7D759B61A5A29A19.title: "The Tattered Tome"
 	quest.7D759B61A5A29A19.quest_desc: [
-		"Craft the &eTattered Tome&r (a book and a lapis). It's Ars Nouveau's own guide: every block, glyph, ritual and creature has a page with recipes."
+		"The &eTattered Tome&r you got for starting this chapter is Ars Nouveau's own guide: every block, glyph, ritual and creature has a page with recipes. Lost it? Craft another from a book and a lapis."
 		""
 		"It also has a key of its own (\"Open Documentation\", in Options > Controls)."
 	]
@@ -2106,7 +2110,7 @@
 	quest.1006BE110A92440E.quest_desc: [
 		"The strongest Iron's workstation: &elevel up scrolls&r (scroll + ink of the next rarity), upgrade armor and spell books, and &eimbue weapons&r with a spell."
 		""
-		"Late game also brings &eMithril&r (a rare ore below y = -38, hidden from air; needs a netherite pickaxe) and &eupgrade orbs&r (an orb plus 8 runes)."
+		"Late game also brings &eMithril&r (needs a netherite pickaxe). A few veins hide below y = -38 at home; it grows richest in the dark of &5the Hollow&r and &eupgrade orbs&r (an orb plus 8 runes)."
 	]
 	quest.6F8F8E34558B0C4F.title: "The Best Books"
 	quest.6F8F8E34558B0C4F.quest_desc: [
@@ -2393,9 +2397,9 @@
 	quest.1C0D3E4C359CF7E3.quest_desc: [
 		"Fill the &eLiquefaction Cauldron&r with a Sal Ammoniac bucket, put in a &eraw iron&r, heat it: out comes &eIron Sulfur&r, several from one raw ore. This is where the multiplying happens."
 	]
-	quest.6DA5BFE87D61AA1D.title: "Incubation: 3 Ingots from 1"
+	quest.6DA5BFE87D61AA1D.title: "Incubation: More Ingots from Ore"
 	quest.6DA5BFE87D61AA1D.quest_desc: [
-		"The &eIncubator&r puts the three principles back together. Fill its &eSulfur&r, &eSalt&r and &eMercury&r vessels, heat it, and collect &a3 iron ingots&r for every raw iron you liquefied."
+		"The &eIncubator&r puts the three principles back together. Fill its &eSulfur&r, &eSalt&r and &eMercury&r vessels, heat it, and collect &a2 iron ingots&r for every raw iron you liquefied (&a3&r if you liquefy the ore block itself: mine it with Silk Touch)."
 		""
 		"It works for most ores and raw metals. Look up any Sulfur with &eU&r to see what it makes."
 	]
@@ -2574,7 +2578,7 @@
 	quest.03F9FEFC8BC511A2.quest_desc: [
 		"&eYUNG's&r mods rebuild the classic structures: desert temples, jungle temples, dungeons, mineshafts, witch huts, ocean monuments and Nether fortresses."
 		""
-		"Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure. Watch your step, and keep an eye out for strange &5eyes&r in the chests (you'll need them later, see &5The End&r)."
+		"Desert temples are now full tombs with traps, puzzles and a pharaoh's treasure. Watch your step: the Pharaoh's tomb, the jungle temple's treasure room and other places each guard one of the &5eyes&r that open the End (see &5The End&r)."
 	]
 	task.2CFF4B1CD2FC451F.title: "Explore a jungle temple"
 	quest.580BC1D468ECFDBC.title: "Better Jungle Temple"
@@ -2637,9 +2641,10 @@
 		""
 		"Nine Artifact Shards craft an &eUnidentified Artifact&r. Study it at the table to find out what it is. Identified artifacts give you special powers."
 	]
+	task.1B1DBF706F412D54.title: "Craft an Unidentified Artifact"
 	quest.3D9E8FA0368B86D6.title: "A Mystery Solved"
 	quest.3D9E8FA0368B86D6.quest_desc: [
-		"Identify your first artifact. Read its tooltip to see what it does."
+		"Craft an Unidentified Artifact from nine shards, then study it at the table. Read the result's tooltip to see what it does."
 		""
 		"Keep digging: there are lots of different ones to collect."
 	]
@@ -2660,7 +2665,7 @@
 		"&aThe Twilight Forest&r: a magic forest with a chain of bosses."
 		"&bThe Aether&r: islands in the sky."
 		"&5The End&r: find 12 eyes and open the stronghold portal."
-		"&cThe Pokémon World&r: if you've found a Bell Fragment."
+		"&cThe Kakuto Region&r: if you've found a Bell Fragment."
 	]
 	chapter.01EF06C46B0F1EC6.title: "Explorer's Guide"
 	chapter.01EF06C46B0F1EC6.chapter_subtitle: ["Compasses, dungeons, ruins and treasure"]
@@ -2670,11 +2675,11 @@
 		""
 		"Bring: a stack of blocks, food, a bow, and a &eflint and steel&r to relight your portal. Lava is everywhere. Fire resistance potions are your best friend."
 	]
-	quest.334584320691A8F2.title: "Expert Mode"
+	quest.334584320691A8F2.title: "Tougher Down Here"
 	quest.334584320691A8F2.quest_desc: [
-		"Your first trip here moved the whole server to &eExpert&r difficulty. Regular mobs everywhere hit a bit harder and have more health. Bosses don't change."
+		"The Nether is a step up from home: wither skeletons, blazes, ghasts and the mobs from &eIncendium&r and &eEternal Nether&r hit harder than anything in the Overworld."
 		""
-		"It's a modest step. Upgrade your armor soon, and keep a shield in your off-hand. The next step, &cMaster&r, comes after the Ender Dragon."
+		"Upgrade your armor soon, and keep a shield in your off-hand. Your own &eWorld Tier&r (Alt+L) still decides how tough mobs around you get."
 	]
 	quest.63E001FFDB4BBB22.title: "Piglin Manners"
 	quest.63E001FFDB4BBB22.quest_desc: [
@@ -2693,7 +2698,7 @@
 	quest.7E4CFCB8C2D54009.quest_desc: [
 		"&eYUNG's Better Nether Fortresses&r are huge brick mazes with bridges, towers and halls. Blazes and wither skeletons live here."
 		""
-		"Loot every chest: some hold a &5Nether Eye&r, one of the eyes you need to reach the End."
+		"The wither skeletons here drop the skulls that summon &5the Wither&r, keeper of the Wither Eye."
 	]
 	quest.6C41D3B98C3724FB.title: "Blaze Rods"
 	quest.6C41D3B98C3724FB.quest_desc: [
@@ -2781,10 +2786,10 @@
 	quest.14038F77BDCCE0BA.quest_desc: [
 		"The Nether opens up a lot:"
 		""
-		"&bSame-dimension wireless&r tech is unlocked now (see the Tech chapters)."
-		"&5The End&r: the Nether Eye and Cursed Eye are two of the 12 eyes you need."
+		"&bNetherite&r and Nether materials feed the mid tiers of the Tech chapters."
+		"&5The End&r: Ignis keeps the Cursed Eye and the Monstrosity the Nether Eye, two of the eyes you need."
 		"&cCataclysm&r: the Ignis and the Netherite Monstrosity wait in their own lairs."
-		"&cThe Pokémon World&r: the &cFire Gym&r is down here in the Nether."
+		"&cThe Kakuto Region&r: the &cFire Gym&r is down here in the Nether."
 	]
 	chapter.20C8627B6ED3DAEC.title: "The Nether"
 	chapter.20C8627B6ED3DAEC.chapter_subtitle: ["Fire, fortresses and netherite"]
@@ -3017,7 +3022,7 @@
 	quest.147A5BB5467358D6.quest_desc: [
 		"Ancient Cities sit deep under the mountains, near Y -50. They're huge, dark and silent."
 		""
-		"Their chests are some of the best in the game: &eSwift Sneak&r books, echo shards, smithing templates, and even a &dBell Fragment&r for the Pokémon World portal. In the middle stands a giant frame of &8reinforced deepslate&r. Remember it."
+		"Their chests are some of the best in the game: &eSwift Sneak&r books, echo shards, smithing templates, and even a &dBell Fragment&r for the Kakuto Region portal. In the middle stands a giant frame of &8reinforced deepslate&r. Remember it."
 	]
 	quest.34BA13852FDF2036.title: "Echo Shards"
 	quest.34BA13852FDF2036.quest_desc: [
@@ -3076,7 +3081,7 @@
 		"You've seen the darkest place in the pack. Other big trips:"
 		""
 		"&5The End&r: Warden gear is a great way to face the Ender Dragon."
-		"&cThe Pokémon World&r: ancient city chests are a good place to find a Bell Fragment. &cBosses \\& Combat&r: Cataclysm's bosses."
+		"&cThe Kakuto Region&r: ancient city chests are a good place to find a Bell Fragment. &cBosses \\& Combat&r: Cataclysm's bosses."
 	]
 	chapter.67DA74D25631D972.title: "Deeper and Darker"
 	chapter.67DA74D25631D972.chapter_subtitle: ["The Warden, its city and the Otherside"]
@@ -3086,7 +3091,7 @@
 		""
 		"Space has no air: you need a &espace suit&r full of oxygen, and every launch burns &efuel&r. Each planet has a new metal that builds the next rocket."
 		""
-		"Open the &eAstrodux&r guide book for the full details."
+		"Press &eR&r and &eU&r on Ad Astra items to follow the recipe chain."
 	]
 	quest.3793C5BA92EA556D.title: "Etrionic Blast Furnace"
 	quest.3793C5BA92EA556D.quest_desc: [
@@ -3192,67 +3197,168 @@
 	quest.715AC9DE038B7686.quest_desc: [
 		"The End is a dark dimension of floating end-stone islands, home of the &5Ender Dragon&r."
 		""
-		"Getting there is a real quest in Strata. The portal is deep inside a giant &eIntegrated Stronghold&r, and it needs &e12 different magic eyes&r from &eEnd Remastered&r, gathered from all over the world."
+		"Getting there is a real quest in Strata. The portal is deep inside a giant &eIntegrated Stronghold&r, and it needs &e12 different magic eyes&r from &eEnd Remastered&r, taken from bosses, treasure rooms and your own workshops."
 		""
-		"This chapter tells you where every eye comes from."
+		"This chapter tells you exactly where every eye is."
 	]
 	quest.236EBDDB0F644A14.title: "Not Your Usual Eyes"
 	quest.236EBDDB0F644A14.quest_desc: [
-		"&cVanilla Eyes of Ender don't work here.&r They can't open the portal and won't fly toward the stronghold when thrown."
+		"&cVanilla Eyes of Ender don't open the portal here&r (they're still an ingredient)."
 		""
-		"Instead there are &e16 different End Remastered eyes&r. You need &e12 different ones&r: one for each of the 12 frames around the portal. The quests below show where to find them. Collect as a team!"
-	]
-	quest.03517C30EA185420.title: "Eyes of the Old World"
-	quest.03517C30EA185420.quest_desc: [
-		"&eOld Eye&r: desert temple chests and dungeon chests."
-		"&eRogue Eye&r: jungle temple chests."
-		"&eLost Eye&r: mineshaft chests and dungeon chests."
+		"The portal has &e12 frames&r, and each one needs a &edifferent&r End Remastered eye. You can get &e15 eyes&r, and every one has a &eguaranteed&r source. No lucky drops:"
 		""
-		"YUNG's desert temples, jungle temples and dungeons count."
-	]
-	quest.134273CA31BAD4C9.title: "Eyes of Sea and Snow"
-	quest.134273CA31BAD4C9.quest_desc: [
-		"&eBlack Eye&r: buried treasure and shipwreck treasure chests (treasure maps help!)."
-		"&eCold Eye&r: igloo chests (check for the hidden basement)."
-		"&eCorrupted Eye&r: pillager outpost chests."
-	]
-	quest.02A8D9A58EC477C7.title: "Eyes of the Nether"
-	quest.02A8D9A58EC477C7.quest_desc: [
-		"&eNether Eye&r: Nether fortress chests."
-		"&eCursed Eye&r: the treasure room of a bastion remnant."
+		"&c5 from bosses&r: beat the keeper, take its eye."
+		"&e5 from places&r: one treasure chest in one kind of structure always holds the eye."
+		"&b2 you build&r: one on a Create assembly line, one with Ars Nouveau magic."
+		"&73 spares&r: crafted from mob drops, to use instead of eyes you can't or won't get."
 		""
-		"See the &cThe Nether&r chapter for both places."
+		"Everyone gets their own copy: every player who fights a boss gets its eye in their Boss Loot Bag, and treasure chests have loot for each player. One finished portal works for everyone."
 	]
-	quest.4F2ED499D2E5CCC6.title: "Eyes of the Mighty"
-	quest.4F2ED499D2E5CCC6.quest_desc: [
-		"&eMagical Eye&r: dropped by &eEvokers&r (woodland mansions and raids), and found in woodland mansion chests."
-		"&eGuardian Eye&r: dropped by the &eElder Guardian&r in ocean monuments."
-		"&eWither Eye&r: dropped by &5the Wither&r."
-	]
-	quest.6FBD8A0F9924EBA9.title: "Eyes You Make"
-	quest.6FBD8A0F9924EBA9.quest_desc: [
-		"&eWitch Eye&r: an Eye of Ender plus a &eWitch Pupil&r (witches drop them)."
-		"&eUndead Eye&r: an &eUndead Soul&r (from skeleton horses) with a phantom membrane, bone, rotten flesh and ghast tear."
-		"&eExotic Eye&r: an Eye of Ender with two &econduits&r, two glow ink sacs and four corals."
+	task.7A01D97ABA3FB3DD.title: "I've heard the legend"
+	quest.7F567AF96500B7B1.title: "The Sixteen Eyes"
+	quest.7F567AF96500B7B1.quest_desc: [
+		"&oLong ago, the way to the End was sealed. Its sight was split into sixteen eyes and scattered across the world, each given to a keeper who would never give it up: a pharaoh and a pirate crew, kings and monsters, a forge and a frozen temple."
 		""
-		"So vanilla eyes are still useful as an ingredient! Press &eR&r on an eye for its recipe."
+		"&oSome were lost so completely that they can only be made again, by a machine that remembers Redstone, or by magic that remembers the Evoker."
+		""
+		"&oFifteen have been found. The sixteenth, the &5Cryptic Eye&r&o, never has."
+		""
+		"Hover over any eye: its tooltip says who keeps it."
 	]
-	quest.6D264E5C108F4DE9.title: "Strange Eyes"
-	quest.6D264E5C108F4DE9.quest_desc: [
-		"&eEvil Eye&r: some &eCleric&r villagers sell one (emeralds and a rabbit's foot)."
-		"&eCryptic Eye&r: very rarely appears in your inventory when you &eenchant&r something at an enchanting table. Keep enchanting!"
+	quest.3DFE8D969DC659E2.title: "Seeker's Compasses"
+	quest.3DFE8D969DC659E2.quest_desc: [
+		"Exploring is free, but if you'd rather go straight there, craft a &eSeeker's Compass&r for that place (look up \"Seeker's Compass\" in EMI). Each one costs a compass, an Eye of Ender and something that fits the place."
+		""
+		"&eRight-click&r it: the needle turns toward the nearest place that holds that eye, and a message says roughly how far. No coordinates: follow the needle. Right-click again any time to aim it from where you are now. It only works in the Overworld."
+		""
+		"Compasses: Pharaoh's Tomb, Jungle Temple, Foundry, Pirate Ship, Frostbitten Temple and Ocean Monument. The &eExplorer's Compass&r can't find these places."
+		""
+		"For the boss lairs use &eCataclysm's eyes&r: throw one and it flies toward its lair (&6Eye of Flame&r: Ignis, &6Eye of Monstrous&r: the Netherite Monstrosity,"
+		"&6Eye of Mech&r: the Harbinger). See the Cataclysm chapter."
+	]
+	quest.575AB50DB9AE4EB7.title: "Guardian Eye"
+	quest.575AB50DB9AE4EB7.quest_desc: [
+		"&o\"It has seen many warriors drown.\""
+		""
+		"Every &eElder Guardian&r drops a &eGuardian Eye&r. Each &eocean monument&r has three of them, so a group can take one each (only the player who kills it gets the eye)."
+		""
+		"Bring &eWater Breathing&r, &eNight Vision&r and milk for their Mining Fatigue. Find a monument with a &eSeeker's Compass: Ocean Monument&r, a cartographer's Ocean Explorer Map, or by sailing the deep ocean. The easiest boss eye."
+	]
+	quest.18892B849D7A60F0.title: "Wither Eye"
+	quest.18892B849D7A60F0.quest_desc: [
+		"&o\"Has witnessed destruction. Maybe it also witnessed your stuff disappear.\""
+		""
+		"&5The Wither&r always drops a &eWither Eye&r, one for everyone who fights it. Build it from 4 soul sand in a T with 3 &ewither skeleton skulls&r on top (wither skeletons in Nether fortresses drop the skulls)."
+		""
+		"Summon it far from home: it blows up everything around it."
+	]
+	quest.45AB6822D714FD3C.title: "Cursed Eye"
+	quest.45AB6822D714FD3C.quest_desc: [
+		"&o\"Ignis swore to guard it, and the oath burned itself into him.\""
+		""
+		"&6Ignis&r, the burning knight of the &cBurning Arena&r (Nether), always drops the &eCursed Eye&r, one for everyone who fights him. Find the arena with an &6Eye of Flame&r; the &eCataclysm&r chapter shows how to call him up."
+	]
+	quest.4E4AE589BB3E6FAD.title: "Nether Eye"
+	quest.4E4AE589BB3E6FAD.quest_desc: [
+		"&o\"Lost by a demon in the war between the Aether and the Nether.\""
+		""
+		"The &cNetherite Monstrosity&r keeps it locked in its forge-heart. It lives in the &cSoul Black Smith&r in the Nether: find it with an &6Eye of Monstrous&r. It always drops the &eNether Eye&r, one for everyone who fights it."
+	]
+	quest.659E5B2C90E00401.title: "Corrupted Eye"
+	quest.659E5B2C90E00401.quest_desc: [
+		"&o\"The eye of a greedy king, wired into the Harbinger by those who wanted his fortune.\""
+		""
+		"&7The Harbinger&r sleeps deep in the &7Ancient Factory&r (find it with an &6Eye of Mech&r) and only wakes for a &eNether Star&r, so beat the Wither first. It always drops the &eCorrupted Eye&r, one for everyone who fights it. The hardest eye of all."
+	]
+	quest.324D3B2EDD9D9C10.title: "Old Eye"
+	quest.324D3B2EDD9D9C10.quest_desc: [
+		"&o\"Buried with the Pharaoh, who swore to watch over the desert until the end of days.\""
+		""
+		"Every &edesert temple&r hides a &ePharaoh's Tomb&r: a throne room deep inside, with the Pharaoh's two treasure chests. Both always hold an &eOld Eye&r. The temple gives you &cMining Fatigue&r, so you can't dig around its traps: find the way in. Seeker's Compass: &ePharaoh's Tomb&r (gold and sandstone)."
+	]
+	quest.21C8170898C83098.title: "Evil Eye"
+	quest.21C8170898C83098.quest_desc: [
+		"&o\"A holy talisman against bad luck, hidden behind a hundred traps.\""
+		""
+		"Every &ejungle temple&r has one &etreasure room&r, past arrow traps, pits and a lever puzzle. Its chest always holds an &eEvil Eye&r. Seeker's Compass: &eJungle Temple&r (emeralds and mossy cobblestone)."
+	]
+	quest.02055C53D27A8B8E.title: "Lost Eye"
+	quest.02055C53D27A8B8E.quest_desc: [
+		"&o\"Forged by the first blacksmiths in the fires of the Foundry.\""
+		""
+		"The &cFoundry&r is a huge underground forge-dungeon (When Dungeons Arise), full of lava, furnaces and its old workers. Its &etreasure chests&r, in the big crossing halls, always hold a &eLost Eye&r. Bring fire resistance. Seeker's Compass: &eFoundry&r (iron and blast furnaces)."
+	]
+	quest.77AF62C1EBEDC293.title: "Black Eye"
+	quest.77AF62C1EBEDC293.quest_desc: [
+		"&o\"It gave sight to the legendary Black Pearl. Pirate captains still fight over it.\""
+		""
+		"Pirates sail the oceans: the &eCorsair Corvette&r, the &ePirate Junk&r and the ghostly &eUndead Pirate Ship&r. The captain's &etreasure chests&r always hold a &eBlack Eye&r. Expect a crew that shoots back. Seeker's Compass: &ePirate Ship&r (gold and boats)."
+	]
+	quest.227C6BCBBAC9EACD.title: "Cold Eye"
+	quest.227C6BCBBAC9EACD.quest_desc: [
+		"&o\"The Iceologers sealed it in ice before they vanished.\""
+		""
+		"The &bFrostbitten Temple&r in the snowy lands always holds a &eCold Eye&r in its treasure chest, but the &bFrostbitten Golem&r guards it."
+		"&eIgloos&r: about half of them hide a cellar (break the carpet in the floor to find the trapdoor), and that chest also holds a Cold Eye. Seeker's Compass: &eFrostbitten Temple&r (blue ice and snow)."
+	]
+	quest.75C82B8A15C9B399.title: "Red-Hot Rogue Eye"
+	quest.75C82B8A15C9B399.quest_desc: [
+		"&o\"The machine eye that taught our ancestors Redstone. Only a working factory can forge another.\""
+		""
+		"The Rogue Eye is lost; you have to &eforge&r one on a Create &eSequenced Assembly&r line. Put an &eEye of Ender&r on a belt and run it past these machines, in this order, &etwice&r:"
+		""
+		"1. &eDeployer&r holding a &eBrass Sheet&r (the housing)"
+		"2. &eDeployer&r holding a &ePrecision Mechanism&r"
+		"3. &eDeployer&r holding an &eElectron Tube&r"
+		"4. &eSpout&r with &e250 mB of lava&r (it heats the metal)"
+		"5. &eMechanical Press&r"
+		""
+		"It comes off the line as a glowing &6Red-Hot Rogue Eye&r. Press &eR&r on it in EMI to see the steps, and hold &eW&r over each machine for its Ponder scene. Per eye: 2 brass sheets, 2 precision mechanisms, 2 electron tubes and 500 mB of lava."
+	]
+	quest.659E932BB4598A19.title: "Rogue Eye"
+	quest.659E932BB4598A19.quest_desc: [
+		"Hot metal is still soft. &eHarden&r it the way smiths harden steel: &bquench&r it in water."
+		""
+		"Put &bwater&r (a source block or a flowing stream) in front of an &eEncased Fan&r and run the fan: its air stream past the water washes everything in it (Create's \"Bulk Washing\"). Drop the Red-Hot Rogue Eye into the stream, or run a belt through it, and it hisses and hardens into the &eRogue Eye&r."
+	]
+	quest.5DE26DD88D0C36CF.title: "Dormant Magical Eye"
+	quest.5DE26DD88D0C36CF.quest_desc: [
+		"&o\"Without this eye the Evoker has no power.\""
+		""
+		"The Magical Eye was lost with the Evokers' magic. &eBind&r a new one on Ars Nouveau's"
+		"&eEnchanting Apparatus&r: an &eEye of Ender&r on the apparatus, and on the &eArcane Pedestals&r around it:"
+		""
+		"the 7 essences (&cFire&r, &9Water&r, &2Earth&r, &fAir&r, &bAbjuration&r, &dConjuration&r, &6Manipulation&r) and a &eSource Gem Block&r."
+		""
+		"It uses &e5,000 source&r from nearby Source Jars and gives a &eDormant Magical Eye&r. Press &eR&r on it in EMI to see the recipe."
+	]
+	quest.1390E7ED12B98B92.title: "Magical Eye"
+	quest.1390E7ED12B98B92.quest_desc: [
+		"Now &ewake&r it. Put the Dormant Magical Eye in an &eImbuement Chamber&r, with &eArcane Pedestals&r next to the chamber holding an &eAmethyst Cluster&r, a &eGhast Tear&r and a &eSource Gem Block&r."
+		""
+		"The chamber slowly draws &e5,000 source&r from nearby Source Jars. When it's full, the eye opens: the &eMagical Eye&r."
+	]
+	quest.38BF38674088EAC8.title: "Spare Eyes"
+	quest.38BF38674088EAC8.quest_desc: [
+		"Three eyes have nothing to guard them, so anyone can make them. Use them in place of any eyes you can't or won't get (a boss you'd rather skip, say). You only need 12."
+		""
+		"&eUndead Eye&r: an &eUndead Soul&r (skeleton horses drop them) with a phantom membrane, a bone, rotten flesh and a ghast tear."
+		"&eWitch Eye&r: an Eye of Ender and a &eWitch Pupil&r (witches drop them)."
+		"&eExotic Eye&r: an Eye of Ender with two conduits, two glow ink sacs and four corals."
+		""
+		"Press &eR&r on an eye in EMI for its recipe."
 	]
 	task.63C169EE7E205894.title: "Find the stronghold"
 	quest.68F92998FAC6D0FA.title: "Integrated Stronghold"
 	quest.68F92998FAC6D0FA.quest_desc: [
-		"Since eyes don't fly, use the &eExplorer's Compass&r to find the stronghold."
+		"Since eyes don't fly, use the &eExplorer's Compass&r to find the stronghold. You don't need the eyes to go in: find it early and come back with them."
 		""
 		"&eIntegrated Stronghold&r is &chuge&r: libraries, prisons, halls and Create-powered puzzles and traps. Bring lots of torches, food and friends, and set waypoints as you go so you can find the way out."
 	]
 	task.29FD8ECFE606127D.title: "Enter the End"
 	quest.2E741F46B79C4891.title: "Twelve Eyes"
 	quest.2E741F46B79C4891.quest_desc: [
-		"Deep inside, the portal room has a ring of &e12 Ancient Portal Frames&r. Put a &edifferent&r End Remastered eye in each frame. When all 12 are in, the portal opens."
+		"Deep inside, the portal room has a ring of &e12 Ancient Portal Frames&r. Put a &edifferent&r End Remastered eye in each frame (any 12 of the 15). When all 12 are in, the portal opens, for everyone."
 		""
 		"&cThere's no easy way back&r until you beat the dragon (or die). Bring a bed? No! Beds explode in the End. Bring blocks, a bow, potions and a pumpkin to wear so endermen leave you alone."
 	]
@@ -3260,13 +3366,13 @@
 	quest.5E75F524FF7A94CC.quest_desc: [
 		"The dragon heals from the &dEnd Crystals&r on top of the obsidian towers. Shoot or break the crystals first (some are in cages), then fight the dragon when it lands on the portal. &eYUNG's Better End Island&r makes the main island and its towers grander than usual."
 		""
-		"&cWhen the dragon dies, the whole server moves to Master difficulty.&r Regular mobs everywhere get much tougher. Bosses stay as they are. Make sure your friends are ready before you strike the final blow!"
+		"Bring your friends: the dragon is the first real group fight."
 	]
-	quest.145D0A13C975E69D.title: "Master Mode"
+	quest.145D0A13C975E69D.title: "Dragonslayer"
 	quest.145D0A13C975E69D.quest_desc: [
-		"You're in &cMaster&r difficulty now. Upgrade your gear, use Apotheosis gems and affixes, and keep your armor repaired."
+		"The dragon's defeat opens the way to the late game: the &5Pinnacle&r World Tier needs a Dragon kill, and &eDraconic Evolution&r's top cores need its dragon heart."
 		""
-		"The dragon's defeat also opens the way to the late game: top-tier Draconic Evolution and Extended Crafting recipes need it (with a Cataclysm boss)."
+		"Upgrade your gear, use Apotheosis gems and affixes, and keep your armor repaired."
 	]
 	task.24D6B1EB806B4CEE.title: "Visit the Crystal Peaks"
 	quest.3AC1D988D35F91DA.title: "The Outer Islands"
@@ -3279,7 +3385,7 @@
 	quest.494C6E6B0082D282.quest_desc: [
 		"The outer islands are dotted with &eMoog's End Structures&r: spires, towers, gardens, shrines and even crashed sky ships."
 		""
-		"The &bPokémon World&r's psychic and dragon gyms are out here in the End too!"
+		"The &bKakuto Region&r's psychic and dragon gyms are out here in the End too!"
 	]
 	task.1BC1E9F50DBD777C.title: "Explore an End City"
 	quest.6AB5B049A1AA7DAD.title: "End City"
@@ -3302,15 +3408,15 @@
 	quest.39AFFA04EBA96910.quest_desc: [
 		"The End is beaten, but the pack isn't:"
 		""
-		"&cBosses \\& Combat&r: the &5Ender Guardian&r (Cataclysm) unlocks cross-dimension wireless."
+		"&cBosses \\& Combat&r: the &5Ender Guardian&r (Cataclysm) drops the Void Core for the biggest storage."
 		"&bAd Astra&r: rockets to other planets."
 		"&bTech&r: the late tiers of Mekanism, AE2 and Draconic Evolution."
 	]
 	chapter.75980EB7BF20EBD4.title: "The End"
 	chapter.75980EB7BF20EBD4.chapter_subtitle: ["Twelve eyes, a huge stronghold and the Ender Dragon"]
-	quest.1FF724B7E9C746A5.title: "What is the Pokémon World?"
+	quest.1FF724B7E9C746A5.title: "What is the Kakuto Region?"
 	quest.1FF724B7E9C746A5.quest_desc: [
-		"Somewhere beyond a bell's chime is a whole world just for &dPokémon&r (Cobblemon). It looks like a calm, classic Minecraft world, but wild Pokémon live everywhere: in the grass, the trees, the caves and the sea."
+		"Somewhere beyond a bell's chime is the &eKakuto Region&r, a whole world just for &dPokémon&r (Cobblemon). It looks like a calm, classic Minecraft world, but wild Pokémon live everywhere: in the grass, the trees, the caves and the sea."
 		""
 		"Wild Pokémon only appear there. Once you've caught some, they can come with you anywhere, even home to your base."
 		""
@@ -3322,18 +3428,18 @@
 		""
 		"Village bells can be picked up with a pickaxe (the villagers won't mind... much). The Johto Bell is &areusable&r: ringing the portal never uses it up."
 	]
-	quest.69741161528D082E.title: "Poké Portal Frames"
+	quest.69741161528D082E.title: "Alph Stone"
 	quest.69741161528D082E.quest_desc: [
-		"Craft red-and-white &ePoké Portal Frame&r blocks: red dye, redstone, iron, a diamond and white dye make &e8&r at a time."
+		"Carve &eAlph Stone&r, the ancient stone of Johto's ruins: eight &eChiseled Sandstone&r around a &bdiamond&r make &e8&r at a time."
 		""
-		"You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall. Leave the corners out if you're short."
+		"You need enough for a frame the shape of a Nether portal: at least 4 wide and 5 tall. The stones join into one carved gateway, and the corners make it look whole."
 	]
-	task.6DFA391C7EBF3E69.title: "Enter the Pokémon World"
+	task.6DFA391C7EBF3E69.title: "Enter the Kakuto Region"
 	quest.3B4607E3934952D7.title: "Ring the Bell"
 	quest.3B4607E3934952D7.quest_desc: [
-		"Build the frame (like a Nether portal, but with Poké Portal Frames) and use the &eJohto Bell&r on it. The portal fills with red light. Step in!"
+		"Build the frame (like a Nether portal, but with Alph Stone) and ring the &eJohto Bell&r on it. The old gateway wakes up. Step in!"
 		""
-		"A matching portal is built on the other side, and it leads straight back to the Overworld at the same spot. Your Pokémon party HUD only shows inside the Pokémon World."
+		"A matching portal is built on the other side, and it leads straight back to the Overworld at the same spot. Your Pokémon party HUD only shows inside the Kakuto Region."
 	]
 	quest.2F0CDA013A2FEA45.title: "Choose Your Partner"
 	quest.2F0CDA013A2FEA45.quest_desc: [
@@ -3343,7 +3449,7 @@
 	]
 	quest.6B03781B3AA78F5E.title: "Poké Balls"
 	quest.6B03781B3AA78F5E.quest_desc: [
-		"&eApricorn trees&r grow all over the Pokémon World. Red apricorns make &ePoké Balls&r (4 at a time); other colors make other balls. Press &eR&r on a ball to see its recipe."
+		"&eApricorn trees&r grow all over the Kakuto Region. Red apricorns make &ePoké Balls&r (4 at a time); other colors make other balls. Press &eR&r on a ball to see its recipe."
 		""
 		"Grab some &eapricorn sprouts&r too, so you can grow your own trees at home."
 	]
@@ -3362,7 +3468,7 @@
 	task.38368557F662FD73.title: "Heal at a Healing Machine"
 	quest.40A37540F915F3D3.title: "The Pokécenter"
 	quest.40A37540F915F3D3.quest_desc: [
-		"Pokécenters stand in Pokémon World villages and on their own. Inside is a"
+		"Pokécenters stand in Kakuto villages and on their own. Inside is a"
 		"&eHealing Machine&r: put your team in and they're good as new."
 		""
 		"There's a &ePC&r too, to store the Pokémon that don't fit in your party. You can craft your own PC (and later a Healing Machine) for your base."
@@ -3370,14 +3476,14 @@
 	task.58D00DEBFC5A2222.title: "Harvest an apricorn"
 	quest.6BE35B7486F5DA5E.title: "Berry Patch"
 	quest.6BE35B7486F5DA5E.quest_desc: [
-		"Plant your apricorn sprouts and watch them grow into trees. Berry bushes grow in the Pokémon World too: many heal or help in battle, and they look lovely in a garden."
+		"Plant your apricorn sprouts and watch them grow into trees. Berry bushes grow in the Kakuto Region too: many heal or help in battle, and they look lovely in a garden."
 	]
 	task.54368B36DCD83447.title: "Evolve a Pokémon"
 	quest.04BCDE00F47981CA.title: "Evolution!"
 	quest.04BCDE00F47981CA.quest_desc: [
 		"Most Pokémon evolve by levelling up in battle. Some need an &eevolution stone&r instead: Fire, Water, Thunder, Leaf, Moon, Sun and more."
 		""
-		"Evolution stone ores are found underground in the Pokémon World. Mine them, then use the stone on the Pokémon."
+		"Evolution stone ores are found underground in the Kakuto Region. Mine them, then use the stone on the Pokémon."
 	]
 	task.4D2E8FB9C6E23A42.title: "Ride a Pokémon"
 	quest.4D2AAF75529F5102.title: "Ride Along"
@@ -3393,7 +3499,7 @@
 	]
 	quest.4B529064010D7F2C.title: "Trainer Card"
 	quest.4B529064010D7F2C.quest_desc: [
-		"&eRadical Cobblemon Trainers&r: trainers wander the Pokémon World. If one spots you, they'll want to battle!"
+		"&eRadical Cobblemon Trainers&r: trainers wander the Kakuto Region. If one spots you, they'll want to battle!"
 		""
 		"Your Pokémon's &elevel cap&r starts at &e15&r and rises as you beat trainers. Pokémon above the cap won't fight for you yet. The &eTrainer Card&r shows your progress."
 	]
@@ -3406,14 +3512,14 @@
 	task.6FEC86EC4F3AEBCD.title: "Visit the Normal Gym"
 	quest.2E8D916B5BF9FE11.title: "Your First Gym"
 	quest.2E8D916B5BF9FE11.quest_desc: [
-		"&eIntegrated Cobblemon&r gyms are scattered across the Pokémon World, one for each type. Each gym has three trainers: &abeginner&r, &eintermediate&r and &chard&r. Beat all three to complete that gym's badge series. Gym chests have goodies too."
+		"&eIntegrated Cobblemon&r gyms are scattered across the Kakuto Region, one for each type. Each gym has three trainers: &abeginner&r, &eintermediate&r and &chard&r. Beat all three to complete that gym's badge series. Gym chests have goodies too."
 		""
 		"Use the Explorer's Compass to find them. Try the &eNormal Gym&r first."
 	]
 	task.382EAA141FFEDFAF.title: "Find the Fire Gym"
 	quest.113954CADB2869F9.title: "The Fire Gym"
 	quest.113954CADB2869F9.quest_desc: [
-		"Not every gym is in the Pokémon World! The &cFire Gym&r is down in &cthe Nether&r. Bring water-type Pokémon and fire resistance potions."
+		"Not every gym is in the Kakuto Region! The &cFire Gym&r is down in &cthe Nether&r. Bring water-type Pokémon and fire resistance potions."
 	]
 	task.6B8FD491B0BA3E6F.title: "Find the Psychic Gym"
 	task.0DF5888361BE1835.title: "Find the Dragon Gym"
@@ -3423,12 +3529,380 @@
 	]
 	quest.746C5DDD022E55BF.title: "Where Next?"
 	quest.746C5DDD022E55BF.quest_desc: [
-		"The Pokémon World is yours to explore at your own pace:"
+		"The Kakuto Region is yours to explore at your own pace:"
 		""
 		"Look for &eruins, towers and habitats&r: some hold rare Pokémon. Catch a flying partner and explore the &aOverworld&r from above. &cThe Nether&r and &5The End&r chapters lead to the far-away gyms."
 	]
-	chapter.50AE8F5C17F0FC59.title: "The Pokémon World"
+	chapter.50AE8F5C17F0FC59.title: "The Kakuto Region"
 	chapter.50AE8F5C17F0FC59.chapter_subtitle: ["Build a portal, pick a partner, catch them all"]
+	quest.304C0149DE282074.title: "What is the Abyssal Plain?"
+	quest.304C0149DE282074.quest_desc: [
+		"Far below every ocean lies the &bAbyssal Plain&r: a world of water with &cno surface&r. A rock ceiling caps the sea, so there's nowhere to swim up for air."
+		""
+		"Down there you need real engineering: diving suits, airlocks, air machines and, deep enough, &esubmarines&r (&eCreate: Deep Seas&r)."
+		""
+		"The big goal: build a &bDeep Station&r on the floor of the Trench, and wake what sleeps down there."
+	]
+	quest.69218D05C685C8EC.title: "The Tidecaller"
+	quest.69218D05C685C8EC.quest_desc: [
+		"Craft the &eTidecaller&r: a &eConduit&r in the middle, a &eSubmarine Ballast Tank&r above and below it, and &eprismarine crystals&r down both sides."
+		""
+		"The Conduit needs a &eHeart of the Sea&r (buried treasure maps hide in shipwrecks and ocean ruins) and 8 &enautilus shells&r (fishing, drowned, wandering traders). Ballast Tanks come from &eCreate: Deep Seas&r: press &eR&r on one for its recipe."
+	]
+	task.2A95A733164CC6A7.title: "Enter the Abyssal Plain"
+	quest.5D1F2F05C7A31A19.title: "Into the Deep"
+	quest.5D1F2F05C7A31A19.quest_desc: [
+		"Build a frame of &eDark Prismarine&r the shape of a Nether portal (at least 4 wide and 5 tall) and use the &eTidecaller&r on it. Step in!"
+		""
+		"The way home waits right where you arrive, and it leads back to the Overworld at the same spot."
+	]
+	quest.179E72DCBA273C54.title: "The Lifepod"
+	quest.179E72DCBA273C54.quest_desc: [
+		"You arrive inside a &bLifepod&r: a small sealed room with air, lights, windows and a chest of supplies. Its walls can't be broken, so the sea can't get in."
+		""
+		"The way out is the &bmoon pool&r, the hole of water in the floor. Swim down through it and you're in the open sea. Come back the same way to catch your breath or to go home."
+		""
+		"Check the chest, then click the checkmark."
+	]
+	quest.76CD0AE56805CC78.title: "The Sea Always Wins"
+	quest.76CD0AE56805CC78.quest_desc: [
+		"The Abyssal Plain has its own rules:"
+		""
+		"&bThe sea always wins:&r break a block next to water and the gap fills with water. No digging dry tunnels or air pockets!"
+		"&bNo Conduit power:&r Conduits work everywhere else, but not down here."
+		"&bNo sponges:&r the sea is far too big for them."
+		"&bWater pressure:&r deeper than &e120 m&r (counted from the ceiling) the water starts to hurt you, and at &c180 m&r it crushes you."
+		""
+		"So you bring your own air: sealed rooms, pumps and air machines. Click the checkmark when you're ready."
+	]
+	task.44F152586ED34C4C.title: "Visit the Abyssal Shelf"
+	quest.0571D89A5B53A668.title: "The Shelves"
+	quest.0571D89A5B53A668.quest_desc: [
+		"The &bAbyssal Shelf&r is the shallow edge of the sea: kelp forests, coral and fish. It's in the top &e120 m&r, so plain gear is fine here."
+		""
+		"Bring a way to breathe (water breathing potions, a Create backtank, spells) and plenty of light: glowing life is the only light down here."
+	]
+	quest.66EAA7339CC88AF7.title: "Copper Diving Suit"
+	quest.66EAA7339CC88AF7.quest_desc: [
+		"Going deeper than &e120 m&r needs the full &eCopper Diving Suit&r: Create's &eCopper Diving Helmet&r and &eBoots&r, plus Deep Seas' &eDiving Chestplate&r and &eLeggings&r."
+		""
+		"Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eCopper Backtank&r in your inventory: the helmet breathes from it. Carry a spare!"
+	]
+	task.28AC23D5B4A3509F.title: "Visit the Abyssal Plain biome"
+	quest.2D26F80B0A383D4D.title: "The Plain"
+	quest.2D26F80B0A383D4D.quest_desc: [
+		"Below the shelves lies the &bAbyssal Plain&r itself, about &e245 m&r below the ceiling: flats of clay and mud, glass sponges, whale bones and ruins."
+		""
+		"Keep an eye out for the hot &cHydrothermal Fields&r (vents and magma) and the glowing &bBioluminescent Gardens&r."
+		""
+		"The seafloor rock hides the richest &eosmium&r anywhere, and the vents grow &efluorite&r: dig in from a sealed base."
+		""
+		"Bring back a &eGlass Sponge&r. It's only for decorating: it won't soak up any water."
+	]
+	quest.0547F11ECACBC841.title: "First Air"
+	quest.0547F11ECACBC841.quest_desc: [
+		"A base down here is a &bpressure hull&r: a sealed room you pump dry."
+		""
+		"Build a closed room (no gaps!) and pump the water out with Create &eMechanical Pumps&r. A &eDecompression Chamber&r makes an airlock, so you can come and go without flooding the place."
+		""
+		"Remember, the sea always wins: careful when you mine near your walls. Click the checkmark once you have a dry room."
+	]
+	quest.5665AA0E7F714064.title: "Breathing Room"
+	quest.5665AA0E7F714064.quest_desc: [
+		"A dry room still runs out of air. The &eElectrolyzer&r makes oxygen and the &eOxygen Diffuser&r spreads it through your sealed space."
+		""
+		"Set them up and your base (or your submarine) stays breathable. Press &eR&r on them for recipes."
+	]
+	quest.07B4B6558E2133F6.title: "Your First Submarine"
+	quest.07B4B6558E2133F6.quest_desc: [
+		"Past &e280 m&r even the diving suit gives up. From here on you go by &bsubmarine&r."
+		""
+		"A Deep Seas submarine is a Create contraption: a sealed hull with &eBallast Tanks&r to dive and surface, &eWater Thrusters&r or a &ePropeller&r to move, and an &eOnboard Computer&r to steer. Put your air machines inside."
+		""
+		"Hull blocks have &cdepth ratings&r: the deeper you go, the stronger the hull must be. Ponder the Onboard Computer to learn the controls."
+	]
+	task.6FC14A842716EA6A.title: "Reach the Trench"
+	quest.5DDD9A810A8DAB51.title: "The Trench"
+	quest.5DDD9A810A8DAB51.quest_desc: [
+		"&cThe Trench&r cuts deep into the Plain, about &e545 m&r down. Only a submarine gets you there."
+		""
+		"It's home to the &bDeep Ones&r, a drowned people with knights and mages, and to the &cHullbreaker&r, a monster that hunts submarines. The best ruins and the best loot are down here too."
+	]
+	task.5032CDFFFF2C73EA.title: "Make your first discovery"
+	quest.59CF7545BD1DEE3D.title: "Field Guide"
+	quest.59CF7545BD1DEE3D.quest_desc: [
+		"Everything down here is new to science. Look at creatures and plants through a &espyglass&r to scan them into your &eField Guide&r, then open the guide with &eAlt+F&r."
+		""
+		"Each discovery fills in a page of notes."
+	]
+	task.2B24A1A66FC81ABC.title: "Observe a Lanternfish"
+	task.1B2B5F26631786FD.title: "Observe a Tripodfish"
+	task.365DECE86C16941C.title: "Observe an Anglerfish"
+	quest.47284E1027A550A9.title: "Creatures of the Deep"
+	quest.47284E1027A550A9.quest_desc: [
+		"Find and study three deep-sea creatures: look straight at each one for a moment."
+		""
+		"&eLanternfish&r swim in glowing schools, &eTripodfish&r stand on the seafloor on their long fins, and the &eAnglerfish&r waits in the dark behind its little light. Scan them into your Field Guide while you're at it!"
+	]
+	quest.12D090D717DA6350.title: "Scanner"
+	quest.12D090D717DA6350.quest_desc: [
+		"A &eScanner&r (Scannable) pings everything around you and shows it through rock and murky water."
+		""
+		"Modules choose what it finds: &eMonsters&r, &eChests&r and &eRange&r are great for ruin hunting. It runs on FE, so charge it like any powered tool."
+	]
+	task.40AA2165C9F2FB47.title: "Find the ruins of Atlantis"
+	task.3BD621C34C41E77F.title: "Find the Prismarine Trial Chamber"
+	quest.65500AABD604A92A.title: "Ruins of the Plain"
+	quest.65500AABD604A92A.quest_desc: [
+		"A whole civilisation drowned here long ago. Its ruins lie across the Plain:"
+		""
+		"&eAtlantis&r: the broken streets and temples of an ancient city."
+		"&ePrismarine Trial Chamber&r: a trial chamber built by the drowned people. Expect a fight, and look for &dAbyssal Pearls&r in its chests."
+	]
+	task.76CBD400470C1071.title: "Find the Colosseum"
+	task.10CE1D40DB90CE8D.title: "Find the Sunken City"
+	quest.2594E143CD3F9273.title: "Ruins of the Trench"
+	quest.2594E143CD3F9273.quest_desc: [
+		"The deepest ruins are in the Trench:"
+		""
+		"&eThe Colosseum&r: an arena with a guardian waiting at its heart. Its chests can hold &dAbyssal Pearls&r."
+		"&eThe Sunken City&r: the drowned capital, still guarded."
+		""
+		"The &bDeep Ones&r build ruins of their own down here too, and their chests can also hold pearls."
+	]
+	quest.73859B8AAA3A35E8.title: "Karkinos"
+	quest.73859B8AAA3A35E8.quest_desc: [
+		"&cKarkinos&r is a giant crab and the first big hunt of the deep."
+		""
+		"It doesn't wander about: you call it. Craft an &eOminous Hook&r from the claws of nine different crabs (press &eR&r on it), hold it in your &eoffhand&r and go fishing. Something much bigger than a fish bites."
+		""
+		"&6Drops:&r the &eKarkinos Claw&r, and &dAbyssal Pearls&r when it dies in the Abyssal Plain."
+	]
+	quest.5781E9D7434B7204.title: "The Hullbreaker"
+	quest.5781E9D7434B7204.quest_desc: [
+		"The &cHullbreaker&r roams the Trench and hunts anything that moves, submarines most of all. It's huge, fast and hits like a train."
+		""
+		"Draw it away from your sub, and bring friends."
+		""
+		"&6Drops:&r the &eImmortal Embryo&r, scrap metal and &dAbyssal Pearls&r."
+	]
+	quest.42AF8A4D4AB50FEA.title: "Abyssal Pearls"
+	quest.42AF8A4D4AB50FEA.quest_desc: [
+		"&dAbyssal Pearls&r are the rarest treasure of the deep. The Leviathan Lure needs &e6&r."
+		""
+		"Deep creatures sometimes drop one, &cKarkinos&r and the &cHullbreaker&r always do, and ruin chests (the trial chamber, the Colosseum, Deep One ruins) can hold them. They only drop in the Abyssal Plain."
+	]
+	quest.06F630503D2D680E.title: "The Leviathan Lure"
+	quest.06F630503D2D680E.quest_desc: [
+		"Craft the &eLeviathan Lure&r: six &dAbyssal Pearls&r, the &eKarkinos Claw&r, a &eHeart of the Sea&r and the &eImmortal Embryo&r."
+		""
+		"Take it into &cthe Trench&r, below &eY 120&r, and use it. The lure is used up, and only one Leviathan comes at a time."
+	]
+	quest.1AA55F3F052C323F.title: "The Leviathan"
+	quest.1AA55F3F052C323F.quest_desc: [
+		"Something vast answers the lure. &cThe Leviathan&r is the Abyssal Plain's final boss: fast, armored, and it can't be hurt outside the water. Down here, that's never a problem."
+		""
+		"&6Drops:&r &eTidal Claws&r (a grappling hook), the &eAbyssal Egg&r and &e4 to 6&r &dAbyssal Pearls&r. It counts for the Cataclysm chapter too."
+	]
+	quest.3A123FE67912186E.title: "Deep Station"
+	quest.3A123FE67912186E.quest_desc: [
+		"The big goal: a &bDeep Station&r on the floor of the Trench."
+		""
+		"Build a sealed, pumped-dry base down there with an airlock, working air, light, storage and a dock for your submarine. Only the strongest hull blocks hold at that depth."
+		""
+		"Show it off to your friends, then click the checkmark. Welcome home, deep-sea explorer!"
+	]
+	chapter.729219BC1E51FD90.title: "The Abyssal Plain"
+	chapter.729219BC1E51FD90.chapter_subtitle: ["Dive, build a base you can breathe in, wake the Leviathan"]
+	quest.592EB82983A08C0B.title: "What is the Hollow?"
+	quest.592EB82983A08C0B.quest_desc: [
+		"The &5Hollow&r is a horror dimension: endless night, thick fog, and every horror mob in the pack lives here and nowhere else. Going there is &eoptional&r, and it's &cdangerous&r."
+		""
+		"Why go? Its chests and its monsters hold &5Hollow Embers&r, a material that unlocks strong items all across the pack, and its bosses drop trophies you can't get anywhere else."
+		""
+		"The big goal: light a &bPale Beacon&r, the only safe ground in the Hollow, and find out what happened to the last people who tried."
+	]
+	quest.2FEC71D80B213EDC.title: "The Pale Lantern"
+	quest.2FEC71D80B213EDC.quest_desc: [
+		"Craft the &ePale Lantern&r from a &eCreaking Heart&r, &eresin clumps&r and a &esoul lantern&r. Press &eR&r on it for the recipe."
+		""
+		"Creaking Hearts sit inside the pale oak trees of &bPale Gardens&r. Mine one with &eSilk Touch&r, or it just breaks into resin. Taking the heart ends that garden's resin, so gather what you need first. The soul lantern needs soul sand or soil from the Nether."
+	]
+	task.09312D1648E614CD.title: "Enter the Hollow"
+	quest.7AF0479DB4670F6F.title: "Through the Static"
+	quest.7AF0479DB4670F6F.quest_desc: [
+		"Build a frame of &eResin Bricks&r the shape of a Nether portal and use the &ePale Lantern&r on it. The lantern isn't used up."
+		""
+		"The portal fills with grey static, like a dead TV channel. Step in. It links back to the Overworld at the same spot."
+	]
+	quest.2E6B42FBBCE18B1F.title: "The Rules of the Dark"
+	quest.2E6B42FBBCE18B1F.quest_desc: [
+		"The Hollow has its own rules:"
+		""
+		"&5Always night:&r and fog so thick you see about 10 blocks. Hold a light in either hand to see further."
+		"&5No sleeping:&r beds don't work here (with one exception you'll learn about). Compasses and clocks spin."
+		"&5Sanity drains:&r watch the meter. Low sanity brings hallucinations, and below &c25%&r some of them become real and attack."
+		"&5It plays tricks:&r footsteps, whispers, a figure at the edge of your sight. Those can't hurt you."
+		"&5Scary but fair:&r every threat has a warning and a counter, and no single hit from a horror mob takes more than &c40%&r of your health. Bosses hit as hard as they like."
+		""
+		"Click the checkmark when you're ready."
+	]
+	quest.7235A8852789FD68.title: "First Light"
+	quest.7235A8852789FD68.quest_desc: [
+		"Light is your best friend here. &eCampfires&r and &elanterns&r slowly restore sanity when you stay near them, and so do your friends: stick together."
+		""
+		"Make a &eGarland&r (Sanity: Renewed; press &eR&r on it) and build a small lit camp near the portal. Resting outside the Hollow also brings your sanity back. Click the checkmark once your camp is lit."
+	]
+	quest.40BE09712FC8FE92.title: "Timey-Wimey Detector"
+	quest.40BE09712FC8FE92.quest_desc: [
+		"&cWeeping Angels&r are stone statues that only move when nobody is looking at them. Keep your eyes on them and back away, and keep your lights up."
+		""
+		"The &eTimey-Wimey Detector&r warns you when one is near. To break one, use a &epickaxe&r: other weapons barely scratch them."
+	]
+	quest.7059E02BD73296B2.title: "Darksteel"
+	quest.7059E02BD73296B2.quest_desc: [
+		"Normal ores don't grow in the Hollow's grimstone. Its metal is &eDarksteel&r: mine &eDarksteel Ore&r and smelt the raw ore into ingots."
+		""
+		"Darksteel makes &eGrim \\& Bleak&r's tools, weapons and armor, and several of its weapons have useful extras. You'll also need ingots for the Cursed Amulet and the Gate Key later on."
+	]
+	quest.7D852B7EB58BBD36.title: "Something Is Listening"
+	quest.7D852B7EB58BBD36.quest_desc: [
+		"&cThe Ravenous&r hunts by sound. Building, digging and opening chests can call it from far away, and it &ceats through blocks&r to reach you. A screech comes before the chase: when you hear it, move."
+		""
+		"Its young, the &cScreechers&r, carry an echolocation organ. Use one to craft the &eAnti-Ravenous&r: it stuns everything within 25 blocks and buys you time to run."
+	]
+	quest.5591FDED3B4F99C8.title: "Sound Walls"
+	quest.5591FDED3B4F99C8.quest_desc: [
+		"Nothing you build here is safe by default: the Ravenous chews through planks and stone. &eObsidian&r is too tough for it, so a camp you want to keep needs obsidian walls."
+		""
+		"Build a shelter it can't eat into, then click the checkmark."
+	]
+	task.02FEB26A38804706.title: "Find a chapel"
+	quest.4855AD8269FA6DC0.title: "Chapels"
+	quest.4855AD8269FA6DC0.quest_desc: [
+		"Old &eChapels&r stand in the Hollow's forests and plains, some of them in ruins. Each one keeps a single &eHoly Cross&r, which can't be crafted. Mine it to take it with you."
+		""
+		"A placed Holy Cross comforts you like a church. You'll need one for the &bPale Beacon&r and one for the Cursed Amulet, so find more than one chapel."
+	]
+	task.3DAF56991939A091.title: "Find a crypt"
+	task.6CDFCEF59BC214BF.title: "Find a large graveyard"
+	quest.49769688B588DA4C.title: "The Dead Rest Here"
+	quest.49769688B588DA4C.quest_desc: [
+		"&eThe Graveyard&r's crypts and graveyards are scattered through the Hollow, full of ghouls, revenants and worse."
+		""
+		"The crypts go deep: the best chest waits at the bottom. Bring light, food and a way out."
+	]
+	task.5B2C928C507CC91C.title: "Find the catacombs"
+	task.7434225A31C5B408.title: "Find a haunted house"
+	quest.72A26D8AC98CA5E1.title: "Catacombs and the Haunted House"
+	quest.72A26D8AC98CA5E1.quest_desc: [
+		"Two more places worth the fear:"
+		""
+		"&eThe Catacombs&r: stone halls full of statues. Some of them are Weeping Angels. Count them before you turn around."
+		"&eThe Haunted House&r: a lonely house that isn't as empty as it looks."
+	]
+	task.7269557DA66C5AE0.title: "Find Graveyard ruins"
+	quest.718BBD05C9BB501B.title: "Bone Staff Fragments"
+	quest.718BBD05C9BB501B.quest_desc: [
+		"A broken staff lies scattered across the Hollow: the &eupper&r, &emiddle&r and &elower&r fragments, one in each of three Graveyard &eruins&r."
+		""
+		"Together they're the key to the Corrupted Champion's ritual."
+	]
+	quest.64F6C708A31FF9AD.title: "Lost Signal: Static"
+	quest.64F6C708A31FF9AD.quest_desc: [
+		"&7Pages of an old expedition log turn up in chests in the Hollow, one page per chest, always in order. Everyone finds their own copies.&r"
+		""
+		"&o\"Pale Survey, day one. The lantern woke the frame and the portal filled with static, like a dead channel. Four of us went through: Ashe, Callow, Vale and I. It is always night here, our compasses spin, and Callow says the fog swallows her lines after ten paces. We camp by the portal and keep the lanterns burning. Marrow, surveyor.\"&r"
+	]
+	quest.0C99979273E17713.title: "Lost Signal: Footsteps"
+	quest.0C99979273E17713.quest_desc: [
+		"&o\"Day three. Vale hears footsteps behind her that stop when she turns. I hear them too. The longer we stay out, the more the shapes at the edge of the light stop being shapes and start walking. Firelight helps, and so does staying close together. Vale wove us garlands; we wear them and don't talk about why.\"&r"
+	]
+	quest.1664ECC620267A11.title: "Lost Signal: The Listener"
+	quest.1664ECC620267A11.quest_desc: [
+		"&o\"Day six. Ashe built a hut of planks and the forest answered. Something screamed far off, then closer, then it came through the walls like they were bread. It hears hammers, doors, the lids of chests. We lost the hut and half the supplies. Ashe says obsidian might be too hard for it to chew. We build quietly now.\"&r"
+	]
+	quest.02AFD56D15E31D99.title: "Lost Signal: Statues"
+	quest.02AFD56D15E31D99.quest_desc: [
+		"&o\"Day nine. There are statues in the catacombs that were not there yesterday. Callow mapped them, looked down to mark the page, and when she looked up one stood right beside her. Then she was gone. We found her compass on the floor, still spinning. They do not move while you watch them. Never stop watching.\"&r"
+	]
+	quest.2F229E07EF30B801.title: "Lost Signal: Embers"
+	quest.2F229E07EF30B801.quest_desc: [
+		"&o\"Day twelve. The embers the dead things leave behind burn without wood, a cold pale light, and nothing came near it all night. Inside that light I slept for the first time since we came through. If we could make the light last, set it in something and feed it, we could hold ground here. A sanctuary. Ashe has gone to find the parts.\"&r"
+	]
+	quest.40ACA21E556C2552.title: "Lost Signal: The Last Entry"
+	quest.40ACA21E556C2552.quest_desc: [
+		"&o\"Last entry. If anyone reads this, here is the plan: the cross from a chapel to keep it holy, the staff of the thing in the sky prison, the artifact the templar carries, our lantern at its heart, and embers at its corners and along its base. Feed it an ember every day or it goes dark. Ashe never came back with the staff, and we hear the screaming again. If the light is burning when you find this, we made it.\"&r"
+		""
+		"&7The rest of the page is blank.&r"
+	]
+	quest.7F3E0604749CF2EF.title: "The Damned Templar"
+	quest.7F3E0604749CF2EF.quest_desc: [
+		"The &cDamned Templar&r is a fallen knight. Call it with a &eCursed Amulet&r (darksteel, a &eBanshee Collar&r and a &eHoly Cross&r; press &eR&r on it), or meet one in the &bgrimstone mountains&r."
+		""
+		"&6Drops:&r the &eTemplar Artifact&r (the Thunder Sword and the Pale Beacon each need one, so expect to fight it more than once), unbreakable templar armor or its claymore."
+	]
+	task.6A86CC58F0E661AD.title: "Kill two of the four mutants"
+	quest.5E0F671E501B9BA8.title: "Mutants"
+	quest.5E0F671E501B9BA8.quest_desc: [
+		"Four huge &cmutants&r roam the Hollow: the Mutant &cZombie&r, &cSkeleton&r, &cCreeper&r and &cEnderman&r. They're big and their attacks are easy to read, but they hit hard and take a lot of killing. Beat any two."
+		""
+		"&6Drops:&r the &eHulk Hammer&r, mutant skeleton armor, &eCreeper Shards&r and Endersoul Fragments (toss an Ender Eye near them for the &eEndersoul Hand&r). Mutants often drop &5Hollow Embers&r too."
+	]
+	task.7789744D2FA2B730.title: "Find the lich prison"
+	quest.3F2E05F673B2D3D8.title: "The Corrupted Champion"
+	quest.3F2E05F673B2D3D8.quest_desc: [
+		"The &cCorrupted Champion&r sleeps in a prison high in the sky. To wake it:"
+		""
+		"1. Fill a &eVial of Blood&r from the Hollow's corrupted villagers, pillagers and acolytes."
+		"2. Lay the three &ebone staff fragments&r on the altar in the &blich prison&r."
+		"3. Pour the blood on the altar at night. Here, it's always night."
+		""
+		"It has two phases, heals itself and calls up to 30 undead. Bring friends. &6Drops:&r a &ebone staff&r in one of five colours, which also binds a Ghouling companion."
+	]
+	task.5F752F3A370EB95F.title: "Find the Dimensional Gate"
+	quest.2BFEE0030ACBD225.title: "The Gate Guardian"
+	quest.2BFEE0030ACBD225.quest_desc: [
+		"The &cGate Guardian&r is the Hollow's final boss. It stands dormant at the &bDimensional Gate&r until a &eGate Key&r (darksteel and suffering flesh) wakes it."
+		""
+		"It's heavily armored, shrugs off fire, explosions and potions, and calls copies of itself. Forge the &eThunder Sword&r first (it needs the Templar Artifact) and land the killing blow with it, or it drops nothing. When it dies, a holy smite hits everything around it: stand back."
+	]
+	quest.0A23158110A3006C.title: "The Ravenous"
+	quest.0A23158110A3006C.quest_desc: [
+		"&7Optional: for the brave.&r"
+		""
+		"Stop running and hunt &cthe Ravenous&r down. It grows stronger in phases as it eats, and lays eggs that hatch Screechers. Finish it in its last phase for its &eEcholocation Organ&r."
+		""
+		"Bragging rights, and an upgrade for your Pale Beacon: right-click the beacon with the organ to widen its safe circle to &e48&r blocks and warn everyone inside when a horror mob comes within &e64&r."
+	]
+	quest.3582E542712042D2.title: "The Pale Beacon"
+	quest.3582E542712042D2.quest_desc: [
+		"The Survey never finished it. You can. Craft the &ePale Beacon&r:"
+		""
+		"&5Hollow Ember&r, &eHoly Cross&r, &5Hollow Ember&r a &eBone Staff&r (any colour), the &ePale Lantern&r, the &eTemplar Artifact&r three &5Hollow Embers&r along the bottom"
+		""
+		"That's 5 Hollow Embers. The lantern goes into it, so craft another if you ever need to relight a portal. The beacon can only be placed in the Hollow."
+	]
+	quest.45643FB3B12D6100.title: "Sanctuary"
+	quest.45643FB3B12D6100.quest_desc: [
+		"Place the beacon in the Hollow. It starts &cdark&r: right-click it with a &5Hollow Ember&r to light it for one in-game day (20 minutes). It holds up to &e7&r days of Embers, and right-clicking with an empty hand shows how long it has left."
+		""
+		"While it's lit, within &e24&r blocks: sanity comes back, the tricks stop, no horror mobs spawn, and the Ravenous isn't sent after you and can't eat the beacon. &eBeds work&r: sleep there to set your respawn point in the Hollow."
+		""
+		"&cUnfed, it goes dark&r and all of that stops. The Ravenous can still eat your walls, so keep them obsidian. Light it, sleep beside it, then click the checkmark."
+	]
+	quest.5E9661163FC73102.title: "The Survey Complete"
+	quest.5E9661163FC73102.quest_desc: [
+		"The Pale Survey came to map the Hollow, and it ended with a plan nobody lived to finish. You finished it."
+		""
+		"Your beacon is burning, its light holds the dark back, and the Gate Guardian has fallen. Keep it fed and it will be here every time you come back."
+		""
+		"Show your Sanctuary to your friends, then click the checkmark. The signal is back."
+	]
+	chapter.14217C539A60E739.title: "The Hollow"
+	chapter.14217C539A60E739.chapter_subtitle: [
+		"Keep your lights lit, read what they left, light the Pale Beacon"
+	]
 	quest.2278F8B050E916A0.title: "What is Combat \\& Gear?"
 	quest.2278F8B050E916A0.quest_desc: [
 		"Fighting in Strata feels different from vanilla:"
@@ -3455,7 +3929,7 @@
 	]
 	quest.50431CA20BCA5387.title: "Dodge Roll"
 	quest.50431CA20BCA5387.quest_desc: [
-		"&eCombat Roll&r: press the roll key (set it in Options > Controls) to dash a few blocks in the direction you're moving. An arrow on your HUD shows when it's ready again."
+		"&eCombat Roll&r: press &eR&r by default (or rebind it in Options > Controls) to dash a few blocks in the direction you're moving. An arrow on your HUD shows when it's ready again."
 		""
 		"&eThe rules here:&r a roll takes &e4 seconds&r to recharge, needs more than &e3 drumsticks&r of food, and costs a little hunger. It moves you out of the way, but you're &cnot invulnerable&r while rolling, so roll early."
 		""
@@ -3466,7 +3940,7 @@
 	quest.2696AA538E0852AC.quest_desc: [
 		"&eSimply Swords&r adds 15 weapon types (chakram, glaive, halberd, rapier, scythe...) in iron, gold, diamond and netherite. Look them up with &eU&r on an iron ingot."
 		""
-		"Dungeon chests can hold &6unique&r named weapons with special powers, and &eRunic Tablets&r. Bring a tablet back: it's the smithing template for runic weapons."
+		"Dungeon chests can (rarely) hold &6unique&r named weapons with special powers, and &eRunic Tablets&r. Bring a tablet back: it's the smithing template for runic weapons."
 	]
 	quest.2F8E58A5B4853E90.title: "Runic Weapons"
 	quest.2F8E58A5B4853E90.quest_desc: [
@@ -3490,9 +3964,9 @@
 		"&cApothic Invaders&r arrive with a loud noise, a chat message and a beam of light. They're mini-bosses that always drop a special affix item and often gems. Invaders never appear while your World Tier is &eHaven&r."
 	]
 	task.43D2BB04031BA783.title: "Unlock Frontier"
-	quest.3A399FBC4B396A71.title: "World Tiers (Ctrl+T)"
+	quest.3A399FBC4B396A71.title: "World Tiers (Alt+L)"
 	quest.3A399FBC4B396A71.quest_desc: [
-		"Press &eCtrl+T&r for the &eWorld Tier&r screen. Tiers are &eper player&r: &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r."
+		"Press &eAlt+L&r for the &eWorld Tier&r screen. Tiers are &eper player&r: &aHaven&r > &eFrontier&r > &6Ascent&r > &cSummit&r > &5Pinnacle&r."
 		""
 		"A higher tier makes mobs around &eyou&r tougher and loot better (it also raises the max enchanting level). Unlocking a tier doesn't switch it on: you choose when, and can switch back. Hover a tier's icon to see what unlocks it."
 		""
@@ -3508,9 +3982,9 @@
 	task.6A8C0D9280E92618.title: "Unlock Summit"
 	quest.3560C883825FA029.title: "World Tier: Summit"
 	quest.3560C883825FA029.quest_desc: [
-		"A full set of &9Rare&r affix gear, and the &cWither&r defeated."
+		"A full set of &9Rare&r affix gear, the &cWither&r defeated, and a &6Hollow Ember&r in your inventory."
 		""
-		"The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear and the Ender Dragon defeated: the best loot and the toughest mobs."
+		"The last tier, &5Pinnacle&r, needs a full set of &5Epic&r gear, the Ender Dragon defeated and an &bAbyssal Pearl&r: the best loot and the toughest mobs."
 	]
 	quest.088A01960AF3EC4F.title: "Not a Diamond"
 	quest.088A01960AF3EC4F.quest_desc: [
@@ -3614,7 +4088,7 @@
 	quest.2842BDBFC2178FC0.quest_desc: [
 		"&cL_Ender's Cataclysm&r adds huge boss fights, each in its own lair: a forge in the Nether, an arena of fire, a pyramid, a factory, a sunken city, a frozen prison, a sky-high temple and a citadel in the End."
 		""
-		"&6Why it matters:&r killing these bosses is how Strata unlocks the late game. Top Mekanism and AE2 tiers and &ecross-dimension wireless&r wait behind them."
+		"&6Why it matters:&r killing these bosses is how Strata unlocks the late game. Nuclear power, top Mekanism and AE2 tiers and the best rockets wait behind them."
 		""
 		"Bosses keep their designed strength. Bring good gear, food, and friends."
 	]
@@ -3707,7 +4181,7 @@
 		"Out on the End's outer islands (past the Dragon's gateway) stands the &5Ruined Citadel&r. An &eEye of Void&r points the way. Ender Golems guard it, and so does the Ender Guardian."
 		""
 		"&6Drops:&r the &eGauntlet of Guard&r (pulls enemies to you)."
-		"&6Unlocks:&r &ecross-dimension wireless&r (the AE2 Quantum Network Bridge)."
+		"&6Unlocks:&r the &eVoid Core&r for the biggest storage (AE2 256k cells, AppliedFlux, QIO)."
 	]
 	task.377CBD57623E7E34.title: "Defeat every Cataclysm boss"
 	quest.0B240502643A3717.title: "The Cataclysmfarer"
@@ -3738,7 +4212,7 @@
 	quest.53DE2D46F18BDACB.quest_desc: [
 		"With bosses down, go claim what they unlocked:"
 		""
-		"&bMekanism&r and &bAE2&r: their late tiers open after the Netherite Monstrosity or Ignis. Cross-dimension wireless opens after the Ender Guardian."
+		"&bNuclear power&r needs Ignis' Ignitium; &bMekanism&r's ultimate tier needs the Monstrosity's Lava Power Cells; the biggest &bAE2&r and QIO storage needs the Ender Guardian's Void Core."
 		"&cBoss Hunter&r: many more bosses from other mods."
 		"&cIce and Fire&r: dragons."
 	]
@@ -3750,7 +4224,7 @@
 	quest.774FAD0489602A73.quest_desc: [
 		"&cIce and Fire&r fills the world with mythical creatures: &cfire&r, &bice&r and &elightning&r dragons, hydras, cyclopes, gorgons, sea serpents, sirens and more."
 		""
-		"Dragons are the big prize: their bones, blood and scales make the strongest gear here. They are also &cvery&r dangerous, and they burn, freeze and smash terrain. Don't build your base next to a roost."
+		"Dragons are the big prize: their bones, blood and scales make some of the best gear in the pack. They are also &cvery&r dangerous, and they burn, freeze and smash terrain. Don't build your base next to a roost."
 	]
 	quest.1714C91A438D9826.title: "The Bestiary"
 	quest.1714C91A438D9826.quest_desc: [
@@ -3844,7 +4318,7 @@
 		""
 		"&eHydra&r in swamp hills, &eCyclopes&r in sea caves on beaches, &eGorgons&r under beach temples, &eSea Serpents&r in the ocean, &eSirens&r on ocean rocks, &eDread&r undead from frozen Mausoleums, plus trolls, death worms, cockatrices, stymphalian birds, pixies and hippogryphs."
 		""
-		"Silver ore (for silver weapons, great against undead) and sapphires are new ores too."
+		"Silver (for silver weapons, great against undead) and sapphires (snowy biomes) are worth mining too."
 	]
 	quest.68B34314E0250826.title: "The Hydra"
 	quest.68B34314E0250826.quest_desc: [
@@ -3887,7 +4361,9 @@
 	quest.3498B3B6B39E8EA3.quest_desc: [
 		"Strata has bosses from many mods, scattered all over the world. This chapter is a hunting list: one branch per mod, with where to look."
 		""
-		"Every boss keeps its designed strength (the world's difficulty steps don't touch them). Most are built for a group: bring friends, food, and a way home."
+		"Every boss keeps its designed strength (World Tiers don't change them). Most are built for a group: bring friends, food, and a way home."
+		""
+		"&6Boss loot bags:&r nothing drops on the floor. Everyone who hits the boss gets their own &eBoss Loot Bag&r with a full share of its loot. Right-click it to open."
 		""
 		"&eTip:&r an &eExplorer's Compass&r finds structures by name, and many mods add an \"Eye\" that you throw to point the way."
 	]
@@ -4328,25 +4804,27 @@
 	task.39035EB3F79DAC78.title: "Get your first Inventory Pet"
 	quest.2EAEB13007DBA1D1.title: "Pets in Your Pocket"
 	quest.2EAEB13007DBA1D1.quest_desc: [
-		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. Some cute ones to start with:"
+		"&eInventory Pets&r are tiny helpers that live in your inventory. Each one has a little power. You can't craft them here: you &afind&r them in chests. Dungeons, mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses the handy ones; Nether fortresses and bastions the Nether Portal pet. The legendary ones are rare finds in End cities, ancient cities, bastion treasure and ominous trial vaults, and five of them can drop from a boss: the Cloud from the Sun Spirit, the Sun from Ignis, the Wither from the Harbinger, the Black Hole from the Ender Guardian and the Pufferfish from Scylla or the Leviathan."
+		""
+		"Some cute ones to look out for:"
 		""
 		"&eChicken Pet&r: a speed boost, and it lays eggs for you."
 		"&eCow Pet&r: clears bad potion effects and fills buckets with milk."
 		"&eSiamese Pet&r: brings you little gifts."
 		"&eHeart Pet&r: heals your friends and pets."
 		""
-		"Each pet has a &afavorite food&r (look at its tooltip). Keep some in your inventory."
+		"Each pet has a &afavorite food&r (look at its tooltip). Pets only eat from a &eFeed Bag&r in your inventory, never loose food, and only while the pet sits in your hotbar."
 	]
 	quest.64F6BE2D96AF4F37.title: "Snack Pack"
 	quest.64F6BE2D96AF4F37.quest_desc: [
-		"The &eFeed Bag&r holds pet food, so your pocket pets stay fed without clogging up your inventory."
+		"Pets only eat from a &eFeed Bag&r: put their favorite food inside and keep the bag anywhere in your inventory. Loose food in your inventory is never eaten."
 	]
 	task.19A971B240F4C220.title: "Collect five Inventory Pets"
 	quest.490063265F5E24D9.title: "Pet Collector"
 	quest.490063265F5E24D9.quest_desc: [
 		"Collect five different pocket pets! Good ones for cozy players: the Sheep, Mooshroom, Banana, Jukebox, Bed and Crafting Table pets."
 		""
-		"Press &eR&r on a pet to see its recipe and &eU&r on its food."
+		"Press &eU&r on a pet's food to see how to make it."
 	]
 	task.03914571C3B810EF.title: "Visit a Tree Top"
 	quest.4C2A84DBE0B7E5CC.title: "Find a Pet Dungeon"
@@ -4369,11 +4847,12 @@
 		""
 		"&eGuard Villagers&r patrol villages and protect them from raids. Be nice to them."
 	]
+	task.60A7C40ABD4AC5D3.title: "Read the Animal Dictionary"
 	quest.697FA0C02A6A1D52.title: "The Animal Dictionary"
 	quest.697FA0C02A6A1D52.quest_desc: [
 		"&eAlex's Mobs&r adds dozens of real and strange animals: elephants, raccoons, hummingbirds, kangaroos, crows and many more. Some can be tamed!"
 		""
-		"The &eAnimal Dictionary&r tells you about every one: where it lives, what it eats, and whether it's friendly. Hover it and press &eR&r to see how to make one."
+		"The &eAnimal Dictionary&r (you got one for starting this chapter) tells you about every one: where it lives, what it eats, and whether it's friendly."
 	]
 	quest.67FE371B97B0CA08.title: "Bug Catcher"
 	quest.67FE371B97B0CA08.quest_desc: [
@@ -4442,6 +4921,12 @@
 		""
 		"These quests show you the best tools. Then build your dream house!"
 	]
+	quest.52DC6690C8C2D58D.title: "Found a Colony"
+	quest.52DC6690C8C2D58D.quest_desc: [
+		"&eMineColonies&r lets you build a whole town of NPC workers: builders, farmers, miners, guards and dozens more. Craft a &eSupply Camp&r (press &eR&r on it), place it, and it gives you a &eTown Hall&r to start your colony. Your builder then builds every other hut for you."
+		""
+		"&cWarning:&r once your colony is founded, raiders attack it every couple of weeks (in-game nights). Build guard towers before then."
+	]
 	quest.4B4702FEB8F9F4CB.title: "One Block, Many Looks"
 	quest.4B4702FEB8F9F4CB.quest_desc: [
 		"&eChipped&r workbenches turn a plain block into dozens of new versions. Put planks in the &eCarpenter's Table&r and pick the look you like."
@@ -4507,7 +4992,7 @@
 	]
 	quest.69D8C9521B15D6C5.title: "Every Wood, Every Style"
 	quest.69D8C9521B15D6C5.quest_desc: [
-		"Found a pretty new wood in another biome or dimension? Good news: &eEvery Compat&r makes Macaw's, Handcrafted, Another Furniture and other furniture in &aevery wood type&r from every mod. Search for the wood's name to see them all."
+		"Found a pretty new wood in another biome or dimension? Good news: &eEvery Compat&r makes Macaw's roofs, doors, windows, fences and bridges in &aevery wood type&r from every mod. Search for the wood's name to see them all. Furniture (Macaw's Furniture, Handcrafted, Another Furniture) and Chipped or Rechiseled patterns come in the vanilla woods."
 	]
 	quest.19A231EB3DF2353A.title: "Little Things"
 	quest.19A231EB3DF2353A.quest_desc: [
@@ -4700,9 +5185,10 @@
 		""
 		"When a fish bites, a little &eminigame&r appears: keep up with the fish to reel it in. Bigger, rarer fish fight harder. Don't worry if one gets away, there are plenty more!"
 	]
+	task.50B707F8887CF6AB.title: "Open the Fishing Journal"
 	quest.257E8EB054A914BC.title: "The Fishing Journal"
 	quest.257E8EB054A914BC.quest_desc: [
-		"Craft a &eFishing Journal&r (a book and any fish). Every new fish you catch gets its own page with a picture and a fun fact."
+		"Open the &eFishing Journal&r you got for starting this chapter. Every new fish you catch gets its own page with a picture and a fun fact. (Lost it? Craft one from a book and any fish.)"
 		""
 		"Can you fill it? Some fish only bite at night, in the rain, or in special places."
 	]

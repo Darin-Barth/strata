@@ -1,0 +1,16 @@
+{
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "mos:dragon_skeleton_pool",
+  "size": 1,
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 13
+  },
+  "terrain_adaptation": "beard_box",
+  "cannot_spawn_in_liquid": false,
+  "terrain_height_radius_check": 1,
+  "allowed_terrain_height_range": 6,
+  "biomes": "#strata:abyssal_group/trench",
+  "valid_biome_radius_check": 2
+}

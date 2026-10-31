@@ -11,3 +11,6 @@ hash = "4056b724cfb6fdb5da084ca5453e81c9b903e7dad172f4041bf76eb5bc21c2ca7d42ad89
 [update.modrinth]
 mod-id = "6xwxDTgf"
 version = "PvX474Ov"
+[update.curseforge]
+file-id = 9295989
+project-id = 417430

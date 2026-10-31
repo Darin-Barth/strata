@@ -27,7 +27,7 @@ q("city", "An Ancient City", deps="sneaky", icon="minecraft:reinforced_deepslate
     Ancient Cities sit deep under the mountains, near Y -50. They're huge, dark and silent.
 
     Their chests are some of the best in the game: &eSwift Sneak&r books, echo shards,
-    smithing templates, and even a &dBell Fragment&r for the Pokémon World portal.
+    smithing templates, and even a &dBell Fragment&r for the Kakuto Region portal.
     In the middle stands a giant frame of &8reinforced deepslate&r. Remember it.""",
   rewards=[give("minecraft:golden_carrot", 16)])
 
@@ -104,5 +104,5 @@ q("where_next", "Where Next?", deps="portal", icon="minecraft:compass", shape="h
     You've seen the darkest place in the pack. Other big trips:
 
     &5The End&r: Warden gear is a great way to face the Ender Dragon.
-    &cThe Pokémon World&r: ancient city chests are a good place to find a Bell Fragment.
+    &cThe Kakuto Region&r: ancient city chests are a good place to find a Bell Fragment.
     &cBosses & Combat&r: Cataclysm's bosses.""")

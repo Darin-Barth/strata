@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "pokeworld:block/alph_stone_o"
+      },
+      {
+        "model": "pokeworld:block/alph_stone_a"
+      },
+      {
+        "model": "pokeworld:block/alph_stone_excl"
+      },
+      {
+        "model": "pokeworld:block/alph_stone_iu"
+      },
+      {
+        "model": "pokeworld:block/alph_stone_oa"
+      }
+    ]
+  }
+}

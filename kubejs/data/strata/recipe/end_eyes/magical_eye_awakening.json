@@ -1,0 +1,22 @@
+{
+  "type": "ars_nouveau:imbuement",
+  "input": {
+    "item": "strata:dormant_magical_eye"
+  },
+  "output": {
+    "count": 1,
+    "id": "endrem:magical_eye"
+  },
+  "source": 5000,
+  "pedestalItems": [
+    {
+      "item": "minecraft:amethyst_cluster"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "ars_nouveau:source_gem_block"
+    }
+  ]
+}

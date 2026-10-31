@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/allthemodium"
+      }
+    }
+  ],
+  "type": "theurgy:liquefaction",
+  "category": "misc",
+  "ingredient": {
+    "tag": "c:ores/allthemodium"
+  },
+  "result": {
+    "type": "theurgy:item",
+    "count": 3,
+    "id": "theurgy:alchemical_sulfur_allthemodium"
+  },
+  "solvent": {
+    "amount": 100,
+    "ingredient": {
+      "fluid": "theurgy:sal_ammoniac"
+    }
+  },
+  "time": 100
+}

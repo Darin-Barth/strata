@@ -1,0 +1,39 @@
+{
+  "level_limit": 21,
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        80,
+        101,
+        121,
+        142,
+        162,
+        183,
+        203,
+        224,
+        245,
+        265,
+        286,
+        306,
+        327,
+        347,
+        368,
+        389,
+        409,
+        430,
+        450,
+        471,
+        491
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:fish_item",
+      "data": {
+        "experience": "10"
+      }
+    }
+  ]
+}

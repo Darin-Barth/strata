@@ -1,0 +1,30 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#strata:hollow_surface",
+  "spawners": [
+    {
+      "type": "mutantmonsters:mutant_zombie",
+      "weight": 2,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "mutantmonsters:mutant_skeleton",
+      "weight": 1,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "mutantmonsters:mutant_creeper",
+      "weight": 1,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "mutantmonsters:mutant_enderman",
+      "weight": 1,
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ]
+}

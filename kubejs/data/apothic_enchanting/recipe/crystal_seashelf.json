@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "apothic_enchanting",
+  "key": {
+    "I": {
+      "item": "apothic_enchanting:infused_seashelf"
+    },
+    "P": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "A": {
+      "item": "strata:abyssal_pearl"
+    }
+  },
+  "pattern": [
+    " P ",
+    " I ",
+    "PAP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "apothic_enchanting:crystal_seashelf"
+  }
+}

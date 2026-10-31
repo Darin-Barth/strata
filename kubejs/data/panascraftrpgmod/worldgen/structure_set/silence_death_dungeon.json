@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "panascraftrpgmod:silence_death_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 52,
+    "salt": 6005664
+  }
+}

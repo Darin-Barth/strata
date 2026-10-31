@@ -11,3 +11,6 @@ hash = "46873dfe99b21bcb21622fb49036c8eeda8150a923cf8f6cc24f5fa47a69f97c1593b815
 [update.modrinth]
 mod-id = "OCJRPujW"
 version = "GPIrZGug"
+[update.curseforge]
+file-id = 9304148
+project-id = 445274

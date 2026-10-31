@@ -73,6 +73,13 @@ def kill(entity, count=1, title=None):
     return Task("kill", {"entity": entity, "value": Long(count)}, title, [("entities", entity)])
 
 
+def kill_tag(tag, count=1, title=None, entity="mutantmonsters:mutant_zombie"):
+    """Kill `count` mobs of any type in an entity type tag (FTB Quests' entity_type_tag, no "#").
+    `entity` is still written: the task shows it as its icon."""
+    return Task("kill", {"entity": entity, "entity_type_tag": tag, "value": Long(count)}, title,
+                [("entities", entity)])
+
+
 def structure(sid, title=None):
     return Task("structure", {"structure": sid}, title, [("structures", sid)])
 
@@ -84,6 +91,12 @@ def biome(bid, title=None):
 def adv(advancement, criterion="", title=None):
     return Task("advancement", {"advancement": advancement, "criterion": criterion}, title,
                 [("advancements", advancement)])
+
+
+def observe(entity, title=None, ticks=20):
+    """Look at a living entity of this type for `ticks` (1 s by default)."""
+    return Task("observation", {"observation_type": "entity_type", "observe_type": 5,
+                                "timer": Long(ticks), "to_observe": entity}, title, [("entities", entity)])
 
 
 # ---- rewards -----------------------------------------------------------------------------
@@ -107,12 +120,17 @@ def give(iid, count=1):
     return Reward("item", d, [("items", iid)])
 
 
-def bag(table):
-    """One random roll from a reward table (see book/_tables.py)."""
-    return Reward("random", {"table": table})
+# Quest loot bags (tools/build_quest_bags.py): opening one rolls a rarity, then an item from its pool.
+BAGS = {"common": "strata:loot_bag_small", "uncommon": "strata:loot_bag",
+        "rare": "strata:loot_bag_large", "epic": "strata:loot_bag_grand"}
 
 
-# Default rewards by quest tier (Darin chose "generous"); explicit rewards= are added on top.
+def bag(size):
+    """A quest loot bag; bigger bags have better rarity odds."""
+    return give(BAGS[size])
+
+
+# Default rewards by quest tier (generous by design); explicit rewards= are added on top.
 TIER_REWARDS = {
     0: [],
     1: [xp(100)],
@@ -197,5 +215,5 @@ def all_chapters():
     return list(_CHAPTERS)
 
 
-__all__ = ["chapter", "item", "check", "dim", "kill", "structure", "biome", "adv", "xp", "levels",
-           "give", "bag", "Double", "Float", "Long"]
+__all__ = ["chapter", "item", "check", "dim", "kill", "kill_tag", "structure", "biome", "adv", "observe", "xp",
+           "levels", "give", "bag", "Double", "Float", "Long"]

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/mos_ruins_atlantis",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 72,
+    "separation": 24,
+    "salt": 731000000
+  }
+}

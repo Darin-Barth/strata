@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "strata:red_hot_rogue_eye"
+    }
+  ],
+  "results": [
+    {
+      "id": "endrem:rogue_eye"
+    }
+  ]
+}

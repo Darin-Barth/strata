@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "panascraftrpgmod:skeleton_god_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 90,
+    "separation": 82,
+    "salt": 774511357
+  }
+}

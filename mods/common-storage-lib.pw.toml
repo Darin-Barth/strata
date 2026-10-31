@@ -11,3 +11,6 @@ hash = "e4e2a7bc066c9032c0172428b1012fdd3b0dfcb75ee11bf044db61318906b61d3dbd0ff8
 [update.modrinth]
 mod-id = "RgLrNK7l"
 version = "SCkdlli6"
+[update.curseforge]
+file-id = 8421542
+project-id = 1028211

@@ -17,11 +17,12 @@ q("intro", "What is Mekanism?", icon="mekanism:steel_casing", deps="welcome/iron
 # --- basics -----------------------------------------------------------------------------
 q("osmium", "Osmium", deps="intro", icon="mekanism:ingot_osmium",
   tasks=item("mekanism:ingot_osmium", 8), desc="""
-    &eOsmium&r is Mekanism's main metal. Its blue-grey ore is common underground.
-    Smelt the raw ore into ingots.
+    &eOsmium&r is Mekanism's main metal. Its blue-grey ore is scarce at home: enough to
+    get started. The rich seams formed under the crushing weight of the deep sea, in the
+    &bAbyssal Plain&r. Smelt the raw ore into ingots.
 
     Keep an eye out for &eTin&r, &eLead&r, &eUranium&r and &eFluorite&r ores too:
-    Mekanism uses all of them later.""",
+    Mekanism uses all of them later (fluorite is richest around the Abyssal Plain's vents).""",
   rewards=[give("mekanism:raw_osmium", 8)])
 
 q("infuser", "Metallurgic Infuser", deps="osmium", icon="mekanism:metallurgic_infuser", tier=2,
@@ -198,14 +199,14 @@ q("fusion", "Fusion Reactor", deps="fission", icon="mekanismgenerators:fusion_re
 q("tools", "Mekanism Tools", deps="osmium", icon="mekanismtools:osmium_pickaxe",
   tasks=item("mekanismtools:osmium_pickaxe"), desc="""
     &bMekanism Tools&r adds tools and armour from Mekanism's metals: osmium, bronze,
-    steel, lapis, glowstone and the very strong &erefined obsidian&r.
+    steel, lapis, glowstone and &erefined obsidian&r (as tough as netherite).
 
     Each also has a &ePaxel&r: pickaxe, axe and shovel in one.""",
   rewards=[give("mekanism:ingot_osmium", 8)])
 
 q("tools_up", "Refined Obsidian Armour", deps="tools", icon="mekanismtools:refined_obsidian_chestplate",
   tier=3, tasks=item("mekanismtools:refined_obsidian_chestplate"), desc="""
-    &eRefined Obsidian&r is one of the toughest metals around.
+    &eRefined Obsidian&r is as tough as netherite, without the trip to the Nether.
     Obsidian is crushed, infused with diamond and compressed with osmium into ingots
     (press &eR&r on the ingot to follow the chain).
 
@@ -228,14 +229,14 @@ q("teleporter", "Teleporter", deps="circuits_up", icon="mekanism:teleporter", ti
     Every jump costs &epower&r, and longer trips cost more. There's a teleporter only
     where someone built one, so a network takes real work.""")
 
-q("entangloporter", "Quantum Entangloporter", deps=["circuits_up", "welcome/nether"],
+q("entangloporter", "Quantum Entangloporter", deps="circuits_up",
   icon="mekanism:quantum_entangloporter", tier=4, tasks=item("mekanism:quantum_entangloporter"),
   desc="""
-    Mid-game wireless. Two &eQuantum Entangloporters&r on the same frequency act like
+    Wireless anything. Two &eQuantum Entangloporters&r on the same frequency act like
     one block: items, fluids, gases, power and heat put into one come out of the other.
 
     It needs Atomic Alloy and an Ultimate Control Circuit, so it's a real investment.
-    It's part of Strata's wireless tier that opens after the Nether.""")
+    It works across dimensions too.""")
 
 # --- late game (boss gated) -------------------------------------------------------------
 q("ultimate", "Ultimate Tier", deps=["circuits_up", "cataclysm/netherite_monstrosity"],

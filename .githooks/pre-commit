@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Refuse commits whose packwiz index doesn't match the files being committed. packwiz-installer (server and
+# clients) trusts index.toml hashes, so a pack file committed without `packwiz refresh` never reaches anyone
+# (Oct 25: the starter-script fix sat on the beta server as the old file through two restarts).
+# Compares staged content only, because several sessions share this working tree.
+exec python - <<'PY'
+import hashlib, subprocess, sys, tomllib
+
+def staged(path):
+    return subprocess.run(["git", "show", f":{path}"], capture_output=True).stdout
+
+changed = subprocess.run(["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+                         capture_output=True, text=True).stdout.split()
+try:
+    index = tomllib.loads(staged("index.toml").decode())
+except Exception:
+    sys.exit(0)
+hashes = {f["file"]: f.get("hash") for f in index.get("files", [])}
+bad = []
+for path in changed:
+    if path in hashes and hashes[path] and not path.endswith(".pw.toml"):
+        if hashlib.sha256(staged(path)).hexdigest() != hashes[path]:
+            bad.append(path)
+    elif path.endswith(".pw.toml") and path not in hashes:
+        bad.append(path + " (not in index)")
+if bad:
+    print("pre-commit: index.toml doesn't match these staged pack files:")
+    for b in bad:
+        print("   ", b)
+    print("Run `packwiz refresh`, then `git add index.toml pack.toml` and commit again.")
+    sys.exit(1)
+PY

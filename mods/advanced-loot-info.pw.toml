@@ -11,3 +11,6 @@ hash = "0596ee6abfbc56fc49a4a32d1f4695cdbe852c61b6dff6e07ee3d6fb254b189abe535fad
 [update.modrinth]
 mod-id = "PEPVViac"
 version = "adxS0PUF"
+[update.curseforge]
+file-id = 9212286
+project-id = 1205426

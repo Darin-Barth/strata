@@ -8,7 +8,7 @@ q("intro", "What is Ice and Fire?", icon="iceandfire:dragonscales_red", size=1.5
     &cIce and Fire&r fills the world with mythical creatures: &cfire&r, &bice&r and
     &elightning&r dragons, hydras, cyclopes, gorgons, sea serpents, sirens and more.
 
-    Dragons are the big prize: their bones, blood and scales make the strongest gear here.
+    Dragons are the big prize: their bones, blood and scales make some of the best gear in the pack.
     They are also &cvery&r dangerous, and they burn, freeze and smash terrain.
     Don't build your base next to a roost.""",
   rewards=[give("minecraft:bread", 16)])
@@ -140,7 +140,8 @@ q("bestiary_beasts", "Other Beasts", deps="bestiary", icon="iceandfire:troll_tus
     from frozen Mausoleums, plus trolls, death worms, cockatrices, stymphalian birds,
     pixies and hippogryphs.
 
-    Silver ore (for silver weapons, great against undead) and sapphires are new ores too.""")
+    Silver (for silver weapons, great against undead) and sapphires (snowy biomes) are worth
+    mining too.""")
 
 q("hydra", "The Hydra", deps="bestiary_beasts", icon="iceandfire:hydra_heart", tier=4, shape="hexagon",
   tasks=kill("iceandfire:hydra"), desc="""

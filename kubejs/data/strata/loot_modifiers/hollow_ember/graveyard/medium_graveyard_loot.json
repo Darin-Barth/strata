@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "graveyard:chests/medium_graveyard_loot"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.25
+    }
+  ],
+  "table": "strata:inject/hollow_ember"
+}

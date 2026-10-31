@@ -11,3 +11,6 @@ hash = "16d955c1ac6934b993f26df5cde93fcfec00b7630a91ff53271e495b6f6ca1a47f41d8e5
 [update.modrinth]
 mod-id = "eHGYGKJz"
 version = "PtXSNLlv"
+[update.curseforge]
+file-id = 9097940
+project-id = 878047

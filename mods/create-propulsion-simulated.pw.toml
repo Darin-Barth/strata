@@ -11,3 +11,6 @@ hash = "6096c9c5cb220219a0b58b56f9fefd63f8b79a0967d326727b4206d62df1813da73956ae
 [update.modrinth]
 mod-id = "ApkoHNO9"
 version = "H13U56dc"
+[update.curseforge]
+file-id = 8496246
+project-id = 1522736

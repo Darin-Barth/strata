@@ -11,3 +11,6 @@ hash = "c378f7ae17e1b4a95cc597d365ad3aafac01836042bb70738486f94c82eec347ae44d541
 [update.modrinth]
 mod-id = "ZJTGwAND"
 version = "Xzg42PX9"
+[update.curseforge]
+file-id = 8503446
+project-id = 404183

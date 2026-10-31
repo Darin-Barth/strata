@@ -11,3 +11,6 @@ hash = "42fcdd249ae055a9eb8a17c4cb3c20aa0eb0d4706ca961c111c51fdcf4d8827c4e17e53a
 [update.modrinth]
 mod-id = "Gi02250Z"
 version = "e50qrv4Z"
+[update.curseforge]
+file-id = 9239689
+project-id = 1115285

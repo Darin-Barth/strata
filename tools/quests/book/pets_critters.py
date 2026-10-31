@@ -10,7 +10,7 @@ q("intro", "What's Out There?", icon="plushies:wolf_plushie", size=1.5, shape="g
 
     Many can be &etamed&r, some can be &ebred&r, and a few will even live in your pocket.
     This chapter is a gentle tour. Go at your own pace and say hi to everyone!""",
-  rewards=[give("minecraft:bone", 8), give("minecraft:cod", 8)])
+  rewards=[give("minecraft:bone", 8), give("minecraft:cod", 8), give("alexsmobs:animal_dictionary")])
 
 # --- your first pet ---------------------------------------------------------------------
 q("tame", "A Best Friend", deps="intro", icon="minecraft:bone",
@@ -75,20 +75,29 @@ q("horn", "Call Your Horse", deps="horse", icon="horseman:copper_horn", tier=2,
 q("pocket_pet", "Pets in Your Pocket", deps="tame", icon="inventorypets:pet_chicken", tier=2,
   tasks=adv("inventorypets:1", title="Get your first Inventory Pet"), desc="""
     &eInventory Pets&r are tiny helpers that live in your inventory. Each one has a
-    little power. Some cute ones to start with:
+    little power. You can't craft them here: you &afind&r them in chests. Dungeons,
+    mineshafts and temples hold the cozy ones; strongholds, mansions and fortresses
+    the handy ones; Nether fortresses and bastions the Nether Portal pet.
+    The legendary ones are rare finds in End cities, ancient cities, bastion treasure and
+    ominous trial vaults, and five of them can drop from a boss: the Cloud from the Sun Spirit,
+    the Sun from Ignis, the Wither from the Harbinger, the Black Hole from the Ender Guardian
+    and the Pufferfish from Scylla or the Leviathan.
+
+    Some cute ones to look out for:
 
     &eChicken Pet&r: a speed boost, and it lays eggs for you.
     &eCow Pet&r: clears bad potion effects and fills buckets with milk.
     &eSiamese Pet&r: brings you little gifts.
     &eHeart Pet&r: heals your friends and pets.
 
-    Each pet has a &afavorite food&r (look at its tooltip). Keep some in your inventory.""",
-  rewards=[give("inventorypets:nugget_coal", 16), give("inventorypets:nugget_iron", 8)])
+    Each pet has a &afavorite food&r (look at its tooltip). Pets only eat from a
+    &eFeed Bag&r in your inventory, never loose food, and only while the pet sits in your hotbar.""",
+  rewards=[give("inventorypets:nugget_coal", 16), give("inventorypets:nugget_lapis", 8)])
 
-q("feed_bag", "Snack Pack", deps="pocket_pet", icon="inventorypets:feed_bag", optional=True,
+q("feed_bag", "Snack Pack", deps="pocket_pet", icon="inventorypets:feed_bag",
   tasks=item("inventorypets:feed_bag"), desc="""
-    The &eFeed Bag&r holds pet food, so your pocket pets stay fed without
-    clogging up your inventory.""",
+    Pets only eat from a &eFeed Bag&r: put their favorite food inside and keep the bag
+    anywhere in your inventory. Loose food in your inventory is never eaten.""",
   rewards=[give("inventorypets:nugget_lapis", 8)])
 
 q("pet_collector", "Pet Collector", deps="pocket_pet", icon="inventorypets:pet_siamese", tier=3,
@@ -96,7 +105,7 @@ q("pet_collector", "Pet Collector", deps="pocket_pet", icon="inventorypets:pet_s
     Collect five different pocket pets! Good ones for cozy players:
     the Sheep, Mooshroom, Banana, Jukebox, Bed and Crafting Table pets.
 
-    Press &eR&r on a pet to see its recipe and &eU&r on its food.""",
+    Press &eU&r on a pet's food to see how to make it.""",
   rewards=[give("inventorypets:nugget_emerald", 8), give("plushies:sheep_plushie")])
 
 q("pet_dungeon", "Find a Pet Dungeon", deps="pocket_pet", icon="inventorypets:nugget_diamond",
@@ -129,12 +138,12 @@ q("villager_block", "Villager in a Box", deps="intro", icon="easy_villagers:trad
 
 # --- wildlife -----------------------------------------------------------------------------
 q("animal_book", "The Animal Dictionary", deps="intro", icon="alexsmobs:animal_dictionary",
-  tasks=item("alexsmobs:animal_dictionary"), desc="""
+  tasks=check("Read the Animal Dictionary"), desc="""
     &eAlex's Mobs&r adds dozens of real and strange animals: elephants, raccoons,
     hummingbirds, kangaroos, crows and many more. Some can be tamed!
 
-    The &eAnimal Dictionary&r tells you about every one: where it lives, what it eats,
-    and whether it's friendly. Hover it and press &eR&r to see how to make one.""",
+    The &eAnimal Dictionary&r (you got one for starting this chapter) tells you about
+    every one: where it lives, what it eats, and whether it's friendly.""",
   rewards=[give("alexsmobs:banana", 4), give("minecraft:book", 2)])
 
 q("capture_net", "Bug Catcher", deps="animal_book", icon="naturalist:capture_net",

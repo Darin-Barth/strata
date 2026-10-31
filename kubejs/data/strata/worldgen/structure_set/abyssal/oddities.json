@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/mos_underwater_garden",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_magma_block_ravine",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_conduit_arch",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_prismarine_dog_statue",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 14,
+    "salt": 731000008
+  }
+}

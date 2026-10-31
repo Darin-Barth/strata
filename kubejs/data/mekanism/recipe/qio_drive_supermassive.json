@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:mek_data",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:pellets/antimatter"
+    },
+    "I": {
+      "tag": "c:pellets/polonium"
+    },
+    "P": {
+      "item": "mekanism:qio_drive_time_dilating"
+    },
+    "X": {
+      "item": "cataclysm:void_core"
+    }
+  },
+  "pattern": [
+    "XPI",
+    "P#P",
+    "IPI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:qio_drive_supermassive"
+  }
+}

@@ -11,3 +11,6 @@ hash = "b648d07108d21185aba76f3c1dd5c53aff3f32dd766009f0e5cfb37b1655a41514cd6e54
 [update.modrinth]
 mod-id = "Xmx7meIV"
 version = "rkThfF1I"
+[update.curseforge]
+file-id = 8203979
+project-id = 1482366

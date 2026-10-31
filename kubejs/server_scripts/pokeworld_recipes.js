@@ -1,16 +1,14 @@
 // Pokémon world portal recipes (see startup_scripts/pokeworld_portal.js). Overworld materials
 // only: nothing that now generates only in the Pokémon world (apricorns, evolution stones).
 ServerEvents.recipes(event => {
+  // Alph Stone: ancient carved sandstone (the block id is still poke_portal_frame).
   event.shaped('8x pokeworld:poke_portal_frame', [
-    'RSR',
-    'IDI',
-    'WWW',
+    'SSS',
+    'SDS',
+    'SSS',
   ], {
-    R: 'minecraft:red_dye',
-    S: 'minecraft:redstone',
-    I: 'minecraft:iron_ingot',
+    S: 'minecraft:chiseled_sandstone',
     D: 'minecraft:diamond',
-    W: 'minecraft:white_dye',
   }).id('pokeworld:poke_portal_frame')
 
   event.shaped('pokeworld:johto_bell', [

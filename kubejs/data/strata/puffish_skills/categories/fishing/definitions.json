@@ -1,0 +1,259 @@
+{
+  "luck_root": {
+    "title": "+0.5 Luck",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "luck": {
+    "title": "+0.5 Luck",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "luck_cap": {
+    "title": "Sea's Favor: +2 Luck",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "heart_of_the_sea"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
+  },
+  "breath": {
+    "title": "+2 Breath",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "water_breathing"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "swim": {
+    "title": "+20% Swim Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "dolphins_grace"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.water_movement_efficiency",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "dig": {
+    "title": "+50% Underwater Mining",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "prismarine_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:player.submerged_mining_speed",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "diver_cap": {
+    "title": "Deep Diver: +4 Breath, +20% Swim Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "turtle_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.water_movement_efficiency",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "sea_legs": {
+    "title": "Sea Legs: +20% Swim Speed, +4 Breath",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "nautilus_shell"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.water_movement_efficiency",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Made for the Abyssal Plain. Keystone: costs 3 points."
+  },
+  "heart": {
+    "title": "+2 Hearts",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "health_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "stride": {
+    "title": "+6% Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.06,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "sailor_cap": {
+    "title": "Old Salt: +2 Hearts, +1 Luck",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "conduit"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
+  }
+}

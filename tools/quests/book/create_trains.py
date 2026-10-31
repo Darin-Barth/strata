@@ -11,7 +11,7 @@ q("intro", "Why Trains?", deps="welcome/path_tech", icon="create:controls", size
     and it drives your tracks on a timetable.
 
     Trains carry players, chests and tanks between your bases, mines and farms.
-    Later, they're how goods cross between far-away places before wireless exists.
+    They're the fun way to move goods between far-away places, long before wireless is cheap.
 
     You'll need brass for most train parts (see &bCreate: Getting Moving&r).""")
 
@@ -138,8 +138,8 @@ q("coins", "Money, Money", deps="intro", icon="numismatics:spur", desc="""
     &eCreate: Numismatics&r adds coins: &eSpur&r, &eBevel&r, &eSprocket&r, &eCog&r,
     &eCrown&r and &eSun&r, from smallest to biggest. Hover over a coin to see its value.
 
-    Coins can't be crafted. Here are a few to start your economy. Sell things to friends
-    and they flow around the server.""",
+    Coins can't be crafted. You started with &e10 Cogs&r, and here are a few smaller coins
+    to go with them. Sell things to friends and they flow around the server.""",
   rewards=[give("numismatics:spur", 32), give("numismatics:bevel", 8)])
 
 q("vendor", "Vendors", deps="coins", icon="numismatics:vendor",

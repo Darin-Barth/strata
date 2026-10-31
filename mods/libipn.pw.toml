@@ -11,3 +11,6 @@ hash = "89383465eb8dfa296e7518dd0e6ddc1a242f4537a3183425f2319c79a3e97843ded0f5e1
 [update.modrinth]
 mod-id = "onSQdWhM"
 version = "BGe4KMlE"
+[update.curseforge]
+file-id = 7810552
+project-id = 679177

@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "strata:abyssal/mos_ruined_castle",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_ruined_church",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_ruined_archway",
+      "weight": 1
+    },
+    {
+      "structure": "strata:abyssal/mos_small_ocean_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 14,
+    "salt": 731000006
+  }
+}

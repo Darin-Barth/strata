@@ -120,8 +120,8 @@ q("anvil", "The Arcane Anvil", deps="school_armor", icon="irons_spellbooks:arcan
     The strongest Iron's workstation: &elevel up scrolls&r (scroll + ink of the next rarity),
     upgrade armor and spell books, and &eimbue weapons&r with a spell.
 
-    Late game also brings &eMithril&r (a rare ore below y = -38, hidden from air;
-    needs a netherite pickaxe) and &eupgrade orbs&r (an orb plus 8 runes).""",
+    Late game also brings &eMithril&r (needs a netherite pickaxe). A few veins hide below
+    y = -38 at home; it grows richest in the dark of &5the Hollow&r and &eupgrade orbs&r (an orb plus 8 runes).""",
   rewards=[give("minecraft:amethyst_block", 4), give("minecraft:diamond", 2)])
 
 q("best_books", "The Best Books", deps="anvil", icon="irons_spellbooks:netherite_spell_book",

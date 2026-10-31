@@ -12,7 +12,8 @@ q("intro", "Moving Things Around", icon="laserio:laser_wrench", deps="welcome/ir
     your base react to it.
     &bLaserIO&r: move items, fluids and power between nearby blocks with lasers.
     &bMore Red&r: compact redstone logic gates and wires.
-    &bFlux Networks&r: wireless power, &cafter the Nether&r.""")
+    &bFlux Networks&r: wireless power, even across dimensions.""",
+  rewards=[give("integrateddynamics:on_the_dynamics_of_integration")])
 
 # --- Integrated Dynamics ----------------------------------------------------------------
 q("id_menril", "ID: Menril", deps="intro", icon="integrateddynamics:menril_sapling",
@@ -21,7 +22,7 @@ q("id_menril", "ID: Menril", deps="intro", icon="integrateddynamics:menril_sapli
     Squeeze Menril logs in a &eSqueezer&r for resin, then dry the resin in a
     &eDrying Basin&r to get &eCrystallized Menril&r.
 
-    The book &eOn the Dynamics of Integration&r explains the whole mod.""",
+    The book &eOn the Dynamics of Integration&r (from the first quest) explains the whole mod.""",
   rewards=[give("integrateddynamics:menril_sapling", 4)])
 
 q("id_cable", "ID: Logic Cables", deps="id_menril", icon="integrateddynamics:cable",
@@ -98,11 +99,10 @@ q("mr_gates", "More Red: Logic Gates", deps="mr_alloy", icon="morered:and_gate",
 
     &eBundled cables&r carry 16 colour signals in one line.""")
 
-# --- Flux Networks (gated) --------------------------------------------------------------
-q("flux_dust", "Flux Dust", deps=["intro", "welcome/nether"], icon="fluxnetworks:flux_dust",
+# --- Flux Networks ---------------------------------------------------------------------
+q("flux_dust", "Flux Dust", deps="intro", icon="fluxnetworks:flux_dust",
   tasks=item("fluxnetworks:flux_dust", 16), desc="""
-    &bFlux Networks&r sends power without wires. It's part of Strata's wireless tier
-    that opens &eafter the Nether&r.
+    &bFlux Networks&r sends power without wires, even to other dimensions.
 
     &eFlux Dust&r is made in the world by crushing redstone between &ebedrock&r and
     &eobsidian&r. Press &eR&r on Flux Dust to see the setup.""",

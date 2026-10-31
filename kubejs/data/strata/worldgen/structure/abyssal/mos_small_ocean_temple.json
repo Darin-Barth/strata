@@ -1,0 +1,22 @@
+{
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "mos:small_ocean_temple",
+  "size": 0,
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 313
+  },
+  "terrain_adaptation": "beard_box",
+  "cannot_spawn_in_liquid": false,
+  "terrain_height_radius_check": 1,
+  "allowed_terrain_height_range": 6,
+  "biomes": "#strata:abyssal_group/plain",
+  "liquid_settings": "ignore_waterlogging",
+  "valid_biome_radius_check": 2,
+  "burying_type": "LOWEST_CORNER",
+  "y_allowance": {
+    "min_y_allowed": -64,
+    "max_y_allowed": 41
+  }
+}

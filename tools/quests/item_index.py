@@ -27,7 +27,7 @@ DATA_KIND = {"dimension": "dimensions", "worldgen/structure": "structures",
 
 HOME = os.path.expanduser("~")
 REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
-# Darin's client profile has every client+both mod; server/mods adds the server-only ones.
+# A client profile has every client+both mod; server/mods adds the server-only ones.
 DEFAULT_MODS = [
     os.path.join(os.environ.get("APPDATA", ""), "ModrinthApp", "profiles", "Strata-0.1.1", "mods"),
     os.path.join(REPO, "server", "mods"),

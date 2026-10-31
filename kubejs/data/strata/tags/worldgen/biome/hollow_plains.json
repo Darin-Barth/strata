@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "grim_and_bleak:grimplains",
+    "grim_and_bleak:bleakplains",
+    "grim_and_bleak:grimstone_plains",
+    "grim_and_bleak:snowy_plains"
+  ]
+}

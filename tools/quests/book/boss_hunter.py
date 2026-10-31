@@ -8,8 +8,11 @@ q("intro", "What is Boss Hunter?", icon="minecraft:netherite_sword", size=1.5, s
     Strata has bosses from many mods, scattered all over the world. This chapter is a
     hunting list: one branch per mod, with where to look.
 
-    Every boss keeps its designed strength (the world's difficulty steps don't touch them).
+    Every boss keeps its designed strength (World Tiers don't change them).
     Most are built for a group: bring friends, food, and a way home.
+
+    &6Boss loot bags:&r nothing drops on the floor. Everyone who hits the boss gets their
+    own &eBoss Loot Bag&r with a full share of its loot. Right-click it to open.
 
     &eTip:&r an &eExplorer's Compass&r finds structures by name, and many mods add an
     "Eye" that you throw to point the way.""",

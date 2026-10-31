@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:circuits/elite"
+    },
+    "F": {
+      "item": "mekanismgenerators:fission_reactor_casing"
+    },
+    "X": {
+      "item": "cataclysm:ignitium_ingot"
+    }
+  },
+  "pattern": [
+    "XF ",
+    "FCF",
+    " F "
+  ],
+  "result": {
+    "count": 2,
+    "id": "mekanismgenerators:fission_reactor_port"
+  }
+}

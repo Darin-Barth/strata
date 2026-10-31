@@ -46,6 +46,9 @@ STEPS = ['raw_generation', 'lakes', 'local_modifications', 'underground_structur
 # Structure mods whose structures move to the Pokémon world (plus Cobblemon itself).
 STRUCTURE_MODS = ['cobblemon', 'integrated_cobblemon', 'cobblestructures',
                   'cobblemon_simple_center', 'cobblemonextrastructures']
+# Structure mods that run on the server only: their copies load only where the mod is installed, or a
+# single-player world from the players' pack fails on the missing template pools.
+SERVER_ONLY_MODS = {'cobblestructures': 'mr_cobblestructures'}
 # Vanilla structures left out of the Pokémon world.
 SKIP_VANILLA_STRUCTURES = {'stronghold'}
 VILLAGE_TYPES = ['plains', 'desert', 'savanna', 'snowy', 'taiga']
@@ -323,6 +326,8 @@ def main():
         nj = copy.deepcopy(j)
         nj['biomes'] = '#' + tag
         ns, p = sid.split(':')
+        if ns in SERVER_ONLY_MODS:
+            nj = {'neoforge:conditions': [{'type': 'neoforge:mod_loaded', 'modid': SERVER_ONLY_MODS[ns]}], **nj}
         w.write(ns, f'worldgen/structure/{p}.json', nj)
         report.append((sid, len(vals)))
 
