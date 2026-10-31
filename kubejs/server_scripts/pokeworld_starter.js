@@ -24,9 +24,16 @@ PlayerEvents.tick(event => {
   starterOfferedThisLogin.add(uuid)
   // getGenericData has ServerPlayer and UUID overloads, which Rhino can't choose between for a
   // player; name the UUID one explicitly.
-  // let + a unique name: a test of this call with `const data` failed with Rhino's
-  // "redeclaration of var data".
-  let starterPlayerData = CobblemonMain.INSTANCE.getPlayerDataManager()['getGenericData(java.util.UUID)'](player.getUUID())
-  if (starterPlayerData.getStarterSelected()) return
+  // player.uuid, not player.getUUID(): KubeJS doesn't expose getUUID on players. let + a unique
+  // name: a test of this call with `const data` failed with Rhino's "redeclaration of var data".
+  // If the lookup fails, open the screen anyway: for a player who already has a starter,
+  // Cobblemon only answers with a chat message.
+  let starterAlreadyPicked = false
+  try {
+    starterAlreadyPicked = CobblemonMain.INSTANCE.getPlayerDataManager()['getGenericData(java.util.UUID)'](player.uuid).getStarterSelected()
+  } catch (e) {
+    console.error(`[pokeworld] starter lookup failed for ${player.username}: ${e}`)
+  }
+  if (starterAlreadyPicked) return
   event.server.runCommandSilent(`openstarterscreen ${player.username}`)
 })
