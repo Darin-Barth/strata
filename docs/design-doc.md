@@ -167,7 +167,7 @@ Every heavy visual is client-side and optional, so weaker PCs turn it off and no
 
 **Visuals (client)**
 
-- Shaders via Iris: Complementary Reimagined as the default (low-to-high presets).
+- Shaders via Iris: Complementary Reimagined as the default (low-to-high presets), shipped with its shadows off (`shaderpacks/ComplementaryReimagined_r5.9.3.zip.txt`, preserved, so a player's own choice sticks; rename it when Complementary updates). Mellow as the lighter choice. No shader is switched on for players.
 - Distant Horizons (optional per player, also on the server): big payoff for airship flight. The server streams distant terrain built from the land that already exists (it never generates new terrain), so players see the world far past their render distance. It's off in the Hollow and the Abyssal Plain (`ignoredDimensionCsv`): it draws its terrain with its own fog and would see straight through theirs.
 - Fresh Animations + Entity Model Features + Entity Texture Features; Fusion for connected textures.
 - Atmospherics (per-biome fog, sky, clouds, stars); mostly replaced when shaders are on, so it mainly helps non-shader players. Check its biome-teleport menu is op-only.

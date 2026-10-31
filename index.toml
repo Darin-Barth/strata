@@ -9316,6 +9316,16 @@ hash = "2a2e5b61061e6ea64c7305ff0c2ee58468b23ad319c31e38f8ae7977451ebc83"
 metafile = true
 
 [[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.9.3.zip.txt"
+hash = "8fe4168c6578dd9d33a87fdd673dbe24e05388f53c4aa2a09c938c2e8dc6e350"
+preserve = true
+
+[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "12c5b5c0bbd7a100799db8d87e1f200492b4d49d77e541da30e6ea5c3156ffb1"
+metafile = true
+
+[[files]]
+file = "shaderpacks/mellow.pw.toml"
+hash = "0554cbd2334107d7ca6ecf70ee0d2cde21ab11eb446c4550fe0e75c32000a6d8"
 metafile = true
