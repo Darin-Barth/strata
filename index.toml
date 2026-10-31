@@ -18,6 +18,10 @@ file = "config/Mekanism/world.toml"
 hash = "704d2e73d608ba0ebd07c1e3e4a23ae7f7e1f69fc357995cb6ba1b6a96d30837"
 
 [[files]]
+file = "config/accessories.json5"
+hash = "9c17f3b027875d7fe958661b9bdb7ccaf021dbd02263648ae1765f56f14aaed0"
+
+[[files]]
 file = "config/alexscaves-general.toml"
 hash = "ac9c7c389b6634ad3ab084670336d4a8b880aabe09732cde5d9ed753627e1b80"
 
@@ -414,7 +418,7 @@ hash = "b449cb23f03701629407de7c22b9c580fe3d7e4bbcc94d83eccb22f4230fd32d"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "5427476ff8ee12a23c92d52e9860a7564a68685bc83259ccdff03e52829bff68"
+hash = "5d23199efd77614a075b8c26577cd07b65ddeffc11ade44b3707145d42c3e0ca"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/irons_spellbooks/black_hole.json"

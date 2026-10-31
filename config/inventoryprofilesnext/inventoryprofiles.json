@@ -18,6 +18,8 @@
         "enable_inventory_buttons": true,
         "enable_inventory_settings_button": false,
         "enable_inventory_editor_button": false,
-        "show_continuous_crafting_checkbox": true
+        "show_continuous_crafting_checkbox": true,
+        "show_sort_in_columns_button": false,
+        "show_sort_in_rows_button": false
     }
 }
