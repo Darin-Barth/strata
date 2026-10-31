@@ -105,9 +105,11 @@ q("safety", "When Things Go Wrong", deps="claims", icon="tombstone:grave_key", d
     &eRedomesticate&r: if your tamed pet dies, it can be brought back, so it's never lost for good.""",
   rewards=[give("minecraft:golden_carrot", 8)])
 
-q("tavern", "A Tavern Town", deps="welcome", icon="minecraft:bell",
-  tasks=structure("integrated_villages:tavern_village", title="Visit the tavern village"), desc="""
-    You start next to a village with a big tavern. It's a good first home base.
+# the quest ID stays "tavern" so existing progress and the Bounty Board link are kept
+q("tavern", "Find a Village", deps="welcome", icon="minecraft:bell",
+  tasks=structure("#minecraft:village", title="Visit any village"), desc="""
+    Villages make a good first stop, and a good first home base. Strata's are bigger and
+    stranger than vanilla's: some have taverns, harbours, windmills or airships.
 
     Villagers trade useful stuff. &eGuard Villagers&r protect them from raids.
     Look for the &eBounty Board&r: villagers post small jobs (bring items, defeat mobs)

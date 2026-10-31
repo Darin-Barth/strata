@@ -231,7 +231,7 @@
 			dependencies: ["7B00515BF7869680"]
 			icon: { id: "minecraft:bell" }
 			tasks: [
-				{ id: "353E403B56265797", type: "structure", structure: "integrated_villages:tavern_village" }
+				{ id: "353E403B56265797", type: "structure", structure: "#minecraft:village" }
 			]
 			rewards: [
 				{ id: "664E1F279F092A6C", type: "xp", xp: 100 }

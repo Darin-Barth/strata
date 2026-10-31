@@ -370,7 +370,7 @@ hash = "a1cd9ac41381fa2f2dc0fc1ba75e1cceaa47c51c197b482ae4758c1a997977bb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "f0886ce5132804882f5ae06604db216ecd0a3f4f1100672d65c168780e84f649"
+hash = "1c95dc0c0d91abc8c011a45f6fd965dbe4b6f51b84f28757d6bd9be57f8e47e2"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -378,7 +378,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7f7ba7328311d6228de733b3cabd0c378986a06184242da14147d588ad034209"
+hash = "0045208d233471fec0a6762fe78f0aa46adf6d39a2cc6e61e05bf8fc9d1dd6b6"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
