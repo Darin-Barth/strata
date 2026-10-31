@@ -105,7 +105,9 @@ def detect(work, pw):
 def main():
     pw = packwiz()
     files = modrinth_files()
-    manual = {k: v for k, v in json.load(open(MANUAL, encoding="utf-8")).items() if not k.startswith("_")}
+    manual_json = json.load(open(MANUAL, encoding="utf-8"))
+    manual = {k: v for k, v in manual_json.items() if not k.startswith("_")}
+    modrinth_only = {os.path.normpath(os.path.join(ROOT, f)) for f in manual_json["_modrinth_only"]["files"]}
     with tempfile.TemporaryDirectory() as work:
         os.makedirs(os.path.join(work, "mods"))
         by_sha1 = gather(files, os.path.join(work, "mods"))
@@ -119,8 +121,8 @@ def main():
             entry = (manual[fn]["project-id"], manual[fn]["file-id"])
         if entry:
             new += f"[update.curseforge]\nfile-id = {entry[1]}\nproject-id = {entry[0]}\n"
-        elif field(t, "side") != "server":     # server-only files never go into the players' zip
-            missing.append(fn)
+        elif field(t, "side") != "server" and os.path.normpath(p) not in modrinth_only:
+            missing.append(fn)  # server-only and Modrinth-only files never go into the players' zip
         if new != t:
             open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1

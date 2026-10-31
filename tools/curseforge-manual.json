@@ -1,5 +1,6 @@
 {
   "_comment": "CurseForge files for mods whose author uploads a separate build of the same version to each site (same version and usually the same filename, different bytes), so tools/curseforge_ids.py can't match them by fingerprint. Keyed by our (Modrinth) filename: after a mod update the entry stops applying and the script says so; look up the new version's file ID on CurseForge (e.g. https://api.cfwidget.com/<project-id>) and update it here. Checked Oct 27, 2026.",
+  "_modrinth_only": {"why": "All Rights Reserved and not on CurseForge, so they may not be copied into the CurseForge zip. Players' Modrinth packs get them; the CurseForge build treats them as server-only (tools/curseforge_modrinth_only.py) and the pack's data that uses them loads only where they are installed.", "files": ["mods/sunken-spires.pw.toml", "mods/cobblestructures.pw.toml"]},
   "aether-1.21.1-1.5.10-neoforge.jar": {"project-id": 255308, "file-id": 7043502},
   "aether_treasure_reforging-1.21.1-1.0.1-neoforge.jar": {"project-id": 1016302, "file-id": 6040710},
   "aeroworks-1.5.0.jar": {"project-id": 1522473, "file-id": 8743051},

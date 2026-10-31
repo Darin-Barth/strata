@@ -39,6 +39,8 @@ jobs:
         run: |
           version="${TAG#v}"
           zip="Strata-$version-curseforge.zip"
+          python3 -I tools/curseforge_modrinth_only.py
+          packwiz refresh
           packwiz cf export -o "$zip"
           echo "ZIP=$zip" >> "$GITHUB_ENV"
           echo "DISPLAY=Strata $version" >> "$GITHUB_ENV"
