@@ -7014,7 +7014,7 @@ hash = "236df88aeabd657d4f2b55d114fecc09d14035bcb466a47721ba496b19a2458c"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
-hash = "c92738ae4c8fc0ec3cadcabd532e39d53b2f182d3f0a929f0118596380743ebb"
+hash = "a526d1d117f01f1627a70c6dc771d765b0565f439ba0dff3820f48a9252da6ff"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
@@ -7026,7 +7026,7 @@ hash = "ac2de210710bb56616677cea7e8c9faba3d3e342579ea11685636473af7c4dfd"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "2566ae0ba77ec530b79bc864668d0f398f57364ff8039b9b1ccd4e3d60cd45c8"
+hash = "fe7c80de72d5da53a798a085022c394b66e6df26ce49fc4225371b54d543cabe"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_portal_placement.js"

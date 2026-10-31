@@ -7,6 +7,7 @@ const hollowHorrorNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_sp
 const hollowBosses = ['graveyard:lich', 'grim_and_bleak:gate_guardian']
 const hollowDimensionOf = entity => { const d = entity.level.dimension; return String(d && d.location ? d.location() : d) }
 const hollowIn = entity => hollowDimensionOf(entity) === hollowDimensionId
+const hollowDirection = Java.loadClass('net.minecraft.core.Direction')
 
 ServerEvents.recipes(event => {
   // The Pale Lantern lights a resin-brick portal frame. The Creaking Heart needs Silk Touch and
@@ -42,10 +43,19 @@ PlayerEvents.tick(event => {
 BlockEvents.rightClicked(event => {
   const player = event.player
   if (!player) return
-  // No sleeping in the Hollow (it's always night there anyway), except in a lit Pale Beacon's light
-  // (hollow_beacon.js), where a bed sets your respawn point.
-  if (hollowIn(player) && event.block.id.endsWith('_bed') && !hollowBeaconNear(player)) {
-    player.displayClientMessage(Text.darkGray("You can't sleep here. Something is watching you.").italic(), true)
+  // No sleeping in the Hollow (it's always night there anyway). In a lit Pale Beacon's light
+  // (hollow_beacon.js) a bed sets your respawn point instead: the game itself refuses sleep in a
+  // dimension that isn't "natural" (the Hollow isn't, so compasses spin), so this sets it directly.
+  if (hollowIn(player) && event.block.id.endsWith('_bed')) {
+    if (hollowBeaconNear(player)) {
+      let pos = event.block.pos
+      let props = event.block.properties
+      if (String(props.get('part')) === 'foot') pos = pos.relative(hollowDirection.valueOf(String(props.get('facing')).toUpperCase()))
+      player.setRespawnPosition(player.level.dimension, pos, player.yaw, false, false)
+      player.displayClientMessage(Text.of('The beacon watches over you. Respawn point set.').color(0xC9D6E3).italic(), true)
+    } else {
+      player.displayClientMessage(Text.darkGray("You can't sleep here. Something is watching you.").italic(), true)
+    }
     event.cancel()
     return
   }

@@ -33,7 +33,7 @@ const hollowBeaconWarned = {}
 
 const hollowBeaconDim = entity => { const d = entity.level.dimension; return String(d && d.location ? d.location() : d) }
 const hollowBeaconLevel = server => server.getLevel(hollowBeaconDimension)
-const hollowBeaconNow = server => { const l = hollowBeaconLevel(server); return l ? Number(l.gameTime) : 0 }
+const hollowBeaconNow = server => { const l = hollowBeaconLevel(server); return l ? Number(l.levelData.getGameTime()) : 0 }
 
 const hollowBeaconLoad = server => {
   if (hollowBeaconList) return hollowBeaconList
@@ -208,7 +208,7 @@ ServerEvents.tick(event => {
   if (list.length === 0) return
   const now = hollowBeaconNow(server)
   const players = []
-  level.players().forEach(p => players.push(p))
+  level.players.forEach(p => players.push(p))
   let changed = false
   for (let i = list.length - 1; i >= 0; i--) {
     let b = list[i]
@@ -274,6 +274,12 @@ LootJS.modifiers(event => {
   event.addTableModifier(LootType.CHEST).matchDimension('strata:hollow').customAction((ctx, loot) => {
     let player = ctx.getParamOrNull(hollowBeaconParams.THIS_ENTITY)
     if (!player || !player.isPlayer()) return
+    // Only real containers: some mods roll "chest" loot at the player's feet every few seconds
+    // (Incendium does), which would use up pages nobody receives.
+    let origin = ctx.getParamOrNull(hollowBeaconParams.ORIGIN)
+    if (!origin) return
+    let be = player.level.getBlockEntity(hollowBeaconBlockPos.containing(origin.x(), origin.y(), origin.z()))
+    if (!be || typeof be.getContainerSize !== 'function') return
     let data = player.persistentData
     let found = data.getInt('strata_survey_pages')
     if (found >= 6 || Math.random() >= 1 / 3) return
