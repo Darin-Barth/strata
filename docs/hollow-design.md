@@ -27,12 +27,11 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
 - **Fog:** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`.
 - **Atmosphere** (biome effects, no extra mods): dark fog and black sky, ash/spore particles, cave mood sounds, quiet ambient loops, Deep Dark style music. AmbientSounds (in the pack) adds Hollow-only soundscapes such as whispers and distant knocks. A KubeJS script adds short Darkness pulses now and then while in the Hollow.
 
-## 3. Mobs (8 new mods)
+## 3. Mobs (7 new mods)
 | Role | Mod | How it's kept in the Hollow |
 |---|---|---|
 | Dread | Cave Dweller ReEvolved (beta) | `dimension_whitelist = [strata:hollow]` |
 | Dread | Weeping Angels | spawn tag → Hollow biomes; no interdimensional teleport, no snow angels |
-| Dread | Whispering Spirits | one spawn file → Hollow biomes |
 | Dread | Sanity: Renewed | sanity meter and hallucinations in the Hollow only (per-dimension config); recovers outside |
 | Chase | The Ravenous | two spawn files → Hollow biomes |
 | Combat + loot | Grim & Bleak | its biomes, mobs, structures and darksteel/red amber gear live in the Hollow; its own portal and Overworld ruins removed |

@@ -418,7 +418,7 @@ hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "6e5465dc8426075f13d8d5bad85bd959bfe8ff2416a5710fd1828c8b4f3dc40b"
+hash = "05352e69341171f1cb6e5c3d8074e3f51b0ecbff121a8acc5eb385d0665cad7c"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -7045,16 +7045,12 @@ file = "kubejs/data/werewolves/neoforge/biome_modifier/gen/silver_ore.json"
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
-file = "kubejs/data/whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json"
-hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
-
-[[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
 hash = "11fc46f3608fda10dfc44fb0fdb6836c7c530b3746543cd2858610da8b455e7d"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
-hash = "a526d1d117f01f1627a70c6dc771d765b0565f439ba0dff3820f48a9252da6ff"
+hash = "dc952082f22e80106268bf1d163b33b4af3e6913c0a56f7d3e69fab6cac4560a"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
@@ -7066,7 +7062,7 @@ hash = "ac2de210710bb56616677cea7e8c9faba3d3e342579ea11685636473af7c4dfd"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "fe7c80de72d5da53a798a085022c394b66e6df26ce49fc4225371b54d543cabe"
+hash = "678fe53713798cbc5177e4d2c14ee01292fc8ec595afab18dc6a7bc7998b37ce"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_portal_placement.js"
@@ -7158,7 +7154,7 @@ hash = "5b8f583b15af68c8a74d4820fccb919357bcc7cefaa18734010259d97963bfdf"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "e0a8ad9cf5e4c2bde4b8d62f2ff2638e9282b60d69d43e645eb14c908848b7ab"
+hash = "d99e195c9872e2791e9f7fd9202f14ba9d63c7b606d971fddc027fb046f15039"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
@@ -7174,7 +7170,7 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "a965f37cc07dcc6b4fd553eb849eef1a671f94877dcad44f807c13782980448d"
+hash = "279cd0a55457216df13cba145c798c2c8e3d470db53c3aaf21e072fa5d229642"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_bags.js"
@@ -9309,11 +9305,6 @@ metafile = true
 [[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "96a6dd527861ccf636202c4f1bc5386e65a4d14e1323dd4e0fc08855c01262a3"
-metafile = true
-
-[[files]]
-file = "mods/whispering-spirits.pw.toml"
-hash = "520735b342baa8951013728f3d7e375413510d4fdae377feba0de219d91043d1"
 metafile = true
 
 [[files]]

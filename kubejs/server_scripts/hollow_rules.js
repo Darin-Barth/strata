@@ -2,7 +2,7 @@
 // own realm portal, and Hollow Ember drops. Design: docs/hollow-design.md.
 // KubeJS server scripts share one scope: every top-level name here starts with "hollow".
 const hollowDimensionId = 'strata:hollow'
-const hollowHorrorNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spirits', 'the_ravenous',
+const hollowHorrorNamespaces = ['cave_dweller', 'weeping_angels', 'the_ravenous',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed']
 const hollowBosses = ['graveyard:lich', 'grim_and_bleak:gate_guardian']
 const hollowDimensionOf = entity => { const d = entity.level.dimension; return String(d && d.location ? d.location() : d) }

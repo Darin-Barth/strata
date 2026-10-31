@@ -60,9 +60,8 @@ const portalAmbSetup = () => {
     },
     nether: {
       sounds: [
-        ['whispering_spirits:whisperone', 2, 0.4, 0.9, 1.0],
-        ['whispering_spirits:whispertwo', 2, 0.4, 0.9, 1.0],
-        ['whispering_spirits:whisperthree', 2, 0.4, 0.9, 1.0],
+        ['minecraft:ambient.soul_sand_valley.additions', 2, 0.5, 0.8, 1.0],
+        ['minecraft:entity.vex.ambient', 2, 0.25, 0.5, 0.6],
         ['minecraft:entity.creaking.ambient', 2, 0.5, 0.6, 0.8],
         ['minecraft:block.creaking_heart.idle', 2, 0.6, 0.7, 0.9],
         ['minecraft:entity.warden.heartbeat', 2, 0.6, 0.7, 0.75],

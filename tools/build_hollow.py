@@ -248,12 +248,10 @@ def main():
     hb = f"#{NS}:hollow_biomes"
 
     # --- Horror mods: spawns and structures in the Hollow only ---
-    # Whispering Spirits, The Ravenous: their spawn files target every biome. The Ravenous' own spawn
-    # check also wants #minecraft:is_overworld, which Hollow biomes never get, so these two
-    # never fire; server_scripts/hollow_ravenous.js spawns it instead.
-    write(out, "whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json", {
-        "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface",
-        "spawners": {"type": "whispering_spirits:whispering_spirit", "weight": 8, "minCount": 1, "maxCount": 1}})
+    # The Ravenous: its spawn files target every biome. Its own spawn check also wants
+    # #minecraft:is_overworld, which Hollow biomes never get, so these never fire;
+    # server_scripts/hollow_ravenous.js spawns it instead. (Whispering Spirits was removed in 1.2.1: it
+    # raycast 100 blocks along every player's view every tick, in every dimension, and lagged the server.)
     for mob, weight in (("the_ravenous", 1), ("the_screecher", 2)):
         write(out, f"the_ravenous/neoforge/biome_modifier/{mob}_biome_modifier.json", {
             "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface",

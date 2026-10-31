@@ -5,7 +5,7 @@
 // a horror mob that follows someone through a portal is capped too. A startup script because
 // native listeners registered in server scripts would stack up on every /reload.
 // KubeJS scripts share one scope per type: every top-level name here starts with "hollowCap".
-const hollowCapNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spirits', 'the_ravenous',
+const hollowCapNamespaces = ['cave_dweller', 'weeping_angels', 'the_ravenous',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed',
   // the Abyssal Plain's deep-sea creatures
   'hybrid_aquatic', 'alexscaves']

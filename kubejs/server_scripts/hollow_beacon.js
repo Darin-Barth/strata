@@ -20,7 +20,7 @@ const hollowBeaconUpgradedRadius = 48
 const hollowBeaconWarnRadius = 64
 const hollowBeaconWarnCooldownMs = 30 * 1000
 const hollowBeaconSanityPerSecond = 0.01
-const hollowBeaconHorror = ['cave_dweller', 'weeping_angels', 'whispering_spirits', 'the_ravenous',
+const hollowBeaconHorror = ['cave_dweller', 'weeping_angels', 'the_ravenous',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed']
 const hollowBeaconBlockPos = Java.loadClass('net.minecraft.core.BlockPos')
 const hollowBeaconAABB = Java.loadClass('net.minecraft.world.phys.AABB')
