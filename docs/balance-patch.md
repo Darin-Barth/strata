@@ -68,6 +68,7 @@ farmable.
 | G7 | **Inventory Pets** sources | legendary chest chance 2.5%; Cloud, Sun, Wither, Black Hole and Pufferfish also drop from a themed boss at 15% per player (`tools/build_pet_loot.py`); the Nether Portal pet only in Nether fortress and bastion chests; Slime pet chest-only |
 | G8 | **Boss loot** shared out by fighting, not by grabbing | every player who hit a boss gets a Boss Loot Bag with a full roll of its loot; boss materials scale with group size by design (`strata_boss_bags.js`) |
 | G9 | **End portal eyes** (End Remastered) | no random chest or mob eyes: each eye has one guaranteed source (5 bosses, 5 treasure rooms, a Create and an Ars craft, 3 spare recipes); Seeker's Compasses find the places; Cryptic Eye and the Cleric's Evil Eye trade off ([end-eyes.md](end-eyes.md), `tools/build_end_eyes.py`) |
+| G10 | **Extreme Reactors** graphite smelted from coal, charcoal and coal blocks in a plain furnace | furnace recipes removed (they made Shift-click put fuel in the input slot); the Blast Furnace recipes stay (`strata_balance.js`) |
 
 ## Still to check
 

@@ -6990,7 +6990,7 @@ hash = "3a0466807cc2b2ad58bdc88653d368fe82f25de8579a7e2ad25d9ce7e92c5224"
 
 [[files]]
 file = "kubejs/server_scripts/strata_balance.js"
-hash = "e92bb955f9d655b7321d2f53bcc94cc993bce7f83f00ae61613f7c96fe1b5d2b"
+hash = "e19dcaead77d63303dd1fd59dfd87485117b80289d7fa66c4fbe7958b97707f5"
 
 [[files]]
 file = "kubejs/server_scripts/strata_boss_bag_models.js"

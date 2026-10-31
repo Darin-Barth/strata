@@ -10,6 +10,11 @@ const strataBalanceRemovedRecipes = [
   'theurgy:reformation/alchemical_sulfur_desh_from_alchemical_niter_metals_common',
   'theurgy:reformation/alchemical_sulfur_ostrum_from_alchemical_sulfurs_metals_rare',
   'theurgy:reformation/alchemical_sulfur_ostrum_from_alchemical_niter_metals_rare',
+  // Extreme Reactors smelts coal, charcoal and coal blocks into graphite, which made the furnace treat them as
+  // inputs: Shift-click sent fuel to the top slot. Graphite stays in the Blast Furnace (bigreactors:blasting/*).
+  'bigreactors:smelting/graphite_from_coal',
+  'bigreactors:smelting/graphite_from_charcoal',
+  'bigreactors:smelting/graphite_from_coalblock',
 ]
 
 ServerEvents.recipes(event => {
