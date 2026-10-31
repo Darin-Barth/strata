@@ -465,6 +465,18 @@ STRUCTURES = [
 ]
 
 
+# Sunken Spires runs on the server only (players' packs leave it out), so its copies load only where
+# it is installed: a single-player world from the players' pack would otherwise fail on the
+# missing joshie:* template pools.
+SERVER_ONLY = {"joshie": "mr_sunken_spires"}
+
+
+def only_if_loaded(ns, data):
+    if ns in SERVER_ONLY:
+        return {"neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": SERVER_ONLY[ns]}], **data}
+    return data
+
+
 def build_structures(out, mods_dir):
     import glob
     import zipfile
@@ -472,7 +484,7 @@ def build_structures(out, mods_dir):
             "mos": glob.glob(os.path.join(mods_dir, "MoogsOcean*.jar"))[0]}
     for g, bs in GROUP_TAGS.items():
         write(out, f"{NS}/tags/worldgen/biome/abyssal_group/{g}.json", tag([c(b) for b in bs]))
-    sets = {}
+    sets, set_ns = {}, {}
     for i, (src, group, base_y, set_name, spacing, separation) in enumerate(STRUCTURES):
         ns, path = src.split(":")
         with zipfile.ZipFile(jars[ns]) as z:
@@ -488,13 +500,15 @@ def build_structures(out, mods_dir):
         st["biomes"] = f"#{NS}:abyssal_group/{group}"
         st["terrain_adaptation"] = "beard_box"
         name = f"{ns}_{path.split('/')[-1]}"
-        write(out, f"{NS}/worldgen/structure/abyssal/{name}.json", st)
+        write(out, f"{NS}/worldgen/structure/abyssal/{name}.json", only_if_loaded(ns, st))
         sets.setdefault(set_name, (spacing, separation, []))[2].append(c(f"abyssal/{name}"))
+        set_ns.setdefault(set_name, set()).add(ns)
     for k, (set_name, (spacing, separation, members)) in enumerate(sorted(sets.items())):
-        write(out, f"{NS}/worldgen/structure_set/abyssal/{set_name}.json", {
+        assert len(set_ns[set_name]) == 1, f"set {set_name} mixes structure sources"
+        write(out, f"{NS}/worldgen/structure_set/abyssal/{set_name}.json", only_if_loaded(next(iter(set_ns[set_name])), {
             "structures": [{"structure": m, "weight": 1} for m in members],
             "placement": {"type": "minecraft:random_spread", "spacing": spacing, "separation": separation,
-                          "salt": 731_000_000 + k}})
+                          "salt": 731_000_000 + k}}))
     # Sunken Spires' ruins exist only down here now.
     write(out, "joshie/tags/worldgen/biome/has_structure/conduit_ruins.json", tag([]))
     print(f"structures: {len(STRUCTURES)} copies in {len(sets)} sets")

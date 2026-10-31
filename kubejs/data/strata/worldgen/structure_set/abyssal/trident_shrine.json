@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mr_sunken_spires"
+    }
+  ],
   "structures": [
     {
       "structure": "strata:abyssal/joshie_trident_shrine",

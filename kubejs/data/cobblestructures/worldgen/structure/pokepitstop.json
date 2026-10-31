@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mr_cobblestructures"
+    }
+  ],
   "biomes": "#pokeworld:has_structure/cobblestructures/pokepitstop",
   "adapt_noise": false,
   "spawn_overrides": {},

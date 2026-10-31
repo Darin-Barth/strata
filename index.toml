@@ -2798,15 +2798,15 @@ hash = "c77ac8b873b8bfc821a20e69256b8ca5cb5a8414b788330c78ba5389fa249ac1"
 
 [[files]]
 file = "kubejs/data/cobblestructures/worldgen/structure/pokecenter.json"
-hash = "af6ce5dcf27234882e80daa4c6254df44ea6656f63401cdbcd99b3c6aed3a7a9"
+hash = "3635695ed1143fd62ce610a4d5e2a8bcf3fb6490b5ae3afaa1c281e22f7ff812"
 
 [[files]]
 file = "kubejs/data/cobblestructures/worldgen/structure/pokemart.json"
-hash = "a1a894a4092e42c356ab18f06abb5e826ec27c05e2853aa528f9a20279c98ac2"
+hash = "2cd64a5324f5751b38bc50c8feab409a3eb7d005eca5a75491cc09499f5552f2"
 
 [[files]]
 file = "kubejs/data/cobblestructures/worldgen/structure/pokepitstop.json"
-hash = "395c6d3e4195f6068599c5534e1a5edb1ec37fcfe57ad9a446bd491bc2c7c2d4"
+hash = "1337f047b7bf292c69da3d9688609bc9f355799711d32f0e32da434af19a489d"
 
 [[files]]
 file = "kubejs/data/create_enchantment_industry/recipe/crafting/affix_augmentor.json"
@@ -6526,47 +6526,47 @@ hash = "bf86ecfcbce2b30c4a6fa663b8c08731dfd18bc49c297d4891cf84a03458cfb3"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_colossuem.json"
-hash = "1c2134db667c6fae7c899fe6373402b3482b125306daabba72c46094602d3058"
+hash = "8f544a818f7d75e324314580191fb56cbb4c90febe46a472206cc4b6b5348fce"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_conduit_ruins.json"
-hash = "26e65bdbbb4e974b748962a943de2a385118d235ec14a49465b7ceac6956515f"
+hash = "6fa922888b5dc0a38b6c275bc5f9d70bb92d87f48fd181893dd45d752f5ef7e2"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_floating_spikes.json"
-hash = "0ce3b185e2015bf0c52b2cdf0ebbe1784e199e11fd54eb0adeffaf077475f808"
+hash = "d1916644ab607ba19207c848528088db28623de372b6b05ace5e590172baa84f"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_large_fossil.json"
-hash = "7f2dacb074e9bdfe4439790ac41af33fdd451098993c117a0c6544e22a5b1c0c"
+hash = "42a16a791d6031643f585e55c48c28da9c2fe3f3247a4f0ed1e3482c8f660ca8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_ocean_temple.json"
-hash = "d6780ed05a08356355f25a4d957dae13242a270a048c15289b534d9221f06d3f"
+hash = "0ec31b0293a3d874e9fcb68442a824fc7ab1cccb75c6711876d1c00337e422ed"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_prismarine_forge.json"
-hash = "7391d8fd12686aebb822fadd20d00114ba271d27f6a8f3a90521fb49f4f8e34b"
+hash = "a43425e408dde93b5704b57502e252b15781d4d5f521a486463c315273d3ae6d"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_prismarine_trial_chamber.json"
-hash = "80132aaafff6a533fefebecde807d4093e1f438c76e1898523c72c241dea2416"
+hash = "93c25d795ff42ea78836ae7549bde4e289f9d6959c0a9ac5d3ef9c5e851482e3"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_small_fossil.json"
-hash = "25e37ae15831e004d13fdd3187b6e1fac4e77e7af405a147482c03e99d70721c"
+hash = "2f2cc3efc5fc9c0b9d93efd9847ec43baeca2888a735dc646cfcc02cbee1cc16"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_spires.json"
-hash = "3a881c8837a46536011cc9ac832485799ca24db5d1ef5fec10c4d8a030c39558"
+hash = "99da6ee8aa63c26585308b64e623becd974e5c06e8c6ca876749a23e378c092d"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_sunken_city.json"
-hash = "279d7908dd5c23b06ecc925442750e51b57c4df39f85d6d08341e5e0fce894cf"
+hash = "0a50b9610f9d4622f54c9333c99e6b014a30a8ca4da07fb7e3ac4f5f4badc3a1"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/joshie_trident_shrine.json"
-hash = "9ebdc4fdd9b890e4702f08d2aecba9267dae5b33a1ccb27bde6486cdc5cec571"
+hash = "51fcbf97accd78af67b62cd7038dfde47ca3c8fa94bdfaff8c6bdb9ea3354922"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure/abyssal/mos_atlantis_tribune.json"
@@ -6638,19 +6638,19 @@ hash = "6c075ef29c7590e80b84b8178f00d2490d228e8167604059482a4a4bb5219f54"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/colossuem.json"
-hash = "a233471b13d10d43f04a9f35baa88bdfb3abcbd1403d761f5500a2a93ddd27fb"
+hash = "8e246a84141033438f3d0917d9cce0c0ac2ae6e43521a2c2169ca9bf8cbed638"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/conduit_ruins.json"
-hash = "8dd4affde07c27ba23e23f39bce0bdadfb506fa51f3058e5ce18e9ddb10e0f4b"
+hash = "66e551923848d8fa0eff387b143522df4da355f44dee71ca14c5e91ce3181de8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/floating_spikes.json"
-hash = "6f9d9a40218b61e6bd7daa404e34f62445adf229c7f040d587827bcdcce55bef"
+hash = "00bc74c909ed964c25988b0cb97d6cb3b954fee167f1da3f10536b7dd2ad55d8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/large_fossil.json"
-hash = "d59932e6c1a09c0d1be746a41c1cc68bfe6139c811186b76c20db13d2fb3b65d"
+hash = "0221633e288f0fdbc6890f3110a6ecf53c8709bedda20a10403a8ac2b7399897"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/ocean_ruins.json"
@@ -6658,7 +6658,7 @@ hash = "2a843ea159a60bc5a34d4223c93fe0c6311c40af3cfbc169a8191bfa684aa2a6"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/ocean_temple.json"
-hash = "e20f4b51bf4baeefb573a724027134541847ed8a20bc03320f06e3f9d2c3e29c"
+hash = "535fafa7093a211e1d08cba523ed7e335b33632bd957d366e5f524bb9bab5efb"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/oddities.json"
@@ -6666,19 +6666,19 @@ hash = "56f111bacaea22840b028380faeebe48c2978edf31f4c936787b76e9fc258b39"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/prismarine_forge.json"
-hash = "c9aa1401395f544777c7febca92c850d9b7f42889bc919fe4794cdaad88f1f78"
+hash = "ae3c4ab59fdaa37199c9fbeefff8d077fea4773fa613649c012dcf04a61d742e"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/small_fossil.json"
-hash = "63af88330d8ec03188cb1ef1161176a9338268914fe47bd0d1ef06020007cdb4"
+hash = "e420bf09cda33925bf7db1a23982137cf03a8c226633f7332093f4264e4186bb"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/spires.json"
-hash = "e1845977bbf31da0e6af5805b2b6abebb8a397507a89b965a67e6124c82f2c15"
+hash = "b260feab55eb48d0ea1ba435f597d9c5f1ad3740e648e173eca64ddf5a3d5279"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/sunken_city.json"
-hash = "ef212b7ca90f3f07bc5f8519a9c382f29fb7d0d2a652e70822a4a4193d6fc9c5"
+hash = "a1c2c500e56704e26923cf4d3603365fc66a9f79d5df603fd961b7e2f6d9e0b7"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/trench_bones.json"
@@ -6686,11 +6686,11 @@ hash = "56c6e49d748e76f14103b219517967177cb3cffdc526c79f8e66a96da0a62762"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/trial_chamber.json"
-hash = "d217b9bc0966397f0fabb0c6a1f59e0248c56069d016578ac2e1ff2f497abe62"
+hash = "1ac8d7755fd6e018b43891967cda101a1f0c50731309982bd4029cc3afc42b0f"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/trident_shrine.json"
-hash = "cff352ae9c13a1fa910cc0697d48a7033d73a71cb4a495dea51d8d83a3967f98"
+hash = "6c096b0ec9684fa3355f49219ca6cd3ca1d7c9a53d60b4fc2edf4f56098bf775"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/structure_set/abyssal/wrecks.json"

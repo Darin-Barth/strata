@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mr_sunken_spires"
+    }
+  ],
   "type": "minecraft:jigsaw",
   "start_pool": "joshie:sunken_city",
   "size": 6,
