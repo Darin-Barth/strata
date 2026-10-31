@@ -221,6 +221,10 @@ file = "config/fancymenu/options.txt"
 hash = "c64b53c1a5ce8a0816bce5abf7832f8be1db1ed7d7aebab71ba278e70b353faf"
 
 [[files]]
+file = "config/ftbchunks-client.snbt"
+hash = "f25726c98d107a19254800a7aefb625ed9d57fc1569dbbd092ebc04a5b1465ea"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "bc624389ea3f194fba7d6bdf22b43a3ba62dfa331bafb141c0966c25ceb1ccf8"
 
