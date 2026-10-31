@@ -141,6 +141,7 @@ PlayerEvents.tick(event => {
 
   if (player.tickCount % 40 !== 0) return
   if (!hollowDreadOk(player) || player.isCreative() || player.isSpectator()) return
+  if (hollowBeaconNear(player)) return  // a lit Pale Beacon keeps the dread away (hollow_beacon.js)
   const arrived = player.persistentData.getLong('strata_hollow_arrived')
   if (arrived > 0 && Date.now() - arrived < hollowDreadQuietStartMs) return
   const state = hollowDreadState[player.username] || (hollowDreadState[player.username] = { next: 0 })

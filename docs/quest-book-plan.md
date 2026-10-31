@@ -72,7 +72,7 @@ against the mod jars by `tools/quests/check_ids.py`.
 26. The End — End Remastered's eyes, Integrated Stronghold, Dragon (unlocks the Pinnacle World Tier), Nullscape.
 27. The Kakuto Region (Pokémon) — Bell Fragment → Johto Bell, portal frame, starter, Pokécenters, gyms, CobbleDollars.
 28. The Abyssal Plain — depth, base, survey, ruins and bosses, ending in the Deep Station.
-29. The Hollow (planned; `docs/hollow-progression.md`).
+29. The Hollow (`tools/quests/book/the_hollow.py`; design `docs/hollow-progression.md`).
 
 **Bosses & Combat**
 30. Combat & Gear — Better Combat, Combat Roll, Apotheosis gems/affixes/enchanting, Simply Swords.

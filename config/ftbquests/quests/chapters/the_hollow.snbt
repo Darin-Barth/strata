@@ -1,0 +1,705 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_hollow"
+	group: "76581968F62E459A"
+	icon: { id: "strata:pale_lantern" }
+	id: "14217C539A60E739"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "592EB82983A08C0B"
+			x: 0.0d
+			y: 4.5d
+			icon: { id: "strata:hollow_ember" }
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{ id: "0079211831E1B341", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0D6D4470A1AA0735", type: "xp", xp: 100 }
+				{
+					id: "3AFA15B5D397BF39"
+					type: "item"
+					item: { count: 1, id: "minecraft:soul_torch" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2FEC71D80B213EDC"
+			x: 1.75d
+			y: 4.5d
+			dependencies: ["592EB82983A08C0B"]
+			icon: { id: "strata:pale_lantern" }
+			tasks: [
+				{
+					id: "41CA1F8A6C583AF2"
+					type: "item"
+					item: { count: 1, id: "strata:pale_lantern" }
+				}
+			]
+			rewards: [
+				{ id: "0D7C42819AD49225", type: "xp", xp: 250 }
+				{
+					id: "15DA8599F9CD0B2A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
+				{
+					id: "79747E5A5B04046F"
+					type: "item"
+					item: { count: 1, id: "minecraft:soul_lantern" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7AF0479DB4670F6F"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["2FEC71D80B213EDC"]
+			icon: { id: "minecraft:resin_bricks" }
+			tasks: [
+				{ id: "09312D1648E614CD", type: "dimension", dimension: "strata:hollow" }
+			]
+			rewards: [
+				{ id: "42FE95B1393FE579", type: "xp", xp: 500 }
+				{
+					id: "64BB7B56BD0EC0C8"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "0C90EB72C3134B15"
+					type: "item"
+					item: { count: 1, id: "minecraft:cooked_beef" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "2E6B42FBBCE18B1F"
+			x: 5.25d
+			y: 4.5d
+			dependencies: ["7AF0479DB4670F6F"]
+			icon: { id: "minecraft:clock" }
+			shape: "hexagon"
+			tasks: [
+				{ id: "2C8DDBA9E23D1DC9", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "6E49586E912E412B", type: "xp", xp: 100 }
+				{
+					id: "3E4CF28B1CBDB27E"
+					type: "item"
+					item: { count: 1, id: "minecraft:lantern" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "7235A8852789FD68"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["2E6B42FBBCE18B1F"]
+			icon: { id: "sanity_renewed:garland" }
+			tasks: [
+				{
+					id: "7DA76E0D14147B64"
+					type: "item"
+					item: { count: 1, id: "sanity_renewed:garland" }
+				}
+				{ id: "622E9B827E923A75", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0866CC4847545911", type: "xp", xp: 250 }
+				{
+					id: "2431B63D54E20DEC"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
+				{
+					id: "407729C230EF20CE"
+					type: "item"
+					item: { count: 1, id: "minecraft:campfire" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "40BE09712FC8FE92"
+			x: 8.75d
+			y: 1.5d
+			dependencies: ["7235A8852789FD68"]
+			icon: { id: "weeping_angels:timey_wimey_detector" }
+			tasks: [
+				{
+					id: "611CE538D4FD6385"
+					type: "item"
+					item: { count: 1, id: "weeping_angels:timey_wimey_detector" }
+				}
+			]
+			rewards: [
+				{ id: "0988579342A1063A", type: "xp", xp: 250 }
+				{
+					id: "29D828E1955BDA97"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
+				{
+					id: "2A499C2EFEFCEB38"
+					type: "item"
+					item: { count: 1, id: "minecraft:torch" }
+					count: 32
+				}
+			]
+		}
+		{
+			id: "7059E02BD73296B2"
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["40BE09712FC8FE92"]
+			icon: { id: "grim_and_bleak:darksteel" }
+			tasks: [
+				{
+					id: "1A25CCFCC8ADEDA3"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:raw_darksteel" }
+				}
+				{
+					id: "200637BB84B6F869"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:darksteel" }
+					count: 8L
+				}
+				{
+					id: "5D2270794DE6E61D"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:darksteell_sword" }
+				}
+			]
+			rewards: [
+				{ id: "54EF36C924925B01", type: "xp", xp: 500 }
+				{
+					id: "3ED3BBD8071D3211"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "147C9AB669800920"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7D852B7EB58BBD36"
+			x: 12.25d
+			y: 1.5d
+			dependencies: ["7059E02BD73296B2"]
+			icon: { id: "the_ravenous:anti_ravenous" }
+			tasks: [
+				{
+					id: "68AF3E94934C9BDA"
+					type: "kill"
+					entity: "the_ravenous:the_screecher"
+					value: 1L
+				}
+				{
+					id: "7B3349B1F1B21156"
+					type: "item"
+					item: { count: 1, id: "the_ravenous:anti_ravenous" }
+				}
+			]
+			rewards: [
+				{ id: "7540997774B09384", type: "xp", xp: 500 }
+				{
+					id: "46172CFABC29CC6D"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "28AE5ACA514D83F3"
+					type: "item"
+					item: { count: 1, id: "minecraft:golden_carrot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "5591FDED3B4F99C8"
+			x: 14.0d
+			y: 1.5d
+			dependencies: ["7D852B7EB58BBD36"]
+			icon: { id: "minecraft:obsidian" }
+			tasks: [
+				{
+					id: "10689F487C62AE6A"
+					type: "item"
+					item: { count: 1, id: "minecraft:obsidian" }
+					count: 32L
+				}
+				{ id: "3357C06BEE3E89A7", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "0444626E6A7E81CD", type: "xp", xp: 250 }
+				{
+					id: "0D5CBD10D2F49455"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
+				{
+					id: "739154D9C5FFFDE6"
+					type: "item"
+					item: { count: 1, id: "minecraft:obsidian" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "4855AD8269FA6DC0"
+			x: 8.75d
+			y: 4.5d
+			dependencies: ["7235A8852789FD68"]
+			icon: { id: "grim_and_bleak:holy_cross" }
+			tasks: [
+				{ id: "02FEB26A38804706", type: "structure", structure: "grim_and_bleak:chapel" }
+				{
+					id: "73E2B037EB1C489F"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:holy_cross" }
+				}
+			]
+			rewards: [
+				{ id: "776197AEC27F2621", type: "xp", xp: 500 }
+				{
+					id: "79A541F7DDCE8B74"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "6FFC201150C27138"
+					type: "item"
+					item: { count: 1, id: "minecraft:candle" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "49769688B588DA4C"
+			x: 10.5d
+			y: 4.5d
+			dependencies: ["4855AD8269FA6DC0"]
+			icon: { id: "minecraft:bone_block" }
+			tasks: [
+				{ id: "3DAF56991939A091", type: "structure", structure: "graveyard:crypt" }
+				{ id: "6CDFCEF59BC214BF", type: "structure", structure: "graveyard:large_graveyard" }
+			]
+			rewards: [
+				{ id: "57255C2FFD1FF5E1", type: "xp", xp: 500 }
+				{
+					id: "51D78455152366D6"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "7E159C701681C43A"
+					type: "item"
+					item: { count: 1, id: "minecraft:bone_block" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "72A26D8AC98CA5E1"
+			x: 12.25d
+			y: 4.5d
+			dependencies: ["49769688B588DA4C"]
+			icon: { id: "minecraft:cobweb" }
+			tasks: [
+				{ id: "5B2C928C507CC91C", type: "structure", structure: "weeping_angels:catacombs" }
+				{ id: "7434225A31C5B408", type: "structure", structure: "graveyard:haunted_house" }
+			]
+			rewards: [
+				{ id: "486AC1E5AD303FBA", type: "xp", xp: 500 }
+				{
+					id: "4883DB12F77EA136"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+				{
+					id: "3B589F63D495E538"
+					type: "item"
+					item: { count: 1, id: "minecraft:spyglass" }
+				}
+			]
+		}
+		{
+			id: "718BBD05C9BB501B"
+			x: 14.0d
+			y: 4.5d
+			dependencies: ["72A26D8AC98CA5E1"]
+			icon: { id: "graveyard:middle_bone_staff" }
+			tasks: [
+				{ id: "7269557DA66C5AE0", type: "structure", structure: "graveyard:ruins" }
+				{
+					id: "17E0C878DC9EA6B3"
+					type: "item"
+					item: { count: 1, id: "graveyard:upper_bone_staff" }
+				}
+				{
+					id: "13EF74F1BB847E77"
+					type: "item"
+					item: { count: 1, id: "graveyard:middle_bone_staff" }
+				}
+				{
+					id: "7E7B6BDC9C9CB0E5"
+					type: "item"
+					item: { count: 1, id: "graveyard:lower_bone_staff" }
+				}
+			]
+			rewards: [
+				{ id: "3FE0BA4D70850038", type: "xp", xp: 500 }
+				{
+					id: "726A8921BB08F874"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
+			id: "64F6C708A31FF9AD"
+			x: 8.75d
+			y: 7.5d
+			dependencies: ["7235A8852789FD68"]
+			icon: { id: "strata:pale_survey_page_1" }
+			tasks: [
+				{
+					id: "72CE53BB023E8C28"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_1" }
+				}
+			]
+			rewards: [
+				{ id: "71D9239422CDF6CF", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "0C99979273E17713"
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["64F6C708A31FF9AD"]
+			icon: { id: "strata:pale_survey_page_2" }
+			tasks: [
+				{
+					id: "7B14118627352166"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_2" }
+				}
+			]
+			rewards: [
+				{ id: "7A29BFB5F2FD366B", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "1664ECC620267A11"
+			x: 12.25d
+			y: 7.5d
+			dependencies: ["0C99979273E17713"]
+			icon: { id: "strata:pale_survey_page_3" }
+			tasks: [
+				{
+					id: "64484961A8C38A4A"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_3" }
+				}
+			]
+			rewards: [
+				{ id: "050804AEB8C65422", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "02AFD56D15E31D99"
+			x: 14.0d
+			y: 7.5d
+			dependencies: ["1664ECC620267A11"]
+			icon: { id: "strata:pale_survey_page_4" }
+			tasks: [
+				{
+					id: "622B795F1761ECB9"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_4" }
+				}
+			]
+			rewards: [
+				{ id: "5E2247C1C1EF451B", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "2F229E07EF30B801"
+			x: 15.75d
+			y: 7.5d
+			dependencies: ["02AFD56D15E31D99"]
+			icon: { id: "strata:pale_survey_page_5" }
+			tasks: [
+				{
+					id: "65690D131092594A"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_5" }
+				}
+			]
+			rewards: [
+				{ id: "09BF753E30EC2E92", type: "xp", xp: 100 }
+			]
+		}
+		{
+			id: "40ACA21E556C2552"
+			x: 17.5d
+			y: 7.5d
+			dependencies: ["2F229E07EF30B801"]
+			icon: { id: "strata:pale_survey_page_6" }
+			tasks: [
+				{
+					id: "080235207E8B5444"
+					type: "item"
+					item: { count: 1, id: "strata:pale_survey_page_6" }
+				}
+			]
+			rewards: [
+				{ id: "0731EE385172CA13", type: "xp", xp: 250 }
+				{
+					id: "2B20C695A7E60940"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_small" }
+				}
+			]
+		}
+		{
+			id: "7F3E0604749CF2EF"
+			x: 12.25d
+			y: -1.5d
+			dependencies: ["7059E02BD73296B2", "4855AD8269FA6DC0"]
+			icon: { id: "grim_and_bleak:templar_artifact" }
+			tasks: [
+				{
+					id: "6B5B66EB824B6440"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:cursed_amulet" }
+				}
+				{
+					id: "4F478B2F7C30B5C8"
+					type: "kill"
+					entity: "grim_and_bleak:damned_templar"
+					value: 1L
+				}
+				{
+					id: "3B3F5D72DB7B8C40"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:templar_artifact" }
+				}
+			]
+			rewards: [
+				{ id: "6E02C2DFF1F7DDF3", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "0595AE738DD21D32"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "5E0F671E501B9BA8"
+			x: 14.0d
+			y: -1.5d
+			dependencies: ["7F3E0604749CF2EF"]
+			icon: { id: "mutantmonsters:hulk_hammer" }
+			tasks: [
+				{
+					id: "6A86CC58F0E661AD"
+					type: "kill"
+					entity: "mutantmonsters:mutant_zombie"
+					entity_type_tag: "strata:hollow_mutants"
+					value: 2L
+				}
+			]
+			rewards: [
+				{ id: "7FC974E1E2174090", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "2264C5934AE61B77"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "3F2E05F673B2D3D8"
+			x: 15.75d
+			y: -1.5d
+			dependencies: ["5E0F671E501B9BA8", "718BBD05C9BB501B"]
+			icon: { id: "graveyard:vial_of_blood" }
+			tasks: [
+				{
+					id: "37E0D72D4A34885C"
+					type: "item"
+					item: { count: 1, id: "graveyard:vial_of_blood" }
+				}
+				{ id: "7789744D2FA2B730", type: "structure", structure: "graveyard:lich_prison" }
+				{
+					id: "580DFEBE0E5598B2"
+					type: "kill"
+					entity: "graveyard:lich"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "7263E3A7B0DEA82E", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "19C422BE1A28E64E"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "2BFEE0030ACBD225"
+			x: 17.5d
+			y: -1.5d
+			dependencies: ["3F2E05F673B2D3D8"]
+			icon: { id: "grim_and_bleak:thunder_sword" }
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4E3D92B844784158"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:gate_key" }
+				}
+				{
+					id: "20DA9498E89E2856"
+					type: "item"
+					item: { count: 1, id: "grim_and_bleak:thunder_sword" }
+				}
+				{ id: "5F752F3A370EB95F", type: "structure", structure: "grim_and_bleak:dimensional_gate" }
+				{
+					id: "32667374EA21731F"
+					type: "kill"
+					entity: "grim_and_bleak:gate_guardian"
+					value: 1L
+				}
+			]
+			rewards: [
+				{ id: "0DC9F25DF1F8600E", type: "xp_levels", xp_levels: 20 }
+				{
+					id: "5193310F1F6E372A"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
+			]
+		}
+		{
+			id: "0A23158110A3006C"
+			x: 19.25d
+			y: -1.5d
+			dependencies: ["2BFEE0030ACBD225", "7D852B7EB58BBD36"]
+			icon: { id: "the_ravenous:ravenous_trophy" }
+			optional: true
+			tasks: [
+				{
+					id: "5C2D7522EE076DF1"
+					type: "kill"
+					entity: "the_ravenous:the_ravenous"
+					value: 1L
+				}
+				{
+					id: "43964B7C562B4020"
+					type: "item"
+					item: { count: 1, id: "the_ravenous:the_ravenous_echolocation_organ" }
+				}
+			]
+			rewards: [
+				{ id: "253D97C22038A3EC", type: "xp_levels", xp_levels: 20 }
+				{
+					id: "1395E1ABABB27FAA"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
+			]
+		}
+		{
+			id: "3582E542712042D2"
+			x: 17.5d
+			y: 4.5d
+			dependencies: ["3F2E05F673B2D3D8", "4855AD8269FA6DC0"]
+			icon: { id: "strata:pale_beacon" }
+			tasks: [
+				{
+					id: "44A8EBC646BF320F"
+					type: "item"
+					item: { count: 1, id: "strata:pale_beacon" }
+				}
+			]
+			rewards: [
+				{ id: "19AD09137CA69D45", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "355F5ADD1D8B8D01"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "45643FB3B12D6100"
+			x: 19.25d
+			y: 4.5d
+			dependencies: ["3582E542712042D2", "5591FDED3B4F99C8"]
+			icon: { id: "minecraft:red_bed" }
+			tasks: [
+				{ id: "23E32461BAD7FF13", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "154FE2284DFD5A3B", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "612C485035DC2915"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+				{
+					id: "14160B048D4B0A03"
+					type: "item"
+					item: { count: 1, id: "minecraft:soul_lantern" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "5E9661163FC73102"
+			x: 21.0d
+			y: 4.5d
+			dependencies: ["45643FB3B12D6100", "40ACA21E556C2552", "2BFEE0030ACBD225"]
+			icon: { id: "strata:pale_beacon" }
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "4838C53DDDFCDE12", type: "checkmark" }
+			]
+			rewards: [
+				{ id: "23F4D8997EDB9E76", type: "xp_levels", xp_levels: 20 }
+				{
+					id: "6863C207C6080C43"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
+				{
+					id: "3A5CE307F3CB6E55"
+					type: "item"
+					item: { count: 1, id: "minecraft:totem_of_undying" }
+				}
+			]
+		}
+	]
+}

@@ -73,6 +73,13 @@ def kill(entity, count=1, title=None):
     return Task("kill", {"entity": entity, "value": Long(count)}, title, [("entities", entity)])
 
 
+def kill_tag(tag, count=1, title=None, entity="mutantmonsters:mutant_zombie"):
+    """Kill `count` mobs of any type in an entity type tag (FTB Quests' entity_type_tag, no "#").
+    `entity` is still written: the task shows it as its icon."""
+    return Task("kill", {"entity": entity, "entity_type_tag": tag, "value": Long(count)}, title,
+                [("entities", entity)])
+
+
 def structure(sid, title=None):
     return Task("structure", {"structure": sid}, title, [("structures", sid)])
 
@@ -208,5 +215,5 @@ def all_chapters():
     return list(_CHAPTERS)
 
 
-__all__ = ["chapter", "item", "check", "dim", "kill", "structure", "biome", "adv", "observe", "xp", "levels",
-           "give", "bag", "Double", "Float", "Long"]
+__all__ = ["chapter", "item", "check", "dim", "kill", "kill_tag", "structure", "biome", "adv", "observe", "xp",
+           "levels", "give", "bag", "Double", "Float", "Long"]

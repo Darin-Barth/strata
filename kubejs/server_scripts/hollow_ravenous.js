@@ -36,6 +36,7 @@ const hollowRavSpawn = (player, type) => {
     let pos = new hollowRavBlockPos(x, y, z)
     if (!level.canSeeSky(pos)) continue
     if (!level.getBlockState(pos.below()).getFluidState().isEmpty()) continue
+    if (hollowBeaconCovers(player.server, x, y, z)) continue  // not inside a lit Pale Beacon's light
     player.server.runCommandSilent(`execute in ${hollowRavDimension} run summon ${type} ${x + 0.5} ${y} ${z + 0.5}`)
     return true
   }
@@ -50,6 +51,7 @@ ServerEvents.tick(event => {
     const d = player.level.dimension
     if (String(d && d.location ? d.location() : d) !== hollowRavDimension) return
     if (player.isSpectator() || player.isCreative()) return
+    if (hollowBeaconNear(player)) return
     const arrived = player.persistentData.getLong('strata_hollow_arrived')
     if (arrived > 0 && Date.now() - arrived < hollowRavQuietMs) return
     for (let i = 0; i < hollowRavKinds.length; i++) {

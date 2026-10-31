@@ -42,8 +42,9 @@ PlayerEvents.tick(event => {
 BlockEvents.rightClicked(event => {
   const player = event.player
   if (!player) return
-  // No sleeping in the Hollow (it's always night there anyway).
-  if (hollowIn(player) && event.block.id.endsWith('_bed')) {
+  // No sleeping in the Hollow (it's always night there anyway), except in a lit Pale Beacon's light
+  // (hollow_beacon.js), where a bed sets your respawn point.
+  if (hollowIn(player) && event.block.id.endsWith('_bed') && !hollowBeaconNear(player)) {
     player.displayClientMessage(Text.darkGray("You can't sleep here. Something is watching you.").italic(), true)
     event.cancel()
     return
@@ -57,7 +58,7 @@ BlockEvents.rightClicked(event => {
 })
 
 // TorchMaster's Mega Torch stops every natural spawn in a 64-block radius, which would switch the
-// Hollow off around a base. The Pale Beacon is the Hollow's own safe zone.
+// Hollow off around a base. The Pale Beacon is the Hollow's own safe zone (hollow_beacon.js).
 BlockEvents.placed('torchmaster:megatorch', event => {
   if (!event.player || !hollowIn(event.player)) return
   event.player.displayClientMessage(Text.darkGray('The flame gutters out. Light alone won\'t hold the Hollow back.').italic(), true)

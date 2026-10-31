@@ -1,6 +1,6 @@
 # The Hollow: progression with bite
 
-**Status: approved (decisions D1–D5 in section 6). Not built yet.**
+**Status: built.** Quest chapter `tools/quests/book/the_hollow.py` (27 quests: each Lost Signal page is its own quest); Pale Beacon and pages `kubejs/startup_scripts/hollow_beacon.js` + `kubejs/server_scripts/hollow_beacon.js`; textures `tools/build_hollow_beacon.py`. Decisions D1–D5 in section 6.
 
 Goal: the Hollow should have real bite, not be a shallow jumpscare world. This builds on `docs/hollow-design.md` (the world, mobs, dread events, the 40% damage cap). That doc stays the reference for what's built. This one adds what to work toward.
 
@@ -64,7 +64,7 @@ The Hollow's version of the Deep Station: an earned safe haven in the dark.
 - the Champion's bone staff
 - the Templar Artifact
 - the Pale Lantern
-- 8 Hollow Embers
+- 5 Hollow Embers (a 3x3 grid has room for five next to the four parts: Ember, Holy Cross, Ember / Bone Staff, Pale Lantern, Templar Artifact / three Embers)
 
 **Effects within 24 blocks**, while lit:
 - Sanity is restored. It's added to Sanity: Renewed's per-dimension comfort list in `dimension/hollow.toml`, plus a KubeJS top-up so it beats the drain.
@@ -77,12 +77,14 @@ The Hollow's version of the Deep Station: an earned safe haven in the dark.
 
 **Upgrade:** the Ravenous' echolocation organ extends the radius to 48 and warns everyone inside when a horror mob comes within 64 blocks.
 
+**As built** (`hollow_beacon.js`): it can only be placed in the Hollow and starts dark. Right-click with a Hollow Ember to light it for one in-game day (20 minutes), up to 7 days stored; right-click with an empty hand to see how long is left. While lit, sanity comes back (1% a second, through Sanity: Renewed's own value rather than its block list), no dread events, no natural horror spawns and no Ravenous spawner inside the radius, and beds work (they set your respawn point). The Ravenous' echolocation organ upgrades it (radius 48, warns everyone inside when a horror mob is within 64 blocks, with the direction). The dark block drops the beacon when mined. Lost Signal pages come from chests opened in the Hollow (LootJS): in order, one chance in three per chest, counted per player.
+
 ## 5. Hollow Ember and trophies: what they gate
 Hollow Embers are the main gate material. Boss trophies gate a few top items. The full list is in `docs/gate-map.md`. Embers gate these (about 40 for a player who wants everything):
 
 | Pillar | Item | Embers |
 |---|---|---|
-| Hollow | Pale Beacon (and its upkeep) | 8 (+1/day) |
+| Hollow | Pale Beacon (and its upkeep) | 5 (+1/day) |
 | Tech | Mekanism fusion reactor controller | 4 (+ Harbinger's witherite) |
 | Tech | MekaSuit pieces and Meka-Tool | 2 each |
 | Tech | Draconic Evolution awakened core | 2 |

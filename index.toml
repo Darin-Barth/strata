@@ -365,6 +365,10 @@ file = "config/ftbquests/quests/chapters/the_end.snbt"
 hash = "047aef2fb3e96a65771e00e34f845b68528ee62a1d145c6a6d001db0391a928b"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/the_hollow.snbt"
+hash = "b39416a82b10eafedf181372d0983a9c84ebca8b376cae6386b7c1437dff2e76"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/theurgy.snbt"
 hash = "9390eed658e7bb5886df0fecda42856bfb1e3db936fdfc6c4eadd5437040a648"
 
@@ -386,7 +390,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0045208d233471fec0a6762fe78f0aa46adf6d39a2cc6e61e05bf8fc9d1dd6b6"
+hash = "502d0e0f27f0c6d44ebc550f41a5deab08570f72241326361e0097c604f084e6"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -941,6 +945,14 @@ file = "kubejs/assets/strata/textures/block/lifepod_window.png"
 hash = "d29e5f1a975a3aad938d497743f64ea82438213e31fd39ce41f86f8665e1d9cc"
 
 [[files]]
+file = "kubejs/assets/strata/textures/block/pale_beacon.png"
+hash = "8e7e515e0fc3c1146fd93dfd3edcd99dcb7ea33da13f8f2147ccf1510e9722c0"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/pale_beacon_dormant.png"
+hash = "2b5c73a249eb571e71960b88fc3b815c9b0685b750282937e108057b9d84da2c"
+
+[[files]]
 file = "kubejs/assets/strata/textures/item/abyssal_pearl.png"
 hash = "b8bd68a42c682f18cf35cfecb12a4c43b18ec8198bccabcea4ae3a5a20d3ab7c"
 
@@ -1207,6 +1219,30 @@ hash = "16df1afb71aa7c4a925b78c5de1dab684b45f754ade3c22c2377027c9e724a7d"
 [[files]]
 file = "kubejs/assets/strata/textures/item/pale_lantern.png.mcmeta"
 hash = "0476a5c396e06e18f6268c70cad7b2dd46d1cafa946d33590da7b5562d0ffda7"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_1.png"
+hash = "65fa6761b458cbbb29e37f32350f19753b0540905a0a19174d8c541c48a9066a"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_2.png"
+hash = "d6fa81cf77d477591f3db066f8fefd4bb7c6d2eca26ef19d945a2362129ce1b6"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_3.png"
+hash = "c2179be8e01d13c6a90605a0941448e28c95323dbb6cfc768dc89a5391f9bae2"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_4.png"
+hash = "67aed8e8e6ae9b0342873a28b427a391b94712281c7be28f6a438a93549e5df7"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_5.png"
+hash = "44195a4cd879d999a68715fadebc40d89f51e0b32c3457531d21cf221ad63c57"
+
+[[files]]
+file = "kubejs/assets/strata/textures/item/pale_survey_page_6.png"
+hash = "e2b2b256e6d56678b741a8a39befb675f894a5b35de1bf96dc6595c47204e798"
 
 [[files]]
 file = "kubejs/assets/strata/textures/item/red_hot_rogue_eye.png"
@@ -3439,6 +3475,10 @@ hash = "14854070c9fc63ec005c70a6cef5bc108bdf2b8d785f7fe8002182da3a3be2b0"
 [[files]]
 file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/screech_blocks.json"
+hash = "78be0645da6fd06c008fe5791c41882821356f799142287945c2e54da59392ca"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/worldgen/structure/ancient_city.json"
@@ -6089,6 +6129,10 @@ file = "kubejs/data/strata/tags/entity_type/boss_bags.json"
 hash = "7956bb12c18027b2114b36951c254ddc7385d3f2f563ad7c89c22f3376a2eff6"
 
 [[files]]
+file = "kubejs/data/strata/tags/entity_type/hollow_mutants.json"
+hash = "509983524d07f232fdf03cf2877f1e4cab129aaed0b4d95bab397bc3589f853c"
+
+[[files]]
 file = "kubejs/data/strata/tags/entity_type/unfarmable.json"
 hash = "76670ca7621ecb9df99fb2754e2077f6dba9807a399256f56e92f83d79ca095b"
 
@@ -6969,16 +7013,20 @@ file = "kubejs/server_scripts/abyssal_rules.js"
 hash = "236df88aeabd657d4f2b55d114fecc09d14035bcb466a47721ba496b19a2458c"
 
 [[files]]
+file = "kubejs/server_scripts/hollow_beacon.js"
+hash = "c92738ae4c8fc0ec3cadcabd532e39d53b2f182d3f0a929f0118596380743ebb"
+
+[[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "279a7616a6b154cff842d4552c9741a53ddcc5b060f5a81cd3ba31ea798371f0"
+hash = "f43626eeba3551dad0d74975715b7cc95e8f731554635447b0895948ccf5528b"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
-hash = "97545185895afecccad30e7dddec5bafceaf342f51a051a90a406f40014ee5f6"
+hash = "ac2de210710bb56616677cea7e8c9faba3d3e342579ea11685636473af7c4dfd"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "d618a8beeded23ea38daeb2735544496caf710c068813831a61c63a90397c3f2"
+hash = "2566ae0ba77ec530b79bc864668d0f398f57364ff8039b9b1ccd4e3d60cd45c8"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_recipes.js"
@@ -7059,6 +7107,10 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 [[files]]
 file = "kubejs/startup_scripts/abyssal_vampire_air.js"
 hash = "c73857baeaa599bab7d528a163a2d70aea39e55c8f3df75fdce20ddb65f8233f"
+
+[[files]]
+file = "kubejs/startup_scripts/hollow_beacon.js"
+hash = "5b8f583b15af68c8a74d4820fccb919357bcc7cefaa18734010259d97963bfdf"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
