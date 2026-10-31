@@ -1,7 +1,24 @@
 # Skill trees rework
 
 Status: **built** by `tools/build_skill_trees.py` (shipped in 1.0; re-run after a skill-tree add-on
-update). Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
+update).
+
+**Redesign after 1.1 (queued):** the 1.0 trees ran out far too fast. Combat needed only 1,262 XP in total,
+and without a `level_limit` Pufferfish's Skills kept giving points past the list (a player had 32 of 25 levels
+after one day). Now every node can be unlocked at max level, the level cap equals the tree's total point
+cost, and the climb is long:
+
+| Tree | Nodes | Levels (cap) | Total XP (1.0) |
+|---|---|---|---|
+| Combat | 4 branches of 10, two keystones each (Warrior: Bloodthirst, Sunder; Ranger: Deadeye, Sharpshooter; Guardian: Bulwark, Unbreakable; Duelist: Precision, Executioner) | 57 | 20,000 (1,262) |
+| Mining | 3 branches of 10, two keystones each (Speed: Tunneler, Excavator; Prospector: two Lucky Strikes; Delver: Deep Delver, Spelunker) | 43 | 45,000 (7,500) |
+| Fishing | unchanged layout | 21 | 6,000 (3,300) |
+| Magic | unchanged; now capped at its own level count | as before | as before |
+
+Small nodes are smaller than 1.0's (+4% damage instead of +6%), so a full tree ends about 1.5x the 1.0
+maximum. XP is kept; `server_scripts/strata_skills_refund.js` resets each player's Combat, Mining and
+Fishing nodes once at their first login after the update, so every point can be re-spent. The tables
+below are the 1.0 design. Mod: Pufferfish's Skills (Ctrl+K), with Default Skill
 Trees (Combat, Mining), Iron's Spells Dynamic Skill Trees (magic) and our own Fishing tree.
 
 ## Problems with the default trees

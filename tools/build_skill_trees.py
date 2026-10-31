@@ -1,10 +1,10 @@
 """Generate Strata's skill trees for Pufferfish's Skills (kubejs/data/...); design in
 docs/skill-trees-rework.md.
 
-The trees that came with the pack gave +1% to +3% per node, so nobody noticed a point. These are
-fewer, bigger nodes with keystones (cost 3 points) that change how you play, and branches by
-playstyle so you can't take everything. A maxed tree ends near the old total, concentrated where
-you chose. This writes:
+The trees that came with the pack gave +1% to +3% per node, so nobody noticed a point. These have
+noticeable nodes, two keystones per branch (cost 3 points) that change how you play, and branches
+by playstyle. Every node can be unlocked at max level, but the XP curve makes that a long goal; the
+level cap is the tree's total point cost (1.0 had no cap and kept giving points). This writes:
   * Combat and Mining (override Default Skill Trees' puffish_skills:combat / :mining, all files)
   * Fishing (our own strata:fishing)
   * Magic (overrides only definitions.json and experience.json of Iron's Spells Dynamic Skill
@@ -58,8 +58,20 @@ def define(title, icon, rewards, keystone=False, description=None):
     return d
 
 
-def tree(out, ns, cat, category, root, branches, experience):
-    """root: definition id; branches: [(dx, dy, [definition ids from the root outwards])]."""
+def curve(levels, total, first):
+    """XP per level rising in a straight line from `first`, summing to about `total`."""
+    step = (total - first * levels) / (levels * (levels - 1) / 2)
+    return [round(first + step * i) for i in range(levels)]
+
+
+def tree_cost(defs, root, branches):
+    return sum(defs[d].get("cost", 1) for d in [root] + [x for _, _, chain in branches for x in chain])
+
+
+def tree(out, ns, cat, category, root, branches, defs, total_xp, first_xp, sources):
+    """root: definition id; branches: [(dx, dy, [definition ids from the root outwards])].
+    Every node can be unlocked at max level: the level cap equals the tree's total point cost
+    (Pufferfish's Skills keeps giving points past the XP list without a level_limit)."""
     skills = {"0_0": {"x": 0, "y": 0, "definition": root, "root": True}}
     links = []
     for dx, dy, chain in branches:
@@ -69,11 +81,15 @@ def tree(out, ns, cat, category, root, branches, experience):
             skills[key] = {"x": dx * i * STEP, "y": dy * i * STEP, "definition": defn}
             links.append([prev, key])
             prev = key
+    levels = tree_cost(defs, root, branches)
     base = f"{ns}/puffish_skills/categories/{cat}"
     write(out, f"{base}/category.json", category)
     write(out, f"{base}/skills.json", skills)
     write(out, f"{base}/connections.json", {"normal": {"bidirectional": links}})
-    write(out, f"{base}/experience.json", experience)
+    write(out, f"{base}/definitions.json", defs)
+    write(out, f"{base}/experience.json", {"level_limit": levels, "experience_per_level": {
+        "type": "values", "data": {"values": curve(levels, total_xp, first_xp)}}, "sources": sources})
+    return levels
 
 
 # --- Combat -------------------------------------------------------------------------------------
@@ -81,34 +97,51 @@ MELEE, RANGED = "puffish_skills:player.melee_damage", "puffish_skills:player.ran
 RESIST = "puffish_skills:player.resistance"
 AA = "apothic_attributes:"
 
+# Every node can be unlocked at max level (Darin, Oct 30); 4 branches of 10 nodes with 2 keystones
+# each. Small nodes are smaller than 1.0's so a full tree ends about 1.5x the old maximum.
 COMBAT_DEFS = {
     "root": define("+2 Health", effect("health_boost"), [attr("generic.max_health", 2)]),
-    "melee": define("+6% Melee Damage", effect("strength"), [attr(MELEE, 0.06, "multiply_total")]),
-    "attack_speed": define("+5% Attack Speed", item("golden_sword"), [attr("generic.attack_speed", 0.05, "multiply_total")]),
-    "bloodthirst": define("Bloodthirst: 5% Life Steal", item("redstone_block"), [attr(AA + "life_steal", 0.05)],
-                          True, "Heal for 5% of the damage you deal."),
-    "ranged": define("+6% Ranged Damage", item("arrow"), [attr(RANGED, 0.06, "multiply_total")]),
-    "draw_speed": define("+10% Draw Speed", item("bow"), [attr(AA + "draw_speed", 0.10)]),
+    # Warrior
+    "melee": define("+4% Melee Damage", effect("strength"), [attr(MELEE, 0.04, "multiply_total")]),
+    "attack_speed": define("+4% Attack Speed", item("golden_sword"), [attr("generic.attack_speed", 0.04, "multiply_total")]),
+    "bloodthirst": define("Bloodthirst: 4% Life Steal", item("redstone_block"), [attr(AA + "life_steal", 0.04)],
+                          True, "Heal for 4% of the damage you deal."),
+    "sunder": define("Sunder: Shred 15% Armor", item("netherite_axe"), [attr(AA + "armor_shred", 0.15)],
+                     True, "Your hits ignore 15% of the target's armor."),
+    # Ranger
+    "ranged": define("+4% Ranged Damage", item("arrow"), [attr(RANGED, 0.04, "multiply_total")]),
+    "draw_speed": define("+6% Draw Speed", item("bow"), [attr(AA + "draw_speed", 0.06)]),
     "deadeye": define("Deadeye: +20% Arrow Speed, 3 Armor Pierce", item("spectral_arrow"),
                       [attr(AA + "arrow_velocity", 0.20), attr(AA + "armor_pierce", 3)], True,
                       "Arrows fly faster and ignore 3 points of armor."),
+    "sharpshooter": define("Sharpshooter: +15% Ranged Damage, +15% Draw Speed", item("crossbow"),
+                           [attr(RANGED, 0.15, "multiply_total"), attr(AA + "draw_speed", 0.15)], True),
+    # Guardian
     "health": define("+2 Health", effect("health_boost"), [attr("generic.max_health", 2)]),
     "resistance": define("+2% Resistance", effect("resistance"), [attr(RESIST, 0.02, "multiply_total")]),
     "bulwark": define("Bulwark: 5% Dodge Chance", item("shield"), [attr(AA + "dodge_chance", 0.05)], True,
                       "5% of attacks miss you completely."),
-    "crit_damage": define("+5% Crit Damage", item("iron_sword"), [attr(AA + "crit_damage", 0.05)]),
-    "move_speed": define("+4% Movement Speed", effect("speed"), [attr("generic.movement_speed", 0.04, "multiply_total")]),
-    "executioner": define("Executioner: +10% Crit Chance, +25% Crit Damage", item("netherite_sword"),
-                          [attr(AA + "crit_chance", 0.10), attr(AA + "crit_damage", 0.25)], True),
+    "unbreakable": define("Unbreakable: +4 Health, +20% Healing", item("totem_of_undying"),
+                          [attr("generic.max_health", 4), attr(AA + "healing_received", 0.20)], True,
+                          "Every source of healing heals you 20% more."),
+    # Duelist
+    "crit_damage": define("+4% Crit Damage", item("iron_sword"), [attr(AA + "crit_damage", 0.04)]),
+    "move_speed": define("+3% Movement Speed", effect("speed"), [attr("generic.movement_speed", 0.03, "multiply_total")]),
+    "precision": define("Precision: +6% Crit Chance", item("diamond_sword"), [attr(AA + "crit_chance", 0.06)], True),
+    "executioner": define("Executioner: +8% Crit Chance, +25% Crit Damage", item("netherite_sword"),
+                          [attr(AA + "crit_chance", 0.08), attr(AA + "crit_damage", 0.25)], True),
 }
 COMBAT_BRANCHES = [
-    (-1, 0, ["melee"] * 4 + ["attack_speed", "bloodthirst"]),        # Warrior
-    (1, 0, ["ranged"] * 4 + ["draw_speed", "deadeye"]),               # Ranger
-    (0, -1, ["health"] * 3 + ["resistance"] * 2 + ["bulwark"]),      # Guardian
-    (0, 1, ["crit_damage"] * 3 + ["move_speed"] * 2 + ["executioner"]),  # Duelist
+    (-1, 0, ["melee", "melee", "attack_speed", "melee", "bloodthirst",
+             "melee", "attack_speed", "melee", "attack_speed", "sunder"]),                 # Warrior
+    (1, 0, ["ranged", "ranged", "draw_speed", "ranged", "deadeye",
+            "ranged", "draw_speed", "ranged", "draw_speed", "sharpshooter"]),             # Ranger
+    (0, -1, ["health", "health", "resistance", "health", "bulwark",
+             "resistance", "health", "resistance", "resistance", "unbreakable"]),          # Guardian
+    (0, 1, ["crit_damage", "crit_damage", "move_speed", "crit_damage", "precision",
+            "crit_damage", "move_speed", "crit_damage", "move_speed", "executioner"]),    # Duelist
 ]
-# 25 levels (the old curve's first 25); the tree costs 33 points, so you pick.
-COMBAT_XP = [10, 11, 12, 14, 17, 20, 23, 26, 29, 33, 37, 40, 45, 49, 53, 58, 63, 67, 72, 77, 82, 88, 93, 99, 104]
+COMBAT_TOTAL_XP, COMBAT_FIRST_XP = 20000, 60   # 1.0's whole tree was 1,262 XP
 KILL_SOURCE = {"type": "puffish_skills:kill_entity", "data": {
     "variables": {"dropped_xp": {"operations": [{"type": "get_dropped_experience"}]},
                   "max_health": {"operations": [{"type": "get_killed_living_entity"}, {"type": "get_max_health"}]}},
@@ -125,18 +158,27 @@ MINING_DEFS = {
                         attr("puffish_attributes:axe_speed", 0.20, "multiply_base")], True),
     "lucky_strike": define("Lucky Strike: +1 Fortune", item("emerald"), [attr(FORTUNE, 1)], True,
                            "One whole level of Fortune on everything you mine."),
-    "experience": define("+10% Experience Gained", item("experience_bottle"), [attr(AA + "experience_gained", 0.10)]),
+    "experience": define("+6% Experience Gained", item("experience_bottle"), [attr(AA + "experience_gained", 0.06)]),
     "deep_delver": define("Deep Delver: Safer Falls, +10% Sprint Speed", item("lantern"),
                           [attr("minecraft:generic.safe_fall_distance", 4),
                            attr("puffish_attributes:sprinting_speed", 0.10, "multiply_base")], True,
                           "Fall 4 blocks further without damage."),
+    "speed_small": define("+5% Mining Speed", effect("haste"), [attr(MINE_SPEED, 0.05, "multiply_base")]),
+    "excavator": define("Excavator: +20% Mining Speed", item("netherite_pickaxe"),
+                        [attr(MINE_SPEED, 0.20, "multiply_base")], True),
+    "safe_fall": define("+1 Safe Fall Distance", item("feather"), [attr("minecraft:generic.safe_fall_distance", 1)]),
+    "spelunker": define("Spelunker: +15% Experience, +10% Movement Speed", item("spyglass"),
+                        [attr(AA + "experience_gained", 0.15), attr("generic.movement_speed", 0.10, "multiply_total")], True,
+                        "Deep caves reward the curious."),
 }
 MINING_BRANCHES = [
-    (-1, 0, ["speed"] * 5 + ["tunneler"]),                       # Speed
-    (1, 0, ["speed"] * 2 + ["lucky_strike"] * 2),                # Prospector
-    (0, -1, ["experience"] * 2 + ["deep_delver"]),               # Delver
+    (-1, 0, ["speed_small"] * 3 + ["speed_small", "tunneler"] + ["speed_small"] * 4 + ["excavator"]),     # Speed
+    (1, 0, ["speed_small", "experience", "speed_small", "experience", "lucky_strike",
+            "speed_small", "experience", "speed_small", "experience", "lucky_strike"]),               # Prospector
+    (0, -1, ["experience", "safe_fall", "experience", "safe_fall", "deep_delver",
+             "experience", "safe_fall", "experience", "safe_fall", "spelunker"]),                     # Delver
 ]
-MINING_XP = [250] * 10 + [500] * 10                               # 20 levels; the tree costs 22 points
+MINING_TOTAL_XP, MINING_FIRST_XP = 45000, 200   # 1.0's whole tree was 7,500 XP
 
 
 def mining_source():
@@ -175,7 +217,7 @@ FISHING_BRANCHES = [
     (-1, 0, ["breath", "swim", "breath", "dig", "diver_cap", "sea_legs"]),
     (1, 0, ["stride", "heart", "stride", "sailor_cap"]),
 ]
-FISHING_XP = [60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340]   # tree costs 23 points
+FISHING_TOTAL_XP, FISHING_FIRST_XP = 6000, 80   # 10 XP a catch; 1.0's 15 levels were 3,300 XP
 
 # --- Magic (Iron's Spells Dynamic Skill Trees) ---------------------------------------------------
 MAGIC_LEVELS = {"magic1": 25}                 # others keep their level count
@@ -215,6 +257,7 @@ def magic(out, jar):
         step = len(vals) / n
         shape = [vals[min(int(i * step), len(vals) - 1)] for i in range(n)]
         exp["experience_per_level"]["data"]["values"] = [max(10, round(v * total / sum(shape))) for v in shape]
+        exp["level_limit"] = n   # without it Pufferfish's Skills keeps giving points past the list
         write(out, f"irons_skills/puffish_skills/categories/{cat}/experience.json", exp)
 
 
@@ -224,19 +267,19 @@ def main():
     ap.add_argument("--irons-jar")
     a = ap.parse_args()
     bg = "textures/gui/advancements/backgrounds/"
-    tree(a.out, "puffish_skills", "combat", {"unlocked_by_default": True, "title": "Combat",
-         "icon": item("diamond_sword"), "background": bg + "adventure.png"}, "root", COMBAT_BRANCHES,
-         {"experience_per_level": {"type": "values", "data": {"values": COMBAT_XP}}, "sources": [KILL_SOURCE]})
-    write(a.out, "puffish_skills/puffish_skills/categories/combat/definitions.json", COMBAT_DEFS)
-    tree(a.out, "puffish_skills", "mining", {"unlocked_by_default": True, "title": "Mining",
-         "icon": item("diamond_pickaxe"), "background": bg + "stone.png"}, "root", MINING_BRANCHES,
-         {"experience_per_level": {"type": "values", "data": {"values": MINING_XP}}, "sources": [mining_source()]})
-    write(a.out, "puffish_skills/puffish_skills/categories/mining/definitions.json", MINING_DEFS)
-    tree(a.out, "strata", "fishing", {"unlocked_by_default": True, "title": "Fishing", "icon": item("fishing_rod"),
-         "background": "textures/block/dark_prismarine.png"}, "luck_root", FISHING_BRANCHES,
-         {"experience_per_level": {"type": "values", "data": {"values": FISHING_XP}},
-          "sources": [{"type": "puffish_skills:fish_item", "data": {"experience": "10"}}]})
-    write(a.out, "strata/puffish_skills/categories/fishing/definitions.json", FISHING_DEFS)
+    n = tree(a.out, "puffish_skills", "combat", {"unlocked_by_default": True, "title": "Combat",
+             "icon": item("diamond_sword"), "background": bg + "adventure.png"}, "root", COMBAT_BRANCHES,
+             COMBAT_DEFS, COMBAT_TOTAL_XP, COMBAT_FIRST_XP, [KILL_SOURCE])
+    print(f"Combat: {n} levels, {COMBAT_TOTAL_XP} XP")
+    n = tree(a.out, "puffish_skills", "mining", {"unlocked_by_default": True, "title": "Mining",
+             "icon": item("diamond_pickaxe"), "background": bg + "stone.png"}, "root", MINING_BRANCHES,
+             MINING_DEFS, MINING_TOTAL_XP, MINING_FIRST_XP, [mining_source()])
+    print(f"Mining: {n} levels, {MINING_TOTAL_XP} XP")
+    n = tree(a.out, "strata", "fishing", {"unlocked_by_default": True, "title": "Fishing", "icon": item("fishing_rod"),
+             "background": "textures/block/dark_prismarine.png"}, "luck_root", FISHING_BRANCHES,
+             FISHING_DEFS, FISHING_TOTAL_XP, FISHING_FIRST_XP,
+             [{"type": "puffish_skills:fish_item", "data": {"experience": "10"}}])
+    print(f"Fishing: {n} levels, {FISHING_TOTAL_XP} XP")
     if a.irons_jar:
         magic(a.out, a.irons_jar)
     else:

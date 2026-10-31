@@ -19,7 +19,7 @@
     ]
   },
   "melee": {
-    "title": "+6% Melee Damage",
+    "title": "+4% Melee Damage",
     "icon": {
       "type": "effect",
       "data": {
@@ -31,14 +31,14 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_skills:player.melee_damage",
-          "value": 0.06,
+          "value": 0.04,
           "operation": "multiply_total"
         }
       }
     ]
   },
   "attack_speed": {
-    "title": "+5% Attack Speed",
+    "title": "+4% Attack Speed",
     "icon": {
       "type": "item",
       "data": {
@@ -50,14 +50,14 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "generic.attack_speed",
-          "value": 0.05,
+          "value": 0.04,
           "operation": "multiply_total"
         }
       }
     ]
   },
   "bloodthirst": {
-    "title": "Bloodthirst: 5% Life Steal",
+    "title": "Bloodthirst: 4% Life Steal",
     "icon": {
       "type": "item",
       "data": {
@@ -69,7 +69,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "apothic_attributes:life_steal",
-          "value": 0.05,
+          "value": 0.04,
           "operation": "addition"
         }
       }
@@ -81,10 +81,37 @@
       }
     },
     "cost": 3,
-    "description": "Heal for 5% of the damage you deal. Keystone: costs 3 points."
+    "description": "Heal for 4% of the damage you deal. Keystone: costs 3 points."
+  },
+  "sunder": {
+    "title": "Sunder: Shred 15% Armor",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_axe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:armor_shred",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Your hits ignore 15% of the target's armor. Keystone: costs 3 points."
   },
   "ranged": {
-    "title": "+6% Ranged Damage",
+    "title": "+4% Ranged Damage",
     "icon": {
       "type": "item",
       "data": {
@@ -96,14 +123,14 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_skills:player.ranged_damage",
-          "value": 0.06,
+          "value": 0.04,
           "operation": "multiply_total"
         }
       }
     ]
   },
   "draw_speed": {
-    "title": "+10% Draw Speed",
+    "title": "+6% Draw Speed",
     "icon": {
       "type": "item",
       "data": {
@@ -115,7 +142,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "apothic_attributes:draw_speed",
-          "value": 0.1,
+          "value": 0.06,
           "operation": "addition"
         }
       }
@@ -155,6 +182,41 @@
     },
     "cost": 3,
     "description": "Arrows fly faster and ignore 3 points of armor. Keystone: costs 3 points."
+  },
+  "sharpshooter": {
+    "title": "Sharpshooter: +15% Ranged Damage, +15% Draw Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "crossbow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.ranged_damage",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
   },
   "health": {
     "title": "+2 Health",
@@ -221,8 +283,43 @@
     "cost": 3,
     "description": "5% of attacks miss you completely. Keystone: costs 3 points."
   },
+  "unbreakable": {
+    "title": "Unbreakable: +4 Health, +20% Healing",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "totem_of_undying"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:healing_received",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Every source of healing heals you 20% more. Keystone: costs 3 points."
+  },
   "crit_damage": {
-    "title": "+5% Crit Damage",
+    "title": "+4% Crit Damage",
     "icon": {
       "type": "item",
       "data": {
@@ -234,14 +331,14 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "apothic_attributes:crit_damage",
-          "value": 0.05,
+          "value": 0.04,
           "operation": "addition"
         }
       }
     ]
   },
   "move_speed": {
-    "title": "+4% Movement Speed",
+    "title": "+3% Movement Speed",
     "icon": {
       "type": "effect",
       "data": {
@@ -253,14 +350,41 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "generic.movement_speed",
-          "value": 0.04,
+          "value": 0.03,
           "operation": "multiply_total"
         }
       }
     ]
   },
+  "precision": {
+    "title": "Precision: +6% Crit Chance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
+  },
   "executioner": {
-    "title": "Executioner: +10% Crit Chance, +25% Crit Damage",
+    "title": "Executioner: +8% Crit Chance, +25% Crit Damage",
     "icon": {
       "type": "item",
       "data": {
@@ -272,7 +396,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "apothic_attributes:crit_chance",
-          "value": 0.1,
+          "value": 0.08,
           "operation": "addition"
         }
       },

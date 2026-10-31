@@ -18,7 +18,7 @@
   "-3_0": {
     "x": -192,
     "y": 0,
-    "definition": "melee"
+    "definition": "attack_speed"
   },
   "-4_0": {
     "x": -256,
@@ -28,12 +28,32 @@
   "-5_0": {
     "x": -320,
     "y": 0,
-    "definition": "attack_speed"
+    "definition": "bloodthirst"
   },
   "-6_0": {
     "x": -384,
     "y": 0,
-    "definition": "bloodthirst"
+    "definition": "melee"
+  },
+  "-7_0": {
+    "x": -448,
+    "y": 0,
+    "definition": "attack_speed"
+  },
+  "-8_0": {
+    "x": -512,
+    "y": 0,
+    "definition": "melee"
+  },
+  "-9_0": {
+    "x": -576,
+    "y": 0,
+    "definition": "attack_speed"
+  },
+  "-10_0": {
+    "x": -640,
+    "y": 0,
+    "definition": "sunder"
   },
   "1_0": {
     "x": 64,
@@ -48,7 +68,7 @@
   "3_0": {
     "x": 192,
     "y": 0,
-    "definition": "ranged"
+    "definition": "draw_speed"
   },
   "4_0": {
     "x": 256,
@@ -58,12 +78,32 @@
   "5_0": {
     "x": 320,
     "y": 0,
-    "definition": "draw_speed"
+    "definition": "deadeye"
   },
   "6_0": {
     "x": 384,
     "y": 0,
-    "definition": "deadeye"
+    "definition": "ranged"
+  },
+  "7_0": {
+    "x": 448,
+    "y": 0,
+    "definition": "draw_speed"
+  },
+  "8_0": {
+    "x": 512,
+    "y": 0,
+    "definition": "ranged"
+  },
+  "9_0": {
+    "x": 576,
+    "y": 0,
+    "definition": "draw_speed"
+  },
+  "10_0": {
+    "x": 640,
+    "y": 0,
+    "definition": "sharpshooter"
   },
   "0_-1": {
     "x": 0,
@@ -78,22 +118,42 @@
   "0_-3": {
     "x": 0,
     "y": -192,
-    "definition": "health"
+    "definition": "resistance"
   },
   "0_-4": {
     "x": 0,
     "y": -256,
-    "definition": "resistance"
+    "definition": "health"
   },
   "0_-5": {
     "x": 0,
     "y": -320,
-    "definition": "resistance"
+    "definition": "bulwark"
   },
   "0_-6": {
     "x": 0,
     "y": -384,
-    "definition": "bulwark"
+    "definition": "resistance"
+  },
+  "0_-7": {
+    "x": 0,
+    "y": -448,
+    "definition": "health"
+  },
+  "0_-8": {
+    "x": 0,
+    "y": -512,
+    "definition": "resistance"
+  },
+  "0_-9": {
+    "x": 0,
+    "y": -576,
+    "definition": "resistance"
+  },
+  "0_-10": {
+    "x": 0,
+    "y": -640,
+    "definition": "unbreakable"
   },
   "0_1": {
     "x": 0,
@@ -108,21 +168,41 @@
   "0_3": {
     "x": 0,
     "y": 192,
-    "definition": "crit_damage"
+    "definition": "move_speed"
   },
   "0_4": {
     "x": 0,
     "y": 256,
-    "definition": "move_speed"
+    "definition": "crit_damage"
   },
   "0_5": {
     "x": 0,
     "y": 320,
-    "definition": "move_speed"
+    "definition": "precision"
   },
   "0_6": {
     "x": 0,
     "y": 384,
+    "definition": "crit_damage"
+  },
+  "0_7": {
+    "x": 0,
+    "y": 448,
+    "definition": "move_speed"
+  },
+  "0_8": {
+    "x": 0,
+    "y": 512,
+    "definition": "crit_damage"
+  },
+  "0_9": {
+    "x": 0,
+    "y": 576,
+    "definition": "move_speed"
+  },
+  "0_10": {
+    "x": 0,
+    "y": 640,
     "definition": "executioner"
   }
 }

@@ -3266,7 +3266,7 @@ hash = "8f86e3499cd3028fc920676739a696d29c4b16d6a1575ddb1c89db3d9157f57b"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/magic1/experience.json"
-hash = "8cf2087b9270a500a953983a2a3f599ac50313fb3244578c475585eea4ca06b0"
+hash = "9e30e804b1b1472d6a9df201ed825cbaa4d1ec1229e0db914ebf23215f54f130"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/magic2/definitions.json"
@@ -3274,7 +3274,7 @@ hash = "26b8168ab7a126341474c7cb5840a8dbf529029bcf99fdb844f11af1cca3d633"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/magic2/experience.json"
-hash = "674722b90212a71e2fb565985c14433cd6958907d908051f042fd1347119611f"
+hash = "45a3e7b6609b0453398cf871f0cd2565f277035b6631628d5e2c45fb53147a43"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/school1/definitions.json"
@@ -3282,7 +3282,7 @@ hash = "bf5f393c547558b04e9c406c214d487c33517c5693867a06230f82e46c604dd6"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/school1/experience.json"
-hash = "2171f127a70aa67f15e5de5a8f280c993679b509bfbdeeddbd368291e7d8a6be"
+hash = "77836b5abbe03e3347af3897ae25015f19696dc62a131221a0fe124dd95b1e87"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/school2/definitions.json"
@@ -3290,7 +3290,7 @@ hash = "ae680d9359df763baf536e38ad636a52dd23dbd01ce8ec6d008612ddfefdb527"
 
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/school2/experience.json"
-hash = "c5f4635a651c227b0c98368f080a754058022606f9fb6b8af96ecdd4c240a110"
+hash = "c451be10b5a95b3cb901d2586bf0270ad1206a7a376a13408a88c21447250c38"
 
 [[files]]
 file = "kubejs/data/irons_spellbooks/recipe/alchemist_cauldron/brew_legendary_ink.json"
@@ -5322,19 +5322,19 @@ hash = "2c39b10383719c08e0584f75759d4b979ed4aec5ad5a8919cbf614de32fc884b"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/combat/connections.json"
-hash = "b2efefad654695a9cb4209a29cc5862a33c11071497cafd81e0a4fd668ce33ba"
+hash = "9acf5e8a44773aea4e3d7577f71eb1d4d6d941201e6db24fca40a16a71d2b56e"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/combat/definitions.json"
-hash = "d5664e1fd60d119ea245602cbc748c3e333a6b7c25129a5177c54dd77ac2e624"
+hash = "d63e2aedc67b0ac973b88c65cadabbc8127a1a237b0a3e7e87f7c4d9a2934d1c"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/combat/experience.json"
-hash = "4fb55ef3e9ca7d22c27dfca9870aa0b405815872eb0a76e204b61ffba7559a32"
+hash = "ce00209915eac383aa6b76161678f79b53d0b7c41cf6cc1400d2e375156acbb0"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/combat/skills.json"
-hash = "5eaecf622bc9b35f0ca3b66b341c472123275a6c5c786851a13e238bbc698e1c"
+hash = "21807eb5e6a46db2d1bf16194b7cb917d01c6d9681f80a0ac982afa60dd0b34d"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/category.json"
@@ -5342,19 +5342,19 @@ hash = "f87a9d85687d3608a29267948ae6e913b03a7e0a4bf1f396d4529494a9e85bb8"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/connections.json"
-hash = "ce65e45d9dc3add81a4bbdaed63f3ecdc144e1735d17d5153347b58218e35000"
+hash = "136fe0a5a1b0f9f9b77e49641633b73364a8ec57444cd826dd655138cbdedf67"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/definitions.json"
-hash = "ef40a5f3f7618db7434f97e445120aa7ad6d87f1697a6018ec8f58f12b382364"
+hash = "c5ebe3c4354bbce99053a3bf75a79fdd2856d8c83dccf53895c8c12cc6cdb1aa"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/experience.json"
-hash = "0d7b0662532b5811a615f8b759d1eb3f64dfc95e77c0da180f52f96e30f3927a"
+hash = "f71ba1f2f7c3ce16a6652fda5f392b5b878ea0332f2d9daa8cb53e5ad12f0429"
 
 [[files]]
 file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/skills.json"
-hash = "c550d49f0a98502c6f53480b3a201515867e2075f44d2384b724a640d98fa4f4"
+hash = "87eac739b48bb08ba427dac38fecd0796d4c5a58eed54c431e0116e414996f0b"
 
 [[files]]
 file = "kubejs/data/strata/dimension/abyssal_plain.json"
@@ -6050,7 +6050,7 @@ hash = "6bc569fccdca7912da515558ff8a8ccaf6f25d3f7d9727b8799427cd4632d7e4"
 
 [[files]]
 file = "kubejs/data/strata/puffish_skills/categories/fishing/experience.json"
-hash = "f93eb2be4c085fee25a77aadb6abe5dbd7604f0711f7311c073c4de4a2f84e85"
+hash = "430d3f982244ee6333e53feff88691995110438ab76646713fd17ebb955dcb16"
 
 [[files]]
 file = "kubejs/data/strata/puffish_skills/categories/fishing/skills.json"
@@ -7031,6 +7031,10 @@ hash = "71939ea9c3c0bb510ac0d45fedbfdfbe6cb8613d7136ad704635f529ea3c3358"
 [[files]]
 file = "kubejs/server_scripts/strata_removed_items.js"
 hash = "f2ef9aa657a65fdbe8d719669381cd575118d3617a33f9d43bd2121552a67e6a"
+
+[[files]]
+file = "kubejs/server_scripts/strata_skills_refund.js"
+hash = "685f27a02642972171ad123b398a7f42aeea1949ed5f3f45402fa144699581c3"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"

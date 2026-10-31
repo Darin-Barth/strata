@@ -100,7 +100,7 @@
     "description": "One whole level of Fortune on everything you mine. Keystone: costs 3 points."
   },
   "experience": {
-    "title": "+10% Experience Gained",
+    "title": "+6% Experience Gained",
     "icon": {
       "type": "item",
       "data": {
@@ -112,7 +112,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "apothic_attributes:experience_gained",
-          "value": 0.1,
+          "value": 0.06,
           "operation": "addition"
         }
       }
@@ -152,5 +152,105 @@
     },
     "cost": 3,
     "description": "Fall 4 blocks further without damage. Keystone: costs 3 points."
+  },
+  "speed_small": {
+    "title": "+5% Mining Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "haste"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.mining_speed",
+          "value": 0.05,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "excavator": {
+    "title": "Excavator: +20% Mining Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.mining_speed",
+          "value": 0.2,
+          "operation": "multiply_base"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Keystone: costs 3 points."
+  },
+  "safe_fall": {
+    "title": "+1 Safe Fall Distance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "feather"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.safe_fall_distance",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "spelunker": {
+    "title": "Spelunker: +15% Experience, +10% Movement Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "spyglass"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:experience_gained",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.movement_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "cost": 3,
+    "description": "Deep caves reward the curious. Keystone: costs 3 points."
   }
 }
