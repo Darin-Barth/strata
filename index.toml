@@ -82,6 +82,10 @@ file = "config/almostunified/unification/materials.json"
 hash = "89d043f526a728d3b80a2048bd0e943e10caea7f079ed3d58b1a4e5267efeedb"
 
 [[files]]
+file = "config/ambientfog/biome_fog.json"
+hash = "64cf8ff3e91bcd64da08ace9020dc06a22209d3b55e5682a7d983d413d9d00ec"
+
+[[files]]
 file = "config/amc.json"
 hash = "fc3ae3e673e01a119aad42909b0878c3a9b618adfbd1c369eeb275c624e2c704"
 
