@@ -162,7 +162,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "9c9f7c14bc69d01bf7b07fa039e5cf53bad87ce00ea0c6c4fde62ad00cbb35d6"
+hash = "ad047707755bbf6363c3a6999164a6300b1a74f62f0b90d6039a180af446ad05"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -8336,11 +8336,6 @@ hash = "45fea8478dcb03828ca2a0824483fa90561765f18fc437957b642bf366ec352b"
 metafile = true
 
 [[files]]
-file = "mods/keybind-atlas.pw.toml"
-hash = "78f8c67a3aa981339fd1046030acfe41f902c4e6cbede8db0a62e8c1399af0d3"
-metafile = true
-
-[[files]]
 file = "mods/kobolds.pw.toml"
 hash = "ff5c7a2b455d7d84c02c9d4e44028b11f8084e63727a84d9e0c4a38c4da58c42"
 metafile = true
@@ -9013,6 +9008,11 @@ metafile = true
 [[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "1f9b1784b18090906eff19c444ab3e0cce96c603b2a040b725fe1c6221698ae7"
+metafile = true
+
+[[files]]
+file = "mods/studious-keybinds.pw.toml"
+hash = "f557c416202cf0d1116fe4f45762d6fac32c0a1c16dee92f14b9d66ec1796edb"
 metafile = true
 
 [[files]]

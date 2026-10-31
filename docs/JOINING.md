@@ -52,5 +52,5 @@ layout; when an update changes keys, Options > Controls > Key Binds > **Reset Al
 - Teleporting is limited: one `/home` each (`/sethome` to set it), waystones cost XP, and there's no /back, /rtp or /tpa.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
 - Difficulty is per player: press **Alt+L** to pick your Apotheosis World Tier once you unlock more.
-- Lost track of a key? Press **Alt+Q** for **Keybind Atlas**: a map of your keyboard and mouse showing what every key does and which mod it's from. You can search it and rebind keys right on the map. The full layout is in the [keybind guide](keybinds.md).
+- Lost track of a key? Options > Controls > **Keyboard** shows your keyboard with what every key does: hover to see, click to rebind, search by action or mod, and keys shared by two actions are outlined red. The full layout is in the [keybind guide](keybinds.md).
 - If something seems broken or too easy, tell the server admin: fixes ship as small updates.

@@ -10,7 +10,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 
 ## Cheat sheet
 
-**Can't remember a key?** Press **Alt+Q** for Keybind Atlas: a map of your keyboard and mouse with every binding, its mod, search, and rebinding on the map.
+**Can't remember a key?** Options > Controls > **Keyboard** (Studious Keybinds) shows your keyboard with every binding: hover a key to see what it does, click it to rebind, search by action or mod. Keys outlined red are shared by more than one action.
 
 **Movement and vanilla**: unchanged (WASD, Space, Shift, Ctrl sprint, E, Q, F, T, /, 1-9, Tab, F1-F3, F5, L, P).
 
