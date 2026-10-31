@@ -58,54 +58,39 @@ ItemEvents.rightClicked('strata:leviathan_lure', event => {
 
 // --- The Lifepod -----------------------------------------------------------------------------
 // With no surface, stepping through the portal would mean drowning. The first time a player
-// arrives somewhere without a Lifepod nearby, one is built around them: a sealed 9x8x9 room of
-// unbreakable hull with windows, lights, a small supply chest and a moon pool (a water hole in
-// the floor, the way out). Frame and portal blocks are left alone; the room's water becomes air.
+// arrives somewhere without a Lifepod nearby, one is set down on the sea floor and the player is
+// moved into it. It is a capsule lying along Z (textures: tools/build_lifepod.py): an octagonal
+// white hull with an orange lower band and orange end caps, a round hatch on the front, portholes
+// down both sides, an orange beacon on the roof at each end (to find it in the dark), on two
+// skids. Inside: a deck, ceiling lamps, seats, a supply chest, a crafting table, the moon pool
+// (the way out) and the Return to Surface console. Every pod block is unbreakable.
 //
 // Portals link 1:1 by X/Z at roughly the same height, but the sea floor sits around Y 300 and
 // Overworld portals around Y 60-120, so BBL Portals usually builds the arrival portal inside the
-// rock under the sea, with no water around it. Then the Lifepod goes
-// up onto the sea floor instead, with its own lit dark prismarine return portal; the Overworld
-// portal is re-linked to it and the buried portal removed, so later trips arrive in the pod.
-const abyssalHullId = 'strata:lifepod_hull'
-const abyssalBlocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
-const abyssalAxis = Java.loadClass('net.minecraft.core.Direction$Axis')
-const abyssalPos = Java.loadClass('net.minecraft.core.BlockPos')
-const abyssalRL = Java.loadClass('net.minecraft.resources.ResourceLocation')
-const abyssalResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-const abyssalRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
-const abyssalPortalArea = Java.loadClass('com.benbenlaw.portals.portal.frame.VanillaPortalAreaHelper')
-const abyssalPortalsMod = Java.loadClass('com.benbenlaw.portals.Portals')
+// rock under the sea. That portal and its link are left alone: every trip arrives there and is
+// moved up into the pod. There is no portal back; the console returns you to the Overworld
+// outside the portal you came in by (BBL's return link could land you somewhere else entirely).
 const abyssalTopY = 558
+const abyssalPodPrefix = 'strata:lifepod_'
+const abyssalTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
+// Half-width of the hull's octagonal cross-section, by row above the pod bottom.
+const abyssalPodHalf = [2, 3, 4, 4, 4, 4, 4, 3, 2]
+const abyssalInHull = (x, y) => y >= 0 && y <= 8 && Math.abs(x) <= abyssalPodHalf[y]
 
-const abyssalPodNear = (level, cx, cy, cz) => {
-  for (let dx = -6; dx <= 6; dx++) for (let dy = -4; dy <= 7; dy++) for (let dz = -6; dz <= 6; dz++) {
-    if (String(level.getBlock(cx + dx, cy + dy, cz + dz).id) === abyssalHullId) return true
-  }
-  return false
+// Pods are kept in server data as "x,y,z" keys: centre X/Z and the bottom row Y.
+const abyssalPods = server => {
+  const all = server.persistentData.getCompound('strata_lifepods')
+  const out = []
+  all.getAllKeys().forEach(key => {
+    let p = String(key).split(',').map(Number)
+    out.push({ x: p[0], y: p[1], z: p[2] })
+  })
+  return out
 }
-
-// Builds the pod centred on (cx, cy, cz); the player stands at cy - 1.
-const abyssalBuildPod = (level, server, cx, cy, cz) => {
-  const replaceable = b => b.id === 'minecraft:air' || abyssalIsWater(b)
-  for (let dx = -4; dx <= 4; dx++) for (let dy = -2; dy <= 5; dy++) for (let dz = -4; dz <= 4; dz++) {
-    let b = level.getBlock(cx + dx, cy + dy, cz + dz)
-    let shell = Math.abs(dx) === 4 || Math.abs(dz) === 4 || dy === -2 || dy === 5
-    if (shell) {
-      if (!replaceable(b)) continue
-      let window = dy >= 0 && dy <= 2 && (Math.abs(dx) <= 1 || Math.abs(dz) <= 1) && (Math.abs(dx) === 4 || Math.abs(dz) === 4)
-      b.set(window ? 'strata:lifepod_window' : abyssalHullId)
-    } else if (abyssalIsWater(b)) {
-      b.set('minecraft:air')
-    }
-  }
-  // Moon pool: a 2x2 water hole in the floor corner, down to the sea.
-  for (let dx = 2; dx <= 3; dx++) for (let dz = 2; dz <= 3; dz++) level.getBlock(cx + dx, cy - 2, cz + dz).set('minecraft:water')
-  // Lights in the roof corners.
-  const lights = [[-3, -3], [-3, 3], [3, -3], [3, 3]]
-  for (let i = 0; i < lights.length; i++) level.getBlock(cx + lights[i][0], cy + 4, cz + lights[i][1]).set('minecraft:sea_lantern')
-  // A few supplies: lights you can use underwater and some food. Nothing that skips progression.
-  server.runCommandSilent(`execute in ${abyssalDimensionId} run setblock ${cx - 3} ${cy - 1} ${cz - 3} minecraft:chest{CustomName:'"Lifepod Supplies"',Items:[{Slot:0b,id:"minecraft:sea_pickle",count:8},{Slot:1b,id:"minecraft:cooked_cod",count:8},{Slot:2b,id:"minecraft:dried_kelp",count:16}]} replace`)
+const abyssalAddPod = (server, x, y, z) => {
+  const all = server.persistentData.getCompound('strata_lifepods')
+  all.put(`${x},${y},${z}`, new abyssalTag())
+  server.persistentData.put('strata_lifepods', all)
 }
 
 // The first water above (x, fromY, z), or -1 if the column has none up to the ceiling.
@@ -114,69 +99,180 @@ const abyssalWaterAbove = (level, x, fromY, z) => {
   return -1
 }
 
-// Arrival under the sea floor: pod on the floor above (px, pz) with a lit return portal, the
-// Overworld portal re-linked to it, the buried portal removed. Returns the pod centre Y, or null
-// if (px, py, pz) isn't buried (open water, or no sea above).
-const abyssalRaisePod = (level, server, px, py, pz) => {
-  if (abyssalIsWater(level.getBlock(px, py, pz)) || abyssalIsWater(level.getBlock(px, py + 1, pz))) return null
-  const seaAbove = abyssalWaterAbove(level, px, py + 2, pz)
-  if (seaAbove < 0) return null
-  // Sit the pod just above the highest point of the floor under its footprint.
-  let floor = seaAbove
-  for (let dx = -4; dx <= 4; dx++) for (let dz = -4; dz <= 4; dz++) {
-    let w = abyssalWaterAbove(level, px + dx, py + 2, pz + dz)
-    if (w > floor) floor = w
-  }
-  const cy = Math.min(floor + 3, abyssalTopY - 8)
-  abyssalBuildPod(level, server, px, cy, pz)
-  // Return portal: a 4x5 dark prismarine frame on the pod's +Z wall, 2x3 opening.
-  for (let dx = -2; dx <= 1; dx++) for (let dy = -1; dy <= 3; dy++) {
-    let edge = dx === -2 || dx === 1 || dy === -1 || dy === 3
-    level.getBlock(px + dx, cy + dy, pz + 3).set(edge ? 'minecraft:dark_prismarine' : 'minecraft:air')
-  }
-  const area = new abyssalPortalArea().init(level, new abyssalPos(px - 1, cy, pz + 3), abyssalAxis.X, abyssalBlocks.DARK_PRISMARINE)
-  if (!area.isValidFrame()) {
-    console.error(`Abyssal Plain: the Lifepod return portal frame at ${px} ${cy} ${pz + 3} isn't valid`)
-  } else {
-    area.lightPortal(abyssalBlocks.DARK_PRISMARINE)
-    // Re-link whichever Overworld portal led to the buried one.
-    let storage = abyssalPortalsMod.PORTAL_LINKING_STORAGE
-    let links = storage ? storage.PORTAL_LINKS.get(abyssalRL.parse(abyssalDimensionId)) : null
-    if (links) {
-      let it = links.entrySet().iterator()
-      let oldKey = null, overworld = null
-      while (it.hasNext()) {
-        let e = it.next(), k = e.getKey()
-        if (Math.abs(k.x - px) <= 6 && Math.abs(k.z - pz) <= 6 && Math.abs(k.y - py) <= 8) { oldKey = k; overworld = e.getValue() }
-      }
-      if (overworld) {
-        links.remove(oldKey)
-        storage.createLink(overworld.pos(), overworld.dimension(), area.getRectangle().minCorner,
-          abyssalResourceKey.create(abyssalRegistries.DIMENSION, abyssalRL.parse(abyssalDimensionId)))
-        storage.setDirty()
-      }
+// The lowest water block of the sea above the ground at (x, z), starting at y0: down through the
+// water if y0 is in the sea, up through the rock if y0 is buried. -1 if there's no sea.
+const abyssalFloorAt = (level, x, y0, z) => {
+  if (!abyssalIsWater(level.getBlock(x, y0, z))) return abyssalWaterAbove(level, x, y0 + 1, z)
+  let y = y0
+  while (y > -40 && abyssalIsWater(level.getBlock(x, y - 1, z))) y--
+  return y
+}
+
+// Pod blocks may replace anything but portals, their frames and blocks holding items.
+const abyssalPodSet = (level, x, y, z, id, props) => {
+  const b = level.getBlock(x, y, z)
+  const old = String(b.id)
+  if (old === 'portals:custom_portal' || old === 'minecraft:dark_prismarine' || b.entity) return
+  if (props) b.set(id, props)
+  else b.set(id)
+}
+
+// Builds the pod with its centre column at (cx, cz) and its bottom row at by (skids at by - 1).
+// Returns where the player stands.
+const abyssalBuildPod = (level, server, cx, by, cz) => {
+  const at = (x, y, z, id, props) => abyssalPodSet(level, cx + x, by + y, cz + z, id, props)
+  const shellOf = (x, y) => !abyssalInHull(x - 1, y) || !abyssalInHull(x + 1, y) || !abyssalInHull(x, y - 1) || !abyssalInHull(x, y + 1)
+  for (let z = -6; z <= 6; z++) for (let y = 0; y <= 8; y++) for (let x = -4; x <= 4; x++) {
+    if (!abyssalInHull(x, y)) continue
+    let ax = Math.abs(x)
+    if (Math.abs(z) === 6) {  // end caps: white, with an orange rim
+      at(x, y, z, abyssalPodPrefix + (shellOf(x, y) ? 'hull_orange' : 'hull'))
+      continue
+    }
+    if (shellOf(x, y)) {
+      let id = 'hull'
+      if (y <= 1) id = 'hull_orange'
+      else if (y === 2) id = 'hull_stripe'
+      else if (ax === 4 && y === 4 && z % 3 === 0) id = 'window'
+      else if (y === 8 && x === 0 && Math.abs(z) === 4) id = 'beacon'
+      at(x, y, z, abyssalPodPrefix + id)
+    } else if (y === 1) {
+      at(x, y, z, abyssalPodPrefix + 'deck')
+    } else if (y === 7 || (y === 6 && ax === 3)) {
+      at(x, y, z, abyssalPodPrefix + (y === 7 && x === 0 && z % 3 === 0 ? 'lamp' : 'hull'))
+    } else {
+      at(x, y, z, 'minecraft:air')
     }
   }
-  // The buried portal goes (its frame stays in the rock).
-  for (let dx = -4; dx <= 4; dx++) for (let dy = -4; dy <= 5; dy++) for (let dz = -4; dz <= 4; dz++) {
-    let b = level.getBlock(px + dx, py + dy, pz + dz)
-    if (String(b.id) === 'portals:custom_portal') b.set('minecraft:air')
+  // Front hatch (with its handle) and the rear cap, standing out from the end caps.
+  for (let y = 2; y <= 6; y++) for (let x = -2; x <= 2; x++) {
+    if (Math.abs(x) + Math.abs(y - 4) > 2) continue
+    at(x, y, 7, abyssalPodPrefix + (x === 0 && y === 4 ? 'hatch_wheel' : 'hatch'))
+    at(x, y, -7, abyssalPodPrefix + 'hull_orange')
   }
-  return cy
+  // Skids with cross beams, on posts down to the ground.
+  for (let z = -5; z <= 5; z++) for (let x = -2; x <= 2; x++) {
+    if (Math.abs(x) === 2 || (Math.abs(z) === 5)) at(x, -1, z, abyssalPodPrefix + 'frame')
+  }
+  for (let x = -2; x <= 2; x += 4) for (let z = -5; z <= 5; z += 5) {
+    for (let y = -2; y >= -14; y--) {
+      let b = level.getBlock(cx + x, by + y, cz + z)
+      if (b.id !== 'minecraft:air' && !abyssalIsWater(b)) break
+      b.set(abyssalPodPrefix + 'frame')
+    }
+  }
+  // Moon pool: a 2x2 hole of water through the floor at the back, down to the sea.
+  for (let x = -1; x <= 0; x++) for (let z = -4; z <= -3; z++) {
+    at(x, 1, z, 'minecraft:water')
+    at(x, 0, z, 'minecraft:water')
+  }
+  // Seats along both walls, under the portholes.
+  for (let z = -1; z <= 1; z++) {
+    at(-3, 2, z, 'minecraft:smooth_quartz_stairs', { facing: 'west' })
+    at(3, 2, z, 'minecraft:smooth_quartz_stairs', { facing: 'east' })
+  }
+  // The front: the Return to Surface console (two blocks tall) with a lit sign above it, the
+  // supply chest on its left and a crafting table on its right.
+  at(0, 2, 5, abyssalPodPrefix + 'console')
+  at(0, 3, 5, abyssalPodPrefix + 'console')
+  at(2, 2, 5, 'minecraft:crafting_table')
+  const X = cx, Y = by, Z = cz
+  server.runCommandSilent(`execute in ${abyssalDimensionId} run setblock ${X} ${Y + 4} ${Z + 5} minecraft:spruce_wall_sign[facing=north]{front_text:{has_glowing_text:1b,color:"cyan",messages:['""','"RETURN TO"','"SURFACE"','""']}}`)
+  // A few supplies: lights you can use underwater and some food. Nothing that skips progression.
+  server.runCommandSilent(`execute in ${abyssalDimensionId} run setblock ${X - 2} ${Y + 2} ${Z + 5} minecraft:chest[facing=north]{CustomName:'"Lifepod Supplies"',Items:[{Slot:0b,id:"minecraft:sea_pickle",count:8},{Slot:1b,id:"minecraft:cooked_cod",count:8},{Slot:2b,id:"minecraft:dried_kelp",count:16}]}`)
+  abyssalAddPod(server, cx, by, cz)
+  return { x: cx + 0.5, y: by + 2, z: cz - 1.5 }
+}
+
+// A pod built before the capsule design (a 9x8x9 cube whose floor is a plain hull block, with a
+// return portal inside) sits right above the arrival portal: it's flooded and replaced.
+const abyssalClearOldPod = (level, px, py, pz) => {
+  for (let y = py; y < abyssalTopY; y++) {
+    let id = String(level.getBlock(px, y, pz).id)
+    if (id.indexOf(abyssalPodPrefix) !== 0) continue
+    if (id !== abyssalPodPrefix + 'hull') return false
+    for (let dx = -4; dx <= 4; dx++) for (let dy = 0; dy <= 7; dy++) for (let dz = -4; dz <= 4; dz++) {
+      level.getBlock(px + dx, y + dy, pz + dz).set('minecraft:water')
+    }
+    return true
+  }
+  return false
+}
+
+// Where someone arriving at (px, py, pz) stands in the Lifepod, building the pod first if there's
+// none near. Null if there's no sea floor to put one on.
+const abyssalPodSpot = (level, server, px, py, pz) => {
+  let spot = null
+  const pods = abyssalPods(server)
+  for (let i = 0; i < pods.length; i++) {
+    let p = pods[i]
+    if (Math.abs(p.x - px) <= 24 && Math.abs(p.z - pz) <= 24) { spot = { x: p.x + 0.5, y: p.y + 2, z: p.z - 1.5 }; break }
+  }
+  if (!spot) {
+    abyssalClearOldPod(level, px, py, pz)
+    // Buried arrival: the pod goes on the floor straight above. Arrival in open water: beside the
+    // portal, so the two don't overlap.
+    let buried = !abyssalIsWater(level.getBlock(px, py, pz)) && !abyssalIsWater(level.getBlock(px, py + 1, pz))
+    let cx = buried ? px : px + 10
+    let floor = -1
+    for (let x = -4; x <= 4; x++) for (let z = -7; z <= 7; z++) {
+      let f = abyssalFloorAt(level, cx + x, py, pz + z)
+      if (f > floor) floor = f
+    }
+    if (floor < 0) {
+      console.error(`Abyssal Plain: no sea floor found for a Lifepod near ${px} ${py} ${pz}`)
+      return null
+    }
+    spot = abyssalBuildPod(level, server, cx, Math.min(floor + 1, abyssalTopY - 12), pz)
+    spot.built = true
+  }
+  return spot
 }
 
 const abyssalArrive = (player) => {
-  const level = player.level
-  const px = Math.floor(player.x), py = Math.floor(player.y), pz = Math.floor(player.z)
-  if (abyssalPodNear(level, px, py, pz)) return
-  const cy = abyssalRaisePod(level, player.server, px, py, pz)
-  if (cy !== null) {
-    player.server.runCommandSilent(`execute in ${abyssalDimensionId} run tp ${player.username} ${px + 0.5} ${cy - 1} ${pz - 1.5} 0 0`)
-  } else {
-    abyssalBuildPod(level, player.server, px, py, pz)
-  }
-  player.tell(Text.aqua('Lifepod deployed. The sea starts at the moon pool.').italic())
+  const spot = abyssalPodSpot(player.level, player.server, Math.floor(player.x), Math.floor(player.y), Math.floor(player.z))
+  if (!spot) return
+  if (spot.built) player.tell(Text.aqua('Lifepod deployed. The sea starts at the moon pool; the console takes you back to the surface.').italic())
+  player.server.runCommandSilent(`execute in ${abyssalDimensionId} run tp ${player.username} ${spot.x} ${spot.y} ${spot.z} 0 0`)
 }
+
+// --- Return to Surface -------------------------------------------------------------------------
+// While a player is in the Overworld, their last spot on the ground outside any portal is kept.
+// The console puts them back there, facing away from the portal; with nothing kept (they came by
+// another way), at the world spawn.
+const abyssalPortalBlocks = ['portals:custom_portal', 'minecraft:nether_portal', 'minecraft:end_portal']
+const abyssalKeepSurfaceSpot = player => {
+  if (!player.onGround()) return
+  const feet = String(player.block.id), head = String(player.block.up.id)
+  if (abyssalPortalBlocks.indexOf(feet) >= 0 || abyssalPortalBlocks.indexOf(head) >= 0) return
+  const data = player.persistentData
+  data.putDouble('strata_surface_x', player.x)
+  data.putDouble('strata_surface_y', player.y)
+  data.putDouble('strata_surface_z', player.z)
+  data.putFloat('strata_surface_yaw', player.yaw)
+  data.putBoolean('strata_surface', true)
+}
+
+BlockEvents.rightClicked('strata:lifepod_console', event => {
+  const player = event.player
+  if (!player || String(event.hand) !== 'MAIN_HAND') return
+  event.cancel()
+  const data = player.persistentData
+  const server = event.server
+  let to
+  if (data.getBoolean('strata_surface')) {
+    let yaw = (data.getFloat('strata_surface_yaw') + 180) % 360
+    to = `${data.getDouble('strata_surface_x').toFixed(2)} ${data.getDouble('strata_surface_y').toFixed(2)} ${data.getDouble('strata_surface_z').toFixed(2)} ${yaw.toFixed(1)} 0`
+  } else {
+    let s = server.overworld().sharedSpawnPos
+    to = `${s.x + 0.5} ${s.y} ${s.z + 0.5}`
+  }
+  const b = event.block
+  server.runCommandSilent(`execute in ${abyssalDimensionId} run playsound minecraft:block.conduit.deactivate block @a ${b.x + 0.5} ${b.y + 0.5} ${b.z + 0.5} 1 1.2`)
+  server.runCommandSilent(`execute in minecraft:overworld run tp ${player.username} ${to}`)
+  server.runCommandSilent(`execute in minecraft:overworld at ${player.username} run playsound minecraft:entity.player.splash.high_speed player ${player.username} ~ ~ ~ 1 1`)
+  player.displayClientMessage(Text.aqua('You surface.').italic(), true)
+})
 
 PlayerEvents.tick(event => {
   const player = event.player
@@ -189,8 +285,9 @@ PlayerEvents.tick(event => {
     }
     // No Conduit power down here: bases have to be engineered.
     if (player.tickCount % 20 === 0) player.server.runCommandSilent(`effect clear ${player.username} minecraft:conduit_power`)
-  } else if (data.getBoolean('strata_abyss_inside')) {
-    data.putBoolean('strata_abyss_inside', false)
+  } else {
+    if (data.getBoolean('strata_abyss_inside')) data.putBoolean('strata_abyss_inside', false)
+    if (abyssalDimensionOf(player) === 'minecraft:overworld') abyssalKeepSurfaceSpot(player)
   }
 })
 

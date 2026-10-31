@@ -390,7 +390,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "502d0e0f27f0c6d44ebc550f41a5deab08570f72241326361e0097c604f084e6"
+hash = "a5e872029a7fe6f62e13b5c196688079aadbbdf55fc21a4757f50ba583db2baf"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -937,12 +937,52 @@ file = "kubejs/assets/strata/models/item/boss_bag/twilightforest_ur_ghast.json"
 hash = "c833778da7497fd09f6737c43284bfb677929dff4491c0186a919af462b75aad"
 
 [[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_beacon.png"
+hash = "c4de991835d69cbf6d3ab9ef4889a075506dc415c52828fc881cd22ba476494b"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_console.png"
+hash = "ecc56096b349231063cfff8e351f5a24c34902da5efc9fef8a6420bdb9475e97"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_console_screen.png"
+hash = "a01b2398bea567d60032769cb959f8df836aa6cdf218500fb87f90a38393a051"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_deck.png"
+hash = "4f2922a53c4f8eb8eb0fc32dc7bc49a8cf74170dc43a850b709e02ab38572f54"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_frame.png"
+hash = "aada4dfb04697b81f4bba41092f67a6e843c307c21aabbe97fc49b51e1cae099"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_hatch.png"
+hash = "27053703f5a8a0c374d051cdc7a4f49beb1afb9d9e53eeb1540f65a499e58766"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_hatch_wheel.png"
+hash = "216f20c5a56d2c9776a7302ac8b086590e65a02ea31a23b071e1dfb990d3a58e"
+
+[[files]]
 file = "kubejs/assets/strata/textures/block/lifepod_hull.png"
-hash = "5778f7c7025da0518639be579a909a7d14ffc553b68cf6600e2b48123bd2bd01"
+hash = "ae56cb494151c2cb3b358f3504132f4c21e98d67d422f36d91379104d667c856"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_hull_orange.png"
+hash = "8cc6efb402fbdc6276c8bb2aef9177d4a17740fb497a550abb927ae54f071594"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_hull_stripe.png"
+hash = "fb0ae1a54787e8f686184ec229b41814e01614522132eff69fd0c70290a19157"
+
+[[files]]
+file = "kubejs/assets/strata/textures/block/lifepod_lamp.png"
+hash = "32613a5ffcfc3c247b573b31f9218d4ef6b573925bf5f6e085b4622cc12ebae6"
 
 [[files]]
 file = "kubejs/assets/strata/textures/block/lifepod_window.png"
-hash = "d29e5f1a975a3aad938d497743f64ea82438213e31fd39ce41f86f8665e1d9cc"
+hash = "8353f5a6ce447fd1a43fa532583b926c93cb2e301610b604d5f2a895fd69acf5"
 
 [[files]]
 file = "kubejs/assets/strata/textures/block/pale_beacon.png"
@@ -7010,7 +7050,7 @@ hash = "3dc10a72d5e02e2a80692f5a64840858a746cd7b438d2d8bf988aba60876ccb7"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "236df88aeabd657d4f2b55d114fecc09d14035bcb466a47721ba496b19a2458c"
+hash = "11fc46f3608fda10dfc44fb0fdb6836c7c530b3746543cd2858610da8b455e7d"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
@@ -7126,7 +7166,7 @@ hash = "4a30b1fc76664fad5c02c97c19521ac5c6741847f944d16629e5c85a283d77cf"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
-hash = "b4aea5c456027a97a4c6bb98e68f2c97155939578c9539ad3bed436284734c0c"
+hash = "ff96fc87b161c9e5ad2fe34551a2a372e0d992a21ae1db444c6625d8965cfb7f"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_village_pools.js"

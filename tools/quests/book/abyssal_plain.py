@@ -25,13 +25,15 @@ q("enter", "Into the Deep", deps="tidecaller", icon="minecraft:dark_prismarine",
   tasks=dim("strata:abyssal_plain", title="Enter the Abyssal Plain"), rewards=give("minecraft:cooked_cod", 8), desc="""
     Build a frame of &eDark Prismarine&r the shape of a Nether portal (at least 4 wide and 5 tall) and use the &eTidecaller&r on it. Step in!
 
-    The way home waits right where you arrive, and it leads back to the Overworld at the same spot.""")
+    You arrive in a Lifepod on the sea floor, and its console takes you home: back to the Overworld, right outside the portal you came in by.""")
 
 q("lifepod", "The Lifepod", deps="enter", icon="minecraft:sea_lantern", at=(5.25, 4.5),
   rewards=give("minecraft:sea_lantern", 4), desc="""
-    You arrive inside a &bLifepod&r: a small sealed room with air, lights, windows and a chest of supplies. Its walls can't be broken, so the sea can't get in.
+    You arrive inside a &bLifepod&r resting on the sea floor: a sealed capsule with air, lights, portholes, seats, a crafting table and a chest of supplies. Its hull can't be broken, so the sea can't get in. The orange lights on its roof help you find it again in the dark.
 
-    The way out is the &bmoon pool&r, the hole of water in the floor. Swim down through it and you're in the open sea. Come back the same way to catch your breath or to go home.
+    The way out is the &bmoon pool&r, the hole of water in the floor at the back. Swim down through it and you're in the open sea. Come back the same way to catch your breath.
+
+    To go home, use the &bReturn to Surface&r console at the front: it takes you back to the Overworld, right outside the portal you came in by.
 
     Check the chest, then click the checkmark.""")
 

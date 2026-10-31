@@ -67,11 +67,30 @@ const PORTALS = [
 ]
 
 StartupEvents.registry('block', event => {
-  // The Abyssal Plain's Lifepod (arrival chamber): unbreakable, so its air pocket can't be flooded.
-  event.create('strata:lifepod_hull').displayName('Lifepod Hull').soundType('metal').mapColor('color_light_gray')
-    .hardness(-1).resistance(3600000).requiresTool(false)
+  // The Abyssal Plain's Lifepod (arrival chamber): every block unbreakable, so its air pocket can't
+  // be flooded. Textures: tools/build_lifepod.py.
+  const lifepodSolid = [
+    ['lifepod_hull', 'Lifepod Hull', 'color_light_gray', 0],
+    ['lifepod_hull_stripe', 'Lifepod Hull', 'color_light_gray', 0],
+    ['lifepod_hull_orange', 'Lifepod Hull', 'color_orange', 0],
+    ['lifepod_hatch', 'Lifepod Hatch', 'color_orange', 0],
+    ['lifepod_hatch_wheel', 'Lifepod Hatch', 'color_orange', 0],
+    ['lifepod_deck', 'Lifepod Deck', 'color_gray', 0],
+    ['lifepod_frame', 'Lifepod Skid', 'color_black', 0],
+    ['lifepod_lamp', 'Lifepod Lamp', 'color_light_gray', 1],
+    ['lifepod_beacon', 'Lifepod Beacon', 'color_orange', 1],
+  ]
+  lifepodSolid.forEach(b => {
+    event.create(`strata:${b[0]}`).displayName(b[1]).soundType('metal').mapColor(b[2])
+      .hardness(-1).resistance(3600000).requiresTool(false).lightLevel(b[3])
+  })
   event.create('strata:lifepod_window').displayName('Lifepod Window').soundType('glass').mapColor('color_light_blue')
     .hardness(-1).resistance(3600000).notSolid().defaultTranslucent()
+  // Right-click: back to the Overworld, outside the portal you came in by (server_scripts/abyssal_rules.js).
+  event.create('strata:lifepod_console').displayName('Return to Surface').soundType('metal').mapColor('color_gray')
+    .hardness(-1).resistance(3600000).requiresTool(false).lightLevel(0.4)
+    .texture(['down', 'up', 'south', 'east', 'west', 'particle'], 'strata:block/lifepod_console')
+    .texture(['north'], 'strata:block/lifepod_console_screen')
   PORTALS.filter(p => !p.existingFrame).forEach(p => {
     event.create(p.frame)
       .displayName(p.frameName)
