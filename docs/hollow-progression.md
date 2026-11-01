@@ -88,7 +88,10 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 | Tech | Mekanism fusion reactor controller | 4 (+ Harbinger's witherite) |
 | Tech | MekaSuit pieces and Meka-Tool | 2 each |
 | Tech | Draconic Evolution awakened core | 2 |
+| Magic | Iron & Nouveau legendary-spell glyphs | 1 each |
+| Magic | Occultism afrit summoning | 1 |
 | Magic | Theurgy netherite route | 1 |
+| Magic | Vampirism lord level 3 (vampire and hunter) | 2 |
 | Gear | Apotheosis Summit world tier (advancement) | 1 owned |
 
 Supply: horror mobs drop one 15% of the time, mutants 1–2 half the time, bosses 3–5, and chest loot. That's enough for players who visit regularly, and none for players who never go. That pull toward the Hollow is intended, but everything gated is optional (decision D4).
