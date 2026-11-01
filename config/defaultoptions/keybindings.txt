@@ -80,7 +80,11 @@ key_key.fieldguide.open:key.keyboard.f:ALT
 key_key.apotheosis.open_world_tier_select:key.keyboard.l:ALT
 key_key.carry.desc:key.keyboard.left.alt
 # Crafting on a Stick off V (Darin, Nov 1): V also fires MekaSuit, Ad Astra suit and wand keys. Shift+C only shares
-# with Draconic's tool modules (Draconic tool in hand); Ctrl+C would fire instead of Iron's spell wheel while sprinting
+# with nothing once Draconic's keys move (below); Ctrl+C would fire instead of Iron's spell wheel while sprinting
 key_crafting_on_a_stick.key.open_curios:key.keyboard.c:SHIFT
+# Draconic Evolution tool keys off C / Shift+C (Darin, Nov 1): they fire without a Draconic tool and print
+# "You don't have any configurable items" on every C (Iron's spell wheel) and Shift+C (Crafting on a Stick)
+key_key.draconicevolution.tool_config:key.keyboard.j:CONTROL
+key_key.draconicevolution.tool_modules:key.keyboard.l:CONTROL
 # Strata's sleeping bag key (kubejs/startup_scripts/strata_sleeping_bag.js; KubeJS registers it unbound)
 key_key.kubejs.sleeping_bag:key.keyboard.s:ALT

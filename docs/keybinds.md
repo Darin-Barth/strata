@@ -88,6 +88,8 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Shift+V | Easy Villagers: pick up villager |
 | Left Alt (hold) + right-click, empty hand | Carry On: pick up a block, chest or animal |
 | Shift+P | Draconic Evolution: place item |
+| Ctrl+J | Draconic Evolution: tool config |
+| Ctrl+L | Draconic Evolution: tool modules |
 
 **Relics and gear HUDs**
 | Key | Action |
@@ -162,6 +164,8 @@ Each change keeps two actions from firing from one key in normal play. Simple Vo
 | Draconic Evolution place item | P | Shift+P | Social Interactions |
 | Easy Villagers pick up | V | Shift+V | Voice chat menu |
 | Crafting on a Stick open workbench | V | Shift+C | MekaSuit, Ad Astra suit and wand keys (a stick in the slot opened the workbench with them) |
+| Draconic Evolution tool config | C | Ctrl+J | Iron's spell wheel (it printed "no configurable items" on every C without a Draconic tool) |
+| Draconic Evolution tool modules | Shift+C | Ctrl+L | Crafting on a Stick (same message on every Shift+C) |
 | Carry On pick up (hold) | Shift (key unbound) | Left Alt | every mod's Shift + right-click action (opening blocks, magic) |
 | Shoulder Surfing swap shoulder | U | Ctrl+U | Xaero waypoint list |
 | Shoulder Surfing camera in / out | Up / Down | Home / End | Cobblemon party slot |
