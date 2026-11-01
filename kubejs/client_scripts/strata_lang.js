@@ -1,6 +1,9 @@
 // English names for Strata's own dimensions and biomes. Without these, F3, maps and Traveler's
 // Titles show raw keys like biome.strata.the_trench (Oct 26).
 ClientEvents.lang('en_us', event => {
+  // Sleeping bag slot and key (strata_sleeping_bag.js)
+  event.add('curios.identifier.sleeping_bag', 'Sleeping Bag')
+  event.add('key.kubejs.sleeping_bag', 'Use sleeping bag (from its slot)')
   // Dimension banners (Traveler's Titles: travelerstitles.<namespace>.<path>, plus a colour)
   event.add('travelerstitles.pokeworld.pokeworld', 'The Kakuto Region')
   event.add('travelerstitles.pokeworld.pokeworld.color', 'e3350d')

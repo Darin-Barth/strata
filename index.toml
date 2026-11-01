@@ -162,7 +162,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "76e6071f876f30badc653f95f4d30d59f2c996620e487c4220a2cbfa6f366a8f"
+hash = "dbf69b0865331afed70d4e1ee796b4b39a6a379ed2caae3c78eed10f6970fae9"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -1297,6 +1297,10 @@ file = "kubejs/assets/strata/textures/item/red_hot_rogue_eye.png.mcmeta"
 hash = "d490cec25fbbf0429f22ea5c4b81756fdbea4eb05004d5ad6ab635429a3dbe0c"
 
 [[files]]
+file = "kubejs/assets/strata/textures/item/sleeping_bag_slot.png"
+hash = "3a68e505288b9892be3b308793aedd70595cbd0f4d86c018ad8e81b976cc9baa"
+
+[[files]]
 file = "kubejs/assets/strata/textures/item/tidecaller.png"
 hash = "36304de8ab173283b9cae378ce5480582a87d22db78962b44b4f45a580dfd303"
 
@@ -1310,7 +1314,11 @@ hash = "81dc7c46ea6512841fe76f5ae810db14656e4f68753c66f5c200d3ce0cde1b89"
 
 [[files]]
 file = "kubejs/client_scripts/strata_lang.js"
-hash = "6f6950f7892ae649e70c20fc719bbf6377880cc3776bc78243c79f96aafbfd62"
+hash = "a99fb3e28cb78152c41243e4665375db071cbcc1c7b945418099a7038f1016f8"
+
+[[files]]
+file = "kubejs/client_scripts/strata_sleeping_bag.js"
+hash = "ed90b9ef80b3d05721afa9ab4d490a051c816f8d0cb48b99f6500af8fb86ea53"
 
 [[files]]
 file = "kubejs/data/ad_astra/recipe/calorite_engine.json"
@@ -2907,6 +2915,10 @@ hash = "083a56f19f95ae55e927804c45b2a3df403fb5e3ba25340708e4c551aa2d074b"
 [[files]]
 file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum_medium.json"
 hash = "da2cba9fd861410af653fd001e2d75b86a1b1152c8c797fc6f85aaf05e39dd41"
+
+[[files]]
+file = "kubejs/data/curios/tags/item/sleeping_bag.json"
+hash = "dad1c7d5d1eb21b9afb8a5ad2db5e0c3638ca6f47836b84b10fea0d3e5b4416b"
 
 [[files]]
 file = "kubejs/data/draconicevolution/neoforge/biome_modifier/overworld_draconium_ore.json"
@@ -5445,6 +5457,14 @@ file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/skills.json"
 hash = "87eac739b48bb08ba427dac38fecd0796d4c5a58eed54c431e0116e414996f0b"
 
 [[files]]
+file = "kubejs/data/strata/curios/entities/sleeping_bag.json"
+hash = "9da95c9ee1de1c2328f87c28a1f97e3198ad3792a34c442343b7acc1feb6bd43"
+
+[[files]]
+file = "kubejs/data/strata/curios/slots/sleeping_bag.json"
+hash = "3671bcba54a762054c38579af159234d8dcacc915e2ec25e03e5e255bddaabcf"
+
+[[files]]
 file = "kubejs/data/strata/dimension/abyssal_plain.json"
 hash = "b9f29e4aa480b3a254b242e2aa6fa4ec1c56f1b6fd7922e99a3b0251adfd47b3"
 
@@ -7137,6 +7157,10 @@ file = "kubejs/server_scripts/strata_skills_refund.js"
 hash = "685f27a02642972171ad123b398a7f42aeea1949ed5f3f45402fa144699581c3"
 
 [[files]]
+file = "kubejs/server_scripts/strata_sleeping_bag.js"
+hash = "6a437ce96da3bda76864a81999f921d35c56589c8d5af858d5d8f3c945692227"
+
+[[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
 hash = "2aae8f65b020cfb8d298ec5f3a332a7ea8fef5bf6f18161998c08613ce3a7c8c"
 
@@ -7195,6 +7219,10 @@ hash = "0dda2914bebd59c9ce90e361bfe84b062d6a856e5ab3e25fe555a5d72f15634f"
 [[files]]
 file = "kubejs/startup_scripts/strata_loot_bags.js"
 hash = "68ea6ad5fef39e39ac431c43cc0109b46fdbd73a053c39722ca46371c91d59a5"
+
+[[files]]
+file = "kubejs/startup_scripts/strata_sleeping_bag.js"
+hash = "d43b917696e0ae55f3271b8554d90f65dfe95f892a1f7587235eb9cf86e18e91"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

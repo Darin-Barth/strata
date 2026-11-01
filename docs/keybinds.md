@@ -43,6 +43,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Alt+J | Tom's Storage terminal |
 | Alt+G | Curios slots |
 | V | Open the workbench in your Crafting on a Stick slot (Curios) |
+| Alt+S | Lay out and sleep in the sleeping bag from your Sleeping Bag slot (Curios); it packs itself back up when you wake |
 | I | Aether accessories |
 | Alt+H | Accessories screen |
 | J | Ars Elemental curio pouch |

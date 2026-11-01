@@ -1,0 +1,4 @@
+{
+  "entities": ["player"],
+  "slots": ["sleeping_bag"]
+}
