@@ -3767,18 +3767,6 @@
 		""
 		"Darksteel makes &eGrim \\& Bleak&r's tools, weapons and armor, and several of its weapons have useful extras. You'll also need ingots for the Cursed Amulet and the Gate Key later on."
 	]
-	quest.7D852B7EB58BBD36.title: "Something Is Listening"
-	quest.7D852B7EB58BBD36.quest_desc: [
-		"&cThe Ravenous&r hunts by sound. Building, digging and opening chests can call it from far away, and it &ceats through blocks&r to reach you. A screech comes before the chase: when you hear it, move."
-		""
-		"Its young, the &cScreechers&r, carry an echolocation organ. Use one to craft the &eAnti-Ravenous&r: it stuns everything within 25 blocks and buys you time to run."
-	]
-	quest.5591FDED3B4F99C8.title: "Sound Walls"
-	quest.5591FDED3B4F99C8.quest_desc: [
-		"Nothing you build here is safe by default: the Ravenous chews through planks and stone. &eObsidian&r is too tough for it, so a camp you want to keep needs obsidian walls."
-		""
-		"Build a shelter it can't eat into, then click the checkmark."
-	]
 	task.02FEB26A38804706.title: "Find a chapel"
 	quest.4855AD8269FA6DC0.title: "Chapels"
 	quest.4855AD8269FA6DC0.quest_desc: [
@@ -3869,14 +3857,6 @@
 		""
 		"It's heavily armored, shrugs off fire, explosions and potions, and calls copies of itself. Forge the &eThunder Sword&r first (it needs the Templar Artifact) and land the killing blow with it, or it drops nothing. When it dies, a holy smite hits everything around it: stand back."
 	]
-	quest.0A23158110A3006C.title: "The Ravenous"
-	quest.0A23158110A3006C.quest_desc: [
-		"&7Optional: for the brave.&r"
-		""
-		"Stop running and hunt &cthe Ravenous&r down. It grows stronger in phases as it eats, and lays eggs that hatch Screechers. Finish it in its last phase for its &eEcholocation Organ&r."
-		""
-		"Bragging rights, and an upgrade for your Pale Beacon: right-click the beacon with the organ to widen its safe circle to &e48&r blocks and warn everyone inside when a horror mob comes within &e64&r."
-	]
 	quest.3582E542712042D2.title: "The Pale Beacon"
 	quest.3582E542712042D2.quest_desc: [
 		"The Survey never finished it. You can. Craft the &ePale Beacon&r:"
@@ -3889,9 +3869,11 @@
 	quest.45643FB3B12D6100.quest_desc: [
 		"Place the beacon in the Hollow. It starts &cdark&r: right-click it with a &5Hollow Ember&r to light it for one in-game day (20 minutes). It holds up to &e7&r days of Embers, and right-clicking with an empty hand shows how long it has left."
 		""
-		"While it's lit, within &e24&r blocks: sanity comes back, the tricks stop, no horror mobs spawn, and the Ravenous isn't sent after you and can't eat the beacon. &eBeds work&r: sleep there to set your respawn point in the Hollow."
+		"While it's lit, within &e24&r blocks: sanity comes back, the tricks stop, no horror mobs spawn. &eBeds work&r: sleep there to set your respawn point in the Hollow."
 		""
-		"&cUnfed, it goes dark&r and all of that stops. The Ravenous can still eat your walls, so keep them obsidian. Light it, sleep beside it, then click the checkmark."
+		"&eUpgrade:&r right-click it with an &bEcho Shard&r (from an Ancient City) to widen its safe circle to &e48&r blocks and warn everyone inside when a horror mob comes within &e64&r."
+		""
+		"&cUnfed, it goes dark&r and all of that stops. Light it, sleep beside it, then click the checkmark."
 	]
 	quest.5E9661163FC73102.title: "The Survey Complete"
 	quest.5E9661163FC73102.quest_desc: [

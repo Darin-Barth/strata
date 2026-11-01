@@ -248,14 +248,9 @@ def main():
     hb = f"#{NS}:hollow_biomes"
 
     # --- Horror mods: spawns and structures in the Hollow only ---
-    # The Ravenous: its spawn files target every biome. Its own spawn check also wants
-    # #minecraft:is_overworld, which Hollow biomes never get, so these never fire;
-    # server_scripts/hollow_ravenous.js spawns it instead. (Whispering Spirits was removed in 1.2.1: it
-    # raycast 100 blocks along every player's view every tick, in every dimension, and lagged the server.)
-    for mob, weight in (("the_ravenous", 1), ("the_screecher", 2)):
-        write(out, f"the_ravenous/neoforge/biome_modifier/{mob}_biome_modifier.json", {
-            "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface",
-            "spawners": {"type": f"the_ravenous:{mob}", "weight": weight, "minCount": 1, "maxCount": 1}})
+    # Whispering Spirits (removed in 1.2.1) raycast 100 blocks along every player's view every tick, and
+    # The Ravenous (removed after 1.2.1) searched 70 blocks around every entity every tick, in every
+    # dimension: both lagged the server. Check a new horror mod's tick handlers before adding it.
     # Weeping Angels: spawn and catacombs tags; snow angels nowhere.
     write(out, "weeping_angels/tags/worldgen/biome/spawns/weeping_angels.json",
           tag([f"#{NS}:hollow_forests", f"#{NS}:hollow_snowy", f"#{NS}:hollow_caves"]))

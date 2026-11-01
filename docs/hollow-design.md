@@ -27,18 +27,19 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
 - **Fog:** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`.
 - **Atmosphere** (biome effects, no extra mods): dark fog and black sky, ash/spore particles, cave mood sounds, quiet ambient loops, Deep Dark style music. AmbientSounds (in the pack) adds Hollow-only soundscapes such as whispers and distant knocks. A KubeJS script adds short Darkness pulses now and then while in the Hollow.
 
-## 3. Mobs (7 new mods)
+## 3. Mobs (6 new mods)
 | Role | Mod | How it's kept in the Hollow |
 |---|---|---|
 | Dread | Cave Dweller ReEvolved (beta) | `dimension_whitelist = [strata:hollow]` |
 | Dread | Weeping Angels | spawn tag → Hollow biomes; no interdimensional teleport, no snow angels |
 | Dread | Sanity: Renewed | sanity meter and hallucinations in the Hollow only (per-dimension config); recovers outside |
-| Chase | The Ravenous | two spawn files → Hollow biomes |
 | Combat + loot | Grim & Bleak | its biomes, mobs, structures and darksteel/red amber gear live in the Hollow; its own portal and Overworld ruins removed |
 | Combat + loot | The Graveyard 4.0 | spawn/structure tags → Hollow biomes; hordes off (needs new dependency villagertradingplus) |
 | Mini-bosses | Mutant Monsters | config spawns 0; our own Hollow spawn file |
 
 Also in the Hollow: Creakings (Pale Garden copy). Every horror mod in the pack keeps its scares inside the Hollow and does not grief bases.
+
+**Removed for lag:** Whispering Spirits (1.2.1; it raycast 100 blocks along every player's view every tick) and The Ravenous (after 1.2.1; it searched 70 blocks around every entity every tick). Both ran in every dimension, not just the Hollow. Before adding a horror mod, check what its tick handlers do.
 
 **Safety net:** an In Control! rule denies every horror mod's mobs outside `strata:hollow`, so a mod update can't leak them.
 
@@ -47,11 +48,10 @@ No mob kills a player without a chance to survive. The Hollow should be scary an
 - **Every threat has a warning and a counter.**
   - Cave Dweller: cave noises and a chase phase before an attack. You can run, block it off, or fight it.
   - Weeping Angels: they only move when unseen, so watching them and keeping lights up works.
-  - The Ravenous: a screech before the chase.
   - Mutants: big, visible mini-bosses with readable attacks.
   - Sanity: hallucinations mostly just scare you, but below 25% sanity some become real mobs that attack (Rotting Stalker, Sneaking Terror; capped like every horror mob). Light, campfires, nearby players and resting outside the Hollow recover sanity. This is intentional.
 - **No one-shots:** a KubeJS damage cap so a single hit from any Hollow horror mob can take at most ~40% of a player's max health (bosses excluded, since they keep designed stats). This also covers mod updates that buff damage.
-- **Tuned in testing:** Cave Dweller and Ravenous damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only), with theft and light breaking off; Sanity's drain rate.
+- **Tuned in testing:** Cave Dweller damage, speed and spawn timers; Weeping Angel teleport range (short, same dimension only), with theft and light breaking off; Sanity's drain rate.
 - **Breathing room:** a short grace period after arriving, safe-ish zones around the portal (light-based spawn rules), and Corail Tombstone keeps items safe on death.
 - Spawn rates start low; we raise them after playtests rather than the other way round.
 

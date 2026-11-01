@@ -37,10 +37,6 @@
     {
       "id": "graveyard:lich",
       "required": false
-    },
-    {
-      "id": "the_ravenous:the_ravenous",
-      "required": false
     }
   ]
 }

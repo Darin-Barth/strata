@@ -2,16 +2,16 @@
 // (docs/hollow-progression.md sections 3-4). Blocks and items: startup_scripts/hollow_beacon.js.
 //   Placed only in the Hollow, it starts dark. Each Hollow Ember lights it for one in-game day
 //   (24,000 ticks, 20 minutes), up to 7 days stored; unfed, it goes dark again.
-//   While lit, within 24 blocks (48 with the Ravenous' echolocation organ): sanity comes back, no
-//   dread events (hollow_dread.js), no horror spawns (here and hollow_ravenous.js), beds work
-//   (hollow_rules.js), and the Ravenous can't eat it (#minecraft:screech_blocks). Upgraded, it also
-//   warns everyone inside when a horror mob comes within 64 blocks.
+//   While lit, within 24 blocks (48 once upgraded with an Echo Shard): sanity comes back, no
+//   dread events (hollow_dread.js), no horror spawns (here), and beds work (hollow_rules.js).
+//   Upgraded, it also warns everyone inside when a horror mob comes within 64 blocks.
+//   (The upgrade used the Ravenous' echolocation organ until The Ravenous was removed after 1.2.1.)
 // Beacons are stored in the server's persistent data, keyed "x,y,z".
 // KubeJS server scripts share one scope: every top-level name here starts with "hollowBeacon".
 const hollowBeaconLit = 'strata:pale_beacon'
 const hollowBeaconDark = 'strata:pale_beacon_dormant'
 const hollowBeaconEmber = 'strata:hollow_ember'
-const hollowBeaconOrgan = 'the_ravenous:the_ravenous_echolocation_organ'
+const hollowBeaconOrgan = 'minecraft:echo_shard'
 const hollowBeaconDimension = 'strata:hollow'
 const hollowBeaconDay = 24000
 const hollowBeaconMaxDays = 7
@@ -20,7 +20,7 @@ const hollowBeaconUpgradedRadius = 48
 const hollowBeaconWarnRadius = 64
 const hollowBeaconWarnCooldownMs = 30 * 1000
 const hollowBeaconSanityPerSecond = 0.01
-const hollowBeaconHorror = ['cave_dweller', 'weeping_angels', 'the_ravenous',
+const hollowBeaconHorror = ['cave_dweller', 'weeping_angels',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed']
 const hollowBeaconBlockPos = Java.loadClass('net.minecraft.core.BlockPos')
 const hollowBeaconAABB = Java.loadClass('net.minecraft.world.phys.AABB')
@@ -67,8 +67,8 @@ const hollowBeaconAt = (server, x, y, z) => {
 
 const hollowBeaconRadiusOf = b => b.up ? hollowBeaconUpgradedRadius : hollowBeaconRadius
 
-// True if the entity is in the Hollow within range of a lit beacon. Also used by hollow_dread.js,
-// hollow_ravenous.js and hollow_rules.js.
+// True if the entity is in the Hollow within range of a lit beacon. Also used by hollow_dread.js
+// and hollow_rules.js.
 const hollowBeaconNear = entity => {
   if (hollowBeaconDim(entity) !== hollowBeaconDimension) return false
   const server = entity.server
@@ -135,7 +135,7 @@ BlockEvents.placed(hollowBeaconLit, event => {
   if (player) hollowBeaconTell(player, 'The beacon is cold. Feed it a Hollow Ember.')
 })
 
-// Feed it an Ember, upgrade it with the organ, or check how long it has left.
+// Feed it an Ember, upgrade it with an Echo Shard, or check how long it has left.
 const hollowBeaconUse = event => {
   const player = event.player
   if (!player || String(event.hand) !== 'MAIN_HAND') return

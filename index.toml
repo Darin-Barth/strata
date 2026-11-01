@@ -366,7 +366,7 @@ hash = "047aef2fb3e96a65771e00e34f845b68528ee62a1d145c6a6d001db0391a928b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_hollow.snbt"
-hash = "b39416a82b10eafedf181372d0983a9c84ebca8b376cae6386b7c1437dff2e76"
+hash = "11f807b6a522953dca072da94de2aca988ecd42a60a59c606f3b63e90241bec7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/theurgy.snbt"
@@ -390,7 +390,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "31f67a05258a7fdf6237122670153a143fb83a8c21f3a737d402f157b2c4a15a"
+hash = "b8dc65dea39361cca57b3b9ea1f792f263f7e1795e80e0e13755ef06e93b32bc"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -418,7 +418,7 @@ hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "05352e69341171f1cb6e5c3d8074e3f51b0ecbff121a8acc5eb385d0665cad7c"
+hash = "1947af4e1fc01c1cfe1893dd2e6811893fbaf7c0b0c9e1df7394bc22754fed8d"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -6098,7 +6098,7 @@ hash = "509983524d07f232fdf03cf2877f1e4cab129aaed0b4d95bab397bc3589f853c"
 
 [[files]]
 file = "kubejs/data/strata/tags/entity_type/unfarmable.json"
-hash = "76670ca7621ecb9df99fb2754e2077f6dba9807a399256f56e92f83d79ca095b"
+hash = "5721d1867e2ee2cf2c4c4b2d6c6eebd487b8ea3e802e7a50cefaf6d6670adbd4"
 
 [[files]]
 file = "kubejs/data/strata/tags/item/pets/common.json"
@@ -6693,18 +6693,6 @@ file = "kubejs/data/strata/worldgen/structure_set/abyssal/wrecks.json"
 hash = "4eb5556dba4c3302c0ffc3835a31f0eeabeb9ce4791ddd6eb85d8139e3a5f65b"
 
 [[files]]
-file = "kubejs/data/the_ravenous/advancement/the_ravenous_advancement.json"
-hash = "645285c3dec5ab7c48f8072ce14de227f6973b0c5dc943d407e045ded1314ce1"
-
-[[files]]
-file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_ravenous_biome_modifier.json"
-hash = "50d9f58d6829a101f5f04829bc00bfda3e7ef8fa256afc645f76348550e5ea94"
-
-[[files]]
-file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_screecher_biome_modifier.json"
-hash = "2b5e996d2f10f109f8c4d2a95cc6b9038f8b26e28e7c3faae2587a7b23edcd9f"
-
-[[files]]
 file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_allthemodium_from_ores_allthemodium.json"
 hash = "c309a86846b250bcb1dc2617c2b088261b0d4c4a259995a98b6562e416d3f269"
 
@@ -6946,19 +6934,15 @@ hash = "11fc46f3608fda10dfc44fb0fdb6836c7c530b3746543cd2858610da8b455e7d"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
-hash = "dc952082f22e80106268bf1d163b33b4af3e6913c0a56f7d3e69fab6cac4560a"
+hash = "eb5b3bd5cbbcf3aca45d75437adf087b6d5adb573219c71205d5045bfad79af9"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
 hash = "f43626eeba3551dad0d74975715b7cc95e8f731554635447b0895948ccf5528b"
 
 [[files]]
-file = "kubejs/server_scripts/hollow_ravenous.js"
-hash = "ac2de210710bb56616677cea7e8c9faba3d3e342579ea11685636473af7c4dfd"
-
-[[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "678fe53713798cbc5177e4d2c14ee01292fc8ec595afab18dc6a7bc7998b37ce"
+hash = "c9d81179636d6dddff41bed5d11b6c4fdcdf377586ab314f509914fa3913d82d"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_portal_placement.js"
@@ -7058,7 +7042,7 @@ hash = "5b8f583b15af68c8a74d4820fccb919357bcc7cefaa18734010259d97963bfdf"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "d99e195c9872e2791e9f7fd9202f14ba9d63c7b606d971fddc027fb046f15039"
+hash = "e76aa0fe574627e5d94129bcb7eac31af3a04c7da325141de317a636f9b3c737"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
@@ -8778,11 +8762,6 @@ metafile = true
 [[files]]
 file = "mods/quark.pw.toml"
 hash = "0a2446bb53d2379ff42eee9ea90a640c40196d9e3a6e8f0ec65db5569e2538e2"
-metafile = true
-
-[[files]]
-file = "mods/ravenous.pw.toml"
-hash = "05e2443fd87bc8b622138f11fdb2ff5be9d28fd90a160c0f38e3d8eb3f574501"
 metafile = true
 
 [[files]]

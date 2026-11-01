@@ -3,8 +3,8 @@ from dsl import *
 # The Hollow (docs/hollow-progression.md sections 3-4, docs/hollow-design.md). Arrival runs along the
 # middle; four rows leave "first_light": survival (above), exploration (middle), the Lost Signal story
 # (below) and the boss ladder (top). All converge on the Pale Beacon, the Sanctuary and "The Survey
-# Complete". Gate materials (Hollow Embers, Holy Cross, Templar Artifact, bone staffs, echolocation
-# organs, darksteel) are never rewards. Hand-placed (at=) to keep the tracks in their rows.
+# Complete". Gate materials (Hollow Embers, Holy Cross, Templar Artifact, bone staffs, echo
+# shards, darksteel) are never rewards. Hand-placed (at=) to keep the tracks in their rows.
 C = chapter("the_hollow", "The Hollow", group="explore", icon="strata:pale_lantern",
             subtitle="Keep your lights lit, read what they left, light the Pale Beacon")
 q = C.quest
@@ -60,19 +60,6 @@ q("darksteel", "Darksteel", deps="detector", icon="grim_and_bleak:darksteel", at
     Normal ores don't grow in the Hollow's grimstone. Its metal is &eDarksteel&r: mine &eDarksteel Ore&r and smelt the raw ore into ingots.
 
     Darksteel makes &eGrim & Bleak&r's tools, weapons and armor, and several of its weapons have useful extras. You'll also need ingots for the Cursed Amulet and the Gate Key later on.""")
-
-q("listening", "Something Is Listening", deps="darksteel", icon="the_ravenous:anti_ravenous", at=(12.25, 1.5), tier=3,
-  tasks=[kill("the_ravenous:the_screecher"), item("the_ravenous:anti_ravenous")],
-  rewards=give("minecraft:golden_carrot", 8), desc="""
-    &cThe Ravenous&r hunts by sound. Building, digging and opening chests can call it from far away, and it &ceats through blocks&r to reach you. A screech comes before the chase: when you hear it, move.
-
-    Its young, the &cScreechers&r, carry an echolocation organ. Use one to craft the &eAnti-Ravenous&r: it stuns everything within 25 blocks and buys you time to run.""")
-
-q("walls", "Sound Walls", deps="listening", icon="minecraft:obsidian", at=(14.0, 1.5), tier=2,
-  tasks=[item("minecraft:obsidian", 32), check()], rewards=give("minecraft:obsidian", 16), desc="""
-    Nothing you build here is safe by default: the Ravenous chews through planks and stone. &eObsidian&r is too tough for it, so a camp you want to keep needs obsidian walls.
-
-    Build a shelter it can't eat into, then click the checkmark.""")
 
 # --- exploration track ---
 q("chapels", "Chapels", deps="first_light", icon="grim_and_bleak:holy_cross", at=(8.75, 4.5), tier=3,
@@ -164,14 +151,6 @@ q("gate_guardian", "The Gate Guardian", deps="champion", icon="grim_and_bleak:th
 
     It's heavily armored, shrugs off fire, explosions and potions, and calls copies of itself. Forge the &eThunder Sword&r first (it needs the Templar Artifact) and land the killing blow with it, or it drops nothing. When it dies, a holy smite hits everything around it: stand back.""")
 
-q("ravenous", "The Ravenous", deps=["gate_guardian", "listening"], icon="the_ravenous:ravenous_trophy", at=(19.25, -1.5), tier=5,
-  optional=True, tasks=[kill("the_ravenous:the_ravenous"), item("the_ravenous:the_ravenous_echolocation_organ")], desc="""
-    &7Optional: for the brave.&r
-
-    Stop running and hunt &cthe Ravenous&r down. It grows stronger in phases as it eats, and lays eggs that hatch Screechers. Finish it in its last phase for its &eEcholocation Organ&r.
-
-    Bragging rights, and an upgrade for your Pale Beacon: right-click the beacon with the organ to widen its safe circle to &e48&r blocks and warn everyone inside when a horror mob comes within &e64&r.""")
-
 # --- the big goal ---
 q("beacon", "The Pale Beacon", deps=["champion", "chapels"], icon="strata:pale_beacon", at=(17.5, 4.5), tier=4,
   tasks=item("strata:pale_beacon"), desc="""
@@ -183,13 +162,15 @@ q("beacon", "The Pale Beacon", deps=["champion", "chapels"], icon="strata:pale_b
 
     That's 5 Hollow Embers. The lantern goes into it, so craft another if you ever need to relight a portal. The beacon can only be placed in the Hollow.""")
 
-q("sanctuary", "Sanctuary", deps=["beacon", "walls"], icon="minecraft:red_bed", at=(19.25, 4.5), tier=4,
+q("sanctuary", "Sanctuary", deps="beacon", icon="minecraft:red_bed", at=(19.25, 4.5), tier=4,
   tasks=check(), rewards=give("minecraft:soul_lantern", 4), desc="""
     Place the beacon in the Hollow. It starts &cdark&r: right-click it with a &5Hollow Ember&r to light it for one in-game day (20 minutes). It holds up to &e7&r days of Embers, and right-clicking with an empty hand shows how long it has left.
 
-    While it's lit, within &e24&r blocks: sanity comes back, the tricks stop, no horror mobs spawn, and the Ravenous isn't sent after you and can't eat the beacon. &eBeds work&r: sleep there to set your respawn point in the Hollow.
+    While it's lit, within &e24&r blocks: sanity comes back, the tricks stop, no horror mobs spawn. &eBeds work&r: sleep there to set your respawn point in the Hollow.
 
-    &cUnfed, it goes dark&r and all of that stops. The Ravenous can still eat your walls, so keep them obsidian. Light it, sleep beside it, then click the checkmark.""")
+    &eUpgrade:&r right-click it with an &bEcho Shard&r (from an Ancient City) to widen its safe circle to &e48&r blocks and warn everyone inside when a horror mob comes within &e64&r.
+
+    &cUnfed, it goes dark&r and all of that stops. Light it, sleep beside it, then click the checkmark.""")
 
 q("survey_complete", "The Survey Complete", deps=["sanctuary", "page_6", "gate_guardian"], icon="strata:pale_beacon",
   at=(21.0, 4.5), tier=5, shape="gear", size=2.0, rewards=give("minecraft:totem_of_undying"), desc="""
