@@ -75,8 +75,7 @@ q("map", "Find Your Way", deps="welcome", icon="minecraft:filled_map", desc="""
     Add waypoints for your base, a cool village or a dungeon (&eU&r opens the waypoint list).
     Waystones you discover show up on the map too.
 
-    &ePing Wheel&r: press the side mouse button to ping a spot for your friends.
-    Voice chat is built in: hold &eV&r (Simple Voice Chat) to talk to players near you.""")
+    &ePing Wheel&r: press the side mouse button to ping a spot for your friends.""")
 
 q("team", "Better Together", deps="welcome", icon="minecraft:cake", desc="""
     Make a team with your friends: open the &eTeams&r button at the top-left of your inventory,

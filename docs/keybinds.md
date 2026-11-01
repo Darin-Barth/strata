@@ -14,17 +14,6 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 
 **Movement and vanilla**: unchanged (WASD, Space, Shift, Ctrl sprint, E, Q, F, T, /, 1-9, Tab, F1-F3, F5, L, P).
 
-**Voice chat (Simple Voice Chat)**
-| Key | Action |
-|---|---|
-| V | Voice chat menu |
-| G | Group management |
-| N | Disable voice chat |
-| H | Hide voice chat icons |
-| F4 | Mute microphone |
-| Caps Lock | Push to talk (voice chat) |
-| Right Alt | Whisper (voice chat). Both voice keys must be bound to something: with no key set, the game logs an error every tick and stutters, so the pack binds an unbound one back to its default when you join. |
-
 **Combat and movement**
 | Key | Action |
 |---|---|
@@ -53,7 +42,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Shift+N | Occultism storage accessor |
 | Alt+J | Tom's Storage terminal |
 | Alt+G | Curios slots |
-| Shift+C | Open the workbench in your Crafting on a Stick slot (Curios) |
+| V | Open the workbench in your Crafting on a Stick slot (Curios) |
 | I | Aether accessories |
 | Alt+H | Accessories screen |
 | J | Ars Elemental curio pouch |
@@ -130,7 +119,7 @@ Twilight Forest Traveller's gear, Ice and Fire dragon riding, Vampirism crossbow
 
 ## Keys changed from the mods' defaults
 
-Each change keeps two actions from firing from one key in normal play.
+Each change keeps two actions from firing from one key in normal play. Simple Voice Chat was removed in 1.3 (the group talks on Discord); the keys moved off its V, G, N and H stay where they are.
 
 | Action | Mod default | Strata | Clashes with on the default |
 |---|---|---|---|
@@ -184,7 +173,7 @@ Each change keeps two actions from firing from one key in normal play.
 - Bosses'Rise (Block Factory's Bosses) "dodge roll" (Z): Combat Roll (R) is the pack's dodge.
 
 **Kept on purpose**
-- Simple Voice Chat keeps all its defaults except mute (V, G, N, H). Combat Roll keeps R. Xaero keeps M, Y, U,
+- Crafting on a Stick keeps V. Combat Roll keeps R. Xaero keeps M, Y, U,
   Numpad +. Sophisticated Backpacks keeps B. Iris keeps K and O. Quark's hotbar swapper keeps Z.
 - Shift, Ctrl and Alt still work as modifiers for Create, AE2, Jade, Mekanism, Iron's Spells, etc.
 - Werewolves' leap stays on Ctrl: it only works in werewolf form and is meant to pair with sprinting.
@@ -193,7 +182,7 @@ Each change keeps two actions from firing from one key in normal play.
 
 ## Things to know
 - **Sprinting holds Ctrl**, and a held Ctrl turns your next key into a Ctrl+key combo. So no Ctrl combo sits on a key you press while running (E, T, R, B, M, 1-9, Q, F): Ctrl+E opened the build wheel instead of your inventory. The Ctrl combos left (Ctrl+K skills, Ctrl+H, Ctrl+G, Ctrl+U, Ctrl+Z/Y) are on keys you don't press mid-run. (Effortless Building ignores an Alt modifier, so its wheel is Ctrl+I.)
-- **Holding a modifier claims the key.** With Shift held, V picks up a villager instead of opening the voice menu;
+- **Holding a modifier claims the key.** With Shift held, V picks up a villager instead of opening your Crafting on a Stick;
   with Alt held, 1-3 run Vampirism actions instead of switching hotbar slots (Vampirism's own default). If a key "does
   nothing", check you're not holding Shift, Ctrl or Alt.
 - **Carry On uses Left Alt**, not Shift: with its key unbound it takes over Shift + right-click, which many mods use for their own actions. Binding it to anything frees Shift + right-click again.

@@ -59,7 +59,7 @@
 		""
 		"Add waypoints for your base, a cool village or a dungeon (&eU&r opens the waypoint list). Waystones you discover show up on the map too."
 		""
-		"&ePing Wheel&r: press the side mouse button to ping a spot for your friends. Voice chat is built in: hold &eV&r (Simple Voice Chat) to talk to players near you."
+		"&ePing Wheel&r: press the side mouse button to ping a spot for your friends."
 	]
 	quest.74CDBCF76E1C34D2.title: "Better Together"
 	quest.74CDBCF76E1C34D2.quest_desc: [
