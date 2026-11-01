@@ -7,8 +7,8 @@ Changes committed on master since the last release (**v1.2.1**; notes in the Git
 - **Longer days:** a day takes 30 minutes instead of 20: 20 minutes of daylight, 10 of night, with sunrise and sunset split between them (`kubejs/server_scripts/strata_daylight.js`; `doDaylightCycle` stays on, the script holds the clock back on some ticks and syncs clients).
 - **Slower seasons:** Serene Seasons no longer moves on while nobody is online (`progress_season_while_offline = false`; it ran 24/7 on the server, a new season about every 8 hours of real time), and its day length matches the 30-minute day (`day_duration = 36000`). A season is 24 days, about 12 hours of play. Changing the day length can move the live world back a season or two (Serene Seasons saves a tick count, which now reads as fewer, longer days): mention it in the notes, or set it with `/season set` after the restart.
 - **Less rain:** Serene Seasons' dry spells between rains are back to vanilla's in spring, summer and autumn (10 minutes to 2.5 hours; they were cut to at most 1 h 20 in spring and summer) and longer in winter (20 minutes to 1.5 hours, was 10 to 30 minutes).
-- **Crafting on a Stick:** crafting table, anvil, smithing table, stonecutter, loom, grindstone and cartography table on a stick (stick + the workbench). Use it in hand, or put it in its own Curios slot (Alt+G) and press **V** to open it.
-- **Simple Voice Chat removed:** the group uses Discord. Its key script (`strata_voice_keys.js`, the unbound-key stutter fix) and default keys are gone with it, and V goes to Crafting on a Stick. Players who already have the old keys keep them in `options.txt`; V works once nothing else is on it (Reset All, or rebind).
+- **Crafting on a Stick:** crafting table, anvil, smithing table, stonecutter, loom, grindstone and cartography table on a stick (stick + the workbench). Use it in hand, or put it in its own Curios slot (Alt+G) and press **Shift+C** to open it (moved off the mod's V on Nov 1: V also fires item-only keys like MekaSuit, Ad Astra suit and wands; Shift+C only shares with Draconic tool modules while holding a Draconic tool).
+- **Simple Voice Chat removed:** the group uses Discord. Its key script (`strata_voice_keys.js`, the unbound-key stutter fix) and default keys are gone with it. Players who already have the old keys keep them in `options.txt`; existing players get the new Shift+C only with Reset All (or rebind it).
 - **Sleeping bag slot:** a Comforts sleeping bag goes in its own Curios slot (Alt+G); **Alt+S** lays it out one block in front of you and you go to sleep, and it packs itself back into the slot when you wake (`kubejs/*/strata_sleeping_bag.js`, slot in `kubejs/data/strata/curios`). Night only, like placing it by hand. **Test:** placement on flat and uneven ground, daytime refusal (bag must come back), monsters nearby, breaking the bag while asleep, logging out asleep, the key in Options > Controls, and the slot icon.
 - **Legendary ink back to default:** Iron's Spells' legendary ink is brewed with amethyst again (Epic Ink + amethyst shard in the Alchemist Cauldron). Boss gate M5 (dragon blood) is dropped: removed from `tools/gates/build_magic.py`, its override and the `strata:dragon_bloods` tag deleted, `docs/gate-map.md` updated.
 - **EMI info pages for Iron's Spells' cauldron:** inks, elixirs, Ice Venom, Timeless Slurry and Bloody Vellum get an info page in EMI with their Alchemist Cauldron recipe (`kubejs/client_scripts/strata_emi_info.js`). The cauldron brews liquids, so looking up the bottle found no recipe. **Test:** the pages show (EMI, press R on Legendary Ink).
@@ -20,7 +20,7 @@ Fresh server and fresh client installed from this build, plus a copy of the 1.2.
 
 **Passed**
 - Server boots, KubeJS 0 errors (startup 13, server 28 incl. the test script); upgrade from 1.2.0 deletes The Ravenous, Simple Voice Chat, Whispering Spirits and the legendary-ink override, adds Crafting on a Stick; no new errors in the log (the rest were already there in 1.2.0).
-- Client starts with no crash; KubeJS client scripts 0 errors; default keys applied: F7/F9 More Overlays, V Crafting on a Stick, Alt+S sleeping bag.
+- Client starts with no crash; KubeJS client scripts 0 errors; default keys applied: F7/F9 More Overlays, V Crafting on a Stick (since moved to Shift+C, not yet re-tested), Alt+S sleeping bag.
 - Day length measured: 0.542 clock ticks per tick by day, 0.916 by night (20 + 10 minutes).
 - Seasons: `day_duration` 36000, not moving while empty; rain intervals as planned (winter 20 min–1.5 h, rest vanilla).
 - All 17 gated recipes carry their gate items (M1–M4, M7–M21 incl. Theurgy); legendary ink is amethyst again.
@@ -38,7 +38,7 @@ Fresh server and fresh client installed from this build, plus a copy of the 1.2.
 **Still to test with real players** (the overnight client couldn't render with the PC's display off)
 - Join time; EMI info page on Legendary Ink; gate items visible in EMI.
 - Alt+S at night: you actually fall asleep, and wake with the bag back in the slot; in daytime the bag comes straight back.
-- V opens the Crafting on a Stick workbench. Note: V is shared with item-only keys (MekaSuit, Ad Astra suit, wands...); with a stick in the slot, those presses also open the workbench.
+- Shift+C opens the Crafting on a Stick workbench, and plain C still opens the Iron's spell wheel.
 - F7 / F9 overlays; the sun moving smoothly (no jumps); sleeping through the night still skips to morning.
 - /tpa and /tpahere between two players, across dimensions, with the chat buttons.
 - Hollow quest chapter opens.

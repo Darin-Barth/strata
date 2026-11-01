@@ -42,7 +42,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Shift+N | Occultism storage accessor |
 | Alt+J | Tom's Storage terminal |
 | Alt+G | Curios slots |
-| V | Open the workbench in your Crafting on a Stick slot (Curios) |
+| Shift+C | Open the workbench in your Crafting on a Stick slot (Curios) |
 | Alt+S | Lay out and sleep in the sleeping bag from your Sleeping Bag slot (Curios); it packs itself back up when you wake |
 | I | Aether accessories |
 | Alt+H | Accessories screen |
@@ -161,6 +161,7 @@ Each change keeps two actions from firing from one key in normal play. Simple Vo
 | Effortless Building modifiers | Numpad + | Numpad - | Xaero quick waypoint |
 | Draconic Evolution place item | P | Shift+P | Social Interactions |
 | Easy Villagers pick up | V | Shift+V | Voice chat menu |
+| Crafting on a Stick open workbench | V | Shift+C | MekaSuit, Ad Astra suit and wand keys (a stick in the slot opened the workbench with them) |
 | Carry On pick up (hold) | Shift (key unbound) | Left Alt | every mod's Shift + right-click action (opening blocks, magic) |
 | Shoulder Surfing swap shoulder | U | Ctrl+U | Xaero waypoint list |
 | Shoulder Surfing camera in / out | Up / Down | Home / End | Cobblemon party slot |
@@ -174,7 +175,7 @@ Each change keeps two actions from firing from one key in normal play. Simple Vo
 - Bosses'Rise (Block Factory's Bosses) "dodge roll" (Z): Combat Roll (R) is the pack's dodge.
 
 **Kept on purpose**
-- Crafting on a Stick keeps V. Combat Roll keeps R. Xaero keeps M, Y, U,
+- Combat Roll keeps R. Xaero keeps M, Y, U,
   Numpad +. Sophisticated Backpacks keeps B. Iris keeps K and O. Quark's hotbar swapper keeps Z.
 - Shift, Ctrl and Alt still work as modifiers for Create, AE2, Jade, Mekanism, Iron's Spells, etc.
 - Werewolves' leap stays on Ctrl: it only works in werewolf form and is meant to pair with sprinting.
@@ -183,7 +184,7 @@ Each change keeps two actions from firing from one key in normal play. Simple Vo
 
 ## Things to know
 - **Sprinting holds Ctrl**, and a held Ctrl turns your next key into a Ctrl+key combo. So no Ctrl combo sits on a key you press while running (E, T, R, B, M, 1-9, Q, F): Ctrl+E opened the build wheel instead of your inventory. The Ctrl combos left (Ctrl+K skills, Ctrl+H, Ctrl+G, Ctrl+U, Ctrl+Z/Y) are on keys you don't press mid-run. (Effortless Building ignores an Alt modifier, so its wheel is Ctrl+I.)
-- **Holding a modifier claims the key.** With Shift held, V picks up a villager instead of opening your Crafting on a Stick;
+- **Holding a modifier claims the key.** With Shift held, C opens your Crafting on a Stick instead of the Iron's spell wheel, and V picks up a villager;
   with Alt held, 1-3 run Vampirism actions instead of switching hotbar slots (Vampirism's own default). If a key "does
   nothing", check you're not holding Shift, Ctrl or Alt.
 - **Carry On uses Left Alt**, not Shift: with its key unbound it takes over Shift + right-click, which many mods use for their own actions. Binding it to anything frees Shift + right-click again.
