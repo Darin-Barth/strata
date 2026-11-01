@@ -5461,6 +5461,10 @@ file = "kubejs/data/strata/curios/entities/sleeping_bag.json"
 hash = "9da95c9ee1de1c2328f87c28a1f97e3198ad3792a34c442343b7acc1feb6bd43"
 
 [[files]]
+file = "kubejs/data/strata/curios/entities/umbrella.json"
+hash = "ae14c26dec3d5d665b6f5368df3cb2c77c8daa72ab8abb9e94ad95e2554d35b8"
+
+[[files]]
 file = "kubejs/data/strata/curios/slots/sleeping_bag.json"
 hash = "3671bcba54a762054c38579af159234d8dcacc915e2ec25e03e5e255bddaabcf"
 
