@@ -89,7 +89,6 @@ Hollow Embers are the main gate material. Boss trophies gate a few top items. Th
 | Tech | MekaSuit pieces and Meka-Tool | 2 each |
 | Tech | Draconic Evolution awakened core | 2 |
 | Magic | Ars Nouveau tier-3 mage armor upgrade | 1 per piece |
-| Magic | Iron's Spells legendary ink (in the amethyst's slot) | 1 |
 | Magic | Iron & Nouveau legendary-spell glyphs | 1 |
 | Magic | Occultism afrit summoning (red chalk tier) and the miner djinni | 1 each |
 | Magic | Theurgy netherite route | 1 |

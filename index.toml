@@ -3389,10 +3389,6 @@ file = "kubejs/data/irons_skills/puffish_skills/categories/school2/experience.js
 hash = "c451be10b5a95b3cb901d2586bf0270ad1206a7a376a13408a88c21447250c38"
 
 [[files]]
-file = "kubejs/data/irons_spellbooks/recipe/alchemist_cauldron/brew_legendary_ink.json"
-hash = "cdad39d53eecf2abb8d924522f624027410cee8dd984cdde971498da9c58ab6e"
-
-[[files]]
 file = "kubejs/data/irons_spellbooks/recipe/diamond_spell_book.json"
 hash = "82cc66d13a5d210a533cdc783d242d2c3914ba57ef2639c04de584223cd145d8"
 
@@ -6195,10 +6191,6 @@ hash = "509983524d07f232fdf03cf2877f1e4cab129aaed0b4d95bab397bc3589f853c"
 [[files]]
 file = "kubejs/data/strata/tags/entity_type/unfarmable.json"
 hash = "76670ca7621ecb9df99fb2754e2077f6dba9807a399256f56e92f83d79ca095b"
-
-[[files]]
-file = "kubejs/data/strata/tags/item/dragon_bloods.json"
-hash = "ee93877e6dd175b5cb1e4e8972907cd52601e5783efbd03400befb40da1bd7e6"
 
 [[files]]
 file = "kubejs/data/strata/tags/item/dragon_hearts.json"

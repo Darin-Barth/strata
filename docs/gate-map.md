@@ -50,7 +50,7 @@ Already gated (left alone): Draconic wyvern and chaotic cores, Powah nitro, Exte
 | M20 | Occultism djinni tier (Book of Binding (Djinni)) *(check)* | 1 `bosses_of_mass_destruction:blazing_eye` | Nether Gauntlet (BoMD) | mid |
 | M21 | Ars Stabilized Warp Scroll (reusable, cross-dimension) | +2 `minecraft:echo_shard` | Ancient cities (Deep Dark) | mid |
 | M1 | Ars tier-3 mage armor upgrade (`second_armor_upgrade`) | +1 `bosses_of_mass_destruction:ancient_anima` | Night Lich (BoMD, drops 2) | mid |
-| M5 | Iron's legendary ink | amethyst → any Ice and Fire dragon blood (`iceandfire:{fire,ice,lightning}_dragon_blood`) | Ice and Fire dragons | mid–late |
+| ~~M5~~ | Iron's legendary ink | **dropped Oct 31 (Darin):** back to the default amethyst recipe | — | — |
 | M8 | Occultism afrit tier: summon unbound afrit ritual | +1 **E** | the Hollow | mid |
 | M10 | Occultism miner djinni / dimensional mineshaft rituals | +1 `deeperdarker:warden_carapace` | Otherside temples (Deeper and Darker) | mid |
 | M11 | Theurgy netherite route (both sulfur recipes) | +1 **E** | the Hollow | mid–late |
@@ -116,7 +116,7 @@ Built as datapack overrides; checked on the test server (every sampled recipe sh
 - **T10:** the ultimate table's grid was full: the Abyssal Egg takes its emerald block's slot and the 4 Pearls go into the ultimate catalyst (whose only use is the table).
 - **M20:** the gate sits on the Book of Binding (Djinni), which is crafted once and reused for every djinni ritual. Chalk is used up, so a chalk gate would cost one boss kill per stick.
 - **M3:** the four legendary-spell glyphs (black hole, starfall, sculk tentacles, dragon breath).
-- New tags: `#strata:dragon_bloods`, `#strata:dragon_hearts`, `#strata:lich_relics`.
+- New tags: `#strata:dragon_hearts`, `#strata:lich_relics`.
 
 ## 6. Building it
 1. Section 1 fixes: the Theurgy and `possess_warden` changes come from the gate generators; the empty Sunken City tag is `kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json`. Section 5 removals: `server_scripts/strata_removed_items.js` and the Iron's spell config datapack.
