@@ -159,7 +159,7 @@ The pack has to work for players who never touch a machine, so there's a full la
 - **Building:** Handcrafted, Chipped, Macaw's suite, Supplementaries, Every Compat, Another Furniture, Plushie Mod, Cosmetic Armor Reworked.
 - **Storage:** Sophisticated Backpacks + Storage, Functional Storage, Tom's Simple Storage, AE2.
 - **Accessories:** Curios is the standard slot system. Artifacts, Relics, Reliquified Artifacts, Forsaken Relics.
-- **QoL:** EMI as the only recipe viewer, with EMI Ores, Advanced Loot Info and Just Enough Breeding; Jade, AppleSkin, Inventory Profiles Next (sort button), FTB Ultimine, FallingTree, Polymorph, Controlling, Carry On, Mouse Tweaks, Xaero's maps, FTB Chunks + FTB Teams (claims, chunk loading), Comforts. (Simple Voice Chat removed Oct 31: the group uses Discord.)
+- **QoL:** EMI as the only recipe viewer (TooManyRecipeViewers runs mods' JEI plugins in it), with EMI Ores, Advanced Loot Info and Just Enough Breeding; Jade, AppleSkin, Inventory Profiles Next (sort button), FTB Ultimine, FallingTree, Polymorph, Controlling, Carry On, Mouse Tweaks, Xaero's maps, FTB Chunks + FTB Teams (claims, chunk loading), Comforts. (Simple Voice Chat removed Oct 31: the group uses Discord.)
 
 ## Visuals and performance
 
