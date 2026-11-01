@@ -15,6 +15,34 @@ Changes committed on master since the last release (**v1.2.1**; notes in the Git
 - **Less lag: The Ravenous removed.** Its code searched 70 blocks around every mob, item and item frame, every tick, in every dimension (a broken check meant it never skipped anything that wasn't a Ravenous), on the server and on players' computers. It was the largest single cost left in the server's tick after 1.2.1 (8 of 50 busy samples; no other mod over 2). The Hollow loses the Ravenous and its Screechers: the quests *Something Is Listening*, *Sound Walls* and *The Ravenous* are gone, Sanctuary follows the Pale Beacon directly, and the beacon's upgrade now takes an **Echo Shard** instead of the echolocation organ (a beacon already upgraded stays upgraded). Nothing in the Hollow eats blocks any more. (Needs the new `.mrpack` and the server restart.) **Test:** KubeJS loads with 0 errors, the Hollow quest chapter opens, the beacon takes an Echo Shard.
 - **/tpa for everyone:** `/tpa <player>` asks to go to a player, `/tpahere <player>` asks them to come to you; they answer with `/tpaccept` or `/tpdeny` (or the chat buttons). Works across dimensions; requests last 60 seconds; a teleported player waits 10 seconds before the next one (`kubejs/server_scripts/strata_tpa.js`). Welcome quest, README and joining guide updated. **Test:** both directions, across dimensions, deny, expiry, the target logging off, the chat buttons, tab-completion of names.
 
+## Rehearsal (Nov 1, overnight)
+Fresh server and fresh client installed from this build, plus a copy of the 1.2.0 rehearsal server upgraded to it.
+
+**Passed**
+- Server boots, KubeJS 0 errors (startup 13, server 28 incl. the test script); upgrade from 1.2.0 deletes The Ravenous, Simple Voice Chat, Whispering Spirits and the legendary-ink override, adds Crafting on a Stick; no new errors in the log (the rest were already there in 1.2.0).
+- Client starts with no crash; KubeJS client scripts 0 errors; default keys applied: F7/F9 More Overlays, V Crafting on a Stick, Alt+S sleeping bag.
+- Day length measured: 0.542 clock ticks per tick by day, 0.916 by night (20 + 10 minutes).
+- Seasons: `day_duration` 36000, not moving while empty; rain intervals as planned (winter 20 min–1.5 h, rest vanilla).
+- All 17 gated recipes carry their gate items (M1–M4, M7–M21 incl. Theurgy); legendary ink is amethyst again.
+- Sleeping bag slot: registered (size 1, icon), takes all 16 Comforts bags. Key logic (fake player): lays the bag one block ahead, empties the slot, keeps the held item; packs both halves back into the slot; blocked ground leaves it in the slot; a bag broken while out just drops.
+- Pale Beacon: Ember lights it, Echo Shard upgrades it, a second shard is refused and kept.
+- /tpa: commands registered; accept, deny, expired and offline-requester paths run cleanly.
+- Crafting on a Stick: 9 items and recipes; its Curios slot exists.
+
+**Bugs found and fixed**
+- TooManyRecipeViewers made every client fail to load (it declares JEI 19.27; Polymorph, Sophisticated Core and FramedBlocks need newer): removed again.
+- 30-minute day did nothing (`level.dayTime` is a function in KubeJS): fixed.
+- Sleeping bag key threw for everyone (`getDirection()` is hidden in KubeJS): fixed.
+- /tpaccept and /tpdeny threw for everyone (`server.getPlayer(name)` throws): fixed.
+
+**Still to test with real players** (the overnight client couldn't render with the PC's display off)
+- Join time; EMI info page on Legendary Ink; gate items visible in EMI.
+- Alt+S at night: you actually fall asleep, and wake with the bag back in the slot; in daytime the bag comes straight back.
+- V opens the Crafting on a Stick workbench. Note: V is shared with item-only keys (MekaSuit, Ad Astra suit, wands...); with a stick in the slot, those presses also open the workbench.
+- F7 / F9 overlays; the sun moving smoothly (no jumps); sleeping through the night still skips to morning.
+- /tpa and /tpahere between two players, across dimensions, with the chat buttons.
+- Hollow quest chapter opens.
+
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).
 2. `python -I tools/curseforge_ids.py` (re-adds CurseForge IDs after mod updates; fix any "no longer used" line in
