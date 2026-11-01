@@ -37,7 +37,7 @@ Besides the usual dimensions, Strata adds three of its own:
 
 Strata is built around travel and earning your power, so a few things work differently:
 
-- **Teleporting is limited.** Everyone gets one `/home` (`/sethome` to set it, 10-second cooldown). There's no `/back`, `/rtp` or `/tpa`. Waystones cost XP: more for long trips, extra across dimensions. You can *earn* teleporting later (Mekanism teleporters, Ars Nouveau warps, blink spells).
+- **Teleporting is limited.** Everyone gets one `/home` (`/sethome` to set it, 10-second cooldown). `/tpa <player>` and `/tpahere <player>` take you to a friend or bring them to you once they `/tpaccept`. There's no `/back` or `/rtp`. Waystones cost XP: more for long trips, extra across dimensions. You can *earn* teleporting later (Mekanism teleporters, Ars Nouveau warps, blink spells).
 - **Flight takes effort.** Every way to fly takes real work to get (boss materials, late-game tiers, a tamed dragon) or costs something to run (fuel, power, mana, food, stamina).
 - **Difficulty is per player.** Pick your own Apotheosis World Tier (Alt+L) once you unlock more. Bosses keep their designed strength.
 - **Every dimension has its own ores.** The basics are at home; osmium is richest under the Abyssal Plain's seafloor, mithril grows in the Hollow, and draconium waits in the Nether and the End ([ore map](docs/ore-map.md)).

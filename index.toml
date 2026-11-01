@@ -390,7 +390,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b8dc65dea39361cca57b3b9ea1f792f263f7e1795e80e0e13755ef06e93b32bc"
+hash = "391af2ecd8278c8cf228ca8909ea46ae915eefe767e4d36bb429465bdd114647"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -7027,6 +7027,10 @@ hash = "2aae8f65b020cfb8d298ec5f3a332a7ea8fef5bf6f18161998c08613ce3a7c8c"
 [[files]]
 file = "kubejs/server_scripts/strata_tombstone.js"
 hash = "bb84d5e9b09a3097015633bdf4a9c1d83bb2c0fbdf78576b364f7fbcff515b77"
+
+[[files]]
+file = "kubejs/server_scripts/strata_tpa.js"
+hash = "26cc1a04e2be34eb7c8eda9a8d5155189270bf911340c1433cab9383e45155d5"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"

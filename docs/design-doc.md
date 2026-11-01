@@ -21,7 +21,7 @@ Guiding test for every mod: keep it when it adds a different way to play; questi
 Travel and logistics must cost something, so trains, airships and power grids stay worth building. Item-by-item rulings are in `docs/gate-map.md` section 5.
 
 **Teleporting:**
-- One `/home` per player with a 10-second cooldown (`kubejs/server_scripts/strata_home.js`). Non-ops have no `/back`, `/rtp` or `/tpa`.
+- One `/home` per player with a 10-second cooldown (`kubejs/server_scripts/strata_home.js`). `/tpa`, `/tpahere`, `/tpaccept` and `/tpdeny` for everyone (`strata_tpa.js`, Darin Oct 31: requests last 60 s, 10-second cooldown per teleported player). Non-ops have no `/back` or `/rtp`.
 - Waystones cost XP by distance, with an extra cost across dimensions. Waystones' warp scrolls and stones are removed from loot.
 - Ars Nouveau's single-use Warp Scroll (same dimension) stays as shipped. Its reusable, cross-dimension Stabilized Warp Scroll needs 2 echo shards (gate M21).
 - Earned teleporting is fine: Mekanism teleporters, Ars, blink spells, the Vampirism skill, Iron's Portal spell, the Oritech portal augment.
@@ -199,7 +199,7 @@ These are the tweaks that make the pack feel designed rather than piled together
   - Boss loot bags (`kubejs/server_scripts/strata_boss_bags.js`, item `strata:boss_bag`): when a boss in `#strata:boss_bags` dies, every player who hit it in the last 10 minutes gets a bag with their own full roll of its loot table; nothing drops on the floor. The killing blow's player gets the actual drops (so death-time drops added by other mods still land); everyone else gets a fresh roll with themselves as the killer. Loot modifiers (pets, gate drops) apply to every roll. Bosses that move their loot into their own chest (Twilight Forest) keep doing that for the main player. Each boss has its own bag texture (`tools/build_boss_bags.py`: colours from the boss's entity texture or a hand-picked palette, a themed emblem; selected by `custom_model_data` from the generated `strata_boss_bag_models.js`).
   - Strong pets stay but are weaker: Juggernaut and Illuminati cooldowns 10 min, Pac-Man's damage bonus grows 1 per kill, Pingot finds ore but doesn't extract it, and costlier upkeep food for Juggernaut, Illuminati, Wither, Sun, Black Hole, Loot, Pixie, Silverfish, Quantum Crystal Monster, Pac-Man and Anvil.
 - [x] Excessive Utilities flight: passes the flight rule (Angel Ring needs Grid Power).
-- [x] Player commands: `/home` + `/sethome` only (`strata_home.js`, 9a6507f).
+- [x] Player commands: `/home` + `/sethome` (`strata_home.js`, 9a6507f), `/tpa` + `/tpahere` (`strata_tpa.js`, Oct 31).
 - [x] Apotheosis elites and invaders rare near spawn (`kubejs/server_scripts/strata_elites.js`): 10% kept at world spawn, all by 2,000 blocks; Overworld only.
 - [x] Create Big Cannons: `NO_EXPLOSIVE_DAMAGE`; FTB Chunks claims already block explosions (default).
 - [x] Vampirism: PvP between factions only (`config/vampirism-server.toml`), on top of the team protection.

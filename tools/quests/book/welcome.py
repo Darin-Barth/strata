@@ -126,7 +126,8 @@ q("rules", "Rules of the Road", deps="map", icon="minecraft:writable_book", desc
     Strata is built around travel, so a few things are different here:
 
     &cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown),
-    and there's no /back, /rtp or /tpa.
+    and &e/tpa <player>&r or &e/tpahere <player>&r to visit a friend (they answer with &e/tpaccept&r
+    or &e/tpdeny&r). There's no /back or /rtp.
     &cFlight costs something:&r fuel, power, mana, stamina or durability.
     No "wear it and fly forever" items.
 
