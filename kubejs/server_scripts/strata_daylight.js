@@ -23,7 +23,7 @@ ServerEvents.tick(event => {
   const server = event.server
   const level = server.overworld()
   if (!level.gameRules.getBoolean(daylightRules.RULE_DAYLIGHT)) { daylightLast = -1; return }
-  const time = Number(level.dayTime)
+  const time = Number(level.getDayTime())
   // Only hold back a normal one-tick step: skip after /time set, sleeping through the night, etc.
   const normal = time === daylightLast + 1
   daylightLast = time
