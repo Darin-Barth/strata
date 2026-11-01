@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v1.3.0**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- (none yet)
+- **Crimson Blade crash workaround (NOT TESTED, not shipped; Darin: hold):** Forsaken Relics 1.0.1 crashed the server five times (Oct 30 22:40; Nov 1 01:31, 01:42, 01:43, 01:48): a mob killed by the blade's Bleed curse changes the mod's list of cursed mobs while the mod is walking through it (`ConcurrentModificationException` in `CrimsonBladeItem.tickCurses`). `kubejs/server_scripts/strata_crimson_blade.js` cancels the bleed damage (indirect magic, player as attacker and direct source, on ticks divisible by 20) and deals it one tick later, outside that loop. **Test before shipping:** reproduce the crash without the script (fake player with a Crimson Blade in Bleed mode, several zombies hit until cursed, then their health set to 1), then confirm with the script: no crash, the mobs still bleed and die, Hemorrhage still spreads, KubeJS 0 errors, and other magic damage (Iron's spells, potions) is unchanged. Ship as a server-only hotfix (1.3.1).
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).

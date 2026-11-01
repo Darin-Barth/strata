@@ -7105,6 +7105,10 @@ file = "kubejs/server_scripts/strata_coffin.js"
 hash = "3b3858df5b7fafd8c404a12319770af6042bd419e93f6a5a584fff71c1494148"
 
 [[files]]
+file = "kubejs/server_scripts/strata_crimson_blade.js"
+hash = "149181b4a35d02b9ba05babee84c8723d3042d321d4d6b4d6625c2f7addca6cb"
+
+[[files]]
 file = "kubejs/server_scripts/strata_daylight.js"
 hash = "a5d304b03165bc6872823f0a52f7cccf788b1e331134a8d282295b651e8c954c"
 
