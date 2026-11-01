@@ -1,4 +1,0 @@
-{
-  "_comment": "Strata gate M6 (docs/gate-map.md): loot only, no scroll crafting.",
-  "irons_spellbooks:allow_crafting": false
-}

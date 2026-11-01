@@ -40,7 +40,7 @@ Challenge is there for anyone who wants it, but the world stays friendly for bui
 - **Difficulty is per player.** Players progress at very different paces, so there are no server-wide difficulty stages. Difficulty comes from Apotheosis World Tiers (each player picks their own), dimension danger (the Hollow), and bosses with designed stats.
 - **Bosses keep their designed stats.**
 - **Apotheosis:** randomized gear, gems, elite mobs. Elites are rare near spawn and more common in the Nether, End and far out.
-- **Boss gating:** tech, magic and gear tiers need boss drops, Hollow Embers or Abyssal Pearls (`docs/gate-map.md`). Magic gets more and earlier road blocks than tech.
+- **Boss gating:** tech and gear tiers need boss drops, Hollow Embers or Abyssal Pearls (`docs/gate-map.md`). Magic has no road blocks (dropped Oct 31); its recipes are the mods' own.
 - **Other scalers:** Vampirism scales its own mobs to nearby player level.
 - **Safety nets:** Corail Tombstone so death doesn't scatter items; Redomesticate so pets aren't lost for good.
 - **Combat feel:** Better Combat + Apothic Combat + Combat Roll.
