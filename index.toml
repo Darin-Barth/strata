@@ -530,7 +530,7 @@ hash = "88931dcd01cadeee7c2372db6c6eba839f13673407cb653ff58530eaf9df49d7"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
-hash = "f655631afe9cfbcca2935d419039ad71a9af965287a2bbb4623acd3921701a5e"
+hash = "6385f28a131c3ba03744ac52ef265c883d22eccdc6d8b06ea71858f2b4084629"
 
 [[files]]
 file = "config/simplebackups-common.toml"

@@ -68,7 +68,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = 0.0
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 16777215
@@ -112,7 +112,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = 0.0
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 8877943
@@ -133,8 +133,8 @@
 	melt_percent = 0.0
 	melt_rolls = 0
 	biome_temp_adjustment = -0.8
-	min_rain_time = 12000
-	max_rain_time = 36000
+	min_rain_time = 24000
+	max_rain_time = 108000
 	min_thunder_time = -1
 	max_thunder_time = -1
 	grass_colour = 9339265
@@ -156,7 +156,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = 0.0
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 6783639
@@ -177,8 +177,8 @@
 	melt_percent = 0.0
 	melt_rolls = 0
 	biome_temp_adjustment = -0.8
-	min_rain_time = 12000
-	max_rain_time = 36000
+	min_rain_time = 24000
+	max_rain_time = 108000
 	min_thunder_time = -1
 	max_thunder_time = -1
 	grass_colour = 11489103
@@ -200,7 +200,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = 0.0
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 7831687
@@ -221,8 +221,8 @@
 	melt_percent = 0.0
 	melt_rolls = 0
 	biome_temp_adjustment = -0.8
-	min_rain_time = 12000
-	max_rain_time = 36000
+	min_rain_time = 24000
+	max_rain_time = 108000
 	min_thunder_time = -1
 	max_thunder_time = -1
 	grass_colour = 11489103
@@ -244,7 +244,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = 0.0
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 7307663
@@ -288,7 +288,7 @@
 	melt_rolls = 1
 	biome_temp_adjustment = -0.25
 	min_rain_time = 12000
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_thunder_time = 12000
 	max_thunder_time = 180000
 	grass_colour = 7831687
