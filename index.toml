@@ -529,6 +529,10 @@ file = "config/sanity_renewed/dimension/hollow.toml"
 hash = "88931dcd01cadeee7c2372db6c6eba839f13673407cb653ff58530eaf9df49d7"
 
 [[files]]
+file = "config/sereneseasons/seasons.toml"
+hash = "f655631afe9cfbcca2935d419039ad71a9af965287a2bbb4623acd3921701a5e"
+
+[[files]]
 file = "config/simplebackups-common.toml"
 hash = "60fd1c40c8380d711a1e4c47fb08a29ce3ab93c59200602429919a39af1fff33"
 
@@ -7093,6 +7097,10 @@ file = "kubejs/server_scripts/strata_boss_bags.js"
 hash = "b3049cfe1d736a55b32c4818caac3dddccc87053a7430e26102ab145edc4db4a"
 
 [[files]]
+file = "kubejs/server_scripts/strata_daylight.js"
+hash = "0e06819459562e77196a5f7d209def8961b3ba4f64f26e024f17b6e6f1d0aef3"
+
+[[files]]
 file = "kubejs/server_scripts/strata_elites.js"
 hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
 
@@ -8645,6 +8653,11 @@ metafile = true
 [[files]]
 file = "mods/moonlight.pw.toml"
 hash = "0ea723fc14aff940fdf831fa9b15ab6a06dee4b7bccd9f33cae16c2d23053af2"
+metafile = true
+
+[[files]]
+file = "mods/more-overlays-updated.pw.toml"
+hash = "ffbee4fde3dbece677e13d7c2d65a24ba32cd12bbd44d47e623cfd26ed8417fc"
 metafile = true
 
 [[files]]

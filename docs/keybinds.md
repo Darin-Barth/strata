@@ -119,6 +119,8 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Ctrl+U | Shoulder Surfing: swap shoulder |
 | Home / End | Shoulder Surfing: camera in / out |
 | F6 / F8 / F10 | Atmospherics menu / Almanac dungeon configs / KubeJS KubeDex |
+| F7 | Mob spawn overlay (More Overlays: yellow X = spawns at night, red X = spawns any time) |
+| F9 | Chunk borders (More Overlays; press again for the grid modes) |
 
 **Only while holding or wearing the item** (these share keys on purpose; they don't fire without the item): Mekanism
 suit modes (V/G/J/B, N item mode), jetpacks, Ad Astra suit flight, Cataclysm / Legendary Monsters / Deep Aether armor

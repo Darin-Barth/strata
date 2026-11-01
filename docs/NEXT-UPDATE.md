@@ -1,9 +1,11 @@
 # Queued for the next update
 
-Changes committed on master since the last release (**v1.2.0**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
+Changes committed on master since the last release (**v1.2.1**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- (none yet)
+- **Mob spawn overlay:** More Overlays Updated (client). F7 marks blocks where monsters can spawn (yellow X at night, red X any time); F9 shows chunk borders.
+- **Longer days:** a day takes 30 minutes instead of 20: 20 minutes of daylight, 10 of night, with sunrise and sunset split between them (`kubejs/server_scripts/strata_daylight.js`; `doDaylightCycle` stays on, the script holds the clock back on some ticks and syncs clients).
+- **Slower seasons:** Serene Seasons no longer moves on while nobody is online (`progress_season_while_offline = false`; it ran 24/7 on the server, a new season about every 8 hours of real time), and its day length matches the 30-minute day (`day_duration = 36000`). A season is 24 days, about 12 hours of play. Changing the day length can move the live world back a season or two (Serene Seasons saves a tick count, which now reads as fewer, longer days): mention it in the notes, or set it with `/season set` after the restart.
 
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).
