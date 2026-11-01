@@ -7150,7 +7150,7 @@ hash = "bb84d5e9b09a3097015633bdf4a9c1d83bb2c0fbdf78576b364f7fbcff515b77"
 
 [[files]]
 file = "kubejs/server_scripts/strata_tpa.js"
-hash = "26cc1a04e2be34eb7c8eda9a8d5155189270bf911340c1433cab9383e45155d5"
+hash = "468b44c3e779e50b175e7ca58dbcbe1b0396f7b775817c5088b5895073bf6d74"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"

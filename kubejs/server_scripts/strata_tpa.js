@@ -64,7 +64,7 @@ ServerEvents.commandRegistry(event => {
     if (!player) { ctx.source.sendFailure(Text.of('Only players can use this.')); return 0 }
     const req = tpaTake(player)
     if (!req) return 0
-    const other = ctx.source.server.getPlayer(req.from)
+    const other = ctx.source.server.playerList.getPlayerByName(req.from)
     if (!other) { player.tell(Text.red(`${req.from} isn't online any more.`)); return 0 }
     const mover = req.here ? player : other
     const dest = req.here ? other : player
@@ -88,7 +88,7 @@ ServerEvents.commandRegistry(event => {
     const req = tpaTake(player)
     if (!req) return 0
     player.tell(Text.gray('Request denied.'))
-    const other = ctx.source.server.getPlayer(req.from)
+    const other = ctx.source.server.playerList.getPlayerByName(req.from)
     if (other) other.tell(Text.gray(`${player.username} denied your teleport request.`))
     return 1
   }))
