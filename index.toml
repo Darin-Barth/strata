@@ -162,7 +162,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "ad047707755bbf6363c3a6999164a6300b1a74f62f0b90d6039a180af446ad05"
+hash = "fde5d629f3c31f1aee2039ec5b0002a540d8da77f00ec6e77bcdbba201a41b59"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -7698,6 +7698,11 @@ metafile = true
 [[files]]
 file = "mods/cosmetic-armor-reworked.pw.toml"
 hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
+metafile = true
+
+[[files]]
+file = "mods/crafting-on-a-stick.pw.toml"
+hash = "5f6e749babbf8434a086975ecfd27d0f5908973a1357288f36e399e08aa85204"
 metafile = true
 
 [[files]]

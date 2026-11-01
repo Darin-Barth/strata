@@ -53,6 +53,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Shift+N | Occultism storage accessor |
 | Alt+J | Tom's Storage terminal |
 | Alt+G | Curios slots |
+| Shift+C | Open the workbench in your Crafting on a Stick slot (Curios) |
 | I | Aether accessories |
 | Alt+H | Accessories screen |
 | J | Ars Elemental curio pouch |

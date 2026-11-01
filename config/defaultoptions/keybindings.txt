@@ -26,6 +26,7 @@ key_key.curios.open.desc:key.keyboard.g:ALT
 key_accessories.key.open_accessories_screen:key.keyboard.h:ALT
 
 # Bags and remote storage off B (Sophisticated Backpacks), V and N (voice chat)
+# Crafting on a Stick: off V (voice chat) to Shift+C
 key_key.occultism.backpack:key.keyboard.b:ALT
 key_key.occultism.ender_bag:key.keyboard.e:ALT
 key_key.occultism.storage_remote:key.keyboard.n:SHIFT
@@ -59,6 +60,7 @@ key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
 key_key.effortlessbuilding.open_modifiers_screen:key.keyboard.keypad.subtract
 key_key.draconicevolution.place_item:key.keyboard.p:SHIFT
 key_key.easy_villagers.pick_up:key.keyboard.v:SHIFT
+key_crafting_on_a_stick.key.open_curios:key.keyboard.c:SHIFT
 
 # Camera: Shoulder Surfing off U and the up/down arrows (Xaero waypoints, Cobblemon party)
 key_key.shouldersurfing.swap_shoulder:key.keyboard.u:CONTROL
