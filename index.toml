@@ -1313,6 +1313,10 @@ file = "kubejs/client_scripts/pokeworld_party_hud.js"
 hash = "81dc7c46ea6512841fe76f5ae810db14656e4f68753c66f5c200d3ce0cde1b89"
 
 [[files]]
+file = "kubejs/client_scripts/strata_emi_info.js"
+hash = "fa70d0674923b54b10683bfc6db98f59b5eaa01a2d80f82a28c6a40fd952d4ee"
+
+[[files]]
 file = "kubejs/client_scripts/strata_lang.js"
 hash = "a99fb3e28cb78152c41243e4665375db071cbcc1c7b945418099a7038f1016f8"
 
