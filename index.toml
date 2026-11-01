@@ -583,6 +583,10 @@ file = "config/vanillabackport-common.toml"
 hash = "500d71ab8417e3763438db17ac3cb8844c80939c74be9b9179feb273d8c9115e"
 
 [[files]]
+file = "config/watut-server.toml"
+hash = "74ba3498d39153e1de856fb8823a09c4b8e409cee632e55007ba699e86ef1d7e"
+
+[[files]]
 file = "config/waystones-common.toml"
 hash = "8459e2b044fca5000feb1fd5432bb87cf06e9568bbb729207afaec1d9a6d0751"
 
@@ -7142,7 +7146,7 @@ hash = "685f27a02642972171ad123b398a7f42aeea1949ed5f3f45402fa144699581c3"
 
 [[files]]
 file = "kubejs/server_scripts/strata_sleeping_bag.js"
-hash = "d3c4bb6b73aa9216d64aab69f8e1d8f159828897e24f2a327511f961a73a9ae4"
+hash = "a0e0a9efc62dc372d01357d02b37db3e4063a362bd4722e830a263e41dbc4582"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"

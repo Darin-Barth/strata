@@ -14,7 +14,33 @@ Changes committed on master since the last release (**v1.2.1**; notes in the Git
 - **Legendary ink back to default:** Iron's Spells' legendary ink is brewed with amethyst again (Epic Ink + amethyst shard in the Alchemist Cauldron). Boss gate M5 (dragon blood) is dropped: removed from `tools/gates/build_magic.py`, its override and the `strata:dragon_bloods` tag deleted, `docs/gate-map.md` updated.
 - **EMI info pages for Iron's Spells' cauldron:** inks, elixirs, Ice Venom, Timeless Slurry and Bloody Vellum get an info page in EMI with their Alchemist Cauldron recipe (`kubejs/client_scripts/strata_emi_info.js`). The cauldron brews liquids, so looking up the bottle found no recipe. **Test:** the pages show (EMI, press R on Legendary Ink).
 - **Less lag: The Ravenous removed.** Its code searched 70 blocks around every mob, item and item frame, every tick, in every dimension (a broken check meant it never skipped anything that wasn't a Ravenous), on the server and on players' computers. It was the largest single cost left in the server's tick after 1.2.1 (8 of 50 busy samples; no other mod over 2). The Hollow loses the Ravenous and its Screechers: the quests *Something Is Listening*, *Sound Walls* and *The Ravenous* are gone, Sanctuary follows the Pale Beacon directly, and the beacon's upgrade now takes an **Echo Shard** instead of the echolocation organ (a beacon already upgraded stays upgraded). Nothing in the Hollow eats blocks any more. (Needs the new `.mrpack` and the server restart.) **Test:** KubeJS loads with 0 errors, the Hollow quest chapter opens, the beacon takes an Echo Shard.
+- **What Are They Up To shows other players' screens again:** the little screen in front of a player who has their inventory, a chest, a crafting table and so on open never appeared, only the raised hands. WATUT copies the player's real screen and shrinks it with its own blur shader, and in this pack that step draws nothing (tested Nov 1: the copy of the inventory is right, the shrunk image is empty, with or without Iris shaders; WATUT's shaders load, so some other rendering mod gets in the way). `config/watut-server.toml` now sets `dynamicGuiUseOldSimpleGUIVisual = true`: WATUT's own pictures of an inventory, chest, crafting table, furnace etc. instead of a live copy of the screen. The typing bubble in front of a player was already working (tested with and without shaders).
 - **/tpa for everyone:** `/tpa <player>` asks to go to a player, `/tpahere <player>` asks them to come to you; they answer with `/tpaccept` or `/tpdeny` (or the chat buttons). Works across dimensions; requests last 60 seconds; a teleported player waits 10 seconds before the next one (`kubejs/server_scripts/strata_tpa.js`). Welcome quest, README and joining guide updated. **Test:** both directions, across dimensions, deny, expiry, the target logging off, the chat buttons, tab-completion of names.
+
+## Client tests (Nov 1, morning)
+Test client on the rehearsal server, with Complementary Unbound shaders on and off.
+
+**Passed**
+- Join: about 35 s from Connect to in-game (the client needs more than 6 GB of memory: it ran out loading resource packs at 6 GB, fine at 10 GB).
+- EMI: Legendary Ink has its info page (Alchemist Cauldron recipe) next to its loot tabs.
+- F7 turns the spawn overlay on, F9 cycles chunk borders (corners, grid, off).
+- Sleeping bag key (real key press on the test client, bound to Scroll Lock for the test): lays the bag out, you fall asleep, the night fast-forwards (Seamless Sleep) and you wake at dawn with the bag back in its slot.
+- Sun: the clock moves 0.55 ticks per tick by day and steps back by one tick now and then when the server corrects it (1/24000 of a day, invisible).
+- /tpa: the request shows **[Accept]** and **[Deny]** buttons that run /tpaccept and /tpdeny; /tpaccept from the real client answers.
+- The Hollow quest chapter opens with its 24 quests.
+- Umbrella slot: the umbrella sits in its own slot and gives Sunscreen from there.
+- WATUT: typing bubble shows in front of another player (shaders on and off); with the setting above, the inventory picture shows too.
+
+**Bugs found and fixed**
+- After a night in the sleeping bag, the bag landed in the main inventory, not the slot (Comforts packs an auto-used bag into the inventory itself), so the next Alt+S found the slot empty: `strata_sleeping_bag.js` moves it back into the slot.
+- WATUT's live screen copy is blank (above).
+
+**Found, not fixed (Darin's call)**
+- Draconic Evolution's tool keys sit on **C** (tool config) and **Shift+C** (tool modules), and they fire with no Draconic tool: every C press (Iron's spell wheel) also prints "You don't have any configurable items in your inventory!", and Shift+C, the new Crafting on a Stick key, will too.
+
+**Not tested** (needs a real keyboard: Shift, Ctrl and Alt can't be faked into the game window)
+- Shift+C opening the Crafting on a Stick workbench; Alt+S itself (the key behind it works).
+- /tpa between two real players across dimensions (only a stand-in player here).
 
 ## Rehearsal (Nov 1, overnight)
 Fresh server and fresh client installed from this build, plus a copy of the 1.2.0 rehearsal server upgraded to it.

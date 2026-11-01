@@ -74,8 +74,21 @@ const sleepingBagPackUp = player => {
   data.remove('strata_bag_pos')
   data.remove('strata_bag_wait')
   const block = player.level.getBlock(pos)
-  // Broken or moved meanwhile: the player already has the dropped bag.
-  if (!String(block.id).startsWith('comforts:sleeping_bag')) return
+  if (!String(block.id).startsWith('comforts:sleeping_bag')) {
+    // After a night's sleep Comforts packs the bag into the main inventory itself: move it back into the slot.
+    // (Broken meanwhile, the bag dropped on the ground and there is nothing to move.)
+    let slotStacks = sleepingBagStacks(player)
+    if (!slotStacks || !slotStacks.getStackInSlot(0).isEmpty()) return
+    let inv = player.inventory
+    for (let i = 0; i < inv.getContainerSize(); i++) {
+      if (String(inv.getItem(i).id) === id) {
+        inv.getItem(i).shrink(1)
+        slotStacks.setStackInSlot(0, Item.of(id))
+        return
+      }
+    }
+    return
+  }
   const props = block.properties
   const facing = sleepingBagDir.valueOf(String(props.get('facing')).toUpperCase())
   const other = String(props.get('part')) === 'foot' ? pos.relative(facing) : pos.relative(facing.getOpposite())
