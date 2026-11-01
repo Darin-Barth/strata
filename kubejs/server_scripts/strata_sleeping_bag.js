@@ -21,8 +21,8 @@ const sleepingBagStacks = player => {
 
 const sleepingBagDimensionOf = player => { const d = player.level.dimension; return String(d && d.location ? d.location() : d) }
 
-NetworkEvents.dataReceived('strata_sleeping_bag', event => {
-  const player = event.player
+// The key: lay the bag out and sleep (a named function so a test can call it).
+const sleepingBagLayOut = player => {
   if (!player || player.isSleeping() || player.isSpectator()) return
   const data = player.persistentData
   if (data.contains('strata_bag_item')) return
@@ -38,7 +38,7 @@ NetworkEvents.dataReceived('strata_sleeping_bag', event => {
   }
   // Use the bag on the top of the block in front of the player, from the main hand (Comforts reads the item
   // from the hand), then put back whatever the player was holding.
-  const spot = player.blockPosition().relative(player.getDirection())
+  const spot = player.blockPosition().relative(player.horizontalFacing)
   const below = spot.below()
   const held = player.mainHandItem.copy()
   const id = String(bag.id)
@@ -56,13 +56,12 @@ NetworkEvents.dataReceived('strata_sleeping_bag', event => {
   data.putString('strata_bag_dim', sleepingBagDimensionOf(player))
   data.putLong('strata_bag_pos', spot.asLong())
   data.putInt('strata_bag_wait', 2)
-})
+}
+NetworkEvents.dataReceived('strata_sleeping_bag', event => sleepingBagLayOut(event.player))
 
 // Pack the bag up once the player is out of it (checked every half second; the first check waits a second, so
 // Comforts has time to put them to sleep).
-PlayerEvents.tick(event => {
-  const player = event.player
-  if (player.tickCount % 10 !== 0) return
+const sleepingBagPackUp = player => {
   const data = player.persistentData
   if (!data.contains('strata_bag_item') || player.isSleeping()) return
   const wait = data.getInt('strata_bag_wait')
@@ -85,4 +84,7 @@ PlayerEvents.tick(event => {
   const stacks = sleepingBagStacks(player)
   if (stacks && stacks.getStackInSlot(0).isEmpty()) stacks.setStackInSlot(0, Item.of(id))
   else player.give(Item.of(id))
+}
+PlayerEvents.tick(event => {
+  if (event.player.tickCount % 10 === 0) sleepingBagPackUp(event.player)
 })
