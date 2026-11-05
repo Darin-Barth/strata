@@ -8450,6 +8450,11 @@ hash = "a570475b863138a084a26d496ef2563de6496ce94db7d1358b9160ac7dc42775"
 metafile = true
 
 [[files]]
+file = "mods/jei.pw.toml"
+hash = "dfe7faef7ac3bacb871912b8cd909d73bb051277e2f2fa9a83722cbacec7edaf"
+metafile = true
+
+[[files]]
 file = "mods/jupiter.pw.toml"
 hash = "a3d803079f7cba47f9d6bf728198f2c335a13938ef50bbdaa3f7ae2457bef58d"
 metafile = true
@@ -8637,6 +8642,11 @@ metafile = true
 [[files]]
 file = "mods/mes-moogs-end-structures.pw.toml"
 hash = "39ab0f4b4b9a1917ffc90082b85f814329d0894d7ae0775aa37da84080557045"
+metafile = true
+
+[[files]]
+file = "mods/mezzconfig.pw.toml"
+hash = "a2e762cbb755a56c0f46cc9401842f3b9ee0aa59263029df8f8e4c9f5b803162"
 metafile = true
 
 [[files]]
