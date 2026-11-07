@@ -1,0 +1,17 @@
+{
+  "general": {
+    "enable_global_spacing_and_separation_modifier": true,
+    "global_spacing_and_separation_modifier": 1.5
+  },
+  "structure_namespaces": [],
+  "structures": [],
+  "structure_sets": [
+    {
+      "name": "minecraft:pillager_outposts",
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 32,
+      "separation": 8
+    }
+  ],
+  "structure_template_pools": []
+}

@@ -213,7 +213,7 @@ These are the tweaks that make the pack feel designed rather than piled together
   - *Open:* Extended Crafting endgame (gate map T10). Rarity pass for new structures: low value now the world is pregenerated.
 - [ ] Wave 5 checks.
   - Done or settled: Ad Astra oxygen and launch rules (defaults), Create Jetpack air (ongoing cost), In Control! for the Hollow (00757be), LootJS strip script (`strata_removed_items.js`).
-  - *Open:* Ad Astra rocket gates (gate map T7/T8), Ad Astra Overworld ores (check), Structurify spacing (probably skip: world pregenerated), Immersive Optimization test with farms, contraptions and Cobblemon (work).
+  - *Open:* Ad Astra rocket gates (gate map T7/T8), Ad Astra Overworld ores (check), Immersive Optimization test with farms, contraptions and Cobblemon (work).
 - [ ] In-game test notes.
   - Lootr confirmed; Seven Seas junk in icebergs is cosmetic (ignore); client heap 79–94% of 16 GB (watch).
   - Pregenerated: Overworld, Nether, End, Aether, Kakuto, Twilight (d91b9e3).
@@ -223,6 +223,7 @@ These are the tweaks that make the pack feel designed rather than piled together
   - Done or settled: Apocalyptic Bosses loot and density (8fb8e2a), Oritech flight (research cost; gate map §5), WaterFrames (URL whitelist is image and video hosts only).
   - *Open:* Apocalyptic ultimate ingot (gate map G6), Draconic tiers (T9), Oritech flight dragon heart (G5) and an in-game check that the exosuit jetpack drains power, Crystal Chronicles: pregenerate and check its End sub-biome against Nullscape (work).
 - [x] Happy Ghast: passes the flight rule. Optional: a harness cost if it ever feels cheap.
+- [x] Structures spread out 1.5x (Darin, Nov 7: "structures are spawning way too close to each other"): Structurify's global modifier in `config/structurify.json` covers vanilla-style placement; Moog's and Integrated (IDAS, Integrated Villages) placement ignores it, so `tools/build_structure_spacing.py` writes their 233 structure sets into `kubejs/data` at 1.5x. Pillager outposts stay at vanilla 32/8 (under Structurify they jumped from about 2 km to 5 km at 40/10 and 11 km at 48/12). New land only.
 - [x] Inventory Pets structures made rare: their chests have items baked in (no loot table), so Lootr can't make them per-player. Overrides in `kubejs/data/inventorypets/`: tree top 24-chunk spacing, underground dungeon/Nether/End dungeons 40, sea cave 48. **Sky dungeons only generate in the Aether** (24 spacing; they sit on island tops at about Y 132). Measured nearest-structure distances from five points: tree top 0.5–3.8 km, underground 0.6–3.2 km, sea cave 1.3–2.8 km, Nether 0.4–1.9 km (Nether blocks), End 0.3–0.9 km, Aether sky dungeon 0.06–0.9 km.
 
 ## Test plan
