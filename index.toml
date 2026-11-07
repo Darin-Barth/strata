@@ -7082,7 +7082,7 @@ hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "11fc46f3608fda10dfc44fb0fdb6836c7c530b3746543cd2858610da8b455e7d"
+hash = "79ce5d24a7f4d2239182926d1b3e84f3858439b24fb479a1d0e4424cfba3d9d6"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"

@@ -256,7 +256,6 @@ const abyssalKeepSurfaceSpot = player => {
 BlockEvents.rightClicked('strata:lifepod_console', event => {
   const player = event.player
   if (!player || String(event.hand) !== 'MAIN_HAND') return
-  event.cancel()
   const data = player.persistentData
   const server = event.server
   let to
@@ -272,6 +271,7 @@ BlockEvents.rightClicked('strata:lifepod_console', event => {
   server.runCommandSilent(`execute in minecraft:overworld run tp ${player.username} ${to}`)
   server.runCommandSilent(`execute in minecraft:overworld at ${player.username} run playsound minecraft:entity.player.splash.high_speed player ${player.username} ~ ~ ~ 1 1`)
   player.displayClientMessage(Text.aqua('You surface.').italic(), true)
+  event.cancel() // last: in KubeJS cancel() ends the handler (with it first, the console did nothing)
 })
 
 PlayerEvents.tick(event => {
