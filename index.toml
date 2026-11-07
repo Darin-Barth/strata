@@ -2909,6 +2909,10 @@ file = "kubejs/data/create_new_age/recipe/shaped/reactor_fuel_acceptor.json"
 hash = "0428888c74ac6ea371a476d2bc933c7e018b56f08b81e5b517eb78a02818a0d5"
 
 [[files]]
+file = "kubejs/data/createliquidfuel/data_maps/fluid/liquid_fuel.json"
+hash = "f255f2b614bc7f2d7e8faad2413f0d7ac6eac582eff7becda5645a562502d34d"
+
+[[files]]
 file = "kubejs/data/createpropulsion/worldgen/placed_feature/ore_platinum.json"
 hash = "402054e3a010b1ddfad427175faa01afa3970d5f2e31edc2e6a4789cacdba743"
 
