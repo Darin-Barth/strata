@@ -3421,6 +3421,26 @@ file = "kubejs/data/legendary_monsters/neoforge/biome_modifier/bomber.json"
 hash = "d89b3e744079b316f9c7a29b2d456540cbeabafe422a801f8e11467070ded0cd"
 
 [[files]]
+file = "kubejs/data/legendary_monsters/structure/cloudy_temple_mini1.nbt"
+hash = "b12ceba1570d1d765dd59b03d180946962234ab08aa93aa8dc7586a7c22b760f"
+
+[[files]]
+file = "kubejs/data/legendary_monsters/structure/cloudy_temple_mini2.nbt"
+hash = "4a09739184babb8821cb52bc94d66652c119314dd34ac6e3cbf2f11c4a969c02"
+
+[[files]]
+file = "kubejs/data/legendary_monsters/structure/cloudy_temple_part2.nbt"
+hash = "a1a9cb70519f1e732b4848a49a1dbab0a7b74f7ae99506ccd6e565a6691c7ae9"
+
+[[files]]
+file = "kubejs/data/legendary_monsters/structure/cloudy_temple_part3.nbt"
+hash = "085241feb78e5394c4c0461da2c8b5b197580ee1887d4d14a91d45adf5662a95"
+
+[[files]]
+file = "kubejs/data/legendary_monsters/structure/cloudy_temple_part4.nbt"
+hash = "440af4a619cdfeb56fe44cf6d8fcb415cf152557a301537fafdc503bc0088c90"
+
+[[files]]
 file = "kubejs/data/mekanism/recipe/antiprotonic_nucleosynthesizer.json"
 hash = "e85934ee583402920ccab0f929514beee3df66949f5b4e4c8edb1e6433ed1ae4"
 
@@ -7163,6 +7183,10 @@ hash = "a0e0a9efc62dc372d01357d02b37db3e4063a362bd4722e830a263e41dbc4582"
 [[files]]
 file = "kubejs/server_scripts/strata_spawner_chests.js"
 hash = "7c91e581681157eca515e554cbbe529ee9303c880891d61a7af08e4f74d197b9"
+
+[[files]]
+file = "kubejs/server_scripts/strata_stratling.js"
+hash = "d1f0da7dee76dc86e85520a30890ba755926c9d79151ff04f188519e0788b723"
 
 [[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
