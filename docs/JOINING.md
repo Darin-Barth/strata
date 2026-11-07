@@ -10,7 +10,7 @@ Strata is a big modpack (about 400 mods). It runs on Minecraft 1.21.1 with NeoFo
    everything; the first time takes a few minutes.
 
 ## 2. Give it enough memory
-Open the Strata instance → **Settings → Java and memory** → set memory to **10–12 GB** (8 GB minimum).
+Open the Strata instance → **Settings → Java and memory** → set memory to **10–12 GB** (10 GB minimum: at 8 GB the game can freeze a few minutes after joining).
 Less than that and the game stutters or crashes.
 
 In the same screen, under **Java arguments**, add:
@@ -31,7 +31,7 @@ doesn't work on macOS. Turn the early window off once:
 3. Change `earlyWindowControl = true` to `earlyWindowControl = false`, save, and press Play again.
 
 You'll see a plain window for a few seconds instead of the Strata splash, then the normal loading screen. Pack updates
-don't touch this file. On memory: give Java about half your Mac's RAM (8 GB on a 16 GB Mac); 8 GB-RAM Macs can't run the pack.
+don't touch this file. On memory: give Java 10 GB, so a 16 GB Mac is the smallest that works (close other apps); 8 GB-RAM Macs can't run the pack.
 
 ## 3. Join
 **Multiplayer → Add Server** with the address the server admin gives you. Servers usually have a whitelist; ask the admin if you can't

@@ -12,6 +12,13 @@ Changes committed on master since the last release (**v1.3.0**; notes in the Git
 - **Server freezes fixed (already live, Nov 1):** the server crashed three times in 15 minutes (12:44, 12:52, 12:56): its main thread spent over 60 s loading saved chunks and the watchdog shut it down. Distant Horizons on the server (`generatorPlan = "SURFACE_THEN_CHUNKS"`) loaded real chunks for every player's distant view, and a player exploring far north flooded it. Now `SURFACE_ONLY`: distant land is drawn from a quick terrain pass on DH's own threads, no chunk loads. Changed on the live server directly (backup `config/DistantHorizons.toml.bak-20261101-1257`) and in the pack's copy for new installs. Distant views lose trees and buildings past the normal view distance.
 - **Crimson Blade crash fixed (tested Nov 7):** Forsaken Relics 1.0.1 crashed the server five times (Oct 30 22:40; Nov 1 01:31, 01:42, 01:43, 01:48): a mob killed by the blade's Bleed curse changes the mod's list of cursed mobs while the mod is walking through it (`ConcurrentModificationException` in `CrimsonBladeItem.tickCurses`). `kubejs/server_scripts/strata_crimson_blade.js` cancels a bleed hit that would kill (indirect magic from the blade's owner, or plain magic when the owner isn't in that dimension, on ticks divisible by 20) and deals it one tick later, outside that loop. The first version never worked: KubeJS hides `getMsgId()` (it errored on every hit in the game) and `event.cancel()` ends the handler, so the delayed hit was never scheduled. Test: a fake player cursed six husks with the blade and they were set to 1 health: without a working script the server crashed (3 times), with it no crash in 5 rounds and every husk died. Server-only script.
 
+## Release test (1.4.0, Nov 7)
+- **Fresh install:** server from the repo boots (13/13 startup, 31/31 server scripts, 0 errors; boot error types match the 1.3.0 server's except a first-boot-only "jupiter.json" note). Client from `Strata-1.4.0.mrpack`: dependency check shows nothing new beyond JEI's usual Minecraft-range warning; joined, title screen reads "Strata 1.4", no kick (JEI 29-56 s, EMI item groups 37-72 s).
+- **Upgrade:** a copy of the live server's data (world, mods, configs) upgraded by packwiz installed exactly the queued files and 5 mods, booted with 31/31 scripts and 0 errors and no new error types, ran at 20 TPS with a player on; killing Echo Kings at the real Silence Death dungeon left no chest.
+- **Packaging:** `packwiz mr export` (1.4.0 .mrpack) and the CurseForge Action's steps run locally (438 files, Drive-By-Wire in overrides) both succeed; `curseforge_ids.py` maps all 391 Modrinth files.
+- **Client memory:** at 8 GB the client fills its heap within minutes of joining (1.3.0 already sits at 93-99% after collections on the test client; JEI adds a few hundred MB more) and froze once until the server timed it out. At 10 GB it stalls only while JEI/EMI load, then runs clean; at 12 GB it is comfortable. README and JOINING now say 10 GB minimum, and the release notes say so first.
+- **Found and fixed during the test:** the Crimson Blade workaround never ran (now fixed and tested); the Lifepod Console never worked (fixed and tested).
+
 ## Release checklist
 1. Check `version` in `pack.toml` and the version line in `config/fancymenu/customization/strata_title_screen.txt` (both the new version).
 2. `python -I tools/curseforge_ids.py` (re-adds CurseForge IDs after mod updates; fix any "no longer used" line in
@@ -23,7 +30,7 @@ Changes committed on master since the last release (**v1.3.0**; notes in the Git
    `CURSEFORGE_TOKEN`, variables `CURSEFORGE_PROJECT_ID` and `CURSEFORGE_UPLOAD`; leave the upload off until
    Drive-By-Wire is on CurseForge's approved list (requested), or CurseForge rejects the file. To upload a
    release that's already out: Actions → CurseForge → Run workflow with its tag.
-4. Wait about 5 minutes for GitHub's raw-file cache, then restart the server (Quarry restart, or `docker compose restart`
+4. On the server, add `JVM_OPTS: "-Dneoforge.readTimeout=120"` under `environment:` in `/opt/minecraft/strata/compose.yml` (back it up first); a compose change needs `docker compose up -d`, not just a restart. Wait about 5 minutes for GitHub's raw-file cache, then restart the server (Quarry restart, or `docker compose restart`
    in `/opt/minecraft/strata`). Check the log for `Loaded N/N KubeJS server scripts ... 0 errors`.
 5. Tell the group to import the new `.mrpack`.
 
