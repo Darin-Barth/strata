@@ -7495,6 +7495,11 @@ hash = "362175f800d4d00269e0e0ecb2a9d7235b32bb60d33f3f685bd77455dfb1f687"
 metafile = true
 
 [[files]]
+file = "mods/bellsandwhistles.pw.toml"
+hash = "5d270858da8f9e8fe3e85f521d0d0cd3a60e8f8e770ade87c0bc15f14a261d96"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "13fc1dcf13857ad75c23a7d7edef86183ecb11ca116837b933841d06eec87dd2"
 metafile = true
@@ -7507,6 +7512,11 @@ metafile = true
 [[files]]
 file = "mods/better-combat.pw.toml"
 hash = "24f35186921a4a2da251976e7459873deccc6fe9fe0288607ee4a3acd3cc49e4"
+metafile = true
+
+[[files]]
+file = "mods/blocks-bogies.pw.toml"
+hash = "a03e71bc44353e8aa69886c1db3b3725a36c3e809d8efa90e55d651ec0d6fd99"
 metafile = true
 
 [[files]]
@@ -7812,6 +7822,11 @@ metafile = true
 [[files]]
 file = "mods/create-jetpack.pw.toml"
 hash = "45f38a1310d0f1961207fbf98a31df70d9814efa35f1c147c3d74a5b9713c17b"
+metafile = true
+
+[[files]]
+file = "mods/create-liquid-fuel.pw.toml"
+hash = "3266b08404201403730b838a114cc6e178c3230697d8857c07a5ee985cafce55"
 metafile = true
 
 [[files]]
