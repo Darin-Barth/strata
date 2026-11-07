@@ -7161,6 +7161,10 @@ file = "kubejs/server_scripts/strata_sleeping_bag.js"
 hash = "a0e0a9efc62dc372d01357d02b37db3e4063a362bd4722e830a263e41dbc4582"
 
 [[files]]
+file = "kubejs/server_scripts/strata_spawner_chests.js"
+hash = "7c91e581681157eca515e554cbbe529ee9303c880891d61a7af08e4f74d197b9"
+
+[[files]]
 file = "kubejs/server_scripts/strata_team_protection.js"
 hash = "2aae8f65b020cfb8d298ec5f3a332a7ea8fef5bf6f18161998c08613ce3a7c8c"
 
