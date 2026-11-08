@@ -9093,6 +9093,11 @@ hash = "aa659a3438c8894b19c4c507b4f7cec9db4d2c3ba41b78b7561a83e740e15c61"
 metafile = true
 
 [[files]]
+file = "mods/fairylights.pw.toml"
+hash = "e62fef8ace98c141c4faae9f296d1279fd7660ee9aec007064b0b24615b9a0ae"
+metafile = true
+
+[[files]]
 file = "mods/falling-leaves-forge.pw.toml"
 hash = "f5b029566157fcc63dafcaef401b67821269547cb6fc014e4c0e7394796ea94f"
 metafile = true
