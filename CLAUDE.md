@@ -8,7 +8,7 @@ Source of truth: `docs/design-doc.md` (rules) and `docs/strata-mod-tracker.xlsx`
 - Only add mods whose tracker Status is **Keep**. Maybe = undecided (ask), Cut = never add.
 - Verify builds via the Modrinth/CurseForge APIs (or packwiz), never from memory.
 - Prefer Modrinth; fall back to CurseForge. Set `side` (client/server/both) to match the tracker.
-- Hosting: treehouse server, itzg/minecraft-server Docker image. Server-side choices must work headless.
+- Hosting: treehouse server, itzg/minecraft-server Docker image. Server-side choices must work headless. The container uses BBR TCP congestion control (`sysctls` in the server's compose file, Nov 8): with CUBIC a far player on a lossy route got 20-40 KB/s and never finished loading terrain.
 
 ## Pillars
 1. Tech/automation (Create + add-ons, Mekanism, AE2, IE, etc.) 2. Magic (Ars Nouveau hub + bridges) 3. Exploration/bosses/dungeons.
