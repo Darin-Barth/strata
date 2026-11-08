@@ -23,15 +23,18 @@ This switches Java to a garbage collector that doesn't freeze the game for big c
 (Distant Horizons recommends it too).
 
 ## On a Mac
-The game crashes about a second after you press Play ("java quit unexpectedly") because Drippy's early loading window
-doesn't work on macOS. Turn the early window off once:
+The game crashes a couple of seconds after you press Play ("java quit unexpectedly") because the Drippy Early Loading
+Module's first loading window doesn't work on macOS. Turn that one mod off:
 
-1. Press Play once and let it crash, so the config file gets created.
-2. Strata instance → **⋮ → Open folder** → `config` → open `fml.toml` in TextEdit.
-3. Change `earlyWindowControl = true` to `earlyWindowControl = false`, save, and press Play again.
+1. In the Modrinth App, open the Strata instance's **Content** list.
+2. Find **Drippy Early Loading Module** and switch it off (leave **Drippy Loading Screen** and everything else on).
+3. Press Play.
 
-You'll see a plain window for a few seconds instead of the Strata splash, then the normal loading screen. Pack updates
-don't touch this file. On memory: give Java 10 GB, so a 16 GB Mac is the smallest that works (close other apps); 8 GB-RAM Macs can't run the pack.
+You'll see a plain window for a few seconds instead of the Strata splash, then the normal loading screen. Each update is
+a new instance, so switch it off again after importing a new version. If it still crashes: instance → **⋮ → Open
+folder** → `config` → open `fml.toml` in TextEdit, change `earlyWindowControl = true` to `earlyWindowControl = false`
+and save. On memory: give Java 10 GB, so a 16 GB Mac is the smallest that works (close other apps); 8 GB-RAM Macs can't
+run the pack.
 
 ## 3. Join
 **Multiplayer → Add Server** with the address the server admin gives you. Servers usually have a whitelist; ask the admin if you can't
