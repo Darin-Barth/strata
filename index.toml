@@ -390,7 +390,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "391af2ecd8278c8cf228ca8909ea46ae915eefe767e4d36bb429465bdd114647"
+hash = "4c3d895ab98c5986a3c74fe1533c007bed257504276c1641c24786cc6b479a10"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -8115,6 +8115,10 @@ hash = "685f27a02642972171ad123b398a7f42aeea1949ed5f3f45402fa144699581c3"
 [[files]]
 file = "kubejs/server_scripts/strata_sleeping_bag.js"
 hash = "a0e0a9efc62dc372d01357d02b37db3e4063a362bd4722e830a263e41dbc4582"
+
+[[files]]
+file = "kubejs/server_scripts/strata_spawn.js"
+hash = "cd78d0f62cbcdc92fef93f86eded71ef66e5462052c1c0b3982d595c1d4d6495"
 
 [[files]]
 file = "kubejs/server_scripts/strata_spawner_chests.js"

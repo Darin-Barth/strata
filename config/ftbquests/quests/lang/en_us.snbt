@@ -98,7 +98,7 @@
 	quest.318FBADF9FE10E66.quest_desc: [
 		"Strata is built around travel, so a few things are different here:"
 		""
-		"&cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown), and &e/tpa <player>&r or &e/tpahere <player>&r to visit a friend (they answer with &e/tpaccept&r or &e/tpdeny&r). There's no /back or /rtp."
+		"&cTeleporting is limited.&r You get one &e/home&r (set it with &e/sethome&r; 10-second cooldown), &e/spawn&r to go back to the village you started in, and &e/tpa <player>&r or &e/tpahere <player>&r to visit a friend (they answer with &e/tpaccept&r or &e/tpdeny&r). There's no /back or /rtp."
 		"&cFlight costs something:&r fuel, power, mana, stamina or durability. No \"wear it and fly forever\" items."
 		""
 		"That's why trains, airships, elytra, mounts and roads are worth building. You can still earn teleporting later: Mekanism teleporters, Ars Nouveau warps and blink spells all have a cost."

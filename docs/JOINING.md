@@ -52,7 +52,7 @@ layout; when an update changes keys, Options > Controls > Key Binds > **Reset Al
 ## Good to know
 - Open the quest book from the **quest button in your inventory**. Start with the **Welcome to Strata** chapter; it
   explains the rules and where to go next.
-- Teleporting is limited: one `/home` each (`/sethome` to set it), `/tpa` and `/tpahere` to reach a friend who accepts, waystones cost XP, and there's no /back or /rtp.
+- Teleporting is limited: one `/home` each (`/sethome` to set it), `/spawn` back to the world spawn, `/tpa` and `/tpahere` to reach a friend who accepts, waystones cost XP, and there's no /back or /rtp.
   Flight takes real effort to get or costs something to run (fuel, power, mana or stamina).
 - Difficulty is per player: press **Alt+L** to pick your Apotheosis World Tier once you unlock more.
 - Lost track of a key? Options > Controls > **Keyboard** shows your keyboard with what every key does: hover to see, click to rebind, search by action or mod, and keys shared by two actions are outlined red. The full layout is in the [keybind guide](keybinds.md).
