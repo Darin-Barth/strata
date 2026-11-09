@@ -6,8 +6,7 @@ Changes committed on master since the last release (**v1.4.1**; notes in the Git
 - (nothing yet)
 
 ## Untested in 1.4.1 (released untested, Darin Nov 8)
-- **/spawn:** from the Nether, lands at the world spawn on its block; a second /spawn within 10 s is refused (`server.overworld().getSharedSpawnPos()` through KubeJS is unverified).
-- **YouTube on WATERFrAMES:** a youtu.be and a youtube.com/watch link play with sound.
+- Tested and working in play (Darin, Nov 8): /spawn and YouTube links on WATERFrAMES. (Not checked yet: /spawn from the Nether and its 10 s cooldown.)
 - **Fairy Lights:** a string between two fences, then one on an assembled airship in flight.
 
 ## Watch
