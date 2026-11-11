@@ -4601,6 +4601,10 @@ file = "kubejs/data/naturalist/tags/worldgen/biome/has_giant_isopod.json"
 hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
+file = "kubejs/data/neoforge/data_maps/item/compostables.json"
+hash = "4323d638d814ec1f6b2dfe6efabd075c84b383f2e337c5d79d6d96a6fd0cfbc9"
+
+[[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
 hash = "5c2f4d06b23ec528a11b811f6f3a89490f1b0aef83e4454511883b8f00a44e5b"
 

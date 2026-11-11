@@ -1,0 +1,8 @@
+{
+  "values": {
+    "crittersandcompanions:acorn": {
+      "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "crittersandcompanions"}],
+      "neoforge:value": {"chance": 0.3}
+    }
+  }
+}

@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v1.4.1**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- (nothing yet)
+- **Acorns compost (Darin, Nov 10; NOT TESTED yet):** Critters and Companions' acorn showed a 30% composting chance in EMI but the composter refused it: the mod adds it to vanilla's old `ComposterBlock.COMPOSTABLES` map, which NeoForge's composter no longer reads (it uses the `neoforge:compostables` data map; EMI still shows the old map). Added `kubejs/data/neoforge/data_maps/item/compostables.json` (acorn, chance 0.3; merges with the other entries). **Test:** right-click a composter with acorns; the level rises about every third acorn.
 
 ## Untested in 1.4.1 (released untested, Darin Nov 8)
 - Tested and working in play (Darin, Nov 8): /spawn and YouTube links on WATERFrAMES. (Not checked yet: /spawn from the Nether and its 10 s cooldown.)
