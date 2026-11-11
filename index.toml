@@ -4602,7 +4602,7 @@ hash = "e6e077bda4e72e4a6efe04c1b8f054bd29fbc14e27f6f7851db6942121e6b853"
 
 [[files]]
 file = "kubejs/data/neoforge/data_maps/item/compostables.json"
-hash = "4323d638d814ec1f6b2dfe6efabd075c84b383f2e337c5d79d6d96a6fd0cfbc9"
+hash = "26301bdda38649fea7634e86fbd52d6b88156538795316aca745a05a01b2d65d"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"

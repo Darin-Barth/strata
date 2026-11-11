@@ -1,8 +1,1918 @@
 {
   "values": {
+    "alexsmobs:acacia_blossom": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "alexsmobs:banana": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "alexsmobs:banana_peel": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 1.0
+      }
+    },
+    "alexsmobs:gongylidia": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.9
+      }
+    },
     "crittersandcompanions:acorn": {
-      "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "crittersandcompanions"}],
-      "neoforge:value": {"chance": 0.3}
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "crittersandcompanions"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:almond": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:almond_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:apple_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:apricot": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:apricot_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:artichoke": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:artichoke_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:asparagus": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:asparagus_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:avocado": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:avocado_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:banana": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:banana_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:barley": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:barley_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:basil": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:basil_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:bellpepper": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:bellpepper_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:blackbean": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:blackbean_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:blackberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:blackberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:blueberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:blueberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:broccoli": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:broccoli_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cabbage": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cabbage_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cantaloupe": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cantaloupe_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cashew": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cashew_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:cauliflower": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cauliflower_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:celery": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:celery_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cherry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cherry_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:chile_pepper": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:chile_pepper_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cinnamon": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cinnamon_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:coconut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:coconut_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:coffee": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:coffee_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:corn": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:corn_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cranberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cranberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:cucumber": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:cucumber_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:currant": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:currant_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:date": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:date_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:dragonfruit": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:dragonfruit_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:eggplant": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:eggplant_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:elderberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:elderberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:fig": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:fig_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:garlic": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:garlic_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:ginger": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:ginger_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:grape": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:grape_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:grapefruit": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:grapefruit_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:greenbean": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:greenbean_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:greenonion": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:greenonion_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:honeydew": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:honeydew_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:hops": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:hops_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:kale": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:kale_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:kiwi": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:kiwi_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:kumquat": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:kumquat_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:leek": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:leek_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:lemon": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:lemon_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:lettuce": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:lettuce_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:lime": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:lime_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:mango": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:mango_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:mustard": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:mustard_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:nectarine": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:nectarine_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:nutmeg": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:nutmeg_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:oat": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:oat_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:olive": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:olive_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:onion": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:onion_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:orange": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:orange_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:peach": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:peach_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:peanut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:peanut_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:pear": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:pear_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:pecan": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:pecan_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:pepper": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:pepper_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:persimmon": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:persimmon_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:pineapple": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:pineapple_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:plum": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:plum_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:radish": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:radish_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:raspberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:raspberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:rhubarb": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:rhubarb_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:rice": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:rice_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:rutabaga": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:rutabaga_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:saguaro": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:saguaro_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:soybean": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:soybean_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:spinach": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:spinach_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:squash": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:squash_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:starfruit": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:starfruit_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:strawberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:strawberry_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:sweetpotato": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:sweetpotato_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:tea": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:tea_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:tomatillo": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:tomatillo_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:tomato": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:tomato_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:turmeric": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:turmeric_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:turnip": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:turnip_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:walnut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:walnut_sapling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.5
+      }
+    },
+    "croptopia:yam": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:yam_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "croptopia:zucchini": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "croptopia:zucchini_seed": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "croptopia"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.3
+      }
+    },
+    "friendsandfoes:buttercup": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "friendsandfoes"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
+    },
+    "naturalist:snail_shell": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "naturalist"
+        }
+      ],
+      "neoforge:value": {
+        "chance": 0.65
+      }
     }
   }
 }
