@@ -1333,6 +1333,10 @@ file = "kubejs/client_scripts/strata_sleeping_bag.js"
 hash = "ed90b9ef80b3d05721afa9ab4d490a051c816f8d0cb48b99f6500af8fb86ea53"
 
 [[files]]
+file = "kubejs/client_scripts/strata_voice_keys.js"
+hash = "7b34bb38a145d7d671f9f875cef4fa7d2272d909f9a5a36fd72abe31d75a7f47"
+
+[[files]]
 file = "kubejs/data/ad_astra/recipe/calorite_engine.json"
 hash = "d10b44f47611efea5b6fb2f7ace134f44d25ebe7e37a9f9d4f2933bca530ee0d"
 
@@ -3443,6 +3447,10 @@ hash = "ae680d9359df763baf536e38ad636a52dd23dbd01ce8ec6d008612ddfefdb527"
 [[files]]
 file = "kubejs/data/irons_skills/puffish_skills/categories/school2/experience.json"
 hash = "c451be10b5a95b3cb901d2586bf0270ad1206a7a376a13408a88c21447250c38"
+
+[[files]]
+file = "kubejs/data/irons_spellbooks/recipe/alchemist_cauldron/brew_legendary_ink.json"
+hash = "20e2e1f9639fedcd85f6bf16bc5031296f9993d5615c930aa27dea9ec4e6d3e7"
 
 [[files]]
 file = "kubejs/data/irons_spellbooks/recipe/diamond_spell_book.json"
@@ -7169,6 +7177,10 @@ file = "kubejs/data/strata/tags/entity_type/unfarmable.json"
 hash = "5721d1867e2ee2cf2c4c4b2d6c6eebd487b8ea3e802e7a50cefaf6d6670adbd4"
 
 [[files]]
+file = "kubejs/data/strata/tags/item/dragon_bloods.json"
+hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
+
+[[files]]
 file = "kubejs/data/strata/tags/item/dragon_hearts.json"
 hash = "a33402323c711ed2d599d76b078e8cba20c6cf06343d5c322e0d9b22eafd018e"
 
@@ -7769,6 +7781,18 @@ file = "kubejs/data/strata/worldgen/structure_set/abyssal/wrecks.json"
 hash = "4eb5556dba4c3302c0ffc3835a31f0eeabeb9ce4791ddd6eb85d8139e3a5f65b"
 
 [[files]]
+file = "kubejs/data/the_ravenous/advancement/the_ravenous_advancement.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_ravenous_biome_modifier.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
+file = "kubejs/data/the_ravenous/neoforge/biome_modifier/the_screecher_biome_modifier.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
 file = "kubejs/data/theurgy/recipe/liquefaction/alchemical_sulfur_allthemodium_from_ores_allthemodium.json"
 hash = "c309a86846b250bcb1dc2617c2b088261b0d4c4a259995a98b6562e416d3f269"
 
@@ -8021,6 +8045,10 @@ file = "kubejs/data/werewolves/neoforge/biome_modifier/gen/silver_ore.json"
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
+file = "kubejs/data/whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json"
+hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+
+[[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
 hash = "79ce5d24a7f4d2239182926d1b3e84f3858439b24fb479a1d0e4424cfba3d9d6"
 
@@ -8031,6 +8059,10 @@ hash = "eb5b3bd5cbbcf3aca45d75437adf087b6d5adb573219c71205d5045bfad79af9"
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
 hash = "f43626eeba3551dad0d74975715b7cc95e8f731554635447b0895948ccf5528b"
+
+[[files]]
+file = "kubejs/server_scripts/hollow_ravenous.js"
+hash = "8adb439521a645af3a3b85bcafaf35deb3581d802dd5d255c09cd57fea5fabc2"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
