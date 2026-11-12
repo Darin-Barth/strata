@@ -458,7 +458,7 @@ hash = "035a150b48a108c583e5bd8049b2fbdd1c72d413889837ee6cf7301907c747b5"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "758c085b2be34b0fe946f397450ff20c57eb269f1ca031b8e3afe84c536b8673"
+hash = "037e96375ee73c4a363dd152418ce9eb936e9918439f10a429edf73f0d566ae2"
 
 [[files]]
 file = "config/mutantmonsters-common.toml"
