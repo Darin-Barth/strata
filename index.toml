@@ -6433,6 +6433,38 @@ file = "kubejs/data/puffish_skills/puffish_skills/categories/mining/skills.json"
 hash = "87eac739b48bb08ba427dac38fecd0796d4c5a58eed54c431e0116e414996f0b"
 
 [[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/ash_vents_inferno.json"
+hash = "377b80864acee029ea63de83d2e346f1ec0846a29894d41177cf38450b23a17b"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/cave_bioshrooms.json"
+hash = "b703359d922df5da9d0e445b9e8020587d7d68c2307f334c015a96eed5e96e84"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/dropleaf.json"
+hash = "b6a9a40617f3ac78b095993057d3f1c974d03917e256e0d81781f8d051efa3c6"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/prismarite_cluster.json"
+hash = "82bb2773ba64e249a8c8d6b2276b659f6ec7600abe1cab982c13ea70d826d792"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/redstone_bud.json"
+hash = "d9bd285f2eb49748dcafe1a8358b9dd757714caad05d1bff9099131aa469d796"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/patch/redstone_bulb.json"
+hash = "df9d1138156e806c2901b377d04a11f9b6740e94d6f5fd9c8925da48393c32bf"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/special/lava_fall.json"
+hash = "6636cd679016117c5cec341f38572b202d6fd1149432acf0e687d96039e7dbe1"
+
+[[files]]
+file = "kubejs/data/regions_unexplored/worldgen/placed_feature/special/overworld_lava_delta.json"
+hash = "f293689020522a29e1b445e6a34d6650d2636f75bfb823224c93420e509ac46c"
+
+[[files]]
 file = "kubejs/data/strata/curios/entities/sleeping_bag.json"
 hash = "9da95c9ee1de1c2328f87c28a1f97e3198ad3792a34c442343b7acc1feb6bd43"
 
