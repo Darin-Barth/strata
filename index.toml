@@ -22,6 +22,10 @@ file = "config/accessories.json5"
 hash = "9c17f3b027875d7fe958661b9bdb7ccaf021dbd02263648ae1765f56f14aaed0"
 
 [[files]]
+file = "config/aiimprovements-common.toml"
+hash = "2eba1cfbde613005cf0f6316f363ae2b3b1fe187186033fbad48dfc62ee6d938"
+
+[[files]]
 file = "config/alexscaves-general.toml"
 hash = "ac9c7c389b6634ad3ab084670336d4a8b880aabe09732cde5d9ed753627e1b80"
 
@@ -415,6 +419,10 @@ hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 [[files]]
 file = "config/iceandfire/iaf-common.json"
 hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
+
+[[files]]
+file = "config/immersive_optimization.json"
+hash = "14ef1c5fbb54ffa00b29f4cd4ba23d7a5d1d2ff4dc8554c24a221ec6259b33d4"
 
 [[files]]
 file = "config/incontrol/spawn.json"
@@ -8183,6 +8191,10 @@ hash = "c4e6c864111ea58b96efdb010f0c796926364c5e881a06df4c31de82915a6913"
 [[files]]
 file = "kubejs/server_scripts/strata_power.js"
 hash = "71939ea9c3c0bb510ac0d45fedbfdfbe6cb8613d7136ad704635f529ea3c3358"
+
+[[files]]
+file = "kubejs/server_scripts/strata_pregen_ahead.js"
+hash = "99c685928430a0181f12aa791b57998e7e6789148154eecfc3318a64f394540a"
 
 [[files]]
 file = "kubejs/server_scripts/strata_removed_items.js"
