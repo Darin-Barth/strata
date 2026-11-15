@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "strata.tweaks.mixin",
+  "plugin": "strata.tweaks.mixin.Plugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin"],
+  "injectors": {"defaultRequire": 1}
+}

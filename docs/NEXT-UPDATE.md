@@ -3,7 +3,9 @@
 Changes committed on master since the last release (**v1.4.2**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-(none yet)
+- **Fewer and shorter freezes while exploring (Darin, Nov 14; tested Nov 14 on a test server):** spark on the live server showed 2-30 s freezes whenever players explored. Mob spawning looks up which structure a spot belongs to, which loads that structure's saved pieces on the main thread, and Steam 'n' Rails and Brewin' and Chewin' each run an extra full data-fixer pass over every piece. The pack now ships its own small mod, **Strata Tweaks** (`mods/strata-tweaks-1.0.0.jar`, source in `tools/strata-tweaks/`), which skips those two passes for structure pieces. Tested: 300 real pieces read in 3.9-5.4 s instead of 8.2-8.9 s, with identical results. Not yet checked: a client launch with the mod (it loads on both sides).
+- **Hostile mob cap 56 instead of 70 (Darin, Nov 14; tested Nov 14 on a test server):** Strata Tweaks scales the natural monster cap by 0.8 (`config/strata_tweaks-common.toml`): fewer spawn attempts and fewer mobs to tick, which were the biggest steady costs. Animals are unchanged. Tested: the cap reads 56, animals 10.
+- **Incendium only scans Nether mobs (Darin, Nov 14; tested Nov 14 on a test server):** Incendium's every-tick function walked every mob in every dimension three times (about 5% of tick time on the live server). Those scans now run in the Nether only (`tools/build_incendium_clock.py`); its mobs and structures only exist there. Tested: a pig in the Nether still gets Incendium's tags, one in the Overworld doesn't.
 
 ## Still to check in play (released untested)
 - Tested and working in play (Darin, Nov 8): /spawn and YouTube links on WATERFrAMES. /spawn from the Nether and its 10 s cooldown tested Nov 12 on a test server (a second use within 10 s is refused).

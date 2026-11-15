@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "strata_tweaks"
+version = "1.0.0"
+displayName = "Strata Tweaks"
+description = "Strata modpack's own small server fixes: skips two mods' extra data-fixer passes on structure templates and scales the hostile mob cap."
+
+[[mixins]]
+config = "strata_tweaks.mixins.json"
+
+[[dependencies.strata_tweaks]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.strata_tweaks]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"

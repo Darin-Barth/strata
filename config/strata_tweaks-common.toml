@@ -1,0 +1,8 @@
+#Skip Steam 'n' Rails' and Brewin' and Chewin' extra data-fixer passes when a structure template
+#(a saved building piece) is read. Those passes tripled the cost of reading templates, which runs
+#on the main thread and froze the server for seconds while players explored.
+skipModStructureFixers = true
+#Multiplier for the natural hostile mob cap (vanilla 70 per player area). 1.0 = vanilla.
+# Default: 0.8
+# Range: 0.1 ~ 2.0
+monsterCapScale = 0.8

@@ -553,6 +553,10 @@ file = "config/sophisticatedcore-common.toml"
 hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
+file = "config/strata_tweaks-common.toml"
+hash = "f890cc3e30d11654da82e5858b6084732c91c545be8dac1e6bd3cff0757510f4"
+
+[[files]]
 file = "config/streamsreflowing.properties"
 hash = "36753d897ac456a47aa8998b61561358d84c8417443db70d2d9ab989c07bb8d6"
 
@@ -3259,6 +3263,10 @@ hash = "5deb80e23dc6a118a215e1913079a33404520f37ef35d791149745d28ad0edf8"
 [[files]]
 file = "kubejs/data/idas/worldgen/structure_set/idas_underground_rare.json"
 hash = "f280c44f1800032c9ca27e0483d0e39ac1b89a4f2d897146efd0c3af0829f76e"
+
+[[files]]
+file = "kubejs/data/incendium/function/clocks/main.mcfunction"
+hash = "726d6172201a072a8d35d11a95ea01cb126d8a777b52d7efd522882019efc0f2"
 
 [[files]]
 file = "kubejs/data/industrialforegoing/tags/entity_type/mob_duplicator_blacklist.json"
@@ -10182,6 +10190,10 @@ metafile = true
 file = "mods/starbunclemania.pw.toml"
 hash = "ab2c89f6522d1d30ccec20d200e9a19418979edd8b19efa24b31f0464959e47b"
 metafile = true
+
+[[files]]
+file = "mods/strata-tweaks-1.0.0.jar"
+hash = "5ff1e63cae7b12e11fd64316d02ac4c62a8e090b092f606a8044e7d36b733703"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
