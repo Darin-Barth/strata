@@ -8149,6 +8149,10 @@ file = "kubejs/server_scripts/strata_end_eyes.js"
 hash = "2f2a4d3cbbc3018231012ed28fa47d1d63c54990fdbe166fd022d79a8984439d"
 
 [[files]]
+file = "kubejs/server_scripts/strata_excelsius_legs.js"
+hash = "fb80307f946a4d165f0817e12419791be7e0e76b911338d1d8ccf87c0050910b"
+
+[[files]]
 file = "kubejs/server_scripts/strata_home.js"
 hash = "773c7a4e1858669a3e5e9af575efff1aed28272e7ed9917d11a3ca67d9ad0c2c"
 
