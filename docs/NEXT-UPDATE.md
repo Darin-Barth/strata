@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v1.4.3**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-- **C2ME on the server (Darin, Nov 15; live trial, not tested beforehand):** generating new land stalled the server while players explored past the pregenerated area (the chunk scheduler runs on the main thread). C2ME 0.4.0-alpha.0.124 is now a server-only mod (players install nothing). Build .123 was verified clean for the Overworld pregen in October (.124 only adds a chunk ticket event for other mods); with players it is untested, and newly generated Nether, End and Kakuto Region land can get clipped Integrated Cobblemon gyms. Watch for cut-off structures and crashes; to undo, remove `mods/c2me-neoforge.pw.toml` and restart.
+(none yet)
 
 ## Still to check in play (released untested)
 - Tested and working in play (Darin, Nov 8): /spawn and YouTube links on WATERFrAMES. /spawn from the Nether and its 10 s cooldown tested Nov 12 on a test server (a second use within 10 s is refused).
@@ -12,6 +12,7 @@ Changes committed on master since the last release (**v1.4.3**; notes in the Git
 - **1.4.3 (Nov 15):** with someone exploring, take a spark profile and compare with Nov 14 (freezes of 2-30 s, Overworld 69 ms/tick); compare a backup's "Backup completed in" time with the 1:48 before. Place a Steam 'n' Rails track and brew in a Brewin' and Chewin' keg (Strata Tweaks only skips their data fixers for structure pieces). CurseForge: `mods/strata-tweaks-*.jar` is a plain jar in the zip's overrides, which CurseForge rejects unless approved (like Drive-By-Wire); keep the upload off or publish the mod.
 
 ## Watch
+- **C2ME can't run on the live server (Nov 15):** tried as a server-only mod (0.4.0-alpha.0.124) to cut the stalls while players explore new land. The server hung two minutes after starting: Hyperbox force-loads its room chunks at the start of each tick, and with C2ME's chunk system that call never returns (thread dump: `Hyperbox.onPreLevelTick` -> `ServerLevel.setChunkForced` -> `getChunk` waiting). Removed again the same day. It stays a pregen-only tool (on a server copy, where no Hyperbox rooms tick).
 - **Server crash at 21:43 on Nov 6** (entity tracking map changed mid-tick, `ChunkMap.tick`): not explained by the Cloudy Temple fix in 1.4.0. If it happens again, keep the crash report.
 
 ## Release checklist

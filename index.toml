@@ -8627,11 +8627,6 @@ hash = "a8025adb00d4e4fd5e2143968e49d386840b4fc83c72911615b9ec49ac755f4b"
 metafile = true
 
 [[files]]
-file = "mods/c2me-neoforge.pw.toml"
-hash = "7aef3100b30df32c0a4705764bd7496f658623105609ce03c61b497a64dada8a"
-metafile = true
-
-[[files]]
 file = "mods/caelus.pw.toml"
 hash = "8579667ca5c77e683ef85a934d2f254f287a18be5395ad9c9f19c51e15bb55f5"
 metafile = true
