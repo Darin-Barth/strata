@@ -1,3 +1,16 @@
 {
-  "type": "neoforge:none"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "whispering_spirits"
+    }
+  ],
+  "type": "neoforge:add_spawns",
+  "biomes": "#strata:hollow_surface",
+  "spawners": {
+    "type": "whispering_spirits:whispering_spirit",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 1
+  }
 }

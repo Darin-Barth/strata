@@ -426,7 +426,7 @@ hash = "14ef1c5fbb54ffa00b29f4cd4ba23d7a5d1d2ff4dc8554c24a221ec6259b33d4"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "1947af4e1fc01c1cfe1893dd2e6811893fbaf7c0b0c9e1df7394bc22754fed8d"
+hash = "643b40488950cc74e90254e63d75d1e4ab8f636e9f7d6932fb17f8e19dbd786e"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -8106,7 +8106,7 @@ hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
 [[files]]
 file = "kubejs/data/whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json"
-hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
+hash = "307da1f77f6d4f7aaf3ffccf3548fe57b09a65cd1f61fba6947667d0c4915bab"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
@@ -8114,7 +8114,7 @@ hash = "79ce5d24a7f4d2239182926d1b3e84f3858439b24fb479a1d0e4424cfba3d9d6"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
-hash = "eb5b3bd5cbbcf3aca45d75437adf087b6d5adb573219c71205d5045bfad79af9"
+hash = "9a6e26be3227dce2f98e1674985944823e8367d99766ca2529644ba2aefb8378"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
@@ -8126,7 +8126,7 @@ hash = "8adb439521a645af3a3b85bcafaf35deb3581d802dd5d255c09cd57fea5fabc2"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "c9d81179636d6dddff41bed5d11b6c4fdcdf377586ab314f509914fa3913d82d"
+hash = "93a396e5da9e3f591cbb640d90db09b2c7a9cf81e4a53ed31f5e85f8c84e1cfe"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_portal_placement.js"
@@ -8258,11 +8258,11 @@ hash = "5b8f583b15af68c8a74d4820fccb919357bcc7cefaa18734010259d97963bfdf"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_damage_cap.js"
-hash = "e76aa0fe574627e5d94129bcb7eac31af3a04c7da325141de317a636f9b3c737"
+hash = "1bc3bddee40d64278be35a290bd99c85dcdf69f97088bf85b5fe366795b7c659"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
-hash = "ea87ba97943ca5cbfafac18e80fd518479b5687ee1b2ca737e19dfefe3c686f4"
+hash = "51d19e5d9ba279545c6ea2c1d05ab3faaf16ba81c2d2935202aa3dd2379553c9"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
@@ -10217,7 +10217,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.1.0.jar"
-hash = "97c2a679644eecf017992232f55672f721ded5c039c599513cfaeb0ae306b6f0"
+hash = "ebc913b68b94288904e3dc7167c134b05f6383711796cbd8abc88cc6f5f9ed72"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
@@ -10452,6 +10452,11 @@ metafile = true
 [[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "96a6dd527861ccf636202c4f1bc5386e65a4d14e1323dd4e0fc08855c01262a3"
+metafile = true
+
+[[files]]
+file = "mods/whispering-spirits.pw.toml"
+hash = "f8705eee4c8394658b9246e28fec6810a53d5d28c32512e6bc27741afb01ae7a"
 metafile = true
 
 [[files]]

@@ -17,6 +17,8 @@ public final class Plugin implements IMixinConfigPlugin {
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (mixinClassName.endsWith(".RailwaysFixersMixin")) return loaded("railways");
         if (mixinClassName.endsWith(".BrewinFixersMixin")) return loaded("brewinandchewin");
+        if (mixinClassName.contains(".ElytraSlot")) return loaded("elytraslot") && loaded("deeperdarker");
+        if (mixinClassName.endsWith(".WhisperingSpiritsMixin")) return loaded("whispering_spirits");
         return true;
     }
 

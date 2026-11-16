@@ -1,7 +1,7 @@
 // The Hollow's fog (client only). Heavy fog that makes navigation hard; holding a light clears some
-// of it. Punishing without a light source, but never impossible. In the Hollow you see about 10 blocks; holding a light
+// of it. Punishing without a light source, but never impossible. In the Hollow you see about 12 blocks; holding a light
 // (any lantern or torch, the Pale Lantern, glowstone, froglights, end rods, sea lanterns, glow
-// sticks...) in either hand pushes the fog back to about 28. It eases between the two instead of
+// sticks...) in either hand pushes the fog back to about 30; low sanity pulls both in (to 6 and 16). It eases between the two instead of
 // snapping. Underwater and lava fog are left alone. Visual only, and it works without shaders;
 // shader packs that draw their own fog may show less of it.
 // A startup script so the listeners are registered once; the guard keeps the client-only event
@@ -9,8 +9,12 @@
 // inside nested blocks (tools/check_kubejs_const.py).
 // KubeJS startup scripts share one scope: every top-level name here starts with "hollowFog".
 const hollowFogDimension = 'strata:hollow'
-const hollowFogDark = 10
-const hollowFogLit = 28
+// Fog distance without / with a held light, at full sanity and at none: the lower a player's sanity
+// (Sanity: Renewed, read on the client), the closer the fog. 12 -> 6 blocks unlit, 30 -> 16 with a light.
+const hollowFogDark = 12
+const hollowFogDarkInsane = 6
+const hollowFogLit = 30
+const hollowFogLitInsane = 16
 const hollowFogEase = 0.06
 const hollowFogLights = ['strata:pale_lantern', 'minecraft:glowstone', 'minecraft:sea_lantern', 'minecraft:end_rod',
   'minecraft:shroomlight', 'minecraft:ochre_froglight', 'minecraft:verdant_froglight', 'minecraft:pearlescent_froglight',
@@ -23,11 +27,25 @@ const hollowFogIsLight = id => {
   return hollowFogLights.indexOf(s) >= 0 || s.indexOf('lantern') >= 0 || s.indexOf('torch') >= 0 || s.indexOf('glow_stick') >= 0
 }
 
+// Sanity as 1 (sane) to 0 (none). The mod stores it the other way round (0 = sane); 1 without the mod.
+let hollowFogSanityHolder = null
+const hollowFogSanity = entity => {
+  if (hollowFogSanityHolder === null || !entity.isPlayer()) return 1
+  let raw = Number(hollowFogSanityHolder.get(entity).getSanity())
+  return isNaN(raw) ? 1 : Math.max(0, Math.min(1, 1 - raw))
+}
+
+const hollowFogInHollow = entity => !!entity && String(entity.level.dimension) === hollowFogDimension
+const hollowFogHoldsLight = entity =>
+  entity.isLiving() && (hollowFogIsLight(entity.mainHandItem.id) || hollowFogIsLight(entity.offHandItem.id))
+
 // Where the fog should end for this camera entity, or -1 outside the Hollow.
 const hollowFogTarget = entity => {
-  if (!entity || String(entity.level.dimension) !== hollowFogDimension) return -1
+  if (!hollowFogInHollow(entity)) return -1
   if (!entity.isLiving()) return hollowFogDark
-  return hollowFogIsLight(entity.mainHandItem.id) || hollowFogIsLight(entity.offHandItem.id) ? hollowFogLit : hollowFogDark
+  const sane = hollowFogSanity(entity)
+  return hollowFogHoldsLight(entity) ? hollowFogLitInsane + (hollowFogLit - hollowFogLitInsane) * sane
+    : hollowFogDarkInsane + (hollowFogDark - hollowFogDarkInsane) * sane
 }
 
 // Other mods (Distant Horizons, Sodium Extra, Atmospherics) rewrite the fog distance after the RenderFog
@@ -61,6 +79,13 @@ const hollowFogSetup = () => {
       hollowFogBridge = Java.loadClass('strata.tweaks.ClientFog')
     } catch (e) {
       console.warn('Hollow fog: this Strata Tweaks has no ClientFog (older than 1.1.0)')
+    }
+  }
+  if (Platform.isLoaded('sanity_renewed')) {
+    try {
+      hollowFogSanityHolder = Java.loadClass('guivnf.sanity_renewed.capability.SanityHolder')
+    } catch (e) {
+      console.warn(`Hollow fog: no sanity link (${e})`)
     }
   }
   const fogTypeNone = Java.loadClass('net.minecraft.world.level.material.FogType').NONE
@@ -99,7 +124,7 @@ const hollowFogShaderFadeTicks = 22
 const hollowFogShaderTick = (mc, iris, darkness, MobEffectInstance) => {
   const player = mc.player
   if (!player) return
-  const want = iris.isShaderPackInUse() && hollowFogTarget(player) === hollowFogDark
+  const want = iris.isShaderPackInUse() && hollowFogInHollow(player) && !hollowFogHoldsLight(player)
   const cur = player.getEffect(darkness)
   const ours = cur !== null && cur.isAmbient()
   if (want) {

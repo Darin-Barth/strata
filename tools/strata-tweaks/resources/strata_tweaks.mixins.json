@@ -4,7 +4,8 @@
   "package": "strata.tweaks.mixin",
   "plugin": "strata.tweaks.mixin.Plugin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin"],
+  "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
+             "WhisperingSpiritsMixin"],
   "client": ["FogRendererMixin"],
   "injectors": {"defaultRequire": 1}
 }

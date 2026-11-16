@@ -258,6 +258,12 @@ def main():
     write(out, "weeping_angels/neoforge/biome_modifier/snow_angel.json", {
         "type": "weeping_angels:snow_angels", "biomes": f"#{NS}:none", "features": "weeping_angels:snow_angel",
         "step": "raw_generation"})
+    # Whispering Spirits (back in 1.4.4): its own spawn file targets every biome. Strata Tweaks limits its
+    # look-at check to the Hollow (the 100-block ray-trace per player per tick that got it removed in 1.2.1).
+    write(out, "whispering_spirits/neoforge/biome_modifier/whispering_spirit_biome_modifier.json", {
+        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "whispering_spirits"}],
+        "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface",
+        "spawners": {"type": "whispering_spirits:whispering_spirit", "weight": 8, "minCount": 1, "maxCount": 1}})
     # Mutant Monsters: its config spawn weights are 0; these are the Hollow's own (rare) spawns.
     write(out, f"{NS}/neoforge/biome_modifier/hollow_mutants.json", {
         "type": "neoforge:add_spawns", "biomes": f"#{NS}:hollow_surface", "spawners": [
