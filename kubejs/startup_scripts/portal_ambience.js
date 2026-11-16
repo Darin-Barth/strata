@@ -1,13 +1,17 @@
-// Portal ambience (client only). BBL Portals plays the Nether portal's whoosh from every portal
-// block. Each of our portals has its own texture slot (pokeworld_portal.js), so the block's
-// "texture" property tells them apart; near one, the whoosh is swapped for that world's sounds
-// (spaced out, never stacked) and the block sheds a few particles of its own:
+// Portal ambience (client only). Each of our BBL Portals portals has its own texture slot
+// (pokeworld_portal.js), so the block's "texture" property tells them apart. Near one, that world's
+// sounds play (spaced out, never stacked) and the portal sheds a few particles of its own:
 //   default (Alph Stone, Pokémon world): bell chimes, a low hum, wind through ruins, Unown;
 //     glyph and sparkle particles.
 //   nether (resin bricks, the Hollow): whispers, creaking, a slow heartbeat, cave noises, and
 //     stretches of total silence; ash, pale petals and smoke.
 //   molten (dark prismarine, Abyssal Plain): deep-sea calls and the Conduit's thrum; drips,
 //     splashes and glow sparkles.
+// The script finds the portal blocks around the player itself (every two seconds, through the
+// chunk sections' palettes) and runs sounds and particles on the client tick. Until Nov 16 it
+// swapped the Nether whoosh BBL plays from portal blocks instead, but the game only plays that
+// about once a minute per portal and from 16 blocks at most, so the ambience was all but silent
+// unless you stood in the portal. The whoosh itself is muted near our portals.
 // A startup script so the listener is registered once (client scripts reload);
 // the guard keeps the client-only event class off the dedicated server. Sounds or particles
 // missing from the client's registries are skipped.
@@ -104,37 +108,85 @@ const portalAmbSetup = () => {
     return sounds[0]
   }
 
+  // Portal blocks near the player: [{x, y, z, style}], refreshed every two seconds.
+  let portalAmbFound = []
+  let portalAmbTick = 0
+  const portalAmbRange = 28          // how far a portal is heard and sheds particles
+  const portalAmbIsPortal = state => String(state.getBlock().builtInRegistryHolder().key().location()) === 'portals:custom_portal'
+  const portalAmbScan = (level, player) => {
+    const found = []
+    const pcx = Math.floor(player.x) >> 4, pcz = Math.floor(player.z) >> 4
+    const minSection = level.getMinSection(), maxSection = level.getMaxSection()
+    const psy = Math.floor(player.y) >> 4
+    for (let cx = pcx - 2; cx <= pcx + 2; cx++) for (let cz = pcz - 2; cz <= pcz + 2; cz++) {
+      if (!level.hasChunk(cx, cz)) continue
+      let chunk = level.getChunk(cx, cz)
+      for (let sy = Math.max(minSection, psy - 2); sy <= Math.min(maxSection - 1, psy + 2); sy++) {
+        let section = chunk.getSection(sy - minSection)
+        // The palette check is one call; only a section that holds a portal is read block by block.
+        if (section.hasOnlyAir() || !section.maybeHas(portalAmbIsPortal)) continue
+        for (let x = 0; x < 16; x++) for (let y = 0; y < 16; y++) for (let z = 0; z < 16; z++) {
+          let state = section.getBlockState(x, y, z)
+          if (!portalAmbIsPortal(state)) continue
+          let m = String(state).match(/texture=([a-z]+)/)
+          if (m && portalAmbStyles[m[1]]) found.push({ x: cx * 16 + x + 0.5, y: sy * 16 + y + 0.5, z: cz * 16 + z + 0.5, style: m[1] })
+        }
+      }
+    }
+    return found
+  }
+
+  NativeEvents.onEvent('net.neoforged.neoforge.client.event.ClientTickEvent$Post', event => {
+    try {
+      let mc = portalAmbMc.getInstance()
+      let level = mc.level, player = mc.player
+      if (!level || !player || mc.isPaused()) return
+      portalAmbTick++
+      if (portalAmbTick % 40 === 1) portalAmbFound = portalAmbScan(level, player)
+      if (portalAmbFound.length === 0) return
+      let now = Date.now()
+      let nearest = {}
+      for (let i = 0; i < portalAmbFound.length; i++) {
+        let b = portalAmbFound[i]
+        let dx = b.x - player.x, dy = b.y - player.getEyeY(), dz = b.z - player.z
+        let d = Math.sqrt(dx * dx + dy * dy + dz * dz)
+        if (d > portalAmbRange) continue
+        if (Math.random() < 0.06) portalAmbStyles[b.style].particles(level, b.x, b.y, b.z)
+        if (!nearest[b.style] || d < nearest[b.style].d) nearest[b.style] = { d: d, dx: dx, dy: dy, dz: dz }
+      }
+      for (let name in nearest) {
+        if (now < portalAmbNext[name]) continue
+        let style = portalAmbStyles[name], n = nearest[name]
+        portalAmbNext[name] = now + style.gapMs
+        if (Math.random() < style.silenceChance) {
+          portalAmbNext[name] = now + style.silenceMs[0] + Math.random() * (style.silenceMs[1] - style.silenceMs[0])
+          continue
+        }
+        let s = portalAmbPick(style.sounds)
+        let soundEvent = portalAmbRegistries.SOUND_EVENT.get(portalAmbRL.parse(s[0]))
+        if (!soundEvent) continue
+        let pitch = s[3] + Math.random() * (s[4] - s[3])
+        // A sound fades to nothing 16 blocks out. Played from half way along the line to the
+        // portal, it carries the full range and still comes from the portal's direction.
+        mc.getSoundManager().play(new portalAmbSimpleSound(soundEvent, portalAmbSoundSource.BLOCKS, s[2], pitch,
+          portalAmbSoundInstance.createUnseededRandom(), player.x + n.dx * 0.5, player.getEyeY() + n.dy * 0.5, player.z + n.dz * 0.5))
+      }
+    } catch (e) {
+      console.error(`Portal ambience: ${e}`)
+    }
+  })
+
+  // BBL Portals plays the Nether portal's whoosh from its portal blocks: not from ours.
   NativeEvents.onEvent('net.neoforged.neoforge.client.event.sound.PlaySoundEvent', event => {
     try {
       let sound = event.getOriginalSound()
       if (!sound || String(sound.getLocation()) !== 'minecraft:block.portal.ambient') return
       let level = portalAmbMc.getInstance().level
       if (!level) return
-      let x = sound.getX(), y = sound.getY(), z = sound.getZ()
-      let state = String(level.getBlockState(portalAmbBlockPos.containing(x, y, z)))
+      let state = String(level.getBlockState(portalAmbBlockPos.containing(sound.getX(), sound.getY(), sound.getZ())))
       if (state.indexOf('portals:custom_portal') < 0) return
       let m = state.match(/texture=([a-z]+)/)
-      let style = m ? portalAmbStyles[m[1]] : null
-      if (!style) return
-      style.particles(level, x, y, z)
-      let now = Date.now()
-      if (now < portalAmbNext[m[1]]) {
-        event.setSound(null)
-        return
-      }
-      portalAmbNext[m[1]] = now + style.gapMs
-      if (Math.random() < style.silenceChance) {
-        portalAmbNext[m[1]] = now + style.silenceMs[0] + Math.random() * (style.silenceMs[1] - style.silenceMs[0])
-      }
-      let s = portalAmbPick(style.sounds)
-      let soundEvent = portalAmbRegistries.SOUND_EVENT.get(portalAmbRL.parse(s[0]))
-      if (!soundEvent) {
-        event.setSound(null)
-        return
-      }
-      let pitch = s[3] + Math.random() * (s[4] - s[3])
-      event.setSound(new portalAmbSimpleSound(soundEvent, portalAmbSoundSource.AMBIENT, s[2], pitch,
-        portalAmbSoundInstance.createUnseededRandom(), x, y, z))
+      if (m && portalAmbStyles[m[1]]) event.setSound(null)
     } catch (e) {
       console.error(`Portal ambience: ${e}`)
     }

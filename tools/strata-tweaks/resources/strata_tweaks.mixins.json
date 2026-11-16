@@ -5,7 +5,7 @@
   "plugin": "strata.tweaks.mixin.Plugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
-             "WhisperingSpiritsMixin"],
-  "client": ["FogRendererMixin"],
+             "WhisperingSpiritsMixin", "LevelSeaLevelMixin"],
+  "client": ["FogRendererMixin", "NightVisionMixin"],
   "injectors": {"defaultRequire": 1}
 }

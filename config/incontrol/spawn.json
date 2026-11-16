@@ -1,5 +1,47 @@
 [
   {
+    "dimension": "strata:abyssal_plain",
+    "mob": "naturalist:anglerfish",
+    "mincount": {"amount": 4, "mob": "naturalist:anglerfish", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "dimension": "strata:abyssal_plain",
+    "mob": "naturalist:giant_isopod",
+    "mincount": {"amount": 4, "mob": "naturalist:giant_isopod", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "dimension": "strata:abyssal_plain",
+    "mob": "alexscaves:hullbreaker",
+    "mincount": {"amount": 1, "mob": "alexscaves:hullbreaker", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "dimension": "strata:abyssal_plain",
+    "mob": "alexscaves:deep_one",
+    "mincount": {"amount": 4, "mob": "alexscaves:deep_one", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "dimension": "strata:abyssal_plain",
+    "mob": "alexscaves:deep_one_knight",
+    "mincount": {"amount": 2, "mob": "alexscaves:deep_one_knight", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
+    "dimension": "strata:abyssal_plain",
+    "mob": "alexscaves:deep_one_mage",
+    "mincount": {"amount": 1, "mob": "alexscaves:deep_one_mage", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
     "mod": [
       "cave_dweller",
       "weeping_angels", "whispering_spirits",

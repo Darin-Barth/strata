@@ -176,6 +176,16 @@ def scan_down(feature, biome, count, extra_y=1):
     if biome in WIDE:
         (lo, hi), mult = WIDE[biome]
         count *= mult
+    p = _scan_down(feature, count, lo, hi, extra_y)
+    if extra_y:
+        # Only into open water: a sea pickle or seagrass set down on a kelp stalk's lowest block
+        # cut the whole stalk loose (hundreds of kelp items per area as new terrain loaded).
+        p["placement"].insert(-1, {"type": "minecraft:block_predicate_filter", "predicate": {
+            "type": "minecraft:matching_blocks", "blocks": "minecraft:water"}})
+    return p
+
+
+def _scan_down(feature, count, lo, hi, extra_y):
     return {"feature": feature, "placement": [
         {"type": "minecraft:count", "count": count},
         {"type": "minecraft:in_square"},
@@ -307,11 +317,20 @@ SPAWNS = {
 }
 
 
+STRAYS = [f"aquaculture:{f}" for f in ("bluegill", "brown_trout", "carp", "catfish", "gar", "minnow", "muskellunge", "perch",
+                                         "smallmouth_bass", "rainbow_trout", "pink_salmon", "arapaima", "synodontis",
+                                         "tambaqui", "capitaine", "piranha", "bayad", "boulti", "tuna", "red_grouper",
+                                         "atlantic_cod", "atlantic_herring", "blackfish", "pollock", "pacific_halibut",
+                                         "atlantic_halibut", "jellyfish", "box_turtle", "arrau_turtle", "starshell_turtle")] + [
+    "quark:stoneling", "quark:toretoise", "alexsmobs:farseer", "mowziesmobs:grottol", "panascraftrpgmod:skeleton_wolf"]
+
+
 def biome_json(b):
     water, fog, music, particle = EFFECTS[b]
     eff = {"fog_color": 0x050A14, "sky_color": 0, "water_color": water, "water_fog_color": fog,
            "ambient_sound": "alexscaves:abyssal_chasm_ambience" if b == "the_trench" else "minecraft:ambient.underwater.loop",
-           "additions_sound": {"sound": "minecraft:ambient.underwater.loop.additions.rare", "tick_chance": 0.012},
+           # about one every 25 s (0.012 played one every 4 s, on top of the game's own underwater sounds)
+           "additions_sound": {"sound": "minecraft:ambient.underwater.loop.additions.rare", "tick_chance": 0.002},
            "mood_sound": {"sound": "minecraft:ambient.cave", "tick_delay": 3000, "block_search_extent": 8, "offset": 2.0},
            "music": {"sound": music, "min_delay": 6000, "max_delay": 18000, "replace_current_music": False}}
     if particle:
@@ -398,6 +417,11 @@ def main():
     write(out, "naturalist/tags/worldgen/biome/has_anglerfish.json", tag(deep, replace=False))
     write(out, "naturalist/tags/worldgen/biome/has_giant_isopod.json", tag(deep, replace=False))
     write(out, "upgrade_aquatic/tags/worldgen/biome/has_spawn/thrasher.json", tag([c("abyssal_shelf"), c("abyssal_plain")], replace=False))
+    # Spawns other mods add to every biome, or to every biome that isn't tagged as an ocean:
+    # Aquaculture's freshwater fish filled the whole fish cap, and Quark's and Alex's Mobs' cave
+    # mobs took 94% of the monster rolls from the Deep Ones.
+    write(out, f"{NS}/neoforge/biome_modifier/abyssal_no_strays.json", {
+        "type": "neoforge:remove_spawns", "biomes": f"#{NS}:abyssal_plain_biomes", "entity_types": STRAYS})
     if args_mods:
         build_structures(out, args_mods)
 

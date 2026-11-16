@@ -63,7 +63,7 @@ hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
 
 [[files]]
 file = "config/alexsmobs/giant_squid_spawns.json"
-hash = "d1d60b8be8d8b8418aac915a8e7e6dfc5527a61ded996195861d6db640fe8e6c"
+hash = "1b8645aeb35b1cd2a4130d568b8dd8e88146b0976ddccf8ff1bbe6049ecf2384"
 
 [[files]]
 file = "config/almostunified/duplicates.json"
@@ -426,7 +426,7 @@ hash = "14ef1c5fbb54ffa00b29f4cd4ba23d7a5d1d2ff4dc8554c24a221ec6259b33d4"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "643b40488950cc74e90254e63d75d1e4ab8f636e9f7d6932fb17f8e19dbd786e"
+hash = "ddf5e716cc76ced9f4667619a51e1b294283691b34067a3da30b4c309df6b9be"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -7161,6 +7161,10 @@ file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_fluorite.json"
 hash = "5ce59a0bbccacd3d02275953dc16ce981e82eca3468dfe41815124c83523c88b"
 
 [[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_no_strays.json"
+hash = "1319ccf5ec2bddbb8fb91c8303a1a66931dcf577c7ab5c4134128e12f89a86e3"
+
+[[files]]
 file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_osmium.json"
 hash = "8f5a0fabe679358d74011042205820d08b1385b78d802d97c8ba26640288bf95"
 
@@ -7362,15 +7366,15 @@ hash = "594a99f34c4b2032de96884d31689c6cd84f74daa26f5e3b35fc23947c2247d8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/abyssal_plain.json"
-hash = "6d144b291bcd4d4faf06357e848f40903edbea58848dec025e970a24140339f2"
+hash = "42e5713727e6e0d792174a0e612c2f958ba0242bb80bb171ba5384be794cfbed"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/abyssal_shelf.json"
-hash = "c10599a56e63c2ac4cb30e78f99d9a25cc2f619b96ca7aee944c0e073ed889e3"
+hash = "43b4937aa750b523fed8b913064f46da3bfe1f42fd5d07e03d81f69bab9cb157"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/bioluminescent_garden.json"
-hash = "aaf34d494bb95b11de2c61407e03ae20ee8a8fca4d6166c3e276ca3ff6f43cfc"
+hash = "a9482145d5e3278f1c8ac9a5e8b1f50205ba6b734fc788478f9564f3c8cc40b6"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/hollow_ashen_woodland.json"
@@ -7418,11 +7422,11 @@ hash = "4c2450ece985255aa7b036266c365089b3cb82a4a9af5b7d3f2701b5c1350a80"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/hydrothermal_field.json"
-hash = "6e3e75c37d66a47f337dd5a7711c56743497569b2cb65cecc72bb2ef1f0e98b2"
+hash = "4aee27215cfbc6b36cf46e55284f8a6c6bd038bba66ae8770eedd63b93db26af"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/biome/the_trench.json"
-hash = "7f7857fd2710bcc627470fc80ff3bd3894734fa1e5660ccc2ce25eceebe60ae4"
+hash = "740f897bde9b8c187dd5990c4d810bdfd7d9f1d6cc140e82f7a2da003732031e"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/configured_feature/abyssal/abyssal_plain/sediment_clay.json"
@@ -7510,19 +7514,19 @@ hash = "b346ba8149a611be38b3b8a4715588158a5209ec8b71019e8bfe7be8fbe5ced8"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_plain/glass_sponges.json"
-hash = "2221b05f45039c14884a174a0912ebeda959a3e962c432a5713b0b0c03041192"
+hash = "4d4e3b9980de8f95f96c09a79197d5ec41581009b342c7e5af3e6e202e807e46"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_plain/harp_sponges.json"
-hash = "ca24d2b6f0c52ea58e0b6f4fc3a4339569edb611c0edcba1f3f5513799bcc756"
+hash = "4104c1440551b03f8b17a314fb4c4ba7bc8b64378231c1621975be46b7655f45"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_plain/mussels.json"
-hash = "4b3380cc2fc731b2e409d5520aeac9c3807dda57afcbc04899e6538d91b765ae"
+hash = "c177819a516046dc093a414c7f3415915a688ca864c4453b0c71e61e93d0703d"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_plain/sea_pickle.json"
-hash = "8ec26171def702a163020909e5271499930f7897acd9e40549adc0dc25bc3d6e"
+hash = "50f2ff3e3dc913392b1387edc78cb53c97c6ef3204e2ec06352750a21e50421e"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_plain/sediment_clay.json"
@@ -7538,7 +7542,7 @@ hash = "185c55290e8a473b0e8cec7930578916096326a0fa1a90a2fa8f2c24d9df6810"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/anemones.json"
-hash = "3c3d4b84cf0510fb45229666abf0e71745a00265052579be8898b1c204b2f27d"
+hash = "1dcab9f152872aae92e21791eebcbc77b02ef52b3e744a0826e237a1ba123bc9"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/ceiling_glow_lichen.json"
@@ -7546,19 +7550,19 @@ hash = "26ce4035cba8b6b56482782b1743a198bffb581c84bf7a82bd291e38cc6dffcd"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/coral.json"
-hash = "98995d817a77d9e1ad4c6dd3a2ea0e53938b187a4d207c3decbba5e7a32146d6"
+hash = "ae7c577da0b2691062c8fa400cb9345de2fb6d7476afdfe619a229137de4a472"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/kelp.json"
-hash = "5ce0ef85c233f26ea6b04023a7047d7e2fb7efb485a3f5357f4d4718ec2820e6"
+hash = "de6feb78ae66d8aa603445904ea97698558f3e180e86c44711d8394f001435fc"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/sea_pickle.json"
-hash = "c8e15941a9886e2d8163498e7ea839973fe9ff9c7a8a589feb5a396cd484e869"
+hash = "1bf6c79ead16c0326da804d7bb651f1c37a179eca72fde73957856d6cc23f9a7"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/seagrass.json"
-hash = "6611cea9dfeee1d02c79f2ecf02cfb07866d7cd774764536744773eb70f04ee8"
+hash = "6f3401c86e6fd71fbecf2373acb8e66082beb3ca4e1cad6bfe9f43974d8a85ff"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/abyssal_shelf/sediment_gravel.json"
@@ -7570,7 +7574,7 @@ hash = "2abe80c391fa9f66ce9f6f4a27daebb50012284ab9654f790d671fcc50cd5ef3"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/anemones.json"
-hash = "da1516b962a41b970c1016bac755707a0c379456b0238efdd4e05dd800d5d233"
+hash = "bb8d90f797092401b7f4b6bb2bd59d184df4590e3263062419aecc6c889c9381"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/ceiling_glow_lichen.json"
@@ -7578,19 +7582,19 @@ hash = "b1a18a1132d741e58280d417e3fefcc284d0d8744dc5b4a0621a60aa8ce7451a"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/glow_kelp.json"
-hash = "70dd0d702725fccd96e9f6ea6c1fc1f54f3b2b1cc74c37afbbf32adbfee18318"
+hash = "11304ea816dfdb67bde2a770c557d67c87a11d03fb85b974e6aaa56455bb258a"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/ping_pong_sponges.json"
-hash = "8aac389331b8964111b6fd76aecf107fb71082b4dd3d7b525282fbd7d070f934"
+hash = "dec307b3c2ff42a42cd7f08162416830ea9e7467f1f1f7ae0f31cde7228c5294"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/sea_pickle.json"
-hash = "d4ac26a43a0a2461b17795073a0ff7fdfb0f8c7487a056abbd172be4114f71f5"
+hash = "83b04cd53dea5770b75550170892665aa029f3056b0f23430f5b0310e86cdb57"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/seagrass.json"
-hash = "16699c2ee84286b9e5e420ce00b54a9ab8defba08435c2852f0a85dc7ab1dbd5"
+hash = "613233548faf18f8ec2540e8eecc4facae7bf9913294dec8837502aafc15eb09"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/bioluminescent_garden/sediment_moss_block.json"
@@ -7606,15 +7610,15 @@ hash = "72b495bdd48611893401549375d09e40f6e5500e0961c6fa99c76fdec8f0715d"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/hydrothermal_field/black_vents.json"
-hash = "275bea2caf5fdef86d1b3fb1e22d8001ee67e9cb0f2dea34a9e61ccc1eae1d55"
+hash = "2f794d9ee71d1a6838862f0d45ea18726ce393648a0aa3280afe7dbd1a2f9c5c"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/hydrothermal_field/brine_pools.json"
-hash = "521d21293bf87f39316065ad2162ba870b93d34acc9997fe6ef9b45213ea6769"
+hash = "f510b50f0fb761f06d6bb4854bc00704d9e1eafb44cc3855f5517fde38c5b3da"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/hydrothermal_field/magma.json"
-hash = "d4d1ffdf0cd7e27dc73e5d056b230880a6ac505ebcb3f23503e578f62b7e4cf7"
+hash = "92e64de7448b87c9eec41a6d4ac8b7773c6d6bd217e1347e72504e13b290ae02"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/hydrothermal_field/sediment_blackstone.json"
@@ -7626,11 +7630,11 @@ hash = "3aab93d71a6680411da6602cf166308019385f2decafb15430f61bba9e3754de"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/hydrothermal_field/thermal_vents.json"
-hash = "57ac2602eb26af9af4072c482cfeec7037cb1b75d5bb1d45fd986b8a134e1864"
+hash = "fca803bee28c232f743b0e2400c245608c32034e888d9f02d3d82c3bcc46992b"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/black_vents.json"
-hash = "8266efced8c0045b708333975a7b2fa3a98efb8d4d1efb035426dd984c5c7811"
+hash = "fb367db9b415a3aea74f0944934e79749d450a801673e7a50732e8a7650572bd"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/deep_one_ruins.json"
@@ -7638,11 +7642,11 @@ hash = "a132f3396a7c2c759f65f7348cb8803e1f0ec0ddfccc34eb51a3c64e382cacdb"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/glass_sponges.json"
-hash = "3ecb4f11c0f701f92d4a526753de37614dbb3d1a187def8be27d67a8c125af9e"
+hash = "3d784a09a75da7460dc05a0c3f86ca5899d3b082bc60a87ce526856f67068101"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/mussels.json"
-hash = "09f58194f5a57691ef8e44c653a1e8ba68f66ee5a83f9bd8e77774d92e75a8da"
+hash = "09c35dec247aa95376f1898252a80f56d5ff383c700793f67df86261e0d3ae35"
 
 [[files]]
 file = "kubejs/data/strata/worldgen/placed_feature/abyssal/the_trench/sediment_abyssmarine.json"
@@ -8110,7 +8114,7 @@ hash = "307da1f77f6d4f7aaf3ffccf3548fe57b09a65cd1f61fba6947667d0c4915bab"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "79ce5d24a7f4d2239182926d1b3e84f3858439b24fb479a1d0e4424cfba3d9d6"
+hash = "5cb6c1b6eaf8fdf94d593d5366cfbc19cdc44c7d667f1e6098276f4b125b7613"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
@@ -8250,7 +8254,7 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/abyssal_vampire_air.js"
-hash = "c73857baeaa599bab7d528a163a2d70aea39e55c8f3df75fdce20ddb65f8233f"
+hash = "210c03bebe07f098a0c24b83710fb1b12044a5d12a5f163eb32e0df87549d338"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_beacon.js"
@@ -8262,7 +8266,7 @@ hash = "1bc3bddee40d64278be35a290bd99c85dcdf69f97088bf85b5fe366795b7c659"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
-hash = "51d19e5d9ba279545c6ea2c1d05ab3faaf16ba81c2d2935202aa3dd2379553c9"
+hash = "0efbb16d7902ce8ebb90074b59ecd3e0ee3b280c26650117e5cfd7b0805087e2"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
@@ -8274,7 +8278,7 @@ hash = "64f0ed33bc65a65e02990589495dc5cabf2fa7b6658a4c95393f5ce7b38af6ce"
 
 [[files]]
 file = "kubejs/startup_scripts/portal_ambience.js"
-hash = "279cd0a55457216df13cba145c798c2c8e3d470db53c3aaf21e072fa5d229642"
+hash = "f0b28cc5095eceec8fcc2b764c02bdcb8d9007f4fad3457ed285c86f38f4b471"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_boss_bags.js"
@@ -10217,7 +10221,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.1.0.jar"
-hash = "ebc913b68b94288904e3dc7167c134b05f6383711796cbd8abc88cc6f5f9ed72"
+hash = "d7559dba153d0233c990f08ce13653d64b9f7d1a886e4e82df548f0e55d28263"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

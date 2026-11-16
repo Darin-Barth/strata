@@ -283,8 +283,8 @@ PlayerEvents.tick(event => {
       data.putBoolean('strata_abyss_inside', true)
       abyssalArrive(player)
     }
-    // No Conduit power down here: bases have to be engineered.
-    if (player.tickCount % 20 === 0) player.server.runCommandSilent(`effect clear ${player.username} minecraft:conduit_power`)
+    // No Conduit power down here (bases have to be engineered): startup_scripts/abyssal_vampire_air.js
+    // refuses the effect, along with every other free way to breathe.
   } else {
     if (data.getBoolean('strata_abyss_inside')) data.putBoolean('strata_abyss_inside', false)
     if (abyssalDimensionOf(player) === 'minecraft:overworld') abyssalKeepSurfaceSpot(player)

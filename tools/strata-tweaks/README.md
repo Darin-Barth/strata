@@ -36,3 +36,7 @@ No Gradle. With a JDK 21 and an installed NeoForge 21.1 server's `libraries/` fo
 Bump `version` in `resources/META-INF/neoforge.mods.toml` for every change (the build replaces the old jar), then
 `packwiz refresh`. Re-check after a Steam 'n' Rails or Brewin' and Chewin' update: a renamed method makes the mixin
 fail at startup (`defaultRequire: 1`), which is deliberate.
+
+## Added Nov 16
+- `LevelSeaLevelMixin`: `Level.getSeaLevel()` returns 568 in `strata:abyssal_plain` (hard-coded 63 in 1.21.1; mob spawn rules compare against it).
+- `NightVisionMixin` (client): `GameRenderer.getNightVisionScale` returns 0 in `strata:hollow`, after every other mod's patch (priority 2000).

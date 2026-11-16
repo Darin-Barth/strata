@@ -40,6 +40,13 @@
       "y_spread": 1
     },
     {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:water"
+      }
+    },
+    {
       "type": "minecraft:biome"
     }
   ]

@@ -10,7 +10,7 @@
     "ambient_sound": "minecraft:ambient.underwater.loop",
     "additions_sound": {
       "sound": "minecraft:ambient.underwater.loop.additions.rare",
-      "tick_chance": 0.012
+      "tick_chance": 0.002
     },
     "mood_sound": {
       "sound": "minecraft:ambient.cave",

@@ -52,6 +52,9 @@ const hollowFogTarget = entity => {
 // event, so the value is also handed to Strata Tweaks (1.1.0+), which applies it last of all. Without
 // that mod the event's own values are all there is.
 let hollowFogBridge = null
+const hollowFogAbyssDimension = 'strata:abyssal_plain'
+const hollowFogAbyssCeiling = 562
+const hollowFogAbyssColor = [0.05, 0.15, 0.3]   // eased toward the colour wanted at the camera
 const hollowFogBridgeSet = far => {
   if (hollowFogBridge !== null) hollowFogBridge.set(far)
 }
@@ -98,6 +101,25 @@ const hollowFogSetup = () => {
   })
   NativeEvents.onEvent('net.neoforged.neoforge.client.event.ViewportEvent$ComputeFogColor', event => {
     try {
+      // The Abyssal Plain: the water gets darker the deeper you are, and never black. The game
+      // itself brightens underwater fog to full strength after a few seconds under ("water
+      // vision") at any depth, which made the whole sea one flat bright royal blue. Here the
+      // biome's water fog colour gives the hue and the depth below the ceiling the brightness:
+      // 55% just under the ceiling, 30% on the plain (245 m), 16% on the trench floor.
+      let camera = event.getCamera(), viewer = camera.getEntity()
+      if (viewer && String(viewer.level.dimension) === hollowFogAbyssDimension && String(camera.getFluidInCamera()) === 'WATER') {
+        let c = viewer.level.getBiome(camera.getBlockPosition()).value().getWaterFogColor()
+        let hue = [((c >> 16) & 255) / 255, ((c >> 8) & 255) / 255, (c & 255) / 255]
+        let top = Math.max(hue[0], hue[1], hue[2], 0.001)
+        let depth = Math.max(0, Math.min(550, hollowFogAbyssCeiling - camera.getPosition().y()))
+        let bright = depth < 245 ? 0.55 - 0.25 * depth / 245 : 0.30 - 0.14 * (depth - 245) / 305
+        for (let i = 0; i < 3; i++) hollowFogAbyssColor[i] += (hue[i] / top * bright - hollowFogAbyssColor[i]) * 0.03
+        event.setRed(hollowFogAbyssColor[0])
+        event.setGreen(hollowFogAbyssColor[1])
+        event.setBlue(hollowFogAbyssColor[2])
+        if (hollowFogBridge !== null) hollowFogBridge.setColor(hollowFogAbyssColor[0], hollowFogAbyssColor[1], hollowFogAbyssColor[2])
+        return
+      }
       if (hollowFogTarget(event.getCamera().getEntity()) < 0) {
         if (hollowFogBridge !== null) hollowFogBridge.setColor(-1, 0, 0)
         return

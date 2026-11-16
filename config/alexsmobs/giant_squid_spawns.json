@@ -6,13 +6,6 @@
         "negate": false,
         "value": "minecraft:is_deep_ocean"
       }
-    ],
-    [
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "strata:abyssal_deep"
-      }
     ]
   ]
 }
