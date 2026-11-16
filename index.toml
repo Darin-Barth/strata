@@ -534,7 +534,7 @@ hash = "c2eba5173b31f0f3388eb0881c63e705f494078c9bc87036cb211af03da0db64"
 
 [[files]]
 file = "config/sanity_renewed/dimension/hollow.toml"
-hash = "14cf4f02bdcd2fe6bee0e70a27b3066f2c04779dce15c42ae2e6a34e2ae70c8a"
+hash = "a19809c75c7c48f06bf730bd84532d63333ea3b3098d3a27ec1f5817d338a433"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
