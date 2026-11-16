@@ -112,7 +112,7 @@ hash = "29aa3d34a3b9ccee4ecdcd447589093f45ee8da100b954c241a2c8cca71ba344"
 
 [[files]]
 file = "config/cave_dweller/server_config.toml"
-hash = "fd4aa3dac4c5988ce0c8d858814fe6520aa886f501624f91b7bab845b43abc84"
+hash = "312a3f09bb324b28e3cc337fdd2fe9422cf2e3827c95b786e4604b97ca8e2d83"
 
 [[files]]
 file = "config/cobblemon/main.json"
@@ -534,7 +534,7 @@ hash = "c2eba5173b31f0f3388eb0881c63e705f494078c9bc87036cb211af03da0db64"
 
 [[files]]
 file = "config/sanity_renewed/dimension/hollow.toml"
-hash = "88931dcd01cadeee7c2372db6c6eba839f13673407cb653ff58530eaf9df49d7"
+hash = "14cf4f02bdcd2fe6bee0e70a27b3066f2c04779dce15c42ae2e6a34e2ae70c8a"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
@@ -608,7 +608,7 @@ hash = "8459e2b044fca5000feb1fd5432bb87cf06e9568bbb729207afaec1d9a6d0751"
 
 [[files]]
 file = "config/weeping-angels-spawns.toml"
-hash = "041bf0d2c3664751077d87e6f16d909e1a80303b891ec8d1b493eb3252c6c64d"
+hash = "73f8ecd63fb74de4041d09cfd459160e71366bb961813229e026b675b5af6745"
 
 [[files]]
 file = "config/weeping_angels-common.toml"
@@ -7165,12 +7165,24 @@ file = "kubejs/data/strata/neoforge/biome_modifier/abyssal_osmium.json"
 hash = "8f5a0fabe679358d74011042205820d08b1385b78d802d97c8ba26640288bf95"
 
 [[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/hollow_graveyard.json"
+hash = "9f2c273a7ed5c5a6f6e56f2754d4acaaa0458c0380b393deeb48a815ecfa7719"
+
+[[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/hollow_graveyard_grim.json"
+hash = "86d186d291c236185ce38af9aba6872ca6f6bee2964dfcf1b978515c53cbf592"
+
+[[files]]
 file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mithril.json"
 hash = "1682d2ebba0c7fd52b3874f9605c20f13851c6b62980550c06bdfb8f45a2342c"
 
 [[files]]
 file = "kubejs/data/strata/neoforge/biome_modifier/hollow_mutants.json"
 hash = "7a707b63cf4a6559ed92d8bf64cd518eaeca70dfb875347fcdd70004505ef241"
+
+[[files]]
+file = "kubejs/data/strata/neoforge/biome_modifier/hollow_no_filler.json"
+hash = "2bd5f70565528bf80a47bf6824f9a92221d5615dff77f04242ea3ee2dbaa93d9"
 
 [[files]]
 file = "kubejs/data/strata/puffish_skills/categories/fishing/category.json"
@@ -8106,7 +8118,7 @@ hash = "eb5b3bd5cbbcf3aca45d75437adf087b6d5adb573219c71205d5045bfad79af9"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "f43626eeba3551dad0d74975715b7cc95e8f731554635447b0895948ccf5528b"
+hash = "15a8eb4b9bd838e6837d1be1e5b76f65c4b1bbb9203673d883a65556079764ba"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
@@ -8250,7 +8262,7 @@ hash = "e76aa0fe574627e5d94129bcb7eac31af3a04c7da325141de317a636f9b3c737"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_fog.js"
-hash = "4a30b1fc76664fad5c02c97c19521ac5c6741847f944d16629e5c85a283d77cf"
+hash = "ea87ba97943ca5cbfafac18e80fd518479b5687ee1b2ca737e19dfefe3c686f4"
 
 [[files]]
 file = "kubejs/startup_scripts/pokeworld_portal.js"
@@ -10204,8 +10216,8 @@ hash = "ab2c89f6522d1d30ccec20d200e9a19418979edd8b19efa24b31f0464959e47b"
 metafile = true
 
 [[files]]
-file = "mods/strata-tweaks-1.0.0.jar"
-hash = "5ff1e63cae7b12e11fd64316d02ac4c62a8e090b092f606a8044e7d36b733703"
+file = "mods/strata-tweaks-1.1.0.jar"
+hash = "97c2a679644eecf017992232f55672f721ded5c039c599513cfaeb0ae306b6f0"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

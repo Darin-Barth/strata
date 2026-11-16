@@ -5,5 +5,6 @@
   "plugin": "strata.tweaks.mixin.Plugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin"],
+  "client": ["FogRendererMixin"],
   "injectors": {"defaultRequire": 1}
 }

@@ -4,6 +4,11 @@ Strata's own small NeoForge mod (`mods/strata-tweaks-<version>.jar`, shipped as 
 both the `.mrpack` and the CurseForge zip's overrides). Config: `config/strata_tweaks-common.toml`.
 
 ## What it does
+- **The Hollow's fog reaches the screen (1.1.0, Nov 15; clients only).** `kubejs/startup_scripts/hollow_fog.js` hands
+  `ClientFog` a fog distance and colour from the game's fog events; `FogRendererMixin` applies them at the very end of
+  `FogRenderer.setupFog` / `setupColor` (mixin priority 2000). Distant Horizons, Sodium Extra and Atmospherics all
+  rewrite the fog after those events, so the script alone drew nothing. `RenderSystem` is called through method handles
+  because the mod is compiled against the server jar. Re-check after an update of one of those three mods.
 - **Structure templates read faster (Nov 14).** Steam 'n' Rails (`DataFixesInternalsImpl.updateWithAllFixers`) and
   Brewin' and Chewin' (`BnCDataFixer.updateWithFixers`) each run their own full data-fixer pass over everything vanilla
   upgrades. For structure templates (saved building pieces, `DataFixTypes.STRUCTURE`) that pass is skipped

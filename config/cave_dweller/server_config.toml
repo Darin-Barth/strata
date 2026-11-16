@@ -7,10 +7,10 @@ version = 0
 surfaceTimeMultiplier = 1.0
 
 [timers.spawn]
-canSpawnMin = 300
-canSpawnMax = 600
+canSpawnMin = 180
+canSpawnMax = 360
 canSpawnCooldownChance = 0.4
-canSpawnCooldown = 1200
+canSpawnCooldown = 900
 
 [timers.noise]
 resetNoiseMin = 240

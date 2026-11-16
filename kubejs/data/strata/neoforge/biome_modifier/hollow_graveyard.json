@@ -1,0 +1,47 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "strata:hollow_dark_forest",
+    "strata:hollow_pale_garden",
+    "strata:hollow_taiga",
+    "strata:hollow_blackwood_taiga",
+    "strata:hollow_ashen_woodland",
+    "strata:hollow_swamp",
+    "strata:hollow_mangrove",
+    "strata:hollow_fungal_fen",
+    "strata:hollow_black_sea",
+    "strata:hollow_dripstone"
+  ],
+  "spawners": [
+    {
+      "type": "graveyard:ghoul",
+      "weight": 90,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "graveyard:revenant",
+      "weight": 80,
+      "minCount": 2,
+      "maxCount": 4
+    },
+    {
+      "type": "graveyard:skeleton_creeper",
+      "weight": 50,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "graveyard:nightmare",
+      "weight": 30,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "graveyard:reaper",
+      "weight": 20,
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ]
+}

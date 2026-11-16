@@ -265,6 +265,26 @@ def main():
             {"type": "mutantmonsters:mutant_skeleton", "weight": 1, "minCount": 1, "maxCount": 1},
             {"type": "mutantmonsters:mutant_creeper", "weight": 1, "minCount": 1, "maxCount": 1},
             {"type": "mutantmonsters:mutant_enderman", "weight": 1, "minCount": 1, "maxCount": 1}]})
+    # The Graveyard 4.0 only adds its config spawns to biomes in minecraft:is_overworld (hard-coded in
+    # its biome modifier), which the Hollow's biomes never are, so its spawn tags alone gave the Hollow
+    # no Graveyard mobs at all. These are the Hollow's own. In our copied biomes they compete with about
+    # 515 weight of vanilla monsters; in Grim & Bleak's biomes only with its own mobs (weights 1-3).
+    copies = [b for b in SURFACE + CAVES if b.startswith(NS + ":") and b != c("hollow_deep_dark")]
+    grim = [b for b in ALL if b.startswith(GB + ":")]
+    gy = lambda mob, w, lo, hi: {"type": f"graveyard:{mob}", "weight": w, "minCount": lo, "maxCount": hi}
+    write(out, f"{NS}/neoforge/biome_modifier/hollow_graveyard.json", {
+        "type": "neoforge:add_spawns", "biomes": copies, "spawners": [
+            gy("ghoul", 90, 1, 3), gy("revenant", 80, 2, 4), gy("skeleton_creeper", 50, 1, 2),
+            gy("nightmare", 30, 1, 1), gy("reaper", 20, 1, 2)]})
+    write(out, f"{NS}/neoforge/biome_modifier/hollow_graveyard_grim.json", {
+        "type": "neoforge:add_spawns", "biomes": grim, "spawners": [
+            gy("ghoul", 2, 1, 2), gy("revenant", 2, 2, 3), gy("nightmare", 1, 1, 1)]})
+    # Mobs that other mods add to every biome's monster list but that can never spawn on the Hollow's
+    # surface (Quark's Stoneling and Toretoise, Alex's Mobs' Farseer, Mowzie's Grottol): together about
+    # 230 weight of failed spawn attempts, which left Grim & Bleak's biomes almost empty.
+    write(out, f"{NS}/neoforge/biome_modifier/hollow_no_filler.json", {
+        "type": "neoforge:remove_spawns", "biomes": hb,
+        "entity_types": ["quark:stoneling", "quark:toretoise", "alexsmobs:farseer", "mowziesmobs:grottol"]})
     # Grim & Bleak: its two portal ruins that sit in Overworld biomes, and its any-biome ore.
     with zipfile.ZipFile(args.grim) as z:
         for s in ("grim_portal_2", "grim_portal_4"):

@@ -24,7 +24,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
   - Dark palettes copied from Regions Unexplored (ashen woodland, blackwood taiga, fungal fen)
   - Grim & Bleak's 8 biomes (eerie forest, grim taiga, bleak plains, grimstone mountains, ...): they only exist in its own dimension, so we use them directly
   - Caves: deep dark style plus dripstone
-- **Fog:** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`.
+- **Fog:** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`, applied through Strata Tweaks so other mods' fog changes can't undo it; Distant Horizons' far terrain is off in the Hollow. With a shader pack on, the game's fog isn't drawn at all, so the script gives the player a client-only Darkness effect instead (shader packs draw that one): no light means near-black, a held light clears it.
 - **Atmosphere** (biome effects, no extra mods): dark fog and black sky, ash/spore particles, cave mood sounds, quiet ambient loops, Deep Dark style music. AmbientSounds (in the pack) adds Hollow-only soundscapes such as whispers and distant knocks. A KubeJS script adds short Darkness pulses now and then while in the Hollow.
 
 ## 3. Mobs (6 new mods)
@@ -34,12 +34,14 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
 | Dread | Weeping Angels | spawn tag → Hollow biomes; no interdimensional teleport, no snow angels |
 | Dread | Sanity: Renewed | sanity meter and hallucinations in the Hollow only (per-dimension config); recovers outside |
 | Combat + loot | Grim & Bleak | its biomes, mobs, structures and darksteel/red amber gear live in the Hollow; its own portal and Overworld ruins removed |
-| Combat + loot | The Graveyard 4.0 | spawn/structure tags → Hollow biomes; hordes off (needs new dependency villagertradingplus) |
+| Combat + loot | The Graveyard 4.0 | structure tags → Hollow biomes; its mobs through the Hollow's own spawn files, because the mod only adds its spawns to `is_overworld` biomes; hordes off (needs new dependency villagertradingplus) |
 | Mini-bosses | Mutant Monsters | config spawns 0; our own Hollow spawn file |
 
 Also in the Hollow: Creakings (Pale Garden copy). Every horror mod in the pack keeps its scares inside the Hollow and does not grief bases.
 
 **Removed for lag:** Whispering Spirits (1.2.1; it raycast 100 blocks along every player's view every tick) and The Ravenous (after 1.2.1; it searched 70 blocks around every entity every tick). Both ran in every dimension, not just the Hollow. Before adding a horror mod, check what its tick handlers do.
+
+**Spawn lists:** in the copied biomes the Graveyard's ghouls, revenants, skeleton creepers, nightmares and reapers make up about a third of monster spawns beside the vanilla ones; Grim & Bleak's biomes have its own mobs plus a few Graveyard ones. Quark's Stoneling and Toretoise, Alex's Mobs' Farseer and Mowzie's Grottol are removed from every Hollow biome: they sit in every monster list but can't spawn on the surface, and their weight left the Grim & Bleak biomes almost empty.
 
 **Safety net:** an In Control! rule denies every horror mod's mobs outside `strata:hollow`, so a mod update can't leak them.
 
@@ -56,7 +58,7 @@ No mob kills a player without a chance to survive. The Hollow should be scary an
 - Spawn rates start low; we raise them after playtests rather than the other way round.
 
 ## 3b. Dread events
-`kubejs/server_scripts/hollow_dread.js`. Only for players in the Hollow, never harmful, sounds played to the one player they target. After a 30 s quiet start, about one event every 1.5–3 minutes:
+`kubejs/server_scripts/hollow_dread.js`. Only for players in the Hollow, never harmful, sounds played to the one player they target. After a 30 s quiet start, about one event every 45–75 seconds:
 - **Footsteps:** steps come up behind you and stop the moment you turn around.
 - **Whisper:** your own name (always the player hearing it), plus a whisper sound.
 - **Phantom sounds:** a creeper hiss, door, chest, heartbeat, Enderman stare... with nothing there.

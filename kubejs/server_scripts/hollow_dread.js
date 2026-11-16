@@ -7,12 +7,12 @@
 //   watcher    a dark figure at the edge of your view that vanishes when you look at it
 //   fog        a few seconds of Darkness, as if the fog thickened
 // Compasses and clocks spin by themselves: the Hollow's dimension type isn't "natural".
-// Rough pacing: after a 30 s quiet start, one event every ~1.5-3 minutes per player.
+// Rough pacing: after a 30 s quiet start, one event every ~45-75 seconds per player.
 // KubeJS server scripts share one scope: every top-level name here starts with "hollowDread".
 const hollowDreadState = {}
 const hollowDreadWatchers = {}
 const hollowDreadQuietStartMs = 30 * 1000
-const hollowDreadCooldownMs = 60 * 1000
+const hollowDreadCooldownMs = 25 * 1000
 const hollowDreadTorches = ['minecraft:torch', 'minecraft:wall_torch', 'minecraft:soul_torch', 'minecraft:soul_wall_torch']
 const hollowDreadPhantoms = [
   ['minecraft:entity.creeper.primed', 0.8, 1.0],
@@ -101,7 +101,10 @@ const hollowDreadEvents = {
         e.setSilent(true)
         e.setInvulnerable(true)
         e.addTag('hollow_watcher')
-        e.setYRot((Math.atan2(player.z - z, player.x - x) * 180 / Math.PI) - 90)
+        // setYRot() is hidden through KubeJS: setRotation is its wrapper (the error stopped every Watcher).
+        let face = (Math.atan2(player.z - z, player.x - x) * 180 / Math.PI) - 90
+        e.setRotation(face, 0)
+        e.setYHeadRot(face)
         e.spawn()
         hollowDreadWatchers[player.username] = { entity: e, until: Date.now() + 15000 }
         return true
@@ -114,7 +117,7 @@ const hollowDreadEvents = {
     hollowDreadSound(player, 'minecraft:entity.warden.heartbeat', player.x, player.y, player.z, 0.6, 0.9)
   },
 }
-const hollowDreadWeights = [['footsteps', 3], ['whisper', 2], ['phantom', 3], ['torch', 2], ['watcher', 2], ['fog', 2]]
+const hollowDreadWeights = [['footsteps', 3], ['whisper', 2], ['phantom', 3], ['torch', 2], ['watcher', 3], ['fog', 2]]
 
 PlayerEvents.tick(event => {
   const player = event.player
@@ -145,7 +148,7 @@ PlayerEvents.tick(event => {
   const arrived = player.persistentData.getLong('strata_hollow_arrived')
   if (arrived > 0 && Date.now() - arrived < hollowDreadQuietStartMs) return
   const state = hollowDreadState[player.username] || (hollowDreadState[player.username] = { next: 0 })
-  if (Date.now() < state.next || Math.random() > 1 / 30) return
+  if (Date.now() < state.next || Math.random() > 1 / 8) return
   let roll = Math.random() * hollowDreadWeights.reduce((s, x) => s + x[1], 0)
   let name = hollowDreadWeights[0][0]
   for (let i = 0; i < hollowDreadWeights.length; i++) {
@@ -153,7 +156,7 @@ PlayerEvents.tick(event => {
     if (roll < 0) { name = hollowDreadWeights[i][0]; break }
   }
   const fired = hollowDreadEvents[name](player)
-  if (fired !== false) state.next = Date.now() + hollowDreadCooldownMs + Math.random() * 60000
+  if (fired !== false) state.next = Date.now() + hollowDreadCooldownMs + Math.random() * 35000
 })
 
 // Leftover watchers from a restart.

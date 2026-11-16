@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:remove_spawns",
+  "biomes": "#strata:hollow_biomes",
+  "entity_types": [
+    "quark:stoneling",
+    "quark:toretoise",
+    "alexsmobs:farseer",
+    "mowziesmobs:grottol"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "grim_and_bleak:eerie_forest",
+    "grim_and_bleak:sparse_eerie_forest",
+    "grim_and_bleak:grim_taiga",
+    "grim_and_bleak:grimplains",
+    "grim_and_bleak:bleakplains",
+    "grim_and_bleak:grimstone_plains",
+    "grim_and_bleak:snowy_plains",
+    "grim_and_bleak:grimstone_mountains"
+  ],
+  "spawners": [
+    {
+      "type": "graveyard:ghoul",
+      "weight": 2,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "graveyard:revenant",
+      "weight": 2,
+      "minCount": 2,
+      "maxCount": 3
+    },
+    {
+      "type": "graveyard:nightmare",
+      "weight": 1,
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ]
+}

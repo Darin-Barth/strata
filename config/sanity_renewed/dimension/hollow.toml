@@ -10,7 +10,7 @@ applied_dimensions = [ "strata:hollow" ]
 		# Light is the main comfort: torches, lanterns and campfires push back
 		lightness = 0.05
 		lightness_threshold = 10
-		blocks = ["minecraft:campfire[lit=true];0.15;6;false", "minecraft:soul_campfire[lit=true];0.1;6;false", "minecraft:lantern;0.04;3;false", "minecraft:soul_lantern;0.04;3;false"]
+		blocks = ["minecraft:campfire[lit=true];0.3;6;false", "minecraft:soul_campfire[lit=true];0.2;6;false", "minecraft:lantern;0.04;3;false", "minecraft:soul_lantern;0.04;3;false"]
 	[sanity.multiplayer]
 		# Sticking together matters more in the Hollow
 		sane_player_company = 0.12
