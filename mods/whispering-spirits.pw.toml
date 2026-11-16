@@ -11,3 +11,6 @@ hash = "93223e731fb4c69e694922dbda633016db72e7c057dfc4a49313649b6e63e0ef909cef1f
 [update.modrinth]
 mod-id = "EVn5o9hS"
 version = "TVANdRak"
+[update.curseforge]
+file-id = 7729404
+project-id = 983684

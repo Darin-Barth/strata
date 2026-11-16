@@ -4,6 +4,12 @@ Strata's own small NeoForge mod (`mods/strata-tweaks-<version>.jar`, shipped as 
 both the `.mrpack` and the CurseForge zip's overrides). Config: `config/strata_tweaks-common.toml`.
 
 ## What it does
+- **Whispering Spirits' look check is cheap (1.1.0).** `WhisperingSpiritsMixin` cancels the mod's per-player tick handler
+  outside `strata:hollow` and on nine ticks out of ten, and shortens its ray-trace from 100 to 32 blocks. Test server,
+  one player: 1.5% of the server thread at every 5th tick and 100 blocks, 0.13% now.
+- **Soul Elytra boost in the elytra slot (1.1.0).** `ElytraSlotBoostMixin` / `ElytraSlotTickMixin` redirect Elytra Slot's
+  read of `DeeperDarkerConfig.soulElytraCooldown` (a static int until Deeper and Darker 1.4) to `ElytraCompat`, which
+  reads the config value. Verified by setting the cooldown to 123 on a test server.
 - **The Hollow's fog reaches the screen (1.1.0, Nov 15; clients only).** `kubejs/startup_scripts/hollow_fog.js` hands
   `ClientFog` a fog distance and colour from the game's fog events; `FogRendererMixin` applies them at the very end of
   `FogRenderer.setupFog` / `setupColor` (mixin priority 2000). Distant Horizons, Sodium Extra and Atmospherics all

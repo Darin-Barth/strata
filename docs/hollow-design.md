@@ -24,7 +24,7 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
   - Dark palettes copied from Regions Unexplored (ashen woodland, blackwood taiga, fungal fen)
   - Grim & Bleak's 8 biomes (eerie forest, grim taiga, bleak plains, grimstone mountains, ...): they only exist in its own dimension, so we use them directly
   - Caves: deep dark style plus dripstone
-- **Fog:** heavy fog that makes the Hollow hard to navigate: about 10 blocks of sight, about 28 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`, applied through Strata Tweaks so other mods' fog changes can't undo it; Distant Horizons' far terrain is off in the Hollow. With a shader pack on, the game's fog isn't drawn at all, so the script gives the player a client-only Darkness effect instead (shader packs draw that one): no light means near-black, a held light clears it.
+- **Fog:** heavy fog that makes the Hollow hard to navigate: about 12 blocks of sight at full sanity down to 6 at none, and 30 down to 16 while holding a light (any lantern or torch, the Pale Lantern, glowstone, froglights, sea lanterns, glow sticks) in either hand, easing between the two. Client-side `startup_scripts/hollow_fog.js`, applied through Strata Tweaks so other mods' fog changes can't undo it; Distant Horizons' far terrain is off in the Hollow. With a shader pack on, the game's fog isn't drawn at all, so the script gives the player a client-only Darkness effect instead (shader packs draw that one): no light means near-black, a held light clears it.
 - **Atmosphere** (biome effects, no extra mods): dark fog and black sky, ash/spore particles, cave mood sounds, quiet ambient loops, Deep Dark style music. AmbientSounds (in the pack) adds Hollow-only soundscapes such as whispers and distant knocks. A KubeJS script adds short Darkness pulses now and then while in the Hollow.
 
 ## 3. Mobs (6 new mods)
@@ -39,7 +39,9 @@ A separate, opt-in horror dimension, `strata:hollow`. It leans mostly on dread a
 
 Also in the Hollow: Creakings (Pale Garden copy). Every horror mod in the pack keeps its scares inside the Hollow and does not grief bases.
 
-**Removed for lag:** Whispering Spirits (1.2.1; it raycast 100 blocks along every player's view every tick) and The Ravenous (after 1.2.1; it searched 70 blocks around every entity every tick). Both ran in every dimension, not just the Hollow. Before adding a horror mod, check what its tick handlers do.
+**Whispering Spirits** is back (1.4.4): its spirits spawn on the Hollow's surface, and Strata Tweaks limits its look-at check to the Hollow, twice a second over 32 blocks.
+
+**Removed for lag:** Whispering Spirits (1.2.1 to 1.4.3; it raycast 100 blocks along every player's view every tick) and The Ravenous (after 1.2.1; it searched 70 blocks around every entity every tick). Both ran in every dimension, not just the Hollow. Before adding a horror mod, check what its tick handlers do.
 
 **Spawn lists:** in the copied biomes the Graveyard's ghouls, revenants, skeleton creepers, nightmares and reapers make up about a third of monster spawns beside the vanilla ones; Grim & Bleak's biomes have its own mobs plus a few Graveyard ones. Quark's Stoneling and Toretoise, Alex's Mobs' Farseer and Mowzie's Grottol are removed from every Hollow biome: they sit in every monster list but can't spawn on the surface, and their weight left the Grim & Bleak biomes almost empty.
 
