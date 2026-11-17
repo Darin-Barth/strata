@@ -487,12 +487,22 @@
 				{
 					id: "108DD12AF86E0FBC"
 					type: "item"
-					item: { count: 1, id: "strata_tweaks:carapace_diving_chestplate" }
+					item: { count: 1, id: "strata_tweaks:carapace_diving_helmet" }
 				}
 				{
 					id: "621269F46BAAD591"
 					type: "item"
+					item: { count: 1, id: "strata_tweaks:carapace_diving_chestplate" }
+				}
+				{
+					id: "44CBDD9EFBF4ADC0"
+					type: "item"
 					item: { count: 1, id: "strata_tweaks:carapace_diving_leggings" }
+				}
+				{
+					id: "180B25DDE7D7821E"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:carapace_diving_boots" }
 				}
 			]
 			rewards: [
@@ -543,12 +553,22 @@
 				{
 					id: "2135C398BEEE6807"
 					type: "item"
-					item: { count: 1, id: "strata_tweaks:abyssal_diving_chestplate" }
+					item: { count: 1, id: "strata_tweaks:abyssal_diving_helmet" }
 				}
 				{
 					id: "06B6A03A2CB9BCA5"
 					type: "item"
+					item: { count: 1, id: "strata_tweaks:abyssal_diving_chestplate" }
+				}
+				{
+					id: "511B4B175AAD6046"
+					type: "item"
 					item: { count: 1, id: "strata_tweaks:abyssal_diving_leggings" }
+				}
+				{
+					id: "6727E828509A5FB2"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:abyssal_diving_boots" }
 				}
 			]
 			rewards: [

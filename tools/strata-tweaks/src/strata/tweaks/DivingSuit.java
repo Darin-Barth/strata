@@ -40,9 +40,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  *   2  Carapace (Karkinos Claw)                 420 m   the upper Trench, where the Hullbreaker hunts
  *   3  Abyssal (the Hullbreaker's engine)       no limit: the Trench floor, the Leviathan
  *
- * A tier is the lower of the chestplate's and the leggings'. Any diving helmet and boots complete a suit:
- * Create's copper or netherite ones (Deep Seas only accepted copper) or the Carapace and Abyssal ones, which
- * are Create's own helmet and boots classes ({@link SuitGear}) with better armour and the tier's look. The mixins in {@code mixin/DiverPressureMixin} and
+ * A suit is four pieces and its tier is the lowest of the four (Darin, Nov 17: all four are required).
+ * Create's copper and netherite diving helmets and boots are tier 1 (Deep Seas only accepted the copper
+ * ones); the Carapace and Abyssal helmets and boots are Create's own classes ({@link SuitGear}) with better
+ * armour and the tier's look. The mixins in {@code mixin/DiverPressureMixin} and
  * {@code mixin/DeepSeasBacktanksMixin} hand Deep Seas these answers; everything else about pressure is its own.
  *
  * Backtanks: the suit's chestplate takes the slot a backtank would be worn in, so Deep Seas lets the helmet
@@ -111,10 +112,9 @@ public final class DivingSuit {
         }
     }
 
-    /** Tooltip lines of a suit piece; only the chestplate and leggings decide the depth. */
+    /** Tooltip lines of a suit piece. */
     static void describe(int tier, boolean decidesDepth, List<Component> lines) {
         lines.add(Component.translatable("tooltip.strata_tweaks.suit.part." + tier).withStyle(ChatFormatting.GRAY));
-        if (!decidesDepth) return;
         int depth = depthOf(tier, 280);
         lines.add((depth >= NO_LIMIT ? Component.translatable("tooltip.strata_tweaks.suit.no_limit")
                 : Component.translatable("tooltip.strata_tweaks.suit.depth", depth)).withStyle(ChatFormatting.AQUA));
@@ -141,12 +141,13 @@ public final class DivingSuit {
 
     private static final int NO_LIMIT = 1_000_000;
 
-    /** A diving helmet (or boots): one of Create's two, or one of ours. */
-    private static boolean divingPiece(ItemStack stack, String kind) {
+    /** The tier of a diving helmet (or boots): 1 for Create's two, 2 and 3 for ours, 0 for anything else. */
+    private static int gearTier(ItemStack stack, String kind) {
         ResourceLocation id = BuiltInRegistries.ITEM.getKey(stack.getItem());
         String path = id.getPath();
-        if (id.getNamespace().equals("create")) return path.equals("copper_diving_" + kind) || path.equals("netherite_diving_" + kind);
-        return id.getNamespace().equals(StrataTweaks.MODID) && (path.equals("carapace_diving_" + kind) || path.equals("abyssal_diving_" + kind));
+        if (id.getNamespace().equals("create")) return path.equals("copper_diving_" + kind) || path.equals("netherite_diving_" + kind) ? 1 : 0;
+        if (!id.getNamespace().equals(StrataTweaks.MODID)) return 0;
+        return path.equals("carapace_diving_" + kind) ? 2 : path.equals("abyssal_diving_" + kind) ? 3 : 0;
     }
 
     /** 0 for anything that is no suit piece, 1 for Deep Seas' copper chestplate and leggings, 2 and 3 for ours. */
@@ -158,8 +159,9 @@ public final class DivingSuit {
 
     /** The tier of the whole suit worn, 0 without a full one. */
     public static int tier(LivingEntity entity) {
-        if (!divingPiece(entity.getItemBySlot(EquipmentSlot.HEAD), "helmet") || !divingPiece(entity.getItemBySlot(EquipmentSlot.FEET), "boots")) return 0;
-        return Math.min(pieceTier(entity.getItemBySlot(EquipmentSlot.CHEST)), pieceTier(entity.getItemBySlot(EquipmentSlot.LEGS)));
+        int gear = Math.min(gearTier(entity.getItemBySlot(EquipmentSlot.HEAD), "helmet"), gearTier(entity.getItemBySlot(EquipmentSlot.FEET), "boots"));
+        if (gear == 0) return 0;
+        return Math.min(gear, Math.min(pieceTier(entity.getItemBySlot(EquipmentSlot.CHEST)), pieceTier(entity.getItemBySlot(EquipmentSlot.LEGS))));
     }
 
     private static int depthOf(int tier, int copper) {

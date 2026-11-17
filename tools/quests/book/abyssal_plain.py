@@ -61,7 +61,7 @@ q("suit", "Copper Diving Suit", deps="shelf", icon="create:copper_diving_helmet"
   rewards=give("minecraft:copper_ingot", 16), desc="""
     Going deeper than &e120 m&r needs the full &eCopper Diving Suit&r: Create's &eCopper Diving Helmet&r and &eBoots&r, plus Deep Seas' &eDiving Chestplate&r and &eLeggings&r.
 
-    Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eBacktank&r in your inventory: the helmet breathes from it. Carry a spare! Create's netherite helmet and boots count as well.
+    Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eBacktank&r in your inventory: the helmet breathes from it. Carry a spare! Create's netherite helmet and boots count as well as the copper ones.
 
     That is the first of three suits. The bosses of the deep give you the plating for the next two.""")
 
@@ -157,15 +157,16 @@ q("karkinos", "Karkinos", deps="plain", icon="hybrid_aquatic:karkinos_claw", at=
     &6Drops:&r the &eKarkinos Claw&r, and &dAbyssal Pearls&r when it dies in the Abyssal Plain.""")
 
 q("carapace_suit", "Carapace Diving Suit", deps="karkinos", icon="strata_tweaks:carapace_diving_chestplate", at=(15.75, -3.0), tier=4,
-  tasks=[item("strata_tweaks:carapace_diving_chestplate"), item("strata_tweaks:carapace_diving_leggings")],
+  tasks=[item("strata_tweaks:carapace_diving_helmet"), item("strata_tweaks:carapace_diving_chestplate"),
+         item("strata_tweaks:carapace_diving_leggings"), item("strata_tweaks:carapace_diving_boots")],
   rewards=[xp(250), bag("uncommon")], desc="""
     The crab's shell makes a better suit than copper does.
 
-    One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make six &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay.
+    One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make six &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, a piece of your diving suit (helmet, chestplate, leggings or boots) in the middle and a &eBrass Sheet&r last. Enchantments stay.
 
-    With both pieces (and a diving helmet and boots) you hold out down to &e420 m&r: deep enough to walk the upper Trench, where the &cHullbreaker&r hunts.
+    Wearing &eall four&r Carapace pieces you hold out down to &e420 m&r (a mixed suit only counts as its weakest piece): deep enough to walk the upper Trench, where the &cHullbreaker&r hunts.
 
-    The other four platings go on your &ediving helmet&r and &eboots&r (more armour, and the suit looks the part) and on two &eBacktanks&r: a Carapace Backtank holds &etwice&r the air.""")
+    The last two platings go on &eBacktanks&r the same way: a Carapace Backtank holds &etwice&r the air.""")
 
 q("hullbreaker", "The Hullbreaker", deps=["karkinos", "trench"], icon="alexscaves:immortal_embryo", at=(17.5, -1.5), tier=4,
   tasks=kill("alexscaves:hullbreaker"), desc="""
@@ -178,15 +179,16 @@ q("hullbreaker", "The Hullbreaker", deps=["karkinos", "trench"], icon="alexscave
     &6Drops:&r the &eImmortal Embryo&r, the &eEnigmatic Engine&r, scrap metal and &dAbyssal Pearls&r.""")
 
 q("abyssal_suit", "Abyssal Diving Suit", deps=["hullbreaker", "carapace_suit"], icon="strata_tweaks:abyssal_diving_chestplate", at=(19.25, -3.0), tier=5,
-  tasks=[item("strata_tweaks:abyssal_diving_chestplate"), item("strata_tweaks:abyssal_diving_leggings")],
+  tasks=[item("strata_tweaks:abyssal_diving_helmet"), item("strata_tweaks:abyssal_diving_chestplate"),
+         item("strata_tweaks:abyssal_diving_leggings"), item("strata_tweaks:abyssal_diving_boots")],
   rewards=[xp(500), bag("rare")], desc="""
     The last suit: no depth is too deep for it.
 
-    The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make six &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r.
+    The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make six &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r, for all four pieces.
 
     In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called.
 
-    Plate the Carapace helmet, boots and Backtanks again as well: the tanks then hold &ethree times&r the air.""")
+    Plate your Carapace Backtanks again and they hold &ethree times&r the air.""")
 
 q("pearls", "Abyssal Pearls", deps="hullbreaker", icon="strata:abyssal_pearl", at=(19.25, -1.5), tier=3,
   tasks=item("strata:abyssal_pearl", 6), desc="""

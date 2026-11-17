@@ -32,7 +32,7 @@ final class SuitGear {
                 ResourceLocation.fromNamespaceAndPath(StrataTweaks.MODID, texture)) {
             @Override
             public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
-                DivingSuit.describe(tier, false, lines);
+                DivingSuit.describe(tier, true, lines);
                 super.appendHoverText(stack, context, lines, flag);
             }
         };
@@ -43,7 +43,7 @@ final class SuitGear {
                 ResourceLocation.fromNamespaceAndPath(StrataTweaks.MODID, texture)) {
             @Override
             public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
-                DivingSuit.describe(tier, false, lines);
+                DivingSuit.describe(tier, true, lines);
                 super.appendHoverText(stack, context, lines, flag);
             }
         };
