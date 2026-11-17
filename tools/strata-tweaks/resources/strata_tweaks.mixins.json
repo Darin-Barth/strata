@@ -6,7 +6,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
              "WhisperingSpiritsMixin", "LevelSeaLevelMixin", "DiverPressureMixin", "DeepSeasBacktanksMixin",
-             "BacktankUtilMixin", "BacktankBlockEntityMixin"],
+             "BacktankUtilMixin", "BacktankBlockEntityMixin", "LootPetMessageMixin"],
   "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin", "BacktankRendererMixin"],
   "injectors": {"defaultRequire": 1}
 }
