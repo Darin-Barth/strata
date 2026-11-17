@@ -43,7 +43,7 @@ q("rules", "The Sea Always Wins", deps="lifepod", icon="minecraft:water_bucket",
 
     &bThe sea always wins:&r break a block next to water and the gap fills with water. No digging dry tunnels!
     &bAir has to come from somewhere:&r a dry room only stays dry while an &eOxygen Diffuser&r in it holds oxygen. Without one you get a warning, and then the room floods.
-    &bOnly diving gear breathes for you:&r a diving helmet with its air supply, or a brewed Water Breathing potion. Charms, trinkets, pets, enchanted armour and Conduits don't work down here.
+    &bOnly diving gear breathes for you:&r a diving helmet with its air supply, or a brewed Water Breathing potion. Charms, trinkets, pets, enchanted armour and Conduits don't work down here. A plain diving helmet with no air tank (Hybrid Aquatic's, Alex's Caves') lets you hold your breath for a minute instead of fifteen seconds.
     &bWater pressure:&r deeper than &e120 m&r (counted from the ceiling) the water starts to hurt you, and at &c180 m&r it crushes you.
 
     The water gets darker the deeper you go, but you can always see: bring lights anyway. Click the checkmark when you're ready.""")

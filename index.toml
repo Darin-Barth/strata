@@ -394,7 +394,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ef01ba63cad07a527b7bf7e715de97856c97b9103e7b3129b250bbaa26069374"
+hash = "f46977c35aaa0b2c2493ab326b018b30a43fc4a5a844b1cff883783f6201c643"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -8366,7 +8366,7 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/abyssal_vampire_air.js"
-hash = "0c055c0510adb5fa5e861f4a13d4394ab8a7facc328876e671a9214a92f475af"
+hash = "41c35ad5a2a9ecd8e6dd14f151468207ccf075302d3b9bc7ab66f45673161a8d"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_beacon.js"
