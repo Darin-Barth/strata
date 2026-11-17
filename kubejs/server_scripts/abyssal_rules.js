@@ -53,7 +53,24 @@ ItemEvents.rightClicked('strata:leviathan_lure', event => {
   }
   player.mainHandItem.count--
   const r = abyssalYaw(player) * Math.PI / 180
-  const x = player.x - Math.sin(r) * 24, z = player.z + Math.cos(r) * 24, y = player.y - 6
+  let x = player.x - Math.sin(r) * 24, z = player.z + Math.cos(r) * 24, y = player.y + 10
+  // It rises from just below the diver, but a diver in a suit stands on the trench floor, and six blocks
+  // under the floor is solid rock (it sat there stuck, Nov 17): take the first open water, from six
+  // below to well above. If the spot ahead is all rock (the basin wall), it comes up over the diver.
+  const lureLevel = player.level
+  const lureOpen = (bx, by, bz) => String(lureLevel.getBlock(bx, by, bz).id) === 'minecraft:water' &&
+    String(lureLevel.getBlock(bx, by + 6, bz).id) === 'minecraft:water'
+  let lureFound = false
+  for (let dy = -6; dy <= 48 && !lureFound; dy++) {
+    if (lureOpen(Math.floor(x), Math.floor(player.y) + dy, Math.floor(z))) {
+      y = Math.floor(player.y) + dy + 3
+      lureFound = true
+    }
+  }
+  if (!lureFound) {
+    x = player.x
+    z = player.z
+  }
   event.server.runCommandSilent(`execute in ${abyssalDimensionId} run summon cataclysm:the_leviathan ${x.toFixed(1)} ${y.toFixed(1)} ${z.toFixed(1)}`)
   event.server.runCommandSilent(`execute in ${abyssalDimensionId} positioned ${player.x} ${player.y} ${player.z} run tellraw @a[distance=..200] {"text":"Something vast stirs in the trench...","color":"dark_aqua","italic":true}`)
   event.cancel()
