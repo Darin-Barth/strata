@@ -22,5 +22,6 @@
   "block.strata_tweaks.carapace_copper_backtank": "Carapace Copper Backtank",
   "block.strata_tweaks.carapace_netherite_backtank": "Carapace Netherite Backtank",
   "block.strata_tweaks.abyssal_copper_backtank": "Abyssal Copper Backtank",
-  "block.strata_tweaks.abyssal_netherite_backtank": "Abyssal Netherite Backtank"
+  "block.strata_tweaks.abyssal_netherite_backtank": "Abyssal Netherite Backtank",
+  "tooltip.strata_tweaks.suit.laser": "Full suit: dulls the Leviathan's laser"
 }

@@ -186,7 +186,7 @@ q("abyssal_suit", "Abyssal Diving Suit", deps=["hullbreaker", "carapace_suit"], 
 
     The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make six &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r, for all four pieces.
 
-    In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called.
+    In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called. The full suit also takes most of the sting out of its laser: enough to walk out of the beam, not to stand in it.
 
     Plate your Carapace Backtanks again and they hold &ethree times&r the air.""")
 

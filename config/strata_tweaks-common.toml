@@ -21,3 +21,8 @@ divingSuitDepthCarapace = 420
 # Default: 0
 # Range: 0 ~ 100000
 divingSuitDepthAbyssal = 0
+#Share of the Leviathan's laser damage a diver in the full Abyssal Diving Suit takes (about 10 a hit,
+#three hits a second, hardly reduced by armour). 1.0 = no protection.
+# Default: 0.25
+# Range: 0.0 ~ 1.0
+abyssalSuitLaserScale = 0.25

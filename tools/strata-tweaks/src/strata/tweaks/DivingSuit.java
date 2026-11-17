@@ -22,6 +22,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -111,6 +112,24 @@ public final class DivingSuit {
         int depth = depthOf(tier, 280);
         lines.add((depth >= NO_LIMIT ? Component.translatable("tooltip.strata_tweaks.suit.no_limit")
                 : Component.translatable("tooltip.strata_tweaks.suit.depth", depth)).withStyle(ChatFormatting.AQUA));
+        if (tier >= 3 && StrataTweaks.abyssalSuitLaserScale() < 1.0) {
+            lines.add(Component.translatable("tooltip.strata_tweaks.suit.laser").withStyle(ChatFormatting.AQUA));
+        }
+    }
+
+    private static final ResourceLocation LEVIATHAN_LASER = ResourceLocation.fromNamespaceAndPath("cataclysm", "deathlaser");
+
+    /**
+     * The Leviathan's laser does about 10 damage a hit, three hits a second, and armour hardly counts against
+     * it: a diver in the full Abyssal suit was dead in a second (test, Nov 17), and a diver in diving boots
+     * walks the sea floor and cannot swim out of the beam. The full Abyssal suit takes a share of it
+     * ({@code abyssalSuitLaserScale}), enough to walk out of the beam, not to stand in it.
+     */
+    public static void onIncomingDamage(LivingIncomingDamageEvent event) {
+        if (!(event.getEntity() instanceof Player player)) return;
+        if (!event.getSource().typeHolder().unwrapKey().map(key -> key.location().equals(LEVIATHAN_LASER)).orElse(false)) return;
+        double scale = StrataTweaks.abyssalSuitLaserScale();
+        if (scale < 1.0 && tier(player) >= 3) event.setAmount((float) (event.getAmount() * scale));
     }
 
     public static void addToTabs(BuildCreativeModeTabContentsEvent event) {

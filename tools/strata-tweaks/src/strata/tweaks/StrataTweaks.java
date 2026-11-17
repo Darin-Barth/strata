@@ -36,6 +36,10 @@ public final class StrataTweaks {
     public static final ModConfigSpec.IntValue SUIT_DEPTH_ABYSSAL = BUILDER
             .comment("The same for the Abyssal Diving Suit (tier 3). 0 = no limit.")
             .defineInRange("divingSuitDepthAbyssal", 0, 0, 100000);
+    public static final ModConfigSpec.DoubleValue ABYSSAL_SUIT_LASER_SCALE = BUILDER
+            .comment("Share of the Leviathan's laser damage a diver in the full Abyssal Diving Suit takes (about 10 a hit,",
+                    "three hits a second, hardly reduced by armour). 1.0 = no protection.")
+            .defineInRange("abyssalSuitLaserScale", 0.25, 0.0, 1.0);
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public StrataTweaks(IEventBus modBus, ModContainer container) {
@@ -47,6 +51,7 @@ public final class StrataTweaks {
         modBus.addListener(TierTanks::commonSetup);
         modBus.addListener(DivingSuit::addToTabs);
         NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
+        NeoForge.EVENT_BUS.addListener(DivingSuit::onIncomingDamage);
     }
 
     public static boolean skipModStructureFixers() {
@@ -67,6 +72,10 @@ public final class StrataTweaks {
 
     public static int suitDepthAbyssal() {
         return SPEC.isLoaded() ? SUIT_DEPTH_ABYSSAL.get() : 0;
+    }
+
+    public static double abyssalSuitLaserScale() {
+        return SPEC.isLoaded() ? ABYSSAL_SUIT_LASER_SCALE.get() : 0.25;
     }
 
     public static double monsterCapScale() {

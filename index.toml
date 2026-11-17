@@ -111,6 +111,10 @@ file = "config/carryon-common.toml"
 hash = "29aa3d34a3b9ccee4ecdcd447589093f45ee8da100b954c241a2c8cca71ba344"
 
 [[files]]
+file = "config/cataclysm-common.toml"
+hash = "74faae0e64a7fcd6f75614be9291b9531c38940e68ee7c8838637d8b65d3b624"
+
+[[files]]
 file = "config/cave_dweller/server_config.toml"
 hash = "312a3f09bb324b28e3cc337fdd2fe9422cf2e3827c95b786e4604b97ca8e2d83"
 
@@ -394,7 +398,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "9a377034de46736acf9ae17a9949f30a0412ef0d1f629160a6723e7a9a01e65c"
+hash = "6b4e38d9cebc52e7087a696ac11fe9b7e6c0c5c23a1b132488419adb067213fc"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -562,7 +566,7 @@ hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
 file = "config/strata_tweaks-common.toml"
-hash = "62b0216d36ad0c474ede2f45148bcb4719e8573a7ee2375a5efde9a564c96021"
+hash = "14f9840249aa84ab7e2ecce1f10ed938006fa295775f36334c18f72d1b185898"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -10333,7 +10337,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.2.0.jar"
-hash = "22c30cc445e2fd10a1ee521378904b5469427e4dc9860b5727a8379660a9efe2"
+hash = "e6313a71fbe4c6bd2e1bd1e1dba264e8fd4940486cbe68e15cdacd9b1a7bf27d"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
