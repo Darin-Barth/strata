@@ -4,7 +4,7 @@ license = "MIT"
 
 [[mods]]
 modId = "strata_tweaks"
-version = "1.2.0"
+version = "1.2.1"
 displayName = "Strata Tweaks"
 description = "Strata modpack's own small server fixes: skips two mods' extra data-fixer passes on structure templates and scales the hostile mob cap. On clients it applies the Hollow's fog after other mods' fog changes."
 

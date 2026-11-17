@@ -10,10 +10,19 @@ an entry once the mod ships the fix itself (the boot log no longer names the fil
   * Croptopia 4.2.4: Oatmeal and Rhubarb Crisp ask for the tag c:oats, which nothing defines.
   * Create: Interiors 0.6.1: re-dyeing a chair asks for c:<colour>_dyes, which nothing defines (32 recipes).
 
-Run from the repo root:  python -I tools/build_mod_fixes.py
+End gate (Nov 17 audit, docs/end-eyes.md):
+  * Doctor Who: Weeping Angels 1.0.5: one catacomb room ("psycho") holds a working 3x3 End portal. The room is
+    taken out of the catacomb's room pool (needs the mods folder, to read the mod's own pool).
+  * End portal blocks and frames, vanilla's and End Remastered's, join c:relocation_not_supported, the tag AE2's
+    Spatial IO, Mekanism's Cardboard Box, Ars and Create read before they move a block.
+
+Run from the repo root:  python -I tools/build_mod_fixes.py [<mods dir>]
+(without the mods folder the catacomb pool is left as it is)
 """
 import json
 import pathlib
+import sys
+import zipfile
 
 DATA = pathlib.Path(__file__).resolve().parent.parent / "kubejs" / "data"
 COLOURS = ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple",
@@ -65,6 +74,25 @@ def main():
     for colour in COLOURS:
         write(f"c/tags/item/{colour}_dyes.json", {"values": [{"id": f"#c:dyes/{colour}", "required": False}]})
         count += 1
+    write("c/tags/block/relocation_not_supported.json", {"replace": False, "values": [
+        "minecraft:end_portal", "minecraft:end_portal_frame", "minecraft:end_gateway",
+        {"id": "endrem:ancient_portal_frame", "required": False}]})
+    count += 1
+    if len(sys.argv) > 1:
+        pool_path = "data/weeping_angels/worldgen/template_pool/catacombs/classic/catacomb.json"
+        jars = [p for p in pathlib.Path(sys.argv[1]).glob("*.jar") if "weeping_angels" in p.name.lower()]
+        if not jars:
+            sys.exit("no Weeping Angels jar in " + sys.argv[1])
+        pool = json.loads(zipfile.ZipFile(jars[0]).read(pool_path))
+        before = len(pool["elements"])
+        pool["elements"] = [e for e in pool["elements"] if "psycho" not in json.dumps(e["element"])]
+        if len(pool["elements"]) != before - 1:
+            sys.exit(f"expected to drop exactly one catacomb room, dropped {before - len(pool['elements'])}: check the mod")
+        pool = {"neoforge:conditions": loaded("weeping_angels"), **pool}
+        write("weeping_angels/worldgen/template_pool/catacombs/classic/catacomb.json", pool)
+        count += 1
+    else:
+        print("no mods folder given: the Weeping Angels catacomb pool was not rebuilt")
     print(f"mod fixes: {count} files")
 
 

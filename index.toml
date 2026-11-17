@@ -489,6 +489,10 @@ file = "config/obscuria/aquamirae-early.json"
 hash = "95a6ce1a5c2bfdfc3c2842a171b34ddbbd69536c54521edce3086db3b4b4134c"
 
 [[files]]
+file = "config/oritech-common.toml"
+hash = "bfbdef77d33834efe4399edf6f9a0dd0759ba2de8f0f2f2e8788072ad95189e5"
+
+[[files]]
 file = "config/playerrevive.json"
 hash = "773b0f469fa4cdf997fbe8a5c76c106a8bea1193eb13093c4102a7748effb1f3"
 
@@ -1487,6 +1491,10 @@ hash = "75bebe70c4d7a06f3988329df95fd680b4951b9e9fff7a69d18f9f32a6c23892"
 [[files]]
 file = "kubejs/data/bountiful/bounty_pools/bountiful/toolsmith_rews.json"
 hash = "d9da65beec2defe8113d532f0f521f04be507309f9a3298ec1b818e1f1e884d7"
+
+[[files]]
+file = "kubejs/data/c/tags/block/relocation_not_supported.json"
+hash = "df47427310b08bf63c1746d409ba43f8b2cb6fa21c3ac46f95934fa2e273c6ec"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_type/capturing_not_supported.json"
@@ -8221,6 +8229,10 @@ file = "kubejs/data/weeping_angels/tags/worldgen/biome/spawns/weeping_angels.jso
 hash = "67800d37802c8ade85a9389b89851dd72ac772b24dcbc64ef16d5c7234f442f6"
 
 [[files]]
+file = "kubejs/data/weeping_angels/worldgen/template_pool/catacombs/classic/catacomb.json"
+hash = "5c69cb28c79dc6dbed5b1ea040a9f64ddfb4ecc677600056a41ee98391136ae8"
+
+[[files]]
 file = "kubejs/data/werewolves/neoforge/biome_modifier/gen/silver_ore.json"
 hash = "99b969132018e9da1071065a8593ba9564928b1ed0aa5ae3ab45f9dac071f7d5"
 
@@ -8295,6 +8307,10 @@ hash = "55865eb4e4e94d64d6df77792408d9ee65aec45a8e0885dde396a3dcae890ef9"
 [[files]]
 file = "kubejs/server_scripts/strata_end_eyes.js"
 hash = "2f2a4d3cbbc3018231012ed28fa47d1d63c54990fdbe166fd022d79a8984439d"
+
+[[files]]
+file = "kubejs/server_scripts/strata_end_gate.js"
+hash = "a7592e5218aa1bd7a7b9f5cfe5a0dd9c41b0b24f0519b29914df8586ff4aea7d"
 
 [[files]]
 file = "kubejs/server_scripts/strata_excelsius_legs.js"
@@ -8411,6 +8427,10 @@ hash = "2726fa6feb3aa5c2f7884e51f8c381d53212326ac705e2bf529ec896f7f42b3d"
 [[files]]
 file = "kubejs/startup_scripts/strata_end_eyes.js"
 hash = "0dda2914bebd59c9ce90e361bfe84b062d6a856e5ab3e25fe555a5d72f15634f"
+
+[[files]]
+file = "kubejs/startup_scripts/strata_end_gate.js"
+hash = "076b624ad98ba020287a2531c27e240d363a5761878921a318b40422cffc0d37"
 
 [[files]]
 file = "kubejs/startup_scripts/strata_loot_bags.js"
@@ -10336,8 +10356,8 @@ hash = "ab2c89f6522d1d30ccec20d200e9a19418979edd8b19efa24b31f0464959e47b"
 metafile = true
 
 [[files]]
-file = "mods/strata-tweaks-1.2.0.jar"
-hash = "f483ec16a292dd42715562398085efdeb0e79eaa7f6000384110bd036e13096b"
+file = "mods/strata-tweaks-1.2.1.jar"
+hash = "9a71d99176841d76df1fc89cb4385386761547724476f761daa7ca25bc01d8e5"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

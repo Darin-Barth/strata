@@ -23,6 +23,7 @@ public final class Plugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith(".DiverPressureMixin") || mixinClassName.endsWith(".DeepSeasBacktanksMixin")) return loaded("create_submarine");
         if (mixinClassName.contains(".Backtank")) return loaded("create");
         if (mixinClassName.endsWith(".LootPetMessageMixin")) return loaded("inventorypets");
+        if (mixinClassName.endsWith(".IntegratedDynamicsTeleportMixin")) return loaded("integrateddynamics");
         return true;
     }
 
