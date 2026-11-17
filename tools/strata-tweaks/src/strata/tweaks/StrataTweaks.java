@@ -52,6 +52,7 @@ public final class StrataTweaks {
         modBus.addListener(DivingSuit::addToTabs);
         NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
         NeoForge.EVENT_BUS.addListener(DivingSuit::onIncomingDamage);
+        NeoForge.EVENT_BUS.addListener(DivingSuit::onChangedDimension);
     }
 
     public static boolean skipModStructureFixers() {

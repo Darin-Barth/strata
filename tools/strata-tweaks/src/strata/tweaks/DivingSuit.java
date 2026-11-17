@@ -23,6 +23,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -115,6 +116,26 @@ public final class DivingSuit {
         if (tier >= 3 && StrataTweaks.abyssalSuitLaserScale() < 1.0) {
             lines.add(Component.translatable("tooltip.strata_tweaks.suit.laser").withStyle(ChatFormatting.AQUA));
         }
+    }
+
+    private static final String ARRIVED = "strata_dim_arrived";
+    private static final int ARRIVAL_GRACE = 100;
+
+    /** Remembers when a player changed dimension, for {@link #justArrived}. */
+    public static void onChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+        Player player = event.getEntity();
+        player.getPersistentData().putLong(ARRIVED, player.level().getGameTime());
+    }
+
+    /**
+     * True for five seconds after a change of dimension. Deep Seas' pressure is held off for that long
+     * ({@code mixin/DiverPressureMixin}): the Abyssal Plain's portal spot is far below what kills, and the
+     * pressure check could run before the arrival script had moved the player into their Lifepod.
+     */
+    public static boolean justArrived(Player player) {
+        if (!player.getPersistentData().contains(ARRIVED)) return false;
+        long since = player.level().getGameTime() - player.getPersistentData().getLong(ARRIVED);
+        return since >= 0 && since < ARRIVAL_GRACE;
     }
 
     private static final ResourceLocation LEVIATHAN_LASER = ResourceLocation.fromNamespaceAndPath("cataclysm", "deathlaser");

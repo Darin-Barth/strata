@@ -8230,7 +8230,7 @@ hash = "307da1f77f6d4f7aaf3ffccf3548fe57b09a65cd1f61fba6947667d0c4915bab"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "733d5d6b1c44760a1a2848100ff80e52becf1836f64692f735223694f5092bb1"
+hash = "83c880323989c624d25e8f593019f3c6459cfec31944cd2d895f84af2415e60e"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
@@ -10337,7 +10337,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.2.0.jar"
-hash = "7fe7da3220314d54361106c5c2838d72ba26c9da42926e45e56029a92c1fa96d"
+hash = "7c135741c2cea2e07e0775fcaab6afe13343b71da62a6854f886b081a37578af"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

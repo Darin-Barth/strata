@@ -323,7 +323,19 @@ const abyssalArrive = (player) => {
   const spot = abyssalPodSpot(player.level, player.server, Math.floor(player.x), Math.floor(player.z))
   if (!spot) return
   if (spot.built) player.tell(Text.aqua('Lifepod deployed on the nearest shelf. The sea starts at the moon pool; the console takes you back to the surface.').italic())
-  player.server.runCommandSilent(`execute in ${abyssalDimensionId} run tp ${player.username} ${spot.x} ${spot.y} ${spot.z} 180 0`)
+  // Never from inside the player's own tick: the game puts a player back where they began the tick, and
+  // the move then only happens once their client answers. With a slow or backgrounded client it never
+  // did, and the player stayed at the portal's spot hundreds of metres down (test, Nov 17). Run from the
+  // server's tick the move holds at once. One more look two seconds later, in case it still was lost.
+  const server = player.server, name = String(player.username)
+  const move = `execute in ${abyssalDimensionId} run tp ${name} ${spot.x} ${spot.y} ${spot.z} 180 0`
+  server.scheduleInTicks(1, () => server.runCommandSilent(move))
+  server.scheduleInTicks(40, () => {
+    const p = server.playerList.getPlayerByName(name)
+    if (!p || !abyssalIn(p)) return
+    const dx = p.x - spot.x, dy = p.y - spot.y, dz = p.z - spot.z
+    if (dx * dx + dy * dy + dz * dz > 100) server.runCommandSilent(move)
+  })
 }
 
 // --- Return to Surface -------------------------------------------------------------------------
@@ -366,13 +378,16 @@ BlockEvents.rightClicked('strata:lifepod_console', event => {
 
 PlayerEvents.tick(event => {
   const player = event.player
-  if (player.tickCount % 10 !== 0) return
   const data = player.persistentData
+  // Arrival is checked every tick: the portal's own spot is hundreds of metres down, and with a check
+  // twice a second the pressure crushed an arriving player before they were moved to the pod (Nov 17).
+  // Strata Tweaks also holds the pressure off for five seconds after a change of dimension.
+  if (!data.getBoolean('strata_abyss_inside') && abyssalIn(player)) {
+    data.putBoolean('strata_abyss_inside', true)
+    abyssalArrive(player)
+  }
+  if (player.tickCount % 10 !== 0) return
   if (abyssalIn(player)) {
-    if (!data.getBoolean('strata_abyss_inside')) {
-      data.putBoolean('strata_abyss_inside', true)
-      abyssalArrive(player)
-    }
     // No Conduit power down here (bases have to be engineered): startup_scripts/abyssal_vampire_air.js
     // refuses the effect, along with every other free way to breathe.
   } else {
