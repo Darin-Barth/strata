@@ -37,3 +37,13 @@ A stale copy overrides the mod's new piece, so regenerate whenever it reports an
    enabled automatically).
 
 Only templates older than the current data version are included; current ones are left to the mods.
+
+## Templates saved in a newer Minecraft (`fix_attributes.py`)
+A template saved in 1.21.2 or later uses attribute names 1.21.1 does not know, so its mobs load with default
+stats and its gear without bonuses. `python tools/structure-templates/fix_attributes.py <out dir> <mod jars>`
+scans the jars and writes corrected copies of the affected templates only. Copy them into the server's
+`world/datapacks/strata_templates/data/` and restart. Known case: Sunken Spires 1.0 (`colossuem`,
+`prismarine_trial_chamber`, `ocean_forge`, `ocean_shrine`), added to the live datapack on Nov 17 (tested on a test
+server: Colosseum guardian 20 health -> 180, attack 3 -> 22, no more invalid-item errors). These four files are
+not in `manifest.json`; add them again after regenerating the datapack, and re-run the script after a Sunken
+Spires update. To spot new cases, look for "Ignoring unknown attribute" in the server log.

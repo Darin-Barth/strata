@@ -3,7 +3,7 @@
 Changes committed on master since the last release (**v1.5.0**; notes in the GitHub release) that haven't been released yet. Policy: changes ship together in one update (merge to `master` + new `.mrpack` release + server restart); only a critical hotfix goes out on its own. Queued work can be backed up to the GitHub branch `next-update` (`git push origin master:refs/heads/next-update`); the server only follows `master`.
 
 ## Changes
-(none yet)
+- **Sunken Spires' guardians have their real stats on the server (Nov 17, server-only, already live):** four of its structures were saved in Minecraft 1.21.4 and 1.21.1 dropped their attribute names, so the Colosseum guardian had 20 health instead of 180, no size, plain gear. Corrected copies are in the server's structure datapack (`tools/structure-templates/fix_attributes.py`); the Abyssal Plain was regenerated after it. **Still to do for single player and for any other such mod:** make Strata Tweaks accept the newer attribute names (registry aliases), then the corrected copies can go.
 
 ## Still to check in play (released untested)
 - Tested and working in play (Darin, Nov 8): /spawn and YouTube links on WATERFrAMES. /spawn from the Nether and its 10 s cooldown tested Nov 12 on a test server (a second use within 10 s is refused).
