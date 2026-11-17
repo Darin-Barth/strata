@@ -25,15 +25,15 @@ q("enter", "Into the Deep", deps="tidecaller", icon="minecraft:dark_prismarine",
   tasks=dim("strata:abyssal_plain", title="Enter the Abyssal Plain"), rewards=give("minecraft:cooked_cod", 8), desc="""
     Build a frame of &eDark Prismarine&r the shape of a Nether portal (at least 4 wide and 5 tall) and use the &eTidecaller&r on it. Step in!
 
-    You arrive in a Lifepod on the sea floor, and its console takes you home: back to the Overworld, right outside the portal you came in by.""")
+    You arrive in a Lifepod that came down on the nearest shallow shelf, and its console takes you home: back to the Overworld, right outside the portal you came in by.""")
 
 q("lifepod", "The Lifepod", deps="enter", icon="minecraft:sea_lantern", at=(5.25, 4.5),
   rewards=give("minecraft:sea_lantern", 4), desc="""
-    You arrive inside a &bLifepod&r resting on the sea floor: a sealed capsule with air, lights, portholes, seats, a crafting table and a chest of supplies. Its hull can't be broken, so the sea can't get in. The orange lights on its roof help you find it again in the dark.
+    You arrive inside a &bLifepod&r: a round white capsule with an orange flotation collar, standing on its struts on a shallow shelf where it came down. Inside there's air, light, portholes, seats, a crafting table and a chest of supplies. Its hull can't be broken, so the sea can't get in. The beacon on its mast helps you find it again.
 
-    The way out is the &bmoon pool&r, the hole of water in the floor at the back. Swim down through it and you're in the open sea. Come back the same way to catch your breath.
+    The way out is the &bmoon pool&r, the hatch of water in the middle of the deck. Drop through it and you're in the open sea. Come back the same way to catch your breath.
 
-    To go home, use the &bReturn to Surface&r console at the front: it takes you back to the Overworld, right outside the portal you came in by.
+    To go home, use the &bReturn to Surface&r console at the back: it takes you back to the Overworld, right outside the portal you came in by.
 
     Check the chest, then click the checkmark.""")
 
@@ -41,19 +41,19 @@ q("rules", "The Sea Always Wins", deps="lifepod", icon="minecraft:water_bucket",
   rewards=give("minecraft:glass", 16), desc="""
     The Abyssal Plain has its own rules:
 
-    &bThe sea always wins:&r break a block next to water and the gap fills with water. No digging dry tunnels or air pockets!
-    &bNo Conduit power:&r Conduits work everywhere else, but not down here.
-    &bNo sponges:&r the sea is far too big for them.
+    &bThe sea always wins:&r break a block next to water and the gap fills with water. No digging dry tunnels!
+    &bAir has to come from somewhere:&r a dry room only stays dry while an &eOxygen Diffuser&r in it holds oxygen. Without one you get a warning, and then the room floods.
+    &bOnly diving gear breathes for you:&r a diving helmet with its air supply, or a brewed Water Breathing potion. Charms, trinkets, pets, enchanted armour and Conduits don't work down here.
     &bWater pressure:&r deeper than &e120 m&r (counted from the ceiling) the water starts to hurt you, and at &c180 m&r it crushes you.
 
-    So you bring your own air: sealed rooms, pumps and air machines. Click the checkmark when you're ready.""")
+    The water gets darker the deeper you go, but you can always see: bring lights anyway. Click the checkmark when you're ready.""")
 
 # --- depth track ---
 q("shelf", "The Shelves", deps="rules", icon="minecraft:kelp", at=(8.75, 1.5), tier=2,
   tasks=biome("strata:abyssal_shelf", title="Visit the Abyssal Shelf"), rewards=give("minecraft:dried_kelp_block", 4), desc="""
-    The &bAbyssal Shelf&r is the shallow edge of the sea: kelp forests, coral and fish. It's in the top &e120 m&r, so plain gear is fine here.
+    The &bAbyssal Shelf&r is the shallow edge of the sea: kelp forests, coral and fish. Your Lifepod stands on one. It's in the top &e120 m&r, so plain gear is fine here, but mind the edge: shelves end in a sheer drop.
 
-    Bring a way to breathe (water breathing potions, a Create backtank, spells) and plenty of light: glowing life is the only light down here.""")
+    Bring a way to breathe: a &eCopper Diving Helmet&r with a filled &eBacktank&r, or Water Breathing potions.""")
 
 q("suit", "Copper Diving Suit", deps="shelf", icon="create:copper_diving_helmet", at=(10.5, 1.5), tier=3,
   tasks=[item("create:copper_diving_helmet"), item("create_submarine:diving_chestplate"), item("create_submarine:diving_leggings"),
@@ -76,17 +76,21 @@ q("plain", "The Plain", deps="suit", icon="hybrid_aquatic:glass_sponge", at=(12.
 # --- base track ---
 q("air", "First Air", deps="rules", icon="create_submarine:decompression_chamber", at=(8.75, 4.5), tier=3,
   tasks=[item("create_submarine:decompression_chamber"), item("create:mechanical_pump"), check()], desc="""
-    A base down here is a &bpressure hull&r: a sealed room you pump dry.
+    A base down here is a sealed room with its own air.
 
-    Build a closed room (no gaps!) and pump the water out with Create &eMechanical Pumps&r. A &eDecompression Chamber&r makes an airlock, so you can come and go without flooding the place.
+    Build a closed shell (no gaps at the sides or the top!), put an &eOxygen Diffuser&r inside, and get the water out: a Create &eHose Pulley&r drains a sealed room, or fill it with blocks and dig them back out. Keep the Diffuser supplied (next quest) or the sea takes the room back.
 
-    Remember, the sea always wins: careful when you mine near your walls. Click the checkmark once you have a dry room.""")
+    &bMoon pools work:&r water never flows up, so a hole in the &efloor&r stays put. Leave one open and you can swim up into your base, or park a submarine underneath it and climb aboard. An opening in a wall or the roof floods the room.
+
+    A &eDecompression Chamber&r is the airlock for ships. Click the checkmark once you have a dry room.""")
 
 q("oxygen", "Breathing Room", deps="air", icon="create_submarine:oxygene_diffuser", at=(10.5, 4.5), tier=3,
   tasks=[item("create_submarine:electrolyzer"), item("create_submarine:oxygene_diffuser")], desc="""
-    A dry room still runs out of air. The &eElectrolyzer&r makes oxygen and the &eOxygen Diffuser&r spreads it through your sealed space.
+    The &eElectrolyzer&r turns water and power into oxygen. Pipe it into the &eOxygen Diffuser&r in your room.
 
-    Set them up and your base (or your submarine) stays breathable. Press &eR&r on them for recipes.""")
+    A room uses oxygen all the time, a little more the bigger it is, and a full Diffuser lasts a small room about twelve minutes. If it runs dry you get ten seconds of warning before the water comes in, so keep the Electrolyzer running.
+
+    The same two machines keep a submarine breathable. Press &eR&r on them for recipes.""")
 
 q("sub", "Your First Submarine", deps=["plain", "oxygen"], icon="create_submarine:command_sub", at=(14.0, 3.0), tier=4,
   tasks=[item("create_submarine:water_thruster"), item("create_submarine:command_sub")], desc="""

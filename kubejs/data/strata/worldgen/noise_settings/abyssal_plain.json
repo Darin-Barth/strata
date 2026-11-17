@@ -123,9 +123,9 @@
                               }
                             }
                           },
-                          "argument2": -0.35
+                          "argument2": -0.3
                         },
-                        "argument2": 4.0
+                        "argument2": 8.0
                       },
                       "min": 0.0,
                       "max": 1.0
@@ -136,32 +136,68 @@
                 "argument2": {
                   "type": "minecraft:mul",
                   "argument1": {
-                    "type": "minecraft:clamp",
-                    "input": {
-                      "type": "minecraft:mul",
-                      "argument1": {
-                        "type": "minecraft:add",
+                    "type": "minecraft:mul",
+                    "argument1": {
+                      "type": "minecraft:clamp",
+                      "input": {
+                        "type": "minecraft:mul",
                         "argument1": {
-                          "type": "minecraft:abs",
-                          "argument": {
-                            "type": "minecraft:flat_cache",
+                          "type": "minecraft:add",
+                          "argument1": {
+                            "type": "minecraft:abs",
                             "argument": {
-                              "type": "minecraft:cache_2d",
+                              "type": "minecraft:flat_cache",
                               "argument": {
-                                "type": "minecraft:noise",
-                                "noise": "pokeworld:ridge",
-                                "xz_scale": 0.45,
-                                "y_scale": 0.0
+                                "type": "minecraft:cache_2d",
+                                "argument": {
+                                  "type": "minecraft:noise",
+                                  "noise": "pokeworld:ridge",
+                                  "xz_scale": 0.45,
+                                  "y_scale": 0.0
+                                }
                               }
                             }
-                          }
+                          },
+                          "argument2": -0.3
                         },
-                        "argument2": -0.08
+                        "argument2": -12.5
                       },
-                      "argument2": -12.5
+                      "min": 0.0,
+                      "max": 1.0
                     },
-                    "min": 0.0,
-                    "max": 1.0
+                    "argument2": {
+                      "type": "minecraft:add",
+                      "argument1": 1.0,
+                      "argument2": {
+                        "type": "minecraft:mul",
+                        "argument1": {
+                          "type": "minecraft:clamp",
+                          "input": {
+                            "type": "minecraft:mul",
+                            "argument1": {
+                              "type": "minecraft:add",
+                              "argument1": {
+                                "type": "minecraft:flat_cache",
+                                "argument": {
+                                  "type": "minecraft:cache_2d",
+                                  "argument": {
+                                    "type": "minecraft:noise",
+                                    "noise": "pokeworld:continentalness",
+                                    "xz_scale": 0.5,
+                                    "y_scale": 0.0
+                                  }
+                                }
+                              },
+                              "argument2": -0.3
+                            },
+                            "argument2": 8.0
+                          },
+                          "min": 0.0,
+                          "max": 1.0
+                        },
+                        "argument2": -1.0
+                      }
+                    }
                   },
                   "argument2": -4.6875
                 }

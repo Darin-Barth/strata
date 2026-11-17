@@ -37,7 +37,7 @@ PLAIN_Y, SHELF_RISE, TRENCH_DROP = 314, 165, 300
 
 BIOMES = ["abyssal_shelf", "abyssal_plain", "hydrothermal_field", "bioluminescent_garden", "the_trench"]
 FLOOR_BAND = {  # Y range to start the downward scan from; the scan reaches 32 blocks (vanilla's cap) below it
-    "abyssal_shelf": (474, 514), "abyssal_plain": (309, 349), "hydrothermal_field": (309, 349),
+    "abyssal_shelf": (464, 512), "abyssal_plain": (309, 349), "hydrothermal_field": (309, 349),
     "bioluminescent_garden": (309, 349), "the_trench": (9, 49),
 }
 
@@ -79,8 +79,19 @@ DETAIL = flat(noise("pokeworld:surface", 3.0))             # small floor relief
 
 
 def floor_height_over_64():
-    shelf = clamp(mul(add(CONT, -0.35), 4.0), 0.0, 1.0)
-    trench = clamp(mul(add(absf(RIDGE), -0.08), -12.5), 0.0, 1.0)
+    # Shelves end in a steep drop-off: the whole 165-block rise happens between 0.30 and 0.425, and the
+    # shelf biome starts at 0.42, so every shelf floor is within the 120 m a diver in plain gear
+    # survives (the Lifepod is set down on one). With a gentle slope the biome reached 138 m.
+    shelf = clamp(mul(add(CONT, -0.30), 8.0), 0.0, 1.0)
+    # A broad basin, not a slot: the full drop is reached at |ridge| 0.22 (roughly 250 blocks across)
+    # and the trench biome (|ridge| under 0.24) is nearly all floor. As a 50-block V the Colosseum and
+    # the Sunken City, placed at the trench's full depth, ended up inside solid rock (the terrain here
+    # is far too dense for a structure's "beard" to carve), and nothing the size of a Leviathan or a
+    # submarine had room to move.
+    trench = clamp(mul(add(absf(RIDGE), -0.30), -12.5), 0.0, 1.0)
+    # No trench through a shelf: shelves are the safe shallows the Lifepod lands on (a trench with its
+    # Deep Ones opened 30 blocks from one).
+    trench = mul(trench, add(1.0, mul(shelf, -1.0)))
     h = add(PLAIN_Y / 64, mul(shelf, SHELF_RISE / 64))
     h = add(h, mul(trench, -TRENCH_DROP / 64))
     return add(h, mul(DETAIL, 0.2))
@@ -156,18 +167,22 @@ def surface_rule():
     return {"type": "minecraft:sequence", "sequence": [bedrock_floor, bedrock_roof, ceiling]}
 
 
+SHELF_CONT = 0.42
+TRENCH_RIDGE = 0.24
+
+
 def biome_layout():
     full = [-1.0, 1.0]
     out = []
 
-    def addb(b, cont=full, ero=(0.05, 1.0), weird=full, hum=full):
+    def addb(b, cont=full, ero=(TRENCH_RIDGE, 1.0), weird=full, hum=full):
         out.append({"biome": c(b), "parameters": {"temperature": full, "humidity": list(hum), "continentalness": list(cont),
                                                   "erosion": list(ero), "weirdness": list(weird), "depth": 0.0, "offset": 0.0}})
-    addb("the_trench", ero=(0.0, 0.05))
-    addb("abyssal_shelf", cont=(0.4, 1.0))
-    addb("hydrothermal_field", cont=(-1.0, 0.4), weird=(0.5, 1.0))
-    addb("bioluminescent_garden", cont=(-1.0, 0.4), weird=(-1.0, 0.5), hum=(0.45, 1.0))
-    addb("abyssal_plain", cont=(-1.0, 0.4), weird=(-1.0, 0.5), hum=(-1.0, 0.45))
+    addb("the_trench", cont=(-1.0, SHELF_CONT), ero=(0.0, TRENCH_RIDGE))
+    addb("abyssal_shelf", cont=(SHELF_CONT, 1.0), ero=(0.0, 1.0))
+    addb("hydrothermal_field", cont=(-1.0, SHELF_CONT), weird=(0.5, 1.0))
+    addb("bioluminescent_garden", cont=(-1.0, SHELF_CONT), weird=(-1.0, 0.5), hum=(0.45, 1.0))
+    addb("abyssal_plain", cont=(-1.0, SHELF_CONT), weird=(-1.0, 0.5), hum=(-1.0, 0.45))
     return out
 
 
@@ -253,9 +268,9 @@ RARE = {  # big one-offs: (placed name, configured, rarity 1-in-N chunks)
     "the_trench": [("whalefall", "alexscaves:whalefall", 14), ("deep_one_ruins", "alexscaves:deep_one_ruins", 10)],
     "bioluminescent_garden": [("whalefall", "alexscaves:whalefall", 24)],
 }
-# The trench (walls and floor) and shelf (slopes) span tall height ranges: scan from anywhere in
-# them, with more attempts, since only starts within 32 blocks above the floor find it.
-WIDE = {"the_trench": ((9, 300), 4), "abyssal_shelf": ((330, 500), 3)}
+# The trench (walls and floor) spans a tall height range: scan from anywhere in it, with more
+# attempts, since only starts within 32 blocks above the floor find it.
+WIDE = {"the_trench": ((9, 300), 4)}
 
 
 def rare_scan(feature, biome, chance):
@@ -510,6 +525,10 @@ def build_structures(out, mods_dir):
         write(out, f"{NS}/tags/worldgen/biome/abyssal_group/{g}.json", tag([c(b) for b in bs]))
     sets, set_ns = {}, {}
     for i, (src, group, base_y, set_name, spacing, separation) in enumerate(STRUCTURES):
+        # The table's distances were laid out for flying; down here you swim or dive a submarine, and
+        # the nearest ruins were 1,000 to 4,000 blocks from the Lifepod. 40% of them (Structurify's
+        # pack-wide 1.5x still applies on top).
+        spacing, separation = max(8, round(spacing * 0.4)), max(3, round(separation * 0.4))
         ns, path = src.split(":")
         with zipfile.ZipFile(jars[ns]) as z:
             st = json.loads(z.read(f"data/{ns}/worldgen/structure/{path}.json"))

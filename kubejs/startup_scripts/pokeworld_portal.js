@@ -79,11 +79,26 @@ StartupEvents.registry('block', event => {
     ['lifepod_frame', 'Lifepod Skid', 'color_black', 0],
     ['lifepod_lamp', 'Lifepod Lamp', 'color_light_gray', 1],
     ['lifepod_beacon', 'Lifepod Beacon', 'color_orange', 1],
+    ['lifepod_collar', 'Lifepod Flotation Collar', 'color_orange', 0],
+    ['lifepod_locker', 'Lifepod Locker', 'color_light_gray', 0],
   ]
   lifepodSolid.forEach(b => {
     event.create(`strata:${b[0]}`).displayName(b[1]).soundType('metal').mapColor(b[2])
       .hardness(-1).resistance(3600000).requiresTool(false).lightLevel(b[3])
   })
+  // Rounded parts of the capsule: slabs for the shoulder, the cap and the collar's top, a post for the mast.
+  ;[['lifepod_hull_slab', 'slab', 'Lifepod Hull', 'lifepod_hull'], ['lifepod_collar_slab', 'slab', 'Lifepod Flotation Collar', 'lifepod_collar'],
+    ['lifepod_mast', 'wall', 'Lifepod Mast', 'lifepod_frame']].forEach(b => {
+    event.create(`strata:${b[0]}`, b[1]).displayName(b[2]).soundType('metal').hardness(-1).resistance(3600000)
+      .requiresTool(false).texture(`strata:block/${b[3]}`)
+  })
+  // "LIFEPOD" across three panels, on the south face only (the pod's front, read from outside).
+  for (let i = 0; i < 3; i++) {
+    event.create(`strata:lifepod_marking_${i}`).displayName('Lifepod Hull').soundType('metal').mapColor('color_light_gray')
+      .hardness(-1).resistance(3600000).requiresTool(false)
+      .texture(['down', 'up', 'north', 'east', 'west', 'particle'], 'strata:block/lifepod_hull')
+      .texture(['south'], `strata:block/lifepod_marking_${i}`)
+  }
   event.create('strata:lifepod_window').displayName('Lifepod Window').soundType('glass').mapColor('color_light_blue')
     .hardness(-1).resistance(3600000).notSolid().defaultTranslucent()
   // Right-click: back to the Overworld, outside the portal you came in by (server_scripts/abyssal_rules.js).

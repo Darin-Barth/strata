@@ -150,6 +150,66 @@ def console_side():
     return img
 
 
+FONT = {  # 5x7 stencil letters
+    "L": ["1....", "1....", "1....", "1....", "1....", "1....", "11111"],
+    "I": ["11111", "..1..", "..1..", "..1..", "..1..", "..1..", "11111"],
+    "F": ["11111", "1....", "1....", "1111.", "1....", "1....", "1...."],
+    "E": ["11111", "1....", "1....", "1111.", "1....", "1....", "11111"],
+    "P": ["1111.", "1...1", "1...1", "1111.", "1....", "1....", "1...."],
+    "O": [".111.", "1...1", "1...1", "1...1", "1...1", "1...1", ".111."],
+    "D": ["1111.", "1...1", "1...1", "1...1", "1...1", "1...1", "1111."],
+}
+
+
+def marking():
+    """"LIFEPOD" stencilled in orange across three hull panels (the pod's front)."""
+    tiles = [panel(WHITE, 20 + i) for i in range(3)]
+    word = "LIFEPOD"
+    x0 = (48 - (len(word) * 6 - 1)) // 2
+    for i, ch in enumerate(word):
+        for ry, row in enumerate(FONT[ch]):
+            for rx, bit in enumerate(row):
+                if bit == "1":
+                    x = x0 + i * 6 + rx
+                    tiles[x // 16].load()[x % 16, 4 + ry] = shade(ORANGE, -6 if ry > 3 else 6)
+    return tiles
+
+
+def collar():
+    """The flotation collar: an inflated orange tube, bright along the top and shaded underneath, with
+    one stitched seam where two sections meet."""
+    img = Image.new("RGBA", (16, 16))
+    px = img.load()
+    rnd = random.Random(55)
+    for y in range(16):
+        for x in range(16):
+            bulge = 30 - abs(y - 4) * 5
+            px[x, y] = shade(ORANGE, bulge + rnd.randint(-2, 2))
+    for y in range(1, 15):
+        px[15, y] = shade(ORANGE, -45)
+        if y % 2:
+            px[14, y] = shade(ORANGE, -20)
+    for x in range(16):
+        px[x, 15] = shade(ORANGE, -60)
+    return img
+
+
+def locker():
+    """A wall locker: grey doors with vents, a handle and an orange label."""
+    img = panel((168, 172, 178), 61)
+    px = img.load()
+    for y in range(1, 15):
+        px[7, y] = px[8, y] = shade(SEAM, -40)
+    for x in (2, 3, 4, 11, 12, 13):
+        for y in (3, 5):
+            px[x, y] = shade(DARK, 0)
+    for y in (8, 9):
+        px[5, y] = px[10, y] = shade(DARK, 30)
+    for x in range(2, 5):
+        px[x, 12] = px[x + 9, 12] = shade(ORANGE, 0)
+    return img
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     out = {
@@ -165,7 +225,11 @@ def main():
         "lifepod_beacon": lamp((220, 110, 30), 6),
         "lifepod_console": console_side(),
         "lifepod_console_screen": console_screen(),
+        "lifepod_collar": collar(),
+        "lifepod_locker": locker(),
     }
+    for i, img in enumerate(marking()):
+        out[f"lifepod_marking_{i}"] = img
     for name, img in out.items():
         img.save(os.path.join(OUT, name + ".png"))
     print(f"wrote {len(out)} textures to {OUT}")

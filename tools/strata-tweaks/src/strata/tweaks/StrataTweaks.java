@@ -4,6 +4,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.ModConfigSpec;
+import net.neoforged.neoforge.common.NeoForge;
 
 /** Strata's own small server fixes (see tools/strata-tweaks/README.md). */
 @Mod(StrataTweaks.MODID)
@@ -19,14 +20,23 @@ public final class StrataTweaks {
     public static final ModConfigSpec.DoubleValue MONSTER_CAP_SCALE = BUILDER
             .comment("Multiplier for the natural hostile mob cap (vanilla 70 per player area). 1.0 = vanilla.")
             .defineInRange("monsterCapScale", 0.8, 0.1, 2.0);
+    public static final ModConfigSpec.BooleanValue ABYSSAL_ROOMS_NEED_OXYGEN = BUILDER
+            .comment("In the Abyssal Plain, a dry room a player stands in must have a Create: Deep Seas Oxygen Diffuser",
+                    "holding oxygen, or it floods (see AbyssalAir). The Lifepod and ships are exempt.")
+            .define("abyssalRoomsNeedOxygen", true);
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public StrataTweaks(ModContainer container) {
         container.registerConfig(ModConfig.Type.COMMON, SPEC);
+        NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
     }
 
     public static boolean skipModStructureFixers() {
         return !SPEC.isLoaded() || SKIP_MOD_STRUCTURE_FIXERS.getAsBoolean();
+    }
+
+    public static boolean abyssalRoomsNeedOxygen() {
+        return !SPEC.isLoaded() || ABYSSAL_ROOMS_NEED_OXYGEN.getAsBoolean();
     }
 
     public static double monsterCapScale() {

@@ -40,3 +40,4 @@ fail at startup (`defaultRequire: 1`), which is deliberate.
 ## Added Nov 16
 - `LevelSeaLevelMixin`: `Level.getSeaLevel()` returns 568 in `strata:abyssal_plain` (hard-coded 63 in 1.21.1; mob spawn rules compare against it).
 - `NightVisionMixin` (client): `GameRenderer.getNightVisionScale` returns 0 in `strata:hollow`, after every other mod's patch (priority 2000).
+- `AbyssalAir` (server): in `strata:abyssal_plain`, the dry space a player stands in must hold a Create: Deep Seas Oxygen Diffuser with oxygen, or it floods after a ten-second warning (docs/abyssal-plain-design.md, Rules). Config: `abyssalRoomsNeedOxygen`.

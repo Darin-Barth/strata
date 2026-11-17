@@ -19,11 +19,11 @@
             ],
             "continentalness": [
               -1.0,
-              1.0
+              0.42
             ],
             "erosion": [
               0.0,
-              0.05
+              0.24
             ],
             "weirdness": [
               -1.0,
@@ -45,11 +45,11 @@
               1.0
             ],
             "continentalness": [
-              0.4,
+              0.42,
               1.0
             ],
             "erosion": [
-              0.05,
+              0.0,
               1.0
             ],
             "weirdness": [
@@ -73,10 +73,10 @@
             ],
             "continentalness": [
               -1.0,
-              0.4
+              0.42
             ],
             "erosion": [
-              0.05,
+              0.24,
               1.0
             ],
             "weirdness": [
@@ -100,10 +100,10 @@
             ],
             "continentalness": [
               -1.0,
-              0.4
+              0.42
             ],
             "erosion": [
-              0.05,
+              0.24,
               1.0
             ],
             "weirdness": [
@@ -127,10 +127,10 @@
             ],
             "continentalness": [
               -1.0,
-              0.4
+              0.42
             ],
             "erosion": [
-              0.05,
+              0.24,
               1.0
             ],
             "weirdness": [

@@ -6,3 +6,6 @@ skipModStructureFixers = true
 # Default: 0.8
 # Range: 0.1 ~ 2.0
 monsterCapScale = 0.8
+#In the Abyssal Plain, a dry room a player stands in must have a Create: Deep Seas Oxygen Diffuser
+#holding oxygen, or it floods (see AbyssalAir). The Lifepod and ships are exempt.
+abyssalRoomsNeedOxygen = true
