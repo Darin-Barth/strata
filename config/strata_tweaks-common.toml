@@ -12,3 +12,12 @@ abyssalRoomsNeedOxygen = true
 #In the Abyssal Plain, an Oxygen Diffuser holding oxygen pushes the water out of a closed room,
 #from the ceiling down (nothing else can dry a room there). Does nothing in a space open to the sea.
 abyssalDiffusersPushWater = true
+#How deep the Carapace Diving Suit (tier 2) holds out, in metres of water. Deep Seas' Copper Diving Suit
+#holds to 280 m; 60 m past a suit's limit kills. 0 = no limit.
+# Default: 420
+# Range: 0 ~ 100000
+divingSuitDepthCarapace = 420
+#The same for the Abyssal Diving Suit (tier 3). 0 = no limit.
+# Default: 0
+# Range: 0 ~ 100000
+divingSuitDepthAbyssal = 0

@@ -61,7 +61,9 @@ q("suit", "Copper Diving Suit", deps="shelf", icon="create:copper_diving_helmet"
   rewards=give("minecraft:copper_ingot", 16), desc="""
     Going deeper than &e120 m&r needs the full &eCopper Diving Suit&r: Create's &eCopper Diving Helmet&r and &eBoots&r, plus Deep Seas' &eDiving Chestplate&r and &eLeggings&r.
 
-    Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eCopper Backtank&r in your inventory: the helmet breathes from it. Carry a spare!""")
+    Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eBacktank&r in your inventory: the helmet breathes from it. Carry a spare! Create's netherite helmet and boots count as well.
+
+    That is the first of three suits. The bosses of the deep give you the plating for the next two.""")
 
 q("plain", "The Plain", deps="suit", icon="hybrid_aquatic:glass_sponge", at=(12.25, 1.5), tier=3,
   tasks=[biome("strata:abyssal_plain", title="Visit the Abyssal Plain biome"), item("hybrid_aquatic:glass_sponge")], desc="""
@@ -154,13 +156,37 @@ q("karkinos", "Karkinos", deps="plain", icon="hybrid_aquatic:karkinos_claw", at=
 
     &6Drops:&r the &eKarkinos Claw&r, and &dAbyssal Pearls&r when it dies in the Abyssal Plain.""")
 
+q("carapace_suit", "Carapace Diving Suit", deps="karkinos", icon="strata_tweaks:carapace_diving_chestplate", at=(15.75, -3.0), tier=4,
+  tasks=[item("strata_tweaks:carapace_diving_chestplate"), item("strata_tweaks:carapace_diving_leggings")],
+  rewards=[xp(250), bag("uncommon")], desc="""
+    The crab's shell makes a better suit than copper does.
+
+    One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make four &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay.
+
+    With both pieces (and a diving helmet and boots) you hold out down to &e420 m&r: deep enough to walk the upper Trench, where the &cHullbreaker&r hunts.
+
+    The other two platings go on &eBacktanks&r the same way: a Carapace Backtank holds &etwice&r the air.""")
+
 q("hullbreaker", "The Hullbreaker", deps=["karkinos", "trench"], icon="alexscaves:immortal_embryo", at=(17.5, -1.5), tier=4,
   tasks=kill("alexscaves:hullbreaker"), desc="""
     The &cHullbreaker&r roams the Trench and hunts anything that moves, submarines most of all. It's huge, fast and hits like a train.
 
     Draw it away from your sub, and bring friends.
 
-    &6Drops:&r the &eImmortal Embryo&r, scrap metal and &dAbyssal Pearls&r.""")
+    You can reach it on foot in the &eCarapace Diving Suit&r (420 m), or from a submarine.
+
+    &6Drops:&r the &eImmortal Embryo&r, the &eEnigmatic Engine&r, scrap metal and &dAbyssal Pearls&r.""")
+
+q("abyssal_suit", "Abyssal Diving Suit", deps=["hullbreaker", "carapace_suit"], icon="strata_tweaks:abyssal_diving_chestplate", at=(19.25, -3.0), tier=5,
+  tasks=[item("strata_tweaks:abyssal_diving_chestplate"), item("strata_tweaks:abyssal_diving_leggings")],
+  rewards=[xp(500), bag("rare")], desc="""
+    The last suit: no depth is too deep for it.
+
+    The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make four &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r.
+
+    In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called.
+
+    Plate your Carapace Backtanks again and they hold &ethree times&r the air.""")
 
 q("pearls", "Abyssal Pearls", deps="hullbreaker", icon="strata:abyssal_pearl", at=(19.25, -1.5), tier=3,
   tasks=item("strata:abyssal_pearl", 6), desc="""
@@ -172,7 +198,7 @@ q("lure", "The Leviathan Lure", deps="pearls", icon="strata:leviathan_lure", at=
   tasks=item("strata:leviathan_lure"), rewards=[xp(500), bag("rare")], desc="""
     Craft the &eLeviathan Lure&r: six &dAbyssal Pearls&r, the &eKarkinos Claw&r, a &eHeart of the Sea&r and the &eImmortal Embryo&r.
 
-    Take it into &cthe Trench&r, below &eY 120&r, and use it. The lure is used up, and only one Leviathan comes at a time.""")
+    Take it into &cthe Trench&r, below &eY 120&r (about 450 m down, so wear the &eAbyssal Diving Suit&r), and use it. The lure is used up, and only one Leviathan comes at a time.""")
 
 q("leviathan", "The Leviathan", deps="lure", icon="cataclysm:tidal_claws", at=(22.75, -1.5), tier=5,
   shape="hexagon", size=1.5, tasks=kill("cataclysm:the_leviathan"), rewards=give("minecraft:heart_of_the_sea"), desc="""

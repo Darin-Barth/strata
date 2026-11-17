@@ -234,7 +234,7 @@ hash = "bc624389ea3f194fba7d6bdf22b43a3ba62dfa331bafb141c0966c25ceb1ccf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/abyssal_plain.snbt"
-hash = "75a8a495e26f580c7c8d13e6137d6388299645a552331c282e0f0d19fa6e4d3e"
+hash = "6c342630c4b5f7b8e72be6466c8c057488428d13a5891c827591c9bdb9a5dacc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra.snbt"
@@ -394,7 +394,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "f46977c35aaa0b2c2493ab326b018b30a43fc4a5a844b1cff883783f6201c643"
+hash = "9b043d6d9ee1705e8437b9f3a02398f0fe15a2c847bb791d10da831be2c8e99e"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -562,7 +562,7 @@ hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
 file = "config/strata_tweaks-common.toml"
-hash = "89db954d878ab511ad4ac0bbf75ee6434c6c83a37893887f7305984a85c9e008"
+hash = "62b0216d36ad0c474ede2f45148bcb4719e8573a7ee2375a5efde9a564c96021"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -10332,8 +10332,8 @@ hash = "ab2c89f6522d1d30ccec20d200e9a19418979edd8b19efa24b31f0464959e47b"
 metafile = true
 
 [[files]]
-file = "mods/strata-tweaks-1.1.0.jar"
-hash = "e8978b03e962aa9d89456bbb85252577970fddb75963551eab918549f1a02a7e"
+file = "mods/strata-tweaks-1.2.0.jar"
+hash = "3e7ad8d3eec65b62fb92d459ad84cd2beba79d8c5e9c5f1fda532fac230beb26"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

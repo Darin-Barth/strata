@@ -20,6 +20,8 @@ public final class Plugin implements IMixinConfigPlugin {
         if (mixinClassName.contains(".ElytraSlot")) return loaded("elytraslot") && loaded("deeperdarker");
         if (mixinClassName.endsWith(".WhisperingSpiritsMixin")) return loaded("whispering_spirits");
         if (mixinClassName.endsWith(".ShoulderSurfingPickMixin")) return loaded("shouldersurfing");
+        if (mixinClassName.endsWith(".DiverPressureMixin") || mixinClassName.endsWith(".DeepSeasBacktanksMixin")) return loaded("create_submarine");
+        if (mixinClassName.contains(".Backtank")) return loaded("create");
         return true;
     }
 

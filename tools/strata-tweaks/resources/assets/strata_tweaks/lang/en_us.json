@@ -1,0 +1,18 @@
+{
+  "item.strata_tweaks.carapace_plating": "Carapace Plating",
+  "item.strata_tweaks.abyssal_plating": "Abyssal Plating",
+  "item.strata_tweaks.carapace_diving_chestplate": "Carapace Diving Chestplate",
+  "item.strata_tweaks.carapace_diving_leggings": "Carapace Diving Leggings",
+  "item.strata_tweaks.abyssal_diving_chestplate": "Abyssal Diving Chestplate",
+  "item.strata_tweaks.abyssal_diving_leggings": "Abyssal Diving Leggings",
+  "tooltip.strata_tweaks.suit.part.2": "Part of the Carapace Diving Suit",
+  "tooltip.strata_tweaks.suit.part.3": "Part of the Abyssal Diving Suit",
+  "tooltip.strata_tweaks.suit.depth": "Full suit: holds out down to %s m",
+  "tooltip.strata_tweaks.suit.no_limit": "Full suit: no depth is too deep",
+  "tooltip.strata_tweaks.tank.2": "Holds twice the air",
+  "tooltip.strata_tweaks.tank.3": "Holds three times the air",
+  "item.strata_tweaks.carapace_copper_backtank": "Carapace Copper Backtank",
+  "item.strata_tweaks.carapace_netherite_backtank": "Carapace Netherite Backtank",
+  "item.strata_tweaks.abyssal_copper_backtank": "Abyssal Copper Backtank",
+  "item.strata_tweaks.abyssal_netherite_backtank": "Abyssal Netherite Backtank"
+}

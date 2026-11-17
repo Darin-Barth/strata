@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hybrid_aquatic"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CSC",
+    "SKS",
+    "CSC"
+  ],
+  "key": {
+    "C": {
+      "item": "create:copper_sheet"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "K": {
+      "item": "hybrid_aquatic:karkinos_claw"
+    }
+  },
+  "result": {
+    "id": "strata_tweaks:carapace_plating",
+    "count": 4
+  }
+}

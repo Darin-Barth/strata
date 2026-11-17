@@ -3588,7 +3588,9 @@
 	quest.66EAA7339CC88AF7.quest_desc: [
 		"Going deeper than &e120 m&r needs the full &eCopper Diving Suit&r: Create's &eCopper Diving Helmet&r and &eBoots&r, plus Deep Seas' &eDiving Chestplate&r and &eLeggings&r."
 		""
-		"Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eCopper Backtank&r in your inventory: the helmet breathes from it. Carry a spare!"
+		"Wearing all four holds out against the water down to &e280 m&r. Keep a filled &eBacktank&r in your inventory: the helmet breathes from it. Carry a spare! Create's netherite helmet and boots count as well."
+		""
+		"That is the first of three suits. The bosses of the deep give you the plating for the next two."
 	]
 	task.28AC23D5B4A3509F.title: "Visit the Abyssal Plain biome"
 	quest.2D26F80B0A383D4D.title: "The Plain"
@@ -3684,13 +3686,35 @@
 		""
 		"&6Drops:&r the &eKarkinos Claw&r, and &dAbyssal Pearls&r when it dies in the Abyssal Plain."
 	]
+	quest.789E966F9CC7B4F0.title: "Carapace Diving Suit"
+	quest.789E966F9CC7B4F0.quest_desc: [
+		"The crab's shell makes a better suit than copper does."
+		""
+		"One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make four &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay."
+		""
+		"With both pieces (and a diving helmet and boots) you hold out down to &e420 m&r: deep enough to walk the upper Trench, where the &cHullbreaker&r hunts."
+		""
+		"The other two platings go on &eBacktanks&r the same way: a Carapace Backtank holds &etwice&r the air."
+	]
 	quest.5781E9D7434B7204.title: "The Hullbreaker"
 	quest.5781E9D7434B7204.quest_desc: [
 		"The &cHullbreaker&r roams the Trench and hunts anything that moves, submarines most of all. It's huge, fast and hits like a train."
 		""
 		"Draw it away from your sub, and bring friends."
 		""
-		"&6Drops:&r the &eImmortal Embryo&r, scrap metal and &dAbyssal Pearls&r."
+		"You can reach it on foot in the &eCarapace Diving Suit&r (420 m), or from a submarine."
+		""
+		"&6Drops:&r the &eImmortal Embryo&r, the &eEnigmatic Engine&r, scrap metal and &dAbyssal Pearls&r."
+	]
+	quest.19A4AED4768FF3C8.title: "Abyssal Diving Suit"
+	quest.19A4AED4768FF3C8.quest_desc: [
+		"The last suit: no depth is too deep for it."
+		""
+		"The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make four &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r."
+		""
+		"In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called."
+		""
+		"Plate your Carapace Backtanks again and they hold &ethree times&r the air."
 	]
 	quest.42AF8A4D4AB50FEA.title: "Abyssal Pearls"
 	quest.42AF8A4D4AB50FEA.quest_desc: [
@@ -3702,7 +3726,7 @@
 	quest.06F630503D2D680E.quest_desc: [
 		"Craft the &eLeviathan Lure&r: six &dAbyssal Pearls&r, the &eKarkinos Claw&r, a &eHeart of the Sea&r and the &eImmortal Embryo&r."
 		""
-		"Take it into &cthe Trench&r, below &eY 120&r, and use it. The lure is used up, and only one Leviathan comes at a time."
+		"Take it into &cthe Trench&r, below &eY 120&r (about 450 m down, so wear the &eAbyssal Diving Suit&r), and use it. The lure is used up, and only one Leviathan comes at a time."
 	]
 	quest.1AA55F3F052C323F.title: "The Leviathan"
 	quest.1AA55F3F052C323F.quest_desc: [

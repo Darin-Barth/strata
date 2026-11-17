@@ -478,6 +478,39 @@
 			]
 		}
 		{
+			id: "789E966F9CC7B4F0"
+			x: 15.75d
+			y: -3.0d
+			dependencies: ["73859B8AAA3A35E8"]
+			icon: { id: "strata_tweaks:carapace_diving_chestplate" }
+			tasks: [
+				{
+					id: "108DD12AF86E0FBC"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:carapace_diving_chestplate" }
+				}
+				{
+					id: "621269F46BAAD591"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:carapace_diving_leggings" }
+				}
+			]
+			rewards: [
+				{ id: "6F6A7022C495CE5C", type: "xp_levels", xp_levels: 10 }
+				{
+					id: "66ACF381BB23D365"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+				{ id: "4BFF028F5914560B", type: "xp", xp: 250 }
+				{
+					id: "317C41AE034B505F"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag" }
+				}
+			]
+		}
+		{
 			id: "5781E9D7434B7204"
 			x: 17.5d
 			y: -1.5d
@@ -495,6 +528,39 @@
 				{ id: "127154A5CCD46EB7", type: "xp_levels", xp_levels: 10 }
 				{
 					id: "56DE1C5A55E2C4B2"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_large" }
+				}
+			]
+		}
+		{
+			id: "19A4AED4768FF3C8"
+			x: 19.25d
+			y: -3.0d
+			dependencies: ["5781E9D7434B7204", "789E966F9CC7B4F0"]
+			icon: { id: "strata_tweaks:abyssal_diving_chestplate" }
+			tasks: [
+				{
+					id: "2135C398BEEE6807"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:abyssal_diving_chestplate" }
+				}
+				{
+					id: "06B6A03A2CB9BCA5"
+					type: "item"
+					item: { count: 1, id: "strata_tweaks:abyssal_diving_leggings" }
+				}
+			]
+			rewards: [
+				{ id: "03682F0BC1000022", type: "xp_levels", xp_levels: 20 }
+				{
+					id: "7403AFC236EF014F"
+					type: "item"
+					item: { count: 1, id: "strata:loot_bag_grand" }
+				}
+				{ id: "5DF109B2DCA42ED6", type: "xp", xp: 500 }
+				{
+					id: "1BAE8B3DBE30A43B"
 					type: "item"
 					item: { count: 1, id: "strata:loot_bag_large" }
 				}

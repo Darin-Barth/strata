@@ -1,5 +1,6 @@
 package strata.tweaks;
 
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
@@ -28,10 +29,20 @@ public final class StrataTweaks {
             .comment("In the Abyssal Plain, an Oxygen Diffuser holding oxygen pushes the water out of a closed room,",
                     "from the ceiling down (nothing else can dry a room there). Does nothing in a space open to the sea.")
             .define("abyssalDiffusersPushWater", true);
+    public static final ModConfigSpec.IntValue SUIT_DEPTH_CARAPACE = BUILDER
+            .comment("How deep the Carapace Diving Suit (tier 2) holds out, in metres of water. Deep Seas' Copper Diving Suit",
+                    "holds to 280 m; 60 m past a suit's limit kills. 0 = no limit.")
+            .defineInRange("divingSuitDepthCarapace", 420, 0, 100000);
+    public static final ModConfigSpec.IntValue SUIT_DEPTH_ABYSSAL = BUILDER
+            .comment("The same for the Abyssal Diving Suit (tier 3). 0 = no limit.")
+            .defineInRange("divingSuitDepthAbyssal", 0, 0, 100000);
     public static final ModConfigSpec SPEC = BUILDER.build();
 
-    public StrataTweaks(ModContainer container) {
+    public StrataTweaks(IEventBus modBus, ModContainer container) {
         container.registerConfig(ModConfig.Type.COMMON, SPEC);
+        DivingSuit.MATERIALS.register(modBus);
+        DivingSuit.ITEMS.register(modBus);
+        modBus.addListener(DivingSuit::addToTabs);
         NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
     }
 
@@ -45,6 +56,14 @@ public final class StrataTweaks {
 
     public static boolean abyssalDiffusersPushWater() {
         return !SPEC.isLoaded() || ABYSSAL_DIFFUSERS_PUSH_WATER.getAsBoolean();
+    }
+
+    public static int suitDepthCarapace() {
+        return SPEC.isLoaded() ? SUIT_DEPTH_CARAPACE.get() : 420;
+    }
+
+    public static int suitDepthAbyssal() {
+        return SPEC.isLoaded() ? SUIT_DEPTH_ABYSSAL.get() : 0;
     }
 
     public static double monsterCapScale() {

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "strata_tweaks:carapace_plating"
+  },
+  "base": {
+    "item": "create:copper_backtank"
+  },
+  "addition": {
+    "item": "create:brass_sheet"
+  },
+  "result": {
+    "id": "create:copper_backtank",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "strata_tank_tier": 2
+      },
+      "minecraft:item_name": "{\"translate\": \"item.strata_tweaks.carapace_copper_backtank\"}",
+      "minecraft:lore": [
+        "{\"translate\": \"tooltip.strata_tweaks.tank.2\", \"color\": \"aqua\", \"italic\": false}"
+      ]
+    }
+  }
+}

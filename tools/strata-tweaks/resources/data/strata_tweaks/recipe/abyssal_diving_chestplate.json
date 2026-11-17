@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "strata_tweaks:abyssal_plating"
+  },
+  "base": {
+    "item": "strata_tweaks:carapace_diving_chestplate"
+  },
+  "addition": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "result": {
+    "id": "strata_tweaks:abyssal_diving_chestplate",
+    "count": 1
+  }
+}

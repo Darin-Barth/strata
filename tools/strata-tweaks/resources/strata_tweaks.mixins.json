@@ -5,7 +5,8 @@
   "plugin": "strata.tweaks.mixin.Plugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
-             "WhisperingSpiritsMixin", "LevelSeaLevelMixin"],
+             "WhisperingSpiritsMixin", "LevelSeaLevelMixin", "DiverPressureMixin", "DeepSeasBacktanksMixin",
+             "BacktankUtilMixin", "BacktankBlockEntityMixin"],
   "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin"],
   "injectors": {"defaultRequire": 1}
 }
