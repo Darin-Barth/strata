@@ -506,7 +506,7 @@ hash = "90b56bbe84f3314d2dd07c8bcc3b3e896d7c4b9141037f707bc666810f9e0f98"
 
 [[files]]
 file = "config/rctmod-server.toml"
-hash = "dd1d7e02a7d3984efb96b4d7675d4a0388187dffd7af4a514f135d3436f949b1"
+hash = "41fca2d1312b0a3d6b3f2ee3454598ddcc70578abb6bada483c3cc487ad43098"
 
 [[files]]
 file = "config/relics.yaml"
