@@ -3690,11 +3690,11 @@
 	quest.789E966F9CC7B4F0.quest_desc: [
 		"The crab's shell makes a better suit than copper does."
 		""
-		"One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make four &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay."
+		"One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make six &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay."
 		""
 		"With both pieces (and a diving helmet and boots) you hold out down to &e420 m&r: deep enough to walk the upper Trench, where the &cHullbreaker&r hunts."
 		""
-		"The other two platings go on &eBacktanks&r the same way: a Carapace Backtank holds &etwice&r the air."
+		"The other four platings go on your &ediving helmet&r and &eboots&r (more armour, and the suit looks the part) and on two &eBacktanks&r: a Carapace Backtank holds &etwice&r the air."
 	]
 	quest.5781E9D7434B7204.title: "The Hullbreaker"
 	quest.5781E9D7434B7204.quest_desc: [
@@ -3710,11 +3710,11 @@
 	quest.19A4AED4768FF3C8.quest_desc: [
 		"The last suit: no depth is too deep for it."
 		""
-		"The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make four &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r."
+		"The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make six &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r."
 		""
 		"In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called."
 		""
-		"Plate your Carapace Backtanks again and they hold &ethree times&r the air."
+		"Plate the Carapace helmet, boots and Backtanks again as well: the tanks then hold &ethree times&r the air."
 	]
 	quest.42AF8A4D4AB50FEA.title: "Abyssal Pearls"
 	quest.42AF8A4D4AB50FEA.quest_desc: [

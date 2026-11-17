@@ -32,7 +32,8 @@
       "minecraft:item_name": "{\"translate\": \"item.strata_tweaks.abyssal_netherite_backtank\"}",
       "minecraft:lore": [
         "{\"translate\": \"tooltip.strata_tweaks.tank.3\", \"color\": \"aqua\", \"italic\": false}"
-      ]
+      ],
+      "minecraft:custom_model_data": 3
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "strata_tweaks:carapace_plating"
+  },
+  "base": [
+    {
+      "item": "create:copper_diving_boots"
+    },
+    {
+      "item": "create:netherite_diving_boots"
+    }
+  ],
+  "addition": {
+    "item": "create:brass_sheet"
+  },
+  "result": {
+    "id": "strata_tweaks:carapace_diving_boots",
+    "count": 1
+  }
+}

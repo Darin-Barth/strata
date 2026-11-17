@@ -40,8 +40,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  *   2  Carapace (Karkinos Claw)                 420 m   the upper Trench, where the Hullbreaker hunts
  *   3  Abyssal (the Hullbreaker's engine)       no limit: the Trench floor, the Leviathan
  *
- * A tier is the lower of the chestplate's and the leggings'; the helmet and boots are Create's, copper or
- * netherite (Deep Seas only accepted the copper ones). The mixins in {@code mixin/DiverPressureMixin} and
+ * A tier is the lower of the chestplate's and the leggings'. Any diving helmet and boots complete a suit:
+ * Create's copper or netherite ones (Deep Seas only accepted copper) or the Carapace and Abyssal ones, which
+ * are Create's own helmet and boots classes ({@link SuitGear}) with better armour and the tier's look. The mixins in {@code mixin/DiverPressureMixin} and
  * {@code mixin/DeepSeasBacktanksMixin} hand Deep Seas these answers; everything else about pressure is its own.
  *
  * Backtanks: the suit's chestplate takes the slot a backtank would be worn in, so Deep Seas lets the helmet
@@ -60,19 +61,26 @@ public final class DivingSuit {
     public static final DeferredItem<Item> CARAPACE_PLATING = ITEMS.registerSimpleItem("carapace_plating");
     public static final DeferredItem<Item> ABYSSAL_PLATING = ITEMS.registerSimpleItem("abyssal_plating", new Item.Properties().fireResistant());
     // Deep Seas' copper pieces are iron-grade (chest 6, legs 5). Carapace is diamond-grade, Abyssal a step past netherite.
-    private static final Holder<ArmorMaterial> CARAPACE = material("carapace_diving", 6, 8, 2.0F, 0.0F, CARAPACE_PLATING);
-    private static final Holder<ArmorMaterial> ABYSSAL = material("abyssal_diving", 7, 9, 3.0F, 0.1F, ABYSSAL_PLATING);
+    // (Create's copper helmet and boots: 1 and 2.)
+    static final Holder<ArmorMaterial> CARAPACE = material("carapace_diving", 3, 6, 8, 3, 2.0F, 0.0F, CARAPACE_PLATING);
+    static final Holder<ArmorMaterial> ABYSSAL = material("abyssal_diving", 4, 7, 9, 3, 3.0F, 0.1F, ABYSSAL_PLATING);
     public static final DeferredItem<Piece> CARAPACE_CHESTPLATE = piece("carapace_diving_chestplate", CARAPACE, ArmorItem.Type.CHESTPLATE, 2, 33, false);
     public static final DeferredItem<Piece> CARAPACE_LEGGINGS = piece("carapace_diving_leggings", CARAPACE, ArmorItem.Type.LEGGINGS, 2, 33, false);
     public static final DeferredItem<Piece> ABYSSAL_CHESTPLATE = piece("abyssal_diving_chestplate", ABYSSAL, ArmorItem.Type.CHESTPLATE, 3, 40, true);
     public static final DeferredItem<Piece> ABYSSAL_LEGGINGS = piece("abyssal_diving_leggings", ABYSSAL, ArmorItem.Type.LEGGINGS, 3, 40, true);
+    public static final DeferredItem<Item> CARAPACE_HELMET = ITEMS.register("carapace_diving_helmet", () -> SuitGear.helmet(CARAPACE, "carapace_diving", 2, 33, false));
+    public static final DeferredItem<Item> CARAPACE_BOOTS = ITEMS.register("carapace_diving_boots", () -> SuitGear.boots(CARAPACE, "carapace_diving", 2, 33, false));
+    public static final DeferredItem<Item> ABYSSAL_HELMET = ITEMS.register("abyssal_diving_helmet", () -> SuitGear.helmet(ABYSSAL, "abyssal_diving", 3, 40, true));
+    public static final DeferredItem<Item> ABYSSAL_BOOTS = ITEMS.register("abyssal_diving_boots", () -> SuitGear.boots(ABYSSAL, "abyssal_diving", 3, 40, true));
 
     private DivingSuit() {}
 
-    private static Holder<ArmorMaterial> material(String name, int legs, int chest, float toughness, float knockback, DeferredItem<Item> repair) {
+    private static Holder<ArmorMaterial> material(String name, int helmet, int legs, int chest, int boots, float toughness, float knockback, DeferredItem<Item> repair) {
         return MATERIALS.register(name, () -> {
             EnumMap<ArmorItem.Type, Integer> defense = new EnumMap<>(ArmorItem.Type.class);
             for (ArmorItem.Type type : ArmorItem.Type.values()) defense.put(type, 3);
+            defense.put(ArmorItem.Type.HELMET, helmet);
+            defense.put(ArmorItem.Type.BOOTS, boots);
             defense.put(ArmorItem.Type.LEGGINGS, legs);
             defense.put(ArmorItem.Type.CHESTPLATE, chest);
             return new ArmorMaterial(defense, 12, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> Ingredient.of(repair.get()),
@@ -98,21 +106,31 @@ public final class DivingSuit {
 
         @Override
         public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
-            lines.add(Component.translatable("tooltip.strata_tweaks.suit.part." + tier).withStyle(ChatFormatting.GRAY));
-            int depth = depthOf(tier, 280);
-            lines.add((depth >= NO_LIMIT ? Component.translatable("tooltip.strata_tweaks.suit.no_limit")
-                    : Component.translatable("tooltip.strata_tweaks.suit.depth", depth)).withStyle(ChatFormatting.AQUA));
+            describe(tier, true, lines);
             super.appendHoverText(stack, context, lines, flag);
         }
+    }
+
+    /** Tooltip lines of a suit piece; only the chestplate and leggings decide the depth. */
+    static void describe(int tier, boolean decidesDepth, List<Component> lines) {
+        lines.add(Component.translatable("tooltip.strata_tweaks.suit.part." + tier).withStyle(ChatFormatting.GRAY));
+        if (!decidesDepth) return;
+        int depth = depthOf(tier, 280);
+        lines.add((depth >= NO_LIMIT ? Component.translatable("tooltip.strata_tweaks.suit.no_limit")
+                : Component.translatable("tooltip.strata_tweaks.suit.depth", depth)).withStyle(ChatFormatting.AQUA));
     }
 
     public static void addToTabs(BuildCreativeModeTabContentsEvent event) {
         String tab = event.getTabKey().location().toString();
         if (tab.equals("minecraft:combat")) {
+            event.accept(CARAPACE_HELMET.get());
             event.accept(CARAPACE_CHESTPLATE.get());
             event.accept(CARAPACE_LEGGINGS.get());
+            event.accept(CARAPACE_BOOTS.get());
+            event.accept(ABYSSAL_HELMET.get());
             event.accept(ABYSSAL_CHESTPLATE.get());
             event.accept(ABYSSAL_LEGGINGS.get());
+            event.accept(ABYSSAL_BOOTS.get());
         } else if (tab.equals("minecraft:ingredients")) {
             event.accept(CARAPACE_PLATING.get());
             event.accept(ABYSSAL_PLATING.get());
@@ -123,9 +141,12 @@ public final class DivingSuit {
 
     private static final int NO_LIMIT = 1_000_000;
 
-    private static boolean createPiece(ItemStack stack, String copper, String netherite) {
+    /** A diving helmet (or boots): one of Create's two, or one of ours. */
+    private static boolean divingPiece(ItemStack stack, String kind) {
         ResourceLocation id = BuiltInRegistries.ITEM.getKey(stack.getItem());
-        return id.getNamespace().equals("create") && (id.getPath().equals(copper) || id.getPath().equals(netherite));
+        String path = id.getPath();
+        if (id.getNamespace().equals("create")) return path.equals("copper_diving_" + kind) || path.equals("netherite_diving_" + kind);
+        return id.getNamespace().equals(StrataTweaks.MODID) && (path.equals("carapace_diving_" + kind) || path.equals("abyssal_diving_" + kind));
     }
 
     /** 0 for anything that is no suit piece, 1 for Deep Seas' copper chestplate and leggings, 2 and 3 for ours. */
@@ -137,8 +158,7 @@ public final class DivingSuit {
 
     /** The tier of the whole suit worn, 0 without a full one. */
     public static int tier(LivingEntity entity) {
-        if (!createPiece(entity.getItemBySlot(EquipmentSlot.HEAD), "copper_diving_helmet", "netherite_diving_helmet")
-                || !createPiece(entity.getItemBySlot(EquipmentSlot.FEET), "copper_diving_boots", "netherite_diving_boots")) return 0;
+        if (!divingPiece(entity.getItemBySlot(EquipmentSlot.HEAD), "helmet") || !divingPiece(entity.getItemBySlot(EquipmentSlot.FEET), "boots")) return 0;
         return Math.min(pieceTier(entity.getItemBySlot(EquipmentSlot.CHEST)), pieceTier(entity.getItemBySlot(EquipmentSlot.LEGS)));
     }
 

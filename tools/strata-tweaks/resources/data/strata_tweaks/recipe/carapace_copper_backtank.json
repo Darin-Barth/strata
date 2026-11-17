@@ -25,7 +25,8 @@
       "minecraft:item_name": "{\"translate\": \"item.strata_tweaks.carapace_copper_backtank\"}",
       "minecraft:lore": [
         "{\"translate\": \"tooltip.strata_tweaks.tank.2\", \"color\": \"aqua\", \"italic\": false}"
-      ]
+      ],
+      "minecraft:custom_model_data": 2
     }
   }
 }

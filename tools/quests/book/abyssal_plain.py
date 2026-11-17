@@ -161,11 +161,11 @@ q("carapace_suit", "Carapace Diving Suit", deps="karkinos", icon="strata_tweaks:
   rewards=[xp(250), bag("uncommon")], desc="""
     The crab's shell makes a better suit than copper does.
 
-    One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make four &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay.
+    One &eKarkinos Claw&r, four Copper Sheets and four Sturdy Sheets make six &eCarapace Plating&r. At a &eSmithing Table&r, put a plating in the template slot, your &eDiving Chestplate&r or &eLeggings&r in the middle and a &eBrass Sheet&r last. Enchantments stay.
 
     With both pieces (and a diving helmet and boots) you hold out down to &e420 m&r: deep enough to walk the upper Trench, where the &cHullbreaker&r hunts.
 
-    The other two platings go on &eBacktanks&r the same way: a Carapace Backtank holds &etwice&r the air.""")
+    The other four platings go on your &ediving helmet&r and &eboots&r (more armour, and the suit looks the part) and on two &eBacktanks&r: a Carapace Backtank holds &etwice&r the air.""")
 
 q("hullbreaker", "The Hullbreaker", deps=["karkinos", "trench"], icon="alexscaves:immortal_embryo", at=(17.5, -1.5), tier=4,
   tasks=kill("alexscaves:hullbreaker"), desc="""
@@ -182,11 +182,11 @@ q("abyssal_suit", "Abyssal Diving Suit", deps=["hullbreaker", "carapace_suit"], 
   rewards=[xp(500), bag("rare")], desc="""
     The last suit: no depth is too deep for it.
 
-    The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make four &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r.
+    The Hullbreaker's &eEnigmatic Engine&r, four &dAbyssal Pearls&r and four Sturdy Sheets make six &eAbyssal Plating&r. At a &eSmithing Table&r: plating, a &eCarapace&r piece, and &eNetherite Scrap&r.
 
     In the full suit you can stand on the floor of the Trench, more than 500 m down, and that is where the &cLeviathan&r has to be called.
 
-    Plate your Carapace Backtanks again and they hold &ethree times&r the air.""")
+    Plate the Carapace helmet, boots and Backtanks again as well: the tanks then hold &ethree times&r the air.""")
 
 q("pearls", "Abyssal Pearls", deps="hullbreaker", icon="strata:abyssal_pearl", at=(19.25, -1.5), tier=3,
   tasks=item("strata:abyssal_pearl", 6), desc="""

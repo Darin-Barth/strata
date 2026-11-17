@@ -39,7 +39,7 @@ const vampAirMaxOf = entity => vampAirBreath[String(entity.headArmorItem.id)] ||
 const vampAirSlot = Java.loadClass('net.minecraft.world.entity.EquipmentSlot')
 const vampAirBroken = {}
 const vampAirSupplies = [
-  [/^create:.*diving_helmet$/, entity =>
+  [/^(create|strata_tweaks):.*diving_helmet$/, entity =>
     !Java.loadClass('com.simibubi.create.content.equipment.armor.BacktankUtil').getAllWithAir(entity).isEmpty()],
   [/^mekanism:scuba_mask$/, entity =>
     Java.loadClass('mekanism.common.CommonPlayerTickHandler').isScubaMaskOn(entity, entity.getItemBySlot(vampAirSlot.CHEST))],

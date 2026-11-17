@@ -57,7 +57,8 @@ LOOKS = {
 # ---- the armour layout (x, y, w, h) ----
 BODY = dict(front=(20, 20, 8, 12), back=(32, 20, 8, 12), right=(16, 20, 4, 12), left=(28, 20, 4, 12), top=(20, 16, 8, 4))
 ARM = dict(outer=(40, 20, 4, 12), front=(44, 20, 4, 12), inner=(48, 20, 4, 12), back=(52, 20, 4, 12), top=(44, 16, 4, 4))
-LEG = dict(outer=(0, 20, 4, 12), front=(4, 20, 4, 12), inner=(8, 20, 4, 12), back=(12, 20, 4, 12), top=(4, 16, 4, 4))
+LEG = dict(outer=(0, 20, 4, 12), front=(4, 20, 4, 12), inner=(8, 20, 4, 12), back=(12, 20, 4, 12), top=(4, 16, 4, 4), bottom=(8, 16, 4, 4))
+HEAD = dict(right=(0, 8, 8, 8), front=(8, 8, 8, 8), left=(16, 8, 8, 8), back=(24, 8, 8, 8), top=(8, 0, 8, 8))
 
 
 def colour(look, zone, shade, t=0.0):
@@ -187,6 +188,64 @@ def chest_layer(look):
     for face in ('outer', 'front', 'inner', 'back'):
         paint(img, look, ARM[face], arm(face), 0.0, 0.5, dim=1 if face in ('inner', 'back') else 0)
     paint(img, look, ARM['top'], lambda c, r, w, h: ('R', 0) if (c, r) in ((1, 1), (2, 2)) else ('P', 4 if r < 2 else 3))
+
+    # --- helmet: a dome with a round window, small side ports and a valve on top ---
+    def dome(r):
+        return 4 if r <= 1 else 3 if r <= 4 else 2
+
+    def helm_front(c, r, w, h):
+        if r == 7:
+            return ('T', 0)
+        if 2 <= c <= 5 and 2 <= r <= 5:
+            return ('G', 2 if (c, r) in ((2, 2), (3, 2), (2, 3)) else 0 if (c, r) in ((5, 5), (4, 5), (5, 4)) else 1)
+        if 1 <= c <= 6 and 1 <= r <= 6:
+            return ('T', 2 if r == 1 or c == 1 else 1)
+        return ('P', dome(r))
+
+    def helm_side(c, r, w, h):
+        if r == 7:
+            return ('T', 0)
+        if c in (3, 4) and r in (3, 4):
+            return ('G', 2 if (c, r) == (3, 3) else 1)
+        if 2 <= c <= 5 and 2 <= r <= 5 and (c in (3, 4) or r in (3, 4)):
+            return ('T', 1)
+        return ('P', dome(r))
+
+    def helm_back(c, r, w, h):
+        if r == 7:
+            return ('T', 0)
+        if c in (3, 4) and 1 <= r <= 5:
+            return ('R', 0) if (c, r) == (3, 2) else ('T', 2 if c == 3 else 1)
+        return ('P', dome(r))
+
+    def helm_top(c, r, w, h):
+        if c in (3, 4) and r in (3, 4):
+            return ('R', 0) if (c, r) == (3, 3) else ('T', 1)
+        return ('P', 4 if 1 <= c <= 6 and 1 <= r <= 6 else 3)
+
+    paint(img, look, HEAD['front'], helm_front, 0.0, 0.0)
+    paint(img, look, HEAD['right'], helm_side, 0.0, 0.0)
+    paint(img, look, HEAD['left'], helm_side, 0.0, 0.0, dim=1)
+    paint(img, look, HEAD['back'], helm_back, 0.0, 0.0, dim=1)
+    paint(img, look, HEAD['top'], helm_top, 0.0, 0.0)
+
+    # --- boots: a cuff, a plated shoe and a dark weighted sole ---
+    def boot(face):
+        def fn(c, r, w, h):
+            if r < 8:
+                return None
+            if r == 8:
+                return ('T', 2 if face in ('front', 'outer') else 1)
+            if r == 11:
+                return ('U', 0)
+            if face == 'front' and r == 10 and c in (1, 2):
+                return ('R', 0)
+            return ('P', 4 if r == 9 else 2)
+        return fn
+
+    for face in ('outer', 'front', 'inner', 'back'):
+        paint(img, look, LEG[face], boot(face), 1.0, 1.0, dim=1 if face in ('inner', 'back') else 0)
+    paint(img, look, LEG['bottom'], lambda c, r, w, h: ('U', 0))
     return img
 
 
@@ -268,6 +327,62 @@ ICON_LEGS = """
 ................
 ................
 """
+ICON_HELMET = """
+................
+....PPPPPPPP....
+...PPPPPPPPPP...
+..PPPTTTTTTPPP..
+..PPTWWWWWWTPP..
+..PPTWWWWWWTPP..
+..PPTWWWWWWTPP..
+..PPTWWWWWWTPP..
+..PPPTTTTTTPPP..
+..PRPPPPPPPPRP..
+...PPPPPPPPPP...
+...TTTTTTTTTT...
+..TTTTTTTTTTTT..
+................
+................
+................
+"""
+ICON_BOOTS = """
+................
+................
+................
+....TTTT..TTTT..
+....PPPP..PPPP..
+....PPPP..PPPP..
+....PPPP..PPPP..
+....PPPP..PPPP..
+...PPPPP.PPPPP..
+..PPPPPP.PPPPPP.
+..PRPPPP.PRPPPP.
+..UUUUUU.UUUUUU.
+..UUUUUU.UUUUUU.
+................
+................
+................
+"""
+# M = the metal of the Create backtank underneath (copper or netherite), W = glass
+ICON_TANK = """
+................
+......RRRR......
+.....TTTTTT.....
+......MMMM......
+....PPPPPPPP....
+...PPPPPPPPPP...
+...PPWWPPPPPP...
+...PPWWPPPPPP...
+...MMMMMMMMMM...
+...PPPPPPPPPP...
+...PPPPPPPPPP...
+...PPPPPPPPPP...
+...MMMMMMMMMM...
+....PPPPPPPP....
+................
+................
+"""
+METALS = {'copper': ramp('7a4630', 'a8623f', 'd08a5a'), 'netherite': ramp('2a2528', '443c40', '6b5f63')}
 ICON_PLATING = """
 ................
 ................
@@ -288,7 +403,9 @@ ICON_PLATING = """
 """
 
 
-def icon(look, art, segment_rows=True):
+def icon(look, art, metal=None):
+    if metal:
+        look = dict(look, M=METALS[metal])
     rows = [line for line in art.strip('\n').split('\n')]
     img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
 
@@ -310,6 +427,10 @@ def icon(look, art, segment_rows=True):
                     shade = 2
                 if edge:
                     shade = 4 if lit and at(c, r + 1) != '.' and at(c + 1, r) != '.' else 0
+            elif z == 'W':
+                z, shade = 'G', (2 if lit else 0 if edge or at(c + 1, r) != 'W' or at(c, r + 1) != 'W' else 1)
+            elif z == 'M':
+                shade = 2 if at(c - 1, r) == '.' else 0 if at(c + 1, r) == '.' else 1
             elif z == 'G':
                 if not look['lamp'] and art is not ICON_PLATING:
                     z, shade = 'T', 2
@@ -357,12 +478,16 @@ def doll(chest, legs, back=False):
         part = layer.crop((x, y, x + w, y + h))
         return part.transpose(Image.FLIP_LEFT_RIGHT) if flip else part
 
+    img.alpha_composite(crop(chest, HEAD[face]), (5, 0))
+    boots = crop(chest, LEG[face])
     img.alpha_composite(crop(legs, BODY[face]), (5, 8))
     img.alpha_composite(crop(chest, BODY[face]), (5, 8))
     img.alpha_composite(crop(chest, ARM[face], back), (0, 8))
     img.alpha_composite(crop(chest, ARM[face], not back), (14, 8))
     img.alpha_composite(crop(legs, LEG[face], back), (5, 20))
     img.alpha_composite(crop(legs, LEG[face], not back), (9, 20))
+    img.alpha_composite(crop(chest, LEG[face], back), (5, 20))
+    img.alpha_composite(crop(chest, LEG[face], not back), (9, 20))
     return img
 
 
@@ -377,7 +502,7 @@ def sheet(out):
         small = ImageFont.truetype('arial.ttf', 16)
     except OSError:
         font = small = ImageFont.load_default()
-    cell_w, cell_h = 490, 430
+    cell_w, cell_h = 520, 430
     canvas = Image.new('RGBA', (cell_w * 3, cell_h * 2 + 20), (58, 74, 92, 255))
     d = ImageDraw.Draw(canvas)
     for row, tier in enumerate(('carapace', 'abyssal')):
@@ -390,10 +515,12 @@ def sheet(out):
             canvas.alpha_composite(big(doll(chest, legs, True), 10), (x0 + 196, y0 + 40))
             d.text((x0 + 68, y0 + 366), 'front', fill=(210, 220, 230, 255), font=small)
             d.text((x0 + 266, y0 + 366), 'back', fill=(210, 220, 230, 255), font=small)
-            for i, art in enumerate((ICON_CHEST, ICON_LEGS, ICON_PLATING)):
+            arts = [(ICON_HELMET, None), (ICON_CHEST, None), (ICON_LEGS, None), (ICON_BOOTS, None), (ICON_PLATING, None), (ICON_TANK, 'copper'), (ICON_TANK, 'netherite')]
+            for i, (art, metal) in enumerate(arts):
                 tile = Image.new('RGBA', (72, 72), (139, 139, 139, 255))
-                tile.alpha_composite(big(icon(look, art), 4), (4, 4))
-                canvas.alpha_composite(tile, (x0 + 392, y0 + 44 + i * 84))
+                tile = Image.new('RGBA', (52, 52), (139, 139, 139, 255))
+                tile.alpha_composite(big(icon(look, art, metal), 3), (2, 2))
+                canvas.alpha_composite(tile, (x0 + 392 + (i % 2) * 56, y0 + 44 + (i // 2) * 56))
     canvas.save(out / 'suit_choices.png')
 
 
@@ -406,6 +533,10 @@ def write(folder, tier, key):
     icon(look, ICON_CHEST).save(folder / f'item/{tier}_diving_chestplate.png')
     icon(look, ICON_LEGS).save(folder / f'item/{tier}_diving_leggings.png')
     icon(look, ICON_PLATING).save(folder / f'item/{tier}_plating.png')
+    icon(look, ICON_HELMET).save(folder / f'item/{tier}_diving_helmet.png')
+    icon(look, ICON_BOOTS).save(folder / f'item/{tier}_diving_boots.png')
+    for metal in METALS:
+        icon(look, ICON_TANK, metal).save(folder / f'item/{tier}_{metal}_backtank.png')
 
 
 def main():
