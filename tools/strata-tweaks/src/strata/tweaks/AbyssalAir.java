@@ -31,7 +31,8 @@ import net.neoforged.neoforge.fluids.capability.IFluidHandler;
  * the top floods, and a hole in the floor does not (water never flows up), so a moon pool or a submarine
  * dock under a base works as built. What the game does not ask for is where the air came from: fill a shell
  * with blocks, dig them out, and you have a dry room for nothing. So every two seconds, for each player
- * standing in air there, the connected dry space around them is walked (up to 40,000 cells). It stays dry
+ * standing in air there, the connected dry space around them is walked (the nearest 120,000 cells; a bigger
+ * space is judged on those and pays for 120,000). It stays dry
  * while a Create: Deep Seas Oxygen Diffuser in or next to it holds oxygen (from an Electrolyzer), which is
  * used up in proportion to the room's size. Without one the player is warned for ten seconds, then the room
  * floods from the floor up, a layer every two seconds (pockets that can't flood, such as a doorway, and anyone
@@ -43,7 +44,7 @@ public final class AbyssalAir {
     private static final ResourceLocation DIFFUSER = ResourceLocation.fromNamespaceAndPath("create_submarine", "oxygene_diffuser");
     private static final ResourceLocation CREATIVE_OXYGENATOR = ResourceLocation.fromNamespaceAndPath("create_submarine", "creative_oxygenator");
     private static final int PERIOD = 40;
-    private static final int MAX_CELLS = 40_000;
+    private static final int MAX_CELLS = 120_000;
     private static final int GRACE_CHECKS = 5;
     private static final Map<UUID, Integer> FAILING = new HashMap<>();
     private static Field oxygenTank;
@@ -99,13 +100,15 @@ public final class AbyssalAir {
                     BlockPos at = next.immutable();
                     if (!diffusers.contains(at)) diffusers.add(at);
                 }
-                if (!open(state, level, next) || !seen.add(next.asLong())) continue;
-                if (seen.size() > MAX_CELLS) return;        // too big to judge: left alone
+                if (!open(state, level, next)) continue;
+                // A space bigger than the limit is not walked any further, but it is not let off either:
+                // what was walked still has to hold a Diffuser, and it pays for the full limit.
+                if (seen.size() >= MAX_CELLS || !seen.add(next.asLong())) continue;
                 queue.add(next.asLong());
             }
         }
-        // Oxygen used: 2 mB plus 1 per 400 cells, every two seconds.
-        int need = 2 + seen.size() / 400;
+        // Oxygen used: 2 mB plus 1 per 1,000 cells, every two seconds (a ship's Diffuser uses 100 in that time).
+        int need = 2 + seen.size() / 1000;
         for (BlockPos at : diffusers) {
             if (supplied || need <= 0) break;
             need -= drain(level, at, need);

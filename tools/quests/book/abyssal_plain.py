@@ -88,7 +88,7 @@ q("oxygen", "Breathing Room", deps="air", icon="create_submarine:oxygene_diffuse
   tasks=[item("create_submarine:electrolyzer"), item("create_submarine:oxygene_diffuser")], desc="""
     The &eElectrolyzer&r turns water and power into oxygen. Pipe it into the &eOxygen Diffuser&r in your room.
 
-    A room uses oxygen all the time, a little more the bigger it is, and a full Diffuser lasts a small room about twelve minutes. If it runs dry you get ten seconds of warning before the water comes in, so keep the Electrolyzer running.
+    A room uses oxygen all the time, a little more the bigger it is, and a full Diffuser lasts a small room about a quarter of an hour, and a great hall drinks it in under a minute. If it runs dry you get ten seconds of warning before the water comes in, so keep the Electrolyzer running.
 
     The same two machines keep a submarine breathable. Press &eR&r on them for recipes.""")
 

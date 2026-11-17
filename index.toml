@@ -394,7 +394,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4a337419eb2198d6f07c4a0838ad94b3b92987050c03bea0c8e0d6be76e92d1c"
+hash = "b765d1f68fd518825651629e0a22417c83a0941aee2aebea7ce715b2195c23ca"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -10241,7 +10241,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.1.0.jar"
-hash = "7cd448e9895981853697caa1b2c8e37bc8038eef81df6501883fcb537676b2ea"
+hash = "a33ca040c138c887d38db0aaddb1c1360935a7f261f5e6c4ed4f434f0420b8c1"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
