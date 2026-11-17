@@ -1,15 +1,21 @@
 """Draw the Carapace and Abyssal diving suit art for Strata Tweaks.
 
-Usage: python tools/strata-tweaks/art/make_art.py [--preview <dir>] [carapace=<a|b|c>] [abyssal=<a|b|c>]
+Usage: python tools/strata-tweaks/art/make_art.py [--preview <dir>] [--create <Create jar>] [carapace=<a|b|c>] [abyssal=<a|b|c>]
 
 Everything is drawn here from scratch on the vanilla armour layout (64x32, layer 1 = chestplate, layer 2 =
 leggings): Create's and Deep Seas' own textures are All Rights Reserved, so nothing is derived from them.
 Each tier has three looks. The picked ones (default: the ones in PICKED) are written into
 tools/strata-tweaks/resources/assets/strata_tweaks/textures; --preview also writes every look and a contact
 sheet (icons plus a front and back paper doll) to the given folder. Needs Pillow. Rebuild the mod afterwards.
+
+The backtank textures (--create) are painted onto the shape of Create's backtank: the script reads where each
+face of Create's models sits on the 32x32 texture and fills it with our own colours, so our models can simply
+point at Create's shapes. Nothing of Create's texture is read or copied.
 """
+import json
 import pathlib
 import sys
+import zipfile
 
 from PIL import Image, ImageDraw
 
@@ -363,25 +369,7 @@ ICON_BOOTS = """
 ................
 ................
 """
-# M = the metal of the Create backtank underneath (copper or netherite), W = glass
-ICON_TANK = """
-................
-......RRRR......
-.....TTTTTT.....
-......MMMM......
-....PPPPPPPP....
-...PPPPPPPPPP...
-...PPWWPPPPPP...
-...PPWWPPPPPP...
-...MMMMMMMMMM...
-...PPPPPPPPPP...
-...PPPPPPPPPP...
-...PPPPPPPPPP...
-...MMMMMMMMMM...
-....PPPPPPPP....
-................
-................
-"""
+# the metal of the Create backtank underneath: its cogs, shaft and bands keep that colour
 METALS = {'copper': ramp('7a4630', 'a8623f', 'd08a5a'), 'netherite': ramp('2a2528', '443c40', '6b5f63')}
 ICON_PLATING = """
 ................
@@ -403,9 +391,7 @@ ICON_PLATING = """
 """
 
 
-def icon(look, art, metal=None):
-    if metal:
-        look = dict(look, M=METALS[metal])
+def icon(look, art):
     rows = [line for line in art.strip('\n').split('\n')]
     img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
 
@@ -429,8 +415,6 @@ def icon(look, art, metal=None):
                     shade = 4 if lit and at(c, r + 1) != '.' and at(c + 1, r) != '.' else 0
             elif z == 'W':
                 z, shade = 'G', (2 if lit else 0 if edge or at(c + 1, r) != 'W' or at(c, r + 1) != 'W' else 1)
-            elif z == 'M':
-                shade = 2 if at(c - 1, r) == '.' else 0 if at(c + 1, r) == '.' else 1
             elif z == 'G':
                 if not look['lamp'] and art is not ICON_PLATING:
                     z, shade = 'T', 2
@@ -515,13 +499,67 @@ def sheet(out):
             canvas.alpha_composite(big(doll(chest, legs, True), 10), (x0 + 196, y0 + 40))
             d.text((x0 + 68, y0 + 366), 'front', fill=(210, 220, 230, 255), font=small)
             d.text((x0 + 266, y0 + 366), 'back', fill=(210, 220, 230, 255), font=small)
-            arts = [(ICON_HELMET, None), (ICON_CHEST, None), (ICON_LEGS, None), (ICON_BOOTS, None), (ICON_PLATING, None), (ICON_TANK, 'copper'), (ICON_TANK, 'netherite')]
-            for i, (art, metal) in enumerate(arts):
+            for i, art in enumerate((ICON_HELMET, ICON_CHEST, ICON_LEGS, ICON_BOOTS, ICON_PLATING)):
                 tile = Image.new('RGBA', (72, 72), (139, 139, 139, 255))
                 tile = Image.new('RGBA', (52, 52), (139, 139, 139, 255))
-                tile.alpha_composite(big(icon(look, art, metal), 3), (2, 2))
+                tile.alpha_composite(big(icon(look, art), 3), (2, 2))
                 canvas.alpha_composite(tile, (x0 + 392 + (i % 2) * 56, y0 + 44 + (i // 2) * 56))
     canvas.save(out / 'suit_choices.png')
+
+
+# ---- backtank textures, painted onto the shape of Create's backtank ----
+BODY_PARTS = {  # Create's five body boxes (from, to) -> what we paint them as
+    ((5, 0, 5), (11, 4, 11)): 'base', ((5, 10, 5), (11, 12, 11)): 'cap', ((4, 4, 4), (12, 10, 12)): 'body',
+    ((4, 4, 9), (12, 10, 11)): 'gauge', ((5, 2, 3), (11, 11, 5)): 'harness'}
+
+
+def tank_texture(look, metal, create_jar):
+    look = dict(look, M=METALS[metal])
+    faces = []
+    with zipfile.ZipFile(create_jar) as z:
+        for model in ('block', 'item', 'block_cogs', 'block_shaft_input'):
+            data = json.loads(z.read(f'assets/create/models/block/{metal}_backtank/{model}.json'))
+            for element in data['elements']:
+                part = BODY_PARTS.get((tuple(element['from']), tuple(element['to'])), 'metal')
+                for side, face in element['faces'].items():
+                    u1, v1, u2, v2 = (round(v * 2) for v in face['uv'])
+                    x1, x2, y1, y2 = min(u1, u2), max(u1, u2), min(v1, v2), max(v1, v2)
+                    if x2 > x1 and y2 > y1:
+                        faces.append((x1, y1, x2, y2, part, side))
+    img = Image.new('RGBA', (32, 32), (0, 0, 0, 0))
+    # big faces first, so the small ones that share a corner of the texture keep their own colours
+    for x1, y1, x2, y2, part, side in sorted(faces, key=lambda f: -(f[2] - f[0]) * (f[3] - f[1])):
+        w, h = x2 - x1, y2 - y1
+        for y in range(y1, min(y2, 32)):
+            for x in range(x1, min(x2, 32)):
+                c, r = x - x1, y - y1
+                lift = (1 if side == 'up' else -1 if side == 'down' else 0)
+                if h >= 3:
+                    lift += 1 if r == 0 else -1 if r == h - 1 else 0
+                if w >= 4 and c == w - 1:
+                    lift -= 1
+                if part == 'body':
+                    zone, shade = ('T', 1) if side not in ('up', 'down') and r == h // 2 else ('P', 3 + lift)
+                elif part == 'base':
+                    zone, shade = 'P', 2 + lift
+                elif part == 'cap':
+                    zone, shade = 'T', 1 + lift
+                elif part == 'gauge':
+                    zone, shade = 'G', 1
+                elif part == 'harness':
+                    zone, shade = ('T', 1) if w >= 4 and c in (0, w - 1) else ('U', 1 + lift)
+                else:
+                    zone, shade = 'M', 1 + lift
+                # the second plate colour (Sea Glass) comes in down the tank
+                t = {'cap': 0.0, 'base': 1.0}.get(part, r / max(1, h - 1) if side not in ('up', 'down') else 0.15)
+                img.putpixel((x, y), colour(look, zone, shade, t))
+    return img
+
+
+def write_tanks(folder, tier, key, create_jar):
+    (folder / 'block').mkdir(parents=True, exist_ok=True)
+    for metal in METALS:
+        tank_texture(LOOKS[tier][key], metal, create_jar).save(folder / f'block/{tier}_{metal}_backtank.png')
 
 
 def write(folder, tier, key):
@@ -535,23 +573,26 @@ def write(folder, tier, key):
     icon(look, ICON_PLATING).save(folder / f'item/{tier}_plating.png')
     icon(look, ICON_HELMET).save(folder / f'item/{tier}_diving_helmet.png')
     icon(look, ICON_BOOTS).save(folder / f'item/{tier}_diving_boots.png')
-    for metal in METALS:
-        icon(look, ICON_TANK, metal).save(folder / f'item/{tier}_{metal}_backtank.png')
+
 
 
 def main():
-    picked, preview = dict(PICKED), None
+    picked, preview, create_jar = dict(PICKED), None, None
     args = sys.argv[1:]
     while args:
         a = args.pop(0)
         if a == '--preview':
             preview = pathlib.Path(args.pop(0))
+        elif a == '--create':
+            create_jar = pathlib.Path(args.pop(0))
         elif '=' in a and a.split('=')[0] in LOOKS and a.split('=')[1] in 'abc':
             picked[a.split('=')[0]] = a.split('=')[1]
         else:
             sys.exit(__doc__)
     for tier, key in picked.items():
         write(TEXTURES, tier, key)
+        if create_jar:
+            write_tanks(TEXTURES, tier, key, create_jar)
         print(f'{tier}: look {key} ({LOOKS[tier][key]["name"]}) -> resources')
     if preview:
         preview.mkdir(parents=True, exist_ok=True)

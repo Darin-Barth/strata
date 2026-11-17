@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/netherite_backtank/block",
+  "textures": {
+    "0": "strata_tweaks:block/carapace_netherite_backtank",
+    "particle": "strata_tweaks:block/carapace_netherite_backtank"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

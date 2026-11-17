@@ -7,6 +7,6 @@
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
              "WhisperingSpiritsMixin", "LevelSeaLevelMixin", "DiverPressureMixin", "DeepSeasBacktanksMixin",
              "BacktankUtilMixin", "BacktankBlockEntityMixin"],
-  "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin"],
+  "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin", "BacktankRendererMixin"],
   "injectors": {"defaultRequire": 1}
 }

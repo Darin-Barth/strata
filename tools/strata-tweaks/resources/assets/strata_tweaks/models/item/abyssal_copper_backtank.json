@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "create:block/copper_backtank/item",
   "textures": {
-    "layer0": "strata_tweaks:item/abyssal_copper_backtank"
+    "0": "strata_tweaks:block/abyssal_copper_backtank",
+    "particle": "strata_tweaks:block/abyssal_copper_backtank"
   }
 }

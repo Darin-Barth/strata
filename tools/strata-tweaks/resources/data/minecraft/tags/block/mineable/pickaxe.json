@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "strata_tweaks:carapace_copper_backtank",
+    "strata_tweaks:carapace_netherite_backtank",
+    "strata_tweaks:abyssal_copper_backtank",
+    "strata_tweaks:abyssal_netherite_backtank"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,waterlogged=false": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block"
+    },
+    "facing=east,waterlogged=false": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 90
+    },
+    "facing=south,waterlogged=false": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 270
+    },
+    "facing=west,waterlogged=true": {
+      "model": "strata_tweaks:block/abyssal_copper_backtank/block",
+      "y": 270
+    }
+  }
+}

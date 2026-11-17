@@ -16,17 +16,7 @@
     "item": "create:brass_sheet"
   },
   "result": {
-    "id": "create:netherite_backtank",
-    "count": 1,
-    "components": {
-      "minecraft:custom_data": {
-        "strata_tank_tier": 2
-      },
-      "minecraft:item_name": "{\"translate\": \"item.strata_tweaks.carapace_netherite_backtank\"}",
-      "minecraft:lore": [
-        "{\"translate\": \"tooltip.strata_tweaks.tank.2\", \"color\": \"aqua\", \"italic\": false}"
-      ],
-      "minecraft:custom_model_data": 2
-    }
+    "id": "strata_tweaks:carapace_netherite_backtank",
+    "count": 1
   }
 }

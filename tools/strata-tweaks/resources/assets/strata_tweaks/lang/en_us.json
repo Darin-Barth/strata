@@ -18,5 +18,9 @@
   "item.strata_tweaks.carapace_diving_helmet": "Carapace Diving Helmet",
   "item.strata_tweaks.carapace_diving_boots": "Carapace Diving Boots",
   "item.strata_tweaks.abyssal_diving_helmet": "Abyssal Diving Helmet",
-  "item.strata_tweaks.abyssal_diving_boots": "Abyssal Diving Boots"
+  "item.strata_tweaks.abyssal_diving_boots": "Abyssal Diving Boots",
+  "block.strata_tweaks.carapace_copper_backtank": "Carapace Copper Backtank",
+  "block.strata_tweaks.carapace_netherite_backtank": "Carapace Netherite Backtank",
+  "block.strata_tweaks.abyssal_copper_backtank": "Abyssal Copper Backtank",
+  "block.strata_tweaks.abyssal_netherite_backtank": "Abyssal Netherite Backtank"
 }

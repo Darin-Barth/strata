@@ -4,11 +4,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
-import java.util.Optional;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
-import net.minecraft.core.component.DataComponentPatch;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,7 +20,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -48,13 +44,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  *
  * Backtanks: the suit's chestplate takes the slot a backtank would be worn in, so Deep Seas lets the helmet
  * breathe from backtanks carried in the inventory. That list is rebuilt here so it also holds for the new
- * chestplates and for netherite backtanks. A backtank upgraded at the smithing table carries
- * {@code strata_tank_tier} (2 or 3) in its custom data and holds that many times the air
- * ({@code mixin/BacktankUtilMixin}, {@code mixin/BacktankBlockEntityMixin}); the tag travels with the tank when
- * it is placed and picked up again, because Create keeps the item's components on the block.
+ * chestplates and for netherite backtanks. The Carapace and Abyssal backtanks, which hold two and three
+ * times the air, are in {@link TierTanks}.
  */
 public final class DivingSuit {
-    public static final String TANK_TIER = "strata_tank_tier";
     public static final DeferredRegister<ArmorMaterial> MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, StrataTweaks.MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StrataTweaks.MODID);
     private static final TagKey<Item> AIR_SOURCES = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("create", "pressurized_air_sources"));
@@ -131,6 +124,7 @@ public final class DivingSuit {
             event.accept(ABYSSAL_CHESTPLATE.get());
             event.accept(ABYSSAL_LEGGINGS.get());
             event.accept(ABYSSAL_BOOTS.get());
+            for (TierTanks.Tank tank : TierTanks.ALL) event.accept(tank.item().get());
         } else if (tab.equals("minecraft:ingredients")) {
             event.accept(CARAPACE_PLATING.get());
             event.accept(ABYSSAL_PLATING.get());
@@ -188,23 +182,9 @@ public final class DivingSuit {
 
     // ---- backtanks ----
 
-    private static int tankMultiplier(CustomData data) {
-        if (data == null || !data.contains(TANK_TIER)) return 1;
-        @SuppressWarnings("deprecation")
-        int tier = data.getUnsafe().getInt(TANK_TIER);
-        return tier == 2 || tier == 3 ? tier : 1;
-    }
-
-    /** How many times the usual air this backtank holds: 1, or the tier a smithing upgrade gave it. */
+    /** How many times the usual air this backtank holds: 1, or the tier of a Carapace or Abyssal one. */
     public static int tankMultiplier(ItemStack stack) {
-        return tankMultiplier(stack.get(DataComponents.CUSTOM_DATA));
-    }
-
-    /** The same for a placed backtank, from the item components Create keeps on the block. */
-    public static int tankMultiplier(DataComponentPatch patch) {
-        if (patch == null) return 1;
-        Optional<? extends CustomData> data = patch.get(DataComponents.CUSTOM_DATA);
-        return data == null || data.isEmpty() ? 1 : tankMultiplier(data.get());
+        return TierTanks.multiplier(stack.getItem());
     }
 
     private static Method createMaxAir;

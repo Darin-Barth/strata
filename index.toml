@@ -633,14 +633,6 @@ file = "icon.png"
 hash = "c7d941bdfaa11af012bd1910f0b2789422bcab3208adc706ca5da38f9e8cb3e8"
 
 [[files]]
-file = "kubejs/assets/create/models/item/copper_backtank.json"
-hash = "405bec91b8558ceb8de017a53cd69e32767957eaf62bbd520180c0eb8c5ca63e"
-
-[[files]]
-file = "kubejs/assets/create/models/item/netherite_backtank.json"
-hash = "a23dccb7c304ef73def2b3963b30ac5629a484f00ab36dd186fbffb79dd05898"
-
-[[files]]
 file = "kubejs/assets/endrem/lang/en_us.json"
 hash = "a146f0f5e1e853dec261733f54f3e8d06a2211b640e0fa91c79fb8f976eab685"
 
@@ -10341,7 +10333,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.2.0.jar"
-hash = "64b684d3b54a9653656326577ffe91b58b859f56f7f9ee916afc862f5c287a5f"
+hash = "22c30cc445e2fd10a1ee521378904b5469427e4dc9860b5727a8379660a9efe2"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

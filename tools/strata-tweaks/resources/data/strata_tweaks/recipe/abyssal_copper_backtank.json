@@ -10,30 +10,13 @@
     "item": "strata_tweaks:abyssal_plating"
   },
   "base": {
-    "type": "neoforge:components",
-    "items": "create:copper_backtank",
-    "components": {
-      "minecraft:custom_data": {
-        "strata_tank_tier": 2
-      }
-    },
-    "strict": false
+    "item": "strata_tweaks:carapace_copper_backtank"
   },
   "addition": {
     "item": "minecraft:netherite_scrap"
   },
   "result": {
-    "id": "create:copper_backtank",
-    "count": 1,
-    "components": {
-      "minecraft:custom_data": {
-        "strata_tank_tier": 3
-      },
-      "minecraft:item_name": "{\"translate\": \"item.strata_tweaks.abyssal_copper_backtank\"}",
-      "minecraft:lore": [
-        "{\"translate\": \"tooltip.strata_tweaks.tank.3\", \"color\": \"aqua\", \"italic\": false}"
-      ],
-      "minecraft:custom_model_data": 3
-    }
+    "id": "strata_tweaks:abyssal_copper_backtank",
+    "count": 1
   }
 }

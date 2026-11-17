@@ -41,7 +41,10 @@ public final class StrataTweaks {
     public StrataTweaks(IEventBus modBus, ModContainer container) {
         container.registerConfig(ModConfig.Type.COMMON, SPEC);
         DivingSuit.MATERIALS.register(modBus);
+        TierTanks.BLOCKS.register(modBus);
         DivingSuit.ITEMS.register(modBus);
+        modBus.addListener(TierTanks::addToBlockEntity);
+        modBus.addListener(TierTanks::commonSetup);
         modBus.addListener(DivingSuit::addToTabs);
         NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
     }

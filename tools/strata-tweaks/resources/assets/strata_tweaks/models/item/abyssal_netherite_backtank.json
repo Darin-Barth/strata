@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "create:block/netherite_backtank/item",
   "textures": {
-    "layer0": "strata_tweaks:item/abyssal_netherite_backtank"
+    "0": "strata_tweaks:block/abyssal_netherite_backtank",
+    "particle": "strata_tweaks:block/abyssal_netherite_backtank"
   }
 }
