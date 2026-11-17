@@ -394,7 +394,7 @@ hash = "9a13eb8bf41800254e9962d5c37862ecbc1bfaa4dda29cc872793379a844c716"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b765d1f68fd518825651629e0a22417c83a0941aee2aebea7ce715b2195c23ca"
+hash = "ef01ba63cad07a527b7bf7e715de97856c97b9103e7b3129b250bbaa26069374"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
@@ -562,7 +562,7 @@ hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
 file = "config/strata_tweaks-common.toml"
-hash = "dd8f3d444281a62ea776bb1e07b7fb6eb0746bf6fe5e8172587b659524f5ca66"
+hash = "89db954d878ab511ad4ac0bbf75ee6434c6c83a37893887f7305984a85c9e008"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -1381,6 +1381,22 @@ file = "kubejs/data/ae2/recipe/network/cells/item_storage_components_cell_256k_p
 hash = "4e3625c3f075de5a03022488f7a3e2f6a65d0fcd06c154b59dbcdf053defef34"
 
 [[files]]
+file = "kubejs/data/aethersdelight/loot_modifiers/scavenging_cooked_wings_from_flying_cow.json"
+hash = "9bc98888ca145910030c0597a76a079880dcf634f668fda8fdb3ff02cab3d24b"
+
+[[files]]
+file = "kubejs/data/aethersdelight/loot_modifiers/scavenging_cooked_wings_from_phyg.json"
+hash = "a1e7b3b6c4c87e50276471b813b0193c9d7739ae9c3cdf92331c9ae37efc39a3"
+
+[[files]]
+file = "kubejs/data/aethersdelight/loot_modifiers/scavenging_wings_from_flying_cow.json"
+hash = "2b44c055e9e5dc11ced96a83b12be4bbbf76673cf8b3aa1e993a0cadf1450383"
+
+[[files]]
+file = "kubejs/data/aethersdelight/loot_modifiers/scavenging_wings_from_phyg.json"
+hash = "ebfd29849b47a03c86bb8a9765d3416d21817658c819a548c77e62cca2bc0de1"
+
+[[files]]
 file = "kubejs/data/apotheosis/advancement/progression/pinnacle.json"
 hash = "d8ac2d0cc0cc9c2e67940a6067b16303c7586b483983fad88edfd9445eac24d5"
 
@@ -1471,6 +1487,74 @@ hash = "d9da65beec2defe8113d532f0f521f04be507309f9a3298ec1b818e1f1e884d7"
 [[files]]
 file = "kubejs/data/c/tags/entity_type/capturing_not_supported.json"
 hash = "35c6bfb8402c29887d59b156baa80e3a1f4284ead89b8a3d11c958323ace1566"
+
+[[files]]
+file = "kubejs/data/c/tags/item/black_dyes.json"
+hash = "252f30adb29e1521550e6206e40d8fd05b74775e4edf477f2824ef9ecc988d3a"
+
+[[files]]
+file = "kubejs/data/c/tags/item/blue_dyes.json"
+hash = "dba2200c218643b97334dc8b0292590e0bb2890ee24fb8da7684a23e5ce9eda5"
+
+[[files]]
+file = "kubejs/data/c/tags/item/brown_dyes.json"
+hash = "52a1ea2b5603256f68b57ac41b1286c9d7bdfee73d8d67294709600aaff42074"
+
+[[files]]
+file = "kubejs/data/c/tags/item/cyan_dyes.json"
+hash = "b425633a826d3135951564edcb51af4bd7e1e3217966dd6a1feaa7dc150f4097"
+
+[[files]]
+file = "kubejs/data/c/tags/item/gray_dyes.json"
+hash = "f1aa425225dc77345bfe4d4531b09563e93b65ab3995505562b144352c338938"
+
+[[files]]
+file = "kubejs/data/c/tags/item/green_dyes.json"
+hash = "2ea9094760ff32671242e98f02ee2dff1a0ad5fb974541812a0a9de0e8d4dceb"
+
+[[files]]
+file = "kubejs/data/c/tags/item/light_blue_dyes.json"
+hash = "ea7fe6c60e1ea49a7dae926aa186725eecfeea0f427df80d09f681a484c04f09"
+
+[[files]]
+file = "kubejs/data/c/tags/item/light_gray_dyes.json"
+hash = "b026386da402d73546ead43e79eee91e0ec26ba0ee785be2299c9985c5b809a6"
+
+[[files]]
+file = "kubejs/data/c/tags/item/lime_dyes.json"
+hash = "80d2c793c58bf736963c9a6e97e1952849c5f378662ad7238f537fd855e090a0"
+
+[[files]]
+file = "kubejs/data/c/tags/item/magenta_dyes.json"
+hash = "76773d2bce52ac76279f27403fb657fa0d56eeb96d619589bdfcc85f9e2afcff"
+
+[[files]]
+file = "kubejs/data/c/tags/item/oats.json"
+hash = "29e49355b5a1292635305f411ddb4815a69a6e29d470a078e241b343228433d8"
+
+[[files]]
+file = "kubejs/data/c/tags/item/orange_dyes.json"
+hash = "f979d53239fe1ba2f3576ccef053e6490df1698f916340ab5228b1cee84d44bc"
+
+[[files]]
+file = "kubejs/data/c/tags/item/pink_dyes.json"
+hash = "076a55dcfde2b8cf23ef3fc36a46a4ca11956e98b03e7d003165457f1d62e43e"
+
+[[files]]
+file = "kubejs/data/c/tags/item/purple_dyes.json"
+hash = "cb593f6e370b7f5c5afdf7c98a98e2142864945f8de87976975216d633491560"
+
+[[files]]
+file = "kubejs/data/c/tags/item/red_dyes.json"
+hash = "cc3e4c413cb7a9b4d30141efe7d7dfa3864cd5c5ad6ad8650cc9500fc199eade"
+
+[[files]]
+file = "kubejs/data/c/tags/item/white_dyes.json"
+hash = "d895b8ecfc63b052695b2ef6717fd3aa1b02fc098afdae36972691c708944514"
+
+[[files]]
+file = "kubejs/data/c/tags/item/yellow_dyes.json"
+hash = "c933cf89990a8868e56ffee32a3e6e3bfa10ea3e12381b09f083b25965f808da"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/worldgen/biome/has_structure/sunken_city_biomes.json"
@@ -3026,7 +3110,7 @@ hash = "3e92eaba33a8c7fb36b9b4fecac1bc205c3d761e6f1798a90a3cb30ded3d9e83"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/entities/elder_guardian.json"
-hash = "0594bb989c05abdd0e6c66e37875549c31a85ab38682c4fe56523324b0725b2b"
+hash = "d73608dd9e6776d2948fa13e3f9c4f9d336526637e80c6f589478626483f57ab"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/entities/evoker.json"
@@ -3034,7 +3118,7 @@ hash = "901e3d1a8d2fcf1d60dc648470b7e458ff9e74823c20130fa1d7ce0e32ccbd86"
 
 [[files]]
 file = "kubejs/data/endrem/loot_table/minecraft/entities/wither.json"
-hash = "a16cb7cfe24ac2658547a6b64b1d6133d9336abb89e22fb3fd184b5f4c74e461"
+hash = "894a1899daef891d95dc80ae0e2b73ad7101b13b4610f5c838c44b9b0e924e83"
 
 [[files]]
 file = "kubejs/data/extendedcrafting/recipe/ultimate_catalyst.json"
@@ -4635,6 +4719,14 @@ hash = "af7d7004fc2b09a58200dfad6c643777b35fd948354866f93aa01cce2cc0c82f"
 [[files]]
 file = "kubejs/data/mvs/worldgen/structure_set/wooden_wheat_farm.json"
 hash = "14140290c95f5fd9ab04bfea5c60c849ea8c570d4b38e52f62c44db0f35f1228"
+
+[[files]]
+file = "kubejs/data/mynethersdelight/loot_modifiers/add_loot_bastion_hoglin_stable.json"
+hash = "2a7c21c0d586651c88dcfa2871b9b062f038cffe9e6a7e95673a5eb23b27bfcb"
+
+[[files]]
+file = "kubejs/data/mynethersdelight/loot_modifiers/add_loot_bastion_treasure.json"
+hash = "b1ac3970ea8eea3c347dd0bc4b2fd4ffa82079172f1af5355be1f5fe274ef3a2"
 
 [[files]]
 file = "kubejs/data/naturalist/tags/worldgen/biome/has_anglerfish.json"
@@ -6838,35 +6930,35 @@ hash = "44d671dafeb14e93e4595838d19f24758504c1797fea1edfeecdc4f58b8893eb"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/black_eye.json"
-hash = "7c04d8a79de08489c481584ad46b73de992106772e121f0186a206735bda0a36"
+hash = "08fcf6cd173356813d10c7263ae64a68874133b445692556e140510b015cb1f4"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/cold_eye.json"
-hash = "ce0ab761311b76490708c756ce7475334776ca80b7f34d71662ff2bc5518c510"
+hash = "8a4b79ec54af8f0889cf328f31b58c5874ea5c1284119c84051d6ddebf075d88"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/corrupted_eye.json"
-hash = "58fe273c6db4f7bfc12162ee0e1ff3315750ab94f0c6b8522671946ead7bba75"
+hash = "f1cc6266c02bc4d0e27a8f2628d9549215a7a7f4a14e34ad15efe5700528a539"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/cursed_eye.json"
-hash = "1ac8a973453d5243810bc9d360fc2cd3a4e008832ca8d7bdb5f8fd77d9740a6e"
+hash = "c1b6b722769f092004a24edb22f8645a0b7083792e186637ea75553a5cbee21a"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/evil_eye.json"
-hash = "ff72fd4b6f209c6a6bc1fd8d74c6efb0586f2741c7ed6a9e5ecbb13d5ef08c60"
+hash = "62fa023f9dbcb9802bf4cfaa2869134c880ed9d3515efa200d740d7192607fd1"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/lost_eye.json"
-hash = "9bf878067e225246c20bae6ddfd594e238653ad6a76959535b34d966614a6b66"
+hash = "6d722ee4dfe94315f1aec0237e24f8ba12b4ec486a10ff071b3b18a86db09b87"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/nether_eye.json"
-hash = "2c00a86cff1b2782dea40a33486d0ac3e4f754e08f9145f02ec0774c39e76517"
+hash = "f8f2e080d689dfbef03721588ea4714a708c04de985c13be360f6ca65ea7a15d"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/end_eyes/old_eye.json"
-hash = "381818f2b7de666062e47fdfe1218f501752eba3da061c6848a7ab544c6b2925"
+hash = "3995832f62331cbfd9edfcfebd9ebd5ca0f14abfb16128f991ad78a3c4c87565"
 
 [[files]]
 file = "kubejs/data/strata/loot_table/inject/abyssal_pearl.json"
@@ -8134,7 +8226,7 @@ hash = "307da1f77f6d4f7aaf3ffccf3548fe57b09a65cd1f61fba6947667d0c4915bab"
 
 [[files]]
 file = "kubejs/server_scripts/abyssal_rules.js"
-hash = "7907e7384d34cc439d3ebfb97967351334ce7a1410eed50e5d5ee925fcfcc4a6"
+hash = "d6e86dd10b9a88b6b3b308939420c72eca80e37c4703f05e715cb064e105a48c"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_beacon.js"
@@ -8142,7 +8234,7 @@ hash = "9a6e26be3227dce2f98e1674985944823e8367d99766ca2529644ba2aefb8378"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_dread.js"
-hash = "15a8eb4b9bd838e6837d1be1e5b76f65c4b1bbb9203673d883a65556079764ba"
+hash = "8bba661ad152036082747c15661365bca1815de8be5d329a5708391a3a32b3ab"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_ravenous.js"
@@ -8150,7 +8242,7 @@ hash = "8adb439521a645af3a3b85bcafaf35deb3581d802dd5d255c09cd57fea5fabc2"
 
 [[files]]
 file = "kubejs/server_scripts/hollow_rules.js"
-hash = "93a396e5da9e3f591cbb640d90db09b2c7a9cf81e4a53ed31f5e85f8c84e1cfe"
+hash = "461f53e90b8e774f0047743f964491d08adb618e1ddab1ed91066bff2b0134b9"
 
 [[files]]
 file = "kubejs/server_scripts/pokeworld_portal_placement.js"
@@ -8206,7 +8298,7 @@ hash = "fb80307f946a4d165f0817e12419791be7e0e76b911338d1d8ccf87c0050910b"
 
 [[files]]
 file = "kubejs/server_scripts/strata_home.js"
-hash = "773c7a4e1858669a3e5e9af575efff1aed28272e7ed9917d11a3ca67d9ad0c2c"
+hash = "99638fa0f5a9f770b932aff6f220adebd896f4a0054ae4ab2edc17666ff8304e"
 
 [[files]]
 file = "kubejs/server_scripts/strata_loot_bag_odds.js"
@@ -8266,7 +8358,7 @@ hash = "bb84d5e9b09a3097015633bdf4a9c1d83bb2c0fbdf78576b364f7fbcff515b77"
 
 [[files]]
 file = "kubejs/server_scripts/strata_tpa.js"
-hash = "468b44c3e779e50b175e7ca58dbcbe1b0396f7b775817c5088b5895073bf6d74"
+hash = "8babdd6cdc089347ad14ad85126da9c213e80bfa8b35ac2dac493ea7f0bb0047"
 
 [[files]]
 file = "kubejs/server_scripts/tag_fixes.js"
@@ -8274,7 +8366,7 @@ hash = "7470e394d4876c75d61f736818d2092c0296510ca3fead14e2fb147dc97c875c"
 
 [[files]]
 file = "kubejs/startup_scripts/abyssal_vampire_air.js"
-hash = "210c03bebe07f098a0c24b83710fb1b12044a5d12a5f163eb32e0df87549d338"
+hash = "0c055c0510adb5fa5e861f4a13d4394ab8a7facc328876e671a9214a92f475af"
 
 [[files]]
 file = "kubejs/startup_scripts/hollow_beacon.js"
@@ -10241,7 +10333,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.1.0.jar"
-hash = "a33ca040c138c887d38db0aaddb1c1360935a7f261f5e6c4ed4f434f0420b8c1"
+hash = "e8978b03e962aa9d89456bbb85252577970fddb75963551eab918549f1a02a7e"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

@@ -6,6 +6,6 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
              "WhisperingSpiritsMixin", "LevelSeaLevelMixin"],
-  "client": ["FogRendererMixin", "NightVisionMixin"],
+  "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin"],
   "injectors": {"defaultRequire": 1}
 }

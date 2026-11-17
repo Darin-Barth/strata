@@ -28,8 +28,12 @@ const vampAirHasHelmet = entity => vampAirHelmets.test(String(entity.headArmorIt
 
 // One tick for one player. Returns the air value set, or null when the player is left alone.
 const vampAirTick = (entity, waterBreathing, drown) => {
-  if (String(entity.level.dimension) !== vampAirDimension) return null
   const data = entity.persistentData
+  if (String(entity.level.dimension) !== vampAirDimension) {
+    // Left the dimension (or died there): forget the count, or the next visit starts with the old one.
+    if (data.contains(vampAirKey)) data.remove(vampAirKey)
+    return null
+  }
   if (entity.isCreative() || entity.isSpectator() || vampAirHasHelmet(entity) || entity.hasEffect(waterBreathing)) {
     if (data.contains(vampAirKey)) data.remove(vampAirKey)
     return null

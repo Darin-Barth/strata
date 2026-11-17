@@ -5,6 +5,10 @@
 // waits 10 seconds (the same as /home) before they can be teleported by /tpa again.
 // Requests are kept in memory only: a restart clears them.
 // KubeJS server scripts share one scope: every top-level name here starts with "tpa".
+// Facing: `yaw`/`pitch` are KubeJS's names on a dedicated server, where the game's own getYRot()/getXRot() are
+// hidden; in single player a client mod shadows `yaw` (it reads as undefined) and only the getters work.
+const tpaYaw = e => { const v = e.yaw; return typeof v === 'number' ? v : e.getYRot() }
+const tpaPitch = e => { const v = e.pitch; return typeof v === 'number' ? v : e.getXRot() }
 const tpaExpireMs = 60 * 1000
 const tpaCooldownMs = 10 * 1000
 const tpaEntityArgument = Java.loadClass('net.minecraft.commands.arguments.EntityArgument')
@@ -74,7 +78,7 @@ ServerEvents.commandRegistry(event => {
       player.tell(Text.yellow(`${mover.username} has to wait ${Math.ceil(waitMs / 1000)} more second(s) before teleporting again.`))
       return 0
     }
-    ctx.source.server.runCommandSilent(`execute in ${tpaDimensionOf(dest)} run tp ${mover.username} ${dest.x} ${dest.y} ${dest.z} ${dest.yaw} ${dest.pitch}`)
+    ctx.source.server.runCommandSilent(`execute in ${tpaDimensionOf(dest)} run tp ${mover.username} ${dest.x} ${dest.y} ${dest.z} ${tpaYaw(dest)} ${tpaPitch(dest)}`)
     mover.persistentData.putLong('strata_tpa_last', now)
     other.tell(Text.green(`${player.username} accepted your request.`))
     mover.tell(Text.green(`Teleported to ${dest.username}.`))

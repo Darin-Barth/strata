@@ -9,3 +9,6 @@ monsterCapScale = 0.8
 #In the Abyssal Plain, a dry room a player stands in must have a Create: Deep Seas Oxygen Diffuser
 #holding oxygen, or it floods (see AbyssalAir). The Lifepod and ships are exempt.
 abyssalRoomsNeedOxygen = true
+#In the Abyssal Plain, an Oxygen Diffuser holding oxygen pushes the water out of a closed room,
+#from the ceiling down (nothing else can dry a room there). Does nothing in a space open to the sea.
+abyssalDiffusersPushWater = true

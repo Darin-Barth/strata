@@ -2,6 +2,10 @@
 // 10-second cooldown after each /home. The home lives in the player's KubeJS persistent data,
 // so it survives logouts, deaths and server restarts.
 // KubeJS server scripts share one scope: every top-level name here starts with "home".
+// Facing: `yaw`/`pitch` are KubeJS's names on a dedicated server, where the game's own getYRot()/getXRot() are
+// hidden; in single player a client mod shadows `yaw` (it reads as undefined) and only the getters work.
+const homeYaw = e => { const v = e.yaw; return typeof v === 'number' ? v : e.getYRot() }
+const homePitch = e => { const v = e.pitch; return typeof v === 'number' ? v : e.getXRot() }
 const homeCooldownMs = 10 * 1000
 
 const homeDimensionOf = player => { const d = player.level.dimension; return String(d && d.location ? d.location() : d) }
@@ -17,8 +21,8 @@ ServerEvents.commandRegistry(event => {
     data.putDouble('strata_home_x', player.x)
     data.putDouble('strata_home_y', player.y)
     data.putDouble('strata_home_z', player.z)
-    data.putFloat('strata_home_yaw', player.yaw)
-    data.putFloat('strata_home_pitch', player.pitch)
+    data.putFloat('strata_home_yaw', homeYaw(player))
+    data.putFloat('strata_home_pitch', homePitch(player))
     player.tell(Text.green(`Home set at ${Math.floor(player.x)}, ${Math.floor(player.y)}, ${Math.floor(player.z)}.`))
     return 1
   }))

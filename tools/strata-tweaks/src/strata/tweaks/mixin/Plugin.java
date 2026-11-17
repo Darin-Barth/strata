@@ -19,6 +19,7 @@ public final class Plugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith(".BrewinFixersMixin")) return loaded("brewinandchewin");
         if (mixinClassName.contains(".ElytraSlot")) return loaded("elytraslot") && loaded("deeperdarker");
         if (mixinClassName.endsWith(".WhisperingSpiritsMixin")) return loaded("whispering_spirits");
+        if (mixinClassName.endsWith(".ShoulderSurfingPickMixin")) return loaded("shouldersurfing");
         return true;
     }
 

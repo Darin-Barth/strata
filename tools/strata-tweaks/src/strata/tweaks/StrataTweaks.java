@@ -24,6 +24,10 @@ public final class StrataTweaks {
             .comment("In the Abyssal Plain, a dry room a player stands in must have a Create: Deep Seas Oxygen Diffuser",
                     "holding oxygen, or it floods (see AbyssalAir). The Lifepod and ships are exempt.")
             .define("abyssalRoomsNeedOxygen", true);
+    public static final ModConfigSpec.BooleanValue ABYSSAL_DIFFUSERS_PUSH_WATER = BUILDER
+            .comment("In the Abyssal Plain, an Oxygen Diffuser holding oxygen pushes the water out of a closed room,",
+                    "from the ceiling down (nothing else can dry a room there). Does nothing in a space open to the sea.")
+            .define("abyssalDiffusersPushWater", true);
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public StrataTweaks(ModContainer container) {
@@ -37,6 +41,10 @@ public final class StrataTweaks {
 
     public static boolean abyssalRoomsNeedOxygen() {
         return !SPEC.isLoaded() || ABYSSAL_ROOMS_NEED_OXYGEN.getAsBoolean();
+    }
+
+    public static boolean abyssalDiffusersPushWater() {
+        return !SPEC.isLoaded() || ABYSSAL_DIFFUSERS_PUSH_WATER.getAsBoolean();
     }
 
     public static double monsterCapScale() {

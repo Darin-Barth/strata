@@ -12,6 +12,7 @@ Strata is a big modpack (about 400 mods). It runs on Minecraft 1.21.1 with NeoFo
 ## 2. Give it enough memory
 Open the Strata instance → **Settings → Java and memory** → set memory to **10–12 GB** (10 GB minimum: at 8 GB the game can freeze a few minutes after joining).
 Less than that and the game stutters or crashes.
+Playing **single player** needs more, because your computer also runs the world: give it **14-16 GB**. At 10 GB a new single-player world can stall for minutes while it loads.
 
 In the same screen, under **Java arguments**, add:
 

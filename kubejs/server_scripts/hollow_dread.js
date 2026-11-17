@@ -9,6 +9,10 @@
 // Compasses and clocks spin by themselves: the Hollow's dimension type isn't "natural".
 // Rough pacing: after a 30 s quiet start, one event every ~45-75 seconds per player.
 // KubeJS server scripts share one scope: every top-level name here starts with "hollowDread".
+// Facing: `yaw`/`pitch` are KubeJS's names on a dedicated server, where the game's own getYRot()/getXRot() are
+// hidden; in single player a client mod shadows `yaw` (it reads as undefined) and only the getters work.
+const hollowDreadYaw = e => { const v = e.yaw; return typeof v === 'number' ? v : e.getYRot() }
+const hollowDreadPitch = e => { const v = e.pitch; return typeof v === 'number' ? v : e.getXRot() }
 const hollowDreadState = {}
 const hollowDreadWatchers = {}
 const hollowDreadQuietStartMs = 30 * 1000
@@ -35,14 +39,14 @@ const hollowDreadSound = (player, sound, x, y, z, volume, pitch) =>
   player.server.runCommandSilent(`execute as ${player.username} run playsound ${sound} hostile @s ${x.toFixed(2)} ${y.toFixed(2)} ${z.toFixed(2)} ${volume} ${pitch}`)
 // Unit vector the player faces (vanilla's formula from yaw/pitch).
 const hollowDreadLook = player => {
-  const yaw = player.yaw * Math.PI / 180, pitch = player.pitch * Math.PI / 180
+  const yaw = hollowDreadYaw(player) * Math.PI / 180, pitch = hollowDreadPitch(player) * Math.PI / 180
   return [-Math.sin(yaw) * Math.cos(pitch), -Math.sin(pitch), Math.cos(yaw) * Math.cos(pitch)]
 }
 const hollowDreadOk = player => player.isAlive() && hollowDreadDim(player) === 'strata:hollow'
 
 const hollowDreadEvents = {
   footsteps: player => {
-    const yaw0 = player.yaw
+    const yaw0 = hollowDreadYaw(player)
     const r = yaw0 * Math.PI / 180
     const bx = Math.sin(r), bz = -Math.cos(r)  // behind the player
     const steps = 4 + Math.floor(Math.random() * 3)
@@ -50,7 +54,7 @@ const hollowDreadEvents = {
     for (let i = 0; i < steps; i++) {
       player.server.scheduleInTicks(9 * i + 1, () => {
         if (run.stopped || !hollowDreadOk(player)) return
-        if (hollowDreadAngle(player.yaw, yaw0) > 90) { run.stopped = true; return }
+        if (hollowDreadAngle(hollowDreadYaw(player), yaw0) > 90) { run.stopped = true; return }
         const dist = 7 - i
         hollowDreadSound(player, 'minecraft:block.grass.step', player.x + bx * dist, player.y, player.z + bz * dist, 0.7, 0.8)
       })
@@ -89,7 +93,7 @@ const hollowDreadEvents = {
     if (hollowDreadWatchers[player.username]) return false
     const level = player.level
     const side = Math.random() < 0.5 ? -1 : 1
-    const yaw = (player.yaw + side * hollowDreadRand(55, 75)) * Math.PI / 180
+    const yaw = (hollowDreadYaw(player) + side * hollowDreadRand(55, 75)) * Math.PI / 180
     const d = hollowDreadRand(18, 26)
     const x = Math.floor(player.x - Math.sin(yaw) * d), z = Math.floor(player.z + Math.cos(yaw) * d)
     for (let y = Math.floor(player.y) + 8; y > Math.floor(player.y) - 12; y--) {

@@ -146,7 +146,9 @@ def write(root, rel, data):
 
 
 def one_item_table(kind, iid):
-    return {"type": f"minecraft:{kind}", "pools": [{"rolls": 1, "entries": [
+    # End Remastered copies only the pool called "eye_pool" into the vanilla table; without the name the eye
+    # never drops (found Nov 16: "Could not find the eye_pool" for the Wither and the Elder Guardian).
+    return {"type": f"minecraft:{kind}", "pools": [{"name": "eye_pool", "rolls": 1, "entries": [
         {"type": "minecraft:item", "name": iid}]}]}
 
 

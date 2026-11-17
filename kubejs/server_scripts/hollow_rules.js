@@ -1,6 +1,9 @@
 // The Hollow (strata:hollow), the horror dimension: recipe, arrival tracking, beds, Grim & Bleak's
 // own realm portal, and Hollow Ember drops. Design: docs/hollow-design.md.
 // KubeJS server scripts share one scope: every top-level name here starts with "hollow".
+// Facing: `yaw`/`pitch` are KubeJS's names on a dedicated server, where the game's own getYRot()/getXRot() are
+// hidden; in single player a client mod shadows `yaw` (it reads as undefined) and only the getters work.
+const hollowRulesYaw = e => { const v = e.yaw; return typeof v === 'number' ? v : e.getYRot() }
 const hollowDimensionId = 'strata:hollow'
 const hollowHorrorNamespaces = ['cave_dweller', 'weeping_angels', 'whispering_spirits',
   'grim_and_bleak', 'graveyard', 'mutantmonsters', 'sanity_renewed']
@@ -51,7 +54,7 @@ BlockEvents.rightClicked(event => {
       let pos = event.block.pos
       let props = event.block.properties
       if (String(props.get('part')) === 'foot') pos = pos.relative(hollowDirection.valueOf(String(props.get('facing')).toUpperCase()))
-      player.setRespawnPosition(player.level.dimension, pos, player.yaw, false, false)
+      player.setRespawnPosition(player.level.dimension, pos, hollowRulesYaw(player), false, false)
       player.displayClientMessage(Text.of('The beacon watches over you. Respawn point set.').color(0xC9D6E3).italic(), true)
     } else {
       player.displayClientMessage(Text.darkGray("You can't sleep here. Something is watching you.").italic(), true)

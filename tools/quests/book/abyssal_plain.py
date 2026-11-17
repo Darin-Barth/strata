@@ -78,7 +78,7 @@ q("air", "First Air", deps="rules", icon="create_submarine:decompression_chamber
   tasks=[item("create_submarine:decompression_chamber"), item("create:mechanical_pump"), check()], desc="""
     A base down here is a sealed room with its own air.
 
-    Build a closed shell (no gaps at the sides or the top!), put an &eOxygen Diffuser&r inside, and get the water out: a Create &eHose Pulley&r drains a sealed room, or fill it with blocks and dig them back out. Keep the Diffuser supplied (next quest) or the sea takes the room back.
+    Build a closed shell under water (no gaps at the sides or the top!) and stand an &eOxygen Diffuser&r on its floor. As soon as the Diffuser holds oxygen (next quest) it pushes the water out, from the ceiling down. If nothing happens, the room is open to the sea somewhere: find the gap. Keep the Diffuser supplied or the sea takes the room back.
 
     &bMoon pools work:&r water never flows up, so a hole in the &efloor&r stays put. Leave one open and you can swim up into your base, or park a submarine underneath it and climb aboard. An opening in a wall or the roof floods the room.
 
@@ -86,11 +86,11 @@ q("air", "First Air", deps="rules", icon="create_submarine:decompression_chamber
 
 q("oxygen", "Breathing Room", deps="air", icon="create_submarine:oxygene_diffuser", at=(10.5, 4.5), tier=3,
   tasks=[item("create_submarine:electrolyzer"), item("create_submarine:oxygene_diffuser")], desc="""
-    The &eElectrolyzer&r turns water and power into oxygen. Pipe it into the &eOxygen Diffuser&r in your room.
+    The &eElectrolyzer&r turns water and power into oxygen. Pipe it into the &eOxygen Diffuser&r in your room (a Create pipe and a Mechanical Pump will do).
 
-    A room uses oxygen all the time, a little more the bigger it is, and a full Diffuser lasts a small room about a quarter of an hour, and a great hall drinks it in under a minute. If it runs dry you get ten seconds of warning before the water comes in, so keep the Electrolyzer running.
+    Pushing the water out of a room costs very little. Keeping it dry uses oxygen all the time, a little more the bigger the room is: a full Diffuser lasts a small room about a quarter of an hour, and a great hall drinks it in under a minute. If it runs dry you get ten seconds of warning before the water comes in, so keep the Electrolyzer running.
 
-    The same two machines keep a submarine breathable. Press &eR&r on them for recipes.""")
+    The same two machines keep a submarine breathable. On a ship the Diffuser also needs a &eredstone signal&r, and the block above it must stay empty. Press &eR&r on them for recipes.""")
 
 q("sub", "Your First Submarine", deps=["plain", "oxygen"], icon="create_submarine:command_sub", at=(14.0, 3.0), tier=4,
   tasks=[item("create_submarine:water_thruster"), item("create_submarine:command_sub")], desc="""

@@ -2,6 +2,9 @@
 // Lifepod you arrive in, the flood rule, no Conduit power, no sponges, Abyssal Pearl drops.
 // Design: docs/abyssal-plain-design.md.
 // KubeJS server scripts share one scope: every top-level name here starts with "abyssal".
+// Facing: `yaw`/`pitch` are KubeJS's names on a dedicated server, where the game's own getYRot()/getXRot() are
+// hidden; in single player a client mod shadows `yaw` (it reads as undefined) and only the getters work.
+const abyssalYaw = e => { const v = e.yaw; return typeof v === 'number' ? v : e.getYRot() }
 const abyssalDimensionId = 'strata:abyssal_plain'
 const abyssalDimensionOf = entity => { const d = entity.level.dimension; return String(d && d.location ? d.location() : d) }
 const abyssalIn = entity => abyssalDimensionOf(entity) === abyssalDimensionId
@@ -49,7 +52,7 @@ ItemEvents.rightClicked('strata:leviathan_lure', event => {
     return
   }
   player.mainHandItem.count--
-  const r = player.yaw * Math.PI / 180
+  const r = abyssalYaw(player) * Math.PI / 180
   const x = player.x - Math.sin(r) * 24, z = player.z + Math.cos(r) * 24, y = player.y - 6
   event.server.runCommandSilent(`execute in ${abyssalDimensionId} run summon cataclysm:the_leviathan ${x.toFixed(1)} ${y.toFixed(1)} ${z.toFixed(1)}`)
   event.server.runCommandSilent(`execute in ${abyssalDimensionId} positioned ${player.x} ${player.y} ${player.z} run tellraw @a[distance=..200] {"text":"Something vast stirs in the trench...","color":"dark_aqua","italic":true}`)
@@ -319,7 +322,7 @@ const abyssalKeepSurfaceSpot = player => {
   data.putDouble('strata_surface_x', player.x)
   data.putDouble('strata_surface_y', player.y)
   data.putDouble('strata_surface_z', player.z)
-  data.putFloat('strata_surface_yaw', player.yaw)
+  data.putFloat('strata_surface_yaw', abyssalYaw(player))
   data.putBoolean('strata_surface', true)
 }
 

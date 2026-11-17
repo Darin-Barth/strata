@@ -41,3 +41,5 @@ fail at startup (`defaultRequire: 1`), which is deliberate.
 - `LevelSeaLevelMixin`: `Level.getSeaLevel()` returns 568 in `strata:abyssal_plain` (hard-coded 63 in 1.21.1; mob spawn rules compare against it).
 - `NightVisionMixin` (client): `GameRenderer.getNightVisionScale` returns 0 in `strata:hollow`, after every other mod's patch (priority 2000).
 - `AbyssalAir` (server): in `strata:abyssal_plain`, the dry space a player stands in must hold a Create: Deep Seas Oxygen Diffuser with oxygen, or it floods after a ten-second warning (docs/abyssal-plain-design.md, Rules). Config: `abyssalRoomsNeedOxygen`.
+- `AbyssalAir` also pushes the water out of a closed room that holds a Diffuser with oxygen (top layer first, 1 mB per 20 cells; nothing in a space open to the sea), and checks a big room that was fine less often. `-Dstrata.tweaks.airTiming=true` logs how long each check took.
+- `ShoulderSurfingPickMixin` (client): caps the entity search distance of Shoulder Surfing's crosshair pick when it is absurd (a Sable ship block's hit position is in storage coordinates), which stopped an error with a stack trace every frame.
