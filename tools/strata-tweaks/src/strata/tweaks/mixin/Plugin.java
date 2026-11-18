@@ -24,6 +24,7 @@ public final class Plugin implements IMixinConfigPlugin {
         if (mixinClassName.contains(".Backtank")) return loaded("create");
         if (mixinClassName.endsWith(".LootPetMessageMixin")) return loaded("inventorypets");
         if (mixinClassName.endsWith(".IntegratedDynamicsTeleportMixin")) return loaded("integrateddynamics");
+        if (mixinClassName.endsWith(".WaystoneWaypointMixin")) return loaded("w2w2") && loaded("waystones");
         return true;
     }
 
