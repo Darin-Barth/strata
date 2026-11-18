@@ -513,6 +513,10 @@ file = "config/relics.yaml"
 hash = "a99ad6248bf0f596bd577b3c02135889b7421ce1f6872180df6ed627e43cb2aa"
 
 [[files]]
+file = "config/relics/loot.yaml"
+hash = "cdc9e5223f6b7298dea7f1a5b19021b531ed22000b00ffcefdb0eb11942ff659"
+
+[[files]]
 file = "config/relics/relics/ghostly_mantle.yaml"
 hash = "51f5300bf5552dbed1aa671e82ee6189f448508d39d952c48f5b9f8cbbaec818"
 
@@ -3139,6 +3143,10 @@ hash = "e37bb2f818274e83a81b6f92b5be485f112c1aba39b3c43ab80402e419a335ce"
 [[files]]
 file = "kubejs/data/extendedcrafting/recipe/ultimate_table.json"
 hash = "fef0438ad6ea799c42ea97db1a6d3552e711ac927fa9d6e8b24b910a7442390c"
+
+[[files]]
+file = "kubejs/data/forsaken_relics/loot_modifiers/relic_chests.json"
+hash = "4c559aadd5001abdc2932f91fde9a824235c38be0195bb94543e4ccb00a4ffe5"
 
 [[files]]
 file = "kubejs/data/graveyard/tags/worldgen/biome/acolyte_spawns.json"
@@ -10357,7 +10365,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.2.2.jar"
-hash = "790444134abe4e3e8ebbff8bec918281f420fae4e2770150df7451455cddbcf7"
+hash = "7267ebcf8c15b5de17fdc099c4c68eb980ff41d85a845ffcebc710fb7ece62be"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

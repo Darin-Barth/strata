@@ -1,0 +1,5 @@
+{
+  "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "forsaken_relics"}],
+  "type": "forsaken_relics:relic_chests",
+  "conditions": [{"condition": "minecraft:random_chance", "chance": 0.25}]
+}
