@@ -9039,6 +9039,11 @@ hash = "83824a1ed34a7784187d79498bfdd69c9c4300830f1b99aeedc1bdf7db9d2cf0"
 metafile = true
 
 [[files]]
+file = "mods/create-encased.pw.toml"
+hash = "c0d560ffc3697c20644ab01662470ee311e56c9e66ff41dfea1b1c13383d0f15"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
 hash = "4016f02757235fb13dd5aa91cf6e79cde4f33a96b59b9b3e87c17fa9e717d32c"
 metafile = true
@@ -9096,6 +9101,11 @@ metafile = true
 [[files]]
 file = "mods/create-tweaked-controllers.pw.toml"
 hash = "d2283db8a199276f9de44efdb7fd005d19e7431927d617756150cccd1f672213"
+metafile = true
+
+[[files]]
+file = "mods/create-vibrant-vaults.pw.toml"
+hash = "2ec4aee2f8dc4cb36bdbc2c069311d94f91332d88fb5cde6c6e07daa2c3abba4"
 metafile = true
 
 [[files]]
