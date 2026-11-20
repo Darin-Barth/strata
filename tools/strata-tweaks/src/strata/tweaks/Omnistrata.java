@@ -19,15 +19,20 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SlotAccess;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.inventory.ClickAction;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
+import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -70,6 +75,10 @@ public final class Omnistrata {
             COMPONENTS.register("omnistrata_prev", () -> DataComponentType.<Integer>builder()
                     .persistent(Codec.intRange(0, SLOTS - 1)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
 
+    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(Registries.MENU, StrataTweaks.MODID);
+    public static final DeferredHolder<MenuType<?>, MenuType<OmnistrataMenu>> MENU =
+            MENUS.register("omnistrata", () -> new MenuType<>(OmnistrataMenu::new, FeatureFlags.DEFAULT_FLAGS));
+
     public static final DeferredItem<Item> ITEM = ITEMS.register("omnistrata", () -> new KitItem(new Item.Properties().stacksTo(1)));
 
     /** What may go in: tools only. Extend it from kubejs/data (strata_tweaks/tags/item/omnistrata_tools.json). */
@@ -109,7 +118,7 @@ public final class Omnistrata {
         return slot == null ? -1 : slot;
     }
 
-    private static NonNullList<ItemStack> stowed(ItemStack held) {
+    static NonNullList<ItemStack> stowed(ItemStack held) {
         NonNullList<ItemStack> slots = NonNullList.withSize(SLOTS, ItemStack.EMPTY);
         ItemContainerContents contents = held.get(KIT.get());
         if (contents != null) contents.copyInto(slots);
@@ -260,6 +269,17 @@ public final class Omnistrata {
 
         private static void sound(Player player, boolean in) {
             player.playSound(in ? SoundEvents.BUNDLE_INSERT : SoundEvents.BUNDLE_REMOVE_ONE, 0.8f, 0.9f + player.level().getRandom().nextFloat() * 0.2f);
+        }
+
+        /** Right-click with it in the main hand: the six slots open as a screen. */
+        @Override
+        public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+            ItemStack kit = player.getItemInHand(hand);
+            if (hand != InteractionHand.MAIN_HAND) return InteractionResultHolder.pass(kit);
+            if (!level.isClientSide) {
+                player.openMenu(new SimpleMenuProvider((id, inventory, opener) -> new OmnistrataMenu(id, inventory), kit.getHoverName()));
+            }
+            return InteractionResultHolder.sidedSuccess(kit, level.isClientSide);
         }
 
         /** Holding the Omnistrata on the cursor, right-click a tool to stow it or an empty slot to take one out. */

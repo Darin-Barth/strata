@@ -17,6 +17,7 @@ import net.neoforged.neoforge.client.IItemDecorator;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.RegisterItemDecorationsEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -38,6 +39,7 @@ public final class OmnistrataClient {
     public static void init(IEventBus modBus) {
         modBus.addListener((RegisterKeyMappingsEvent event) -> event.register(KEY));
         modBus.addListener(OmnistrataClient::registerMark);
+        modBus.addListener((RegisterMenuScreensEvent event) -> event.register(Omnistrata.MENU.get(), OmnistrataScreen::new));
         NeoForge.EVENT_BUS.addListener(OmnistrataClient::onTick);
         NeoForge.EVENT_BUS.addListener(OmnistrataClient::onTooltip);
     }

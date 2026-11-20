@@ -28,7 +28,7 @@
   "item.strata_tweaks.omnistrata.count": "Holds %s of %s tools",
   "item.strata_tweaks.omnistrata.carried": "Carried in the Omnistrata",
   "item.strata_tweaks.omnistrata.hint.wheel": "Hold the Omnistrata key to choose a tool; tap it for the last one",
-  "item.strata_tweaks.omnistrata.hint.load": "In your inventory, right-click it with a tool to stow it, or with nothing to take one out",
+  "item.strata_tweaks.omnistrata.hint.load": "Right-click with it in hand to open it and add or remove tools",
   "item.strata_tweaks.omnistrata.empty": "No tools inside",
   "item.strata_tweaks.omnistrata.put_away": "Put away",
   "item.strata_tweaks.omnistrata.pick": "Choose a tool",

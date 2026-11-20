@@ -53,6 +53,7 @@ public final class StrataTweaks {
         modBus.addListener(DivingSuit::addToTabs);
         Omnistrata.COMPONENTS.register(modBus);
         Omnistrata.ITEMS.register(modBus);
+        Omnistrata.MENUS.register(modBus);
         modBus.addListener(Omnistrata::registerPayloads);
         modBus.addListener(Omnistrata::addToTabs);
         if (FMLEnvironment.dist.isClient()) strata.tweaks.client.OmnistrataClient.init(modBus);
