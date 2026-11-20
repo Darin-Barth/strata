@@ -88,3 +88,5 @@ key_key.draconicevolution.tool_config:key.keyboard.j:CONTROL
 key_key.draconicevolution.tool_modules:key.keyboard.l:CONTROL
 # Strata's sleeping bag key (kubejs/startup_scripts/strata_sleeping_bag.js; KubeJS registers it unbound)
 key_key.kubejs.sleeping_bag:key.keyboard.s:ALT
+# The Omnistrata's tool wheel (Strata Tweaks)
+key_key.strata_tweaks.omnistrata:key.keyboard.v

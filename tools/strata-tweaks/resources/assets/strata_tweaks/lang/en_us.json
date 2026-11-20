@@ -23,5 +23,15 @@
   "block.strata_tweaks.carapace_netherite_backtank": "Carapace Netherite Backtank",
   "block.strata_tweaks.abyssal_copper_backtank": "Abyssal Copper Backtank",
   "block.strata_tweaks.abyssal_netherite_backtank": "Abyssal Netherite Backtank",
-  "tooltip.strata_tweaks.suit.laser": "Full suit: dulls the Leviathan's laser"
+  "tooltip.strata_tweaks.suit.laser": "Full suit: dulls the Leviathan's laser",
+  "item.strata_tweaks.omnistrata": "The Omnistrata",
+  "item.strata_tweaks.omnistrata.count": "Holds %s of %s tools",
+  "item.strata_tweaks.omnistrata.carried": "Carried in the Omnistrata",
+  "item.strata_tweaks.omnistrata.hint.wheel": "Hold the Omnistrata key to choose a tool; tap it for the last one",
+  "item.strata_tweaks.omnistrata.hint.load": "In your inventory, right-click it with a tool to stow it, or with nothing to take one out",
+  "item.strata_tweaks.omnistrata.empty": "No tools inside",
+  "item.strata_tweaks.omnistrata.put_away": "Put away",
+  "item.strata_tweaks.omnistrata.pick": "Choose a tool",
+  "key.strata_tweaks.omnistrata": "Omnistrata: choose a tool (hold)",
+  "key.categories.strata_tweaks": "Strata"
 }

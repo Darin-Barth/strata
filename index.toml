@@ -170,7 +170,7 @@ hash = "eeb62a67af3e14fe99e4a05d80d77f3019ecd693c680e7def7f34fcce87d2db9"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "8e84b3fc4046a68d848f93533f651e17ba9fe410ff3ed5b336c2ff58a54d47ee"
+hash = "4c40086c10b2ba77796d24f6ae77ef1f4f0fb940e02dd092730cfa4d4adb22f7"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -10374,8 +10374,8 @@ hash = "ab2c89f6522d1d30ccec20d200e9a19418979edd8b19efa24b31f0464959e47b"
 metafile = true
 
 [[files]]
-file = "mods/strata-tweaks-1.2.2.jar"
-hash = "7267ebcf8c15b5de17fdc099c4c68eb980ff41d85a845ffcebc710fb7ece62be"
+file = "mods/strata-tweaks-1.3.0.jar"
+hash = "1b603325a7f05a0126a28a0df370bea9f75bf5ee96d98e79e7324423bec9e9f4"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"

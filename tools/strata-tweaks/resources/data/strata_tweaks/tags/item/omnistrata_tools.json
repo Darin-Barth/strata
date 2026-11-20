@@ -1,0 +1,103 @@
+{
+  "values": [
+    "#minecraft:pickaxes",
+    "#minecraft:axes",
+    "#minecraft:shovels",
+    "#minecraft:hoes",
+    {
+      "id": "#c:tools/shear",
+      "required": false
+    },
+    {
+      "id": "#c:tools/wrench",
+      "required": false
+    },
+    {
+      "id": "#c:tools/brush",
+      "required": false
+    },
+    {
+      "id": "#c:tools/igniter",
+      "required": false
+    },
+    {
+      "id": "#c:tools/mining_tool",
+      "required": false
+    },
+    {
+      "id": "#c:tools/paxel",
+      "required": false
+    },
+    "minecraft:shears",
+    "minecraft:brush",
+    "minecraft:flint_and_steel",
+    {
+      "id": "create:wrench",
+      "required": false
+    },
+    {
+      "id": "mekanism:configurator",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:hammer",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wirecutter",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:screwdriver",
+      "required": false
+    },
+    {
+      "id": "ae2:certus_quartz_wrench",
+      "required": false
+    },
+    {
+      "id": "ae2:nether_quartz_wrench",
+      "required": false
+    },
+    {
+      "id": "wands:stone_wand",
+      "required": false
+    },
+    {
+      "id": "wands:copper_wand",
+      "required": false
+    },
+    {
+      "id": "wands:iron_wand",
+      "required": false
+    },
+    {
+      "id": "wands:diamond_wand",
+      "required": false
+    },
+    {
+      "id": "wands:netherite_wand",
+      "required": false
+    },
+    {
+      "id": "buildinggadgets2:gadget_building",
+      "required": false
+    },
+    {
+      "id": "buildinggadgets2:gadget_exchanging",
+      "required": false
+    },
+    {
+      "id": "buildinggadgets2:gadget_copy_paste",
+      "required": false
+    },
+    {
+      "id": "buildinggadgets2:gadget_cut_paste",
+      "required": false
+    },
+    {
+      "id": "buildinggadgets2:gadget_destruction",
+      "required": false
+    }
+  ]
+}

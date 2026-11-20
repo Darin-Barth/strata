@@ -4,6 +4,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.NeoForge;
 
@@ -50,6 +51,11 @@ public final class StrataTweaks {
         modBus.addListener(TierTanks::addToBlockEntity);
         modBus.addListener(TierTanks::commonSetup);
         modBus.addListener(DivingSuit::addToTabs);
+        Omnistrata.COMPONENTS.register(modBus);
+        Omnistrata.ITEMS.register(modBus);
+        modBus.addListener(Omnistrata::registerPayloads);
+        modBus.addListener(Omnistrata::addToTabs);
+        if (FMLEnvironment.dist.isClient()) strata.tweaks.client.OmnistrataClient.init(modBus);
         NeoForge.EVENT_BUS.addListener(AbyssalAir::onPlayerTick);
         NeoForge.EVENT_BUS.addListener(DivingSuit::onIncomingDamage);
         NeoForge.EVENT_BUS.addListener(DivingSuit::onChangedDimension);

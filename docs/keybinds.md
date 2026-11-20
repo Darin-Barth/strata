@@ -82,6 +82,7 @@ layout, open **Options > Controls > Key Binds** and press **Reset All** (or rese
 | Alt+I | Quark variant selector (stairs, slabs, walls of a held block) |
 | Shift+K | Quark rotation lock |
 | Z (hold) + 1-3 | Quark hotbar swapper |
+| V (hold), Omnistrata in hand | The Omnistrata: tool wheel (let go over a tool; tap for the last tool; scroll to step) |
 | Ctrl+I (hold) | Effortless Building radial menu |
 | Ctrl+Z / Ctrl+Y | Effortless Building undo / redo |
 | Numpad - | Effortless Building modifier settings |
