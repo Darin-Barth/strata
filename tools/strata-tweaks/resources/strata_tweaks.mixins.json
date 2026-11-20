@@ -6,7 +6,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RailwaysFixersMixin", "BrewinFixersMixin", "MobCategoryMixin", "ElytraSlotBoostMixin", "ElytraSlotTickMixin",
              "WhisperingSpiritsMixin", "LevelSeaLevelMixin", "DiverPressureMixin", "DeepSeasBacktanksMixin",
-             "BacktankUtilMixin", "BacktankBlockEntityMixin", "LootPetMessageMixin", "IntegratedDynamicsTeleportMixin", "WaystoneWaypointMixin", "RepairTalismanMixin", "ToolBreakMixin"],
+             "BacktankUtilMixin", "BacktankBlockEntityMixin", "LootPetMessageMixin", "IntegratedDynamicsTeleportMixin", "WaystoneWaypointMixin", "RepairTalismanMixin", "ToolBreakMixin", "VampireInfectMixin"],
   "client": ["FogRendererMixin", "NightVisionMixin", "ShoulderSurfingPickMixin", "BacktankRendererMixin", "ClientExtensionsMixin"],
   "injectors": {"defaultRequire": 1}
 }

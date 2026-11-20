@@ -26,3 +26,13 @@ divingSuitDepthAbyssal = 0
 # Default: 0.25
 # Range: 0.0 ~ 1.0
 abyssalSuitLaserScale = 0.25
+#Multiplier for Vampirism's own spawn cap for vampires (30 per player area, separate from the
+#hostile mob cap above). 1.0 = as the mod ships.
+# Default: 0.4
+# Range: 0.0 ~ 2.0
+vampireCapScale = 0.4
+#Chance that a vampire mob's bite infects the player with Sanguinare Vampiris. The mod infects on
+#every bite (1.0). A vampire player infecting someone on purpose is not affected.
+# Default: 0.15
+# Range: 0.0 ~ 1.0
+vampireBiteInfectChance = 0.15

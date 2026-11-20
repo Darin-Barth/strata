@@ -41,6 +41,14 @@ public final class StrataTweaks {
             .comment("Share of the Leviathan's laser damage a diver in the full Abyssal Diving Suit takes (about 10 a hit,",
                     "three hits a second, hardly reduced by armour). 1.0 = no protection.")
             .defineInRange("abyssalSuitLaserScale", 0.25, 0.0, 1.0);
+    public static final ModConfigSpec.DoubleValue VAMPIRE_CAP_SCALE = BUILDER
+            .comment("Multiplier for Vampirism's own spawn cap for vampires (30 per player area, separate from the",
+                    "hostile mob cap above). 1.0 = as the mod ships.")
+            .defineInRange("vampireCapScale", 0.4, 0.0, 2.0);
+    public static final ModConfigSpec.DoubleValue VAMPIRE_BITE_INFECT_CHANCE = BUILDER
+            .comment("Chance that a vampire mob's bite infects the player with Sanguinare Vampiris. The mod infects on",
+                    "every bite (1.0). A vampire player infecting someone on purpose is not affected.")
+            .defineInRange("vampireBiteInfectChance", 0.15, 0.0, 1.0);
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public StrataTweaks(IEventBus modBus, ModContainer container) {
@@ -84,6 +92,14 @@ public final class StrataTweaks {
 
     public static double abyssalSuitLaserScale() {
         return SPEC.isLoaded() ? ABYSSAL_SUIT_LASER_SCALE.get() : 0.25;
+    }
+
+    public static double vampireCapScale() {
+        return SPEC.isLoaded() ? VAMPIRE_CAP_SCALE.get() : 1.0;
+    }
+
+    public static double vampireBiteInfectChance() {
+        return SPEC.isLoaded() ? VAMPIRE_BITE_INFECT_CHANCE.get() : 1.0;
     }
 
     public static double monsterCapScale() {

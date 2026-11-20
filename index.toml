@@ -422,7 +422,7 @@ hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
 file = "config/iceandfire/iaf-common.json"
-hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
+hash = "e5361a7764ebe8dfa289eb11b6bc2631f131c77cebff71f25e26171bb12405b0"
 
 [[files]]
 file = "config/immersive_optimization.json"
@@ -430,7 +430,7 @@ hash = "14ef1c5fbb54ffa00b29f4cd4ba23d7a5d1d2ff4dc8554c24a221ec6259b33d4"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "ddf5e716cc76ced9f4667619a51e1b294283691b34067a3da30b4c309df6b9be"
+hash = "ae47b39ab6c77b7eb92d9f6bca431dae5c4e551fae38e11e9d7958ca341e217e"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
@@ -574,7 +574,7 @@ hash = "171893d126b56686d1ee9c0a1e14a22d5f9ba34e65e880182d48a4911f927fc2"
 
 [[files]]
 file = "config/strata_tweaks-common.toml"
-hash = "14f9840249aa84ab7e2ecce1f10ed938006fa295775f36334c18f72d1b185898"
+hash = "099268d04363f75cbc0f54fd4b5a68662ed1ae38179335d946bd4b2973da2698"
 
 [[files]]
 file = "config/streamsreflowing.properties"
@@ -10375,7 +10375,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.3.0.jar"
-hash = "5a623bbd46541b475b721d0d1f42ba380b539a69bf959d60448de6facd508167"
+hash = "ecae4005e663e9e6d4542c5852f97afba196cead7afded86e520d7dafd6e0509"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
