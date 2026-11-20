@@ -46,17 +46,17 @@ public final class OmnistrataClient {
             ResourceLocation.fromNamespaceAndPath("strata_tweaks", "textures/gui/omnistrata_mark.png");
 
     /**
-     * A tool that is out looks like any other pickaxe, so it gets a small tool case in the bottom right corner of
-     * its slot (Darin's sketch, Nov 20). A decorator is tied to an item, and any one-per-stack item can be the
-     * tool, so every such item gets the same decorator; it draws only on a stack that carries the kit. The mark
-     * moves up three pixels when the durability bar is showing, so the bar stays readable.
+     * A tool that is out looks like any other pickaxe, so it gets a tiny tool case in the top left corner of
+     * its slot (Darin, Nov 20: always the same spot, clear of the durability bar and of where tools are
+     * drawn). A decorator is tied to an item, and any one-per-stack item can be the tool, so every such item
+     * gets the same decorator; it draws only on a stack that carries the kit.
      */
     private static void registerMark(RegisterItemDecorationsEvent event) {
         IItemDecorator mark = (graphics, font, stack, x, y) -> {
             if (!Omnistrata.isOut(stack)) return false;
             graphics.pose().pushPose();
             graphics.pose().translate(0f, 0f, 200f);
-            graphics.blit(MARK, x + 8, y + (stack.isBarVisible() ? 5 : 8), 0f, 0f, 8, 8, 8, 8);
+            graphics.blit(MARK, x, y, 0f, 0f, 5, 5, 5, 5);
             graphics.pose().popPose();
             return true;
         };
