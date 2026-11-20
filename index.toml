@@ -422,7 +422,7 @@ hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
 file = "config/iceandfire/iaf-common.json"
-hash = "e5361a7764ebe8dfa289eb11b6bc2631f131c77cebff71f25e26171bb12405b0"
+hash = "96ad0fae015f99a51330572ecd42377ad3700d170592083d1e103819ecc0871c"
 
 [[files]]
 file = "config/immersive_optimization.json"

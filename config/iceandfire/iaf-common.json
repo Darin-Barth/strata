@@ -73,7 +73,7 @@
     "maxHealth": 150.0,
     "attackDamage": 15.0,
     "biteDamage": 40.0,
-    "griefing": true
+    "griefing": false
   },
   "siren": {
     "maxHealth": 50.0,
@@ -145,7 +145,7 @@
   },
   "seaSerpent": {
     "spawnChance": 0.004,
-    "griefing": true,
+    "griefing": false,
     "baseHealth": 20.0,
     "attackDamage": 4.0,
     "normalModifier": 1.0,
