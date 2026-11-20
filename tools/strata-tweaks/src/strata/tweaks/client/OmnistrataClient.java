@@ -7,10 +7,15 @@ import net.minecraft.client.Options;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.client.IItemDecorator;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.neoforge.client.event.RegisterItemDecorationsEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
@@ -32,8 +37,32 @@ public final class OmnistrataClient {
 
     public static void init(IEventBus modBus) {
         modBus.addListener((RegisterKeyMappingsEvent event) -> event.register(KEY));
+        modBus.addListener(OmnistrataClient::registerMark);
         NeoForge.EVENT_BUS.addListener(OmnistrataClient::onTick);
         NeoForge.EVENT_BUS.addListener(OmnistrataClient::onTooltip);
+    }
+
+    private static final ResourceLocation MARK =
+            ResourceLocation.fromNamespaceAndPath("strata_tweaks", "textures/gui/omnistrata_mark.png");
+
+    /**
+     * A tool that is out looks like any other pickaxe, so it gets a small tool case in the bottom right corner of
+     * its slot (Darin's sketch, Nov 20). A decorator is tied to an item, and any one-per-stack item can be the
+     * tool, so every such item gets the same decorator; it draws only on a stack that carries the kit. The mark
+     * moves up two pixels when the durability bar is showing, so the bar stays readable.
+     */
+    private static void registerMark(RegisterItemDecorationsEvent event) {
+        IItemDecorator mark = (graphics, font, stack, x, y) -> {
+            if (!Omnistrata.isOut(stack)) return false;
+            graphics.pose().pushPose();
+            graphics.pose().translate(0f, 0f, 200f);
+            graphics.blit(MARK, x + 8, y + (stack.isBarVisible() ? 6 : 8), 0f, 0f, 8, 8, 8, 8);
+            graphics.pose().popPose();
+            return true;
+        };
+        for (Item item : BuiltInRegistries.ITEM) {
+            if (item.getDefaultMaxStackSize() == 1 && item != Omnistrata.ITEM.get()) event.register(item, mark);
+        }
     }
 
     private static void onTick(ClientTickEvent.Post event) {

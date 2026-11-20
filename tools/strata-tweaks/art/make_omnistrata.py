@@ -62,3 +62,31 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# The 8x8 mark drawn in the corner of a tool that is out of the Omnistrata (client/OmnistrataClient).
+MARK_OUT = OUT.parent.parent / 'gui/omnistrata_mark.png'
+MARK = [
+    '........',
+    '..xxxx..',
+    '..x..x..',
+    'xxxxxxxx',
+    'xIIiijjx',
+    'xRRRrrrx',
+    'xiYiiYjx',
+    'xxxxxxxx',
+]
+
+
+def mark():
+    img = Image.new('RGBA', (8, 8))
+    for y, row in enumerate(MARK):
+        assert len(row) == 8, (y, row)
+        for x, ch in enumerate(row):
+            img.putpixel((x, y), P[ch])
+    MARK_OUT.parent.mkdir(parents=True, exist_ok=True)
+    img.save(MARK_OUT)
+    print('wrote', MARK_OUT)
+
+
+mark() if __name__ == '__main__' else None

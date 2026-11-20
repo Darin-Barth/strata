@@ -10375,7 +10375,7 @@ metafile = true
 
 [[files]]
 file = "mods/strata-tweaks-1.3.0.jar"
-hash = "1056a2559df7edb89f374eda26869e1ff5519bb676a26340b55caf370c877e8c"
+hash = "99d5366e63c55538882eca362f477486338ba906b5d07b48f7cfaccd231be813"
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
