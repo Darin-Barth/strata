@@ -7,6 +7,12 @@
     "result": "deny"
   },
   {
+    "mob": "naturalist:anglerfish",
+    "mincount": {"amount": 2, "mob": "naturalist:anglerfish", "perplayer": true},
+    "when": "position",
+    "result": "deny"
+  },
+  {
     "dimension": "strata:abyssal_plain",
     "mob": "naturalist:giant_isopod",
     "mincount": {"amount": 4, "mob": "naturalist:giant_isopod", "perplayer": true},

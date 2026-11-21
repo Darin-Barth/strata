@@ -422,7 +422,7 @@ hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
 file = "config/iceandfire/iaf-common.json"
-hash = "33aa173e35f1636ab1927503ebaa0380647f251f042bfea6da166cbcee742bca"
+hash = "96ad0fae015f99a51330572ecd42377ad3700d170592083d1e103819ecc0871c"
 
 [[files]]
 file = "config/immersive_optimization.json"
@@ -430,7 +430,7 @@ hash = "14ef1c5fbb54ffa00b29f4cd4ba23d7a5d1d2ff4dc8554c24a221ec6259b33d4"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "ddf5e716cc76ced9f4667619a51e1b294283691b34067a3da30b4c309df6b9be"
+hash = "ae47b39ab6c77b7eb92d9f6bca431dae5c4e551fae38e11e9d7958ca341e217e"
 
 [[files]]
 file = "config/integrateddynamics-common.toml"
