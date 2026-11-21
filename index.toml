@@ -8629,6 +8629,11 @@ hash = "313878ee6460ebf07fdaa9b9c3b42bbcec5a92818f834a297e2dbb607321a695"
 metafile = true
 
 [[files]]
+file = "mods/ars-controle.pw.toml"
+hash = "00d427c7ee74298772f6c0ddc147e17e869e72765cef407ae5f2fda3b3781d2c"
+metafile = true
+
+[[files]]
 file = "mods/ars-creo.pw.toml"
 hash = "355c876b51800af868bff2fe493e8b347499a031a07478aca8d856abe61fb9d9"
 metafile = true
@@ -8656,6 +8661,11 @@ metafile = true
 [[files]]
 file = "mods/ars-ocultas.pw.toml"
 hash = "6aeb0adeebcbc1e3a571c4fa7123c219ae6598569e2f753f62c3a016782ce3d1"
+metafile = true
+
+[[files]]
+file = "mods/ars-polymorphia.pw.toml"
+hash = "d6da17d2285aaebf04b844abea17dbf24403956f9efef9529291b584da54ff1e"
 metafile = true
 
 [[files]]

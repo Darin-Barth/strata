@@ -1,0 +1,16 @@
+name = "Ars Controle"
+filename = "ars_controle-1.21.1-1.6.16.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gL8ijqNQ/versions/r7YxZN9m/ars_controle-1.21.1-1.6.16.jar"
+hash-format = "sha512"
+hash = "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6"
+
+[update]
+[update.modrinth]
+mod-id = "gL8ijqNQ"
+version = "r7YxZN9m"
+[update.curseforge]
+file-id = 8847869
+project-id = 1061812
