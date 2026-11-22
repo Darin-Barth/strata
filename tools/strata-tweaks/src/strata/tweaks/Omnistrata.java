@@ -125,6 +125,16 @@ public final class Omnistrata {
         return slots;
     }
 
+    /** Copies of the tools stowed in a stack that carries a kit (six slots, empty ones included), for something that changes them. */
+    public static NonNullList<ItemStack> stowedCopies(ItemStack carrier) {
+        return stowed(carrier);
+    }
+
+    /** Writes changed copies from {@link #stowedCopies} back into the stack that carries them. */
+    public static void writeStowed(ItemStack carrier, NonNullList<ItemStack> slots) {
+        if (isKit(carrier) && slots.size() == SLOTS) carrier.set(KIT.get(), ItemContainerContents.fromItems(slots));
+    }
+
     /** The tool without the kit it was carrying. */
     private static ItemStack bare(ItemStack tool) {
         ItemStack copy = tool.copy();

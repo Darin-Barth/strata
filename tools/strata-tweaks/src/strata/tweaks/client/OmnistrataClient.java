@@ -69,8 +69,11 @@ public final class OmnistrataClient {
 
     private static void onTick(ClientTickEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
+        // A press and release inside one tick never shows as "down" here; the click counter still has it.
+        boolean clicked = false;
+        while (KEY.consumeClick()) clicked = true;
         boolean down = KEY.isDown();
-        if (down && !wasDown && mc.player != null && mc.screen == null && Omnistrata.isKit(mc.player.getMainHandItem())) {
+        if ((clicked || (down && !wasDown)) && mc.player != null && mc.screen == null && Omnistrata.isKit(mc.player.getMainHandItem())) {
             mc.setScreen(new Wheel());
         }
         wasDown = down;
